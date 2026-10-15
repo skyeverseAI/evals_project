@@ -1,0 +1,3382 @@
+WEBVTT
+
+1
+00:00:00.480 --> 00:00:02.869
+Well then.  If we
+
+2
+00:00:02.869 --> 00:00:02.879
+
+
+
+3
+00:00:02.879 --> 00:00:04.470
+summarize the entire flow till now.  What did we do in this lecture
+
+4
+00:00:04.470 --> 00:00:04.480
+
+
+
+5
+00:00:04.480 --> 00:00:06.470
+?  We first
+
+6
+00:00:06.470 --> 00:00:06.480
+
+
+
+7
+00:00:06.480 --> 00:00:08.629
+discussed the why.  Why are we studying this
+
+8
+00:00:08.629 --> 00:00:08.639
+
+
+
+9
+00:00:08.639 --> 00:00:10.950
+topic?  Then we discussed
+
+10
+00:00:10.950 --> 00:00:10.960
+
+
+
+11
+00:00:10.960 --> 00:00:13.430
+what LLM Evaluations are?  And
+
+12
+00:00:13.430 --> 00:00:13.440
+
+
+
+13
+00:00:13.440 --> 00:00:15.350
+what are its types?  We read two types.
+
+14
+00:00:15.350 --> 00:00:15.360
+
+
+
+15
+00:00:15.360 --> 00:00:17.990
+Model Evals Application Evals.  So why
+
+16
+00:00:17.990 --> 00:00:18.000
+
+
+
+17
+00:00:18.000 --> 00:00:20.470
+and what?  You should be clear by now.
+
+18
+00:00:20.470 --> 00:00:20.480
+
+
+
+19
+00:00:20.480 --> 00:00:24.710
+Now let's move on to
+
+20
+00:00:24.710 --> 00:00:24.720
+
+
+
+21
+00:00:24.720 --> 00:00:28.630
+how LLM evaluations are conducted.  And
+
+22
+00:00:28.630 --> 00:00:28.640
+
+
+
+23
+00:00:28.640 --> 00:00:30.870
+here again there is a disclaimer that whatever
+
+24
+00:00:30.870 --> 00:00:30.880
+
+
+
+25
+00:00:30.880 --> 00:00:35.430
+I am going to teach you, I will actually
+
+26
+00:00:35.430 --> 00:00:37.510
+
+
+
+27
+00:00:37.510 --> 00:00:37.520
+
+
+
+28
+00:00:37.520 --> 00:00:39.270
+teach it from the perspective of application eval.   The
+
+29
+00:00:39.270 --> 00:00:39.280
+
+
+
+30
+00:00:39.280 --> 00:00:41.350
+model is not teaching from the perspective of eval.
+
+31
+00:00:41.350 --> 00:00:41.360
+
+
+
+32
+00:00:41.360 --> 00:00:44.229
+Ok?  Makes sense obviously because we're going to
+
+33
+00:00:44.229 --> 00:00:44.239
+
+
+
+34
+00:00:44.239 --> 00:00:46.389
+focus more on this.
+
+35
+00:00:46.389 --> 00:00:46.399
+
+
+
+36
+00:00:46.399 --> 00:00:50.310
+So let us now read a very important
+
+37
+00:00:50.310 --> 00:00:50.320
+
+
+
+38
+00:00:50.320 --> 00:00:52.950
+thing which will give you a lot of perspective
+
+39
+00:00:52.950 --> 00:00:52.960
+
+
+
+40
+00:00:52.960 --> 00:00:56.869
+and the topic is the work flow of LLM application eval.
+
+41
+00:00:56.869 --> 00:01:00.470
+
+
+
+42
+00:01:00.470 --> 00:01:00.480
+
+
+
+43
+00:01:00.480 --> 00:01:03.189
+How do you evaluate a typical LLM-based application?
+
+44
+00:01:03.189 --> 00:01:03.199
+
+
+
+45
+00:01:03.199 --> 00:01:05.270
+This is what we are going to read next.  What we're
+
+46
+00:01:05.270 --> 00:01:05.280
+
+
+
+47
+00:01:05.280 --> 00:01:07.910
+going to learn is that you have an LLM
+
+48
+00:01:07.910 --> 00:01:07.920
+
+
+
+49
+00:01:07.920 --> 00:01:11.590
+based application.  Ok?  And you have to
+
+50
+00:01:11.590 --> 00:01:11.600
+
+
+
+51
+00:01:11.600 --> 00:01:14.469
+evaluate that and we'll go
+
+52
+00:01:14.469 --> 00:01:14.479
+
+
+
+53
+00:01:14.479 --> 00:01:17.190
+with the simplest possible example.  Let me
+
+54
+00:01:17.190 --> 00:01:17.200
+
+
+
+55
+00:01:17.200 --> 00:01:18.950
+tell you what application we have
+
+56
+00:01:18.950 --> 00:01:18.960
+
+
+
+57
+00:01:18.960 --> 00:01:22.630
+made.  So we are a let's say working
+
+58
+00:01:22.630 --> 00:01:22.640
+
+
+
+59
+00:01:22.640 --> 00:01:24.630
+for a company
+
+60
+00:01:24.630 --> 00:01:24.640
+
+
+
+61
+00:01:24.640 --> 00:01:28.310
+we are engineers and this company is suppose to be
+
+62
+00:01:28.310 --> 00:01:28.320
+
+
+
+63
+00:01:28.320 --> 00:01:30.710
+Zomato.  And their problem is that
+
+64
+00:01:30.710 --> 00:01:30.720
+
+
+
+65
+00:01:30.720 --> 00:01:34.550
+they get a lot of emails on daily
+
+66
+00:01:34.550 --> 00:01:34.560
+
+
+
+67
+00:01:34.560 --> 00:01:36.310
+basis because it is a big company.  There
+
+68
+00:01:36.310 --> 00:01:36.320
+
+
+
+69
+00:01:36.320 --> 00:01:39.429
+are so many customers and what do these people want
+
+70
+00:01:39.429 --> 00:01:39.439
+
+
+
+71
+00:01:39.439 --> 00:01:43.749
+that it is a bit difficult to reply to these mails manually.
+
+72
+00:01:43.749 --> 00:01:43.759
+
+
+
+73
+00:01:43.759 --> 00:01:46.230
+So they want to automate the
+
+74
+00:01:46.230 --> 00:01:46.240
+
+
+
+75
+00:01:46.240 --> 00:01:49.910
+setup.  So what they want is that they want a
+
+76
+00:01:49.910 --> 00:01:49.920
+
+
+
+77
+00:01:49.920 --> 00:01:55.190
+system which reads these mails and
+
+78
+00:01:55.190 --> 00:01:55.200
+
+
+
+79
+00:01:55.200 --> 00:01:59.109
+classifies them on the basis of the content, whether
+
+80
+00:01:59.109 --> 00:01:59.119
+
+
+
+81
+00:01:59.119 --> 00:02:03.590
+in this mail the customer is asking a billing related question
+
+82
+00:02:03.590 --> 00:02:03.600
+
+
+
+83
+00:02:03.600 --> 00:02:08.070
+or let me
+
+84
+00:02:08.070 --> 00:02:08.080
+
+
+
+85
+00:02:08.080 --> 00:02:09.270
+check here once what are the
+
+86
+00:02:09.270 --> 00:02:09.280
+
+
+
+87
+00:02:09.280 --> 00:02:11.990
+combinations.  Yes, he is asking billing related
+
+88
+00:02:11.990 --> 00:02:12.000
+
+
+
+89
+00:02:12.000 --> 00:02:14.309
+questions or he has some
+
+90
+00:02:14.309 --> 00:02:14.319
+
+
+
+91
+00:02:14.319 --> 00:02:17.110
+technical problem or he has some general
+
+92
+00:02:17.110 --> 00:02:17.120
+
+
+
+93
+00:02:17.120 --> 00:02:20.790
+query.  I just want to get this classification done.
+
+94
+00:02:20.790 --> 00:02:20.800
+
+
+
+95
+00:02:20.800 --> 00:02:22.869
+Why do I want to get it done?
+
+96
+00:02:22.869 --> 00:02:22.879
+
+
+
+97
+00:02:22.879 --> 00:02:24.630
+What is the benefit of this is that if it is a billing related
+
+98
+00:02:24.630 --> 00:02:24.640
+
+
+
+99
+00:02:24.640 --> 00:02:27.270
+query then I will directly route it
+
+100
+00:02:27.270 --> 00:02:27.280
+
+
+
+101
+00:02:27.280 --> 00:02:31.750
+to my billing team.  If it is a technical query, I will
+
+102
+00:02:31.750 --> 00:02:31.760
+
+
+
+103
+00:02:31.760 --> 00:02:33.589
+forward it to the technical team and if it is a general
+
+104
+00:02:33.589 --> 00:02:33.599
+
+
+
+105
+00:02:33.599 --> 00:02:35.830
+query, I will forward it to my customer support team.
+
+106
+00:02:35.830 --> 00:02:35.840
+
+
+
+107
+00:02:35.840 --> 00:02:39.190
+I do
+
+108
+00:02:39.190 --> 00:02:39.200
+
+
+
+109
+00:02:39.200 --> 00:02:42.070
+n't need someone here to manually read these mails and
+
+110
+00:02:42.070 --> 00:02:42.080
+
+
+
+111
+00:02:42.080 --> 00:02:45.030
+tag my teams.
+
+112
+00:02:45.030 --> 00:02:45.040
+
+
+
+113
+00:02:45.040 --> 00:02:47.030
+I want to automate this process.  So
+
+114
+00:02:47.030 --> 00:02:47.040
+
+
+
+115
+00:02:47.040 --> 00:02:49.430
+what did we do?  We created a very simple system.  The
+
+116
+00:02:49.430 --> 00:02:49.440
+
+
+
+117
+00:02:49.440 --> 00:02:53.990
+system is that we appointed an LLM.
+
+118
+00:02:53.990 --> 00:02:54.000
+
+
+
+119
+00:02:54.000 --> 00:02:56.630
+We appointed an LLM
+
+120
+00:02:56.630 --> 00:02:56.640
+
+
+
+121
+00:02:56.640 --> 00:03:01.750
+and gave him a prompt that brother, you are this
+
+122
+00:03:01.750 --> 00:03:01.760
+
+
+
+123
+00:03:01.760 --> 00:03:05.110
+customer agent who will read the email and decide
+
+124
+00:03:05.110 --> 00:03:05.120
+
+
+
+125
+00:03:05.120 --> 00:03:07.509
+where it should be routed.  So
+
+126
+00:03:07.509 --> 00:03:07.519
+
+
+
+127
+00:03:07.519 --> 00:03:09.910
+here we are getting the email of the user and
+
+128
+00:03:09.910 --> 00:03:09.920
+
+
+
+129
+00:03:09.920 --> 00:03:12.229
+from here it is routing.  Ok?   It
+
+130
+00:03:12.229 --> 00:03:12.239
+
+
+
+131
+00:03:12.239 --> 00:03:13.990
+is a very simple LLM application.  Meaning
+
+132
+00:03:13.990 --> 00:03:14.000
+
+
+
+133
+00:03:14.000 --> 00:03:16.630
+you can literally make it in 5-10 minutes.
+
+134
+00:03:16.630 --> 00:03:16.640
+
+
+
+135
+00:03:16.640 --> 00:03:21.270
+Ok?  But now comes the real question: should
+
+136
+00:03:21.270 --> 00:03:21.280
+
+
+
+137
+00:03:21.280 --> 00:03:24.470
+we deploy it directly?  No,
+
+138
+00:03:24.470 --> 00:03:24.480
+
+
+
+139
+00:03:24.480 --> 00:03:26.070
+this is what we have discussed so far.  We do
+
+140
+00:03:26.070 --> 00:03:26.080
+
+
+
+141
+00:03:26.080 --> 00:03:27.750
+n't have to deploy.  What do we have to do before that
+
+142
+00:03:27.750 --> 00:03:27.760
+
+
+
+143
+00:03:27.760 --> 00:03:30.149
+?  This system has to be evaluated.
+
+144
+00:03:30.149 --> 00:03:30.159
+
+
+
+145
+00:03:30.159 --> 00:03:32.229
+We have to evaluate this system.  Ok
+
+146
+00:03:32.229 --> 00:03:32.239
+
+
+
+147
+00:03:32.239 --> 00:03:34.869
+?  How to evaluate?  Let me
+
+148
+00:03:34.869 --> 00:03:34.879
+
+
+
+149
+00:03:34.879 --> 00:03:36.550
+tell you that flow.  And this flow which I am going to
+
+150
+00:03:36.550 --> 00:03:36.560
+
+
+
+151
+00:03:36.560 --> 00:03:39.030
+tell you now,
+
+152
+00:03:39.030 --> 00:03:39.040
+
+
+
+153
+00:03:39.040 --> 00:03:40.949
+you will see this flow again and again in this entire course.  This
+
+154
+00:03:40.949 --> 00:03:40.959
+
+
+
+155
+00:03:40.959 --> 00:03:43.110
+is a very simple application.
+
+156
+00:03:43.110 --> 00:03:43.120
+
+
+
+157
+00:03:43.120 --> 00:03:45.509
+You'll need to use the same workflow for a very complex agent.
+
+158
+00:03:45.509 --> 00:03:45.519
+
+
+
+159
+00:03:45.519 --> 00:03:47.430
+Ok?  What is work flow?   Let's
+
+160
+00:03:47.430 --> 00:03:47.440
+
+
+
+161
+00:03:47.440 --> 00:03:49.509
+discuss.  The first thing you have to do in work flow is
+
+162
+00:03:49.509 --> 00:03:49.519
+
+
+
+163
+00:03:49.519 --> 00:03:52.149
+that you have to
+
+164
+00:03:52.149 --> 00:03:52.159
+
+
+
+165
+00:03:52.159 --> 00:03:56.229
+define the task and target.  What do you
+
+166
+00:03:56.229 --> 00:03:56.239
+
+
+
+167
+00:03:56.239 --> 00:03:59.030
+want to evaluate?  You have to
+
+168
+00:03:59.030 --> 00:03:59.040
+
+
+
+169
+00:03:59.040 --> 00:04:00.949
+define this first.  So in this case
+
+170
+00:04:00.949 --> 00:04:00.959
+
+
+
+171
+00:04:00.959 --> 00:04:05.429
+we have to evaluate this system or this work
+
+172
+00:04:05.429 --> 00:04:05.439
+
+
+
+173
+00:04:05.439 --> 00:04:08.949
+flow.  Ok?  And
+
+174
+00:04:08.949 --> 00:04:08.959
+
+
+
+175
+00:04:08.959 --> 00:04:11.750
+what is the task of evaluation?  It's a
+
+176
+00:04:11.750 --> 00:04:11.760
+
+
+
+177
+00:04:11.760 --> 00:04:14.550
+simple classification task.  We have to check
+
+178
+00:04:14.550 --> 00:04:14.560
+
+
+
+179
+00:04:14.560 --> 00:04:16.229
+whether this system is able to do the
+
+180
+00:04:16.229 --> 00:04:16.239
+
+
+
+181
+00:04:16.239 --> 00:04:19.590
+classification correctly or not.  So,
+
+182
+00:04:19.590 --> 00:04:19.600
+
+
+
+183
+00:04:19.600 --> 00:04:22.550
+this is our step number one.
+
+184
+00:04:22.550 --> 00:04:22.560
+
+
+
+185
+00:04:22.560 --> 00:04:24.950
+What you do in step number two is you
+
+186
+00:04:24.950 --> 00:04:27.270
+
+
+
+187
+00:04:27.270 --> 00:04:27.280
+
+
+
+188
+00:04:27.280 --> 00:04:29.430
+define a success criterion for your evaluation.  Can you tell
+
+189
+00:04:29.430 --> 00:04:29.440
+
+
+
+190
+00:04:29.440 --> 00:04:32.310
+me what is the success criteria for this particular use case
+
+191
+00:04:32.310 --> 00:04:32.320
+
+
+
+192
+00:04:32.320 --> 00:04:34.629
+?
+
+193
+00:04:34.629 --> 00:04:34.639
+
+
+
+194
+00:04:34.639 --> 00:04:37.270
+How would we know that this system is working properly?
+
+195
+00:04:37.270 --> 00:04:37.280
+
+
+
+196
+00:04:37.280 --> 00:04:39.749
+DP Sir is absolutely right.  The answer
+
+197
+00:04:39.749 --> 00:04:39.759
+
+
+
+198
+00:04:39.759 --> 00:04:42.070
+is accuracy.  It's a simple thing.  If it
+
+199
+00:04:42.070 --> 00:04:42.080
+
+
+
+200
+00:04:42.080 --> 00:04:45.670
+receives 100 queries and routes 90 of them
+
+201
+00:04:45.670 --> 00:04:45.680
+
+
+
+202
+00:04:45.680 --> 00:04:47.670
+to the correct destination, then what would you
+
+203
+00:04:47.670 --> 00:04:47.680
+
+
+
+204
+00:04:47.680 --> 00:04:51.430
+say is that this system is 90%
+
+205
+00:04:51.430 --> 00:04:51.440
+
+
+
+206
+00:04:51.440 --> 00:04:53.670
+accurate.  So in this particular system
+
+207
+00:04:53.670 --> 00:04:53.680
+
+
+
+208
+00:04:53.680 --> 00:04:58.710
+your success criteria is classification.
+
+209
+00:04:58.710 --> 00:04:58.720
+
+
+
+210
+00:04:58.720 --> 00:05:01.590
+And the metric on the basis of which we
+
+211
+00:05:01.590 --> 00:05:01.600
+
+
+
+212
+00:05:01.600 --> 00:05:03.350
+will find out whether the classification is being done correctly
+
+213
+00:05:03.350 --> 00:05:03.360
+
+
+
+214
+00:05:03.360 --> 00:05:06.790
+or not is accuracy.
+
+215
+00:05:06.790 --> 00:05:06.800
+
+
+
+216
+00:05:06.800 --> 00:05:09.029
+Is this discussion clear?  There is no confusion.  It's
+
+217
+00:05:09.029 --> 00:05:09.039
+
+
+
+218
+00:05:09.039 --> 00:05:13.189
+simple.  Now comes the next and substantial
+
+219
+00:05:13.189 --> 00:05:13.199
+
+
+
+220
+00:05:13.199 --> 00:05:16.070
+step.  What do you do now?  You have to
+
+221
+00:05:16.070 --> 00:05:16.080
+
+
+
+222
+00:05:16.080 --> 00:05:19.189
+build a data set.  Ok?  So what you do is
+
+223
+00:05:19.189 --> 00:05:19.199
+
+
+
+224
+00:05:19.199 --> 00:05:22.629
+you prepare a data set like this.
+
+225
+00:05:22.629 --> 00:05:22.639
+
+
+
+226
+00:05:22.639 --> 00:05:26.070
+Where on one side
+
+227
+00:05:26.070 --> 00:05:26.080
+
+
+
+228
+00:05:26.080 --> 00:05:29.430
+is your message or the content of your mail
+
+229
+00:05:29.430 --> 00:05:29.440
+
+
+
+230
+00:05:29.440 --> 00:05:32.390
+and on the other side you have manually
+
+231
+00:05:32.390 --> 00:05:32.400
+
+
+
+232
+00:05:32.400 --> 00:05:36.150
+told yourself what its type is.  Like
+
+233
+00:05:36.150 --> 00:05:36.160
+
+
+
+234
+00:05:36.160 --> 00:05:39.029
+if your mail is this My Card Was Charged
+
+235
+00:05:39.029 --> 00:05:39.039
+
+
+
+236
+00:05:39.039 --> 00:05:42.390
+Twice.  So this is a billing issue.  The app
+
+237
+00:05:42.390 --> 00:05:42.400
+
+
+
+238
+00:05:42.400 --> 00:05:44.550
+crashes on login.  This is a technical
+
+239
+00:05:44.550 --> 00:05:44.560
+
+
+
+240
+00:05:44.560 --> 00:05:48.230
+issue.  What are your hours?  So this is a general issue.
+
+241
+00:05:48.230 --> 00:05:48.240
+
+
+
+242
+00:05:48.240 --> 00:05:50.310
+So here I have
+
+243
+00:05:50.310 --> 00:05:50.320
+
+
+
+244
+00:05:50.320 --> 00:05:54.870
+created data for only three days.  Generally you will
+
+245
+00:05:54.870 --> 00:05:54.880
+
+
+
+246
+00:05:54.880 --> 00:05:59.189
+create a data of 50 to 500 daily.
+
+247
+00:05:59.189 --> 00:05:59.199
+
+
+
+248
+00:05:59.199 --> 00:06:03.029
+How will this data be created?  It is best that you
+
+249
+00:06:03.029 --> 00:06:03.039
+
+
+
+250
+00:06:03.039 --> 00:06:05.670
+bring your actual data.  So if this is
+
+251
+00:06:05.670 --> 00:06:05.680
+
+
+
+252
+00:06:05.680 --> 00:06:08.629
+Zomato, then you take your past chats
+
+253
+00:06:08.629 --> 00:06:08.639
+
+
+
+254
+00:06:08.639 --> 00:06:11.990
+and create a data set from it and do this
+
+255
+00:06:11.990 --> 00:06:12.000
+
+
+
+256
+00:06:12.000 --> 00:06:15.189
+labeling manually.  Get someone to sit and get
+
+257
+00:06:15.189 --> 00:06:15.199
+
+
+
+258
+00:06:15.199 --> 00:06:18.629
+this label done.  So this is how you
+
+259
+00:06:18.629 --> 00:06:18.639
+
+
+
+260
+00:06:18.639 --> 00:06:20.870
+create a data set.  This is called the
+
+261
+00:06:20.870 --> 00:06:20.880
+
+
+
+262
+00:06:20.880 --> 00:06:23.670
+Golden Data Set in the language of By the Way LLM Evals.
+
+263
+00:06:23.670 --> 00:06:23.680
+
+
+
+264
+00:06:23.680 --> 00:06:27.110
+So what we're doing is
+
+265
+00:06:27.110 --> 00:06:27.120
+
+
+
+266
+00:06:27.120 --> 00:06:29.830
+in this third step, we're building a data set
+
+267
+00:06:29.830 --> 00:06:29.840
+
+
+
+268
+00:06:29.840 --> 00:06:34.070
+that will do the evaluation for us.  Ok?
+
+269
+00:06:34.070 --> 00:06:34.080
+
+
+
+270
+00:06:34.080 --> 00:06:38.070
+Then next you define an evaluation
+
+271
+00:06:38.070 --> 00:06:38.080
+
+
+
+272
+00:06:38.080 --> 00:06:41.430
+method.  Basically you decide
+
+273
+00:06:41.430 --> 00:06:41.440
+
+
+
+274
+00:06:41.440 --> 00:06:44.870
+who will do the evaluation?  There are two-three options.   It will
+
+275
+00:06:44.870 --> 00:06:44.880
+
+
+
+276
+00:06:44.880 --> 00:06:49.270
+either be done in an automated manner or a
+
+277
+00:06:49.270 --> 00:06:49.280
+
+
+
+278
+00:06:49.280 --> 00:06:51.590
+human will do it
+
+279
+00:06:51.590 --> 00:06:51.600
+
+
+
+280
+00:06:51.600 --> 00:06:54.629
+or you can use any other LLM to
+
+281
+00:06:54.629 --> 00:06:54.639
+
+
+
+282
+00:06:54.639 --> 00:06:58.230
+perform the evaluation.
+
+283
+00:06:58.230 --> 00:06:58.240
+
+
+
+284
+00:06:58.240 --> 00:07:00.710
+I hope you understand.
+
+285
+00:07:00.710 --> 00:07:00.720
+
+
+
+286
+00:07:00.720 --> 00:07:02.950
+What does performing an evaluation simply mean?  That
+
+287
+00:07:02.950 --> 00:07:02.960
+
+
+
+288
+00:07:02.960 --> 00:07:06.950
+this is your system that you created.
+
+289
+00:07:06.950 --> 00:07:06.960
+
+
+
+290
+00:07:06.960 --> 00:07:09.510
+This is the system you created.  What
+
+291
+00:07:09.510 --> 00:07:09.520
+
+
+
+292
+00:07:09.520 --> 00:07:13.110
+will you do?  You will send this data set to that system.
+
+293
+00:07:13.110 --> 00:07:13.120
+
+
+
+294
+00:07:13.120 --> 00:07:17.430
+Right?  Now your
+
+295
+00:07:17.430 --> 00:07:17.440
+
+
+
+296
+00:07:17.440 --> 00:07:20.070
+system will give an answer for every message.
+
+297
+00:07:20.070 --> 00:07:20.080
+
+
+
+298
+00:07:20.080 --> 00:07:22.390
+He said
+
+299
+00:07:22.390 --> 00:07:22.400
+
+
+
+300
+00:07:22.400 --> 00:07:26.950
+billing for the first one from let's.  For the second one he said General
+
+301
+00:07:26.950 --> 00:07:26.960
+
+
+
+302
+00:07:26.960 --> 00:07:30.710
+and for the third one he said General.  So
+
+303
+00:07:30.710 --> 00:07:30.720
+
+
+
+304
+00:07:30.720 --> 00:07:34.469
+what will you do now?  You will compare these two
+
+305
+00:07:34.469 --> 00:07:34.479
+
+
+
+306
+00:07:34.479 --> 00:07:37.350
+and calculate the
+
+307
+00:07:37.350 --> 00:07:37.360
+
+
+
+308
+00:07:37.360 --> 00:07:40.950
+accuracy of this system.  But
+
+309
+00:07:40.950 --> 00:07:40.960
+
+
+
+310
+00:07:40.960 --> 00:07:43.510
+who is calculating this accuracy and giving it to
+
+311
+00:07:43.510 --> 00:07:43.520
+
+
+
+312
+00:07:43.520 --> 00:07:45.430
+you?  It's simple.  Why would you put a human in this case
+
+313
+00:07:45.430 --> 00:07:45.440
+
+
+
+314
+00:07:45.440 --> 00:07:47.189
+?  He will have to be
+
+315
+00:07:47.189 --> 00:07:47.199
+
+
+
+316
+00:07:47.199 --> 00:07:49.270
+paid salary unnecessarily.  There is no need to bring LLM also.
+
+317
+00:07:49.270 --> 00:07:49.280
+
+
+
+318
+00:07:49.280 --> 00:07:51.110
+You simply write a Python code
+
+319
+00:07:51.110 --> 00:07:51.120
+
+
+
+320
+00:07:51.120 --> 00:07:53.589
+which will
+
+321
+00:07:53.589 --> 00:07:53.599
+
+
+
+322
+00:07:53.599 --> 00:07:55.830
+check what the accuracy score is.
+
+323
+00:07:55.830 --> 00:07:55.840
+
+
+
+324
+00:07:55.840 --> 00:07:59.990
+So what is your eval method in this case
+
+325
+00:07:59.990 --> 00:08:00.000
+
+
+
+326
+00:08:00.000 --> 00:08:01.830
+?
+
+327
+00:08:01.830 --> 00:08:01.840
+
+
+
+328
+00:08:01.840 --> 00:08:04.710
+That is automated.  Because this is a simple
+
+329
+00:08:04.710 --> 00:08:04.720
+
+
+
+330
+00:08:04.720 --> 00:08:08.550
+LLM application.  Imagine
+
+331
+00:08:08.550 --> 00:08:08.560
+
+
+
+332
+00:08:08.560 --> 00:08:11.670
+if this was a chat bot, here
+
+333
+00:08:11.670 --> 00:08:11.680
+
+
+
+334
+00:08:11.680 --> 00:08:14.390
+expected would have a long textual
+
+335
+00:08:14.390 --> 00:08:14.400
+
+
+
+336
+00:08:14.400 --> 00:08:17.510
+answer and here LLM would have a long
+
+337
+00:08:17.510 --> 00:08:17.520
+
+
+
+338
+00:08:17.520 --> 00:08:19.430
+textual answer.  So now with
+
+339
+00:08:19.430 --> 00:08:19.440
+
+
+
+340
+00:08:19.440 --> 00:08:21.430
+what do you compare those two texts?  Think and
+
+341
+00:08:21.430 --> 00:08:21.440
+
+
+
+342
+00:08:21.440 --> 00:08:23.430
+tell me.
+
+343
+00:08:23.430 --> 00:08:23.440
+
+
+
+344
+00:08:23.440 --> 00:08:25.990
+Can you compare two paragraphs in an automated way to see if they are
+
+345
+00:08:25.990 --> 00:08:26.000
+
+
+
+346
+00:08:26.000 --> 00:08:28.469
+correct or not?  Is it possible?  Two
+
+347
+00:08:28.469 --> 00:08:28.479
+
+
+
+348
+00:08:28.479 --> 00:08:30.070
+paragraphs have to be compared.  Is it
+
+349
+00:08:30.070 --> 00:08:30.080
+
+
+
+350
+00:08:30.080 --> 00:08:32.389
+possible that you do it through code?  It is not
+
+351
+00:08:32.389 --> 00:08:32.399
+
+
+
+352
+00:08:32.399 --> 00:08:35.829
+possible.  Right?  One is right, the other is wrong.
+
+353
+00:08:35.829 --> 00:08:35.839
+
+
+
+354
+00:08:35.839 --> 00:08:37.829
+This is very difficult to find out through the code.   Because whether the
+
+355
+00:08:37.829 --> 00:08:37.839
+
+
+
+356
+00:08:37.839 --> 00:08:40.310
+semantic meaning is same or not, we will have to find out.  You
+
+357
+00:08:40.310 --> 00:08:40.320
+
+
+
+358
+00:08:40.320 --> 00:08:43.110
+can make a human sit but
+
+359
+00:08:43.110 --> 00:08:43.120
+
+
+
+360
+00:08:43.120 --> 00:08:46.150
+human would be costly.  Right?  If I have to do a
+
+361
+00:08:46.150 --> 00:08:46.160
+
+
+
+362
+00:08:46.160 --> 00:08:47.829
+lot of testing, I will have to
+
+363
+00:08:47.829 --> 00:08:47.839
+
+
+
+364
+00:08:47.839 --> 00:08:50.389
+pay a salary to a human.  The third option is
+
+365
+00:08:50.389 --> 00:08:50.399
+
+
+
+366
+00:08:50.399 --> 00:08:51.990
+something in between.  LLM  You
+
+367
+00:08:51.990 --> 00:08:52.000
+
+
+
+368
+00:08:52.000 --> 00:08:53.430
+can do this testing through LLM.  So did you get my
+
+369
+00:08:53.430 --> 00:08:53.440
+
+
+
+370
+00:08:53.440 --> 00:08:56.550
+point?  That at this point you should have an
+
+371
+00:08:56.550 --> 00:08:56.560
+
+
+
+372
+00:08:56.560 --> 00:08:59.030
+evaluation method.  It can be
+
+373
+00:08:59.030 --> 00:08:59.040
+
+
+
+374
+00:08:59.040 --> 00:09:02.230
+automated, it can be a human and it can
+
+375
+00:09:02.230 --> 00:09:02.240
+
+
+
+376
+00:09:02.240 --> 00:09:06.230
+be LLM.  Are things clear till this point?   Let's
+
+377
+00:09:06.230 --> 00:09:06.240
+
+
+
+378
+00:09:06.240 --> 00:09:08.230
+come back down from the top once.  First of all
+
+379
+00:09:08.230 --> 00:09:08.240
+
+
+
+380
+00:09:08.240 --> 00:09:09.990
+we defined the task,
+
+381
+00:09:09.990 --> 00:09:10.000
+
+
+
+382
+00:09:10.000 --> 00:09:12.630
+defined the target.  What was the target?
+
+383
+00:09:12.630 --> 00:09:12.640
+
+
+
+384
+00:09:12.640 --> 00:09:16.310
+What was our entire system, entire work flow and task?
+
+385
+00:09:16.310 --> 00:09:16.320
+
+
+
+386
+00:09:16.320 --> 00:09:18.710
+We have to evaluate this system to see whether it is
+
+387
+00:09:18.710 --> 00:09:18.720
+
+
+
+388
+00:09:18.720 --> 00:09:20.870
+working properly or not.
+
+389
+00:09:20.870 --> 00:09:20.880
+
+
+
+390
+00:09:20.880 --> 00:09:23.590
+What was the success criteria?
+
+391
+00:09:23.590 --> 00:09:23.600
+
+
+
+392
+00:09:23.600 --> 00:09:27.110
+What was the classification and metric?  Accuracy score.
+
+393
+00:09:27.110 --> 00:09:27.120
+
+
+
+394
+00:09:27.120 --> 00:09:30.470
+We have built the data set.
+
+395
+00:09:30.470 --> 00:09:30.480
+
+
+
+396
+00:09:30.480 --> 00:09:32.310
+We built a data set of 50-100 days.  And now
+
+397
+00:09:32.310 --> 00:09:32.320
+
+
+
+398
+00:09:32.320 --> 00:09:34.470
+we have also defined that when my
+
+399
+00:09:34.470 --> 00:09:34.480
+
+
+
+400
+00:09:34.480 --> 00:09:36.630
+system gives the answer, then
+
+401
+00:09:36.630 --> 00:09:36.640
+
+
+
+402
+00:09:36.640 --> 00:09:39.350
+who will calculate its accuracy?  It will happen in an automated
+
+403
+00:09:39.350 --> 00:09:39.360
+
+
+
+404
+00:09:39.360 --> 00:09:41.990
+manner.  Ok?  Now comes the next
+
+405
+00:09:41.990 --> 00:09:42.000
+
+
+
+406
+00:09:42.000 --> 00:09:44.389
+step where you basically run the model.
+
+407
+00:09:44.389 --> 00:09:44.399
+
+
+
+408
+00:09:44.399 --> 00:09:46.389
+What is the simple meaning of Run the Model?  That
+
+409
+00:09:46.389 --> 00:09:46.399
+
+
+
+410
+00:09:46.399 --> 00:09:49.430
+you will send your data set into the system you have created
+
+411
+00:09:49.430 --> 00:09:49.440
+
+
+
+412
+00:09:49.440 --> 00:09:53.430
+and your system will generate answers.
+
+413
+00:09:53.430 --> 00:09:53.440
+
+
+
+414
+00:09:53.440 --> 00:09:57.030
+This is the step.
+
+415
+00:09:57.030 --> 00:09:57.040
+
+
+
+416
+00:09:57.040 --> 00:09:59.350
+What do you do in the next step after that?  You evaluate the
+
+417
+00:09:59.350 --> 00:09:59.360
+
+
+
+418
+00:09:59.360 --> 00:10:01.829
+results.  Basically you have a Python code
+
+419
+00:10:01.829 --> 00:10:01.839
+
+
+
+420
+00:10:01.839 --> 00:10:05.670
+which is calculating and giving you the accuracy score
+
+421
+00:10:05.670 --> 00:10:05.680
+
+
+
+422
+00:10:05.680 --> 00:10:07.910
+in this step.  Suppose your
+
+423
+00:10:07.910 --> 00:10:07.920
+
+
+
+424
+00:10:07.920 --> 00:10:13.190
+accuracy is 80%.  From Lets you
+
+425
+00:10:13.190 --> 00:10:13.200
+
+
+
+426
+00:10:13.200 --> 00:10:17.110
+sent 100 a day.  Only 80 out of 100 were
+
+427
+00:10:17.110 --> 00:10:17.120
+
+
+
+428
+00:10:17.120 --> 00:10:19.750
+classified correctly.  20 made a mistake.  So now
+
+429
+00:10:19.750 --> 00:10:19.760
+
+
+
+430
+00:10:19.760 --> 00:10:22.069
+comes the next step where what you do is
+
+431
+00:10:22.069 --> 00:10:22.079
+
+
+
+432
+00:10:22.079 --> 00:10:24.470
+you analyze the results.  Which basically
+
+433
+00:10:24.470 --> 00:10:24.480
+
+
+
+434
+00:10:24.480 --> 00:10:27.509
+means that you try to think about
+
+435
+00:10:27.509 --> 00:10:27.519
+
+
+
+436
+00:10:27.519 --> 00:10:30.310
+where the mistake is happening.  Think and tell me.  If
+
+437
+00:10:30.310 --> 00:10:30.320
+
+
+
+438
+00:10:30.320 --> 00:10:32.470
+you are creating a system whose job is to
+
+439
+00:10:32.470 --> 00:10:32.480
+
+
+
+440
+00:10:32.480 --> 00:10:34.949
+read the content of the mail and classify it whether it is
+
+441
+00:10:34.949 --> 00:10:34.959
+
+
+
+442
+00:10:34.959 --> 00:10:38.470
+billing, technical or general.
+
+443
+00:10:38.470 --> 00:10:38.480
+
+
+
+444
+00:10:38.480 --> 00:10:41.430
+And if mistakes are being made in this then
+
+445
+00:10:41.430 --> 00:10:41.440
+
+
+
+446
+00:10:41.440 --> 00:10:43.269
+where is the scope of improvement?  What
+
+447
+00:10:43.269 --> 00:10:43.279
+
+
+
+448
+00:10:43.279 --> 00:10:46.550
+can you improve?  Where could the mistake be
+
+449
+00:10:46.550 --> 00:10:46.560
+
+
+
+450
+00:10:46.560 --> 00:10:50.230
+?  Do you understand my question?
+
+451
+00:10:50.230 --> 00:10:50.240
+
+
+
+452
+00:10:50.240 --> 00:10:53.190
+My question is that if you are building
+
+453
+00:10:53.190 --> 00:10:53.200
+
+
+
+454
+00:10:53.200 --> 00:10:55.190
+a system whose simple job is to
+
+455
+00:10:55.190 --> 00:10:55.200
+
+
+
+456
+00:10:55.200 --> 00:10:57.750
+read text and classify it and it is doing the wrong
+
+457
+00:10:57.750 --> 00:10:57.760
+
+
+
+458
+00:10:57.760 --> 00:11:00.550
+thing.  Only 80% is correct.  Making a mistake 20% of the time.
+
+459
+00:11:00.550 --> 00:11:00.560
+
+
+
+460
+00:11:00.560 --> 00:11:03.590
+So what is the thing that I will
+
+461
+00:11:03.590 --> 00:11:03.600
+
+
+
+462
+00:11:03.600 --> 00:11:06.230
+change.  Can I improve?
+
+463
+00:11:06.230 --> 00:11:06.240
+
+
+
+464
+00:11:06.240 --> 00:11:07.990
+You can fix multiple things.  Let me
+
+465
+00:11:07.990 --> 00:11:08.000
+
+
+
+466
+00:11:08.000 --> 00:11:10.630
+tell you.  First of all you
+
+467
+00:11:10.630 --> 00:11:10.640
+
+
+
+468
+00:11:10.640 --> 00:11:13.190
+can fix your system prep.  It is possible that your
+
+469
+00:11:13.190 --> 00:11:13.200
+
+
+
+470
+00:11:13.200 --> 00:11:15.670
+system part is defined in such a way that
+
+471
+00:11:15.670 --> 00:11:15.680
+
+
+
+472
+00:11:15.680 --> 00:11:17.910
+it is getting confused between billing and technical.
+
+473
+00:11:17.910 --> 00:11:17.920
+
+
+
+474
+00:11:17.920 --> 00:11:19.990
+That could be one possible option.   The
+
+475
+00:11:19.990 --> 00:11:20.000
+
+
+
+476
+00:11:20.000 --> 00:11:22.230
+second possible option is that the model you are
+
+477
+00:11:22.230 --> 00:11:22.240
+
+
+
+478
+00:11:22.240 --> 00:11:25.350
+using, the LLM you are using, is
+
+479
+00:11:25.350 --> 00:11:25.360
+
+
+
+480
+00:11:25.360 --> 00:11:28.069
+not able to do it.  You
+
+481
+00:11:28.069 --> 00:11:28.079
+
+
+
+482
+00:11:28.079 --> 00:11:29.910
+took a model with low parameters, an open source model
+
+483
+00:11:29.910 --> 00:11:29.920
+
+
+
+484
+00:11:29.920 --> 00:11:32.550
+and it is not working.  So there could be any such
+
+485
+00:11:32.550 --> 00:11:32.560
+
+
+
+486
+00:11:32.560 --> 00:11:34.150
+reasons.  There
+
+487
+00:11:34.150 --> 00:11:34.160
+
+
+
+488
+00:11:34.160 --> 00:11:35.910
+is not much scope for improvement here.
+
+489
+00:11:35.910 --> 00:11:35.920
+
+
+
+490
+00:11:35.920 --> 00:11:38.389
+But let's prepare the system.
+
+491
+00:11:38.389 --> 00:11:38.399
+
+
+
+492
+00:11:38.399 --> 00:11:41.829
+Changing the model is one more thing.  Whatever it is,
+
+493
+00:11:41.829 --> 00:11:41.839
+
+
+
+494
+00:11:41.839 --> 00:11:44.470
+what will you do?  You will analyze your system.
+
+495
+00:11:44.470 --> 00:11:44.480
+
+
+
+496
+00:11:44.480 --> 00:11:47.269
+You have received the result of your evaluation.
+
+497
+00:11:47.269 --> 00:11:47.279
+
+
+
+498
+00:11:47.279 --> 00:11:49.110
+80% accuracy Your manager
+
+499
+00:11:49.110 --> 00:11:49.120
+
+
+
+500
+00:11:49.120 --> 00:11:50.949
+told you to improve brother, what are you doing?  So
+
+501
+00:11:50.949 --> 00:11:50.959
+
+
+
+502
+00:11:50.959 --> 00:11:53.350
+now you're going to go and tweak the print or
+
+503
+00:11:53.350 --> 00:11:53.360
+
+
+
+504
+00:11:53.360 --> 00:11:55.430
+change the model.  And what do you do
+
+505
+00:11:55.430 --> 00:11:55.440
+
+
+
+506
+00:11:55.440 --> 00:11:57.430
+?  Basically you improve your system.  There should
+
+507
+00:11:57.430 --> 00:11:57.440
+
+
+
+508
+00:11:57.440 --> 00:11:58.870
+not be a model here.   There should be a
+
+509
+00:11:58.870 --> 00:11:58.880
+
+
+
+510
+00:11:58.880 --> 00:12:00.389
+pay system here.  You try to
+
+511
+00:12:00.389 --> 00:12:00.399
+
+
+
+512
+00:12:00.399 --> 00:12:02.790
+improve the system.  And
+
+513
+00:12:02.790 --> 00:12:02.800
+
+
+
+514
+00:12:02.800 --> 00:12:04.630
+just after improving the system, what is the next thing to do
+
+515
+00:12:04.630 --> 00:12:04.640
+
+
+
+516
+00:12:04.640 --> 00:12:07.910
+?  You trigger the evaluation again.  I
+
+517
+00:12:07.910 --> 00:12:07.920
+
+
+
+518
+00:12:07.920 --> 00:12:09.750
+guess you are getting the point here
+
+519
+00:12:09.750 --> 00:12:09.760
+
+
+
+520
+00:12:09.760 --> 00:12:11.030
+when I said a while ago
+
+521
+00:12:11.030 --> 00:12:11.040
+
+
+
+522
+00:12:11.040 --> 00:12:13.910
+that LLM ells are repeatable.  So this
+
+523
+00:12:13.910 --> 00:12:13.920
+
+
+
+524
+00:12:13.920 --> 00:12:15.829
+is what you are doing.  You have a golden
+
+525
+00:12:15.829 --> 00:12:15.839
+
+
+
+526
+00:12:15.839 --> 00:12:18.790
+data set.  What are you doing repeatedly?   You are
+
+527
+00:12:18.790 --> 00:12:18.800
+
+
+
+528
+00:12:18.800 --> 00:12:20.310
+making changes to your system.  This time I
+
+529
+00:12:20.310 --> 00:12:20.320
+
+
+
+530
+00:12:20.320 --> 00:12:22.230
+came after changing my practice.  When I ran it again on the data set, I
+
+531
+00:12:22.230 --> 00:12:22.240
+
+
+
+532
+00:12:22.240 --> 00:12:24.550
+found that the accuracy had increased to 90%.
+
+533
+00:12:24.550 --> 00:12:24.560
+
+
+
+534
+00:12:24.560 --> 00:12:26.790
+Your manager said you should still
+
+535
+00:12:26.790 --> 00:12:26.800
+
+
+
+536
+00:12:26.800 --> 00:12:28.949
+improve further.  Now this time you are gone.  You said
+
+537
+00:12:28.949 --> 00:12:28.959
+
+
+
+538
+00:12:28.959 --> 00:12:30.389
+remove it, I don't think much.   Let's
+
+539
+00:12:30.389 --> 00:12:30.399
+
+
+
+540
+00:12:30.399 --> 00:12:32.069
+change the LLM.  They
+
+541
+00:12:32.069 --> 00:12:32.079
+
+
+
+542
+00:12:32.079 --> 00:12:34.069
+put the heavy LLM.
+
+543
+00:12:34.069 --> 00:12:34.079
+
+
+
+544
+00:12:34.079 --> 00:12:35.910
+Applied heavy LLM.  The evaluation was run again on the same data set.  It
+
+545
+00:12:35.910 --> 00:12:35.920
+
+
+
+546
+00:12:35.920 --> 00:12:38.949
+reached 95%.  Now your
+
+547
+00:12:38.949 --> 00:12:38.959
+
+
+
+548
+00:12:38.959 --> 00:12:41.670
+manager is happy.  So now you will stop it.
+
+549
+00:12:41.670 --> 00:12:41.680
+
+
+
+550
+00:12:41.680 --> 00:12:44.230
+So basically you iterate in this step.  The data
+
+551
+00:12:44.230 --> 00:12:44.240
+
+
+
+552
+00:12:44.240 --> 00:12:47.030
+set has been created.  Took the model, ran it on the data set
+
+553
+00:12:47.030 --> 00:12:47.040
+
+
+
+554
+00:12:47.040 --> 00:12:49.190
+, got the results, evaluated it,
+
+555
+00:12:49.190 --> 00:12:49.200
+
+
+
+556
+00:12:49.200 --> 00:12:51.430
+analyzed it, made improvements, and
+
+557
+00:12:51.430 --> 00:12:51.440
+
+
+
+558
+00:12:51.440 --> 00:12:53.190
+continued doing this in a circle.  Kept working in a loop.
+
+559
+00:12:53.190 --> 00:12:53.200
+
+
+
+560
+00:12:53.200 --> 00:12:55.430
+Eventually you reach a place where
+
+561
+00:12:55.430 --> 00:12:55.440
+
+
+
+562
+00:12:55.440 --> 00:12:58.069
+you feel that now my system is
+
+563
+00:12:58.069 --> 00:12:58.079
+
+
+
+564
+00:12:58.079 --> 00:13:00.150
+worth deploying.  I can now deploy this.
+
+565
+00:13:00.150 --> 00:13:00.160
+
+
+
+566
+00:13:00.160 --> 00:13:02.870
+So then what you do is you
+
+567
+00:13:02.870 --> 00:13:02.880
+
+
+
+568
+00:13:02.880 --> 00:13:06.069
+actually go on and deploy your system
+
+569
+00:13:06.069 --> 00:13:06.079
+
+
+
+570
+00:13:06.079 --> 00:13:08.870
+online.  But even after deployment, your
+
+571
+00:13:08.870 --> 00:13:08.880
+
+
+
+572
+00:13:08.880 --> 00:13:10.710
+work is not over.  What is your work there
+
+573
+00:13:10.710 --> 00:13:10.720
+
+
+
+574
+00:13:10.720 --> 00:13:13.590
+?  You start monitoring.
+
+575
+00:13:13.590 --> 00:13:13.600
+
+
+
+576
+00:13:13.600 --> 00:13:16.069
+Without monitoring, the system can also fail online.  So
+
+577
+00:13:16.069 --> 00:13:16.079
+
+
+
+578
+00:13:16.079 --> 00:13:18.069
+you
+
+579
+00:13:18.069 --> 00:13:18.079
+
+
+
+580
+00:13:18.079 --> 00:13:20.389
+monitor it consistently.  And in monitoring you have to
+
+581
+00:13:20.389 --> 00:13:20.399
+
+
+
+582
+00:13:20.399 --> 00:13:21.910
+see whether failures are happening in production or
+
+583
+00:13:21.910 --> 00:13:21.920
+
+
+
+584
+00:13:21.920 --> 00:13:24.389
+not.  Your system
+
+585
+00:13:24.389 --> 00:13:24.399
+
+
+
+586
+00:13:24.399 --> 00:13:27.269
+was 95% accurate on your test data set.
+
+587
+00:13:27.269 --> 00:13:27.279
+
+
+
+588
+00:13:27.279 --> 00:13:29.350
+But when he got new data
+
+589
+00:13:29.350 --> 00:13:29.360
+
+
+
+590
+00:13:29.360 --> 00:13:31.990
+of some customer, he started making mistakes there.
+
+591
+00:13:31.990 --> 00:13:32.000
+
+
+
+592
+00:13:32.000 --> 00:13:33.910
+So what do you do here now?  Here the
+
+593
+00:13:33.910 --> 00:13:33.920
+
+
+
+594
+00:13:33.920 --> 00:13:35.509
+first step is to identify the
+
+595
+00:13:35.509 --> 00:13:35.519
+
+
+
+596
+00:13:35.519 --> 00:13:37.190
+failures in your production.  A particular
+
+597
+00:13:37.190 --> 00:13:37.200
+
+
+
+598
+00:13:37.200 --> 00:13:38.949
+mail came, it should have been billing but
+
+599
+00:13:38.949 --> 00:13:38.959
+
+
+
+600
+00:13:38.959 --> 00:13:41.430
+it was technical and it was my mail, my model.
+
+601
+00:13:41.430 --> 00:13:41.440
+
+
+
+602
+00:13:41.440 --> 00:13:43.269
+So what should I do?  I will
+
+603
+00:13:43.269 --> 00:13:43.279
+
+
+
+604
+00:13:43.279 --> 00:13:45.990
+pick up the contents of that particular instance of that mail
+
+605
+00:13:45.990 --> 00:13:46.000
+
+
+
+606
+00:13:46.000 --> 00:13:49.670
+and add it to my data set.
+
+607
+00:13:49.670 --> 00:13:49.680
+
+
+
+608
+00:13:49.680 --> 00:13:52.310
+In my golden data set and
+
+609
+00:13:52.310 --> 00:13:52.320
+
+
+
+610
+00:13:52.320 --> 00:13:57.110
+then I'm going to do this whole step a
+
+611
+00:13:57.110 --> 00:13:57.120
+
+
+
+612
+00:13:57.120 --> 00:13:59.990
+restart again.  So what happens is that the
+
+613
+00:13:59.990 --> 00:14:00.000
+
+
+
+614
+00:14:00.000 --> 00:14:01.750
+mistakes that happen in production, the
+
+615
+00:14:01.750 --> 00:14:01.760
+
+
+
+616
+00:14:01.760 --> 00:14:03.590
+failures that happen in production,
+
+617
+00:14:03.590 --> 00:14:03.600
+
+
+
+618
+00:14:03.600 --> 00:14:07.030
+where do you put them?  Go back to your data
+
+619
+00:14:07.030 --> 00:14:07.040
+
+
+
+620
+00:14:07.040 --> 00:14:09.030
+set.  So in this way your golden
+
+621
+00:14:09.030 --> 00:14:09.040
+
+
+
+622
+00:14:09.040 --> 00:14:11.189
+data set becomes richer and
+
+623
+00:14:11.189 --> 00:14:11.199
+
+
+
+624
+00:14:11.199 --> 00:14:13.350
+you keep improving on the golden data set and keep
+
+625
+00:14:13.350 --> 00:14:13.360
+
+
+
+626
+00:14:13.360 --> 00:14:15.030
+deploying your model.
+
+627
+00:14:15.030 --> 00:14:15.040
+
+
+
+628
+00:14:15.040 --> 00:14:17.110
+So basically this is a proper
+
+629
+00:14:17.110 --> 00:14:17.120
+
+
+
+630
+00:14:17.120 --> 00:14:19.670
+big loop in which this entire
+
+631
+00:14:19.670 --> 00:14:19.680
+
+
+
+632
+00:14:19.680 --> 00:14:22.150
+evaluation goes on consistently.
+
+633
+00:14:22.150 --> 00:14:22.160
+
+
+
+634
+00:14:22.160 --> 00:14:24.150
+I have given a very simple example.  But
+
+635
+00:14:24.150 --> 00:14:24.160
+
+
+
+636
+00:14:24.160 --> 00:14:26.949
+you will see that this same flow applies to RAGs also.  The
+
+637
+00:14:26.949 --> 00:14:26.959
+
+
+
+638
+00:14:26.959 --> 00:14:29.670
+same
+
+639
+00:14:29.670 --> 00:14:29.680
+
+
+
+640
+00:14:29.680 --> 00:14:31.670
+applies to flow agents as well.  Is it clear?   The
+
+641
+00:14:31.670 --> 00:14:31.680
+
+
+
+642
+00:14:31.680 --> 00:14:34.389
+entire flow.  Define task and
+
+643
+00:14:34.389 --> 00:14:34.399
+
+
+
+644
+00:14:34.399 --> 00:14:37.030
+target Define a success criteria Build
+
+645
+00:14:37.030 --> 00:14:37.040
+
+
+
+646
+00:14:37.040 --> 00:14:41.269
+a data set Define an evaluation method Run
+
+647
+00:14:41.269 --> 00:14:41.279
+
+
+
+648
+00:14:41.279 --> 00:14:43.670
+the model Evaluate the results Analyze the
+
+649
+00:14:43.670 --> 00:14:43.680
+
+
+
+650
+00:14:43.680 --> 00:14:46.310
+results Improve the model Iterate When you are satisfied
+
+651
+00:14:46.310 --> 00:14:46.320
+
+
+
+652
+00:14:46.320 --> 00:14:49.269
+Deploy monitor the error Make the
+
+653
+00:14:49.269 --> 00:14:49.279
+
+
+
+654
+00:14:49.279 --> 00:14:51.430
+error
+
+655
+00:14:51.430 --> 00:14:51.440
+
+
+
+656
+00:14:51.440 --> 00:14:54.389
+part of the data set Evaluate again
+
+657
+00:14:54.389 --> 00:14:54.399
+
+
+
+658
+00:14:54.399 --> 00:14:57.189
+And you keep doing this for ever as long as your
+
+659
+00:14:57.189 --> 00:14:57.199
+
+
+
+660
+00:14:57.199 --> 00:14:59.670
+system is in deployment You keep doing this
+
+661
+00:14:59.670 --> 00:14:59.680
+
+
+
+662
+00:14:59.680 --> 00:15:02.230
+And that is how you build
+
+663
+00:15:02.230 --> 00:15:02.240
+
+
+
+664
+00:15:02.240 --> 00:15:04.949
+Reliable Bubble LLM based applications Who will decide whether
+
+665
+00:15:04.949 --> 00:15:04.959
+
+
+
+666
+00:15:04.959 --> 00:15:06.949
+the output is wrong
+
+667
+00:15:06.949 --> 00:15:06.959
+
+
+
+668
+00:15:06.959 --> 00:15:09.910
+during the monitoring process?  A good question, actually
+
+669
+00:15:09.910 --> 00:15:09.920
+
+
+
+670
+00:15:09.920 --> 00:15:14.069
+this will happen if suppose
+
+671
+00:15:14.069 --> 00:15:14.079
+
+
+
+672
+00:15:14.079 --> 00:15:17.189
+I am a customer.  I sent an
+
+673
+00:15:17.189 --> 00:15:17.199
+
+
+
+674
+00:15:17.199 --> 00:15:19.990
+email to them and essentially it was a billing
+
+675
+00:15:19.990 --> 00:15:20.000
+
+
+
+676
+00:15:20.000 --> 00:15:22.470
+issue but I was redirected to the
+
+677
+00:15:22.470 --> 00:15:22.480
+
+
+
+678
+00:15:22.480 --> 00:15:24.470
+technical team.  The technical team
+
+679
+00:15:24.470 --> 00:15:24.480
+
+
+
+680
+00:15:24.480 --> 00:15:26.710
+followed up.  So I told the technical team
+
+681
+00:15:26.710 --> 00:15:26.720
+
+
+
+682
+00:15:26.720 --> 00:15:28.389
+that I don't care about you.  I am
+
+683
+00:15:28.389 --> 00:15:28.399
+
+
+
+684
+00:15:28.399 --> 00:15:30.550
+concerned with billing.  So here a
+
+685
+00:15:30.550 --> 00:15:30.560
+
+
+
+686
+00:15:30.560 --> 00:15:32.790
+process will be set up that the technical team will go and
+
+687
+00:15:32.790 --> 00:15:32.800
+
+
+
+688
+00:15:32.800 --> 00:15:35.030
+flag this case that wrong
+
+689
+00:15:35.030 --> 00:15:35.040
+
+
+
+690
+00:15:35.040 --> 00:15:37.350
+information was sent to us.  So it will keep getting added to the data set.
+
+691
+00:15:37.350 --> 00:15:37.360
+
+
+
+692
+00:15:37.360 --> 00:15:39.670
+So each monitoring
+
+693
+00:15:39.670 --> 00:15:39.680
+
+
+
+694
+00:15:39.680 --> 00:15:41.590
+system is in place there.  Well,
+
+695
+00:15:41.590 --> 00:15:41.600
+
+
+
+696
+00:15:41.600 --> 00:15:43.509
+here I
+
+697
+00:15:43.509 --> 00:15:43.519
+
+
+
+698
+00:15:43.519 --> 00:15:45.910
+forgot to tell you one more important thing.  Read this line guys.  This is
+
+699
+00:15:45.910 --> 00:15:45.920
+
+
+
+700
+00:15:45.920 --> 00:15:48.550
+a variant line.  One LLM based
+
+701
+00:15:48.550 --> 00:15:48.560
+
+
+
+702
+00:15:48.560 --> 00:15:50.230
+application
+
+703
+00:15:50.230 --> 00:15:50.240
+
+
+
+704
+00:15:50.240 --> 00:15:55.110
+may have or might have several LLM equivalents.
+
+705
+00:15:55.110 --> 00:15:55.120
+
+
+
+706
+00:15:55.120 --> 00:15:57.670
+So it may happen that
+
+707
+00:15:57.670 --> 00:15:57.680
+
+
+
+708
+00:15:57.680 --> 00:16:00.710
+you have created one RAG application but
+
+709
+00:16:00.710 --> 00:16:00.720
+
+
+
+710
+00:16:00.720 --> 00:16:03.829
+you are running multiple evaluations on that one RAG application.
+
+711
+00:16:03.829 --> 00:16:03.839
+
+
+
+712
+00:16:03.839 --> 00:16:05.910
+Like this was a single
+
+713
+00:16:05.910 --> 00:16:05.920
+
+
+
+714
+00:16:05.920 --> 00:16:08.389
+evaluation, but it is possible that
+
+715
+00:16:08.389 --> 00:16:08.399
+
+
+
+716
+00:16:08.399 --> 00:16:11.189
+you
+
+717
+00:16:11.189 --> 00:16:11.199
+
+
+
+718
+00:16:11.199 --> 00:16:14.389
+run multiple evaluations on a single LLM application.  For example,
+
+719
+00:16:14.389 --> 00:16:14.399
+
+
+
+720
+00:16:14.399 --> 00:16:17.269
+in RAG you are running an evaluation to
+
+721
+00:16:17.269 --> 00:16:17.279
+
+
+
+722
+00:16:17.279 --> 00:16:20.949
+test the performance of Retriever A.
+
+723
+00:16:20.949 --> 00:16:20.959
+
+
+
+724
+00:16:20.959 --> 00:16:23.829
+Running a separate evaluation.
+
+725
+00:16:23.829 --> 00:16:26.470
+
+
+
+726
+00:16:26.470 --> 00:16:26.480
+
+
+
+727
+00:16:26.480 --> 00:16:29.590
+To check the performance of the embedding model.  A different eval you are running.
+
+728
+00:16:29.590 --> 00:16:29.600
+
+
+
+729
+00:16:29.600 --> 00:16:32.150
+To test the entire RAG work flow.
+
+730
+00:16:32.150 --> 00:16:32.160
+
+
+
+731
+00:16:32.160 --> 00:16:36.230
+A separate A is running your eval to
+
+732
+00:16:36.230 --> 00:16:36.240
+
+
+
+733
+00:16:36.240 --> 00:16:38.230
+check the latency of the entire system.  So what
+
+734
+00:16:38.230 --> 00:16:38.240
+
+
+
+735
+00:16:38.240 --> 00:16:41.509
+generally happens is that an LLM based
+
+736
+00:16:41.509 --> 00:16:41.519
+
+
+
+737
+00:16:41.519 --> 00:16:44.870
+application always runs multiple equals.  In the example
+
+738
+00:16:44.870 --> 00:16:44.880
+
+
+
+739
+00:16:44.880 --> 00:16:46.870
+I just gave you,
+
+740
+00:16:46.870 --> 00:16:46.880
+
+
+
+741
+00:16:46.880 --> 00:16:48.629
+I told you about only one eval.
+
+742
+00:16:48.629 --> 00:16:48.639
+
+
+
+743
+00:16:48.639 --> 00:16:51.670
+But generally you will see
+
+744
+00:16:51.670 --> 00:16:51.680
+
+
+
+745
+00:16:51.680 --> 00:16:53.670
+that
+
+746
+00:16:53.670 --> 00:16:53.680
+
+
+
+747
+00:16:53.680 --> 00:16:55.910
+multiple evaluates are run on a single application.  This
+
+748
+00:16:55.910 --> 00:16:55.920
+
+
+
+749
+00:16:55.920 --> 00:16:57.990
+is a very important point.  You have to remember this.
+
+750
+00:16:57.990 --> 00:16:58.000
+
+
+
+751
+00:16:58.000 --> 00:17:01.040
+You will see the rest later.

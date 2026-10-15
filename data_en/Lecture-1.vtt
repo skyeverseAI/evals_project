@@ -1,0 +1,4302 @@
+WEBVTT
+
+1
+00:00:00.080 --> 00:00:02.470
+Hi Guys, My name is Nitish and welcome
+
+2
+00:00:02.470 --> 00:00:02.480
+
+
+
+3
+00:00:02.480 --> 00:00:05.030
+to my YouTube channel.  So, if you are a
+
+4
+00:00:05.030 --> 00:00:05.040
+
+
+
+5
+00:00:05.040 --> 00:00:07.269
+regular follower of this channel, then you might
+
+6
+00:00:07.269 --> 00:00:07.279
+
+
+
+7
+00:00:07.279 --> 00:00:10.950
+know that for the last one and a half years, we have been
+
+8
+00:00:10.950 --> 00:00:10.960
+
+
+
+9
+00:00:10.960 --> 00:00:13.430
+targeting this particular job role a lot on
+
+10
+00:00:13.430 --> 00:00:13.440
+
+
+
+11
+00:00:13.440 --> 00:00:15.990
+Campus X.  The name of this job role
+
+12
+00:00:15.990 --> 00:00:16.000
+
+
+
+13
+00:00:16.000 --> 00:00:19.189
+is AI Engineer.  So, who is an AI engineer
+
+14
+00:00:19.189 --> 00:00:19.199
+
+
+
+15
+00:00:19.199 --> 00:00:20.790
+?  Here I have written a definition.
+
+16
+00:00:20.790 --> 00:00:20.800
+
+
+
+17
+00:00:20.800 --> 00:00:23.830
+An AI engineer is someone who builds
+
+18
+00:00:23.830 --> 00:00:23.840
+
+
+
+19
+00:00:23.840 --> 00:00:26.070
+applications and products on top of
+
+20
+00:00:26.070 --> 00:00:26.080
+
+
+
+21
+00:00:26.080 --> 00:00:28.630
+foundation models.  Foundation Models means you
+
+22
+00:00:28.630 --> 00:00:28.640
+
+
+
+23
+00:00:28.640 --> 00:00:31.269
+can say LLMs.  So basically, a
+
+24
+00:00:31.269 --> 00:00:31.279
+
+
+
+25
+00:00:31.279 --> 00:00:33.750
+person who builds applications using LLMs is
+
+26
+00:00:33.750 --> 00:00:35.830
+
+
+
+27
+00:00:35.830 --> 00:00:35.840
+
+
+
+28
+00:00:35.840 --> 00:00:38.709
+called an AI engineer.  At Campus X,
+
+29
+00:00:38.709 --> 00:00:38.719
+
+
+
+30
+00:00:38.719 --> 00:00:40.709
+we feel that this particular job
+
+31
+00:00:40.709 --> 00:00:40.719
+
+
+
+32
+00:00:40.719 --> 00:00:43.750
+profile is going to be very popular going forward
+
+33
+00:00:43.750 --> 00:00:43.760
+
+
+
+34
+00:00:43.760 --> 00:00:46.229
+and there will be a lot of
+
+35
+00:00:46.229 --> 00:00:46.239
+
+
+
+36
+00:00:46.239 --> 00:00:48.630
+jobs coming up in the future.  And that is why for the
+
+37
+00:00:48.630 --> 00:00:48.640
+
+
+
+38
+00:00:48.640 --> 00:00:51.110
+last one and a half years we have been trying to provide you as much preparation as possible
+
+39
+00:00:51.110 --> 00:00:51.120
+
+
+
+40
+00:00:51.120 --> 00:00:52.950
+around this job profile.
+
+41
+00:00:52.950 --> 00:00:55.830
+
+
+
+42
+00:00:55.830 --> 00:00:55.840
+
+
+
+43
+00:00:55.840 --> 00:00:57.990
+So if you
+
+44
+00:00:57.990 --> 00:00:58.000
+
+
+
+45
+00:00:58.000 --> 00:01:00.069
+analyze our videos of last one and a half year,
+
+46
+00:01:00.069 --> 00:01:00.079
+
+
+
+47
+00:01:00.079 --> 00:01:03.029
+you will see that we have
+
+48
+00:01:03.029 --> 00:01:03.039
+
+
+
+49
+00:01:03.039 --> 00:01:05.670
+covered many related topics such as language
+
+50
+00:01:05.670 --> 00:01:05.680
+
+
+
+51
+00:01:05.680 --> 00:01:07.270
+with the
+
+52
+00:01:07.270 --> 00:01:07.280
+
+
+
+53
+00:01:07.280 --> 00:01:09.109
+help of which you
+
+54
+00:01:09.109 --> 00:01:09.119
+
+
+
+55
+00:01:09.119 --> 00:01:12.870
+can make basic LLM applications.  We have taught you how to build RAG
+
+56
+00:01:12.870 --> 00:01:12.880
+
+
+
+57
+00:01:12.880 --> 00:01:15.190
+Chatbots or RAG based applications.
+
+58
+00:01:15.190 --> 00:01:15.200
+
+
+
+59
+00:01:15.200 --> 00:01:18.950
+We
+
+60
+00:01:18.950 --> 00:01:18.960
+
+
+
+61
+00:01:18.960 --> 00:01:21.429
+taught you how to work with agents.  We
+
+62
+00:01:21.429 --> 00:01:21.439
+
+
+
+63
+00:01:21.439 --> 00:01:25.830
+taught you different frameworks like such as,
+
+64
+00:01:25.830 --> 00:01:25.840
+
+
+
+65
+00:01:25.840 --> 00:01:29.190
+Crew AI, Agno
+
+66
+00:01:29.190 --> 00:01:29.200
+
+
+
+67
+00:01:29.200 --> 00:01:32.630
+and many more.  Then if we talk about it,
+
+68
+00:01:32.630 --> 00:01:32.640
+
+
+
+69
+00:01:32.640 --> 00:01:35.350
+we have also given you a little bit of flavor of LLMOps.
+
+70
+00:01:35.350 --> 00:01:35.360
+
+
+
+71
+00:01:35.360 --> 00:01:38.710
+Where we
+
+72
+00:01:38.710 --> 00:01:38.720
+
+
+
+73
+00:01:38.720 --> 00:01:42.230
+taught you a tool like LangSmith.
+
+74
+00:01:42.230 --> 00:01:42.240
+
+
+
+75
+00:01:42.240 --> 00:01:44.950
+We have also released a course on Prompt Engineering.
+
+76
+00:01:44.950 --> 00:01:44.960
+
+
+
+77
+00:01:44.960 --> 00:01:48.630
+And apart from this, we are
+
+78
+00:01:48.630 --> 00:01:48.640
+
+
+
+79
+00:01:48.640 --> 00:01:51.190
+also teaching you many no code tools.   With the
+
+80
+00:01:51.190 --> 00:01:51.200
+
+
+
+81
+00:01:51.200 --> 00:01:53.350
+help of which you can create
+
+82
+00:01:53.350 --> 00:01:53.360
+
+
+
+83
+00:01:53.360 --> 00:01:55.350
+LLM based applications without even writing a single line of code.
+
+84
+00:01:55.350 --> 00:01:55.360
+
+
+
+85
+00:01:55.360 --> 00:01:58.069
+True edge n at
+
+86
+00:01:58.069 --> 00:01:58.079
+
+
+
+87
+00:01:58.079 --> 00:01:59.429
+n.
+
+88
+00:01:59.429 --> 00:01:59.439
+
+
+
+89
+00:01:59.439 --> 00:02:02.389
+So going forward, our goal is to
+
+90
+00:02:02.389 --> 00:02:05.350
+
+
+
+91
+00:02:05.350 --> 00:02:07.670
+
+
+
+92
+00:02:07.670 --> 00:02:07.680
+
+
+
+93
+00:02:07.680 --> 00:02:11.190
+teach you everything that you need to study to crack this particular job profile.
+
+94
+00:02:11.190 --> 00:02:11.200
+
+
+
+95
+00:02:11.200 --> 00:02:13.990
+Now if we talk about what we are going to do going forward, let
+
+96
+00:02:13.990 --> 00:02:14.000
+
+
+
+97
+00:02:14.000 --> 00:02:17.350
+me tell you that.
+
+98
+00:02:17.350 --> 00:02:20.229
+
+
+
+99
+00:02:20.229 --> 00:02:20.239
+
+
+
+100
+00:02:20.239 --> 00:02:23.270
+If I give a summary about all the things that we have read till now, then these are
+
+101
+00:02:23.270 --> 00:02:23.280
+
+
+
+102
+00:02:23.280 --> 00:02:27.270
+very common things.  These are things
+
+103
+00:02:27.270 --> 00:02:27.280
+
+
+
+104
+00:02:27.280 --> 00:02:30.070
+that every person
+
+105
+00:02:30.070 --> 00:02:30.080
+
+
+
+106
+00:02:30.080 --> 00:02:32.949
+preparing for an AI engineering job role should read.  But now
+
+107
+00:02:32.949 --> 00:02:32.959
+
+
+
+108
+00:02:32.959 --> 00:02:35.270
+going forward what I want is that I want to
+
+109
+00:02:35.270 --> 00:02:35.280
+
+
+
+110
+00:02:35.280 --> 00:02:38.390
+teach you some things which are
+
+111
+00:02:38.390 --> 00:02:38.400
+
+
+
+112
+00:02:38.400 --> 00:02:42.630
+not that common but are very important.
+
+113
+00:02:42.630 --> 00:02:42.640
+
+
+
+114
+00:02:42.640 --> 00:02:45.270
+And we are starting one of those things today.
+
+115
+00:02:45.270 --> 00:02:45.280
+
+
+
+116
+00:02:45.280 --> 00:02:49.750
+And the name of this new topic or this new
+
+117
+00:02:49.750 --> 00:02:49.760
+
+
+
+118
+00:02:49.760 --> 00:02:53.110
+playlist is LLM Evals or
+
+119
+00:02:53.110 --> 00:02:53.120
+
+
+
+120
+00:02:53.120 --> 00:02:56.710
+LLM Evaluations.  In simple words,
+
+121
+00:02:56.710 --> 00:02:56.720
+
+
+
+122
+00:02:56.720 --> 00:02:58.949
+in this playlist I will teach you
+
+123
+00:02:58.949 --> 00:02:58.959
+
+
+
+124
+00:02:58.959 --> 00:03:01.670
+how to evaluate your LLM
+
+125
+00:03:01.670 --> 00:03:01.680
+
+
+
+126
+00:03:01.680 --> 00:03:04.869
+applications,
+
+127
+00:03:04.869 --> 00:03:04.879
+
+
+
+128
+00:03:04.879 --> 00:03:07.509
+decide whether it should be
+
+129
+00:03:07.509 --> 00:03:07.519
+
+
+
+130
+00:03:07.519 --> 00:03:10.869
+launched in production or not.
+
+131
+00:03:10.869 --> 00:03:10.879
+
+
+
+132
+00:03:10.879 --> 00:03:12.949
+Because till now you have only learned how to
+
+133
+00:03:12.949 --> 00:03:12.959
+
+
+
+134
+00:03:12.959 --> 00:03:15.270
+make LLM based applications.
+
+135
+00:03:15.270 --> 00:03:15.280
+
+
+
+136
+00:03:15.280 --> 00:03:18.309
+But you have
+
+137
+00:03:18.309 --> 00:03:18.319
+
+
+
+138
+00:03:18.319 --> 00:03:21.509
+not yet learnt to evaluate it.  And this topic is
+
+139
+00:03:21.509 --> 00:03:21.519
+
+
+
+140
+00:03:21.519 --> 00:03:23.910
+very important.  You must know how to work on this in the industry.
+
+141
+00:03:23.910 --> 00:03:27.030
+
+
+
+142
+00:03:27.030 --> 00:03:27.040
+
+
+
+143
+00:03:27.040 --> 00:03:29.350
+In fact, if you ever
+
+144
+00:03:29.350 --> 00:03:29.360
+
+
+
+145
+00:03:29.360 --> 00:03:31.750
+appear for an interview for a Gen AI profile, there is a
+
+146
+00:03:31.750 --> 00:03:31.760
+
+
+
+147
+00:03:31.760 --> 00:03:34.070
+good chance that one question you will always be
+
+148
+00:03:34.070 --> 00:03:34.080
+
+
+
+149
+00:03:34.080 --> 00:03:36.630
+asked is how do you evaluate your
+
+150
+00:03:36.630 --> 00:03:36.640
+
+
+
+151
+00:03:36.640 --> 00:03:39.430
+RAG application?  And how do you evaluate
+
+152
+00:03:39.430 --> 00:03:39.440
+
+
+
+153
+00:03:39.440 --> 00:03:42.309
+your agentic AI application?  In this playlist,
+
+154
+00:03:42.309 --> 00:03:42.319
+
+
+
+155
+00:03:42.319 --> 00:03:44.229
+we are going to answer exactly these questions.
+
+156
+00:03:44.229 --> 00:03:44.239
+
+
+
+157
+00:03:44.239 --> 00:03:46.949
+So if you
+
+158
+00:03:46.949 --> 00:03:46.959
+
+
+
+159
+00:03:46.959 --> 00:03:49.990
+read this playlist correctly, you will get
+
+160
+00:03:49.990 --> 00:03:50.000
+
+
+
+161
+00:03:50.000 --> 00:03:53.190
+two benefits.  The first advantage will be that
+
+162
+00:03:53.190 --> 00:03:53.200
+
+
+
+163
+00:03:53.200 --> 00:03:57.350
+you will get an edge over your competition.   There are
+
+164
+00:03:57.350 --> 00:03:57.360
+
+
+
+165
+00:03:57.360 --> 00:03:59.750
+many other people who
+
+166
+00:03:59.750 --> 00:03:59.760
+
+
+
+167
+00:03:59.760 --> 00:04:02.149
+want to become AI engineers along with you.  But
+
+168
+00:04:02.149 --> 00:04:02.159
+
+
+
+169
+00:04:02.159 --> 00:04:04.789
+very few of them study the topic of LLM Evaluation
+
+170
+00:04:04.789 --> 00:04:04.799
+
+
+
+171
+00:04:04.799 --> 00:04:07.270
+seriously.  A big reason for this is
+
+172
+00:04:07.270 --> 00:04:07.280
+
+
+
+173
+00:04:07.280 --> 00:04:10.630
+that currently there are very
+
+174
+00:04:10.630 --> 00:04:10.640
+
+
+
+175
+00:04:10.640 --> 00:04:13.830
+few good resources available on YouTube or online.  And the second
+
+176
+00:04:13.830 --> 00:04:13.840
+
+
+
+177
+00:04:13.840 --> 00:04:16.629
+benefit will be that your mind-
+
+178
+00:04:16.629 --> 00:04:16.639
+
+
+
+179
+00:04:16.639 --> 00:04:19.590
+set will change a little.   Till now
+
+180
+00:04:19.590 --> 00:04:19.600
+
+
+
+181
+00:04:19.600 --> 00:04:22.069
+you make LLM based applications
+
+182
+00:04:22.069 --> 00:04:22.079
+
+
+
+183
+00:04:22.079 --> 00:04:24.790
+on personal project level that
+
+184
+00:04:24.790 --> 00:04:24.800
+
+
+
+185
+00:04:24.800 --> 00:04:27.670
+I have to make it and show it to the interviewer.
+
+186
+00:04:27.670 --> 00:04:27.680
+
+
+
+187
+00:04:27.680 --> 00:04:30.550
+But when you read this particular topic then
+
+188
+00:04:30.550 --> 00:04:30.560
+
+
+
+189
+00:04:30.560 --> 00:04:33.189
+automatically you will start thinking that how
+
+190
+00:04:33.189 --> 00:04:33.199
+
+
+
+191
+00:04:33.199 --> 00:04:35.430
+my LLM based application can
+
+192
+00:04:35.430 --> 00:04:35.440
+
+
+
+193
+00:04:35.440 --> 00:04:38.070
+serve crores of people.  So this mindset
+
+194
+00:04:38.070 --> 00:04:38.080
+
+
+
+195
+00:04:38.080 --> 00:04:40.710
+of yours will shift
+
+196
+00:04:40.710 --> 00:04:40.720
+
+
+
+197
+00:04:40.720 --> 00:04:44.070
+after watching this playlist completely.  So today
+
+198
+00:04:44.070 --> 00:04:44.080
+
+
+
+199
+00:04:44.080 --> 00:04:47.030
+is the first video in this playlist and in this video
+
+200
+00:04:47.030 --> 00:04:47.040
+
+
+
+201
+00:04:47.040 --> 00:04:49.749
+I'm going to tell you just two things.   I am going to
+
+202
+00:04:49.749 --> 00:04:49.759
+
+
+
+203
+00:04:49.759 --> 00:04:54.230
+tell you.  The first thing is
+
+204
+00:04:54.230 --> 00:04:54.240
+
+
+
+205
+00:04:54.240 --> 00:04:58.469
+why is LLM Evals as a topic important?
+
+206
+00:04:58.469 --> 00:04:58.479
+
+
+
+207
+00:04:58.479 --> 00:05:00.550
+Why should we read?  I will convince you.
+
+208
+00:05:00.550 --> 00:05:00.560
+
+
+
+209
+00:05:00.560 --> 00:05:04.390
+Ok?  And secondly I will give you a
+
+210
+00:05:04.390 --> 00:05:04.400
+
+
+
+211
+00:05:04.400 --> 00:05:07.110
+detailed road map of
+
+212
+00:05:07.110 --> 00:05:07.120
+
+
+
+213
+00:05:07.120 --> 00:05:09.830
+exactly which topics we will touch upon in this playlist.
+
+214
+00:05:09.830 --> 00:05:09.840
+
+
+
+215
+00:05:09.840 --> 00:05:12.710
+Ok?  So that's the goal of today's video.
+
+216
+00:05:12.710 --> 00:05:12.720
+
+
+
+217
+00:05:12.720 --> 00:05:14.950
+I really hope you have
+
+218
+00:05:14.950 --> 00:05:14.960
+
+
+
+219
+00:05:14.960 --> 00:05:18.230
+understood the entire agenda so far.  Come on guys let's
+
+220
+00:05:18.230 --> 00:05:18.240
+
+
+
+221
+00:05:18.240 --> 00:05:20.550
+discuss now why the topic of LLM Evaluation
+
+222
+00:05:20.550 --> 00:05:20.560
+
+
+
+223
+00:05:20.560 --> 00:05:24.150
+is so important?  So
+
+224
+00:05:24.150 --> 00:05:24.160
+
+
+
+225
+00:05:24.160 --> 00:05:26.230
+I will start this whole discussion by
+
+226
+00:05:26.230 --> 00:05:26.240
+
+
+
+227
+00:05:26.240 --> 00:05:29.189
+asking a simple question.  The question is have
+
+228
+00:05:29.189 --> 00:05:29.199
+
+
+
+229
+00:05:29.199 --> 00:05:33.590
+you ever created any type of ERM
+
+230
+00:05:33.590 --> 00:05:33.600
+
+
+
+231
+00:05:33.600 --> 00:05:36.390
+based application?  Any basic
+
+232
+00:05:36.390 --> 00:05:36.400
+
+
+
+233
+00:05:36.400 --> 00:05:39.029
+chatbot or RAG chatbot or any
+
+234
+00:05:39.029 --> 00:05:39.039
+
+
+
+235
+00:05:39.039 --> 00:05:41.830
+basic agentic application will do.
+
+236
+00:05:41.830 --> 00:05:41.840
+
+
+
+237
+00:05:41.840 --> 00:05:44.710
+I'm pretty sure you would say yes
+
+238
+00:05:44.710 --> 00:05:44.720
+
+
+
+239
+00:05:44.720 --> 00:05:47.590
+we have created such applications.   Then I would ask
+
+240
+00:05:47.590 --> 00:05:47.600
+
+
+
+241
+00:05:47.600 --> 00:05:50.390
+a second question.  Have
+
+242
+00:05:50.390 --> 00:05:50.400
+
+
+
+243
+00:05:50.400 --> 00:05:53.029
+you evaluated those applications after creating them
+
+244
+00:05:53.029 --> 00:05:53.039
+
+
+
+245
+00:05:53.039 --> 00:05:56.070
+?  Now I know what will be your answer
+
+246
+00:05:56.070 --> 00:05:56.080
+
+
+
+247
+00:05:56.080 --> 00:06:00.390
+?  More than 50% of the audience will say
+
+248
+00:06:00.390 --> 00:06:00.400
+
+
+
+249
+00:06:00.400 --> 00:06:03.590
+that we have
+
+250
+00:06:03.590 --> 00:06:03.600
+
+
+
+251
+00:06:03.600 --> 00:06:06.469
+not properly evaluated this.  But yes, we tried asking questions.
+
+252
+00:06:06.469 --> 00:06:06.479
+
+
+
+253
+00:06:06.479 --> 00:06:09.430
+We felt that the answers were coming out correct.
+
+254
+00:06:09.430 --> 00:06:09.440
+
+
+
+255
+00:06:09.440 --> 00:06:12.070
+So we assumed that our project was completed
+
+256
+00:06:12.070 --> 00:06:12.080
+
+
+
+257
+00:06:12.080 --> 00:06:15.909
+properly.  Now this is the
+
+258
+00:06:15.909 --> 00:06:15.919
+
+
+
+259
+00:06:15.919 --> 00:06:18.469
+method of testing where you simply
+
+260
+00:06:18.469 --> 00:06:18.479
+
+
+
+261
+00:06:18.479 --> 00:06:20.230
+ask three-four questions that are
+
+262
+00:06:20.230 --> 00:06:20.240
+
+
+
+263
+00:06:20.240 --> 00:06:22.309
+coming to your mind.  It is given a term.
+
+264
+00:06:22.309 --> 00:06:22.319
+
+
+
+265
+00:06:22.319 --> 00:06:24.710
+This is called wipe
+
+266
+00:06:24.710 --> 00:06:24.720
+
+
+
+267
+00:06:24.720 --> 00:06:26.390
+testing.  Ok?  Ok?  Just like there is wipe
+
+268
+00:06:26.390 --> 00:06:26.400
+
+
+
+269
+00:06:26.400 --> 00:06:28.230
+coding, there is wipe testing.
+
+270
+00:06:28.230 --> 00:06:28.240
+
+
+
+271
+00:06:28.240 --> 00:06:30.150
+Look here I have written a definition of
+
+272
+00:06:30.150 --> 00:06:30.160
+
+
+
+273
+00:06:30.160 --> 00:06:32.870
+wipe testing.  So wipe
+
+274
+00:06:32.870 --> 00:06:32.880
+
+
+
+275
+00:06:32.880 --> 00:06:36.629
+testing basically means casually trying an
+
+276
+00:06:36.629 --> 00:06:36.639
+
+
+
+277
+00:06:36.639 --> 00:06:40.070
+LLM application with a few preps and
+
+278
+00:06:40.070 --> 00:06:40.080
+
+
+
+279
+00:06:40.080 --> 00:06:42.870
+judging it by feel.  So you are
+
+280
+00:06:42.870 --> 00:06:42.880
+
+
+
+281
+00:06:42.880 --> 00:06:45.350
+not applying any metric etc. here.  You are
+
+282
+00:06:45.350 --> 00:06:45.360
+
+
+
+283
+00:06:45.360 --> 00:06:47.430
+telling on the basis of simple feel whether the application is
+
+284
+00:06:47.430 --> 00:06:47.440
+
+
+
+285
+00:06:47.440 --> 00:06:49.830
+working properly or not.  So
+
+286
+00:06:49.830 --> 00:06:49.840
+
+
+
+287
+00:06:49.840 --> 00:06:52.469
+basically, I asked it five to 10
+
+288
+00:06:52.469 --> 00:06:52.479
+
+
+
+289
+00:06:52.479 --> 00:06:56.629
+questions.  The Answers Looked Good.  So I think it
+
+290
+00:06:56.629 --> 00:06:56.639
+
+
+
+291
+00:06:56.639 --> 00:06:59.510
+works.  This is the philosophy we use.
+
+292
+00:06:59.510 --> 00:06:59.520
+
+
+
+293
+00:06:59.520 --> 00:07:01.670
+Whenever we build any kind of
+
+294
+00:07:01.670 --> 00:07:01.680
+
+
+
+295
+00:07:01.680 --> 00:07:03.350
+personal project LLM based
+
+296
+00:07:03.350 --> 00:07:03.360
+
+
+
+297
+00:07:03.360 --> 00:07:06.230
+applications.  The problem is that this
+
+298
+00:07:06.230 --> 00:07:06.240
+
+
+
+299
+00:07:06.240 --> 00:07:09.189
+method of wipe testing is informal.   It
+
+300
+00:07:09.189 --> 00:07:09.199
+
+
+
+301
+00:07:09.199 --> 00:07:11.909
+is subjective.  And usually it's not
+
+302
+00:07:11.909 --> 00:07:11.919
+
+
+
+303
+00:07:11.919 --> 00:07:14.629
+repeatable.  It's not like when you create the next version of
+
+304
+00:07:14.629 --> 00:07:14.639
+
+
+
+305
+00:07:14.639 --> 00:07:16.950
+your project, you will be able to
+
+306
+00:07:16.950 --> 00:07:16.960
+
+
+
+307
+00:07:16.960 --> 00:07:19.830
+properly evaluate it in the same way using the same methodology.
+
+308
+00:07:19.830 --> 00:07:19.840
+
+
+
+309
+00:07:19.840 --> 00:07:22.950
+And this is the biggest flaw.  The
+
+310
+00:07:22.950 --> 00:07:22.960
+
+
+
+311
+00:07:22.960 --> 00:07:25.510
+biggest flaw of wipe testing is that it
+
+312
+00:07:25.510 --> 00:07:25.520
+
+
+
+313
+00:07:25.520 --> 00:07:28.150
+only works at the individual project level.
+
+314
+00:07:28.150 --> 00:07:28.160
+
+
+
+315
+00:07:28.160 --> 00:07:31.110
+If you have a
+
+316
+00:07:31.110 --> 00:07:31.120
+
+
+
+317
+00:07:31.120 --> 00:07:33.589
+production grade project, you
+
+318
+00:07:33.589 --> 00:07:33.599
+
+
+
+319
+00:07:33.599 --> 00:07:36.309
+cannot wipe test it and then present it to the users.
+
+320
+00:07:36.309 --> 00:07:36.319
+
+
+
+321
+00:07:36.319 --> 00:07:40.070
+If you keep it then a big scandal may happen.
+
+322
+00:07:40.070 --> 00:07:40.080
+
+
+
+323
+00:07:40.080 --> 00:07:42.469
+And this is what I want to reinforce in your mind.
+
+324
+00:07:42.469 --> 00:07:42.479
+
+
+
+325
+00:07:42.479 --> 00:07:45.189
+And so I'll
+
+326
+00:07:45.189 --> 00:07:45.199
+
+
+
+327
+00:07:45.199 --> 00:07:47.670
+tell you three case studies.  Three very
+
+328
+00:07:47.670 --> 00:07:47.680
+
+
+
+329
+00:07:47.680 --> 00:07:50.469
+famous case studies that have happened in the past.
+
+330
+00:07:50.469 --> 00:07:50.479
+
+
+
+331
+00:07:50.479 --> 00:07:53.110
+Where people made exactly this
+
+332
+00:07:53.110 --> 00:07:53.120
+
+
+
+333
+00:07:53.120 --> 00:07:55.830
+mistake.  Created LLM based application.
+
+334
+00:07:55.830 --> 00:07:55.840
+
+
+
+335
+00:07:55.840 --> 00:07:59.110
+Wipe tested it and deployed it.
+
+336
+00:07:59.110 --> 00:07:59.120
+
+
+
+337
+00:07:59.120 --> 00:08:02.230
+So let me tell you the first case study
+
+338
+00:08:02.230 --> 00:08:02.240
+
+
+
+339
+00:08:02.240 --> 00:08:05.430
+first story.  Not a story because this really happened.
+
+340
+00:08:05.430 --> 00:08:05.440
+
+
+
+341
+00:08:05.440 --> 00:08:09.110
+So this is an incident
+
+342
+00:08:09.110 --> 00:08:09.120
+
+
+
+343
+00:08:09.120 --> 00:08:14.070
+of Air Canada.  So there was this guy whose
+
+344
+00:08:14.070 --> 00:08:14.080
+
+
+
+345
+00:08:14.080 --> 00:08:16.710
+grandmother had died
+
+346
+00:08:16.710 --> 00:08:16.720
+
+
+
+347
+00:08:16.720 --> 00:08:20.390
+and he went to Air Canada's website
+
+348
+00:08:20.390 --> 00:08:20.400
+
+
+
+349
+00:08:20.400 --> 00:08:23.189
+and asked their chatbot, do
+
+350
+00:08:23.189 --> 00:08:23.199
+
+
+
+351
+00:08:23.199 --> 00:08:25.670
+you have a belief fare policy
+
+352
+00:08:25.670 --> 00:08:25.680
+
+
+
+353
+00:08:25.680 --> 00:08:28.230
+?  Belief fare means that if
+
+354
+00:08:28.230 --> 00:08:28.240
+
+
+
+355
+00:08:28.240 --> 00:08:31.270
+any of your relatives or close friends die,
+
+356
+00:08:31.270 --> 00:08:31.280
+
+
+
+357
+00:08:31.280 --> 00:08:33.909
+airlines offer you a discount.
+
+358
+00:08:33.909 --> 00:08:33.919
+
+
+
+359
+00:08:33.919 --> 00:08:37.190
+Because you have to book your tickets very quickly.
+
+360
+00:08:37.190 --> 00:08:37.200
+
+
+
+361
+00:08:37.200 --> 00:08:39.190
+And it's an emergency.   I don't know whether it happens
+
+362
+00:08:39.190 --> 00:08:39.200
+
+
+
+363
+00:08:39.200 --> 00:08:41.190
+in India or not but it happens
+
+364
+00:08:41.190 --> 00:08:41.200
+
+
+
+365
+00:08:41.200 --> 00:08:45.110
+outside.  So it asked the chatbot if
+
+366
+00:08:45.110 --> 00:08:45.120
+
+
+
+367
+00:08:45.120 --> 00:08:47.829
+I would get any discount?  Now
+
+368
+00:08:47.829 --> 00:08:47.839
+
+
+
+369
+00:08:47.839 --> 00:08:49.990
+what happened here was that the chatbot of Air Canada
+
+370
+00:08:49.990 --> 00:08:50.000
+
+
+
+371
+00:08:50.000 --> 00:08:53.590
+hallucinated.  What did he
+
+372
+00:08:53.590 --> 00:08:53.600
+
+
+
+373
+00:08:53.600 --> 00:08:56.310
+do?  He gave a wrong answer.  He
+
+374
+00:08:56.310 --> 00:08:56.320
+
+
+
+375
+00:08:56.320 --> 00:08:58.949
+told the user to book the ticket immediately by paying the full amount.
+
+376
+00:08:58.949 --> 00:08:58.959
+
+
+
+377
+00:08:58.959 --> 00:09:01.910
+Later we will refund your entire
+
+378
+00:09:01.910 --> 00:09:01.920
+
+
+
+379
+00:09:01.920 --> 00:09:04.790
+money.  But
+
+380
+00:09:04.790 --> 00:09:04.800
+
+
+
+381
+00:09:04.800 --> 00:09:09.269
+according to the actual policy, you will already
+
+382
+00:09:09.269 --> 00:09:09.279
+
+
+
+383
+00:09:09.279 --> 00:09:11.590
+get the discount.  There will be no refund later.
+
+384
+00:09:11.590 --> 00:09:11.600
+
+
+
+385
+00:09:11.600 --> 00:09:14.470
+This was the actual policy.  So the user did
+
+386
+00:09:14.470 --> 00:09:14.480
+
+
+
+387
+00:09:14.480 --> 00:09:16.870
+not know.  Based on the answer he received from the chatbot,
+
+388
+00:09:16.870 --> 00:09:16.880
+
+
+
+389
+00:09:16.880 --> 00:09:18.310
+he
+
+390
+00:09:18.310 --> 00:09:18.320
+
+
+
+391
+00:09:18.320 --> 00:09:21.269
+confidently booked the ticket.  And then
+
+392
+00:09:21.269 --> 00:09:21.279
+
+
+
+393
+00:09:21.279 --> 00:09:23.750
+later when he started asking for a refund, the
+
+394
+00:09:23.750 --> 00:09:23.760
+
+
+
+395
+00:09:23.760 --> 00:09:25.990
+customer representatives said that this is
+
+396
+00:09:25.990 --> 00:09:26.000
+
+
+
+397
+00:09:26.000 --> 00:09:28.310
+not possible.  Our policy
+
+398
+00:09:28.310 --> 00:09:28.320
+
+
+
+399
+00:09:28.320 --> 00:09:30.550
+says that you should avail the discount before booking the ticket.
+
+400
+00:09:30.550 --> 00:09:30.560
+
+
+
+401
+00:09:30.560 --> 00:09:33.110
+We will
+
+402
+00:09:33.110 --> 00:09:33.120
+
+
+
+403
+00:09:33.120 --> 00:09:36.150
+not refund any money to you later.  I guess this guy was
+
+404
+00:09:36.150 --> 00:09:36.160
+
+
+
+405
+00:09:36.160 --> 00:09:38.630
+already a little worried.  This brought
+
+406
+00:09:38.630 --> 00:09:38.640
+
+
+
+407
+00:09:38.640 --> 00:09:41.590
+Air Canada to court.
+
+408
+00:09:41.590 --> 00:09:41.600
+
+
+
+409
+00:09:41.600 --> 00:09:43.990
+Air Canada tried to defend itself in court.
+
+410
+00:09:43.990 --> 00:09:44.000
+
+
+
+411
+00:09:44.000 --> 00:09:47.509
+He told the judge that the
+
+412
+00:09:47.509 --> 00:09:47.519
+
+
+
+413
+00:09:47.519 --> 00:09:50.150
+chatbot that we have put on our website is
+
+414
+00:09:50.150 --> 00:09:50.160
+
+
+
+415
+00:09:50.160 --> 00:09:53.670
+a separate entity.  So whatever he is saying, the
+
+416
+00:09:53.670 --> 00:09:53.680
+
+
+
+417
+00:09:53.680 --> 00:09:56.070
+company will not
+
+418
+00:09:56.070 --> 00:09:56.080
+
+
+
+419
+00:09:56.080 --> 00:10:00.150
+take responsibility for it.  So the judge said that this does not happen.
+
+420
+00:10:00.150 --> 00:10:00.160
+
+
+
+421
+00:10:00.160 --> 00:10:03.110
+Just as your website
+
+422
+00:10:03.110 --> 00:10:03.120
+
+
+
+423
+00:10:03.120 --> 00:10:05.910
+is your property, the chatbot deployed on your website
+
+424
+00:10:05.910 --> 00:10:05.920
+
+
+
+425
+00:10:05.920 --> 00:10:08.630
+is also your property.  So whatever
+
+426
+00:10:08.630 --> 00:10:08.640
+
+
+
+427
+00:10:08.640 --> 00:10:12.070
+your chatbot says, you will have to take ownership of it.
+
+428
+00:10:12.070 --> 00:10:12.080
+
+
+
+429
+00:10:12.080 --> 00:10:14.790
+Which basically means that Air Canada
+
+430
+00:10:14.790 --> 00:10:14.800
+
+
+
+431
+00:10:14.800 --> 00:10:18.710
+lost the case and had to refund the entire amount to this customer.
+
+432
+00:10:18.710 --> 00:10:18.720
+
+
+
+433
+00:10:18.720 --> 00:10:21.670
+Now this was
+
+434
+00:10:21.670 --> 00:10:21.680
+
+
+
+435
+00:10:21.680 --> 00:10:25.190
+not a huge amount.  But still Air Canada was
+
+436
+00:10:25.190 --> 00:10:25.200
+
+
+
+437
+00:10:25.200 --> 00:10:28.630
+very insulted and
+
+438
+00:10:28.630 --> 00:10:28.640
+
+
+
+439
+00:10:28.640 --> 00:10:31.590
+got into the news for wrong reasons and that is not what any company would
+
+440
+00:10:31.590 --> 00:10:31.600
+
+
+
+441
+00:10:31.600 --> 00:10:34.710
+want.  Here the developers made the
+
+442
+00:10:34.710 --> 00:10:34.720
+
+
+
+443
+00:10:34.720 --> 00:10:37.829
+same mistake that without checking
+
+444
+00:10:37.829 --> 00:10:37.839
+
+
+
+445
+00:10:37.839 --> 00:10:40.310
+or evaluating the chatbot, they
+
+446
+00:10:40.310 --> 00:10:40.320
+
+
+
+447
+00:10:40.320 --> 00:10:42.790
+deployed it on the website.
+
+448
+00:10:42.790 --> 00:10:42.800
+
+
+
+449
+00:10:42.800 --> 00:10:45.590
+Due to which such a big incident happened.  Ok?
+
+450
+00:10:45.590 --> 00:10:45.600
+
+
+
+451
+00:10:45.600 --> 00:10:49.269
+So this is case study number one.  There
+
+452
+00:10:49.269 --> 00:10:49.279
+
+
+
+453
+00:10:49.279 --> 00:10:53.190
+is another similar case study.  This is a case study
+
+454
+00:10:53.190 --> 00:10:53.200
+
+
+
+455
+00:10:53.200 --> 00:10:55.990
+of Chevrolet.  Chevrolet is Chevrolet is American car
+
+456
+00:10:55.990 --> 00:10:56.000
+
+
+
+457
+00:10:56.000 --> 00:10:58.389
+company.  Their cars also came to India.
+
+458
+00:10:58.389 --> 00:10:58.399
+
+
+
+459
+00:10:58.399 --> 00:11:01.829
+So he was actually a dealer of these.
+
+460
+00:11:01.829 --> 00:11:01.839
+
+
+
+461
+00:11:01.839 --> 00:11:04.550
+Meaning, Chevrolet did not do this directly.
+
+462
+00:11:04.550 --> 00:11:04.560
+
+
+
+463
+00:11:04.560 --> 00:11:06.790
+He had a dealer.  That dealer
+
+464
+00:11:06.790 --> 00:11:06.800
+
+
+
+465
+00:11:06.800 --> 00:11:09.990
+created his own chatbot.  So that anyone can interact with that chatbot and
+
+466
+00:11:09.990 --> 00:11:10.000
+
+
+
+467
+00:11:10.000 --> 00:11:13.269
+get information.  So there was
+
+468
+00:11:13.269 --> 00:11:13.279
+
+
+
+469
+00:11:13.279 --> 00:11:16.949
+a guy there.  What did he do?  He
+
+470
+00:11:16.949 --> 00:11:19.269
+
+
+
+471
+00:11:19.269 --> 00:11:19.279
+
+
+
+472
+00:11:19.279 --> 00:11:21.590
+tried to jailbreak that chat bot a little bit.
+
+473
+00:11:21.590 --> 00:11:21.600
+
+
+
+474
+00:11:21.600 --> 00:11:24.710
+Basically, he tried to kind of emotionally
+
+475
+00:11:24.710 --> 00:11:24.720
+
+
+
+476
+00:11:24.720 --> 00:11:27.190
+convince the chatbot that
+
+477
+00:11:27.190 --> 00:11:27.200
+
+
+
+478
+00:11:27.200 --> 00:11:29.750
+going forward, whatever I say, you have to listen to me.
+
+479
+00:11:29.750 --> 00:11:29.760
+
+
+
+480
+00:11:29.760 --> 00:11:31.910
+You cannot deny me because I am
+
+481
+00:11:31.910 --> 00:11:31.920
+
+
+
+482
+00:11:31.920 --> 00:11:34.550
+your customer.  So the
+
+483
+00:11:34.550 --> 00:11:34.560
+
+
+
+484
+00:11:34.560 --> 00:11:38.389
+chatbot said okay.  Now this user asked, can
+
+485
+00:11:38.389 --> 00:11:38.399
+
+
+
+486
+00:11:38.399 --> 00:11:42.550
+you give me this particular car for $1
+
+487
+00:11:42.550 --> 00:11:42.560
+
+
+
+488
+00:11:42.560 --> 00:11:44.310
+?
+
+489
+00:11:44.310 --> 00:11:44.320
+
+
+
+490
+00:11:44.320 --> 00:11:48.710
+So since a jailbreak had happened with this chatbot,
+
+491
+00:11:48.710 --> 00:11:48.720
+
+
+
+492
+00:11:48.720 --> 00:11:50.710
+this chatbot agreed, not only agreed,
+
+493
+00:11:50.710 --> 00:11:50.720
+
+
+
+494
+00:11:50.720 --> 00:11:52.870
+it also gave a binding offer
+
+495
+00:11:52.870 --> 00:11:52.880
+
+
+
+496
+00:11:52.880 --> 00:11:55.190
+and all this was being documented because it was written
+
+497
+00:11:55.190 --> 00:11:55.200
+
+
+
+498
+00:11:55.200 --> 00:11:57.829
+and what this user did was he
+
+499
+00:11:57.829 --> 00:12:00.710
+
+
+
+500
+00:12:00.710 --> 00:12:00.720
+
+
+
+501
+00:12:00.720 --> 00:12:03.990
+took screenshots of this entire conversation and posted it on social media and again
+
+502
+00:12:03.990 --> 00:12:04.000
+
+
+
+503
+00:12:04.000 --> 00:12:07.430
+this entire dealership and the
+
+504
+00:12:07.430 --> 00:12:07.440
+
+
+
+505
+00:12:07.440 --> 00:12:11.350
+shed was insulted that how can you sell a car for $1,
+
+506
+00:12:11.350 --> 00:12:11.360
+
+
+
+507
+00:12:11.360 --> 00:12:13.670
+obviously they did
+
+508
+00:12:13.670 --> 00:12:13.680
+
+
+
+509
+00:12:13.680 --> 00:12:17.590
+not have to sell the car to them.  Because this thing
+
+510
+00:12:17.590 --> 00:12:17.600
+
+
+
+511
+00:12:17.600 --> 00:12:20.150
+was not possible.  But it was a big negative
+
+512
+00:12:20.150 --> 00:12:20.160
+
+
+
+513
+00:12:20.160 --> 00:12:23.269
+marketing.  Again, a situation that could have been avoided
+
+514
+00:12:23.269 --> 00:12:23.279
+
+
+
+515
+00:12:23.279 --> 00:12:26.470
+if these developers had properly evaluated their applications
+
+516
+00:12:26.470 --> 00:12:29.269
+
+
+
+517
+00:12:29.269 --> 00:12:29.279
+
+
+
+518
+00:12:29.279 --> 00:12:32.069
+before deploying them.  So this is the second case study.
+
+519
+00:12:32.069 --> 00:12:32.079
+
+
+
+520
+00:12:32.079 --> 00:12:34.470
+And the third one is also very interesting.
+
+521
+00:12:34.470 --> 00:12:34.480
+
+
+
+522
+00:12:34.480 --> 00:12:36.790
+A What happened in that there was this
+
+523
+00:12:36.790 --> 00:12:36.800
+
+
+
+524
+00:12:36.800 --> 00:12:39.910
+Colombian airline.  Ah,
+
+525
+00:12:39.910 --> 00:12:39.920
+
+
+
+526
+00:12:39.920 --> 00:12:43.190
+there was a passenger travelling and the
+
+527
+00:12:43.190 --> 00:12:43.200
+
+
+
+528
+00:12:43.200 --> 00:12:46.150
+air hostess has this container in
+
+529
+00:12:46.150 --> 00:12:46.160
+
+
+
+530
+00:12:46.160 --> 00:12:48.230
+which she carries all the food and
+
+531
+00:12:48.230 --> 00:12:48.240
+
+
+
+532
+00:12:48.240 --> 00:12:50.949
+beverages and moves them during the flight.
+
+533
+00:12:50.949 --> 00:12:50.959
+
+
+
+534
+00:12:50.959 --> 00:12:54.550
+This patient got injured by this container.
+
+535
+00:12:54.550 --> 00:12:54.560
+
+
+
+536
+00:12:54.560 --> 00:12:58.150
+So again, what did this patient, this passenger do
+
+537
+00:12:58.150 --> 00:12:58.160
+
+
+
+538
+00:12:58.160 --> 00:13:01.590
+?  This made it good.  A case was filed in the court.
+
+539
+00:13:01.590 --> 00:13:01.600
+
+
+
+540
+00:13:01.600 --> 00:13:06.310
+So what did the lawyer of this passenger do
+
+541
+00:13:06.310 --> 00:13:06.320
+
+
+
+542
+00:13:06.320 --> 00:13:08.949
+?  He thought that
+
+543
+00:13:08.949 --> 00:13:08.959
+
+
+
+544
+00:13:08.959 --> 00:13:11.829
+if any such incidents have happened in the past, I will
+
+545
+00:13:11.829 --> 00:13:11.839
+
+
+
+546
+00:13:11.839 --> 00:13:14.470
+find out about them and show their age
+
+547
+00:13:14.470 --> 00:13:14.480
+
+
+
+548
+00:13:14.480 --> 00:13:16.949
+proof in the court.  So that charge
+
+549
+00:13:16.949 --> 00:13:16.959
+
+
+
+550
+00:13:16.959 --> 00:13:19.110
+went to GPT.  He explained the situation and
+
+551
+00:13:19.110 --> 00:13:19.120
+
+
+
+552
+00:13:19.120 --> 00:13:21.030
+told the in-charge GPT that in the past, in
+
+553
+00:13:21.030 --> 00:13:21.040
+
+
+
+554
+00:13:21.040 --> 00:13:23.590
+cases where the
+
+555
+00:13:23.590 --> 00:13:23.600
+
+
+
+556
+00:13:23.600 --> 00:13:26.710
+passenger has suffered an injury due to the airline
+
+557
+00:13:26.710 --> 00:13:26.720
+
+
+
+558
+00:13:26.720 --> 00:13:29.750
+and the airline has had to pay money, please
+
+559
+00:13:29.750 --> 00:13:29.760
+
+
+
+560
+00:13:29.760 --> 00:13:33.030
+document that for me.  Now
+
+561
+00:13:33.030 --> 00:13:33.040
+
+
+
+562
+00:13:33.040 --> 00:13:35.670
+what ChatGPT did here was that
+
+563
+00:13:35.670 --> 00:13:35.680
+
+
+
+564
+00:13:35.680 --> 00:13:39.509
+it very confidently hallucinated and
+
+565
+00:13:39.509 --> 00:13:39.519
+
+
+
+566
+00:13:39.519 --> 00:13:41.829
+created new cases.  Not only cases were
+
+567
+00:13:41.829 --> 00:13:41.839
+
+
+
+568
+00:13:41.839 --> 00:13:43.990
+created.  He fabricated the specifics of the cases
+
+569
+00:13:43.990 --> 00:13:44.000
+
+
+
+570
+00:13:44.000 --> 00:13:47.750
+like name, date, everything.
+
+571
+00:13:47.750 --> 00:13:47.760
+
+
+
+572
+00:13:47.760 --> 00:13:50.710
+And he gave all this to this lawyer.
+
+573
+00:13:50.710 --> 00:13:50.720
+
+
+
+574
+00:13:50.720 --> 00:13:53.509
+And the lawyer also did not verify.
+
+575
+00:13:53.509 --> 00:13:53.519
+
+
+
+576
+00:13:53.519 --> 00:13:56.550
+He simply took this whole thing
+
+577
+00:13:56.550 --> 00:13:56.560
+
+
+
+578
+00:13:56.560 --> 00:14:00.389
+to court.  and placed it before the judge.  Judge:
+
+579
+00:14:00.389 --> 00:14:00.399
+
+
+
+580
+00:14:00.399 --> 00:14:04.230
+And when the opposition tried to verify all
+
+581
+00:14:04.230 --> 00:14:04.240
+
+
+
+582
+00:14:04.240 --> 00:14:06.790
+these cases, it was found that these cases do
+
+583
+00:14:06.790 --> 00:14:06.800
+
+
+
+584
+00:14:06.800 --> 00:14:09.670
+not exist and this was a big
+
+585
+00:14:09.670 --> 00:14:09.680
+
+
+
+586
+00:14:09.680 --> 00:14:13.509
+blunder.  So what the judge did was he fined this lawyer and
+
+587
+00:14:13.509 --> 00:14:13.519
+
+
+
+588
+00:14:13.519 --> 00:14:16.230
+his firm around $5,000,
+
+589
+00:14:16.230 --> 00:14:16.240
+
+
+
+590
+00:14:16.240 --> 00:14:20.150
+and they lost the case.
+
+591
+00:14:20.150 --> 00:14:20.160
+
+
+
+592
+00:14:20.160 --> 00:14:22.629
+This went viral on social media at the
+
+593
+00:14:22.629 --> 00:14:22.639
+
+
+
+594
+00:14:22.639 --> 00:14:26.310
+time, with the lawyer presenting fake case studies
+
+595
+00:14:26.310 --> 00:14:26.320
+
+
+
+596
+00:14:26.320 --> 00:14:29.509
+in court.  So again a
+
+597
+00:14:29.509 --> 00:14:29.519
+
+
+
+598
+00:14:29.519 --> 00:14:33.430
+situation where LLM based applications can
+
+599
+00:14:33.430 --> 00:14:33.440
+
+
+
+600
+00:14:33.440 --> 00:14:37.269
+rub you the wrong way.  So I
+
+601
+00:14:37.269 --> 00:14:37.279
+
+
+
+602
+00:14:37.279 --> 00:14:40.389
+really hope I was able to explain to you with the help of these three
+
+603
+00:14:40.389 --> 00:14:40.399
+
+
+
+604
+00:14:40.399 --> 00:14:43.269
+case studies
+
+605
+00:14:43.269 --> 00:14:43.279
+
+
+
+606
+00:14:43.279 --> 00:14:46.389
+how important it is to evaluate and then deploy LLMs.
+
+607
+00:14:46.389 --> 00:14:46.399
+
+
+
+608
+00:14:46.399 --> 00:14:48.629
+So if I ask you
+
+609
+00:14:48.629 --> 00:14:48.639
+
+
+
+610
+00:14:48.639 --> 00:14:50.790
+after sharing these three case studies, what did you
+
+611
+00:14:50.790 --> 00:14:50.800
+
+
+
+612
+00:14:50.800 --> 00:14:53.430
+learn?  So I guess the only thing that you have learned
+
+613
+00:14:53.430 --> 00:14:53.440
+
+
+
+614
+00:14:53.440 --> 00:14:57.750
+is that evaluation is super.
+
+615
+00:14:57.750 --> 00:14:57.760
+
+
+
+616
+00:14:57.760 --> 00:15:00.870
+Ok?  But here a question might be
+
+617
+00:15:00.870 --> 00:15:00.880
+
+
+
+618
+00:15:00.880 --> 00:15:02.310
+coming to your mind because it
+
+619
+00:15:02.310 --> 00:15:02.320
+
+
+
+620
+00:15:02.320 --> 00:15:04.870
+came to my mind too, if
+
+621
+00:15:04.870 --> 00:15:04.880
+
+
+
+622
+00:15:04.880 --> 00:15:08.710
+evaluating LLMs is so important then
+
+623
+00:15:08.710 --> 00:15:10.870
+
+
+
+624
+00:15:10.870 --> 00:15:10.880
+
+
+
+625
+00:15:10.880 --> 00:15:13.990
+why don't we all evaluate them after making LLM applications?  There
+
+626
+00:15:13.990 --> 00:15:14.000
+
+
+
+627
+00:15:14.000 --> 00:15:17.430
+is a very simple answer to that.  The answer is that it is
+
+628
+00:15:17.430 --> 00:15:17.440
+
+
+
+629
+00:15:17.440 --> 00:15:21.829
+not that straight forward.  Evaluating LLM based
+
+630
+00:15:21.829 --> 00:15:21.839
+
+
+
+631
+00:15:21.839 --> 00:15:24.710
+applications is not easy.
+
+632
+00:15:24.710 --> 00:15:24.720
+
+
+
+633
+00:15:24.720 --> 00:15:27.269
+In fact, if you compare it
+
+634
+00:15:27.269 --> 00:15:27.279
+
+
+
+635
+00:15:27.279 --> 00:15:30.470
+with a software-based application, you will
+
+636
+00:15:30.470 --> 00:15:30.480
+
+
+
+637
+00:15:30.480 --> 00:15:33.670
+see that it is much more trickier to
+
+638
+00:15:33.670 --> 00:15:33.680
+
+
+
+639
+00:15:33.680 --> 00:15:37.269
+evaluate an LLM-based application.  And that's what
+
+640
+00:15:37.269 --> 00:15:37.279
+
+
+
+641
+00:15:37.279 --> 00:15:39.509
+we'll discuss next:
+
+642
+00:15:39.509 --> 00:15:42.470
+
+
+
+643
+00:15:42.470 --> 00:15:44.949
+
+
+
+644
+00:15:44.949 --> 00:15:44.959
+
+
+
+645
+00:15:44.959 --> 00:15:47.269
+what are the core differences between testing traditional software and evaluating or testing an LLM-based application.
+
+646
+00:15:47.269 --> 00:15:47.279
+
+
+
+647
+00:15:47.279 --> 00:15:49.829
+And that will give you an idea why
+
+648
+00:15:49.829 --> 00:15:49.839
+
+
+
+649
+00:15:49.839 --> 00:15:52.069
+LLM based applications are trickier
+
+650
+00:15:52.069 --> 00:15:52.079
+
+
+
+651
+00:15:52.079 --> 00:15:55.509
+to test.  Look there are two major differences between software testing and
+
+652
+00:15:55.509 --> 00:15:55.519
+
+
+
+653
+00:15:55.519 --> 00:15:58.069
+testing of LLM based applications.  The
+
+654
+00:15:58.069 --> 00:15:58.079
+
+
+
+655
+00:15:58.079 --> 00:16:01.030
+first difference is
+
+656
+00:16:01.030 --> 00:16:01.040
+
+
+
+657
+00:16:01.040 --> 00:16:03.990
+that your software is
+
+658
+00:16:03.990 --> 00:16:04.000
+
+
+
+659
+00:16:04.000 --> 00:16:07.350
+deterministic.
+
+660
+00:16:07.350 --> 00:16:07.360
+
+
+
+661
+00:16:07.360 --> 00:16:12.790
+It means that for a given input the
+
+662
+00:16:12.790 --> 00:16:12.800
+
+
+
+663
+00:16:12.800 --> 00:16:17.670
+output will always be the same.  For example,
+
+664
+00:16:17.670 --> 00:16:17.680
+
+
+
+665
+00:16:17.680 --> 00:16:21.829
+you are making a calculator.  So
+
+666
+00:16:21.829 --> 00:16:21.839
+
+
+
+667
+00:16:21.839 --> 00:16:24.069
+whenever you input two and two in the calculator, the
+
+668
+00:16:24.069 --> 00:16:24.079
+
+
+
+669
+00:16:24.079 --> 00:16:26.790
+output will always be four.  It is
+
+670
+00:16:26.790 --> 00:16:26.800
+
+
+
+671
+00:16:26.800 --> 00:16:29.509
+deterministic.  You can tell this in advance.
+
+672
+00:16:29.509 --> 00:16:29.519
+
+
+
+673
+00:16:29.519 --> 00:16:32.790
+Wherever your LLM based
+
+674
+00:16:32.790 --> 00:16:32.800
+
+
+
+675
+00:16:32.800 --> 00:16:35.749
+applications are because of LLMs
+
+676
+00:16:35.749 --> 00:16:35.759
+
+
+
+677
+00:16:35.759 --> 00:16:37.670
+because they are built on LLMs.  They are
+
+678
+00:16:37.670 --> 00:16:37.680
+
+
+
+679
+00:16:37.680 --> 00:16:40.629
+by nature probabilistic which basically
+
+680
+00:16:40.629 --> 00:16:40.639
+
+
+
+681
+00:16:40.639 --> 00:16:43.910
+means that for the same input
+
+682
+00:16:43.910 --> 00:16:43.920
+
+
+
+683
+00:16:43.920 --> 00:16:47.749
+you might get different outputs.   Let's
+
+684
+00:16:47.749 --> 00:16:47.759
+
+
+
+685
+00:16:47.759 --> 00:16:50.150
+take a simple example.  Suppose you
+
+686
+00:16:50.150 --> 00:16:50.160
+
+
+
+687
+00:16:50.160 --> 00:16:53.110
+went to Char GPT and asked,
+
+688
+00:16:53.110 --> 00:16:53.120
+
+
+
+689
+00:16:53.120 --> 00:16:56.790
+what is overfitting in machine learning?
+
+690
+00:16:56.790 --> 00:16:56.800
+
+
+
+691
+00:16:56.800 --> 00:17:00.310
+Now there is no single correct answer to this.
+
+692
+00:17:00.310 --> 00:17:00.320
+
+
+
+693
+00:17:00.320 --> 00:17:03.670
+He will give a particular answer today.  After 6 months he
+
+694
+00:17:03.670 --> 00:17:03.680
+
+
+
+695
+00:17:03.680 --> 00:17:06.390
+may give a different answer.
+
+696
+00:17:06.390 --> 00:17:06.400
+
+
+
+697
+00:17:06.400 --> 00:17:09.029
+Give me a different answer.  Give you a different answer.
+
+698
+00:17:09.029 --> 00:17:09.039
+
+
+
+699
+00:17:09.039 --> 00:17:11.669
+None of these answers is wrong.  So you can see that
+
+700
+00:17:11.669 --> 00:17:11.679
+
+
+
+701
+00:17:11.679 --> 00:17:14.549
+for the same input you are getting different
+
+702
+00:17:14.549 --> 00:17:14.559
+
+
+
+703
+00:17:14.559 --> 00:17:17.510
+outputs.  So this is the first major
+
+704
+00:17:17.510 --> 00:17:17.520
+
+
+
+705
+00:17:17.520 --> 00:17:23.110
+challenge.  The second is whether something you do in the software is
+
+706
+00:17:23.110 --> 00:17:23.120
+
+
+
+707
+00:17:23.120 --> 00:17:26.470
+correct or not.  That's all you see.  So
+
+708
+00:17:26.470 --> 00:17:26.480
+
+
+
+709
+00:17:26.480 --> 00:17:30.789
+your only benchmark is correctness.
+
+710
+00:17:30.789 --> 00:17:30.799
+
+
+
+711
+00:17:30.799 --> 00:17:34.310
+Right?  You just see whether four is coming in 2 + 2 answer or
+
+712
+00:17:34.310 --> 00:17:34.320
+
+
+
+713
+00:17:34.320 --> 00:17:36.710
+not.  If four
+
+714
+00:17:36.710 --> 00:17:36.720
+
+
+
+715
+00:17:36.720 --> 00:17:39.430
+is coming then your program is correct and there is
+
+716
+00:17:39.430 --> 00:17:39.440
+
+
+
+717
+00:17:39.440 --> 00:17:43.350
+no need to check anything.  But when you
+
+718
+00:17:43.350 --> 00:17:43.360
+
+
+
+719
+00:17:43.360 --> 00:17:45.430
+evaluate LLM based applications,
+
+720
+00:17:45.430 --> 00:17:45.440
+
+
+
+721
+00:17:45.440 --> 00:17:48.230
+you have to apply a multidimensional check.
+
+722
+00:17:48.230 --> 00:17:48.240
+
+
+
+723
+00:17:48.240 --> 00:17:51.110
+For example, if you are
+
+724
+00:17:51.110 --> 00:17:51.120
+
+
+
+725
+00:17:51.120 --> 00:17:55.110
+building a RAG chatbot, then in case of building a RAG chatbot,
+
+726
+00:17:55.110 --> 00:17:55.120
+
+
+
+727
+00:17:55.120 --> 00:17:58.070
+you have to evaluate the answer you get.
+
+728
+00:17:58.070 --> 00:17:58.080
+
+
+
+729
+00:17:58.080 --> 00:18:01.669
+So in this you
+
+730
+00:18:01.669 --> 00:18:01.679
+
+
+
+731
+00:18:01.679 --> 00:18:03.909
+humans can evaluate this answer on many dimensions.   First of all
+
+732
+00:18:03.909 --> 00:18:03.919
+
+
+
+733
+00:18:03.919 --> 00:18:07.270
+you can evaluate the factuality of that answer.
+
+734
+00:18:07.270 --> 00:18:07.280
+
+
+
+735
+00:18:07.280 --> 00:18:11.270
+You
+
+736
+00:18:11.270 --> 00:18:11.280
+
+
+
+737
+00:18:11.280 --> 00:18:14.710
+can evaluate its completeness.  You
+
+738
+00:18:14.710 --> 00:18:14.720
+
+
+
+739
+00:18:14.720 --> 00:18:17.430
+can evaluate its tonality.  You
+
+740
+00:18:17.430 --> 00:18:17.440
+
+
+
+741
+00:18:17.440 --> 00:18:20.310
+can evaluate his groundedness.  You
+
+742
+00:18:20.310 --> 00:18:20.320
+
+
+
+743
+00:18:20.320 --> 00:18:23.110
+can see what the latency is.  You
+
+744
+00:18:23.110 --> 00:18:23.120
+
+
+
+745
+00:18:23.120 --> 00:18:25.590
+can see how much it is costing you to
+
+746
+00:18:25.590 --> 00:18:25.600
+
+
+
+747
+00:18:25.600 --> 00:18:28.310
+create that answer.  So you can see there are
+
+748
+00:18:28.310 --> 00:18:28.320
+
+
+
+749
+00:18:28.320 --> 00:18:31.590
+several aspects by
+
+750
+00:18:31.590 --> 00:18:31.600
+
+
+
+751
+00:18:31.600 --> 00:18:35.270
+combining which you perform evaluation and
+
+752
+00:18:35.270 --> 00:18:35.280
+
+
+
+753
+00:18:35.280 --> 00:18:38.390
+these aspects also vary from application to application.
+
+754
+00:18:38.390 --> 00:18:38.400
+
+
+
+755
+00:18:38.400 --> 00:18:40.470
+If I were building a chatbot
+
+756
+00:18:40.470 --> 00:18:40.480
+
+
+
+757
+00:18:40.480 --> 00:18:41.990
+for Campus X, the aspects would be different for me.  If
+
+758
+00:18:41.990 --> 00:18:42.000
+
+
+
+759
+00:18:42.000 --> 00:18:44.710
+some other company is
+
+760
+00:18:44.710 --> 00:18:44.720
+
+
+
+761
+00:18:44.720 --> 00:18:46.070
+making chatbots then the aspects for them will be
+
+762
+00:18:46.070 --> 00:18:46.080
+
+
+
+763
+00:18:46.080 --> 00:18:49.430
+different.  So again these are
+
+764
+00:18:49.430 --> 00:18:49.440
+
+
+
+765
+00:18:49.440 --> 00:18:52.710
+the two main pointers why
+
+766
+00:18:52.710 --> 00:18:55.270
+
+
+
+767
+00:18:55.270 --> 00:18:55.280
+
+
+
+768
+00:18:55.280 --> 00:18:58.230
+evaluating an LLM based application
+
+769
+00:18:58.230 --> 00:18:58.240
+
+
+
+770
+00:18:58.240 --> 00:19:01.430
+is much trickier than a software system and that is why a lot of
+
+771
+00:19:01.430 --> 00:19:01.440
+
+
+
+772
+00:19:01.440 --> 00:19:03.990
+people move ahead without doing this step
+
+773
+00:19:03.990 --> 00:19:04.000
+
+
+
+774
+00:19:04.000 --> 00:19:07.830
+which is not right.  In this particular
+
+775
+00:19:07.830 --> 00:19:07.840
+
+
+
+776
+00:19:07.840 --> 00:19:11.029
+playlist, we are going to tackle this challenge.
+
+777
+00:19:11.029 --> 00:19:11.039
+
+
+
+778
+00:19:11.039 --> 00:19:14.310
+I am going to tell you all these things
+
+779
+00:19:14.310 --> 00:19:14.320
+
+
+
+780
+00:19:14.320 --> 00:19:16.549
+that how you can
+
+781
+00:19:16.549 --> 00:19:16.559
+
+
+
+782
+00:19:16.559 --> 00:19:19.510
+control such unexpected behavior.
+
+783
+00:19:19.510 --> 00:19:19.520
+
+
+
+784
+00:19:19.520 --> 00:19:22.470
+And that is the USP that is going to be
+
+785
+00:19:22.470 --> 00:19:22.480
+
+
+
+786
+00:19:22.480 --> 00:19:26.390
+the USP of this playlist.  Now now that
+
+787
+00:19:26.390 --> 00:19:26.400
+
+
+
+788
+00:19:26.400 --> 00:19:29.350
+you understand what LLM evaluations are.
+
+789
+00:19:29.350 --> 00:19:29.360
+
+
+
+790
+00:19:29.360 --> 00:19:32.390
+Now let me quickly tell you
+
+791
+00:19:32.390 --> 00:19:32.400
+
+
+
+792
+00:19:32.400 --> 00:19:34.710
+what we are going to cover in this playlist and in what order.
+
+793
+00:19:34.710 --> 00:19:34.720
+
+
+
+794
+00:19:34.720 --> 00:19:36.390
+So
+
+795
+00:19:36.390 --> 00:19:36.400
+
+
+
+796
+00:19:36.400 --> 00:19:39.830
+if we talk chronologically, then first of all
+
+797
+00:19:39.830 --> 00:19:39.840
+
+
+
+798
+00:19:39.840 --> 00:19:43.270
+in the next video we will learn
+
+799
+00:19:43.270 --> 00:19:43.280
+
+
+
+800
+00:19:43.280 --> 00:19:46.549
+what exactly is LLM Eval?
+
+801
+00:19:46.549 --> 00:19:46.559
+
+
+
+802
+00:19:46.559 --> 00:19:48.630
+I will explain to you properly by giving an example
+
+803
+00:19:48.630 --> 00:19:51.190
+
+
+
+804
+00:19:51.190 --> 00:19:51.200
+
+
+
+805
+00:19:51.200 --> 00:19:55.029
+what are LLM Evals as a concept?  After that I will tell you the
+
+806
+00:19:55.029 --> 00:19:55.039
+
+
+
+807
+00:19:55.039 --> 00:19:58.789
+complete landscape of LLM Evals.
+
+808
+00:19:58.789 --> 00:19:58.799
+
+
+
+809
+00:19:58.799 --> 00:20:00.549
+complete landscape of LLM Evals.
+
+810
+00:20:00.559 --> 00:20:02.150
+What things exist here
+
+811
+00:20:02.150 --> 00:20:02.160
+
+
+
+812
+00:20:02.160 --> 00:20:03.669
+?  What techniques exist
+
+813
+00:20:03.669 --> 00:20:03.679
+
+
+
+814
+00:20:03.679 --> 00:20:05.830
+?  What types of tools exist
+
+815
+00:20:05.830 --> 00:20:05.840
+
+
+
+816
+00:20:05.840 --> 00:20:08.470
+?  I'll give you a high-level overview of it.  So that whenever
+
+817
+00:20:08.470 --> 00:20:08.480
+
+
+
+818
+00:20:08.480 --> 00:20:11.190
+you hear any new term, you should be able to mentally
+
+819
+00:20:11.190 --> 00:20:11.200
+
+
+
+820
+00:20:11.200 --> 00:20:13.350
+place it that this is the function of this thing.
+
+821
+00:20:13.350 --> 00:20:13.360
+
+
+
+822
+00:20:13.360 --> 00:20:17.909
+After that we will talk
+
+823
+00:20:17.909 --> 00:20:17.919
+
+
+
+824
+00:20:17.919 --> 00:20:20.870
+about evaluating LLMs.  So there are
+
+825
+00:20:20.870 --> 00:20:20.880
+
+
+
+826
+00:20:20.880 --> 00:20:23.669
+two things that come into the LLM Eval.  One where you
+
+827
+00:20:23.669 --> 00:20:23.679
+
+
+
+828
+00:20:23.679 --> 00:20:26.150
+evaluate LLMs and the other
+
+829
+00:20:26.150 --> 00:20:26.160
+
+
+
+830
+00:20:26.160 --> 00:20:28.149
+where you evaluate LLM based applications.
+
+831
+00:20:28.149 --> 00:20:28.159
+
+
+
+832
+00:20:28.159 --> 00:20:30.070
+So we will read both things.
+
+833
+00:20:30.070 --> 00:20:30.080
+
+
+
+834
+00:20:30.080 --> 00:20:32.549
+So we will learn how LLMs are evaluated.
+
+835
+00:20:32.549 --> 00:20:32.559
+
+
+
+836
+00:20:32.559 --> 00:20:35.029
+So there we will
+
+837
+00:20:35.029 --> 00:20:35.039
+
+
+
+838
+00:20:35.039 --> 00:20:37.669
+read many types of benchmarks which
+
+839
+00:20:37.669 --> 00:20:37.679
+
+
+
+840
+00:20:37.679 --> 00:20:39.830
+you might have heard of.  Whenever a new model is
+
+841
+00:20:39.830 --> 00:20:39.840
+
+
+
+842
+00:20:39.840 --> 00:20:41.750
+released, we are told
+
+843
+00:20:41.750 --> 00:20:41.760
+
+
+
+844
+00:20:41.760 --> 00:20:44.549
+that this particular LLM has
+
+845
+00:20:44.549 --> 00:20:44.559
+
+
+
+846
+00:20:44.559 --> 00:20:46.549
+scored the highest on this benchmark.  So we will
+
+847
+00:20:46.549 --> 00:20:46.559
+
+
+
+848
+00:20:46.559 --> 00:20:48.710
+study about different categories of
+
+849
+00:20:48.710 --> 00:20:48.720
+
+
+
+850
+00:20:48.720 --> 00:20:52.950
+benchmarks.  After that we will come to LLM
+
+851
+00:20:52.950 --> 00:20:52.960
+
+
+
+852
+00:20:52.960 --> 00:20:56.470
+application evals.  Where we will discuss
+
+853
+00:20:56.470 --> 00:20:58.950
+
+
+
+854
+00:20:58.950 --> 00:20:58.960
+
+
+
+855
+00:20:58.960 --> 00:21:03.190
+how an LLM based application is evaluated.  We will then
+
+856
+00:21:03.190 --> 00:21:03.200
+
+
+
+857
+00:21:03.200 --> 00:21:08.390
+build our own eval pipeline where
+
+858
+00:21:08.390 --> 00:21:08.400
+
+
+
+859
+00:21:08.400 --> 00:21:11.350
+we will learn to curate our own golden data set.  You will
+
+860
+00:21:11.350 --> 00:21:13.350
+
+
+
+861
+00:21:13.350 --> 00:21:13.360
+
+
+
+862
+00:21:13.360 --> 00:21:15.510
+define your own rubrics and test them on an application you have created.
+
+863
+00:21:15.510 --> 00:21:18.470
+
+
+
+864
+00:21:18.470 --> 00:21:18.480
+
+
+
+865
+00:21:18.480 --> 00:21:22.470
+After doing all this we will learn how to do RAG Specific Eval.
+
+866
+00:21:22.470 --> 00:21:25.110
+
+
+
+867
+00:21:25.110 --> 00:21:25.120
+
+
+
+868
+00:21:25.120 --> 00:21:29.190
+After RAG, we will learn how to do agent based evals.
+
+869
+00:21:29.190 --> 00:21:31.350
+
+
+
+870
+00:21:31.350 --> 00:21:31.360
+
+
+
+871
+00:21:31.360 --> 00:21:35.830
+After that we will learn how to write safety based Evals.
+
+872
+00:21:35.830 --> 00:21:35.840
+
+
+
+873
+00:21:35.840 --> 00:21:39.669
+And lastly
+
+874
+00:21:39.669 --> 00:21:39.679
+
+
+
+875
+00:21:39.679 --> 00:21:44.470
+how to write operational equals.  You
+
+876
+00:21:44.470 --> 00:21:44.480
+
+
+
+877
+00:21:44.480 --> 00:21:47.110
+deployed an LLM base system.  So it is
+
+878
+00:21:47.110 --> 00:21:47.120
+
+
+
+879
+00:21:47.120 --> 00:21:48.630
+not that the
+
+880
+00:21:48.630 --> 00:21:48.640
+
+
+
+881
+00:21:48.640 --> 00:21:51.110
+evaluation work ends after deployment.
+
+882
+00:21:51.110 --> 00:21:51.120
+
+
+
+883
+00:21:51.120 --> 00:21:53.510
+You still evaluate a system after it comes online.  There are
+
+884
+00:21:53.510 --> 00:21:53.520
+
+
+
+885
+00:21:53.520 --> 00:21:55.510
+many types of metrics.
+
+886
+00:21:55.510 --> 00:21:55.520
+
+
+
+887
+00:21:55.520 --> 00:21:57.590
+How is the latency?  How is the second on the token
+
+888
+00:21:57.590 --> 00:21:57.600
+
+
+
+889
+00:21:57.600 --> 00:22:00.070
+?  After how long does the first token
+
+890
+00:22:00.070 --> 00:22:00.080
+
+
+
+891
+00:22:00.080 --> 00:22:02.310
+arrive?  How much load is there on the system?
+
+892
+00:22:02.310 --> 00:22:02.320
+
+
+
+893
+00:22:02.320 --> 00:22:04.390
+You have to look at all these things also.
+
+894
+00:22:04.390 --> 00:22:04.400
+
+
+
+895
+00:22:04.400 --> 00:22:07.270
+So we will learn that in Operations Eval.  Ok?
+
+896
+00:22:07.270 --> 00:22:07.280
+
+
+
+897
+00:22:07.280 --> 00:22:10.149
+So roughly we will cover these 10 topics
+
+898
+00:22:10.149 --> 00:22:10.159
+
+
+
+899
+00:22:10.159 --> 00:22:12.870
+in this playlist and I feel
+
+900
+00:22:12.870 --> 00:22:12.880
+
+
+
+901
+00:22:12.880 --> 00:22:16.549
+that we will touch almost all the things
+
+902
+00:22:16.549 --> 00:22:16.559
+
+
+
+903
+00:22:16.559 --> 00:22:19.190
+and my aim is to
+
+904
+00:22:19.190 --> 00:22:19.200
+
+
+
+905
+00:22:19.200 --> 00:22:21.909
+go very in-depth and teach you the most relevant things right now
+
+906
+00:22:21.909 --> 00:22:21.919
+
+
+
+907
+00:22:21.919 --> 00:22:25.430
+and you just watch this playlist completely.
+
+908
+00:22:25.430 --> 00:22:25.440
+
+
+
+909
+00:22:25.440 --> 00:22:28.070
+I personally really
+
+910
+00:22:28.070 --> 00:22:28.080
+
+
+
+911
+00:22:28.080 --> 00:22:30.549
+feel that after watching this playlist
+
+912
+00:22:30.549 --> 00:22:30.559
+
+
+
+913
+00:22:30.559 --> 00:22:32.950
+you will level up in AI engineering.  Till now
+
+914
+00:22:32.950 --> 00:22:32.960
+
+
+
+915
+00:22:32.960 --> 00:22:35.190
+you were operating at a certain level.
+
+916
+00:22:35.190 --> 00:22:35.200
+
+
+
+917
+00:22:35.200 --> 00:22:36.950
+Only LLM based applications were able to be
+
+918
+00:22:36.950 --> 00:22:36.960
+
+
+
+919
+00:22:36.960 --> 00:22:39.990
+made.  After watching this particular playlist,
+
+920
+00:22:39.990 --> 00:22:40.000
+
+
+
+921
+00:22:40.000 --> 00:22:43.510
+you will be able to think how we
+
+922
+00:22:43.510 --> 00:22:43.520
+
+
+
+923
+00:22:43.520 --> 00:22:45.990
+can take it to millions of users.
+
+924
+00:22:45.990 --> 00:22:46.000
+
+
+
+925
+00:22:46.000 --> 00:22:47.909
+So going forward, our plan is to
+
+926
+00:22:47.909 --> 00:22:47.919
+
+
+
+927
+00:22:47.919 --> 00:22:51.270
+touch such topics which other
+
+928
+00:22:51.270 --> 00:22:51.280
+
+
+
+929
+00:22:51.280 --> 00:22:53.750
+people are not reading right now and if you read them,
+
+930
+00:22:53.750 --> 00:22:53.760
+
+
+
+931
+00:22:53.760 --> 00:22:56.789
+you will get an edge over your competition.
+
+932
+00:22:56.789 --> 00:22:56.799
+
+
+
+933
+00:22:56.799 --> 00:23:00.230
+Ok?  So that's it for this video.  This was
+
+934
+00:23:00.230 --> 00:23:00.240
+
+
+
+935
+00:23:00.240 --> 00:23:03.510
+our agenda.  Aa, we achieved that.
+
+936
+00:23:03.510 --> 00:23:03.520
+
+
+
+937
+00:23:03.520 --> 00:23:05.669
+Rest, write in the comments and tell us how
+
+938
+00:23:05.669 --> 00:23:05.679
+
+
+
+939
+00:23:05.679 --> 00:23:07.669
+excited you are for this playlist.  If
+
+940
+00:23:07.669 --> 00:23:07.679
+
+
+
+941
+00:23:07.679 --> 00:23:10.070
+any of your friends want to see this playlist.
+
+942
+00:23:10.070 --> 00:23:10.080
+
+
+
+943
+00:23:10.080 --> 00:23:12.230
+This topic wants to be covered.
+
+944
+00:23:12.230 --> 00:23:12.240
+
+
+
+945
+00:23:12.240 --> 00:23:14.230
+You can share this video with this or that friend.
+
+946
+00:23:14.230 --> 00:23:14.240
+
+
+
+947
+00:23:14.240 --> 00:23:16.789
+If you like this video then
+
+948
+00:23:16.789 --> 00:23:16.799
+
+
+
+949
+00:23:16.799 --> 00:23:19.110
+please like it and if you have not subscribed to this channel
+
+950
+00:23:19.110 --> 00:23:19.120
+
+
+
+951
+00:23:19.120 --> 00:23:20.950
+then please do
+
+952
+00:23:20.950 --> 00:23:20.960
+
+
+
+953
+00:23:20.960 --> 00:23:22.549
+subscribe.  See you in the next video.  Bye.
+
+954
+00:23:22.549 --> 00:23:25.600
+

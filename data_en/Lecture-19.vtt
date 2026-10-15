@@ -1,0 +1,14135 @@
+WEBVTT
+
+1
+00:00:00.160 --> 00:00:05.829
+Today is the last session on RAG Evals
+
+2
+00:00:05.829 --> 00:00:05.839
+
+
+
+3
+00:00:05.839 --> 00:00:11.990
+And in today's session we will do online Evals.
+
+4
+00:00:11.990 --> 00:00:12.000
+
+
+
+5
+00:00:12.000 --> 00:00:15.030
+So the basic funda is that till now we have RAG
+
+6
+00:00:15.030 --> 00:00:15.040
+
+
+
+7
+00:00:15.040 --> 00:00:18.630
+First of all an Eval suite build in Evals
+
+8
+00:00:18.630 --> 00:00:18.640
+
+
+
+9
+00:00:18.640 --> 00:00:22.950
+in which we did a lot 1415
+
+10
+00:00:22.950 --> 00:00:22.960
+
+
+
+11
+00:00:22.960 --> 00:00:25.269
+Covered the matrix. A proper eval
+
+12
+00:00:25.269 --> 00:00:25.279
+
+
+
+13
+00:00:25.279 --> 00:00:27.750
+I made sweets and in the last lecture we
+
+14
+00:00:27.750 --> 00:00:27.760
+
+
+
+15
+00:00:27.760 --> 00:00:30.310
+Tied it up.
+
+16
+00:00:30.310 --> 00:00:30.320
+
+
+
+17
+00:00:30.320 --> 00:00:32.790
+In the form of regression testing. So
+
+18
+00:00:32.790 --> 00:00:32.800
+
+
+
+19
+00:00:32.800 --> 00:00:35.590
+In a nutshell, we can say that now our
+
+20
+00:00:35.590 --> 00:00:35.600
+
+
+
+21
+00:00:35.600 --> 00:00:38.470
+Which is the offline evaluation part where
+
+22
+00:00:38.470 --> 00:00:38.480
+
+
+
+23
+00:00:38.480 --> 00:00:41.190
+When you create an application and
+
+24
+00:00:41.190 --> 00:00:41.200
+
+
+
+25
+00:00:41.200 --> 00:00:44.229
+Do you test it before deployment?
+
+26
+00:00:44.229 --> 00:00:44.239
+
+
+
+27
+00:00:44.239 --> 00:00:47.350
+We have covered that part. Ok? we are this
+
+28
+00:00:47.350 --> 00:00:47.360
+
+
+
+29
+00:00:47.360 --> 00:00:49.190
+are also able to detect that one
+
+30
+00:00:49.190 --> 00:00:49.200
+
+
+
+31
+00:00:49.200 --> 00:00:51.590
+By changing any one system component
+
+32
+00:00:51.590 --> 00:00:51.600
+
+
+
+33
+00:00:51.600 --> 00:00:53.590
+Is our system not regressing?
+
+34
+00:00:53.590 --> 00:00:53.600
+
+
+
+35
+00:00:53.600 --> 00:00:55.990
+remained. We have also done this testing. So
+
+36
+00:00:55.990 --> 00:00:56.000
+
+
+
+37
+00:00:56.000 --> 00:00:58.709
+Now obviously the next step is
+
+38
+00:00:58.709 --> 00:00:58.719
+
+
+
+39
+00:00:58.719 --> 00:01:01.910
+This is what happens when you pick up your system
+
+40
+00:01:01.910 --> 00:01:01.920
+
+
+
+41
+00:01:01.920 --> 00:01:05.590
+You deploy it. Right? system online
+
+42
+00:01:05.590 --> 00:01:05.600
+
+
+
+43
+00:01:05.600 --> 00:01:08.149
+It goes away and people start using it.
+
+44
+00:01:08.149 --> 00:01:08.159
+
+
+
+45
+00:01:08.159 --> 00:01:11.990
+Are. But it doesn't mean that you can no longer
+
+46
+00:01:11.990 --> 00:01:12.000
+
+
+
+47
+00:01:12.000 --> 00:01:15.429
+Stop evaluating the system. So
+
+48
+00:01:15.429 --> 00:01:15.439
+
+
+
+49
+00:01:15.439 --> 00:01:18.230
+What happens is that in an ideal situation, anyone
+
+50
+00:01:18.230 --> 00:01:18.240
+
+
+
+51
+00:01:18.240 --> 00:01:20.710
+company when a chatbot or an LM based
+
+52
+00:01:20.710 --> 00:01:20.720
+
+
+
+53
+00:01:20.720 --> 00:01:23.590
+deploys the application and then
+
+54
+00:01:23.590 --> 00:01:23.600
+
+
+
+55
+00:01:23.600 --> 00:01:26.710
+She also continuously keeps evaluating it.
+
+56
+00:01:26.710 --> 00:01:26.720
+
+
+
+57
+00:01:26.720 --> 00:01:30.789
+And we call this process online evaluation.
+
+58
+00:01:30.789 --> 00:01:30.799
+
+
+
+59
+00:01:30.799 --> 00:01:33.429
+Let's say. And the good thing is that this is
+
+60
+00:01:33.429 --> 00:01:33.439
+
+
+
+61
+00:01:33.439 --> 00:01:36.390
+This is not a new concept for you. some four-part
+
+62
+00:01:36.390 --> 00:01:36.400
+
+
+
+63
+00:01:36.400 --> 00:01:39.270
+Classes First I took you a session
+
+64
+00:01:39.270 --> 00:01:39.280
+
+
+
+65
+00:01:39.280 --> 00:01:41.830
+gave it and showed it on the topic of online
+
+66
+00:01:41.830 --> 00:01:41.840
+
+
+
+67
+00:01:41.840 --> 00:01:43.670
+Eval. Although there we practically
+
+68
+00:01:43.670 --> 00:01:43.680
+
+
+
+69
+00:01:43.680 --> 00:01:45.429
+I didn't do things but I made you whole
+
+70
+00:01:45.429 --> 00:01:45.439
+
+
+
+71
+00:01:45.439 --> 00:01:47.749
+The concept was explained as to how online evals
+
+72
+00:01:47.749 --> 00:01:47.759
+
+
+
+73
+00:01:47.759 --> 00:01:49.510
+is done. I showed you that
+
+74
+00:01:49.510 --> 00:01:49.520
+
+
+
+75
+00:01:49.520 --> 00:01:53.590
+There are tools such as edge length and length
+
+76
+00:01:53.590 --> 00:01:53.600
+
+
+
+77
+00:01:53.600 --> 00:01:57.350
+With whose help you can become an Observability Plus
+
+78
+00:01:57.350 --> 00:01:57.360
+
+
+
+79
+00:01:57.360 --> 00:02:00.950
+Monitoring plus evaluation, these three
+
+80
+00:02:00.950 --> 00:02:00.960
+
+
+
+81
+00:02:00.960 --> 00:02:03.990
+You perform things. So that's what we're going to do today
+
+82
+00:02:03.990 --> 00:02:04.000
+
+
+
+83
+00:02:04.000 --> 00:02:06.950
+There are. Today we are doing this class with assessment.
+
+84
+00:02:06.950 --> 00:02:06.960
+
+
+
+85
+00:02:06.960 --> 00:02:09.350
+We will start with the software we have
+
+86
+00:02:09.350 --> 00:02:09.360
+
+
+
+87
+00:02:09.360 --> 00:02:13.510
+Banaya Hai Campus X Doubt Solve Wo
+
+88
+00:02:13.510 --> 00:02:13.520
+
+
+
+89
+00:02:13.520 --> 00:02:16.229
+It has been deployed. We mean going online
+
+90
+00:02:16.229 --> 00:02:16.239
+
+
+
+91
+00:02:16.239 --> 00:02:19.350
+That's done and now we're going to put it in an online setting.
+
+92
+00:02:19.350 --> 00:02:19.360
+
+
+
+93
+00:02:19.360 --> 00:02:22.869
+Will evaluate. Ok? So the whole plan
+
+94
+00:02:22.869 --> 00:02:22.879
+
+
+
+95
+00:02:22.879 --> 00:02:26.710
+The course of action will be such that we
+
+96
+00:02:26.710 --> 00:02:26.720
+
+
+
+97
+00:02:26.720 --> 00:02:30.229
+Some evaluations are also done in an online setup.
+
+98
+00:02:30.229 --> 00:02:30.239
+
+
+
+99
+00:02:30.239 --> 00:02:32.710
+The tests will continue to run. Continuously in
+
+100
+00:02:32.710 --> 00:02:32.720
+
+
+
+101
+00:02:32.720 --> 00:02:35.670
+The production environment and its data
+
+102
+00:02:35.670 --> 00:02:35.680
+
+
+
+103
+00:02:35.680 --> 00:02:38.790
+We will keep bringing it closer and observe that data.
+
+104
+00:02:38.790 --> 00:02:38.800
+
+
+
+105
+00:02:38.800 --> 00:02:41.830
+Just to see what our
+
+106
+00:02:41.830 --> 00:02:41.840
+
+
+
+107
+00:02:41.840 --> 00:02:44.390
+Is the system breaking somewhere? thats
+
+108
+00:02:44.390 --> 00:02:44.400
+
+
+
+109
+00:02:44.400 --> 00:02:48.710
+The Whole Idea. So if you look at this chart
+
+110
+00:02:48.710 --> 00:02:48.720
+
+
+
+111
+00:02:48.720 --> 00:02:51.750
+So here I have written every metric
+
+112
+00:02:51.750 --> 00:02:51.760
+
+
+
+113
+00:02:51.760 --> 00:02:56.790
+Which was part of our offline event. Correct
+
+114
+00:02:56.790 --> 00:02:56.800
+
+
+
+115
+00:02:56.800 --> 00:03:00.070
+Is? If you look here, you'll see the Retriever
+
+116
+00:03:00.070 --> 00:03:00.080
+
+
+
+117
+00:03:00.080 --> 00:03:02.470
+These were our metrics. contextual
+
+118
+00:03:02.470 --> 00:03:02.480
+
+
+
+119
+00:03:02.480 --> 00:03:05.190
+Recall, contextual precision. of the generator
+
+120
+00:03:05.190 --> 00:03:05.200
+
+
+
+121
+00:03:05.200 --> 00:03:07.589
+These were the two metrics. Faithfulness, Answer
+
+122
+00:03:07.589 --> 00:03:07.599
+
+
+
+123
+00:03:07.599 --> 00:03:11.270
+Relevancy. Then we created the RAG pipeline.
+
+124
+00:03:11.270 --> 00:03:11.280
+
+
+
+125
+00:03:11.280 --> 00:03:13.670
+There were three metrics. contextual
+
+126
+00:03:13.670 --> 00:03:13.680
+
+
+
+127
+00:03:13.680 --> 00:03:16.149
+Relevancy, Faithfulness, Answer Relevancy.
+
+128
+00:03:16.149 --> 00:03:16.159
+
+
+
+129
+00:03:16.159 --> 00:03:18.550
+Correctness, completeness at the application level,
+
+130
+00:03:18.550 --> 00:03:18.560
+
+
+
+131
+00:03:18.560 --> 00:03:20.790
+Was checking the style. on the safety level
+
+132
+00:03:20.790 --> 00:03:20.800
+
+
+
+133
+00:03:20.800 --> 00:03:23.270
+Checking scope, leakage and toxicity
+
+134
+00:03:23.270 --> 00:03:23.280
+
+
+
+135
+00:03:23.280 --> 00:03:26.390
+Were. and latency costs at the operational level and
+
+136
+00:03:26.390 --> 00:03:26.400
+
+
+
+137
+00:03:26.400 --> 00:03:29.509
+Was doing Reliability Major. Ok? Now
+
+138
+00:03:29.509 --> 00:03:29.519
+
+
+
+139
+00:03:29.519 --> 00:03:33.589
+The hard truth here is that it probably
+
+140
+00:03:33.589 --> 00:03:33.599
+
+
+
+141
+00:03:33.599 --> 00:03:38.149
+There are some 14-15 metrics that we have collected offline.
+
+142
+00:03:38.149 --> 00:03:38.159
+
+
+
+143
+00:03:38.159 --> 00:03:42.550
+Had built it for. But unfortunately we
+
+144
+00:03:42.550 --> 00:03:42.560
+
+
+
+145
+00:03:42.560 --> 00:03:45.350
+We cannot do that by using all these metrics.
+
+146
+00:03:45.350 --> 00:03:45.360
+
+
+
+147
+00:03:45.360 --> 00:03:49.030
+Can also run it online. It is not possible at
+
+148
+00:03:49.030 --> 00:03:49.040
+
+
+
+149
+00:03:49.040 --> 00:03:52.550
+All. And what is a big reason for that?
+
+150
+00:03:52.550 --> 00:03:52.560
+
+
+
+151
+00:03:52.560 --> 00:03:55.589
+You will tell me. can you tell me why
+
+152
+00:03:55.589 --> 00:03:55.599
+
+
+
+153
+00:03:55.599 --> 00:03:57.429
+I am saying that we are all
+
+154
+00:03:57.429 --> 00:03:57.439
+
+
+
+155
+00:03:57.439 --> 00:03:59.830
+Not using all the metrics online
+
+156
+00:03:59.830 --> 00:03:59.840
+
+
+
+157
+00:03:59.840 --> 00:04:03.110
+Can. Can You Tell Me Quickly by Writing
+
+158
+00:04:03.110 --> 00:04:03.120
+
+
+
+159
+00:04:03.120 --> 00:04:05.110
+Your answer?
+
+160
+00:04:05.110 --> 00:04:05.120
+
+
+
+161
+00:04:05.120 --> 00:04:08.309
+Yes perfect. A Srinivas is absolutely right
+
+162
+00:04:08.309 --> 00:04:08.319
+
+
+
+163
+00:04:08.319 --> 00:04:12.470
+spoke. The simple reason for this is that we have
+
+164
+00:04:12.470 --> 00:04:12.480
+
+
+
+165
+00:04:12.480 --> 00:04:14.949
+There is no reference. We have the correct answer
+
+166
+00:04:14.949 --> 00:04:14.959
+
+
+
+167
+00:04:14.959 --> 00:04:19.110
+Not there. So offline evaluation and online
+
+168
+00:04:19.110 --> 00:04:19.120
+
+
+
+169
+00:04:19.120 --> 00:04:21.349
+The biggest difference in evaluation is that
+
+170
+00:04:21.349 --> 00:04:21.359
+
+
+
+171
+00:04:21.359 --> 00:04:23.909
+I also taught you that
+
+172
+00:04:23.909 --> 00:04:23.919
+
+
+
+173
+00:04:23.919 --> 00:04:26.870
+At the time of offline evaluation, we
+
+174
+00:04:26.870 --> 00:04:26.880
+
+
+
+175
+00:04:26.880 --> 00:04:30.469
+We create golden data sets, we
+
+176
+00:04:30.469 --> 00:04:30.479
+
+
+
+177
+00:04:30.479 --> 00:04:34.150
+They also enter the correct answer. because of which
+
+178
+00:04:34.150 --> 00:04:34.160
+
+
+
+179
+00:04:34.160 --> 00:04:37.030
+We can find out a lot of things. For
+
+180
+00:04:37.030 --> 00:04:37.040
+
+
+
+181
+00:04:37.040 --> 00:04:40.790
+For example, if you talk about correctness,
+
+182
+00:04:40.790 --> 00:04:40.800
+
+
+
+183
+00:04:40.800 --> 00:04:44.070
+Any answer given by the chatbot is correct
+
+184
+00:04:44.070 --> 00:04:44.080
+
+
+
+185
+00:04:44.080 --> 00:04:47.350
+Or not. Now you will know whether it is right or not.
+
+186
+00:04:47.350 --> 00:04:47.360
+
+
+
+187
+00:04:47.360 --> 00:04:49.590
+It'll do if you have the right answer somewhere.
+
+188
+00:04:49.590 --> 00:04:49.600
+
+
+
+189
+00:04:49.600 --> 00:04:52.950
+will be. The reference will be somewhere. So you are offline
+
+190
+00:04:52.950 --> 00:04:52.960
+
+
+
+191
+00:04:52.960 --> 00:04:55.430
+In the setup, you can create a golden data set.
+
+192
+00:04:55.430 --> 00:04:55.440
+
+
+
+193
+00:04:55.440 --> 00:04:57.749
+yes. Every question you asked is correct.
+
+194
+00:04:57.749 --> 00:04:57.759
+
+
+
+195
+00:04:57.759 --> 00:05:00.150
+You can give the answer in writing and then you
+
+196
+00:05:00.150 --> 00:05:00.160
+
+
+
+197
+00:05:00.160 --> 00:05:03.189
+You can run an evaluation of correctness. But
+
+198
+00:05:03.189 --> 00:05:03.199
+
+
+
+199
+00:05:03.199 --> 00:05:05.909
+Imagine online setup where
+
+200
+00:05:05.909 --> 00:05:05.919
+
+
+
+201
+00:05:05.919 --> 00:05:08.710
+Completely new question asked by user.
+
+202
+00:05:08.710 --> 00:05:08.720
+
+
+
+203
+00:05:08.720 --> 00:05:11.430
+Do I have the answer to that question?
+
+204
+00:05:11.430 --> 00:05:11.440
+
+
+
+205
+00:05:11.440 --> 00:05:13.590
+No. I don't know in advance what the future holds
+
+206
+00:05:13.590 --> 00:05:13.600
+
+
+
+207
+00:05:13.600 --> 00:05:15.350
+If the user asks me something, I have the answer.
+
+208
+00:05:15.350 --> 00:05:15.360
+
+
+
+209
+00:05:15.360 --> 00:05:17.670
+There will be no answer either. And if I had that
+
+210
+00:05:17.670 --> 00:05:17.680
+
+
+
+211
+00:05:17.680 --> 00:05:20.150
+If there is no answer to the question, should I
+
+212
+00:05:20.150 --> 00:05:20.160
+
+
+
+213
+00:05:20.160 --> 00:05:22.870
+I can do Correctness Measure online anytime.
+
+214
+00:05:22.870 --> 00:05:22.880
+
+
+
+215
+00:05:22.880 --> 00:05:26.550
+In setup? The answer is no. So simply put
+
+216
+00:05:26.550 --> 00:05:26.560
+
+
+
+217
+00:05:26.560 --> 00:05:28.950
+If I were to say, then among these he
+
+218
+00:05:28.950 --> 00:05:28.960
+
+
+
+219
+00:05:28.960 --> 00:05:32.550
+Matrix in which we need an answer
+
+220
+00:05:32.550 --> 00:05:32.560
+
+
+
+221
+00:05:32.560 --> 00:05:35.189
+it occurs. Basically reference based matrix
+
+222
+00:05:35.189 --> 00:05:35.199
+
+
+
+223
+00:05:35.199 --> 00:05:37.670
+Whatever they are, you can setup them online.
+
+224
+00:05:37.670 --> 00:05:37.680
+
+
+
+225
+00:05:37.680 --> 00:05:41.270
+Cannot evaluate. Now your job is this
+
+226
+00:05:41.270 --> 00:05:41.280
+
+
+
+227
+00:05:41.280 --> 00:05:45.590
+You can tell me by writing in chat.
+
+228
+00:05:45.590 --> 00:05:45.600
+
+
+
+229
+00:05:45.600 --> 00:05:47.990
+What are the metrics that
+
+230
+00:05:47.990 --> 00:05:48.000
+
+
+
+231
+00:05:48.000 --> 00:05:50.310
+Reference is needed, correct answer key
+
+232
+00:05:50.310 --> 00:05:50.320
+
+
+
+233
+00:05:50.320 --> 00:05:52.950
+What metrics are needed and what are they?
+
+234
+00:05:52.950 --> 00:05:52.960
+
+
+
+235
+00:05:52.960 --> 00:05:55.830
+Which we will not be able to take online. Please
+
+236
+00:05:55.830 --> 00:05:55.840
+
+
+
+237
+00:05:55.840 --> 00:05:59.830
+Let me know. Recall the previous sessions
+
+238
+00:05:59.830 --> 00:05:59.840
+
+
+
+239
+00:05:59.840 --> 00:06:03.189
+And type it. I want you to type this
+
+240
+00:06:03.189 --> 00:06:03.199
+
+
+
+241
+00:06:03.199 --> 00:06:07.430
+Answer. It will also be a good quick review.
+
+242
+00:06:07.430 --> 00:06:07.440
+
+
+
+243
+00:06:07.440 --> 00:06:10.390
+Let me ask you. You tell me the answer.
+
+244
+00:06:10.390 --> 00:06:10.400
+
+
+
+245
+00:06:10.400 --> 00:06:13.909
+Do we need the correct answer for recall?
+
+246
+00:06:13.909 --> 00:06:13.919
+
+
+
+247
+00:06:13.919 --> 00:06:17.590
+Does it happen? The answer is yes. We had to tell
+
+248
+00:06:17.590 --> 00:06:17.600
+
+
+
+249
+00:06:17.600 --> 00:06:20.550
+Here's what the correct chunk looks like. And that is
+
+250
+00:06:20.550 --> 00:06:20.560
+
+
+
+251
+00:06:20.560 --> 00:06:24.070
+Why We Don't Measure Contextual Recall
+
+252
+00:06:24.070 --> 00:06:24.080
+
+
+
+253
+00:06:24.080 --> 00:06:27.029
+You can do it in the online setup. Same with
+
+254
+00:06:27.029 --> 00:06:27.039
+
+
+
+255
+00:06:27.039 --> 00:06:29.430
+Precision. We also need it in precision
+
+256
+00:06:29.430 --> 00:06:29.440
+
+
+
+257
+00:06:29.440 --> 00:06:31.909
+Is. So we cannot major. Ah
+
+258
+00:06:31.909 --> 00:06:31.919
+
+
+
+259
+00:06:31.919 --> 00:06:35.909
+Faithfulness is a reference principle. Answer
+
+260
+00:06:35.909 --> 00:06:35.919
+
+
+
+261
+00:06:35.919 --> 00:06:39.430
+Relevancy is also faith. A
+
+262
+00:06:39.430 --> 00:06:39.440
+
+
+
+263
+00:06:39.440 --> 00:06:41.670
+Reference free. So we can measure these.
+
+264
+00:06:41.670 --> 00:06:41.680
+
+
+
+265
+00:06:41.680 --> 00:06:44.309
+Are. contextual relevance is also
+
+266
+00:06:44.309 --> 00:06:44.319
+
+
+
+267
+00:06:44.319 --> 00:06:47.029
+Reference free. Faithfulness has definitely come up.
+
+268
+00:06:47.029 --> 00:06:47.039
+
+
+
+269
+00:06:47.039 --> 00:06:49.590
+Answer relevance also came up.
+
+270
+00:06:49.590 --> 00:06:49.600
+
+
+
+271
+00:06:49.600 --> 00:06:51.670
+Correctness is something that requires us to be right.
+
+272
+00:06:51.670 --> 00:06:51.680
+
+
+
+273
+00:06:51.680 --> 00:06:53.990
+An answer is needed. So we can do this online
+
+274
+00:06:53.990 --> 00:06:54.000
+
+
+
+275
+00:06:54.000 --> 00:06:56.629
+Major will not be able to do it. We also have completeness
+
+276
+00:06:56.629 --> 00:06:56.639
+
+
+
+277
+00:06:56.639 --> 00:06:59.110
+Major will not be able to do it. Style Is Reference
+
+278
+00:06:59.110 --> 00:06:59.120
+
+
+
+279
+00:06:59.120 --> 00:07:02.550
+Free. We can measure this. A Safety
+
+280
+00:07:02.550 --> 00:07:02.560
+
+
+
+281
+00:07:02.560 --> 00:07:05.110
+If we talk about it, most of them are
+
+282
+00:07:05.110 --> 00:07:05.120
+
+
+
+283
+00:07:05.120 --> 00:07:08.390
+Reference free. Tocopherol leachate toxicity
+
+284
+00:07:08.390 --> 00:07:08.400
+
+
+
+285
+00:07:08.400 --> 00:07:11.350
+You will be able to measure all this in the online setup
+
+286
+00:07:11.350 --> 00:07:11.360
+
+
+
+287
+00:07:11.360 --> 00:07:13.830
+And in your operational ones, you
+
+288
+00:07:13.830 --> 00:07:13.840
+
+
+
+289
+00:07:13.840 --> 00:07:16.230
+No reference needed because this is major
+
+290
+00:07:16.230 --> 00:07:16.240
+
+
+
+291
+00:07:16.240 --> 00:07:18.629
+Are not done. These are simply locked.
+
+292
+00:07:18.629 --> 00:07:18.639
+
+
+
+293
+00:07:18.639 --> 00:07:20.710
+So figuring out the latency, figuring out the cost,
+
+294
+00:07:20.710 --> 00:07:20.720
+
+
+
+295
+00:07:20.720 --> 00:07:22.629
+You can find out the reliability of all this online.
+
+296
+00:07:22.629 --> 00:07:22.639
+
+
+
+297
+00:07:22.639 --> 00:07:25.990
+You can do it in the setup. So essentially
+
+298
+00:07:25.990 --> 00:07:26.000
+
+
+
+299
+00:07:26.000 --> 00:07:30.790
+You won't be able to run these ones and these ones.
+
+300
+00:07:30.790 --> 00:07:30.800
+
+
+
+301
+00:07:30.800 --> 00:07:32.870
+in the online setup. Apart from these, the rest of you
+
+302
+00:07:32.870 --> 00:07:32.880
+
+
+
+303
+00:07:32.880 --> 00:07:35.830
+You can run all of them. Ok? Now in this too
+
+304
+00:07:35.830 --> 00:07:35.840
+
+
+
+305
+00:07:35.840 --> 00:07:38.070
+I am keeping the work a little simple. what am I
+
+306
+00:07:38.070 --> 00:07:38.080
+
+
+
+307
+00:07:38.080 --> 00:07:42.230
+Am I doing it? I will use the generator separately.
+
+308
+00:07:42.230 --> 00:07:42.240
+
+
+
+309
+00:07:42.240 --> 00:07:44.469
+Component level evaluation not performed
+
+310
+00:07:44.469 --> 00:07:44.479
+
+
+
+311
+00:07:44.479 --> 00:07:49.350
+I will do it. I'm this Simply RAG Pipeline
+
+312
+00:07:49.350 --> 00:07:49.360
+
+
+
+313
+00:07:49.360 --> 00:07:52.230
+I will extract three metrics. Basically I RAG
+
+314
+00:07:52.230 --> 00:07:52.240
+
+
+
+315
+00:07:52.240 --> 00:07:56.550
+I will run the trial in online setup. Ok?
+
+316
+00:07:56.550 --> 00:07:56.560
+
+
+
+317
+00:07:56.560 --> 00:08:01.430
+Also, I will not measure style.
+
+318
+00:08:01.430 --> 00:08:01.440
+
+
+
+319
+00:08:01.440 --> 00:08:03.830
+in the online setup. The simple reason for this is this.
+
+320
+00:08:03.830 --> 00:08:03.840
+
+
+
+321
+00:08:03.840 --> 00:08:08.309
+There are two reasons for that. First, the time is now
+
+322
+00:08:08.309 --> 00:08:08.319
+
+
+
+323
+00:08:08.319 --> 00:08:10.550
+We have less. In a 2-hour session
+
+324
+00:08:10.550 --> 00:08:10.560
+
+
+
+325
+00:08:10.560 --> 00:08:13.110
+How much to do? The second reason is that the style
+
+326
+00:08:13.110 --> 00:08:13.120
+
+
+
+327
+00:08:13.120 --> 00:08:15.670
+Doesn't deviate much. If your
+
+328
+00:08:15.670 --> 00:08:15.680
+
+
+
+329
+00:08:15.680 --> 00:08:19.670
+The number of styles in the offline setup
+
+330
+00:08:19.670 --> 00:08:19.680
+
+
+
+331
+00:08:19.680 --> 00:08:23.350
+Let's say it's around 80. So it never
+
+332
+00:08:23.350 --> 00:08:23.360
+
+
+
+333
+00:08:23.360 --> 00:08:25.350
+It must have happened that when you suddenly went online
+
+334
+00:08:25.350 --> 00:08:25.360
+
+
+
+335
+00:08:25.360 --> 00:08:28.469
+The chatbot immediately reached 30. Because Style
+
+336
+00:08:28.469 --> 00:08:28.479
+
+
+
+337
+00:08:28.479 --> 00:08:30.629
+Is something that won't do so very very.
+
+338
+00:08:30.629 --> 00:08:30.639
+
+
+
+339
+00:08:30.639 --> 00:08:32.630
+There will not be that much variance in that. for this
+
+340
+00:08:32.630 --> 00:08:32.640
+
+
+
+341
+00:08:32.640 --> 00:08:37.029
+Reason I'm not including style in my
+
+342
+00:08:37.029 --> 00:08:37.039
+
+
+
+343
+00:08:37.039 --> 00:08:39.990
+Online Eval suite. So I'm going to take this one too for now
+
+344
+00:08:39.990 --> 00:08:40.000
+
+
+
+345
+00:08:40.000 --> 00:08:41.430
+I am not doing major. can do
+
+346
+00:08:41.430 --> 00:08:41.440
+
+
+
+347
+00:08:41.440 --> 00:08:44.710
+Theoretically there doesn't seem to be any need. Ok?
+
+348
+00:08:44.710 --> 00:08:44.720
+
+
+
+349
+00:08:44.720 --> 00:08:48.470
+Other scope, leakage, toxicity
+
+350
+00:08:48.470 --> 00:08:48.480
+
+
+
+351
+00:08:48.480 --> 00:08:52.150
+You can setup all three of these online.
+
+352
+00:08:52.150 --> 00:08:52.160
+
+
+
+353
+00:08:52.160 --> 00:08:54.550
+In. Ok? And I won't do all three.
+
+354
+00:08:54.550 --> 00:08:54.560
+
+
+
+355
+00:08:54.560 --> 00:08:57.350
+I will show you one by one. everything else
+
+356
+00:08:57.350 --> 00:08:57.360
+
+
+
+357
+00:08:57.360 --> 00:09:00.070
+It will remain exactly the same. You will be able to do it yourself. So
+
+358
+00:09:00.070 --> 00:09:00.080
+
+
+
+359
+00:09:00.080 --> 00:09:03.110
+I will remove the toxicity from this by giving it to you.
+
+360
+00:09:03.110 --> 00:09:03.120
+
+
+
+361
+00:09:03.120 --> 00:09:06.070
+I will show you. Ok? So among the safety ones
+
+362
+00:09:06.070 --> 00:09:06.080
+
+
+
+363
+00:09:06.080 --> 00:09:08.790
+I did the toxicity. and operational
+
+364
+00:09:08.790 --> 00:09:08.800
+
+
+
+365
+00:09:08.800 --> 00:09:12.389
+In this, I will give you latency and cost.
+
+366
+00:09:12.389 --> 00:09:12.399
+
+
+
+367
+00:09:12.399 --> 00:09:16.389
+I will show you. Reliability is actually not
+
+368
+00:09:16.389 --> 00:09:16.399
+
+
+
+369
+00:09:16.399 --> 00:09:18.470
+We need a little bit for reliability.
+
+370
+00:09:18.470 --> 00:09:18.480
+
+
+
+371
+00:09:18.480 --> 00:09:20.550
+Using external software tools
+
+372
+00:09:20.550 --> 00:09:20.560
+
+
+
+373
+00:09:20.560 --> 00:09:23.590
+Will fall. like gfana and prometheus vo
+
+374
+00:09:23.590 --> 00:09:23.600
+
+
+
+375
+00:09:23.600 --> 00:09:26.470
+This is a little beyond the scope of this lecture.
+
+376
+00:09:26.470 --> 00:09:26.480
+
+
+
+377
+00:09:26.480 --> 00:09:29.590
+That's why I'm not covering that. oh that's why
+
+378
+00:09:29.590 --> 00:09:29.600
+
+
+
+379
+00:09:29.600 --> 00:09:33.030
+For now, our online eval suite will be
+
+380
+00:09:33.030 --> 00:09:33.040
+
+
+
+381
+00:09:33.040 --> 00:09:36.230
+These things will be there in it. to measure quality
+
+382
+00:09:36.230 --> 00:09:36.240
+
+
+
+383
+00:09:36.240 --> 00:09:38.630
+For this we work on the three metrics above
+
+384
+00:09:38.630 --> 00:09:38.640
+
+
+
+385
+00:09:38.640 --> 00:09:41.829
+do. One Will Be Contextual
+
+386
+00:09:41.829 --> 00:09:41.839
+
+
+
+387
+00:09:41.839 --> 00:09:45.910
+Relevancy, Second Will Be Faithfulness and
+
+388
+00:09:45.910 --> 00:09:45.920
+
+
+
+389
+00:09:45.920 --> 00:09:49.750
+Third will be answer relevance. In safety
+
+390
+00:09:49.750 --> 00:09:49.760
+
+
+
+391
+00:09:49.760 --> 00:09:52.310
+All three could do it. But I will tell you about the time
+
+392
+00:09:52.310 --> 00:09:52.320
+
+
+
+393
+00:09:52.320 --> 00:09:54.710
+Because I will show you just one. and it
+
+394
+00:09:54.710 --> 00:09:54.720
+
+
+
+395
+00:09:54.720 --> 00:09:58.550
+There will be toxicity. In end operationals we
+
+396
+00:09:58.550 --> 00:09:58.560
+
+
+
+397
+00:09:58.560 --> 00:10:02.470
+Two will do. One Will Be Latency
+
+398
+00:10:02.470 --> 00:10:02.480
+
+
+
+399
+00:10:02.480 --> 00:10:06.870
+And second will be cost. So this
+
+400
+00:10:06.870 --> 00:10:06.880
+
+
+
+401
+00:10:06.880 --> 00:10:09.430
+We are going to work on the six matrix
+
+402
+00:10:09.430 --> 00:10:09.440
+
+
+
+403
+00:10:09.440 --> 00:10:11.509
+Are. This is our one of the six metrics.
+
+404
+00:10:11.509 --> 00:10:11.519
+
+
+
+405
+00:10:11.519 --> 00:10:15.110
+Online Eval suite Hum Log Banaye Using A
+
+406
+00:10:15.110 --> 00:10:15.120
+
+
+
+407
+00:10:15.120 --> 00:10:18.150
+Tool Called LangSmith. Ok? So this is our
+
+408
+00:10:18.150 --> 00:10:18.160
+
+
+
+409
+00:10:18.160 --> 00:10:20.470
+This is the purpose of today's class. in today's class
+
+410
+00:10:20.470 --> 00:10:20.480
+
+
+
+411
+00:10:20.480 --> 00:10:22.389
+You will learn that once your software
+
+412
+00:10:22.389 --> 00:10:22.399
+
+
+
+413
+00:10:22.399 --> 00:10:25.110
+Once deployed, go to the online setup.
+
+414
+00:10:25.110 --> 00:10:25.120
+
+
+
+415
+00:10:25.120 --> 00:10:27.670
+How do you continuously monitor it?
+
+416
+00:10:27.670 --> 00:10:27.680
+
+
+
+417
+00:10:27.680 --> 00:10:30.870
+Yes, you continuously evaluate. This only
+
+418
+00:10:30.870 --> 00:10:30.880
+
+
+
+419
+00:10:30.880 --> 00:10:32.470
+This is the goal of our class today. So
+
+420
+00:10:32.470 --> 00:10:32.480
+
+
+
+421
+00:10:32.480 --> 00:10:35.990
+My strategy is such that we are the most
+
+422
+00:10:35.990 --> 00:10:36.000
+
+
+
+423
+00:10:36.000 --> 00:10:38.870
+Covering the matrix with the first operation
+
+424
+00:10:38.870 --> 00:10:38.880
+
+
+
+425
+00:10:38.880 --> 00:10:41.670
+do. Meaning we set them up first.
+
+426
+00:10:41.670 --> 00:10:41.680
+
+
+
+427
+00:10:41.680 --> 00:10:44.470
+do. These are the easiest to set up.
+
+428
+00:10:44.470 --> 00:10:44.480
+
+
+
+429
+00:10:44.480 --> 00:10:46.949
+Because as soon as you get the tracing done,
+
+430
+00:10:46.949 --> 00:10:46.959
+
+
+
+431
+00:10:46.959 --> 00:10:49.670
+Basically, lock every trace as you go.
+
+432
+00:10:49.670 --> 00:10:49.680
+
+
+
+433
+00:10:49.680 --> 00:10:52.710
+You make us do it automatically in length
+
+434
+00:10:52.710 --> 00:10:52.720
+
+
+
+435
+00:10:52.720 --> 00:10:55.910
+The system is capable of both latency and cost.
+
+436
+00:10:55.910 --> 00:10:55.920
+
+
+
+437
+00:10:55.920 --> 00:10:57.750
+He starts doing it. So you need to do something
+
+438
+00:10:57.750 --> 00:10:57.760
+
+
+
+439
+00:10:57.760 --> 00:10:59.670
+There is no need. You Have to Simply Connect
+
+440
+00:10:59.670 --> 00:10:59.680
+
+
+
+441
+00:10:59.680 --> 00:11:02.389
+Your application to length and this part
+
+442
+00:11:02.389 --> 00:11:02.399
+
+
+
+443
+00:11:02.399 --> 00:11:05.430
+Will be done. After that I will give you the safety one
+
+444
+00:11:05.430 --> 00:11:05.440
+
+
+
+445
+00:11:05.440 --> 00:11:08.230
+I will pass my matriculation and after that I
+
+446
+00:11:08.230 --> 00:11:08.240
+
+
+
+447
+00:11:08.240 --> 00:11:10.230
+You will get a quality matriculation in the last
+
+448
+00:11:10.230 --> 00:11:10.240
+
+
+
+449
+00:11:10.240 --> 00:11:14.069
+I will do it and then it will be even more interesting.
+
+450
+00:11:14.069 --> 00:11:14.079
+
+
+
+451
+00:11:14.079 --> 00:11:15.670
+Will do things. Your own dashboard
+
+452
+00:11:15.670 --> 00:11:15.680
+
+
+
+453
+00:11:15.680 --> 00:11:17.990
+Will make. Everything in that dashboard locks you down.
+
+454
+00:11:17.990 --> 00:11:18.000
+
+
+
+455
+00:11:18.000 --> 00:11:20.630
+It will appear to be happening. Creating alerts
+
+456
+00:11:20.630 --> 00:11:20.640
+
+
+
+457
+00:11:20.640 --> 00:11:23.030
+I'll teach you how to reach a threshold
+
+458
+00:11:23.030 --> 00:11:23.040
+
+
+
+459
+00:11:23.040 --> 00:11:25.670
+There is a break. Like in the last 1 hour
+
+460
+00:11:25.670 --> 00:11:25.680
+
+
+
+461
+00:11:25.680 --> 00:11:29.030
+If Our Faithfulness Core Is a Certain
+
+462
+00:11:29.030 --> 00:11:29.040
+
+
+
+463
+00:11:29.040 --> 00:11:31.190
+Alert if the rate drops below the threshold
+
+464
+00:11:31.190 --> 00:11:31.200
+
+
+
+465
+00:11:31.200 --> 00:11:33.269
+Raise it. I will show you how to do this
+
+466
+00:11:33.269 --> 00:11:33.279
+
+
+
+467
+00:11:33.279 --> 00:11:35.269
+I will teach you. So it's going to be quite interesting
+
+468
+00:11:35.269 --> 00:11:35.279
+
+
+
+469
+00:11:35.279 --> 00:11:38.710
+It's the whole thing. Ok? So or that's the
+
+470
+00:11:38.710 --> 00:11:38.720
+
+
+
+471
+00:11:38.720 --> 00:11:41.750
+Setup. That's the plan. Now Let's Start
+
+472
+00:11:41.750 --> 00:11:41.760
+
+
+
+473
+00:11:41.760 --> 00:11:44.550
+The Session. So I have written these steps.
+
+474
+00:11:44.550 --> 00:11:44.560
+
+
+
+475
+00:11:44.560 --> 00:11:46.710
+Let us carry out these steps one by one.
+
+476
+00:11:46.710 --> 00:11:46.720
+
+
+
+477
+00:11:46.720 --> 00:11:49.030
+We have to keep getting out and our session is complete.
+
+478
+00:11:49.030 --> 00:11:49.040
+
+
+
+479
+00:11:49.040 --> 00:11:51.430
+Will be done. Ok? Just give us our code
+
+480
+00:11:51.430 --> 00:11:51.440
+
+
+
+481
+00:11:51.440 --> 00:11:55.670
+Needed So I will show you.
+
+482
+00:11:55.670 --> 00:11:55.680
+
+
+
+483
+00:11:55.680 --> 00:11:59.430
+This Is Our Code. Right? This is our code
+
+484
+00:11:59.430 --> 00:11:59.440
+
+
+
+485
+00:11:59.440 --> 00:12:01.030
+What we've been working on for so long
+
+486
+00:12:01.030 --> 00:12:01.040
+
+
+
+487
+00:12:01.040 --> 00:12:03.670
+From. We start working from here.
+
+488
+00:12:03.670 --> 00:12:03.680
+
+
+
+489
+00:12:03.680 --> 00:12:06.310
+Are. So what do we need to do first?
+
+490
+00:12:06.310 --> 00:12:06.320
+
+
+
+491
+00:12:06.320 --> 00:12:08.949
+We have to go to Na LangSmith and get a new one.
+
+492
+00:12:08.949 --> 00:12:08.959
+
+
+
+493
+00:12:08.959 --> 00:12:12.550
+You will have to make a project. Because we have our
+
+494
+00:12:12.550 --> 00:12:12.560
+
+
+
+495
+00:12:12.560 --> 00:12:15.430
+Connect the deployed project and the language
+
+496
+00:12:15.430 --> 00:12:15.440
+
+
+
+497
+00:12:15.440 --> 00:12:18.949
+Have to do it. So for that you have to go to a
+
+498
+00:12:18.949 --> 00:12:18.959
+
+
+
+499
+00:12:18.959 --> 00:12:21.829
+smithth.LangChain.com
+
+500
+00:12:21.829 --> 00:12:21.839
+
+
+
+501
+00:12:21.839 --> 00:12:24.230
+This is the URL. Create an account here
+
+502
+00:12:24.230 --> 00:12:24.240
+
+
+
+503
+00:12:24.240 --> 00:12:26.230
+You have to take it. I did a simple Google login.
+
+504
+00:12:26.230 --> 00:12:26.240
+
+
+
+505
+00:12:26.240 --> 00:12:28.470
+I did it and you can see it here.
+
+506
+00:12:28.470 --> 00:12:28.480
+
+
+
+507
+00:12:28.480 --> 00:12:31.350
+You have to go to the trading tab. So when you
+
+508
+00:12:31.350 --> 00:12:31.360
+
+
+
+509
+00:12:31.360 --> 00:12:33.110
+You will go to the training tab for the first time.
+
+510
+00:12:33.110 --> 00:12:33.120
+
+
+
+511
+00:12:33.120 --> 00:12:35.350
+So that will show you the No Training Project
+
+512
+00:12:35.350 --> 00:12:35.360
+
+
+
+513
+00:12:35.360 --> 00:12:40.710
+Found. A We went to All Applications and
+
+514
+00:12:40.710 --> 00:12:40.720
+
+
+
+515
+00:12:40.720 --> 00:12:43.190
+Clicked on the plus button here. From here
+
+516
+00:12:43.190 --> 00:12:43.200
+
+
+
+517
+00:12:43.200 --> 00:12:44.949
+We are creating a new application.
+
+518
+00:12:44.949 --> 00:12:44.959
+
+
+
+519
+00:12:44.959 --> 00:12:47.990
+We are calling it Campus X Doubt Solved.
+
+520
+00:12:47.990 --> 00:12:48.000
+
+
+
+521
+00:12:48.000 --> 00:12:51.190
+Ok? Create Application a Tag Value
+
+522
+00:12:51.190 --> 00:12:51.200
+
+
+
+523
+00:12:51.200 --> 00:12:53.110
+Already. I was actually working, so
+
+524
+00:12:53.110 --> 00:12:53.120
+
+
+
+525
+00:12:53.120 --> 00:12:54.550
+This name is also coming from before and some
+
+526
+00:12:54.550 --> 00:12:54.560
+
+
+
+527
+00:12:54.560 --> 00:12:55.910
+There is also a problem. Let's do one thing.
+
+528
+00:12:55.910 --> 00:12:55.920
+
+
+
+529
+00:12:55.920 --> 00:12:58.870
+Let's simplify it a bit. This we
+
+530
+00:12:58.870 --> 00:12:58.880
+
+
+
+531
+00:12:58.880 --> 00:13:03.910
+Let's call cx as in campus x dubt solve
+
+532
+00:13:03.910 --> 00:13:03.920
+
+
+
+533
+00:13:03.920 --> 00:13:06.230
+So that there is no naming conflict. These
+
+534
+00:13:06.230 --> 00:13:06.240
+
+
+
+535
+00:13:06.240 --> 00:13:09.110
+We created it and look at this.
+
+536
+00:13:09.110 --> 00:13:09.120
+
+
+
+537
+00:13:09.120 --> 00:13:11.829
+Our project is view. Ok? cx dubt
+
+538
+00:13:11.829 --> 00:13:11.839
+
+
+
+539
+00:13:11.839 --> 00:13:15.190
+Solve. This is our current application inside
+
+540
+00:13:15.190 --> 00:13:15.200
+
+
+
+541
+00:13:15.200 --> 00:13:18.069
+Lands. What do you do now? First of all
+
+542
+00:13:18.069 --> 00:13:18.079
+
+
+
+543
+00:13:18.079 --> 00:13:21.509
+To connect this application you have to use your code
+
+544
+00:13:21.509 --> 00:13:21.519
+
+
+
+545
+00:13:21.519 --> 00:13:23.829
+From. What do you have to do for that? here
+
+546
+00:13:23.829 --> 00:13:23.839
+
+
+
+547
+00:13:23.839 --> 00:13:25.750
+Below
+
+548
+00:13:25.750 --> 00:13:25.760
+
+
+
+549
+00:13:25.760 --> 00:13:29.190
+I have to go there and here you have to be the first one
+
+550
+00:13:29.190 --> 00:13:29.200
+
+
+
+551
+00:13:29.200 --> 00:13:32.069
+To generate an API key. This button is on this
+
+552
+00:13:32.069 --> 00:13:32.079
+
+
+
+553
+00:13:32.079 --> 00:13:35.350
+If you click, an API key will be generated.
+
+554
+00:13:35.350 --> 00:13:35.360
+
+
+
+555
+00:13:35.360 --> 00:13:37.590
+Will go. Obviously you can see my API.
+
+556
+00:13:37.590 --> 00:13:37.600
+
+
+
+557
+00:13:37.600 --> 00:13:39.190
+Used to be. But don't worry I am doing this project
+
+558
+00:13:39.190 --> 00:13:39.200
+
+
+
+559
+00:13:39.200 --> 00:13:41.430
+I will delete it after class. So I will
+
+560
+00:13:41.430 --> 00:13:41.440
+
+
+
+561
+00:13:41.440 --> 00:13:45.030
+Copy this and I will go back to my code.
+
+562
+00:13:45.030 --> 00:13:45.040
+
+
+
+563
+00:13:45.040 --> 00:13:47.910
+Here is my B file.
+
+564
+00:13:47.910 --> 00:13:47.920
+
+
+
+565
+00:13:47.920 --> 00:13:51.350
+In which I am currently working on the API of OpenAI.
+
+566
+00:13:51.350 --> 00:13:51.360
+
+
+
+567
+00:13:51.360 --> 00:13:53.910
+It is lying there. Here I am writing the remaining lines
+
+568
+00:13:53.910 --> 00:13:53.920
+
+
+
+569
+00:13:53.920 --> 00:13:57.990
+I will add it. Watch this Smith Trying True
+
+570
+00:13:57.990 --> 00:13:58.000
+
+
+
+571
+00:13:58.000 --> 00:14:01.110
+of the length end point langs API that I
+
+572
+00:14:01.110 --> 00:14:01.120
+
+
+
+573
+00:14:01.120 --> 00:14:03.590
+Just generated it. Project Name: cx
+
+574
+00:14:03.590 --> 00:14:03.600
+
+
+
+575
+00:14:03.600 --> 00:14:05.750
+Doubt Solve which we just created and
+
+576
+00:14:05.750 --> 00:14:05.760
+
+
+
+577
+00:14:05.760 --> 00:14:07.750
+We don't need anthropogenic. So this
+
+578
+00:14:07.750 --> 00:14:07.760
+
+
+
+579
+00:14:07.760 --> 00:14:10.310
+I will delete the thing and I will delete this file
+
+580
+00:14:10.310 --> 00:14:10.320
+
+
+
+581
+00:14:10.320 --> 00:14:13.110
+I will save it. That's it. Simple Process
+
+582
+00:14:13.110 --> 00:14:13.120
+
+
+
+583
+00:14:13.120 --> 00:14:16.550
+Was. We created a new application and
+
+584
+00:14:16.550 --> 00:14:16.560
+
+
+
+585
+00:14:16.560 --> 00:14:18.470
+environment variables of the application
+
+586
+00:14:18.470 --> 00:14:18.480
+
+
+
+587
+00:14:18.480 --> 00:14:21.030
+Copied and pasted it here. And We
+
+588
+00:14:21.030 --> 00:14:21.040
+
+
+
+589
+00:14:21.040 --> 00:14:24.230
+R. Dunn. Now our code is our land
+
+590
+00:14:24.230 --> 00:14:24.240
+
+
+
+591
+00:14:24.240 --> 00:14:26.310
+The application is connected. Once
+
+592
+00:14:26.310 --> 00:14:26.320
+
+
+
+593
+00:14:26.320 --> 00:14:29.030
+Let me show you a pipeline run.
+
+594
+00:14:29.030 --> 00:14:29.040
+
+
+
+595
+00:14:29.040 --> 00:14:31.670
+And let's see if it's getting logged or not.
+
+596
+00:14:31.670 --> 00:14:31.680
+
+
+
+597
+00:14:31.680 --> 00:14:33.350
+Is his trace being captured or not?
+
+598
+00:14:33.350 --> 00:14:33.360
+
+
+
+599
+00:14:33.360 --> 00:14:36.470
+In lands. So I will open a new terminal
+
+600
+00:14:36.470 --> 00:14:36.480
+
+
+
+601
+00:14:36.480 --> 00:14:38.310
+window
+
+602
+00:14:38.310 --> 00:14:38.320
+
+
+
+603
+00:14:38.320 --> 00:14:41.750
+And we will run this file RAG pipeline
+
+604
+00:14:41.750 --> 00:14:41.760
+
+
+
+605
+00:14:41.760 --> 00:14:44.069
+Dotpy. I just wrote a question here.
+
+606
+00:14:44.069 --> 00:14:44.079
+
+
+
+607
+00:14:44.079 --> 00:14:48.230
+what is gsm 8k okay so we
+
+608
+00:14:48.230 --> 00:14:48.240
+
+
+
+609
+00:14:48.240 --> 00:14:52.790
+Simply this will run Python -
+
+610
+00:14:52.790 --> 00:14:52.800
+
+
+
+611
+00:14:52.800 --> 00:14:55.750
+src dot
+
+612
+00:14:55.750 --> 00:14:55.760
+
+
+
+613
+00:14:55.760 --> 00:14:59.670
+RAG Unders Pipeline
+
+614
+00:14:59.670 --> 00:14:59.680
+
+
+
+615
+00:14:59.680 --> 00:15:03.269
+Hit enter. Now our code will run here.
+
+616
+00:15:03.269 --> 00:15:03.279
+
+
+
+617
+00:15:03.279 --> 00:15:07.990
+And whatever other things happen behind the scenes
+
+618
+00:15:07.990 --> 00:15:08.000
+
+
+
+619
+00:15:08.000 --> 00:15:10.790
+Question context will generate answer
+
+620
+00:15:10.790 --> 00:15:10.800
+
+
+
+621
+00:15:10.800 --> 00:15:14.629
+We will capture all the traces that will be generated.
+
+622
+00:15:14.629 --> 00:15:14.639
+
+
+
+623
+00:15:14.639 --> 00:15:16.870
+Take it inside the landside automatically. They
+
+624
+00:15:16.870 --> 00:15:16.880
+
+
+
+625
+00:15:16.880 --> 00:15:18.870
+LangSmith does the behind-the-scenes work.
+
+626
+00:15:18.870 --> 00:15:18.880
+
+
+
+627
+00:15:18.880 --> 00:15:21.269
+You need to write a single line of code.
+
+628
+00:15:21.269 --> 00:15:21.279
+
+
+
+629
+00:15:21.279 --> 00:15:24.629
+Not there. So let's wait. Look at this here
+
+630
+00:15:24.629 --> 00:15:24.639
+
+
+
+631
+00:15:24.639 --> 00:15:27.189
+Our
+
+632
+00:15:27.189 --> 00:15:27.199
+
+
+
+633
+00:15:27.199 --> 00:15:30.629
+The question came. This is our answer. These
+
+634
+00:15:30.629 --> 00:15:30.639
+
+
+
+635
+00:15:30.639 --> 00:15:33.829
+Our context has arrived. Ok? Now
+
+636
+00:15:33.829 --> 00:15:33.839
+
+
+
+637
+00:15:33.839 --> 00:15:36.310
+what's funny is that if you go
+
+638
+00:15:36.310 --> 00:15:36.320
+
+
+
+639
+00:15:36.320 --> 00:15:40.150
+Yahan pe to u will see that automatically campus
+
+640
+00:15:40.150 --> 00:15:40.160
+
+
+
+641
+00:15:40.160 --> 00:15:42.790
+U inside tracing in x doubt solve
+
+642
+00:15:42.790 --> 00:15:42.800
+
+
+
+643
+00:15:42.800 --> 00:15:45.750
+Have captured your first trace. if you
+
+644
+00:15:45.750 --> 00:15:45.760
+
+
+
+645
+00:15:45.760 --> 00:15:48.710
+If you click on this trace, you can see
+
+646
+00:15:48.710 --> 00:15:48.720
+
+
+
+647
+00:15:48.720 --> 00:15:54.949
+that the question was this and inside it
+
+648
+00:15:54.949 --> 00:15:54.959
+
+
+
+649
+00:15:54.959 --> 00:15:58.629
+Here is your output and your context
+
+650
+00:15:58.629 --> 00:15:58.639
+
+
+
+651
+00:15:58.639 --> 00:16:01.990
+Here it is. And not only that, but also
+
+652
+00:16:01.990 --> 00:16:02.000
+
+
+
+653
+00:16:02.000 --> 00:16:04.150
+And you have a lot of important information.
+
+654
+00:16:04.150 --> 00:16:04.160
+
+
+
+655
+00:16:04.160 --> 00:16:07.430
+Has been captured. True Edge Run this entire code
+
+656
+00:16:07.430 --> 00:16:07.440
+
+
+
+657
+00:16:07.440 --> 00:16:09.350
+How much time did it take to do it? which is your
+
+658
+00:16:09.350 --> 00:16:09.360
+
+
+
+659
+00:16:09.360 --> 00:16:13.430
+Latency was 4.14 seconds and what was the cost?
+
+660
+00:16:13.430 --> 00:16:13.440
+
+
+
+661
+00:16:13.440 --> 00:16:19.110
+You can see this is the cost.
+
+662
+00:16:19.110 --> 00:16:19.120
+
+
+
+663
+00:16:19.120 --> 00:16:21.509
+So exactly what I said
+
+664
+00:16:21.509 --> 00:16:21.519
+
+
+
+665
+00:16:21.519 --> 00:16:25.590
+It has happened. As soon as we connected
+
+666
+00:16:25.590 --> 00:16:25.600
+
+
+
+667
+00:16:25.600 --> 00:16:28.310
+We are able to change the length from our application
+
+668
+00:16:28.310 --> 00:16:28.320
+
+
+
+669
+00:16:28.320 --> 00:16:31.829
+to measure these two quantities which is
+
+670
+00:16:31.829 --> 00:16:31.839
+
+
+
+671
+00:16:31.839 --> 00:16:35.269
+Latency and cost.
+
+672
+00:16:35.269 --> 00:16:35.279
+
+
+
+673
+00:16:35.279 --> 00:16:37.829
+We have already started measuring this.
+
+674
+00:16:37.829 --> 00:16:37.839
+
+
+
+675
+00:16:37.839 --> 00:16:41.189
+Are. We started the first task.
+
+676
+00:16:41.189 --> 00:16:41.199
+
+
+
+677
+00:16:41.199 --> 00:16:43.189
+It is not complete but it has started
+
+678
+00:16:43.189 --> 00:16:43.199
+
+
+
+679
+00:16:43.199 --> 00:16:45.990
+Is. Does latency include the time it took for
+
+680
+00:16:45.990 --> 00:16:46.000
+
+
+
+681
+00:16:46.000 --> 00:16:49.189
+Tracing? look tracing asynchronously
+
+682
+00:16:49.189 --> 00:16:49.199
+
+
+
+683
+00:16:49.199 --> 00:16:53.189
+It happens. So it will not take any separate time. It
+
+684
+00:16:53.189 --> 00:16:53.199
+
+
+
+685
+00:16:53.199 --> 00:16:57.030
+It is an asynchronous operation. this thing
+
+686
+00:16:57.030 --> 00:16:57.040
+
+
+
+687
+00:16:57.040 --> 00:16:59.430
+It is working but there is a problem. I will
+
+688
+00:16:59.430 --> 00:16:59.440
+
+
+
+689
+00:16:59.440 --> 00:17:01.670
+Tell you what the problem is. If you are here
+
+690
+00:17:01.670 --> 00:17:01.680
+
+
+
+691
+00:17:01.680 --> 00:17:07.669
+But look, we are being shown that
+
+692
+00:17:07.669 --> 00:17:07.679
+
+
+
+693
+00:17:07.679 --> 00:17:11.669
+Your entire end-to-end operation
+
+694
+00:17:11.669 --> 00:17:11.679
+
+
+
+695
+00:17:11.679 --> 00:17:14.710
+You are creating a pre-made template form and
+
+696
+00:17:14.710 --> 00:17:14.720
+
+
+
+697
+00:17:14.720 --> 00:17:18.870
+Then you can visit Chat OpenAI Edge in LLM
+
+698
+00:17:18.870 --> 00:17:18.880
+
+
+
+699
+00:17:18.880 --> 00:17:21.350
+You are sending that receipt. LLM Palt Ke
+
+700
+00:17:21.350 --> 00:17:21.360
+
+
+
+701
+00:17:21.360 --> 00:17:23.829
+Resounding. It took 4 seconds
+
+702
+00:17:23.829 --> 00:17:23.839
+
+
+
+703
+00:17:23.839 --> 00:17:25.510
+Is. After that whatever answer is coming, we will
+
+704
+00:17:25.510 --> 00:17:25.520
+
+
+
+705
+00:17:25.520 --> 00:17:27.909
+Print via string output parceler
+
+706
+00:17:27.909 --> 00:17:27.919
+
+
+
+707
+00:17:27.919 --> 00:17:30.470
+I am demonstrating it. can you sense a
+
+708
+00:17:30.470 --> 00:17:30.480
+
+
+
+709
+00:17:30.480 --> 00:17:33.430
+Problem here? Is there any problem here
+
+710
+00:17:33.430 --> 00:17:33.440
+
+
+
+711
+00:17:33.440 --> 00:17:37.110
+Are you feeling it?
+
+712
+00:17:37.110 --> 00:17:37.120
+
+
+
+713
+00:17:37.120 --> 00:17:39.990
+Here we are doing the prep form. Here
+
+714
+00:17:39.990 --> 00:17:40.000
+
+
+
+715
+00:17:40.000 --> 00:17:43.510
+But we are sending questions to LLM
+
+716
+00:17:43.510 --> 00:17:43.520
+
+
+
+717
+00:17:43.520 --> 00:17:44.950
+Are. The question is coming back.
+
+718
+00:17:44.950 --> 00:17:44.960
+
+
+
+719
+00:17:44.960 --> 00:17:47.350
+The answer is coming and we will print it here.
+
+720
+00:17:47.350 --> 00:17:47.360
+
+
+
+721
+00:17:47.360 --> 00:17:50.150
+Are doing. Were these the three stages?
+
+722
+00:17:50.150 --> 00:17:50.160
+
+
+
+723
+00:17:50.160 --> 00:17:52.950
+In our RAG pipeline? make a copy,
+
+724
+00:17:52.950 --> 00:17:52.960
+
+
+
+725
+00:17:52.960 --> 00:17:55.430
+Sending questions to LLM and getting answers
+
+726
+00:17:55.430 --> 00:17:55.440
+
+
+
+727
+00:17:55.440 --> 00:17:57.510
+to come, display, or otherwise
+
+728
+00:17:57.510 --> 00:17:57.520
+
+
+
+729
+00:17:57.520 --> 00:18:00.230
+There was something that is not visible here.
+
+730
+00:18:00.230 --> 00:18:00.240
+
+
+
+731
+00:18:00.240 --> 00:18:03.990
+This is my question. Once our RAG
+
+732
+00:18:03.990 --> 00:18:04.000
+
+
+
+733
+00:18:04.000 --> 00:18:07.750
+Chatbot Imagine Karo Exactly Shruti Is
+
+734
+00:18:07.750 --> 00:18:07.760
+
+
+
+735
+00:18:07.760 --> 00:18:09.990
+Asking the Right Question Where is
+
+736
+00:18:09.990 --> 00:18:10.000
+
+
+
+737
+00:18:10.000 --> 00:18:12.789
+Retrieval? Retrieval throughout this sequence
+
+738
+00:18:12.789 --> 00:18:12.799
+
+
+
+739
+00:18:12.799 --> 00:18:15.270
+There is no discussion about it.
+
+740
+00:18:15.270 --> 00:18:15.280
+
+
+
+741
+00:18:15.280 --> 00:18:17.029
+There is no talk of retrieval. which we
+
+742
+00:18:17.029 --> 00:18:17.039
+
+
+
+743
+00:18:17.039 --> 00:18:18.630
+Fetching a document from a vector
+
+744
+00:18:18.630 --> 00:18:18.640
+
+
+
+745
+00:18:18.640 --> 00:18:20.549
+From the vector database, that too takes time.
+
+746
+00:18:20.549 --> 00:18:20.559
+
+
+
+747
+00:18:20.559 --> 00:18:22.310
+Used to be. That is not even mentioned here.
+
+748
+00:18:22.310 --> 00:18:22.320
+
+
+
+749
+00:18:22.320 --> 00:18:25.110
+Then we also used a rear-end. They
+
+750
+00:18:25.110 --> 00:18:25.120
+
+
+
+751
+00:18:25.120 --> 00:18:27.430
+Also it is not being mentioned here. So this is
+
+752
+00:18:27.430 --> 00:18:27.440
+
+
+
+753
+00:18:27.440 --> 00:18:31.350
+The Problem. The problem is that our
+
+754
+00:18:31.350 --> 00:18:31.360
+
+
+
+755
+00:18:31.360 --> 00:18:36.230
+The default code is the one with a length
+
+756
+00:18:36.230 --> 00:18:36.240
+
+
+
+757
+00:18:36.240 --> 00:18:41.029
+Simply going into this file and
+
+758
+00:18:41.029 --> 00:18:41.039
+
+
+
+759
+00:18:41.039 --> 00:18:43.990
+I don't know why, but he said this thing
+
+760
+00:18:43.990 --> 00:18:44.000
+
+
+
+761
+00:18:44.000 --> 00:18:46.549
+Unable to capture.
+
+762
+00:18:46.549 --> 00:18:46.559
+
+
+
+763
+00:18:46.559 --> 00:18:50.470
+Ok? So what do we have to do? Us
+
+764
+00:18:50.470 --> 00:18:50.480
+
+
+
+765
+00:18:50.480 --> 00:18:54.950
+By manually applying traceable decorators
+
+766
+00:18:54.950 --> 00:18:54.960
+
+
+
+767
+00:18:54.960 --> 00:18:57.510
+Whatever we want to capture
+
+768
+00:18:57.510 --> 00:18:57.520
+
+
+
+769
+00:18:57.520 --> 00:18:59.669
+He will have to be captured. i you
+
+770
+00:18:59.669 --> 00:18:59.679
+
+
+
+771
+00:18:59.679 --> 00:19:02.390
+I will tell you what I am going to do. I
+
+772
+00:19:02.390 --> 00:19:02.400
+
+
+
+773
+00:19:02.400 --> 00:19:07.110
+Helper code is written at one place. So the most
+
+774
+00:19:07.110 --> 00:19:07.120
+
+
+
+775
+00:19:07.120 --> 00:19:11.190
+First I am copying this code and RAG
+
+776
+00:19:11.190 --> 00:19:11.200
+
+
+
+777
+00:19:11.200 --> 00:19:13.350
+coming into the pipeline file and I
+
+778
+00:19:13.350 --> 00:19:13.360
+
+
+
+779
+00:19:13.360 --> 00:19:16.950
+I am saying explicitly that brother, you
+
+780
+00:19:16.950 --> 00:19:16.960
+
+
+
+781
+00:19:16.960 --> 00:19:20.710
+By properly tracing this invoked function
+
+782
+00:19:20.710 --> 00:19:20.720
+
+
+
+783
+00:19:20.720 --> 00:19:22.230
+Give
+
+784
+00:19:22.230 --> 00:19:22.240
+
+
+
+785
+00:19:22.240 --> 00:19:25.350
+And you call this the RAG pipeline. So that
+
+786
+00:19:25.350 --> 00:19:25.360
+
+
+
+787
+00:19:25.360 --> 00:19:26.950
+automatically
+
+788
+00:19:26.950 --> 00:19:26.960
+
+
+
+789
+00:19:26.960 --> 00:19:30.070
+The retriever is also working on the trace.
+
+790
+00:19:30.070 --> 00:19:30.080
+
+
+
+791
+00:19:30.080 --> 00:19:32.789
+It should start happening. This is my first change and
+
+792
+00:19:32.789 --> 00:19:32.799
+
+
+
+793
+00:19:32.799 --> 00:19:37.590
+My second change is to use the same decorator
+
+794
+00:19:37.590 --> 00:19:37.600
+
+
+
+795
+00:19:37.600 --> 00:19:40.549
+I will also add to my reranker. These
+
+796
+00:19:40.549 --> 00:19:40.559
+
+
+
+797
+00:19:40.559 --> 00:19:43.110
+I have a file with Reranker. Her Invokes
+
+798
+00:19:43.110 --> 00:19:43.120
+
+
+
+799
+00:19:43.120 --> 00:19:46.070
+I said above the function that this rearanking
+
+800
+00:19:46.070 --> 00:19:46.080
+
+
+
+801
+00:19:46.080 --> 00:19:49.029
+You also trace the steps. and its name
+
+802
+00:19:49.029 --> 00:19:49.039
+
+
+
+803
+00:19:49.039 --> 00:19:51.909
+I kept it, I kept a retriever.
+
+804
+00:19:51.909 --> 00:19:51.919
+
+
+
+805
+00:19:51.919 --> 00:19:54.310
+Because essentially within the rearrangement itself, our
+
+806
+00:19:54.310 --> 00:19:54.320
+
+
+
+807
+00:19:54.320 --> 00:19:58.950
+Full retrieval is underway. A
+
+808
+00:19:58.950 --> 00:19:58.960
+
+
+
+809
+00:19:58.960 --> 00:20:02.630
+Here we are searching for a similar
+
+810
+00:20:02.630 --> 00:20:02.640
+
+
+
+811
+00:20:02.640 --> 00:20:05.750
+items and then here we can rerank it
+
+812
+00:20:05.750 --> 00:20:05.760
+
+
+
+813
+00:20:05.760 --> 00:20:08.150
+Have been. So after making these two changes
+
+814
+00:20:08.150 --> 00:20:08.160
+
+
+
+815
+00:20:08.160 --> 00:20:10.710
+What will happen? I'll show you how you can now
+
+816
+00:20:10.710 --> 00:20:10.720
+
+
+
+817
+00:20:10.720 --> 00:20:13.750
+When you run this code again,
+
+818
+00:20:13.750 --> 00:20:13.760
+
+
+
+819
+00:20:13.760 --> 00:20:17.510
+You will run the pipeline once again,
+
+820
+00:20:17.510 --> 00:20:17.520
+
+
+
+821
+00:20:17.520 --> 00:20:20.789
+You would see a change. I will show you. Ok?
+
+822
+00:20:20.789 --> 00:20:20.799
+
+
+
+823
+00:20:20.799 --> 00:20:23.430
+Same output came. Let's go here once
+
+824
+00:20:23.430 --> 00:20:23.440
+
+
+
+825
+00:20:23.440 --> 00:20:28.710
+Back. And look, this time we have a second
+
+826
+00:20:28.710 --> 00:20:28.720
+
+
+
+827
+00:20:28.720 --> 00:20:30.870
+Trace captured. This time the first of
+
+828
+00:20:30.870 --> 00:20:30.880
+
+
+
+829
+00:20:30.880 --> 00:20:33.270
+Look, the name has changed. RAG pipeline
+
+830
+00:20:33.270 --> 00:20:33.280
+
+
+
+831
+00:20:33.280 --> 00:20:35.510
+Went. Why? Because we have RAG pipeline
+
+832
+00:20:35.510 --> 00:20:35.520
+
+
+
+833
+00:20:35.520 --> 00:20:39.669
+I have said that the name is RAG Pipeline
+
+834
+00:20:39.669 --> 00:20:39.679
+
+
+
+835
+00:20:39.679 --> 00:20:42.870
+Narrate. Ok? And this time when you
+
+836
+00:20:42.870 --> 00:20:42.880
+
+
+
+837
+00:20:42.880 --> 00:20:45.750
+If you click then you will see that additional
+
+838
+00:20:45.750 --> 00:20:45.760
+
+
+
+839
+00:20:45.760 --> 00:20:48.390
+The steps are there. So first retriever's
+
+840
+00:20:48.390 --> 00:20:48.400
+
+
+
+841
+00:20:48.400 --> 00:20:51.110
+The step has been added here and after that
+
+842
+00:20:51.110 --> 00:20:51.120
+
+
+
+843
+00:20:51.120 --> 00:20:53.830
+After Chat Print Template Chat OpenAI and
+
+844
+00:20:53.830 --> 00:20:53.840
+
+
+
+845
+00:20:53.840 --> 00:20:56.789
+String Output Parceler Now our code
+
+846
+00:20:56.789 --> 00:20:56.799
+
+
+
+847
+00:20:56.799 --> 00:21:00.950
+He's essentially tracing everything.
+
+848
+00:21:00.950 --> 00:21:00.960
+
+
+
+849
+00:21:00.960 --> 00:21:04.870
+So now you are getting the correct answer
+
+850
+00:21:04.870 --> 00:21:04.880
+
+
+
+851
+00:21:04.880 --> 00:21:07.510
+Let's take a look at the values ​​for latency.
+
+852
+00:21:07.510 --> 00:21:07.520
+
+
+
+853
+00:21:07.520 --> 00:21:09.190
+The previous one will be getting more value.
+
+854
+00:21:09.190 --> 00:21:09.200
+
+
+
+855
+00:21:09.200 --> 00:21:13.669
+It was 4.14, now it is 4.79. Ah in the last one
+
+856
+00:21:13.669 --> 00:21:13.679
+
+
+
+857
+00:21:13.679 --> 00:21:16.310
+This was less because we considered retrieval.
+
+858
+00:21:16.310 --> 00:21:16.320
+
+
+
+859
+00:21:16.320 --> 00:21:18.310
+were not doing it as a process as a
+
+860
+00:21:18.310 --> 00:21:18.320
+
+
+
+861
+00:21:18.320 --> 00:21:20.149
+Part of the process. Now That We Are
+
+862
+00:21:20.149 --> 00:21:20.159
+
+
+
+863
+00:21:20.159 --> 00:21:23.270
+Considering it, you can see some latency.
+
+864
+00:21:23.270 --> 00:21:23.280
+
+
+
+865
+00:21:23.280 --> 00:21:27.350
+has increased. Ok? So this means now we can
+
+866
+00:21:27.350 --> 00:21:27.360
+
+
+
+867
+00:21:27.360 --> 00:21:32.070
+Say that this part is done. means we are
+
+868
+00:21:32.070 --> 00:21:32.080
+
+
+
+869
+00:21:32.080 --> 00:21:34.870
+At least able to measure that of our system
+
+870
+00:21:34.870 --> 00:21:34.880
+
+
+
+871
+00:21:34.880 --> 00:21:37.110
+What is the latency and what is the cost? These
+
+872
+00:21:37.110 --> 00:21:37.120
+
+
+
+873
+00:21:37.120 --> 00:21:39.750
+We are able to do it. We just did nothing.
+
+874
+00:21:39.750 --> 00:21:39.760
+
+
+
+875
+00:21:39.760 --> 00:21:42.070
+In very simple words, your
+
+876
+00:21:42.070 --> 00:21:42.080
+
+
+
+877
+00:21:42.080 --> 00:21:44.870
+Connected the application to the length
+
+878
+00:21:44.870 --> 00:21:44.880
+
+
+
+879
+00:21:44.880 --> 00:21:48.310
+And whenever we run the pipeline any number of times
+
+880
+00:21:48.310 --> 00:21:48.320
+
+
+
+881
+00:21:48.320 --> 00:21:50.789
+If you are capturing latency cost
+
+882
+00:21:50.789 --> 00:21:50.799
+
+
+
+883
+00:21:50.799 --> 00:21:53.350
+Inside LangSmith. That's it. That’s it
+
+884
+00:21:53.350 --> 00:21:53.360
+
+
+
+885
+00:21:53.360 --> 00:21:57.110
+This is our progress now, sir. But why it
+
+886
+00:21:57.110 --> 00:21:57.120
+
+
+
+887
+00:21:57.120 --> 00:22:00.070
+Left retriever part and covered generator on
+
+888
+00:22:00.070 --> 00:22:00.080
+
+
+
+889
+00:22:00.080 --> 00:22:02.710
+It's own. Yes, this is a bit tricky behavior.
+
+890
+00:22:02.710 --> 00:22:02.720
+
+
+
+891
+00:22:02.720 --> 00:22:07.190
+I also felt that when he was tracing himself
+
+892
+00:22:07.190 --> 00:22:07.200
+
+
+
+893
+00:22:07.200 --> 00:22:10.789
+without telling us so he just
+
+894
+00:22:10.789 --> 00:22:10.799
+
+
+
+895
+00:22:10.799 --> 00:22:14.470
+A was picking up only the generator part.
+
+896
+00:22:14.470 --> 00:22:14.480
+
+
+
+897
+00:22:14.480 --> 00:22:16.710
+I don't know why this affected me a little too
+
+898
+00:22:16.710 --> 00:22:16.720
+
+
+
+899
+00:22:16.720 --> 00:22:20.390
+It felt confusing. But again right now my
+
+900
+00:22:20.390 --> 00:22:20.400
+
+
+
+901
+00:22:20.400 --> 00:22:22.149
+I don't have an answer to why this is so tricky.
+
+902
+00:22:22.149 --> 00:22:22.159
+
+
+
+903
+00:22:22.159 --> 00:22:26.230
+Why is there behavior? But its purpose is that
+
+904
+00:22:26.230 --> 00:22:26.240
+
+
+
+905
+00:22:26.240 --> 00:22:28.070
+Whenever something is not being traced. These
+
+906
+00:22:28.070 --> 00:22:28.080
+
+
+
+907
+00:22:28.080 --> 00:22:30.310
+I also taught you in the length video.
+
+908
+00:22:30.310 --> 00:22:30.320
+
+
+
+909
+00:22:30.320 --> 00:22:32.470
+If nothing is explicitly traced
+
+910
+00:22:32.470 --> 00:22:32.480
+
+
+
+911
+00:22:32.480 --> 00:22:35.190
+Doing land and not implicitly tracing
+
+912
+00:22:35.190 --> 00:22:35.200
+
+
+
+913
+00:22:35.200 --> 00:22:37.590
+As for the LangSmith, you can explicitly call him
+
+914
+00:22:37.590 --> 00:22:37.600
+
+
+
+915
+00:22:37.600 --> 00:22:40.070
+Tell me that this also has to be traced. That's what we
+
+916
+00:22:40.070 --> 00:22:40.080
+
+
+
+917
+00:22:40.080 --> 00:22:41.750
+I did it here. Wherever we are
+
+918
+00:22:41.750 --> 00:22:41.760
+
+
+
+919
+00:22:41.760 --> 00:22:44.390
+We had to get traces done there.
+
+920
+00:22:44.390 --> 00:22:44.400
+
+
+
+921
+00:22:44.400 --> 00:22:47.350
+Explicitly added decorators
+
+922
+00:22:47.350 --> 00:22:47.360
+
+
+
+923
+00:22:47.360 --> 00:22:49.669
+LangSmith and his help again
+
+924
+00:22:49.669 --> 00:22:49.679
+
+
+
+925
+00:22:49.679 --> 00:22:51.990
+Training started. So you just do it like this
+
+926
+00:22:51.990 --> 00:22:52.000
+
+
+
+927
+00:22:52.000 --> 00:22:54.710
+Just understand that there will never be any trace of it again.
+
+928
+00:22:54.710 --> 00:22:54.720
+
+
+
+929
+00:22:54.720 --> 00:22:56.870
+So you should appoint a decorator there.
+
+930
+00:22:56.870 --> 00:22:56.880
+
+
+
+931
+00:22:56.880 --> 00:22:59.270
+The training will be done. This is the conclusion here
+
+932
+00:22:59.270 --> 00:22:59.280
+
+
+
+933
+00:22:59.280 --> 00:23:01.270
+Is. One more question has come. is there a
+
+934
+00:23:01.270 --> 00:23:01.280
+
+
+
+935
+00:23:01.280 --> 00:23:03.190
+Possibility of logging it twice if we
+
+936
+00:23:03.190 --> 00:23:03.200
+
+
+
+937
+00:23:03.200 --> 00:23:06.070
+Explicitly trace? No no no no.
+
+938
+00:23:06.070 --> 00:23:06.080
+
+
+
+939
+00:23:06.080 --> 00:23:08.070
+Actually it happens in hierarchy. To all
+
+940
+00:23:08.070 --> 00:23:08.080
+
+
+
+941
+00:23:08.080 --> 00:23:09.990
+You put a decorator on the top level
+
+942
+00:23:09.990 --> 00:23:10.000
+
+
+
+943
+00:23:10.000 --> 00:23:11.909
+Is. Now you can trace more things inside it.
+
+944
+00:23:11.909 --> 00:23:11.919
+
+
+
+945
+00:23:11.919 --> 00:23:14.390
+If you want to get it done then that trace will be the same.
+
+946
+00:23:14.390 --> 00:23:14.400
+
+
+
+947
+00:23:14.400 --> 00:23:16.390
+Which is of high level. inside him you
+
+948
+00:23:16.390 --> 00:23:16.400
+
+
+
+949
+00:23:16.400 --> 00:23:18.549
+What things do you want to get done, that should be added
+
+950
+00:23:18.549 --> 00:23:18.559
+
+
+
+951
+00:23:18.559 --> 00:23:21.110
+Has been. But there is never any duplication.
+
+952
+00:23:21.110 --> 00:23:21.120
+
+
+
+953
+00:23:21.120 --> 00:23:23.190
+I have tried this a lot. never like this
+
+954
+00:23:23.190 --> 00:23:23.200
+
+
+
+955
+00:23:23.200 --> 00:23:26.070
+It won't happen either. So guys what are we going to do now?
+
+956
+00:23:26.070 --> 00:23:26.080
+
+
+
+957
+00:23:26.080 --> 00:23:29.990
+If we go back to our plan of action then
+
+958
+00:23:29.990 --> 00:23:30.000
+
+
+
+959
+00:23:30.000 --> 00:23:32.870
+What have we done?
+
+960
+00:23:32.870 --> 00:23:32.880
+
+
+
+961
+00:23:32.880 --> 00:23:34.549
+We
+
+962
+00:23:34.549 --> 00:23:34.559
+
+
+
+963
+00:23:34.559 --> 00:23:37.350
+Created a new project. I check here
+
+964
+00:23:37.350 --> 00:23:37.360
+
+
+
+965
+00:23:37.360 --> 00:23:40.149
+I keep marking. And we have API
+
+966
+00:23:40.149 --> 00:23:40.159
+
+
+
+967
+00:23:40.159 --> 00:23:43.350
+It was generated. Put it in the environment file.
+
+968
+00:23:43.350 --> 00:23:43.360
+
+
+
+969
+00:23:43.360 --> 00:23:45.750
+Tried running the pipeline. which was the problem
+
+970
+00:23:45.750 --> 00:23:45.760
+
+
+
+971
+00:23:45.760 --> 00:23:48.070
+That the retriever wasn't getting captured. he too
+
+972
+00:23:48.070 --> 00:23:48.080
+
+
+
+973
+00:23:48.080 --> 00:23:50.549
+I have solved it and shown it to you. by the
+
+974
+00:23:50.549 --> 00:23:50.559
+
+
+
+975
+00:23:50.559 --> 00:23:53.350
+They will help you with this entire process because
+
+976
+00:23:53.350 --> 00:23:53.360
+
+
+
+977
+00:23:53.360 --> 00:23:55.830
+We have added this code. If you look at this
+
+978
+00:23:55.830 --> 00:23:55.840
+
+
+
+979
+00:23:55.840 --> 00:23:59.110
+You will be able to add this code only when you
+
+980
+00:23:59.110 --> 00:23:59.120
+
+
+
+981
+00:23:59.120 --> 00:24:02.070
+I have installed the language in my project.
+
+982
+00:24:02.070 --> 00:24:02.080
+
+
+
+983
+00:24:02.080 --> 00:24:04.070
+Is. Installing Lagith is no big deal.
+
+984
+00:24:04.070 --> 00:24:04.080
+
+
+
+985
+00:24:04.080 --> 00:24:09.029
+Is. You simply have to write UV Add Lands
+
+986
+00:24:09.029 --> 00:24:09.039
+
+
+
+987
+00:24:09.039 --> 00:24:11.350
+langs will be added. Ok? I already
+
+988
+00:24:11.350 --> 00:24:11.360
+
+
+
+989
+00:24:11.360 --> 00:24:13.830
+I have done it. So I had already done this
+
+990
+00:24:13.830 --> 00:24:13.840
+
+
+
+991
+00:24:13.840 --> 00:24:15.990
+That's why I didn't show it. After that this
+
+992
+00:24:15.990 --> 00:24:16.000
+
+
+
+993
+00:24:16.000 --> 00:24:18.149
+The step is also done. Add Traceable to RAG
+
+994
+00:24:18.149 --> 00:24:18.159
+
+
+
+995
+00:24:18.159 --> 00:24:20.390
+Pipeline and Reranker. I just now
+
+996
+00:24:20.390 --> 00:24:20.400
+
+
+
+997
+00:24:20.400 --> 00:24:24.149
+I showed you how. A Run Again and Check
+
+998
+00:24:24.149 --> 00:24:24.159
+
+
+
+999
+00:24:24.159 --> 00:24:26.230
+Latency and cost. So now we have the
+
+1000
+00:24:26.230 --> 00:24:26.240
+
+
+
+1001
+00:24:26.240 --> 00:24:28.470
+Updated values ​​of latency and cost. So
+
+1002
+00:24:28.470 --> 00:24:28.480
+
+
+
+1003
+00:24:28.480 --> 00:24:30.789
+This part is also done. do this quickly
+
+1004
+00:24:30.789 --> 00:24:30.799
+
+
+
+1005
+00:24:30.799 --> 00:24:32.870
+Let's take it. Run Five Times and Collect Some
+
+1006
+00:24:32.870 --> 00:24:32.880
+
+
+
+1007
+00:24:32.880 --> 00:24:35.190
+data. Because later we will have to plot graphs
+
+1008
+00:24:35.190 --> 00:24:35.200
+
+
+
+1009
+00:24:35.200 --> 00:24:37.990
+Have to do it. So we need a little more values,
+
+1010
+00:24:37.990 --> 00:24:38.000
+
+
+
+1011
+00:24:38.000 --> 00:24:39.990
+A little more traces will be needed. So
+
+1012
+00:24:39.990 --> 00:24:40.000
+
+
+
+1013
+00:24:40.000 --> 00:24:41.990
+What am I doing? three or four times
+
+1014
+00:24:41.990 --> 00:24:42.000
+
+
+
+1015
+00:24:42.000 --> 00:24:43.750
+I am not running the pipeline separately.
+
+1016
+00:24:43.750 --> 00:24:43.760
+
+
+
+1017
+00:24:43.760 --> 00:24:45.830
+With questions. and each time one trace
+
+1018
+00:24:45.830 --> 00:24:45.840
+
+
+
+1019
+00:24:45.840 --> 00:24:48.310
+Will be created. So I quickly do
+
+1020
+00:24:48.310 --> 00:24:48.320
+
+
+
+1021
+00:24:48.320 --> 00:24:51.110
+I will show you. So let's just ask a question.
+
+1022
+00:24:51.110 --> 00:24:51.120
+
+
+
+1023
+00:24:51.120 --> 00:24:54.630
+Let us tell you what is MMLU? This one
+
+1024
+00:24:54.630 --> 00:24:54.640
+
+
+
+1025
+00:24:54.640 --> 00:24:57.750
+The query is done and let's run it.
+
+1026
+00:24:57.750 --> 00:24:57.760
+
+
+
+1027
+00:24:57.760 --> 00:24:59.669
+quickly.
+
+1028
+00:24:59.669 --> 00:24:59.679
+
+
+
+1029
+00:24:59.679 --> 00:25:02.870
+Then let's change the question.
+
+1030
+00:25:02.870 --> 00:25:02.880
+
+
+
+1031
+00:25:02.880 --> 00:25:06.230
+A
+
+1032
+00:25:06.230 --> 00:25:06.240
+
+
+
+1033
+00:25:06.240 --> 00:25:10.310
+Why Do We Need LLM Eaves? This is also a
+
+1034
+00:25:10.310 --> 00:25:10.320
+
+
+
+1035
+00:25:10.320 --> 00:25:14.470
+There may be a question. save
+
+1036
+00:25:14.470 --> 00:25:14.480
+
+
+
+1037
+00:25:14.480 --> 00:25:16.710
+I am just creating four or five questions.
+
+1038
+00:25:16.710 --> 00:25:16.720
+
+
+
+1039
+00:25:16.720 --> 00:25:18.630
+Am. So I can show you in that graph
+
+1040
+00:25:18.630 --> 00:25:18.640
+
+
+
+1041
+00:25:18.640 --> 00:25:20.710
+That's how the latency is varying. cost
+
+1042
+00:25:20.710 --> 00:25:20.720
+
+
+
+1043
+00:25:20.720 --> 00:25:23.110
+To show how Veriri is doing.
+
+1044
+00:25:23.110 --> 00:25:23.120
+
+
+
+1045
+00:25:23.120 --> 00:25:26.149
+Ok? So why do you run again?
+
+1046
+00:25:26.149 --> 00:25:26.159
+
+
+
+1047
+00:25:26.159 --> 00:25:29.190
+We Need Evals? This question is also
+
+1048
+00:25:29.190 --> 00:25:29.200
+
+
+
+1049
+00:25:29.200 --> 00:25:32.070
+What can happen; what can be done? And there could be a question
+
+1050
+00:25:32.070 --> 00:25:32.080
+
+
+
+1051
+00:25:32.080 --> 00:25:35.110
+what are you
+
+1052
+00:25:35.110 --> 00:25:35.120
+
+
+
+1053
+00:25:35.120 --> 00:25:37.510
+LLM Evals?
+
+1054
+00:25:37.510 --> 00:25:37.520
+
+
+
+1055
+00:25:37.520 --> 00:25:39.430
+Let's try running this once. So two
+
+1056
+00:25:39.430 --> 00:25:39.440
+
+
+
+1057
+00:25:39.440 --> 00:25:42.470
+The questions were there earlier. There were two more. And someone else
+
+1058
+00:25:42.470 --> 00:25:42.480
+
+
+
+1059
+00:25:42.480 --> 00:25:44.310
+I am missing a question that was asked in this course.
+
+1060
+00:25:44.310 --> 00:25:44.320
+
+
+
+1061
+00:25:44.320 --> 00:25:46.549
+Have we read it? What more can you ask for?
+
+1062
+00:25:46.549 --> 00:25:46.559
+
+
+
+1063
+00:25:46.559 --> 00:25:49.190
+What are online evals?
+
+1064
+00:25:49.190 --> 00:25:49.200
+
+
+
+1065
+00:25:49.200 --> 00:25:51.029
+what are
+
+1066
+00:25:51.029 --> 00:25:51.039
+
+
+
+1067
+00:25:51.039 --> 00:25:53.269
+Evals online?
+
+1068
+00:25:53.269 --> 00:25:53.279
+
+
+
+1069
+00:25:53.279 --> 00:25:55.590
+I have also taught you this question.
+
+1070
+00:25:55.590 --> 00:25:55.600
+
+
+
+1071
+00:25:55.600 --> 00:25:58.310
+Let's run this also. one more question
+
+1072
+00:25:58.310 --> 00:25:58.320
+
+
+
+1073
+00:25:58.320 --> 00:26:00.870
+Let's see.
+
+1074
+00:26:00.870 --> 00:26:00.880
+
+
+
+1075
+00:26:00.880 --> 00:26:05.110
+A What are model events?
+
+1076
+00:26:05.110 --> 00:26:05.120
+
+
+
+1077
+00:26:05.120 --> 00:26:08.870
+Or you can read what is
+
+1078
+00:26:08.870 --> 00:26:08.880
+
+
+
+1079
+00:26:08.880 --> 00:26:12.470
+The Difference Between
+
+1080
+00:26:12.470 --> 00:26:12.480
+
+
+
+1081
+00:26:12.480 --> 00:26:15.909
+Model E Wells End
+
+1082
+00:26:15.909 --> 00:26:15.919
+
+
+
+1083
+00:26:15.919 --> 00:26:20.070
+Application Evals Save Run this also
+
+1084
+00:26:20.070 --> 00:26:20.080
+
+
+
+1085
+00:26:20.080 --> 00:26:22.789
+and ask another question
+
+1086
+00:26:22.789 --> 00:26:22.799
+
+
+
+1087
+00:26:22.799 --> 00:26:24.870
+quickly
+
+1088
+00:26:24.870 --> 00:26:24.880
+
+
+
+1089
+00:26:24.880 --> 00:26:27.830
+Some people follow the benchmark and some
+
+1090
+00:26:27.830 --> 00:26:27.840
+
+
+
+1091
+00:26:27.840 --> 00:26:32.310
+Remind me of the question, friend, what are you?
+
+1092
+00:26:32.310 --> 00:26:32.320
+
+
+
+1093
+00:26:32.320 --> 00:26:34.230
+Benchmarks
+
+1094
+00:26:34.230 --> 00:26:34.240
+
+
+
+1095
+00:26:34.240 --> 00:26:37.590
+This also became a question. And that's it.
+
+1096
+00:26:37.590 --> 00:26:37.600
+
+
+
+1097
+00:26:37.600 --> 00:26:41.110
+This is enough. Basically we are in the real world
+
+1098
+00:26:41.110 --> 00:26:41.120
+
+
+
+1099
+00:26:41.120 --> 00:26:43.029
+Trying to replicate traffic
+
+1100
+00:26:43.029 --> 00:26:43.039
+
+
+
+1101
+00:26:43.039 --> 00:26:45.909
+Have been. When your application is deployed
+
+1102
+00:26:45.909 --> 00:26:45.919
+
+
+
+1103
+00:26:45.919 --> 00:26:48.230
+If I go, people will keep asking questions. So
+
+1104
+00:26:48.230 --> 00:26:48.240
+
+
+
+1105
+00:26:48.240 --> 00:26:50.310
+We are tracing every question.
+
+1106
+00:26:50.310 --> 00:26:50.320
+
+
+
+1107
+00:26:50.320 --> 00:26:53.190
+So we have a lot of traces over time.
+
+1108
+00:26:53.190 --> 00:26:53.200
+
+
+
+1109
+00:26:53.200 --> 00:26:55.750
+It will come into our system. since now this
+
+1110
+00:26:55.750 --> 00:26:55.760
+
+
+
+1111
+00:26:55.760 --> 00:26:57.990
+I am not really deployed, so I do this work.
+
+1112
+00:26:57.990 --> 00:26:58.000
+
+
+
+1113
+00:26:58.000 --> 00:26:59.990
+I am doing it manually and one man is doing it.
+
+1114
+00:26:59.990 --> 00:27:00.000
+
+
+
+1115
+00:27:00.000 --> 00:27:02.789
+What will happen in a real world scenario?
+
+1116
+00:27:02.789 --> 00:27:02.799
+
+
+
+1117
+00:27:02.799 --> 00:27:05.269
+People will keep asking questions and everything here
+
+1118
+00:27:05.269 --> 00:27:05.279
+
+
+
+1119
+00:27:05.279 --> 00:27:08.149
+Something will be logged. So if I make this
+
+1120
+00:27:08.149 --> 00:27:08.159
+
+
+
+1121
+00:27:08.159 --> 00:27:11.190
+If I reload, I'll have six or seven.
+
+1122
+00:27:11.190 --> 00:27:11.200
+
+
+
+1123
+00:27:11.200 --> 00:27:14.149
+Traces. Look at this: What are benchmarks?
+
+1124
+00:27:14.149 --> 00:27:14.159
+
+
+
+1125
+00:27:14.159 --> 00:27:15.669
+what is the difference between what are
+
+1126
+00:27:15.669 --> 00:27:15.679
+
+
+
+1127
+00:27:15.679 --> 00:27:17.430
+Online Evals? What are LLM E. Wales?
+
+1128
+00:27:17.430 --> 00:27:17.440
+
+
+
+1129
+00:27:17.440 --> 00:27:21.430
+Why do we need this? So after adding the total
+
+1130
+00:27:21.430 --> 00:27:21.440
+
+
+
+1131
+00:27:21.440 --> 00:27:24.549
+We have got eight or nine of these traces. Correct
+
+1132
+00:27:24.549 --> 00:27:24.559
+
+
+
+1133
+00:27:24.559 --> 00:27:27.269
+Is? Now from here we can do the interesting work.
+
+1134
+00:27:27.269 --> 00:27:27.279
+
+
+
+1135
+00:27:27.279 --> 00:27:30.630
+Let's start. So first of all, we
+
+1136
+00:27:30.630 --> 00:27:30.640
+
+
+
+1137
+00:27:30.640 --> 00:27:33.909
+What to do? We prepare a dashboard
+
+1138
+00:27:33.909 --> 00:27:33.919
+
+
+
+1139
+00:27:33.919 --> 00:27:36.710
+I will do it for myself. Ok? It's in the dashboard
+
+1140
+00:27:36.710 --> 00:27:36.720
+
+
+
+1141
+00:27:36.720 --> 00:27:40.070
+Here we will put all our charts. The
+
+1142
+00:27:40.070 --> 00:27:40.080
+
+
+
+1143
+00:27:40.080 --> 00:27:42.230
+The idea of ​​that dashboard is very simple that
+
+1144
+00:27:42.230 --> 00:27:42.240
+
+
+
+1145
+00:27:42.240 --> 00:27:45.269
+At any point of time I can see that dashboard
+
+1146
+00:27:45.269 --> 00:27:45.279
+
+
+
+1147
+00:27:45.279 --> 00:27:47.830
+If I go and see it, I will get a complete idea.
+
+1148
+00:27:47.830 --> 00:27:47.840
+
+
+
+1149
+00:27:47.840 --> 00:27:50.630
+It will be known that the health of my application
+
+1150
+00:27:50.630 --> 00:27:50.640
+
+
+
+1151
+00:27:50.640 --> 00:27:53.029
+How it is? How is its latency? How much
+
+1152
+00:27:53.029 --> 00:27:53.039
+
+
+
+1153
+00:27:53.039 --> 00:27:55.750
+Is it cost consuming? Safety
+
+1154
+00:27:55.750 --> 00:27:55.760
+
+
+
+1155
+00:27:55.760 --> 00:27:57.510
+How are the metrics going? Quality
+
+1156
+00:27:57.510 --> 00:27:57.520
+
+
+
+1157
+00:27:57.520 --> 00:27:59.350
+How are the metrics going? all that
+
+1158
+00:27:59.350 --> 00:27:59.360
+
+
+
+1159
+00:27:59.360 --> 00:28:01.750
+I'll see it in that dashboard and right there
+
+1160
+00:28:01.750 --> 00:28:01.760
+
+
+
+1161
+00:28:01.760 --> 00:28:03.990
+But I'll also set up my alerts that
+
+1162
+00:28:03.990 --> 00:28:04.000
+
+
+
+1163
+00:28:04.000 --> 00:28:05.909
+If it is going below a threshold
+
+1164
+00:28:05.909 --> 00:28:05.919
+
+
+
+1165
+00:28:05.919 --> 00:28:09.110
+A given time interval then an alert is raised
+
+1166
+00:28:09.110 --> 00:28:09.120
+
+
+
+1167
+00:28:09.120 --> 00:28:12.470
+Will go on Slack or some other software.
+
+1168
+00:28:12.470 --> 00:28:12.480
+
+
+
+1169
+00:28:12.480 --> 00:28:14.470
+Ok? So I will tell you how to do it
+
+1170
+00:28:14.470 --> 00:28:14.480
+
+
+
+1171
+00:28:14.480 --> 00:28:16.630
+Am. First You Have to Go To
+
+1172
+00:28:16.630 --> 00:28:16.640
+
+
+
+1173
+00:28:16.640 --> 00:28:19.269
+Monitoring. Here, by saying monitoring, this
+
+1174
+00:28:19.269 --> 00:28:19.279
+
+
+
+1175
+00:28:19.279 --> 00:28:22.470
+Is. This is where you have to go. not here anymore
+
+1176
+00:28:22.470 --> 00:28:22.480
+
+
+
+1177
+00:28:22.480 --> 00:28:26.149
+There are two possibilities. One is from LangSmith himself.
+
+1178
+00:28:26.149 --> 00:28:26.159
+
+
+
+1179
+00:28:26.159 --> 00:28:29.750
+Creates your own dashboard for you. But
+
+1180
+00:28:29.750 --> 00:28:29.760
+
+
+
+1181
+00:28:29.760 --> 00:28:31.830
+Customize your own if you wish.
+
+1182
+00:28:31.830 --> 00:28:31.840
+
+
+
+1183
+00:28:31.840 --> 00:28:33.750
+You can also create a dashboard. So look as soon as
+
+1184
+00:28:33.750 --> 00:28:33.760
+
+
+
+1185
+00:28:33.760 --> 00:28:35.750
+When I went to the monitoring, I found this
+
+1186
+00:28:35.750 --> 00:28:35.760
+
+
+
+1187
+00:28:35.760 --> 00:28:38.230
+Dashboard is automatically displayed.
+
+1188
+00:28:38.230 --> 00:28:38.240
+
+
+
+1189
+00:28:38.240 --> 00:28:40.789
+Which also contains data. But I don't use this
+
+1190
+00:28:40.789 --> 00:28:40.799
+
+
+
+1191
+00:28:40.799 --> 00:28:42.230
+I will do it. I create my own dashboard
+
+1192
+00:28:42.230 --> 00:28:42.240
+
+
+
+1193
+00:28:42.240 --> 00:28:45.269
+I will make it. What do you have to do for that?
+
+1194
+00:28:45.269 --> 00:28:45.279
+
+
+
+1195
+00:28:45.279 --> 00:28:47.350
+See prebuilt and custom options here
+
+1196
+00:28:47.350 --> 00:28:47.360
+
+
+
+1197
+00:28:47.360 --> 00:28:49.750
+Is. Right? So when you're going to customs
+
+1198
+00:28:49.750 --> 00:28:49.760
+
+
+
+1199
+00:28:49.760 --> 00:28:51.750
+It is saying no dashboard found. basically
+
+1200
+00:28:51.750 --> 00:28:51.760
+
+
+
+1201
+00:28:51.760 --> 00:28:53.590
+We have created a dashboard for our project.
+
+1202
+00:28:53.590 --> 00:28:53.600
+
+
+
+1203
+00:28:53.600 --> 00:28:55.669
+Did not make it. So what I will do is here
+
+1204
+00:28:55.669 --> 00:28:55.679
+
+
+
+1205
+00:28:55.679 --> 00:28:58.310
+But by clicking on this button, I will
+
+1206
+00:28:58.310 --> 00:28:58.320
+
+
+
+1207
+00:28:58.320 --> 00:29:00.950
+Create a new dashboard. Ok? A so
+
+1208
+00:29:00.950 --> 00:29:00.960
+
+
+
+1209
+00:29:00.960 --> 00:29:04.789
+We can name it cx
+
+1210
+00:29:04.789 --> 00:29:04.799
+
+
+
+1211
+00:29:04.799 --> 00:29:09.269
+Dubt Solve Dashboard. Here you can add a
+
+1212
+00:29:09.269 --> 00:29:09.279
+
+
+
+1213
+00:29:09.279 --> 00:29:11.750
+Description. Ok? For now, I put
+
+1214
+00:29:11.750 --> 00:29:11.760
+
+
+
+1215
+00:29:11.760 --> 00:29:13.830
+diya personal project but you proper
+
+1216
+00:29:13.830 --> 00:29:13.840
+
+
+
+1217
+00:29:13.840 --> 00:29:16.870
+You will put the description and after that you have
+
+1218
+00:29:16.870 --> 00:29:16.880
+
+
+
+1219
+00:29:16.880 --> 00:29:20.070
+To write you have to click on create.
+
+1220
+00:29:20.070 --> 00:29:20.080
+
+
+
+1221
+00:29:20.080 --> 00:29:23.990
+This will create a custom dashboard. Ok?
+
+1222
+00:29:23.990 --> 00:29:24.000
+
+
+
+1223
+00:29:24.000 --> 00:29:26.070
+What can we do now? This dashboard
+
+1224
+00:29:26.070 --> 00:29:26.080
+
+
+
+1225
+00:29:26.080 --> 00:29:28.389
+You can create charts inside. as many
+
+1226
+00:29:28.389 --> 00:29:28.399
+
+
+
+1227
+00:29:28.399 --> 00:29:30.870
+You have to create the charts as per your wish. So I just now
+
+1228
+00:29:30.870 --> 00:29:30.880
+
+
+
+1229
+00:29:30.880 --> 00:29:33.830
+I will make two charts. I will make a chart
+
+1230
+00:29:33.830 --> 00:29:33.840
+
+
+
+1231
+00:29:33.840 --> 00:29:38.549
+I will make another chart of P95 latency
+
+1232
+00:29:38.549 --> 00:29:38.559
+
+
+
+1233
+00:29:38.559 --> 00:29:41.350
+Of average cost. Ok? I will show you
+
+1234
+00:29:41.350 --> 00:29:41.360
+
+
+
+1235
+00:29:41.360 --> 00:29:43.990
+How am I? In fact, I'll just close it.
+
+1236
+00:29:43.990 --> 00:29:44.000
+
+
+
+1237
+00:29:44.000 --> 00:29:45.909
+I give.
+
+1238
+00:29:45.909 --> 00:29:45.919
+
+
+
+1239
+00:29:45.919 --> 00:29:47.350
+Again, let me show you how you
+
+1240
+00:29:47.350 --> 00:29:47.360
+
+
+
+1241
+00:29:47.360 --> 00:29:50.310
+You will reach. This is your training
+
+1242
+00:29:50.310 --> 00:29:50.320
+
+
+
+1243
+00:29:50.320 --> 00:29:52.389
+This is the window where all your traces are displayed.
+
+1244
+00:29:52.389 --> 00:29:52.399
+
+
+
+1245
+00:29:52.399 --> 00:29:53.990
+Are gathering. in real time
+
+1246
+00:29:53.990 --> 00:29:54.000
+
+
+
+1247
+00:29:54.000 --> 00:29:56.149
+Customers are coming in, asking questions.
+
+1248
+00:29:56.149 --> 00:29:56.159
+
+
+
+1249
+00:29:56.159 --> 00:29:58.149
+Are. Answer is being generated. be training
+
+1250
+00:29:58.149 --> 00:29:58.159
+
+
+
+1251
+00:29:58.159 --> 00:30:01.190
+Has been. And then I'll go into monitoring.
+
+1252
+00:30:01.190 --> 00:30:01.200
+
+
+
+1253
+00:30:01.200 --> 00:30:03.669
+This is my dashboard here. These
+
+1254
+00:30:03.669 --> 00:30:03.679
+
+
+
+1255
+00:30:03.679 --> 00:30:06.549
+It is a prebuilt one. Prebuilt ones
+
+1256
+00:30:06.549 --> 00:30:06.559
+
+
+
+1257
+00:30:06.559 --> 00:30:08.470
+If you look, all this will already be visible.
+
+1258
+00:30:08.470 --> 00:30:08.480
+
+
+
+1259
+00:30:08.480 --> 00:30:10.549
+We don't care about this. We have to go
+
+1260
+00:30:10.549 --> 00:30:10.559
+
+
+
+1261
+00:30:10.559 --> 00:30:13.350
+On the custom one. This is our custom one.
+
+1262
+00:30:13.350 --> 00:30:13.360
+
+
+
+1263
+00:30:13.360 --> 00:30:15.029
+But there are no charts in the custom one yet.
+
+1264
+00:30:15.029 --> 00:30:15.039
+
+
+
+1265
+00:30:15.039 --> 00:30:17.269
+Is. So now I'll add my first chart.
+
+1266
+00:30:17.269 --> 00:30:17.279
+
+
+
+1267
+00:30:17.279 --> 00:30:19.830
+How to add a chart? Look here plus
+
+1268
+00:30:19.830 --> 00:30:19.840
+
+
+
+1269
+00:30:19.840 --> 00:30:21.909
+There is a chart button. You will click on this.
+
+1270
+00:30:21.909 --> 00:30:21.919
+
+
+
+1271
+00:30:21.919 --> 00:30:26.149
+The same window will open again. Now here you are
+
+1272
+00:30:26.149 --> 00:30:26.159
+
+
+
+1273
+00:30:26.159 --> 00:30:28.310
+What will you name your first chart?
+
+1274
+00:30:28.310 --> 00:30:28.320
+
+
+
+1275
+00:30:28.320 --> 00:30:30.310
+Is? So since we're charting the latency
+
+1276
+00:30:30.310 --> 00:30:30.320
+
+
+
+1277
+00:30:30.320 --> 00:30:32.950
+If so, we will write latency
+
+1278
+00:30:32.950 --> 00:30:32.960
+
+
+
+1279
+00:30:32.960 --> 00:30:34.470
+P95.
+
+1280
+00:30:34.470 --> 00:30:34.480
+
+
+
+1281
+00:30:34.480 --> 00:30:37.269
+We are capturing P95 latency in this
+
+1282
+00:30:37.269 --> 00:30:37.279
+
+
+
+1283
+00:30:37.279 --> 00:30:38.710
+Are. From here you have to select the
+
+1284
+00:30:38.710 --> 00:30:38.720
+
+
+
+1285
+00:30:38.720 --> 00:30:40.789
+project. So we are selecting
+
+1286
+00:30:40.789 --> 00:30:40.799
+
+
+
+1287
+00:30:40.799 --> 00:30:43.590
+CX Doubt Solver.
+
+1288
+00:30:43.590 --> 00:30:43.600
+
+
+
+1289
+00:30:43.600 --> 00:30:45.909
+Here you can tell which Matriculation
+
+1290
+00:30:45.909 --> 00:30:45.919
+
+
+
+1291
+00:30:45.919 --> 00:30:47.990
+Do you want to track? I define latency as
+
+1292
+00:30:47.990 --> 00:30:48.000
+
+
+
+1293
+00:30:48.000 --> 00:30:50.310
+I want to track it. Now in latency too
+
+1294
+00:30:50.310 --> 00:30:50.320
+
+
+
+1295
+00:30:50.320 --> 00:30:52.549
+He's saying what do you need in latency?
+
+1296
+00:30:52.549 --> 00:30:52.559
+
+
+
+1297
+00:30:52.559 --> 00:30:55.190
+Want to track? Average Latency, Total
+
+1298
+00:30:55.190 --> 00:30:55.200
+
+
+
+1299
+00:30:55.200 --> 00:30:59.350
+What to do with latency? So from here we
+
+1300
+00:30:59.350 --> 00:30:59.360
+
+
+
+1301
+00:30:59.360 --> 00:31:01.269
+Will go. Will select percentile.
+
+1302
+00:31:01.269 --> 00:31:01.279
+
+
+
+1303
+00:31:01.279 --> 00:31:04.389
+We will select 95 in percentile. So P95
+
+1304
+00:31:04.389 --> 00:31:04.399
+
+
+
+1305
+00:31:04.399 --> 00:31:07.190
+There was latency. Ok? everything else is fine
+
+1306
+00:31:07.190 --> 00:31:07.200
+
+
+
+1307
+00:31:07.200 --> 00:31:11.669
+Is. A We'll just click on create.
+
+1308
+00:31:11.669 --> 00:31:11.679
+
+
+
+1309
+00:31:11.679 --> 00:31:14.950
+And look guys, here comes your P95
+
+1310
+00:31:14.950 --> 00:31:14.960
+
+
+
+1311
+00:31:14.960 --> 00:31:18.470
+latency and look this is what is visible in this
+
+1312
+00:31:18.470 --> 00:31:18.480
+
+
+
+1313
+00:31:18.480 --> 00:31:21.590
+Is. By the way, all these charts are
+
+1314
+00:31:21.590 --> 00:31:21.600
+
+
+
+1315
+00:31:21.600 --> 00:31:24.070
+These are given time periods. X in this
+
+1316
+00:31:24.070 --> 00:31:24.080
+
+
+
+1317
+00:31:24.080 --> 00:31:26.230
+Axis Pay always has a time period
+
+1318
+00:31:26.230 --> 00:31:26.240
+
+
+
+1319
+00:31:26.240 --> 00:31:28.789
+Which you can change from here. Such as
+
+1320
+00:31:28.789 --> 00:31:28.799
+
+
+
+1321
+00:31:28.799 --> 00:31:32.230
+Last one hour, last 3 hours,
+
+1322
+00:31:32.230 --> 00:31:32.240
+
+
+
+1323
+00:31:32.240 --> 00:31:36.710
+Last 6 hours, last 30 days.
+
+1324
+00:31:36.710 --> 00:31:36.720
+
+
+
+1325
+00:31:36.720 --> 00:31:39.509
+So with this you can always know what happened in the last
+
+1326
+00:31:39.509 --> 00:31:39.519
+
+
+
+1327
+00:31:39.519 --> 00:31:41.509
+any particular in x amount of time
+
+1328
+00:31:41.509 --> 00:31:41.519
+
+
+
+1329
+00:31:41.519 --> 00:31:43.590
+How is Matric performing? Ok?
+
+1330
+00:31:43.590 --> 00:31:43.600
+
+
+
+1331
+00:31:43.600 --> 00:31:46.070
+So for now, let's set this to
+
+1332
+00:31:46.070 --> 00:31:46.080
+
+
+
+1333
+00:31:46.080 --> 00:31:48.870
+Last One Hour and here it is in the last one hour
+
+1334
+00:31:48.870 --> 00:31:48.880
+
+
+
+1335
+00:31:48.880 --> 00:31:52.310
+Our P95 latency score.
+
+1336
+00:31:52.310 --> 00:31:52.320
+
+
+
+1337
+00:31:52.320 --> 00:31:56.149
+I hope you understand. Ok? Now
+
+1338
+00:31:56.149 --> 00:31:56.159
+
+
+
+1339
+00:31:56.159 --> 00:31:58.630
+I'll quickly create another chart for
+
+1340
+00:31:58.630 --> 00:31:58.640
+
+
+
+1341
+00:31:58.640 --> 00:32:01.430
+Cost Average Cost. Ok? then again I
+
+1342
+00:32:01.430 --> 00:32:01.440
+
+
+
+1343
+00:32:01.440 --> 00:32:04.950
+will click on plus chart and calculate this metric
+
+1344
+00:32:04.950 --> 00:32:04.960
+
+
+
+1345
+00:32:04.960 --> 00:32:09.430
+We will name it average cost.
+
+1346
+00:32:09.430 --> 00:32:09.440
+
+
+
+1347
+00:32:09.440 --> 00:32:12.549
+Same Project CX is a doubt solver. This
+
+1348
+00:32:12.549 --> 00:32:12.559
+
+
+
+1349
+00:32:12.559 --> 00:32:16.950
+Bar we are catching up on cost. now here
+
+1350
+00:32:16.950 --> 00:32:16.960
+
+
+
+1351
+00:32:16.960 --> 00:32:19.669
+Look, you can analyze the input cost separately.
+
+1352
+00:32:19.669 --> 00:32:19.679
+
+
+
+1353
+00:32:19.679 --> 00:32:21.909
+You can. Analyze output costs separately
+
+1354
+00:32:21.909 --> 00:32:21.919
+
+
+
+1355
+00:32:21.919 --> 00:32:23.509
+You can do it. I have told you that
+
+1356
+00:32:23.509 --> 00:32:23.519
+
+
+
+1357
+00:32:23.519 --> 00:32:25.990
+Charges for input tokens vary.
+
+1358
+00:32:25.990 --> 00:32:26.000
+
+
+
+1359
+00:32:26.000 --> 00:32:27.990
+The charges for output tokens are different. So
+
+1360
+00:32:27.990 --> 00:32:28.000
+
+
+
+1361
+00:32:28.000 --> 00:32:30.470
+You can create charts separately on both.
+
+1362
+00:32:30.470 --> 00:32:30.480
+
+
+
+1363
+00:32:30.480 --> 00:32:33.029
+yes. At present I am analyzing the total cost together.
+
+1364
+00:32:33.029 --> 00:32:33.039
+
+
+
+1365
+00:32:33.039 --> 00:32:35.430
+I will do it and I will not do it evenly. I this
+
+1366
+00:32:35.430 --> 00:32:35.440
+
+
+
+1367
+00:32:35.440 --> 00:32:38.230
+I don't want to know what happened in the last 1 hour.
+
+1368
+00:32:38.230 --> 00:32:38.240
+
+
+
+1369
+00:32:38.240 --> 00:32:40.710
+What was the total token cost I had to pay?
+
+1370
+00:32:40.710 --> 00:32:40.720
+
+
+
+1371
+00:32:40.720 --> 00:32:42.630
+Instead I want to know that in the past
+
+1372
+00:32:42.630 --> 00:32:42.640
+
+
+
+1373
+00:32:42.640 --> 00:32:45.029
+On an average, every question of mine is answered in 1 hour.
+
+1374
+00:32:45.029 --> 00:32:45.039
+
+
+
+1375
+00:32:45.039 --> 00:32:46.950
+How much should I pay to answer this question?
+
+1376
+00:32:46.950 --> 00:32:46.960
+
+
+
+1377
+00:32:46.960 --> 00:32:49.029
+Fell. So I'll select average here.
+
+1378
+00:32:49.029 --> 00:32:49.039
+
+
+
+1379
+00:32:49.039 --> 00:32:51.430
+I will take it. And that's it. I will click on
+
+1380
+00:32:51.430 --> 00:32:51.440
+
+
+
+1381
+00:32:51.440 --> 00:32:53.190
+Create
+
+1382
+00:32:53.190 --> 00:32:53.200
+
+
+
+1383
+00:32:53.200 --> 00:32:57.110
+And here comes my average cost last one r
+
+1384
+00:32:57.110 --> 00:32:57.120
+
+
+
+1385
+00:32:57.120 --> 00:33:01.430
+Of. Ok? Again you can see how easy it is.
+
+1386
+00:33:01.430 --> 00:33:01.440
+
+
+
+1387
+00:33:01.440 --> 00:33:03.269
+And what will you do in this way? Our
+
+1388
+00:33:03.269 --> 00:33:03.279
+
+
+
+1389
+00:33:03.279 --> 00:33:05.430
+You will keep creating the matrix and then those
+
+1390
+00:33:05.430 --> 00:33:05.440
+
+
+
+1391
+00:33:05.440 --> 00:33:07.350
+Charts in dashboards above metrics
+
+1392
+00:33:07.350 --> 00:33:07.360
+
+
+
+1393
+00:33:07.360 --> 00:33:09.669
+You will keep making it. I really hope you understand this
+
+1394
+00:33:09.669 --> 00:33:09.679
+
+
+
+1395
+00:33:09.679 --> 00:33:11.909
+I am coming. Now what is the funny thing about
+
+1396
+00:33:11.909 --> 00:33:11.919
+
+
+
+1397
+00:33:11.919 --> 00:33:14.230
+You also have the option to create alerts
+
+1398
+00:33:14.230 --> 00:33:14.240
+
+
+
+1399
+00:33:14.240 --> 00:33:16.549
+It is available. Ok? Let me show you.
+
+1400
+00:33:16.549 --> 00:33:16.559
+
+
+
+1401
+00:33:16.559 --> 00:33:18.789
+You can create alerts if you want.
+
+1402
+00:33:18.789 --> 00:33:18.799
+
+
+
+1403
+00:33:18.799 --> 00:33:21.509
+yes. So look here there is an alerts tab and
+
+1404
+00:33:21.509 --> 00:33:21.519
+
+
+
+1405
+00:33:21.519 --> 00:33:23.269
+We have not issued any alerts here at the moment.
+
+1406
+00:33:23.269 --> 00:33:23.279
+
+
+
+1407
+00:33:23.279 --> 00:33:26.230
+Made. We will go to Create Alert. Here
+
+1408
+00:33:26.230 --> 00:33:26.240
+
+
+
+1409
+00:33:26.240 --> 00:33:28.149
+Say we will select a project which is
+
+1410
+00:33:28.149 --> 00:33:28.159
+
+
+
+1411
+00:33:28.159 --> 00:33:30.149
+Our Project. We can name it.
+
+1412
+00:33:30.149 --> 00:33:30.159
+
+
+
+1413
+00:33:30.159 --> 00:33:33.750
+Let's create an alert.
+
+1414
+00:33:33.750 --> 00:33:33.760
+
+
+
+1415
+00:33:33.760 --> 00:33:37.029
+Over latency. Above P95 latency. And
+
+1416
+00:33:37.029 --> 00:33:37.039
+
+
+
+1417
+00:33:37.039 --> 00:33:40.310
+Our alert logic is that if in the past
+
+1418
+00:33:40.310 --> 00:33:40.320
+
+
+
+1419
+00:33:40.320 --> 00:33:44.149
+Our P95 in 1 hour
+
+1420
+00:33:44.149 --> 00:33:44.159
+
+
+
+1421
+00:33:44.159 --> 00:33:45.750
+latency
+
+1422
+00:33:45.750 --> 00:33:45.760
+
+
+
+1423
+00:33:45.760 --> 00:33:49.269
+If it's more than 7 seconds, then something is wrong.
+
+1424
+00:33:49.269 --> 00:33:49.279
+
+
+
+1425
+00:33:49.279 --> 00:33:51.830
+There are rage and alerts in the system. So how is this
+
+1426
+00:33:51.830 --> 00:33:51.840
+
+
+
+1427
+00:33:51.840 --> 00:33:53.430
+I'll show you how to setup it. You
+
+1428
+00:33:53.430 --> 00:33:53.440
+
+
+
+1429
+00:33:53.440 --> 00:33:55.750
+named it
+
+1430
+00:33:55.750 --> 00:33:55.760
+
+
+
+1431
+00:33:55.760 --> 00:33:57.350
+latency
+
+1432
+00:33:57.350 --> 00:33:57.360
+
+
+
+1433
+00:33:57.360 --> 00:33:59.509
+P95
+
+1434
+00:33:59.509 --> 00:33:59.519
+
+
+
+1435
+00:33:59.519 --> 00:34:03.990
+And we want to run on top of latency.
+
+1436
+00:34:03.990 --> 00:34:04.000
+
+
+
+1437
+00:34:04.000 --> 00:34:10.149
+End
+
+1438
+00:34:10.149 --> 00:34:10.159
+
+
+
+1439
+00:34:10.159 --> 00:34:14.790
+I don't want average latency. I want
+
+1440
+00:34:14.790 --> 00:34:14.800
+
+
+
+1441
+00:34:14.800 --> 00:34:18.149
+End
+
+1442
+00:34:18.149 --> 00:34:18.159
+
+
+
+1443
+00:34:18.159 --> 00:34:21.430
+latency
+
+1444
+00:34:21.430 --> 00:34:21.440
+
+
+
+1445
+00:34:21.440 --> 00:34:24.710
+is greater than
+
+1446
+00:34:24.710 --> 00:34:24.720
+
+
+
+1447
+00:34:24.720 --> 00:34:28.710
+Let's say it's 8 seconds.
+
+1448
+00:34:28.710 --> 00:34:28.720
+
+
+
+1449
+00:34:28.720 --> 00:34:31.349
+What should it be ideally? Here I have a
+
+1450
+00:34:31.349 --> 00:34:31.359
+
+
+
+1451
+00:34:31.359 --> 00:34:33.510
+I should get a dropdown option that I
+
+1452
+00:34:33.510 --> 00:34:33.520
+
+
+
+1453
+00:34:33.520 --> 00:34:35.510
+I want to select average. I am total
+
+1454
+00:34:35.510 --> 00:34:35.520
+
+
+
+1455
+00:34:35.520 --> 00:34:37.109
+I want to do it. I want to do percentile
+
+1456
+00:34:37.109 --> 00:34:37.119
+
+
+
+1457
+00:34:37.119 --> 00:34:38.710
+Am. But I don't get that option here.
+
+1458
+00:34:38.710 --> 00:34:38.720
+
+
+
+1459
+00:34:38.720 --> 00:34:42.149
+Used to be. otherwise other things
+
+1460
+00:34:42.149 --> 00:34:42.159
+
+
+
+1461
+00:34:42.159 --> 00:34:45.430
+It's perfect. Simply I want to say that the
+
+1462
+00:34:45.430 --> 00:34:45.440
+
+
+
+1463
+00:34:45.440 --> 00:34:49.349
+P95 latency is greater than and 8
+
+1464
+00:34:49.349 --> 00:34:49.359
+
+
+
+1465
+00:34:49.359 --> 00:34:53.589
+Seconds in the last 60 minutes. That's it.
+
+1466
+00:34:53.589 --> 00:34:53.599
+
+
+
+1467
+00:34:53.599 --> 00:34:55.909
+And just what am I supposed to do from here? Slack
+
+1468
+00:34:55.909 --> 00:34:55.919
+
+
+
+1469
+00:34:55.919 --> 00:34:58.230
+Have to select. Your Slack account
+
+1470
+00:34:58.230 --> 00:34:58.240
+
+
+
+1471
+00:34:58.240 --> 00:35:00.710
+Have to connect. And this is me on Slack
+
+1472
+00:35:00.710 --> 00:35:00.720
+
+
+
+1473
+00:35:00.720 --> 00:35:03.109
+Will send the message. So the setup is very simple.
+
+1474
+00:35:03.109 --> 00:35:03.119
+
+
+
+1475
+00:35:03.119 --> 00:35:05.510
+The Only Problem Is I'm Not Able To
+
+1476
+00:35:05.510 --> 00:35:05.520
+
+
+
+1477
+00:35:05.520 --> 00:35:09.190
+Latency with Select P95. instead it is
+
+1478
+00:35:09.190 --> 00:35:09.200
+
+
+
+1479
+00:35:09.200 --> 00:35:12.710
+Forcing me to select average trace
+
+1480
+00:35:12.710 --> 00:35:12.720
+
+
+
+1481
+00:35:12.720 --> 00:35:15.670
+Latency. That's the problem.
+
+1482
+00:35:15.670 --> 00:35:15.680
+
+
+
+1483
+00:35:15.680 --> 00:35:18.550
+Ok. Tarun searched some eye guesses online
+
+1484
+00:35:18.550 --> 00:35:18.560
+
+
+
+1485
+00:35:18.560 --> 00:35:20.550
+It has been told that that is expected behavior
+
+1486
+00:35:20.550 --> 00:35:20.560
+
+
+
+1487
+00:35:20.560 --> 00:35:23.589
+Not a Bug on Your End According to Lengths
+
+1488
+00:35:23.589 --> 00:35:23.599
+
+
+
+1489
+00:35:23.599 --> 00:35:26.069
+Docs. The Latency Metric Is Specifically
+
+1490
+00:35:26.069 --> 00:35:26.079
+
+
+
+1491
+00:35:26.079 --> 00:35:28.630
+Defined as average run execution time.
+
+1492
+00:35:28.630 --> 00:35:28.640
+
+
+
+1493
+00:35:28.640 --> 00:35:31.030
+Lang Smith's Latency Metric Measures
+
+1494
+00:35:31.030 --> 00:35:31.040
+
+
+
+1495
+00:35:31.040 --> 00:35:33.190
+Average run execution time used to track
+
+1496
+00:35:33.190 --> 00:35:33.200
+
+
+
+1497
+00:35:33.200 --> 00:35:34.950
+Application latency and alerts on
+
+1498
+00:35:34.950 --> 00:35:34.960
+
+
+
+1499
+00:35:34.960 --> 00:35:37.670
+Spikes There Is No Option To Switch It To
+
+1500
+00:35:37.670 --> 00:35:37.680
+
+
+
+1501
+00:35:37.680 --> 00:35:39.990
+P50 and P99
+
+1502
+00:35:39.990 --> 00:35:40.000
+
+
+
+1503
+00:35:40.000 --> 00:35:44.470
+Unlike errors on ok that's bad i guess
+
+1504
+00:35:44.470 --> 00:35:44.480
+
+
+
+1505
+00:35:44.480 --> 00:35:47.510
+It should be on average, will you do it then it will be late
+
+1506
+00:35:47.510 --> 00:35:47.520
+
+
+
+1507
+00:35:47.520 --> 00:35:49.430
+Let me think about this, why not those
+
+1508
+00:35:49.430 --> 00:35:49.440
+
+
+
+1509
+00:35:49.440 --> 00:35:52.550
+People paid for P95
+
+1510
+00:35:52.550 --> 00:35:52.560
+
+
+
+1511
+00:35:52.560 --> 00:35:56.870
+What could be the reason P95 basically tells us this
+
+1512
+00:35:56.870 --> 00:35:56.880
+
+
+
+1513
+00:35:56.880 --> 00:35:58.950
+Tells us what our tail latency is?
+
+1514
+00:35:58.950 --> 00:35:58.960
+
+
+
+1515
+00:35:58.960 --> 00:36:04.390
+Basically, some of our users are our
+
+1516
+00:36:04.390 --> 00:36:04.400
+
+
+
+1517
+00:36:04.400 --> 00:36:08.150
+Those who feel more time for distribution
+
+1518
+00:36:08.150 --> 00:36:08.160
+
+
+
+1519
+00:36:08.160 --> 00:36:11.030
+How much time is it taking them to get the answer?
+
+1520
+00:36:11.030 --> 00:36:11.040
+
+
+
+1521
+00:36:11.040 --> 00:36:13.910
+It seems. Where the average latency is
+
+1522
+00:36:13.910 --> 00:36:13.920
+
+
+
+1523
+00:36:13.920 --> 00:36:18.069
+Tells about. Yes, basically P95
+
+1524
+00:36:18.069 --> 00:36:18.079
+
+
+
+1525
+00:36:18.079 --> 00:36:20.710
+Did not pay because P late P95 is
+
+1526
+00:36:20.710 --> 00:36:20.720
+
+
+
+1527
+00:36:20.720 --> 00:36:23.829
+Basically outliers. So of the outliers
+
+1528
+00:36:23.829 --> 00:36:23.839
+
+
+
+1529
+00:36:23.839 --> 00:36:26.870
+Due to high latency, the system will
+
+1530
+00:36:26.870 --> 00:36:26.880
+
+
+
+1531
+00:36:26.880 --> 00:36:29.670
+Raise an alert. May be that is not the use
+
+1532
+00:36:29.670 --> 00:36:29.680
+
+
+
+1533
+00:36:29.680 --> 00:36:33.030
+Case. If the latency is high for the entire public
+
+1534
+00:36:33.030 --> 00:36:33.040
+
+
+
+1535
+00:36:33.040 --> 00:36:35.670
+Getting that is a use case for alert.
+
+1536
+00:36:35.670 --> 00:36:35.680
+
+
+
+1537
+00:36:35.680 --> 00:36:37.990
+I don't know means not completely agreeing
+
+1538
+00:36:37.990 --> 00:36:38.000
+
+
+
+1539
+00:36:38.000 --> 00:36:40.069
+with the logic but I'm pretty sure in
+
+1540
+00:36:40.069 --> 00:36:40.079
+
+
+
+1541
+00:36:40.079 --> 00:36:42.230
+People completed this by taking feedback from users.
+
+1542
+00:36:42.230 --> 00:36:42.240
+
+
+
+1543
+00:36:42.240 --> 00:36:45.030
+The system must have been built. But again it's okay
+
+1544
+00:36:45.030 --> 00:36:45.040
+
+
+
+1545
+00:36:45.040 --> 00:36:47.109
+Don't think too much. I Just
+
+1546
+00:36:47.109 --> 00:36:47.119
+
+
+
+1547
+00:36:47.119 --> 00:36:49.349
+I wanted to show you how to set up alerts.
+
+1548
+00:36:49.349 --> 00:36:49.359
+
+
+
+1549
+00:36:49.359 --> 00:36:50.950
+How do you do it? This Is How You Set Up and
+
+1550
+00:36:50.950 --> 00:36:50.960
+
+
+
+1551
+00:36:50.960 --> 00:36:52.950
+Aloud. Letting you do it above cost
+
+1552
+00:36:52.950 --> 00:36:52.960
+
+
+
+1553
+00:36:52.960 --> 00:36:55.270
+If so, how would you create a cost alert?
+
+1554
+00:36:55.270 --> 00:36:55.280
+
+
+
+1555
+00:36:55.280 --> 00:36:57.990
+Total LLM Cost in Simply Cost
+
+1556
+00:36:57.990 --> 00:36:58.000
+
+
+
+1557
+00:36:58.000 --> 00:37:02.230
+is greater than, say, $5 in the last 60
+
+1558
+00:37:02.230 --> 00:37:02.240
+
+
+
+1559
+00:37:02.240 --> 00:37:05.430
+Minutes. If this limit is breached then
+
+1560
+00:37:05.430 --> 00:37:05.440
+
+
+
+1561
+00:37:05.440 --> 00:37:07.829
+Our system will send us a message on Slack
+
+1562
+00:37:07.829 --> 00:37:07.839
+
+
+
+1563
+00:37:07.839 --> 00:37:10.069
+Look brother, something is wrong. last 1 hour
+
+1564
+00:37:10.069 --> 00:37:10.079
+
+
+
+1565
+00:37:10.079 --> 00:37:13.589
+I lost $10. So something is wrong. So
+
+1566
+00:37:13.589 --> 00:37:13.599
+
+
+
+1567
+00:37:13.599 --> 00:37:16.230
+This Is How You Set Up Alerts Using
+
+1568
+00:37:16.230 --> 00:37:16.240
+
+
+
+1569
+00:37:16.240 --> 00:37:19.109
+LangSmith. Understand the concept. because someone
+
+1570
+00:37:19.109 --> 00:37:19.119
+
+
+
+1571
+00:37:19.119 --> 00:37:20.790
+It is not necessary that when you go to the company
+
+1572
+00:37:20.790 --> 00:37:20.800
+
+
+
+1573
+00:37:20.800 --> 00:37:22.550
+If you want to work, you will have to work as a LangSmith.
+
+1574
+00:37:22.550 --> 00:37:22.560
+
+
+
+1575
+00:37:22.560 --> 00:37:25.270
+It will be done. Focusing on a concept
+
+1576
+00:37:25.270 --> 00:37:25.280
+
+
+
+1577
+00:37:25.280 --> 00:37:27.430
+Are. Ok? If we continue with the discussion so far
+
+1578
+00:37:27.430 --> 00:37:27.440
+
+
+
+1579
+00:37:27.440 --> 00:37:31.589
+If we summarize, what are we able to do?
+
+1580
+00:37:31.589 --> 00:37:31.599
+
+
+
+1581
+00:37:31.599 --> 00:37:35.990
+We can log these operational metrics as
+
+1582
+00:37:35.990 --> 00:37:36.000
+
+
+
+1583
+00:37:36.000 --> 00:37:39.349
+able to trace it and we have made a
+
+1584
+00:37:39.349 --> 00:37:39.359
+
+
+
+1585
+00:37:39.359 --> 00:37:43.910
+plotted on the dashboard and
+
+1586
+00:37:43.910 --> 00:37:43.920
+
+
+
+1587
+00:37:43.920 --> 00:37:47.750
+We are able to create alerts around this.
+
+1588
+00:37:47.750 --> 00:37:47.760
+
+
+
+1589
+00:37:47.760 --> 00:37:51.430
+So we have completed the In a Way Ops part.
+
+1590
+00:37:51.430 --> 00:37:51.440
+
+
+
+1591
+00:37:51.440 --> 00:37:54.390
+Done it. Ok? If we go here step by step
+
+1592
+00:37:54.390 --> 00:37:54.400
+
+
+
+1593
+00:37:54.400 --> 00:37:56.870
+If we go step by step, we did it five times.
+
+1594
+00:37:56.870 --> 00:37:56.880
+
+
+
+1595
+00:37:56.880 --> 00:37:59.589
+I have seen it. I tried creating a dashboard.
+
+1596
+00:37:59.589 --> 00:37:59.599
+
+
+
+1597
+00:37:59.599 --> 00:38:03.190
+We also learned to create alerts. Aldo P95 with
+
+1598
+00:38:03.190 --> 00:38:03.200
+
+
+
+1599
+00:38:03.200 --> 00:38:05.030
+The alert cannot be created. Average Latency
+
+1600
+00:38:05.030 --> 00:38:05.040
+
+
+
+1601
+00:38:05.040 --> 00:38:07.109
+An alert is being created. So far the guys
+
+1602
+00:38:07.109 --> 00:38:07.119
+
+
+
+1603
+00:38:07.119 --> 00:38:09.190
+We did it. Let Me Know If You Have Any
+
+1604
+00:38:09.190 --> 00:38:09.200
+
+
+
+1605
+00:38:09.200 --> 00:38:11.910
+Questions. Process I Guess You Understand
+
+1606
+00:38:11.910 --> 00:38:11.920
+
+
+
+1607
+00:38:11.920 --> 00:38:14.390
+Should come. That is Morant. Rest of the tools to
+
+1608
+00:38:14.390 --> 00:38:14.400
+
+
+
+1609
+00:38:14.400 --> 00:38:17.190
+The tool will do very things. P95 Can Very Very
+
+1610
+00:38:17.190 --> 00:38:17.200
+
+
+
+1611
+00:38:17.200 --> 00:38:19.190
+Based on Vol. does it really provide
+
+1612
+00:38:19.190 --> 00:38:19.200
+
+
+
+1613
+00:38:19.200 --> 00:38:22.150
+Annie Statistical Major.
+
+1614
+00:38:22.150 --> 00:38:22.160
+
+
+
+1615
+00:38:22.160 --> 00:38:23.670
+Itcent
+
+1616
+00:38:23.670 --> 00:38:23.680
+
+
+
+1617
+00:38:23.680 --> 00:38:27.510
+In a way that it tells you that whatever you
+
+1618
+00:38:27.510 --> 00:38:27.520
+
+
+
+1619
+00:38:27.520 --> 00:38:29.430
+There are unhappy users
+
+1620
+00:38:29.430 --> 00:38:29.440
+
+
+
+1621
+00:38:29.440 --> 00:38:32.470
+Those who are taking more time to find the answer
+
+1622
+00:38:32.470 --> 00:38:32.480
+
+
+
+1623
+00:38:32.480 --> 00:38:35.589
+You get a sense of how sad he is.
+
+1624
+00:38:35.589 --> 00:38:35.599
+
+
+
+1625
+00:38:35.599 --> 00:38:38.310
+It shows. That is why P95 P99
+
+1626
+00:38:38.310 --> 00:38:38.320
+
+
+
+1627
+00:38:38.320 --> 00:38:41.190
+Latency values ​​exist
+
+1628
+00:38:41.190 --> 00:38:41.200
+
+
+
+1629
+00:38:41.200 --> 00:38:43.910
+In that sense, it may be alarming.
+
+1630
+00:38:43.910 --> 00:38:43.920
+
+
+
+1631
+00:38:43.920 --> 00:38:45.670
+It is not required because general
+
+1632
+00:38:45.670 --> 00:38:45.680
+
+
+
+1633
+00:38:45.680 --> 00:38:48.069
+There is no representation of the population. They
+
+1634
+00:38:48.069 --> 00:38:48.079
+
+
+
+1635
+00:38:48.079 --> 00:38:50.230
+Your outliers are represented. So
+
+1636
+00:38:50.230 --> 00:38:50.240
+
+
+
+1637
+00:38:50.240 --> 00:38:52.310
+You may be alerted based on outliers
+
+1638
+00:38:52.310 --> 00:38:52.320
+
+
+
+1639
+00:38:52.320 --> 00:38:54.470
+You wouldn't want to raise. This reason may be
+
+1640
+00:38:54.470 --> 00:38:54.480
+
+
+
+1641
+00:38:54.480 --> 00:38:57.190
+LangSmith did not give you this option.
+
+1642
+00:38:57.190 --> 00:38:57.200
+
+
+
+1643
+00:38:57.200 --> 00:38:59.910
+Gave. But they are giving you an option on the
+
+1644
+00:38:59.910 --> 00:38:59.920
+
+
+
+1645
+00:38:59.920 --> 00:39:02.630
+Basis of average latency.
+
+1646
+00:39:02.630 --> 00:39:02.640
+
+
+
+1647
+00:39:02.640 --> 00:39:04.870
+Another question is if we have to set up
+
+1648
+00:39:04.870 --> 00:39:04.880
+
+
+
+1649
+00:39:04.880 --> 00:39:08.710
+A Sentive Latency Alert What is Sentive
+
+1650
+00:39:08.710 --> 00:39:08.720
+
+
+
+1651
+00:39:08.720 --> 00:39:12.790
+I guess you're trying to write sensitive V
+
+1652
+00:39:12.790 --> 00:39:12.800
+
+
+
+1653
+00:39:12.800 --> 00:39:15.109
+Can set time to a lower value like 2
+
+1654
+00:39:15.109 --> 00:39:15.119
+
+
+
+1655
+00:39:15.119 --> 00:39:17.109
+Minutes rather than 5 minutes of average time.
+
+1656
+00:39:17.109 --> 00:39:17.119
+
+
+
+1657
+00:39:17.119 --> 00:39:20.310
+No no no it comes from your SLO.
+
+1658
+00:39:20.310 --> 00:39:20.320
+
+
+
+1659
+00:39:20.320 --> 00:39:23.109
+comes from the Service Level Objective that you
+
+1660
+00:39:23.109 --> 00:39:23.119
+
+
+
+1661
+00:39:23.119 --> 00:39:25.990
+Can you bear up to the limit and beyond that
+
+1662
+00:39:25.990 --> 00:39:26.000
+
+
+
+1663
+00:39:26.000 --> 00:39:27.910
+If it is happening too much then you are not a bear.
+
+1664
+00:39:27.910 --> 00:39:27.920
+
+
+
+1665
+00:39:27.920 --> 00:39:30.870
+Will you do it? That comes from business use cases. For
+
+1666
+00:39:30.870 --> 00:39:30.880
+
+
+
+1667
+00:39:30.880 --> 00:39:33.270
+For example, if you have a research assistant
+
+1668
+00:39:33.270 --> 00:39:33.280
+
+
+
+1669
+00:39:33.280 --> 00:39:35.510
+If you have made a research assistant then time
+
+1670
+00:39:35.510 --> 00:39:35.520
+
+
+
+1671
+00:39:35.520 --> 00:39:37.589
+Will you take it? First do the research and then
+
+1672
+00:39:37.589 --> 00:39:37.599
+
+
+
+1673
+00:39:37.599 --> 00:39:40.550
+Will synthesize and write a write up. It
+
+1674
+00:39:40.550 --> 00:39:40.560
+
+
+
+1675
+00:39:40.560 --> 00:39:44.069
+Might take 1 minute also. So it depends on
+
+1676
+00:39:44.069 --> 00:39:44.079
+
+
+
+1677
+00:39:44.079 --> 00:39:46.550
+The Business Use Case. That comes from your SLO.
+
+1678
+00:39:46.550 --> 00:39:46.560
+
+
+
+1679
+00:39:46.560 --> 00:39:48.710
+Is. The Service Level Objective comes from
+
+1680
+00:39:48.710 --> 00:39:48.720
+
+
+
+1681
+00:39:48.720 --> 00:39:51.109
+What is that number? On that basis you are here
+
+1682
+00:39:51.109 --> 00:39:51.119
+
+
+
+1683
+00:39:51.119 --> 00:39:52.710
+But you do the setup. Our engineer is here
+
+1684
+00:39:52.710 --> 00:39:52.720
+
+
+
+1685
+00:39:52.720 --> 00:39:54.550
+I don't use my brain. This decision is from above
+
+1686
+00:39:54.550 --> 00:39:54.560
+
+
+
+1687
+00:39:54.560 --> 00:39:56.390
+Making happens. You just need to go there
+
+1688
+00:39:56.390 --> 00:39:56.400
+
+
+
+1689
+00:39:56.400 --> 00:39:58.950
+You will be told that you have to set it. That's it. So
+
+1690
+00:39:58.950 --> 00:39:58.960
+
+
+
+1691
+00:39:58.960 --> 00:40:01.589
+what shall we do now? Now we will move to the next
+
+1692
+00:40:01.589 --> 00:40:01.599
+
+
+
+1693
+00:40:01.599 --> 00:40:03.589
+those
+
+1694
+00:40:03.589 --> 00:40:03.599
+
+
+
+1695
+00:40:03.599 --> 00:40:06.870
+V is safety over Eval.
+
+1696
+00:40:06.870 --> 00:40:06.880
+
+
+
+1697
+00:40:06.880 --> 00:40:09.589
+In A Safety I will show you how you
+
+1698
+00:40:09.589 --> 00:40:09.599
+
+
+
+1699
+00:40:09.599 --> 00:40:11.109
+Online
+
+1700
+00:40:11.109 --> 00:40:11.119
+
+
+
+1701
+00:40:11.119 --> 00:40:13.589
+How will you capture toxicity, Major?
+
+1702
+00:40:13.589 --> 00:40:13.599
+
+
+
+1703
+00:40:13.599 --> 00:40:17.190
+Will you do it? Ok? Now here you have two
+
+1704
+00:40:17.190 --> 00:40:17.200
+
+
+
+1705
+00:40:17.200 --> 00:40:21.270
+There are options. The first option is that you
+
+1706
+00:40:21.270 --> 00:40:21.280
+
+
+
+1707
+00:40:21.280 --> 00:40:24.470
+Evaluation was created offline,
+
+1708
+00:40:24.470 --> 00:40:24.480
+
+
+
+1709
+00:40:24.480 --> 00:40:27.670
+Eval was created for safety, you can use it
+
+1710
+00:40:27.670 --> 00:40:27.680
+
+
+
+1711
+00:40:27.680 --> 00:40:32.390
+Use it. And the second option is that you have to say no.
+
+1712
+00:40:32.390 --> 00:40:32.400
+
+
+
+1713
+00:40:32.400 --> 00:40:34.390
+LangSmith
+
+1714
+00:40:34.390 --> 00:40:34.400
+
+
+
+1715
+00:40:34.400 --> 00:40:37.349
+Provides the option to create an online evaluator
+
+1716
+00:40:37.349 --> 00:40:37.359
+
+
+
+1717
+00:40:37.359 --> 00:40:39.030
+Of. Look here at the evaluators.
+
+1718
+00:40:39.030 --> 00:40:39.040
+
+
+
+1719
+00:40:39.040 --> 00:40:42.230
+If you go here, you will find some built-in
+
+1720
+00:40:42.230 --> 00:40:42.240
+
+
+
+1721
+00:40:42.240 --> 00:40:45.510
+Evaluators meet. True SPII
+
+1722
+00:40:45.510 --> 00:40:45.520
+
+
+
+1723
+00:40:45.520 --> 00:40:47.829
+leakage, prompt injection, code injection,
+
+1724
+00:40:47.829 --> 00:40:47.839
+
+
+
+1725
+00:40:47.839 --> 00:40:50.470
+If you go into safety, you will see toxicity, bias and
+
+1726
+00:40:50.470 --> 00:40:50.480
+
+
+
+1727
+00:40:50.480 --> 00:40:52.710
+Fairness. So, this gives you some built in
+
+1728
+00:40:52.710 --> 00:40:52.720
+
+
+
+1729
+00:40:52.720 --> 00:40:55.430
+Evaluators meet. Since these are
+
+1730
+00:40:55.430 --> 00:40:55.440
+
+
+
+1731
+00:40:55.440 --> 00:40:58.470
+Reference free, so you can use them
+
+1732
+00:40:58.470 --> 00:40:58.480
+
+
+
+1733
+00:40:58.480 --> 00:41:01.910
+Directly. So, for this particular purpose
+
+1734
+00:41:01.910 --> 00:41:01.920
+
+
+
+1735
+00:41:01.920 --> 00:41:05.510
+Toxicity, We're Going to Use the Built
+
+1736
+00:41:05.510 --> 00:41:05.520
+
+
+
+1737
+00:41:05.520 --> 00:41:07.510
+In LangSmith
+
+1738
+00:41:07.510 --> 00:41:07.520
+
+
+
+1739
+00:41:07.520 --> 00:41:10.470
+Evaluator for Toxicity. And I give it like this
+
+1740
+00:41:10.470 --> 00:41:10.480
+
+
+
+1741
+00:41:10.480 --> 00:41:12.550
+I am doing it because of reasons. First Region
+
+1742
+00:41:12.550 --> 00:41:12.560
+
+
+
+1743
+00:41:12.560 --> 00:41:15.030
+is that I want to show you that you
+
+1744
+00:41:15.030 --> 00:41:15.040
+
+
+
+1745
+00:41:15.040 --> 00:41:16.950
+How to create an online evaluator
+
+1746
+00:41:16.950 --> 00:41:16.960
+
+
+
+1747
+00:41:16.960 --> 00:41:20.069
+In a tool like LangSmith. Seconds I'll give you this
+
+1748
+00:41:20.069 --> 00:41:20.079
+
+
+
+1749
+00:41:20.079 --> 00:41:23.030
+I want to show that secondly my logic is this
+
+1750
+00:41:23.030 --> 00:41:23.040
+
+
+
+1751
+00:41:23.040 --> 00:41:26.870
+that toxicity is one such evaluation
+
+1752
+00:41:26.870 --> 00:41:26.880
+
+
+
+1753
+00:41:26.880 --> 00:41:29.510
+In which it matters more that
+
+1754
+00:41:29.510 --> 00:41:29.520
+
+
+
+1755
+00:41:29.520 --> 00:41:31.910
+toxicity we are able to detect that
+
+1756
+00:41:31.910 --> 00:41:31.920
+
+
+
+1757
+00:41:31.920 --> 00:41:35.750
+No. Rather than thinking that toxicity
+
+1758
+00:41:35.750 --> 00:41:35.760
+
+
+
+1759
+00:41:35.760 --> 00:41:37.990
+What is the way to major? We code our
+
+1760
+00:41:37.990 --> 00:41:38.000
+
+
+
+1761
+00:41:38.000 --> 00:41:39.750
+Writing or using LangSmith
+
+1762
+00:41:39.750 --> 00:41:39.760
+
+
+
+1763
+00:41:39.760 --> 00:41:43.270
+Are. The end goal here is to simply measure
+
+1764
+00:41:43.270 --> 00:41:43.280
+
+
+
+1765
+00:41:43.280 --> 00:41:46.309
+Weather our system is toxic or not. So if
+
+1766
+00:41:46.309 --> 00:41:46.319
+
+
+
+1767
+00:41:46.319 --> 00:41:48.230
+LangSmith is giving me tax so I can
+
+1768
+00:41:48.230 --> 00:41:48.240
+
+
+
+1769
+00:41:48.240 --> 00:41:50.870
+Easy use its own system. And there is a
+
+1770
+00:41:50.870 --> 00:41:50.880
+
+
+
+1771
+00:41:50.880 --> 00:41:52.630
+Good chance that LangSmith is better than me
+
+1772
+00:41:52.630 --> 00:41:52.640
+
+
+
+1773
+00:41:52.640 --> 00:41:55.750
+Evaluator made because because LangSmith is
+
+1774
+00:41:55.750 --> 00:41:55.760
+
+
+
+1775
+00:41:55.760 --> 00:41:58.069
+A big company. And if their researchers
+
+1776
+00:41:58.069 --> 00:41:58.079
+
+
+
+1777
+00:41:58.079 --> 00:42:00.630
+If you had made it, it could have been better than ours.
+
+1778
+00:42:00.630 --> 00:42:00.640
+
+
+
+1779
+00:42:00.640 --> 00:42:03.589
+The toxicity equation we built
+
+1780
+00:42:03.589 --> 00:42:03.599
+
+
+
+1781
+00:42:03.599 --> 00:42:06.790
+It is offline. So that is why we are using
+
+1782
+00:42:06.790 --> 00:42:06.800
+
+
+
+1783
+00:42:06.800 --> 00:42:09.990
+This particular Eval LangSmith.
+
+1784
+00:42:09.990 --> 00:42:10.000
+
+
+
+1785
+00:42:10.000 --> 00:42:12.390
+Ok? So there is nothing to do. To you
+
+1786
+00:42:12.390 --> 00:42:12.400
+
+
+
+1787
+00:42:12.400 --> 00:42:16.069
+Have to go to the evaluators. Safety from there
+
+1788
+00:42:16.069 --> 00:42:16.079
+
+
+
+1789
+00:42:16.079 --> 00:42:18.309
+Selecting the toxicity within
+
+1790
+00:42:18.309 --> 00:42:18.319
+
+
+
+1791
+00:42:18.319 --> 00:42:22.309
+Is. And you can configure it right here.
+
+1792
+00:42:22.309 --> 00:42:22.319
+
+
+
+1793
+00:42:22.319 --> 00:42:24.630
+Yes and it will start working. i you
+
+1794
+00:42:24.630 --> 00:42:24.640
+
+
+
+1795
+00:42:24.640 --> 00:42:27.030
+Let me tell you. It's very simple. anonymous
+
+1796
+00:42:27.030 --> 00:42:27.040
+
+
+
+1797
+00:42:27.040 --> 00:42:29.109
+It is filled automatically. Application
+
+1798
+00:42:29.109 --> 00:42:29.119
+
+
+
+1799
+00:42:29.119 --> 00:42:31.430
+It is automatically selected. From here you
+
+1800
+00:42:31.430 --> 00:42:31.440
+
+
+
+1801
+00:42:31.440 --> 00:42:34.710
+Can select a model that toxicity basically
+
+1802
+00:42:34.710 --> 00:42:34.720
+
+
+
+1803
+00:42:34.720 --> 00:42:37.589
+At the end it's all about LLM as a Judge. So
+
+1804
+00:42:37.589 --> 00:42:37.599
+
+
+
+1805
+00:42:37.599 --> 00:42:40.390
+Here our LLM as a Judge is
+
+1806
+00:42:40.390 --> 00:42:40.400
+
+
+
+1807
+00:42:40.400 --> 00:42:43.190
+GPT 5.6 is tera segmented. But Again You
+
+1808
+00:42:43.190 --> 00:42:43.200
+
+
+
+1809
+00:42:43.200 --> 00:42:46.470
+Can select any other model provider. Your
+
+1810
+00:42:46.470 --> 00:42:46.480
+
+
+
+1811
+00:42:46.480 --> 00:42:49.829
+This is above. Ok? A
+
+1812
+00:42:49.829 --> 00:42:49.839
+
+
+
+1813
+00:42:49.839 --> 00:42:51.990
+So we're just going to leave it here. His
+
+1814
+00:42:51.990 --> 00:42:52.000
+
+
+
+1815
+00:42:52.000 --> 00:42:54.230
+Later there is a prompt here. a system
+
+1816
+00:42:54.230 --> 00:42:54.240
+
+
+
+1817
+00:42:54.240 --> 00:42:57.750
+PRT is a drug with the help of which toxicity
+
+1818
+00:42:57.750 --> 00:42:57.760
+
+
+
+1819
+00:42:57.760 --> 00:43:01.109
+Detection will take place. Now here if you want
+
+1820
+00:43:01.109 --> 00:43:01.119
+
+
+
+1821
+00:43:01.119 --> 00:43:03.270
+You can make changes in this format. To you
+
+1822
+00:43:03.270 --> 00:43:03.280
+
+
+
+1823
+00:43:03.280 --> 00:43:05.910
+This option is available. But Since Again I Am
+
+1824
+00:43:05.910 --> 00:43:05.920
+
+
+
+1825
+00:43:05.920 --> 00:43:08.710
+Relying on Lansith that if he so
+
+1826
+00:43:08.710 --> 00:43:08.720
+
+
+
+1827
+00:43:08.720 --> 00:43:11.510
+They have created a big platform, so they
+
+1828
+00:43:11.510 --> 00:43:11.520
+
+
+
+1829
+00:43:11.520 --> 00:43:15.990
+Inbuilt toxicity evaluator
+
+1830
+00:43:15.990 --> 00:43:16.000
+
+
+
+1831
+00:43:16.000 --> 00:43:17.910
+Whatever you have given must be good. So I am using this
+
+1832
+00:43:17.910 --> 00:43:17.920
+
+
+
+1833
+00:43:17.920 --> 00:43:21.589
+I will not change the script. Ok?
+
+1834
+00:43:21.589 --> 00:43:21.599
+
+
+
+1835
+00:43:21.599 --> 00:43:23.589
+Anything else needs to be changed here?
+
+1836
+00:43:23.589 --> 00:43:23.599
+
+
+
+1837
+00:43:23.599 --> 00:43:25.910
+Not there. Now you just have to come here and
+
+1838
+00:43:25.910 --> 00:43:25.920
+
+
+
+1839
+00:43:25.920 --> 00:43:29.270
+From here you have to select Training Not
+
+1840
+00:43:29.270 --> 00:43:29.280
+
+
+
+1841
+00:43:29.280 --> 00:43:31.589
+Data sets. If you select data sets
+
+1842
+00:43:31.589 --> 00:43:31.599
+
+
+
+1843
+00:43:31.599 --> 00:43:33.510
+This will become an offline evaluation. I
+
+1844
+00:43:33.510 --> 00:43:33.520
+
+
+
+1845
+00:43:33.520 --> 00:43:35.910
+I told you that you have to select training.
+
+1846
+00:43:35.910 --> 00:43:35.920
+
+
+
+1847
+00:43:35.920 --> 00:43:38.390
+We selected that. now over here
+
+1848
+00:43:38.390 --> 00:43:38.400
+
+
+
+1849
+00:43:38.400 --> 00:43:40.390
+One interesting thing is sampling rate. Do
+
+1850
+00:43:40.390 --> 00:43:40.400
+
+
+
+1851
+00:43:40.400 --> 00:43:42.230
+You remember what is sampling rate? and can
+
+1852
+00:43:42.230 --> 00:43:42.240
+
+
+
+1853
+00:43:42.240 --> 00:43:44.470
+You Tell Me What Will Happen? If I make this
+
+1854
+00:43:44.470 --> 00:43:44.480
+
+
+
+1855
+00:43:44.480 --> 00:43:48.069
+I will do it 100%. I will check the chat. Please
+
+1856
+00:43:48.069 --> 00:43:48.079
+
+
+
+1857
+00:43:48.079 --> 00:43:50.230
+Tell me. We have discussed this. so
+
+1858
+00:43:50.230 --> 00:43:50.240
+
+
+
+1859
+00:43:50.240 --> 00:43:52.470
+I am asking you. Can you tell me if
+
+1860
+00:43:52.470 --> 00:43:52.480
+
+
+
+1861
+00:43:52.480 --> 00:43:54.630
+Here the sampling rate will be 100. what about
+
+1862
+00:43:54.630 --> 00:43:54.640
+
+
+
+1863
+00:43:54.640 --> 00:43:58.870
+Does it make sense? What Will Happen?
+
+1864
+00:43:58.870 --> 00:43:58.880
+
+
+
+1865
+00:43:58.880 --> 00:44:00.950
+Exactly all traces will be
+
+1866
+00:44:00.950 --> 00:44:00.960
+
+
+
+1867
+00:44:00.960 --> 00:44:04.230
+Evaluated. So if in one day my
+
+1868
+00:44:04.230 --> 00:44:04.240
+
+
+
+1869
+00:44:04.240 --> 00:44:07.670
+500 queries are coming on the platform means
+
+1870
+00:44:07.670 --> 00:44:07.680
+
+
+
+1871
+00:44:07.680 --> 00:44:11.109
+We are capturing 500 traces, so this
+
+1872
+00:44:11.109 --> 00:44:11.119
+
+
+
+1873
+00:44:11.119 --> 00:44:14.950
+The toxicity evaluator is 500
+
+1874
+00:44:14.950 --> 00:44:14.960
+
+
+
+1875
+00:44:14.960 --> 00:44:18.630
+The bar will work. Basically we are using GPT 5.6 from Terra
+
+1876
+00:44:18.630 --> 00:44:18.640
+
+
+
+1877
+00:44:18.640 --> 00:44:22.630
+Will get the work done 500 times daily. so you can
+
+1878
+00:44:22.630 --> 00:44:22.640
+
+
+
+1879
+00:44:22.640 --> 00:44:26.069
+Actually calculate and sense it that we are very
+
+1880
+00:44:26.069 --> 00:44:26.079
+
+
+
+1881
+00:44:26.079 --> 00:44:28.790
+I am going to pay all the expenses. of evaluation
+
+1882
+00:44:28.790 --> 00:44:28.800
+
+
+
+1883
+00:44:28.800 --> 00:44:31.030
+It will also cost money. So what are we doing
+
+1884
+00:44:31.030 --> 00:44:31.040
+
+
+
+1885
+00:44:31.040 --> 00:44:33.589
+We do? We will do the sampling. basically
+
+1886
+00:44:33.589 --> 00:44:33.599
+
+
+
+1887
+00:44:33.599 --> 00:44:36.710
+We would say rather than sampling all of
+
+1888
+00:44:36.710 --> 00:44:36.720
+
+
+
+1889
+00:44:36.720 --> 00:44:40.150
+Rather than evaluating all the traces for
+
+1890
+00:44:40.150 --> 00:44:40.160
+
+
+
+1891
+00:44:40.160 --> 00:44:43.750
+toxicity just
+
+1892
+00:44:43.750 --> 00:44:43.760
+
+
+
+1893
+00:44:43.760 --> 00:44:48.790
+Randomly pick 30% of the samples and those 30%
+
+1894
+00:44:48.790 --> 00:44:48.800
+
+
+
+1895
+00:44:48.800 --> 00:44:52.150
+Please measure the toxicity on it and give it to us.
+
+1896
+00:44:52.150 --> 00:44:52.160
+
+
+
+1897
+00:44:52.160 --> 00:44:54.390
+We will understand that also. In a way we
+
+1898
+00:44:54.390 --> 00:44:54.400
+
+
+
+1899
+00:44:54.400 --> 00:44:56.950
+They are saying that we are trying to make a population from a sample.
+
+1900
+00:44:56.950 --> 00:44:56.960
+
+
+
+1901
+00:44:56.960 --> 00:44:59.190
+Trying to estimate the .
+
+1902
+00:44:59.190 --> 00:44:59.200
+
+
+
+1903
+00:44:59.200 --> 00:45:02.870
+If I evaluated 10,000 traces
+
+1904
+00:45:02.870 --> 00:45:02.880
+
+
+
+1905
+00:45:02.880 --> 00:45:05.510
+So it can give us a fair picture of 500
+
+1906
+00:45:05.510 --> 00:45:05.520
+
+
+
+1907
+00:45:05.520 --> 00:45:07.589
+How much toxicity is spreading in traces
+
+1908
+00:45:07.589 --> 00:45:07.599
+
+
+
+1909
+00:45:07.599 --> 00:45:09.829
+Our chat bot. That is why this sampling
+
+1910
+00:45:09.829 --> 00:45:09.839
+
+
+
+1911
+00:45:09.839 --> 00:45:11.750
+The rate parameter is here. Correct
+
+1912
+00:45:11.750 --> 00:45:11.760
+
+
+
+1913
+00:45:11.760 --> 00:45:15.349
+Is? Now for now I'm going to keep it 100%.
+
+1914
+00:45:15.349 --> 00:45:15.359
+
+
+
+1915
+00:45:15.359 --> 00:45:16.710
+I have been. Because I want to
+
+1916
+00:45:16.710 --> 00:45:16.720
+
+
+
+1917
+00:45:16.720 --> 00:45:19.030
+Whatever traces I put here, on everyone
+
+1918
+00:45:19.030 --> 00:45:19.040
+
+
+
+1919
+00:45:19.040 --> 00:45:21.829
+Let us calculate toxicity. but in a
+
+1920
+00:45:21.829 --> 00:45:21.839
+
+
+
+1921
+00:45:21.839 --> 00:45:23.829
+Proper production setup and sampling rate
+
+1922
+00:45:23.829 --> 00:45:23.839
+
+
+
+1923
+00:45:23.839 --> 00:45:25.750
+It will depend on your budget. I really
+
+1924
+00:45:25.750 --> 00:45:25.760
+
+
+
+1925
+00:45:25.760 --> 00:45:29.349
+Hope this is clear. Ok? A
+
+1926
+00:45:29.349 --> 00:45:29.359
+
+
+
+1927
+00:45:29.359 --> 00:45:31.750
+After that, here you will see your OpenAI.
+
+1928
+00:45:31.750 --> 00:45:31.760
+
+
+
+1929
+00:45:31.760 --> 00:45:34.230
+Will have to provide. Otherwise this work
+
+1930
+00:45:34.230 --> 00:45:34.240
+
+
+
+1931
+00:45:34.240 --> 00:45:35.990
+Obviously, you will not spend money because
+
+1932
+00:45:35.990 --> 00:45:36.000
+
+
+
+1933
+00:45:36.000 --> 00:45:38.069
+Will you pick it up? Lansith cannot afford these expenses.
+
+1934
+00:45:38.069 --> 00:45:38.079
+
+
+
+1935
+00:45:38.079 --> 00:45:40.309
+I want. So I will quickly go to my
+
+1936
+00:45:40.309 --> 00:45:40.319
+
+
+
+1937
+00:45:40.319 --> 00:45:44.870
+Environment file. And I know again you are mine
+
+1938
+00:45:44.870 --> 00:45:44.880
+
+
+
+1939
+00:45:44.880 --> 00:45:47.990
+Key will be visible. But don't worry, I am from the class
+
+1940
+00:45:47.990 --> 00:45:48.000
+
+
+
+1941
+00:45:48.000 --> 00:45:50.150
+I will delete it later. I Will Simply Paste
+
+1942
+00:45:50.150 --> 00:45:50.160
+
+
+
+1943
+00:45:50.160 --> 00:45:53.829
+It's here. Clicked on save. And we are
+
+1944
+00:45:53.829 --> 00:45:53.839
+
+
+
+1945
+00:45:53.839 --> 00:45:57.829
+Done. And clicked on save here also. save
+
+1946
+00:45:57.829 --> 00:45:57.839
+
+
+
+1947
+00:45:57.839 --> 00:46:02.390
+Evaluator and our evaluator is
+
+1948
+00:46:02.390 --> 00:46:02.400
+
+
+
+1949
+00:46:02.400 --> 00:46:04.950
+Created Now. You Can See If You
+
+1950
+00:46:04.950 --> 00:46:04.960
+
+
+
+1951
+00:46:04.960 --> 00:46:08.309
+go to evaluators so we have a
+
+1952
+00:46:08.309 --> 00:46:08.319
+
+
+
+1953
+00:46:08.319 --> 00:46:11.030
+This one is an evaluator to measure toxicity.
+
+1954
+00:46:11.030 --> 00:46:11.040
+
+
+
+1955
+00:46:11.040 --> 00:46:13.670
+Of. Ok? So now I will show you how to drive
+
+1956
+00:46:13.670 --> 00:46:13.680
+
+
+
+1957
+00:46:13.680 --> 00:46:17.349
+Am. We'll run a trace and see
+
+1958
+00:46:17.349 --> 00:46:17.359
+
+
+
+1959
+00:46:17.359 --> 00:46:20.069
+that we will measure toxicity on it
+
+1960
+00:46:20.069 --> 00:46:20.079
+
+
+
+1961
+00:46:20.079 --> 00:46:23.109
+Online. Ok? So I will go back to my
+
+1962
+00:46:23.109 --> 00:46:23.119
+
+
+
+1963
+00:46:23.119 --> 00:46:26.390
+Code End
+
+1964
+00:46:26.390 --> 00:46:26.400
+
+
+
+1965
+00:46:26.400 --> 00:46:29.030
+Go back to RAG pipeline. I will add a
+
+1966
+00:46:29.030 --> 00:46:29.040
+
+
+
+1967
+00:46:29.040 --> 00:46:33.670
+Question a what are LLM
+
+1968
+00:46:33.670 --> 00:46:33.680
+
+
+
+1969
+00:46:33.680 --> 00:46:37.990
+Leader boards?
+
+1970
+00:46:37.990 --> 00:46:38.000
+
+
+
+1971
+00:46:38.000 --> 00:46:39.430
+Asking a simple question. obviously
+
+1972
+00:46:39.430 --> 00:46:39.440
+
+
+
+1973
+00:46:39.440 --> 00:46:41.990
+There will be no toxicity in this. running this
+
+1974
+00:46:41.990 --> 00:46:42.000
+
+
+
+1975
+00:46:42.000 --> 00:46:43.589
+Are.
+
+1976
+00:46:43.589 --> 00:46:43.599
+
+
+
+1977
+00:46:43.599 --> 00:46:47.990
+Done. If we go back to tracing
+
+1978
+00:46:47.990 --> 00:46:48.000
+
+
+
+1979
+00:46:48.000 --> 00:46:50.630
+So a new trace must have come. what are
+
+1980
+00:46:50.630 --> 00:46:50.640
+
+
+
+1981
+00:46:50.640 --> 00:46:54.069
+LLM Leader Boards. This is the trace. Now
+
+1982
+00:46:54.069 --> 00:46:54.079
+
+
+
+1983
+00:46:54.079 --> 00:46:56.150
+There is an important thing here. even though
+
+1984
+00:46:56.150 --> 00:46:56.160
+
+
+
+1985
+00:46:56.160 --> 00:46:58.309
+We created our own toxicity evaluator
+
+1986
+00:46:58.309 --> 00:46:58.319
+
+
+
+1987
+00:46:58.319 --> 00:47:01.349
+It has been given but you will not get the result immediately.
+
+1988
+00:47:01.349 --> 00:47:01.359
+
+
+
+1989
+00:47:01.359 --> 00:47:04.309
+Gives. My observations with this tool
+
+1990
+00:47:04.309 --> 00:47:04.319
+
+
+
+1991
+00:47:04.319 --> 00:47:07.910
+It takes a little time with the LangSmith. 2
+
+1992
+00:47:07.910 --> 00:47:07.920
+
+
+
+1993
+00:47:07.920 --> 00:47:11.190
+3 minutes. So Trace comes. After that he
+
+1994
+00:47:11.190 --> 00:47:11.200
+
+
+
+1995
+00:47:11.200 --> 00:47:13.990
+Behind the Scenes triggers asynchronously
+
+1996
+00:47:13.990 --> 00:47:14.000
+
+
+
+1997
+00:47:14.000 --> 00:47:17.190
+and measures toxicity and here
+
+1998
+00:47:17.190 --> 00:47:17.200
+
+
+
+1999
+00:47:17.200 --> 00:47:20.309
+Shows you. But it takes some amount of
+
+2000
+00:47:20.309 --> 00:47:20.319
+
+
+
+2001
+00:47:20.319 --> 00:47:22.550
+Time. He also makes time very difficult. let it sleep
+
+2002
+00:47:22.550 --> 00:47:22.560
+
+
+
+2003
+00:47:22.560 --> 00:47:25.349
+It takes 3 minutes. A once again I
+
+2004
+00:47:25.349 --> 00:47:25.359
+
+
+
+2005
+00:47:25.359 --> 00:47:27.190
+I'll refresh it and show you. Maybe
+
+2006
+00:47:27.190 --> 00:47:27.200
+
+
+
+2007
+00:47:27.200 --> 00:47:30.230
+It may have happened quickly. It still hasn't arrived. So
+
+2008
+00:47:30.230 --> 00:47:30.240
+
+
+
+2009
+00:47:30.240 --> 00:47:33.589
+Let's wait. Ok? Let's See a Capture
+
+2010
+00:47:33.589 --> 00:47:33.599
+
+
+
+2011
+00:47:33.599 --> 00:47:37.349
+Did it happen or not? I mean whether it was evaluated or not.
+
+2012
+00:47:37.349 --> 00:47:37.359
+
+
+
+2013
+00:47:37.359 --> 00:47:40.710
+Look at this guys look here in feedback
+
+2014
+00:47:40.710 --> 00:47:40.720
+
+
+
+2015
+00:47:40.720 --> 00:47:42.950
+It is written here that toxicity is zero
+
+2016
+00:47:42.950 --> 00:47:42.960
+
+
+
+2017
+00:47:42.960 --> 00:47:45.750
+If you click on it, it will give you
+
+2018
+00:47:45.750 --> 00:47:45.760
+
+
+
+2019
+00:47:45.760 --> 00:47:47.829
+He will also explain why he scored
+
+2020
+00:47:47.829 --> 00:47:47.839
+
+
+
+2021
+00:47:47.839 --> 00:47:49.910
+Diya, here it is written, the response is
+
+2022
+00:47:49.910 --> 00:47:49.920
+
+
+
+2023
+00:47:49.920 --> 00:47:52.470
+Explanatory and Professional It Contains No
+
+2024
+00:47:52.470 --> 00:47:52.480
+
+
+
+2025
+00:47:52.480 --> 00:47:54.630
+Personal attacks, insults, basically he
+
+2026
+00:47:54.630 --> 00:47:54.640
+
+
+
+2027
+00:47:54.640 --> 00:47:57.990
+Explained and or
+
+2028
+00:47:57.990 --> 00:47:58.000
+
+
+
+2029
+00:47:58.000 --> 00:48:01.109
+Your online eval is working on this
+
+2030
+00:48:01.109 --> 00:48:01.119
+
+
+
+2031
+00:48:01.119 --> 00:48:03.670
+This is how a particular trace works
+
+2032
+00:48:03.670 --> 00:48:03.680
+
+
+
+2033
+00:48:03.680 --> 00:48:08.390
+We just created a safety
+
+2034
+00:48:08.390 --> 00:48:08.400
+
+
+
+2035
+00:48:08.400 --> 00:48:11.430
+Eval that works online. in the same manner
+
+2036
+00:48:11.430 --> 00:48:11.440
+
+
+
+2037
+00:48:11.440 --> 00:48:14.550
+You can do the rest too. A again to you
+
+2038
+00:48:14.550 --> 00:48:14.560
+
+
+
+2039
+00:48:14.560 --> 00:48:17.349
+Have to go to the evaluators.
+
+2040
+00:48:17.349 --> 00:48:17.359
+
+
+
+2041
+00:48:17.359 --> 00:48:21.190
+Click on the plus sign and from here you can
+
+2042
+00:48:21.190 --> 00:48:21.200
+
+
+
+2043
+00:48:21.200 --> 00:48:24.549
+PII leakage bias end from select lets
+
+2044
+00:48:24.549 --> 00:48:24.559
+
+
+
+2045
+00:48:24.559 --> 00:48:26.150
+Fairness.
+
+2046
+00:48:26.150 --> 00:48:26.160
+
+
+
+2047
+00:48:26.160 --> 00:48:28.549
+This correctness is different. this is a
+
+2048
+00:48:28.549 --> 00:48:28.559
+
+
+
+2049
+00:48:28.559 --> 00:48:31.670
+Something with reference-free correctness. This you
+
+2050
+00:48:31.670 --> 00:48:31.680
+
+
+
+2051
+00:48:31.680 --> 00:48:36.549
+Remove it for now. A so or this is how
+
+2052
+00:48:36.549 --> 00:48:36.559
+
+
+
+2053
+00:48:36.559 --> 00:48:40.549
+You create an online safety eval.
+
+2054
+00:48:40.549 --> 00:48:40.559
+
+
+
+2055
+00:48:40.559 --> 00:48:42.549
+What can we do about this quickly?
+
+2056
+00:48:42.549 --> 00:48:42.559
+
+
+
+2057
+00:48:42.559 --> 00:48:46.549
+Are? monitoring pay jaake a we can go to
+
+2058
+00:48:46.549 --> 00:48:46.559
+
+
+
+2059
+00:48:46.559 --> 00:48:49.589
+Our Custom Dashboard and We Can Add a
+
+2060
+00:48:49.589 --> 00:48:49.599
+
+
+
+2061
+00:48:49.599 --> 00:48:53.910
+chart. So the name of this chart will be
+
+2062
+00:48:53.910 --> 00:48:53.920
+
+
+
+2063
+00:48:53.920 --> 00:48:57.030
+Toxicity.
+
+2064
+00:48:57.030 --> 00:48:57.040
+
+
+
+2065
+00:48:57.040 --> 00:48:59.910
+And what will we do in this? This time the pick
+
+2066
+00:48:59.910 --> 00:48:59.920
+
+
+
+2067
+00:48:59.920 --> 00:49:02.390
+In Matric we will go to feedback. Ok?
+
+2068
+00:49:02.390 --> 00:49:02.400
+
+
+
+2069
+00:49:02.400 --> 00:49:06.230
+Click on feedback. hey look here
+
+2070
+00:49:06.230 --> 00:49:06.240
+
+
+
+2071
+00:49:06.240 --> 00:49:09.109
+No, it is not showing toxicity
+
+2072
+00:49:09.109 --> 00:49:09.119
+
+
+
+2073
+00:49:09.119 --> 00:49:12.150
+And this happens a little, Lansith is slow to
+
+2074
+00:49:12.150 --> 00:49:12.160
+
+
+
+2075
+00:49:12.160 --> 00:49:14.150
+React. I'll tell you a little later
+
+2076
+00:49:14.150 --> 00:49:14.160
+
+
+
+2077
+00:49:14.160 --> 00:49:16.309
+If I show you, then toxicity will be visible here.
+
+2078
+00:49:16.309 --> 00:49:16.319
+
+
+
+2079
+00:49:16.319 --> 00:49:18.630
+It will work. It is not visible at the moment. Some?
+
+2080
+00:49:18.630 --> 00:49:18.640
+
+
+
+2081
+00:49:18.640 --> 00:49:20.710
+Their internal registries are created.
+
+2082
+00:49:20.710 --> 00:49:20.720
+
+
+
+2083
+00:49:20.720 --> 00:49:22.870
+It probably hasn't been created. right now for this
+
+2084
+00:49:22.870 --> 00:49:22.880
+
+
+
+2085
+00:49:22.880 --> 00:49:25.750
+The particular new evaluator we created
+
+2086
+00:49:25.750 --> 00:49:25.760
+
+
+
+2087
+00:49:25.760 --> 00:49:28.309
+Have done. But it will start appearing here
+
+2088
+00:49:28.309 --> 00:49:28.319
+
+
+
+2089
+00:49:28.319 --> 00:49:30.390
+After some time. Toxicity is all you need here
+
+2090
+00:49:30.390 --> 00:49:30.400
+
+
+
+2091
+00:49:30.400 --> 00:49:32.309
+Toxicity has to be selected. here
+
+2092
+00:49:32.309 --> 00:49:32.319
+
+
+
+2093
+00:49:32.319 --> 00:49:33.829
+His chart will come. I after a while
+
+2094
+00:49:33.829 --> 00:49:33.839
+
+
+
+2095
+00:49:33.839 --> 00:49:35.510
+I will make it. Don't worry. He is here right now
+
+2096
+00:49:35.510 --> 00:49:35.520
+
+
+
+2097
+00:49:35.520 --> 00:49:38.790
+Cannot be seen. Let's wait some time.
+
+2098
+00:49:38.790 --> 00:49:38.800
+
+
+
+2099
+00:49:38.800 --> 00:49:42.309
+Let's take an exit and return to tracing
+
+2100
+00:49:42.309 --> 00:49:42.319
+
+
+
+2101
+00:49:42.319 --> 00:49:46.950
+and once back from there we go here
+
+2102
+00:49:46.950 --> 00:49:46.960
+
+
+
+2103
+00:49:46.960 --> 00:49:49.109
+Let's go.
+
+2104
+00:49:49.109 --> 00:49:49.119
+
+
+
+2105
+00:49:49.119 --> 00:49:51.990
+After that we also created the toxicity one.
+
+2106
+00:49:51.990 --> 00:49:52.000
+
+
+
+2107
+00:49:52.000 --> 00:49:55.109
+Done it. We could not make this graph. Now!
+
+2108
+00:49:55.109 --> 00:49:55.119
+
+
+
+2109
+00:49:55.119 --> 00:49:58.630
+This is our current state.
+
+2110
+00:49:58.630 --> 00:49:58.640
+
+
+
+2111
+00:49:58.640 --> 00:50:01.270
+We did this one too.
+
+2112
+00:50:01.270 --> 00:50:01.280
+
+
+
+2113
+00:50:01.280 --> 00:50:03.829
+I also did the safety thing. Now just quality
+
+2114
+00:50:03.829 --> 00:50:03.839
+
+
+
+2115
+00:50:03.839 --> 00:50:06.230
+I have to setup the one. So I will wait. Late
+
+2116
+00:50:06.230 --> 00:50:06.240
+
+
+
+2117
+00:50:06.240 --> 00:50:08.549
+Me no if you have any doubts on this point
+
+2118
+00:50:08.549 --> 00:50:08.559
+
+
+
+2119
+00:50:08.559 --> 00:50:12.549
+Pay. Can it measure the toxic content in the
+
+2120
+00:50:12.549 --> 00:50:12.559
+
+
+
+2121
+00:50:12.559 --> 00:50:15.750
+Input? or gives a score from zero to 100
+
+2122
+00:50:15.750 --> 00:50:15.760
+
+
+
+2123
+00:50:15.760 --> 00:50:18.549
+No. So depending on how much toxicity there is
+
+2124
+00:50:18.549 --> 00:50:18.559
+
+
+
+2125
+00:50:18.559 --> 00:50:21.030
+Inside your answer? That score keeps increasing
+
+2126
+00:50:21.030 --> 00:50:21.040
+
+
+
+2127
+00:50:21.040 --> 00:50:23.030
+Is. If there is too much toxic content
+
+2128
+00:50:23.030 --> 00:50:23.040
+
+
+
+2129
+00:50:23.040 --> 00:50:25.430
+He will give it for Rs 100. If it is very low then it is zero
+
+2130
+00:50:25.430 --> 00:50:25.440
+
+
+
+2131
+00:50:25.440 --> 00:50:28.790
+Will give it to. And the reason also tells that he
+
+2132
+00:50:28.790 --> 00:50:28.800
+
+
+
+2133
+00:50:28.800 --> 00:50:31.109
+Why did he give that score? will tell the exact thing
+
+2134
+00:50:31.109 --> 00:50:31.119
+
+
+
+2135
+00:50:31.119 --> 00:50:33.750
+that because this was mentioned that is why
+
+2136
+00:50:33.750 --> 00:50:33.760
+
+
+
+2137
+00:50:33.760 --> 00:50:35.990
+I gave it this much score. So it's
+
+2138
+00:50:35.990 --> 00:50:36.000
+
+
+
+2139
+00:50:36.000 --> 00:50:40.710
+Very interpretable. No no no user's
+
+2140
+00:50:40.710 --> 00:50:40.720
+
+
+
+2141
+00:50:40.720 --> 00:50:43.910
+We are not concerned with the question, right? Us
+
+2142
+00:50:43.910 --> 00:50:43.920
+
+
+
+2143
+00:50:43.920 --> 00:50:46.390
+Let's see how our system reacts.
+
+2144
+00:50:46.390 --> 00:50:46.400
+
+
+
+2145
+00:50:46.400 --> 00:50:49.190
+doing. That matters. User is free
+
+2146
+00:50:49.190 --> 00:50:49.200
+
+
+
+2147
+00:50:49.200 --> 00:50:51.190
+Is. Can type anything. what you
+
+2148
+00:50:51.190 --> 00:50:51.200
+
+
+
+2149
+00:50:51.200 --> 00:50:52.950
+Will you do it? He didn't record it and take it home.
+
+2150
+00:50:52.950 --> 00:50:52.960
+
+
+
+2151
+00:50:52.960 --> 00:50:57.190
+You will go and kill me. Come on guys now the last part of
+
+2152
+00:50:57.190 --> 00:50:57.200
+
+
+
+2153
+00:50:57.200 --> 00:51:00.790
+The Online Evals gives us access to our quality products.
+
+2154
+00:51:00.790 --> 00:51:00.800
+
+
+
+2155
+00:51:00.800 --> 00:51:04.470
+The metrics that are
+
+2156
+00:51:04.470 --> 00:51:04.480
+
+
+
+2157
+00:51:04.480 --> 00:51:08.390
+I have to do major. Now look here it's tricky
+
+2158
+00:51:08.390 --> 00:51:08.400
+
+
+
+2159
+00:51:08.400 --> 00:51:10.549
+What is the part
+
+2160
+00:51:10.549 --> 00:51:10.559
+
+
+
+2161
+00:51:10.559 --> 00:51:13.349
+That
+
+2162
+00:51:13.349 --> 00:51:13.359
+
+
+
+2163
+00:51:13.359 --> 00:51:18.230
+For these metrics you will need Exactly
+
+2164
+00:51:18.230 --> 00:51:18.240
+
+
+
+2165
+00:51:18.240 --> 00:51:19.910
+Same
+
+2166
+00:51:19.910 --> 00:51:19.920
+
+
+
+2167
+00:51:19.920 --> 00:51:24.790
+Evaluates should be run that you have done offline
+
+2168
+00:51:24.790 --> 00:51:24.800
+
+
+
+2169
+00:51:24.800 --> 00:51:29.430
+Settings were created using DeepEval.
+
+2170
+00:51:29.430 --> 00:51:29.440
+
+
+
+2171
+00:51:29.440 --> 00:51:32.309
+Basically what I am trying to say is that
+
+2172
+00:51:32.309 --> 00:51:32.319
+
+
+
+2173
+00:51:32.319 --> 00:51:35.750
+Yours for Your Quality Matrix
+
+2174
+00:51:35.750 --> 00:51:35.760
+
+
+
+2175
+00:51:35.760 --> 00:51:39.990
+Offline Eval and Online Eval should be same.
+
+2176
+00:51:39.990 --> 00:51:40.000
+
+
+
+2177
+00:51:40.000 --> 00:51:42.950
+If both are not same. for example
+
+2178
+00:51:42.950 --> 00:51:42.960
+
+
+
+2179
+00:51:42.960 --> 00:51:45.750
+You used DeepEval for offline
+
+2180
+00:51:45.750 --> 00:51:45.760
+
+
+
+2181
+00:51:45.760 --> 00:51:49.349
+And for online you can
+
+2182
+00:51:49.349 --> 00:51:49.359
+
+
+
+2183
+00:51:49.359 --> 00:51:51.430
+Are you using any evaluator? For
+
+2184
+00:51:51.430 --> 00:51:51.440
+
+
+
+2185
+00:51:51.440 --> 00:51:54.470
+If I see someone here as an example
+
+2186
+00:51:54.470 --> 00:51:54.480
+
+
+
+2187
+00:51:54.480 --> 00:51:58.069
+I can show you. Like look at this answer
+
+2188
+00:51:58.069 --> 00:51:58.079
+
+
+
+2189
+00:51:58.079 --> 00:52:02.710
+There is relevance. We need answer relevance.
+
+2190
+00:52:02.710 --> 00:52:02.720
+
+
+
+2191
+00:52:02.720 --> 00:52:05.430
+So what did we do? In the offline setup, we
+
+2192
+00:52:05.430 --> 00:52:05.440
+
+
+
+2193
+00:52:05.440 --> 00:52:08.069
+DP value used Answer relevance
+
+2194
+00:52:08.069 --> 00:52:08.079
+
+
+
+2195
+00:52:08.079 --> 00:52:11.190
+To calculate and online we do this
+
+2196
+00:52:11.190 --> 00:52:11.200
+
+
+
+2197
+00:52:11.200 --> 00:52:13.990
+We used what LangSmith was offering us.
+
+2198
+00:52:13.990 --> 00:52:14.000
+
+
+
+2199
+00:52:14.000 --> 00:52:17.270
+Is. So this is not good? someone explain
+
+2200
+00:52:17.270 --> 00:52:17.280
+
+
+
+2201
+00:52:17.280 --> 00:52:19.589
+Why can I?
+
+2202
+00:52:19.589 --> 00:52:19.599
+
+
+
+2203
+00:52:19.599 --> 00:52:24.150
+Why It's Not Good to Have Different
+
+2204
+00:52:24.150 --> 00:52:24.160
+
+
+
+2205
+00:52:24.160 --> 00:52:27.190
+Quality Evals for Offline and Online.
+
+2206
+00:52:27.190 --> 00:52:27.200
+
+
+
+2207
+00:52:27.200 --> 00:52:29.589
+What Could Be the Reason? Why do I say that
+
+2208
+00:52:29.589 --> 00:52:29.599
+
+
+
+2209
+00:52:29.599 --> 00:52:32.150
+Have I been? Whereas for toxicity I have done this
+
+2210
+00:52:32.150 --> 00:52:32.160
+
+
+
+2211
+00:52:32.160 --> 00:52:34.710
+Have worked. Offline for toxicity
+
+2212
+00:52:34.710 --> 00:52:34.720
+
+
+
+2213
+00:52:34.720 --> 00:52:38.069
+I used DeepEval. of online
+
+2214
+00:52:38.069 --> 00:52:38.079
+
+
+
+2215
+00:52:38.079 --> 00:52:40.950
+I used land for this. I am done with it.
+
+2216
+00:52:40.950 --> 00:52:40.960
+
+
+
+2217
+00:52:40.960 --> 00:52:43.510
+But why should I say this about quality?
+
+2218
+00:52:43.510 --> 00:52:43.520
+
+
+
+2219
+00:52:43.520 --> 00:52:46.549
+I am thinking that both should be beans. two different
+
+2220
+00:52:46.549 --> 00:52:46.559
+
+
+
+2221
+00:52:46.559 --> 00:52:50.150
+You cannot do evaluations. Can You Tell
+
+2222
+00:52:50.150 --> 00:52:50.160
+
+
+
+2223
+00:52:50.160 --> 00:52:52.470
+What could be the reasoning behind this?
+
+2224
+00:52:52.470 --> 00:52:52.480
+
+
+
+2225
+00:52:52.480 --> 00:52:55.589
+It is very simple reasoning. The reasoning is that
+
+2226
+00:52:55.589 --> 00:52:55.599
+
+
+
+2227
+00:52:55.599 --> 00:52:59.109
+These are like very strict numbers whose
+
+2228
+00:52:59.109 --> 00:52:59.119
+
+
+
+2229
+00:52:59.119 --> 00:53:01.030
+We are operating above. if you remember
+
+2230
+00:53:01.030 --> 00:53:01.040
+
+
+
+2231
+00:53:01.040 --> 00:53:03.829
+If so, our contextual relevance
+
+2232
+00:53:03.829 --> 00:53:03.839
+
+
+
+2233
+00:53:03.839 --> 00:53:06.950
+The score was around 45. I remember
+
+2234
+00:53:06.950 --> 00:53:06.960
+
+
+
+2235
+00:53:06.960 --> 00:53:08.790
+To you?
+
+2236
+00:53:08.790 --> 00:53:08.800
+
+
+
+2237
+00:53:08.800 --> 00:53:11.750
+And this 45 came with the help of DeepEval.
+
+2238
+00:53:11.750 --> 00:53:11.760
+
+
+
+2239
+00:53:11.760 --> 00:53:15.910
+I mean, in DeepEval, when we made it, but
+
+2240
+00:53:15.910 --> 00:53:15.920
+
+
+
+2241
+00:53:15.920 --> 00:53:20.150
+If we use length
+
+2242
+00:53:20.150 --> 00:53:20.160
+
+
+
+2243
+00:53:20.160 --> 00:53:23.670
+So maybe he will reach 55. because it is a
+
+2244
+00:53:23.670 --> 00:53:23.680
+
+
+
+2245
+00:53:23.680 --> 00:53:26.150
+Completely different setup. Prompt be different
+
+2246
+00:53:26.150 --> 00:53:26.160
+
+
+
+2247
+00:53:26.160 --> 00:53:29.270
+Can. The setup may be different. of the tool
+
+2248
+00:53:29.270 --> 00:53:29.280
+
+
+
+2249
+00:53:29.280 --> 00:53:31.750
+Internal calculations are contextual
+
+2250
+00:53:31.750 --> 00:53:31.760
+
+
+
+2251
+00:53:31.760 --> 00:53:34.069
+DeepEval's method for calculating relevance
+
+2252
+00:53:34.069 --> 00:53:34.079
+
+
+
+2253
+00:53:34.079 --> 00:53:37.510
+There is a way and the way of your land is that
+
+2254
+00:53:37.510 --> 00:53:37.520
+
+
+
+2255
+00:53:37.520 --> 00:53:40.150
+It can be completely different. So basically in
+
+2256
+00:53:40.150 --> 00:53:40.160
+
+
+
+2257
+00:53:40.160 --> 00:53:42.309
+There is no comparison between the two numbers.
+
+2258
+00:53:42.309 --> 00:53:42.319
+
+
+
+2259
+00:53:42.319 --> 00:53:44.870
+It will not remain. I can't even say that
+
+2260
+00:53:44.870 --> 00:53:44.880
+
+
+
+2261
+00:53:44.880 --> 00:53:46.870
+My contractual relevance offline
+
+2262
+00:53:46.870 --> 00:53:46.880
+
+
+
+2263
+00:53:46.880 --> 00:53:50.309
+It was 45 and online it is 55. They are not
+
+2264
+00:53:50.309 --> 00:53:50.319
+
+
+
+2265
+00:53:50.319 --> 00:53:54.309
+On the same bass line. If I could tell De Pewell
+
+2266
+00:53:54.309 --> 00:53:54.319
+
+
+
+2267
+00:53:54.319 --> 00:53:58.710
+I use it in online setup and that is 38 rupees.
+
+2268
+00:53:58.710 --> 00:53:58.720
+
+
+
+2269
+00:53:58.720 --> 00:54:01.030
+So now they are on the same bass line.
+
+2270
+00:54:01.030 --> 00:54:01.040
+
+
+
+2271
+00:54:01.040 --> 00:54:03.589
+I am using the exact same evaluation.
+
+2272
+00:54:03.589 --> 00:54:03.599
+
+
+
+2273
+00:54:03.599 --> 00:54:05.510
+and I am getting different numbers. So
+
+2274
+00:54:05.510 --> 00:54:05.520
+
+
+
+2275
+00:54:05.520 --> 00:54:08.230
+It makes sense that my application might
+
+2276
+00:54:08.230 --> 00:54:08.240
+
+
+
+2277
+00:54:08.240 --> 00:54:10.470
+It is performing poorly online. But
+
+2278
+00:54:10.470 --> 00:54:10.480
+
+
+
+2279
+00:54:10.480 --> 00:54:12.470
+If you change the evaluation technique itself
+
+2280
+00:54:12.470 --> 00:54:12.480
+
+
+
+2281
+00:54:12.480 --> 00:54:14.950
+If you give then these numbers have no meaning now.
+
+2282
+00:54:14.950 --> 00:54:14.960
+
+
+
+2283
+00:54:14.960 --> 00:54:17.270
+remained. So that is why it is always
+
+2284
+00:54:17.270 --> 00:54:17.280
+
+
+
+2285
+00:54:17.280 --> 00:54:19.670
+Recommended when you're talking about
+
+2286
+00:54:19.670 --> 00:54:19.680
+
+
+
+2287
+00:54:19.680 --> 00:54:22.630
+Quality Matrix Such Edge Contextual
+
+2288
+00:54:22.630 --> 00:54:22.640
+
+
+
+2289
+00:54:22.640 --> 00:54:25.510
+Relevance, Faithfulness, Answer Relevance to You
+
+2290
+00:54:25.510 --> 00:54:25.520
+
+
+
+2291
+00:54:25.520 --> 00:54:29.430
+have to run the same eval for both the situations,
+
+2292
+00:54:29.430 --> 00:54:29.440
+
+
+
+2293
+00:54:29.440 --> 00:54:31.990
+Offline and online. Then only these numbers
+
+2294
+00:54:31.990 --> 00:54:32.000
+
+
+
+2295
+00:54:32.000 --> 00:54:35.829
+Will Make Sense. Came from 90 to 85. Everything Beans
+
+2296
+00:54:35.829 --> 00:54:35.839
+
+
+
+2297
+00:54:35.839 --> 00:54:37.910
+It was still there. which means application is bad
+
+2298
+00:54:37.910 --> 00:54:37.920
+
+
+
+2299
+00:54:37.920 --> 00:54:40.630
+Performing in online setup. I
+
+2300
+00:54:40.630 --> 00:54:40.640
+
+
+
+2301
+00:54:40.640 --> 00:54:42.790
+Hope I was able to convince you. is it
+
+2302
+00:54:42.790 --> 00:54:42.800
+
+
+
+2303
+00:54:42.800 --> 00:54:44.549
+Clear Guys? This is a variant point.
+
+2304
+00:54:44.549 --> 00:54:44.559
+
+
+
+2305
+00:54:44.559 --> 00:54:46.549
+Someone Can Actually Ask This in the
+
+2306
+00:54:46.549 --> 00:54:46.559
+
+
+
+2307
+00:54:46.559 --> 00:54:49.589
+Interview why you used the same setup
+
+2308
+00:54:49.589 --> 00:54:49.599
+
+
+
+2309
+00:54:49.599 --> 00:54:51.829
+Did it work both online and offline? How
+
+2310
+00:54:51.829 --> 00:54:51.839
+
+
+
+2311
+00:54:51.839 --> 00:54:53.910
+I will tell you what to do now. But what is this
+
+2312
+00:54:53.910 --> 00:54:53.920
+
+
+
+2313
+00:54:53.920 --> 00:54:56.630
+The point is clear that we have the same deep eval.
+
+2314
+00:54:56.630 --> 00:54:56.640
+
+
+
+2315
+00:54:56.640 --> 00:54:59.349
+Will use evaluator. we are not going
+
+2316
+00:54:59.349 --> 00:54:59.359
+
+
+
+2317
+00:54:59.359 --> 00:55:02.069
+To use Lansith's Evaluator. Or we are someone
+
+2318
+00:55:02.069 --> 00:55:02.079
+
+
+
+2319
+00:55:02.079 --> 00:55:03.829
+Will not create a new evaluator. We
+
+2320
+00:55:03.829 --> 00:55:03.839
+
+
+
+2321
+00:55:03.839 --> 00:55:05.829
+The exact same evaluator will be used for the
+
+2322
+00:55:05.829 --> 00:55:05.839
+
+
+
+2323
+00:55:05.839 --> 00:55:07.910
+Quality Matrix. For toxicity
+
+2324
+00:55:07.910 --> 00:55:07.920
+
+
+
+2325
+00:55:07.920 --> 00:55:11.270
+So it's gone because toxicity is stopping us
+
+2326
+00:55:11.270 --> 00:55:11.280
+
+
+
+2327
+00:55:11.280 --> 00:55:14.309
+Is. Toxicity has to be minimized. Now here
+
+2328
+00:55:14.309 --> 00:55:14.319
+
+
+
+2329
+00:55:14.319 --> 00:55:16.790
+You can apply the same logic on it and you can deep
+
+2330
+00:55:16.790 --> 00:55:16.800
+
+
+
+2331
+00:55:16.800 --> 00:55:19.990
+You can use Eval's Toxicity Evaluator
+
+2332
+00:55:19.990 --> 00:55:20.000
+
+
+
+2333
+00:55:20.000 --> 00:55:22.390
+yes. I just wanted to show you the variation.
+
+2334
+00:55:22.390 --> 00:55:22.400
+
+
+
+2335
+00:55:22.400 --> 00:55:24.790
+Was. I wanted to show you a little bit about how the length
+
+2336
+00:55:24.790 --> 00:55:24.800
+
+
+
+2337
+00:55:24.800 --> 00:55:26.710
+The setup is done. So I did it.
+
+2338
+00:55:26.710 --> 00:55:26.720
+
+
+
+2339
+00:55:26.720 --> 00:55:29.670
+But ideally you have to make sure it remains the same
+
+2340
+00:55:29.670 --> 00:55:29.680
+
+
+
+2341
+00:55:29.680 --> 00:55:32.069
+Things. So that your offline and online
+
+2342
+00:55:32.069 --> 00:55:32.079
+
+
+
+2343
+00:55:32.079 --> 00:55:34.069
+You can compare the numbers. That's the Men
+
+2344
+00:55:34.069 --> 00:55:34.079
+
+
+
+2345
+00:55:34.079 --> 00:55:38.069
+Idea. Now let us discuss that
+
+2346
+00:55:38.069 --> 00:55:38.079
+
+
+
+2347
+00:55:38.079 --> 00:55:42.630
+How is this supposed to work? How we are online
+
+2348
+00:55:42.630 --> 00:55:42.640
+
+
+
+2349
+00:55:42.640 --> 00:55:45.270
+Our offline eval in setup
+
+2350
+00:55:45.270 --> 00:55:45.280
+
+
+
+2351
+00:55:45.280 --> 00:55:48.870
+Will you run it? They discuss. So here
+
+2352
+00:55:48.870 --> 00:55:48.880
+
+
+
+2353
+00:55:48.880 --> 00:55:50.870
+A little software
+
+2354
+00:55:50.870 --> 00:55:50.880
+
+
+
+2355
+00:55:50.880 --> 00:55:53.750
+We will have to make arrangements for this. so basically
+
+2356
+00:55:53.750 --> 00:55:53.760
+
+
+
+2357
+00:55:53.760 --> 00:55:57.190
+what will happen that
+
+2358
+00:55:57.190 --> 00:55:57.200
+
+
+
+2359
+00:55:57.200 --> 00:56:00.390
+We can encapsulate our entire code
+
+2360
+00:56:00.390 --> 00:56:00.400
+
+
+
+2361
+00:56:00.400 --> 00:56:03.910
+Must have deployed. Assume AWS
+
+2362
+00:56:03.910 --> 00:56:03.920
+
+
+
+2363
+00:56:03.920 --> 00:56:06.870
+Pay it is diploid. Ok? This which is complete
+
+2364
+00:56:06.870 --> 00:56:06.880
+
+
+
+2365
+00:56:06.880 --> 00:56:08.789
+The code is,
+
+2366
+00:56:08.789 --> 00:56:08.799
+
+
+
+2367
+00:56:08.799 --> 00:56:10.950
+This entire code should be deployed on AWS
+
+2368
+00:56:10.950 --> 00:56:10.960
+
+
+
+2369
+00:56:10.960 --> 00:56:13.670
+Already happened. Ok? So what are we here for?
+
+2370
+00:56:13.670 --> 00:56:13.680
+
+
+
+2371
+00:56:13.680 --> 00:56:16.950
+do? We are here at a
+
+2372
+00:56:16.950 --> 00:56:16.960
+
+
+
+2373
+00:56:16.960 --> 00:56:20.470
+The background service will run. basically one
+
+2374
+00:56:20.470 --> 00:56:20.480
+
+
+
+2375
+00:56:20.480 --> 00:56:22.549
+will run the code or you can say that
+
+2376
+00:56:22.549 --> 00:56:22.559
+
+
+
+2377
+00:56:22.559 --> 00:56:25.829
+Will run a cron job. cron job is
+
+2378
+00:56:25.829 --> 00:56:25.839
+
+
+
+2379
+00:56:25.839 --> 00:56:28.630
+Basically, whatever you think, when you say it
+
+2380
+00:56:28.630 --> 00:56:28.640
+
+
+
+2381
+00:56:28.640 --> 00:56:31.430
+gets triggered. Ok? So we have a
+
+2382
+00:56:31.430 --> 00:56:31.440
+
+
+
+2383
+00:56:31.440 --> 00:56:35.030
+Run a cron job every 5 minutes
+
+2384
+00:56:35.030 --> 00:56:35.040
+
+
+
+2385
+00:56:35.040 --> 00:56:37.030
+Will work.
+
+2386
+00:56:37.030 --> 00:56:37.040
+
+
+
+2387
+00:56:37.040 --> 00:56:40.390
+Ok? And what will be its function?
+
+2388
+00:56:40.390 --> 00:56:40.400
+
+
+
+2389
+00:56:40.400 --> 00:56:41.910
+Our
+
+2390
+00:56:41.910 --> 00:56:41.920
+
+
+
+2391
+00:56:41.920 --> 00:56:45.670
+files with offline eval
+
+2392
+00:56:45.670 --> 00:56:45.680
+
+
+
+2393
+00:56:45.680 --> 00:56:48.789
+Basically these are the files
+
+2394
+00:56:48.789 --> 00:56:48.799
+
+
+
+2395
+00:56:48.799 --> 00:56:52.630
+Which we have created here.
+
+2396
+00:56:52.630 --> 00:56:52.640
+
+
+
+2397
+00:56:52.640 --> 00:56:54.870
+accept it
+
+2398
+00:56:54.870 --> 00:56:54.880
+
+
+
+2399
+00:56:54.880 --> 00:56:57.670
+This one in which we have these three metrics
+
+2400
+00:56:57.670 --> 00:56:57.680
+
+
+
+2401
+00:56:57.680 --> 00:57:01.910
+Are. It will run it and as soon as it is run
+
+2402
+00:57:01.910 --> 00:57:01.920
+
+
+
+2403
+00:57:01.920 --> 00:57:05.349
+If you do, we
+
+2404
+00:57:05.349 --> 00:57:05.359
+
+
+
+2405
+00:57:05.359 --> 00:57:08.309
+We'll get our score for these three.
+
+2406
+00:57:08.309 --> 00:57:08.319
+
+
+
+2407
+00:57:08.319 --> 00:57:13.190
+We go back to the matrix and those three scores.
+
+2408
+00:57:13.190 --> 00:57:13.200
+
+
+
+2409
+00:57:13.200 --> 00:57:16.390
+Will send it in length.
+
+2410
+00:57:16.390 --> 00:57:16.400
+
+
+
+2411
+00:57:16.400 --> 00:57:19.430
+There is only one problem that this is our
+
+2412
+00:57:19.430 --> 00:57:19.440
+
+
+
+2413
+00:57:19.440 --> 00:57:23.510
+The file is this one, it looks like this right now
+
+2414
+00:57:23.510 --> 00:57:23.520
+
+
+
+2415
+00:57:23.520 --> 00:57:27.190
+We've coded that it's just
+
+2416
+00:57:27.190 --> 00:57:27.200
+
+
+
+2417
+00:57:27.200 --> 00:57:28.950
+Golden
+
+2418
+00:57:28.950 --> 00:57:28.960
+
+
+
+2419
+00:57:28.960 --> 00:57:32.150
+Operates on a data set. Right?
+
+2420
+00:57:32.150 --> 00:57:32.160
+
+
+
+2421
+00:57:32.160 --> 00:57:34.069
+Running in offline setup means golden
+
+2422
+00:57:34.069 --> 00:57:34.079
+
+
+
+2423
+00:57:34.079 --> 00:57:37.190
+Run over the data set. But here
+
+2424
+00:57:37.190 --> 00:57:37.200
+
+
+
+2425
+00:57:37.200 --> 00:57:39.990
+What will happen in the flow that when our
+
+2426
+00:57:39.990 --> 00:57:40.000
+
+
+
+2427
+00:57:40.000 --> 00:57:43.030
+The cron job will run, this is our cron job.
+
+2428
+00:57:43.030 --> 00:57:43.040
+
+
+
+2429
+00:57:43.040 --> 00:57:46.870
+What will he do if this works? behind the
+
+2430
+00:57:46.870 --> 00:57:46.880
+
+
+
+2431
+00:57:46.880 --> 00:57:50.150
+The scene will go to the LangSmith
+
+2432
+00:57:50.150 --> 00:57:50.160
+
+
+
+2433
+00:57:50.160 --> 00:57:54.230
+And all the traces in the last 5 minutes
+
+2434
+00:57:54.230 --> 00:57:54.240
+
+
+
+2435
+00:57:54.240 --> 00:57:58.630
+He will bring them and we will attack them
+
+2436
+00:57:58.630 --> 00:57:58.640
+
+
+
+2437
+00:57:58.640 --> 00:58:02.069
+Have your evaluator running. So the setup
+
+2438
+00:58:02.069 --> 00:58:02.079
+
+
+
+2439
+00:58:02.079 --> 00:58:05.670
+It is a little different. That is why we need a separate
+
+2440
+00:58:05.670 --> 00:58:05.680
+
+
+
+2441
+00:58:05.680 --> 00:58:08.309
+You will have to create a file. Create a separate file
+
+2442
+00:58:08.309 --> 00:58:08.319
+
+
+
+2443
+00:58:08.319 --> 00:58:10.390
+Will have to. The entire flow will be something like this, I will tell you
+
+2444
+00:58:10.390 --> 00:58:10.400
+
+
+
+2445
+00:58:10.400 --> 00:58:14.069
+Let me tell you. A loop will be running.
+
+2446
+00:58:14.069 --> 00:58:14.079
+
+
+
+2447
+00:58:14.079 --> 00:58:18.549
+which is every 5 minutes
+
+2448
+00:58:18.549 --> 00:58:18.559
+
+
+
+2449
+00:58:18.559 --> 00:58:20.950
+Our online
+
+2450
+00:58:20.950 --> 00:58:20.960
+
+
+
+2451
+00:58:20.960 --> 00:58:24.950
+will trigger the file containing the eval. So right now we
+
+2452
+00:58:24.950 --> 00:58:24.960
+
+
+
+2453
+00:58:24.960 --> 00:58:27.270
+Create a file Eval Underscore Online
+
+2454
+00:58:27.270 --> 00:58:27.280
+
+
+
+2455
+00:58:27.280 --> 00:58:30.390
+By telling our cron job to run it every 5 minutes
+
+2456
+00:58:30.390 --> 00:58:30.400
+
+
+
+2457
+00:58:30.400 --> 00:58:33.589
+will trigger in. And this online eval
+
+2458
+00:58:33.589 --> 00:58:33.599
+
+
+
+2459
+00:58:33.599 --> 00:58:35.750
+What code will be written inside?
+
+2460
+00:58:35.750 --> 00:58:35.760
+
+
+
+2461
+00:58:35.760 --> 00:58:41.109
+It will be written Go to Lasmith Capture
+
+2462
+00:58:41.109 --> 00:58:41.119
+
+
+
+2463
+00:58:41.119 --> 00:58:44.549
+All the Traces All the Traces or 30% of the
+
+2464
+00:58:44.549 --> 00:58:44.559
+
+
+
+2465
+00:58:44.559 --> 00:58:48.870
+Traces depending on the sample rate from the
+
+2466
+00:58:48.870 --> 00:58:48.880
+
+
+
+2467
+00:58:48.880 --> 00:58:52.470
+Last 5 minutes (basically the most recent ones)
+
+2468
+00:58:52.470 --> 00:58:52.480
+
+
+
+2469
+00:58:52.480 --> 00:58:55.589
+We will fetch the traces and we will
+
+2470
+00:58:55.589 --> 00:58:55.599
+
+
+
+2471
+00:58:55.599 --> 00:59:00.630
+will give these eval functions of ours which
+
+2472
+00:59:00.630 --> 00:59:00.640
+
+
+
+2473
+00:59:00.640 --> 00:59:03.990
+Written in DeepEval. Then this eval
+
+2474
+00:59:03.990 --> 00:59:04.000
+
+
+
+2475
+00:59:04.000 --> 00:59:06.150
+What will the functions do? generate scores
+
+2476
+00:59:06.150 --> 00:59:06.160
+
+
+
+2477
+00:59:06.160 --> 00:59:09.190
+and we will send these scores back
+
+2478
+00:59:09.190 --> 00:59:09.200
+
+
+
+2479
+00:59:09.200 --> 00:59:13.430
+Denge to LangSmith
+
+2480
+00:59:13.430 --> 00:59:13.440
+
+
+
+2481
+00:59:13.440 --> 00:59:15.910
+And LangSmith will record them. and this
+
+2482
+00:59:15.910 --> 00:59:15.920
+
+
+
+2483
+00:59:15.920 --> 00:59:20.789
+To do the entire job you need to use length.
+
+2484
+00:59:20.789 --> 00:59:20.799
+
+
+
+2485
+00:59:20.799 --> 00:59:23.589
+You will have to use the SDK.
+
+2486
+00:59:23.589 --> 00:59:23.599
+
+
+
+2487
+00:59:23.599 --> 00:59:27.109
+Ok? When you do UV add lens
+
+2488
+00:59:27.109 --> 00:59:27.119
+
+
+
+2489
+00:59:27.119 --> 00:59:29.670
+Its SDK comes to you. So his
+
+2490
+00:59:29.670 --> 00:59:29.680
+
+
+
+2491
+00:59:29.680 --> 00:59:31.990
+Through you can run things through code
+
+2492
+00:59:31.990 --> 00:59:32.000
+
+
+
+2493
+00:59:32.000 --> 00:59:34.309
+yes. Look at Lagith, so what are we basically doing?
+
+2494
+00:59:34.309 --> 00:59:34.319
+
+
+
+2495
+00:59:34.319 --> 00:59:36.870
+Are you doing it? Every 5 minutes from the LangSmith SDK
+
+2496
+00:59:36.870 --> 00:59:36.880
+
+
+
+2497
+00:59:36.880 --> 00:59:39.109
+I am going to. Most recent traces
+
+2498
+00:59:39.109 --> 00:59:39.119
+
+
+
+2499
+00:59:39.119 --> 00:59:41.510
+are bringing and placing their
+
+2500
+00:59:41.510 --> 00:59:41.520
+
+
+
+2501
+00:59:41.520 --> 00:59:43.430
+Running offline Evals. whatever
+
+2502
+00:59:43.430 --> 00:59:43.440
+
+
+
+2503
+00:59:43.440 --> 00:59:45.430
+The result is coming and we are sending it back.
+
+2504
+00:59:45.430 --> 00:59:45.440
+
+
+
+2505
+00:59:45.440 --> 00:59:47.270
+recording it in LangSmith
+
+2506
+00:59:47.270 --> 00:59:47.280
+
+
+
+2507
+00:59:47.280 --> 00:59:50.309
+Are. This whole thing is happening. so can you
+
+2508
+00:59:50.309 --> 00:59:50.319
+
+
+
+2509
+00:59:50.319 --> 00:59:52.630
+Please let me know in overview mode, is this
+
+2510
+00:59:52.630 --> 00:59:52.640
+
+
+
+2511
+00:59:52.640 --> 00:59:56.710
+Do you understand the flow? Is it clear? yes
+
+2512
+00:59:56.710 --> 00:59:56.720
+
+
+
+2513
+00:59:56.720 --> 00:59:59.190
+What's been going on? On our server we have cron
+
+2514
+00:59:59.190 --> 00:59:59.200
+
+
+
+2515
+00:59:59.200 --> 01:00:01.670
+Started a job that runs every 5 minutes
+
+2516
+01:00:01.670 --> 01:00:01.680
+
+
+
+2517
+01:00:01.680 --> 01:00:05.510
+Triggering eval unders online py in .
+
+2518
+01:00:05.510 --> 01:00:05.520
+
+
+
+2519
+01:00:05.520 --> 01:00:08.630
+what in eval dot eval unders online py
+
+2520
+01:00:08.630 --> 01:00:08.640
+
+
+
+2521
+01:00:08.640 --> 01:00:11.670
+Is the code written? Go to last 5
+
+2522
+01:00:11.670 --> 01:00:11.680
+
+
+
+2523
+01:00:11.680 --> 01:00:13.910
+Taking all the traces of minutes
+
+2524
+01:00:13.910 --> 01:00:13.920
+
+
+
+2525
+01:00:13.920 --> 01:00:17.430
+Come. Run these functions on them. Wool
+
+2526
+01:00:17.430 --> 01:00:17.440
+
+
+
+2527
+01:00:17.440 --> 01:00:19.270
+Inside the functions we have used DeepEval
+
+2528
+01:00:19.270 --> 01:00:19.280
+
+
+
+2529
+01:00:19.280 --> 01:00:21.589
+The evaluators are hidden. those functions
+
+2530
+01:00:21.589 --> 01:00:21.599
+
+
+
+2531
+01:00:21.599 --> 01:00:23.670
+Will give us the scores. He returns the scores
+
+2532
+01:00:23.670 --> 01:00:23.680
+
+
+
+2533
+01:00:23.680 --> 01:00:25.829
+Take it away. Inside tracing in length
+
+2534
+01:00:25.829 --> 01:00:25.839
+
+
+
+2535
+01:00:25.839 --> 01:00:28.710
+Put it in. This flow will continue throughout the time.
+
+2536
+01:00:28.710 --> 01:00:28.720
+
+
+
+2537
+01:00:28.720 --> 01:00:32.309
+Ever in a loop in every 5 minutes. this is the
+
+2538
+01:00:32.309 --> 01:00:32.319
+
+
+
+2539
+01:00:32.319 --> 01:00:35.430
+Setup. This is how you run offline evals in a
+
+2540
+01:00:35.430 --> 01:00:35.440
+
+
+
+2541
+01:00:35.440 --> 01:00:38.309
+Online setting. That's why Lands' SDK
+
+2542
+01:00:38.309 --> 01:00:38.319
+
+
+
+2543
+01:00:38.319 --> 01:00:40.630
+It exists. like it's one of the
+
+2544
+01:00:40.630 --> 01:00:40.640
+
+
+
+2545
+01:00:40.640 --> 01:00:42.630
+Reasons why the SDK exists
+
+2546
+01:00:42.630 --> 01:00:42.640
+
+
+
+2547
+01:00:42.640 --> 01:00:47.109
+Is. So let me give you a little demo of this.
+
+2548
+01:00:47.109 --> 01:00:47.119
+
+
+
+2549
+01:00:47.119 --> 01:00:49.190
+I will show you. Obviously, by deploying this
+
+2550
+01:00:49.190 --> 01:00:49.200
+
+
+
+2551
+01:00:49.200 --> 01:00:50.789
+Not everyone is doing it. We are not a cron job
+
+2552
+01:00:50.789 --> 01:00:50.799
+
+
+
+2553
+01:00:50.799 --> 01:00:54.069
+Keep running. What I will do is what I will
+
+2554
+01:00:54.069 --> 01:00:54.079
+
+
+
+2555
+01:00:54.079 --> 01:00:58.630
+do is I will simply create an infinite
+
+2556
+01:00:58.630 --> 01:00:58.640
+
+
+
+2557
+01:00:58.640 --> 01:01:01.829
+loop while loop
+
+2558
+01:01:01.829 --> 01:01:01.839
+
+
+
+2559
+01:01:01.839 --> 01:01:04.309
+Who
+
+2560
+01:01:04.309 --> 01:01:04.319
+
+
+
+2561
+01:01:04.319 --> 01:01:07.430
+It will continue and inside it we put a slip
+
+2562
+01:01:07.430 --> 01:01:07.440
+
+
+
+2563
+01:01:07.440 --> 01:01:12.309
+We will give you 5 seconds and for every 5 seconds
+
+2564
+01:01:12.309 --> 01:01:12.319
+
+
+
+2565
+01:01:12.319 --> 01:01:15.190
+Later we will keep repeating this same logic.
+
+2566
+01:01:15.190 --> 01:01:15.200
+
+
+
+2567
+01:01:15.200 --> 01:01:18.470
+That's it. This is the code. So look here
+
+2568
+01:01:18.470 --> 01:01:18.480
+
+
+
+2569
+01:01:18.480 --> 01:01:20.710
+I have written this code here. this is the
+
+2570
+01:01:20.710 --> 01:01:20.720
+
+
+
+2571
+01:01:20.720 --> 01:01:23.109
+Code.
+
+2572
+01:01:23.109 --> 01:01:23.119
+
+
+
+2573
+01:01:23.119 --> 01:01:24.950
+I will also explain it to you a little. don't
+
+2574
+01:01:24.950 --> 01:01:24.960
+
+
+
+2575
+01:01:24.960 --> 01:01:28.230
+Worry. I copied this. in your code
+
+2576
+01:01:28.230 --> 01:01:28.240
+
+
+
+2577
+01:01:28.240 --> 01:01:31.670
+Went back. Went to Eval's. Created a new file
+
+2578
+01:01:31.670 --> 01:01:31.680
+
+
+
+2579
+01:01:31.680 --> 01:01:36.630
+eval unders online dot py
+
+2580
+01:01:36.630 --> 01:01:36.640
+
+
+
+2581
+01:01:36.640 --> 01:01:39.270
+And I pasted it here. Now here
+
+2582
+01:01:39.270 --> 01:01:39.280
+
+
+
+2583
+01:01:39.280 --> 01:01:42.710
+But you see what is happening. A
+
+2584
+01:01:42.710 --> 01:01:42.720
+
+
+
+2585
+01:01:42.720 --> 01:01:45.670
+We imported all these things. His
+
+2586
+01:01:45.670 --> 01:01:45.680
+
+
+
+2587
+01:01:45.680 --> 01:01:48.950
+After that our project name is CX
+
+2588
+01:01:48.950 --> 01:01:48.960
+
+
+
+2589
+01:01:48.960 --> 01:01:51.430
+Doubt solved.
+
+2590
+01:01:51.430 --> 01:01:51.440
+
+
+
+2591
+01:01:51.440 --> 01:01:53.829
+He is our evaluator. GPT
+
+2592
+01:01:53.829 --> 01:01:53.839
+
+
+
+2593
+01:01:53.839 --> 01:01:56.630
+This is what we used in 4 mini offline.
+
+2594
+01:01:56.630 --> 01:01:56.640
+
+
+
+2595
+01:01:56.640 --> 01:01:58.470
+The thresholds are the same as what we used offline.
+
+2596
+01:01:58.470 --> 01:01:58.480
+
+
+
+2597
+01:01:58.480 --> 01:02:00.710
+Had used it. We have currently fixed the sample rate at one
+
+2598
+01:02:00.710 --> 01:02:00.720
+
+
+
+2599
+01:02:00.720 --> 01:02:04.630
+It is kept. Meaning we are 100% on top of all traces.
+
+2600
+01:02:04.630 --> 01:02:04.640
+
+
+
+2601
+01:02:04.640 --> 01:02:07.270
+Will run evaluation. polling seconds
+
+2602
+01:02:07.270 --> 01:02:07.280
+
+
+
+2603
+01:02:07.280 --> 01:02:09.589
+We made it 60. So basically every 1 minute
+
+2604
+01:02:09.589 --> 01:02:09.599
+
+
+
+2605
+01:02:09.599 --> 01:02:12.789
+We will repeat this entire work in. last 1
+
+2606
+01:02:12.789 --> 01:02:12.799
+
+
+
+2607
+01:02:12.799 --> 01:02:15.190
+Fetch all the traces that have come in a minute
+
+2608
+01:02:15.190 --> 01:02:15.200
+
+
+
+2609
+01:02:15.200 --> 01:02:17.589
+I will get it done. We run evaluations on them.
+
+2610
+01:02:17.589 --> 01:02:17.599
+
+
+
+2611
+01:02:17.599 --> 01:02:19.829
+do. We made him our client.
+
+2612
+01:02:19.829 --> 01:02:19.839
+
+
+
+2613
+01:02:19.839 --> 01:02:22.630
+LangSmith Client. This is the length we use here.
+
+2614
+01:02:22.630 --> 01:02:22.640
+
+
+
+2615
+01:02:22.640 --> 01:02:25.270
+Are doing. and the rest of the code here
+
+2616
+01:02:25.270 --> 01:02:25.280
+
+
+
+2617
+01:02:25.280 --> 01:02:27.990
+This is exactly what is written. And here
+
+2618
+01:02:27.990 --> 01:02:28.000
+
+
+
+2619
+01:02:28.000 --> 01:02:30.470
+We've started this infinite loop in which
+
+2620
+01:02:30.470 --> 01:02:30.480
+
+
+
+2621
+01:02:30.480 --> 01:02:33.670
+We're sleeping for 60 seconds. And then every time
+
+2622
+01:02:33.670 --> 01:02:33.680
+
+
+
+2623
+01:02:33.680 --> 01:02:36.710
+We are evaluating recent traces
+
+2624
+01:02:36.710 --> 01:02:36.720
+
+
+
+2625
+01:02:36.720 --> 01:02:38.630
+Are. That function is written here.
+
+2626
+01:02:38.630 --> 01:02:38.640
+
+
+
+2627
+01:02:38.640 --> 01:02:42.549
+Score Recent Races. The three of us here
+
+2628
+01:02:42.549 --> 01:02:42.559
+
+
+
+2629
+01:02:42.559 --> 01:02:44.230
+Major things are happening. Faithfulness,
+
+2630
+01:02:44.230 --> 01:02:44.240
+
+
+
+2631
+01:02:44.240 --> 01:02:46.789
+Relevancy, contextual relevance for each
+
+2632
+01:02:46.789 --> 01:02:46.799
+
+
+
+2633
+01:02:46.799 --> 01:02:49.030
+Off the Traces. So this is the setup. this is
+
+2634
+01:02:49.030 --> 01:02:49.040
+
+
+
+2635
+01:02:49.040 --> 01:02:51.430
+The Code. Now what do we just have to do? This
+
+2636
+01:02:51.430 --> 01:02:51.440
+
+
+
+2637
+01:02:51.440 --> 01:02:53.589
+The infinite code has to be run. Once
+
+2638
+01:02:53.589 --> 01:02:53.599
+
+
+
+2639
+01:02:53.599 --> 01:02:56.230
+You run it and it will keep running. How long will it go
+
+2640
+01:02:56.230 --> 01:02:56.240
+
+
+
+2641
+01:02:56.240 --> 01:02:58.710
+Will it remain? until you close your terminal
+
+2642
+01:02:58.710 --> 01:02:58.720
+
+
+
+2643
+01:02:58.720 --> 01:03:01.670
+Do. Ok? Obviously this thing is online
+
+2644
+01:03:01.670 --> 01:03:01.680
+
+
+
+2645
+01:03:01.680 --> 01:03:03.430
+The setup will not work. Because as soon as
+
+2646
+01:03:03.430 --> 01:03:03.440
+
+
+
+2647
+01:03:03.440 --> 01:03:05.589
+If the terminal is closed, this service will stop.
+
+2648
+01:03:05.589 --> 01:03:05.599
+
+
+
+2649
+01:03:05.599 --> 01:03:08.309
+That's why cron job is a better alternative.
+
+2650
+01:03:08.309 --> 01:03:08.319
+
+
+
+2651
+01:03:08.319 --> 01:03:10.549
+Right now we are not doing deployment and
+
+2652
+01:03:10.549 --> 01:03:10.559
+
+
+
+2653
+01:03:10.559 --> 01:03:12.549
+Cron Jobs. This is just a simple
+
+2654
+01:03:12.549 --> 01:03:12.559
+
+
+
+2655
+01:03:12.559 --> 01:03:14.789
+Representation that an infinite running
+
+2656
+01:03:14.789 --> 01:03:14.799
+
+
+
+2657
+01:03:14.799 --> 01:03:16.710
+How is the service? So a simple Python
+
+2658
+01:03:16.710 --> 01:03:16.720
+
+
+
+2659
+01:03:16.720 --> 01:03:18.309
+I am representing through the code.
+
+2660
+01:03:18.309 --> 01:03:18.319
+
+
+
+2661
+01:03:18.319 --> 01:03:20.150
+What do we have to do? We simply need a new
+
+2662
+01:03:20.150 --> 01:03:20.160
+
+
+
+2663
+01:03:20.160 --> 01:03:23.190
+Go to the terminal and type this new file
+
+2664
+01:03:23.190 --> 01:03:23.200
+
+
+
+2665
+01:03:23.200 --> 01:03:25.109
+Just have to drive it. So We Have to Simply
+
+2666
+01:03:25.109 --> 01:03:25.119
+
+
+
+2667
+01:03:25.119 --> 01:03:32.470
+Right Python - m evals dot eval unders
+
+2668
+01:03:32.470 --> 01:03:32.480
+
+
+
+2669
+01:03:32.480 --> 01:03:35.430
+Online. Now you have started it. Now this
+
+2670
+01:03:35.430 --> 01:03:35.440
+
+
+
+2671
+01:03:35.440 --> 01:03:37.829
+It will continue. LangSmith will go every 1 minute
+
+2672
+01:03:37.829 --> 01:03:37.839
+
+
+
+2673
+01:03:37.839 --> 01:03:40.309
+Pay and [ __ ] and bring the last 1 minute
+
+2674
+01:03:40.309 --> 01:03:40.319
+
+
+
+2675
+01:03:40.319 --> 01:03:42.470
+To the traces. So let's do one thing. New one
+
+2676
+01:03:42.470 --> 01:03:42.480
+
+
+
+2677
+01:03:42.480 --> 01:03:45.990
+Let's create a trace. For that we are eval
+
+2678
+01:03:45.990 --> 01:03:46.000
+
+
+
+2679
+01:03:46.000 --> 01:03:49.430
+RAGs go into the pipeline
+
+2680
+01:03:49.430 --> 01:03:49.440
+
+
+
+2681
+01:03:49.440 --> 01:03:53.589
+And ask a question.
+
+2682
+01:03:53.589 --> 01:03:53.599
+
+
+
+2683
+01:03:53.599 --> 01:03:55.670
+No Eval RAG Pipeline No Sorry RAG
+
+2684
+01:03:55.670 --> 01:03:55.680
+
+
+
+2685
+01:03:55.680 --> 01:03:57.589
+Let's go to the pipeline and ask a question
+
+2686
+01:03:57.589 --> 01:03:57.599
+
+
+
+2687
+01:03:57.599 --> 01:04:00.870
+They ask. What question should I ask? what are
+
+2688
+01:04:00.870 --> 01:04:00.880
+
+
+
+2689
+01:04:00.880 --> 01:04:03.510
+Gold and data sets? Ok? This is our
+
+2690
+01:04:03.510 --> 01:04:03.520
+
+
+
+2691
+01:04:03.520 --> 01:04:07.589
+There is a question. We are running this.
+
+2692
+01:04:07.589 --> 01:04:07.599
+
+
+
+2693
+01:04:07.599 --> 01:04:09.910
+Ok? This is our answer. once you go
+
+2694
+01:04:09.910 --> 01:04:09.920
+
+
+
+2695
+01:04:09.920 --> 01:04:14.870
+are back to the length. Went on a training.
+
+2696
+01:04:14.870 --> 01:04:14.880
+
+
+
+2697
+01:04:14.880 --> 01:04:18.950
+This is ours. Ok? right here right now
+
+2698
+01:04:18.950 --> 01:04:18.960
+
+
+
+2699
+01:04:18.960 --> 01:04:20.870
+Look, I can't see anything. In Add Feedback
+
+2700
+01:04:20.870 --> 01:04:20.880
+
+
+
+2701
+01:04:20.880 --> 01:04:22.950
+Can't see anything. Will have to wait.
+
+2702
+01:04:22.950 --> 01:04:22.960
+
+
+
+2703
+01:04:22.960 --> 01:04:24.630
+Ok? It will take 60 seconds. Then
+
+2704
+01:04:24.630 --> 01:04:24.640
+
+
+
+2705
+01:04:24.640 --> 01:04:27.270
+Evaluation will be triggered. Meanwhile a work
+
+2706
+01:04:27.270 --> 01:04:27.280
+
+
+
+2707
+01:04:27.280 --> 01:04:31.430
+We do. A Let's go back to monitoring.
+
+2708
+01:04:31.430 --> 01:04:31.440
+
+
+
+2709
+01:04:31.440 --> 01:04:34.950
+This is our custom dashboard. There is a new
+
+2710
+01:04:34.950 --> 01:04:34.960
+
+
+
+2711
+01:04:34.960 --> 01:04:37.910
+Create a chart and name it.
+
+2712
+01:04:37.910 --> 01:04:37.920
+
+
+
+2713
+01:04:37.920 --> 01:04:39.750
+Toxicity. Remember, a while ago we were
+
+2714
+01:04:39.750 --> 01:04:39.760
+
+
+
+2715
+01:04:39.760 --> 01:04:42.150
+Were making it. I was not able to make it. Let's Hope
+
+2716
+01:04:42.150 --> 01:04:42.160
+
+
+
+2717
+01:04:42.160 --> 01:04:45.510
+Now let this be done. A From here we go to feedback
+
+2718
+01:04:45.510 --> 01:04:45.520
+
+
+
+2719
+01:04:45.520 --> 01:04:48.630
+Will select. Look at this, toxicity is visible.
+
+2720
+01:04:48.630 --> 01:04:48.640
+
+
+
+2721
+01:04:48.640 --> 01:04:49.910
+Is giving. In fact the other three too
+
+2722
+01:04:49.910 --> 01:04:49.920
+
+
+
+2723
+01:04:49.920 --> 01:04:52.069
+Started appearing. So we select toxicity
+
+2724
+01:04:52.069 --> 01:04:52.079
+
+
+
+2725
+01:04:52.079 --> 01:04:53.829
+do
+
+2726
+01:04:53.829 --> 01:04:53.839
+
+
+
+2727
+01:04:53.839 --> 01:04:56.710
+And you have to show the average toxicity chart
+
+2728
+01:04:56.710 --> 01:04:56.720
+
+
+
+2729
+01:04:56.720 --> 01:05:01.190
+Or they show only A average.
+
+2730
+01:05:01.190 --> 01:05:01.200
+
+
+
+2731
+01:05:01.200 --> 01:05:03.510
+Shows the average score. Create Pay
+
+2732
+01:05:03.510 --> 01:05:03.520
+
+
+
+2733
+01:05:03.520 --> 01:05:05.910
+Let's click. This is our toxicity
+
+2734
+01:05:05.910 --> 01:05:05.920
+
+
+
+2735
+01:05:05.920 --> 01:05:09.589
+The chart of this also came. Ok?
+
+2736
+01:05:09.589 --> 01:05:09.599
+
+
+
+2737
+01:05:09.599 --> 01:05:11.910
+These charts became ours. and once again back
+
+2738
+01:05:11.910 --> 01:05:11.920
+
+
+
+2739
+01:05:11.920 --> 01:05:14.390
+Let's move on to tracing. The most recent
+
+2740
+01:05:14.390 --> 01:05:14.400
+
+
+
+2741
+01:05:14.400 --> 01:05:17.670
+Let's go to the training.
+
+2742
+01:05:17.670 --> 01:05:17.680
+
+
+
+2743
+01:05:17.680 --> 01:05:19.990
+Let's reload it once. See
+
+2744
+01:05:19.990 --> 01:05:20.000
+
+
+
+2745
+01:05:20.000 --> 01:05:24.789
+Toxicity has become major, but
+
+2746
+01:05:24.789 --> 01:05:24.799
+
+
+
+2747
+01:05:24.799 --> 01:05:26.870
+The other three have not yet reached the majors.
+
+2748
+01:05:26.870 --> 01:05:26.880
+
+
+
+2749
+01:05:26.880 --> 01:05:30.150
+You will have to wait a little. Its toxicity also
+
+2750
+01:05:30.150 --> 01:05:30.160
+
+
+
+2751
+01:05:30.160 --> 01:05:33.510
+It is zero. Obviously these are all simple use cases
+
+2752
+01:05:33.510 --> 01:05:33.520
+
+
+
+2753
+01:05:33.520 --> 01:05:36.870
+Are. Let's wait for some time.
+
+2754
+01:05:36.870 --> 01:05:36.880
+
+
+
+2755
+01:05:36.880 --> 01:05:39.190
+We have done everything right. obviously
+
+2756
+01:05:39.190 --> 01:05:39.200
+
+
+
+2757
+01:05:39.200 --> 01:05:42.230
+That's why he is telling the names of those three. Then
+
+2758
+01:05:42.230 --> 01:05:42.240
+
+
+
+2759
+01:05:42.240 --> 01:05:46.470
+Also I Will Quickly Cross Check Ev Online
+
+2760
+01:05:46.470 --> 01:05:46.480
+
+
+
+2761
+01:05:46.480 --> 01:05:48.630
+Go to the one. I Will Quickly Check Setup
+
+2762
+01:05:48.630 --> 01:05:48.640
+
+
+
+2763
+01:05:48.640 --> 01:05:51.910
+The name is CX Doubt Solve, right?
+
+2764
+01:05:51.910 --> 01:05:51.920
+
+
+
+2765
+01:05:51.920 --> 01:05:54.789
+Correct project name
+
+2766
+01:05:54.789 --> 01:05:54.799
+
+
+
+2767
+01:05:54.799 --> 01:05:57.750
+Cx Doubt Solve
+
+2768
+01:05:57.750 --> 01:05:57.760
+
+
+
+2769
+01:05:57.760 --> 01:06:01.270
+GT 4o mini7 threshold is sample rate one
+
+2770
+01:06:01.270 --> 01:06:01.280
+
+
+
+2771
+01:06:01.280 --> 01:06:04.390
+The sample rate is one, meaning all traces
+
+2772
+01:06:04.390 --> 01:06:04.400
+
+
+
+2773
+01:06:04.400 --> 01:06:07.589
+He will have to do it under compulsion right now.
+
+2774
+01:06:07.589 --> 01:06:07.599
+
+
+
+2775
+01:06:07.599 --> 01:06:10.390
+It shouldn't have happened yet
+
+2776
+01:06:10.390 --> 01:06:10.400
+
+
+
+2777
+01:06:10.400 --> 01:06:14.549
+Do one thing, do another run
+
+2778
+01:06:14.549 --> 01:06:14.559
+
+
+
+2779
+01:06:14.559 --> 01:06:17.190
+Let's ask another question
+
+2780
+01:06:17.190 --> 01:06:17.200
+
+
+
+2781
+01:06:17.200 --> 01:06:22.710
+Let's ask ourselves why we need it.
+
+2782
+01:06:22.710 --> 01:06:22.720
+
+
+
+2783
+01:06:22.720 --> 01:06:25.109
+Golden Data Sets? We asked this question
+
+2784
+01:06:25.109 --> 01:06:25.119
+
+
+
+2785
+01:06:25.119 --> 01:06:28.710
+Asked. Yes sir. Now it's done. Look, it's coming
+
+2786
+01:06:28.710 --> 01:06:28.720
+
+
+
+2787
+01:06:28.720 --> 01:06:32.069
+Went. A This is the new one. This is the previous one.
+
+2788
+01:06:32.069 --> 01:06:32.079
+
+
+
+2789
+01:06:32.079 --> 01:06:34.710
+Look at this for this particular question.
+
+2790
+01:06:34.710 --> 01:06:34.720
+
+
+
+2791
+01:06:34.720 --> 01:06:38.150
+For this, our evaluator with the same DeepEval
+
+2792
+01:06:38.150 --> 01:06:38.160
+
+
+
+2793
+01:06:38.160 --> 01:06:40.789
+He gave the answer relevance as 0.92
+
+2794
+01:06:40.789 --> 01:06:40.799
+
+
+
+2795
+01:06:40.799 --> 01:06:43.430
+Contextual relevance is very bad. 23
+
+2796
+01:06:43.430 --> 01:06:43.440
+
+
+
+2797
+01:06:43.440 --> 01:06:45.510
+But this is for just this question.
+
+2798
+01:06:45.510 --> 01:06:45.520
+
+
+
+2799
+01:06:45.520 --> 01:06:48.470
+Faithfulness is 75. See the next one too
+
+2800
+01:06:48.470 --> 01:06:48.480
+
+
+
+2801
+01:06:48.480 --> 01:06:51.190
+Let's take it. Nothing major has happened yet
+
+2802
+01:06:51.190 --> 01:06:51.200
+
+
+
+2803
+01:06:51.200 --> 01:06:52.789
+Is. Toxicity has also not been major and
+
+2804
+01:06:52.789 --> 01:06:52.799
+
+
+
+2805
+01:06:52.799 --> 01:06:55.270
+The other three have also not become majors. wait tax
+
+2806
+01:06:55.270 --> 01:06:55.280
+
+
+
+2807
+01:06:55.280 --> 01:06:58.950
+Let's take a little. There is a slight delay.
+
+2808
+01:06:58.950 --> 01:06:58.960
+
+
+
+2809
+01:06:58.960 --> 01:07:02.710
+But again, yes, look, Faithfulness One came. Answer
+
+2810
+01:07:02.710 --> 01:07:02.720
+
+
+
+2811
+01:07:02.720 --> 01:07:05.190
+Relevancy One came. toxicity and
+
+2812
+01:07:05.190 --> 01:07:05.200
+
+
+
+2813
+01:07:05.200 --> 01:07:07.029
+Contextual relevance not yet established
+
+2814
+01:07:07.029 --> 01:07:07.039
+
+
+
+2815
+01:07:07.039 --> 01:07:09.510
+Is. So let's wait. Yes. Contextual
+
+2816
+01:07:09.510 --> 01:07:09.520
+
+
+
+2817
+01:07:09.520 --> 01:07:13.190
+Relevancy is still low. 29 of toxicity
+
+2818
+01:07:13.190 --> 01:07:13.200
+
+
+
+2819
+01:07:13.200 --> 01:07:15.910
+Let's wait. Whatever it is. I guess you understand
+
+2820
+01:07:15.910 --> 01:07:15.920
+
+
+
+2821
+01:07:15.920 --> 01:07:17.510
+I am coming. It's all happening automatically
+
+2822
+01:07:17.510 --> 01:07:17.520
+
+
+
+2823
+01:07:17.520 --> 01:07:19.430
+Behind the scenes. what can you do again
+
+2824
+01:07:19.430 --> 01:07:19.440
+
+
+
+2825
+01:07:19.440 --> 01:07:22.069
+yes? You can go to monitoring and your
+
+2826
+01:07:22.069 --> 01:07:22.079
+
+
+
+2827
+01:07:22.079 --> 01:07:25.190
+In the dashboard, you can go and you can create.
+
+2828
+01:07:25.190 --> 01:07:25.200
+
+
+
+2829
+01:07:25.200 --> 01:07:30.470
+A New Chart This Time for Let's Say Answer
+
+2830
+01:07:30.470 --> 01:07:30.480
+
+
+
+2831
+01:07:30.480 --> 01:07:32.309
+Relevance.
+
+2832
+01:07:32.309 --> 01:07:32.319
+
+
+
+2833
+01:07:32.319 --> 01:07:34.230
+And in the feedback [throat clearing sound]
+
+2834
+01:07:34.230 --> 01:07:34.240
+
+
+
+2835
+01:07:34.240 --> 01:07:39.430
+You will go. You will select the answer relevance
+
+2836
+01:07:39.430 --> 01:07:39.440
+
+
+
+2837
+01:07:39.440 --> 01:07:42.470
+And you are average or minimum or percentile
+
+2838
+01:07:42.470 --> 01:07:42.480
+
+
+
+2839
+01:07:42.480 --> 01:07:44.710
+You can select it. From the lates we averaged
+
+2840
+01:07:44.710 --> 01:07:44.720
+
+
+
+2841
+01:07:44.720 --> 01:07:48.470
+Selected it and created it. So this
+
+2842
+01:07:48.470 --> 01:07:48.480
+
+
+
+2843
+01:07:48.480 --> 01:07:50.710
+The chart tells us our answer's relevance.
+
+2844
+01:07:50.710 --> 01:07:50.720
+
+
+
+2845
+01:07:50.720 --> 01:07:53.430
+There is overtime. Ok? so are you
+
+2846
+01:07:53.430 --> 01:07:53.440
+
+
+
+2847
+01:07:53.440 --> 01:07:55.109
+Made for contextual relevance
+
+2848
+01:07:55.109 --> 01:07:55.119
+
+
+
+2849
+01:07:55.119 --> 01:07:57.109
+Will you take it? This is how you are made for Faithfulness
+
+2850
+01:07:57.109 --> 01:07:57.119
+
+
+
+2851
+01:07:57.119 --> 01:07:59.670
+You can setup alerts again.
+
+2852
+01:07:59.670 --> 01:07:59.680
+
+
+
+2853
+01:07:59.680 --> 01:08:02.710
+Ho on top of every individual chart. So this is
+
+2854
+01:08:02.710 --> 01:08:02.720
+
+
+
+2855
+01:08:02.720 --> 01:08:04.630
+How you create a dashboard. and this dashboard
+
+2856
+01:08:04.630 --> 01:08:04.640
+
+
+
+2857
+01:08:04.640 --> 01:08:07.349
+You will get the details of your application at once.
+
+2858
+01:08:07.349 --> 01:08:07.359
+
+
+
+2859
+01:08:07.359 --> 01:08:10.069
+Understanding Health in a Given Period of Time
+
+2860
+01:08:10.069 --> 01:08:10.079
+
+
+
+2861
+01:08:10.079 --> 01:08:12.870
+It keeps coming. So I hope you are able to
+
+2862
+01:08:12.870 --> 01:08:12.880
+
+
+
+2863
+01:08:12.880 --> 01:08:15.430
+Understand how this whole thing works online
+
+2864
+01:08:15.430 --> 01:08:15.440
+
+
+
+2865
+01:08:15.440 --> 01:08:18.550
+Still working. This is the last one here
+
+2866
+01:08:18.550 --> 01:08:18.560
+
+
+
+2867
+01:08:18.560 --> 01:08:21.189
+The toxicity score came down to zero. So or this
+
+2868
+01:08:21.189 --> 01:08:21.199
+
+
+
+2869
+01:08:21.199 --> 01:08:25.669
+Is working now let me quickly go back to
+
+2870
+01:08:25.669 --> 01:08:25.679
+
+
+
+2871
+01:08:25.679 --> 01:08:28.229
+Our Plan Steps.
+
+2872
+01:08:28.229 --> 01:08:28.239
+
+
+
+2873
+01:08:28.239 --> 01:08:31.749
+So
+
+2874
+01:08:31.749 --> 01:08:31.759
+
+
+
+2875
+01:08:31.759 --> 01:08:34.309
+This is also happening. Now
+
+2876
+01:08:34.309 --> 01:08:34.319
+
+
+
+2877
+01:08:34.319 --> 01:08:36.709
+We ran the script containing the RAG triad.
+
+2878
+01:08:36.709 --> 01:08:36.719
+
+
+
+2879
+01:08:36.719 --> 01:08:40.789
+Made the charts. So far, just the work is complete
+
+2880
+01:08:40.789 --> 01:08:40.799
+
+
+
+2881
+01:08:40.799 --> 01:08:43.110
+We have done it. One last thing and discussion
+
+2882
+01:08:43.110 --> 01:08:43.120
+
+
+
+2883
+01:08:43.120 --> 01:08:46.709
+Let's do it guys. If you will remember
+
+2884
+01:08:46.709 --> 01:08:46.719
+
+
+
+2885
+01:08:46.719 --> 01:08:48.390
+I have a very important point for you.
+
+2886
+01:08:48.390 --> 01:08:48.400
+
+
+
+2887
+01:08:48.400 --> 01:08:51.829
+I told you while teaching theory that
+
+2888
+01:08:51.829 --> 01:08:51.839
+
+
+
+2889
+01:08:51.839 --> 01:08:55.910
+Your offline evaluation data set
+
+2890
+01:08:55.910 --> 01:08:55.920
+
+
+
+2891
+01:08:55.920 --> 01:08:59.430
+It happens to him that we work overtime and become stronger.
+
+2892
+01:08:59.430 --> 01:08:59.440
+
+
+
+2893
+01:08:59.440 --> 01:09:01.910
+Keep making it. How?
+
+2894
+01:09:01.910 --> 01:09:01.920
+
+
+
+2895
+01:09:01.920 --> 01:09:05.430
+The failures you face online
+
+2896
+01:09:05.430 --> 01:09:05.440
+
+
+
+2897
+01:09:05.440 --> 01:09:07.749
+Pick it up and add it to the offline data set
+
+2898
+01:09:07.749 --> 01:09:07.759
+
+
+
+2899
+01:09:07.759 --> 01:09:10.870
+yes. Right? The user asked a question like this
+
+2900
+01:09:10.870 --> 01:09:10.880
+
+
+
+2901
+01:09:10.880 --> 01:09:12.709
+For which our system is very bad
+
+2902
+01:09:12.709 --> 01:09:12.719
+
+
+
+2903
+01:09:12.719 --> 01:09:15.349
+Gave the results. so that is a very good
+
+2904
+01:09:15.349 --> 01:09:15.359
+
+
+
+2905
+01:09:15.359 --> 01:09:18.789
+Questions to be added to our golden data
+
+2906
+01:09:18.789 --> 01:09:18.799
+
+
+
+2907
+01:09:18.799 --> 01:09:23.110
+Set. Right? So this is how you increase the
+
+2908
+01:09:23.110 --> 01:09:23.120
+
+
+
+2909
+01:09:23.120 --> 01:09:25.430
+Size of Your Golden Data Set and This Is
+
+2910
+01:09:25.430 --> 01:09:25.440
+
+
+
+2911
+01:09:25.440 --> 01:09:27.990
+How you make it more powerful. So that
+
+2912
+01:09:27.990 --> 01:09:28.000
+
+
+
+2913
+01:09:28.000 --> 01:09:29.590
+How does Exact work? i you
+
+2914
+01:09:29.590 --> 01:09:29.600
+
+
+
+2915
+01:09:29.600 --> 01:09:33.349
+Let me tell you. Assume for a moment that
+
+2916
+01:09:33.349 --> 01:09:33.359
+
+
+
+2917
+01:09:33.359 --> 01:09:35.510
+This is the most recent question,
+
+2918
+01:09:35.510 --> 01:09:35.520
+
+
+
+2919
+01:09:35.520 --> 01:09:38.229
+All your metrics are scoring poorly
+
+2920
+01:09:38.229 --> 01:09:38.239
+
+
+
+2921
+01:09:38.239 --> 01:09:40.550
+Are. Answer relevance is also poor.
+
+2922
+01:09:40.550 --> 01:09:40.560
+
+
+
+2923
+01:09:40.560 --> 01:09:42.390
+The contextual relevance is definitely bad. of
+
+2924
+01:09:42.390 --> 01:09:42.400
+
+
+
+2925
+01:09:42.400 --> 01:09:44.870
+Faithfulness is also bad, it is also toxic. So
+
+2926
+01:09:44.870 --> 01:09:44.880
+
+
+
+2927
+01:09:44.880 --> 01:09:46.950
+This is a very good use case. You can add this
+
+2928
+01:09:46.950 --> 01:09:46.960
+
+
+
+2929
+01:09:46.960 --> 01:09:49.110
+You would like to do it in your offline setup. So
+
+2930
+01:09:49.110 --> 01:09:49.120
+
+
+
+2931
+01:09:49.120 --> 01:09:51.910
+That way you can make your system better. So
+
+2932
+01:09:51.910 --> 01:09:51.920
+
+
+
+2933
+01:09:51.920 --> 01:09:55.030
+You have a way for this too. What are you doing
+
+2934
+01:09:55.030 --> 01:09:55.040
+
+
+
+2935
+01:09:55.040 --> 01:09:58.229
+Can you? Look here, an option is coming.
+
+2936
+01:09:58.229 --> 01:09:58.239
+
+
+
+2937
+01:09:58.239 --> 01:10:00.950
+Let's say add to data set. so what do you do
+
+2938
+01:10:00.950 --> 01:10:00.960
+
+
+
+2939
+01:10:00.960 --> 01:10:04.630
+Can you? You can create a data set here.
+
+2940
+01:10:04.630 --> 01:10:04.640
+
+
+
+2941
+01:10:04.640 --> 01:10:07.270
+You can do it for yourself. So, suppose your data
+
+2942
+01:10:07.270 --> 01:10:07.280
+
+
+
+2943
+01:10:07.280 --> 01:10:11.030
+The name of the set is I want to create a data
+
+2944
+01:10:11.030 --> 01:10:11.040
+
+
+
+2945
+01:10:11.040 --> 01:10:14.709
+Set. Create from scratch.
+
+2946
+01:10:14.709 --> 01:10:14.719
+
+
+
+2947
+01:10:14.719 --> 01:10:16.550
+Here you can create a data set for
+
+2948
+01:10:16.550 --> 01:10:16.560
+
+
+
+2949
+01:10:16.560 --> 01:10:18.470
+Yourself.
+
+2950
+01:10:18.470 --> 01:10:18.480
+
+
+
+2951
+01:10:18.480 --> 01:10:21.510
+Let's name it Sample.
+
+2952
+01:10:21.510 --> 01:10:21.520
+
+
+
+2953
+01:10:21.520 --> 01:10:23.430
+Description is sample. From the application
+
+2954
+01:10:23.430 --> 01:10:23.440
+
+
+
+2955
+01:10:23.440 --> 01:10:25.830
+Connected it. Here you define the schema
+
+2956
+01:10:25.830 --> 01:10:25.840
+
+
+
+2957
+01:10:25.840 --> 01:10:27.910
+Can you tell me what will be the input in this?
+
+2958
+01:10:27.910 --> 01:10:27.920
+
+
+
+2959
+01:10:27.920 --> 01:10:29.910
+What will be the output? I currently define
+
+2960
+01:10:29.910 --> 01:10:29.920
+
+
+
+2961
+01:10:29.920 --> 01:10:31.510
+Haven't done it. I would create it like this
+
+2962
+01:10:31.510 --> 01:10:31.520
+
+
+
+2963
+01:10:31.520 --> 01:10:34.550
+Am. So I have this data set, sample.
+
+2964
+01:10:34.550 --> 01:10:34.560
+
+
+
+2965
+01:10:34.560 --> 01:10:36.550
+By speaking. So what should I do now when I go to training?
+
+2966
+01:10:36.550 --> 01:10:36.560
+
+
+
+2967
+01:10:36.560 --> 01:10:38.310
+I can say that this is the most recent
+
+2968
+01:10:38.310 --> 01:10:38.320
+
+
+
+2969
+01:10:38.320 --> 01:10:40.550
+I am very poor in my run.
+
+2970
+01:10:40.550 --> 01:10:40.560
+
+
+
+2971
+01:10:40.560 --> 01:10:42.390
+The results are coming. So I would like this to
+
+2972
+01:10:42.390 --> 01:10:42.400
+
+
+
+2973
+01:10:42.400 --> 01:10:44.470
+Become a part of my offline eval. So
+
+2974
+01:10:44.470 --> 01:10:44.480
+
+
+
+2975
+01:10:44.480 --> 01:10:47.590
+What I will do is I will go to this end
+
+2976
+01:10:47.590 --> 01:10:47.600
+
+
+
+2977
+01:10:47.600 --> 01:10:50.709
+I will add to the data set. Ok? From here
+
+2978
+01:10:50.709 --> 01:10:50.719
+
+
+
+2979
+01:10:50.719 --> 01:10:53.350
+The data set I selected was Sample. Now
+
+2980
+01:10:53.350 --> 01:10:53.360
+
+
+
+2981
+01:10:53.360 --> 01:10:55.830
+What can you do here? the question is
+
+2982
+01:10:55.830 --> 01:10:55.840
+
+
+
+2983
+01:10:55.840 --> 01:10:57.510
+You already got it. In the question in which you
+
+2984
+01:10:57.510 --> 01:10:57.520
+
+
+
+2985
+01:10:57.520 --> 01:11:00.229
+The system cried. Now here it is obviously yours
+
+2986
+01:11:00.229 --> 01:11:00.239
+
+
+
+2987
+01:11:00.239 --> 01:11:03.110
+This is the answer generated by your system. But
+
+2988
+01:11:03.110 --> 01:11:03.120
+
+
+
+2989
+01:11:03.120 --> 01:11:04.950
+This answer may be wrong. Then all
+
+2990
+01:11:04.950 --> 01:11:04.960
+
+
+
+2991
+01:11:04.960 --> 01:11:07.189
+The results are coming out bad. So at this point
+
+2992
+01:11:07.189 --> 01:11:07.199
+
+
+
+2993
+01:11:07.199 --> 01:11:09.669
+One of your experts is sitting here and
+
+2994
+01:11:09.669 --> 01:11:09.679
+
+
+
+2995
+01:11:09.679 --> 01:11:12.470
+Reference answer can be created. So that
+
+2996
+01:11:12.470 --> 01:11:12.480
+
+
+
+2997
+01:11:12.480 --> 01:11:14.550
+You can then use it offline for
+
+2998
+01:11:14.550 --> 01:11:14.560
+
+
+
+2999
+01:11:14.560 --> 01:11:16.870
+Correctness and Completeness and Other References
+
+3000
+01:11:16.870 --> 01:11:16.880
+
+
+
+3001
+01:11:16.880 --> 01:11:19.270
+Based Matrix. So here if you want
+
+3002
+01:11:19.270 --> 01:11:19.280
+
+
+
+3003
+01:11:19.280 --> 01:11:22.709
+You can type your correct answer reference answer
+
+3004
+01:11:22.709 --> 01:11:22.719
+
+
+
+3005
+01:11:22.719 --> 01:11:25.510
+And you can just submit. As soon as you submit
+
+3006
+01:11:25.510 --> 01:11:25.520
+
+
+
+3007
+01:11:25.520 --> 01:11:29.110
+If you do this, you will see your data set here.
+
+3008
+01:11:29.110 --> 01:11:29.120
+
+
+
+3009
+01:11:29.120 --> 01:11:32.550
+Will see that that question got added. And here
+
+3010
+01:11:32.550 --> 01:11:32.560
+
+
+
+3011
+01:11:32.560 --> 01:11:35.350
+What you can do is to keep your data
+
+3012
+01:11:35.350 --> 01:11:35.360
+
+
+
+3013
+01:11:35.360 --> 01:11:38.470
+You can download the set and merge it.
+
+3014
+01:11:38.470 --> 01:11:38.480
+
+
+
+3015
+01:11:38.480 --> 01:11:41.110
+You can do this with your offline data set
+
+3016
+01:11:41.110 --> 01:11:41.120
+
+
+
+3017
+01:11:41.120 --> 01:11:43.910
+with. What better way is there than to
+
+3018
+01:11:43.910 --> 01:11:43.920
+
+
+
+3019
+01:11:43.920 --> 01:11:47.910
+Your golden data sets from the start
+
+3020
+01:11:47.910 --> 01:11:47.920
+
+
+
+3021
+01:11:47.920 --> 01:11:51.030
+Create here inside LangSmith. So
+
+3022
+01:11:51.030 --> 01:11:51.040
+
+
+
+3023
+01:11:51.040 --> 01:11:53.110
+These are the data sets we've been running so far.
+
+3024
+01:11:53.110 --> 01:11:53.120
+
+
+
+3025
+01:11:53.120 --> 01:11:55.910
+If you want to see all this here, our
+
+3026
+01:11:55.910 --> 01:11:55.920
+
+
+
+3027
+01:11:55.920 --> 01:11:57.910
+These are the data sets that we use in an offline setup.
+
+3028
+01:11:57.910 --> 01:11:57.920
+
+
+
+3029
+01:11:57.920 --> 01:12:01.350
+were making them, you make them here and then
+
+3030
+01:12:01.350 --> 01:12:01.360
+
+
+
+3031
+01:12:01.360 --> 01:12:04.870
+With the help of langs SDK you can convert those data sets
+
+3032
+01:12:04.870 --> 01:12:04.880
+
+
+
+3033
+01:12:04.880 --> 01:12:06.709
+Load it even in offline settings when you
+
+3034
+01:12:06.709 --> 01:12:06.719
+
+
+
+3035
+01:12:06.719 --> 01:12:09.350
+Even if you are running offline Evals, you can still see the length
+
+3036
+01:12:09.350 --> 01:12:09.360
+
+
+
+3037
+01:12:09.360 --> 01:12:12.390
+What is the use of loading it from a
+
+3038
+01:12:12.390 --> 01:12:12.400
+
+
+
+3039
+01:12:12.400 --> 01:12:15.189
+If you have your golden data set in a single place
+
+3040
+01:12:15.189 --> 01:12:15.199
+
+
+
+3041
+01:12:15.199 --> 01:12:17.110
+You can use it for both offline and online.
+
+3042
+01:12:17.110 --> 01:12:17.120
+
+
+
+3043
+01:12:17.120 --> 01:12:18.950
+You are able to do it and grow the offline ones
+
+3044
+01:12:18.950 --> 01:12:18.960
+
+
+
+3045
+01:12:18.960 --> 01:12:20.870
+and what is another good thing
+
+3046
+01:12:20.870 --> 01:12:20.880
+
+
+
+3047
+01:12:20.880 --> 01:12:23.189
+LangSmith also supports versioning of your data sets.
+
+3048
+01:12:23.189 --> 01:12:23.199
+
+
+
+3049
+01:12:23.199 --> 01:12:25.510
+Does. So how do you overwrite your data set?
+
+3050
+01:12:25.510 --> 01:12:25.520
+
+
+
+3051
+01:12:25.520 --> 01:12:27.350
+You will also be able to see that it is growing.
+
+3052
+01:12:27.350 --> 01:12:27.360
+
+
+
+3053
+01:12:27.360 --> 01:12:29.430
+You can also roll back to any previous state.
+
+3054
+01:12:29.430 --> 01:12:29.440
+
+
+
+3055
+01:12:29.440 --> 01:12:31.910
+Can I get the Golden one from 6 months ago?
+
+3056
+01:12:31.910 --> 01:12:31.920
+
+
+
+3057
+01:12:31.920 --> 01:12:34.470
+View the data set. So you can go there too
+
+3058
+01:12:34.470 --> 01:12:34.480
+
+
+
+3059
+01:12:34.480 --> 01:12:37.030
+You can. So a much better approach is that rather
+
+3060
+01:12:37.030 --> 01:12:37.040
+
+
+
+3061
+01:12:37.040 --> 01:12:39.990
+Then having offline golden data sets like
+
+3062
+01:12:39.990 --> 01:12:40.000
+
+
+
+3063
+01:12:40.000 --> 01:12:42.709
+It is in our files. You Actually Started
+
+3064
+01:12:42.709 --> 01:12:42.719
+
+
+
+3065
+01:12:42.719 --> 01:12:45.750
+Creating Your Data Sets Here. two of this
+
+3066
+01:12:45.750 --> 01:12:45.760
+
+
+
+3067
+01:12:45.760 --> 01:12:49.270
+There are benefits. First, you can directly from your training
+
+3068
+01:12:49.270 --> 01:12:49.280
+
+
+
+3069
+01:12:49.280 --> 01:12:51.590
+You can add your data set by clicking here.
+
+3070
+01:12:51.590 --> 01:12:51.600
+
+
+
+3071
+01:12:51.600 --> 01:12:53.750
+Inside. Second, its versioning is also happening.
+
+3072
+01:12:53.750 --> 01:12:53.760
+
+
+
+3073
+01:12:53.760 --> 01:12:56.550
+And you can use it offline also.
+
+3074
+01:12:56.550 --> 01:12:56.560
+
+
+
+3075
+01:12:56.560 --> 01:12:58.630
+So this is a much better approach. So its
+
+3076
+01:12:58.630 --> 01:12:58.640
+
+
+
+3077
+01:12:58.640 --> 01:13:01.590
+With the help of this entire loop, you can do it offline and
+
+3078
+01:13:01.590 --> 01:13:01.600
+
+
+
+3079
+01:13:01.600 --> 01:13:03.750
+the loop that connects online
+
+3080
+01:13:03.750 --> 01:13:03.760
+
+
+
+3081
+01:13:03.760 --> 01:13:06.390
+You can create it very powerfully. So
+
+3082
+01:13:06.390 --> 01:13:06.400
+
+
+
+3083
+01:13:06.400 --> 01:13:09.430
+This Is How Teams Do It in the Proper
+
+3084
+01:13:09.430 --> 01:13:09.440
+
+
+
+3085
+01:13:09.440 --> 01:13:12.550
+Production setup. Ok? So or this was
+
+3086
+01:13:12.550 --> 01:13:12.560
+
+
+
+3087
+01:13:12.560 --> 01:13:14.310
+One interesting point that I would like to tell you
+
+3088
+01:13:14.310 --> 01:13:14.320
+
+
+
+3089
+01:13:14.320 --> 01:13:16.870
+I wanted to tell you and I gave you a small demo.
+
+3090
+01:13:16.870 --> 01:13:16.880
+
+
+
+3091
+01:13:16.880 --> 01:13:20.550
+Showed it. with that a we have essentially
+
+3092
+01:13:20.550 --> 01:13:20.560
+
+
+
+3093
+01:13:20.560 --> 01:13:24.310
+Completed An Overview of Online Eval.
+
+3094
+01:13:24.310 --> 01:13:24.320
+
+
+
+3095
+01:13:24.320 --> 01:13:26.550
+I won't show you everything, but
+
+3096
+01:13:26.550 --> 01:13:26.560
+
+
+
+3097
+01:13:26.560 --> 01:13:29.590
+Gave an idea for everything. Now you can use this
+
+3098
+01:13:29.590 --> 01:13:29.600
+
+
+
+3099
+01:13:29.600 --> 01:13:32.229
+No matter how complex the idea is
+
+3100
+01:13:32.229 --> 01:13:32.239
+
+
+
+3101
+01:13:32.239 --> 01:13:35.030
+You can create an online eval system
+
+3102
+01:13:35.030 --> 01:13:35.040
+
+
+
+3103
+01:13:35.040 --> 01:13:37.030
+Using any tool. I guess. means because
+
+3104
+01:13:37.030 --> 01:13:37.040
+
+
+
+3105
+01:13:37.040 --> 01:13:38.950
+The concept is the same. using land
+
+3106
+01:13:38.950 --> 01:13:38.960
+
+
+
+3107
+01:13:38.960 --> 01:13:41.030
+Or are you using Langfuse? concept
+
+3108
+01:13:41.030 --> 01:13:41.040
+
+
+
+3109
+01:13:41.040 --> 01:13:43.189
+It will remain the same. You just need to know the concept
+
+3110
+01:13:43.189 --> 01:13:43.199
+
+
+
+3111
+01:13:43.199 --> 01:13:45.669
+Needed Ok? with that super happy to
+
+3112
+01:13:45.669 --> 01:13:45.679
+
+
+
+3113
+01:13:45.679 --> 01:13:48.390
+Announce our RAG eval wala part complete
+
+3114
+01:13:48.390 --> 01:13:48.400
+
+
+
+3115
+01:13:48.400 --> 01:13:50.229
+Done. It took some time. I am really sorry
+
+3116
+01:13:50.229 --> 01:13:50.239
+
+
+
+3117
+01:13:50.239 --> 01:13:52.070
+About that. I feel unwell in the middle
+
+3118
+01:13:52.070 --> 01:13:52.080
+
+
+
+3119
+01:13:52.080 --> 01:13:53.990
+Went. Otherwise we had this same session a week ago.
+
+3120
+01:13:53.990 --> 01:13:54.000
+
+
+
+3121
+01:13:54.000 --> 01:13:57.910
+Would have been doing it. Ah so or this whatever seven eight
+
+3122
+01:13:57.910 --> 01:13:57.920
+
+
+
+3123
+01:13:57.920 --> 01:14:00.630
+The sessions are from RAG Eval Part One to RAG
+
+3124
+01:14:00.630 --> 01:14:00.640
+
+
+
+3125
+01:14:00.640 --> 01:14:02.870
+Till eval Part Eight. If you could see this
+
+3126
+01:14:02.870 --> 01:14:02.880
+
+
+
+3127
+01:14:02.880 --> 01:14:04.950
+Yes, I'm pretty sure you'll be able to
+
+3128
+01:14:04.950 --> 01:14:04.960
+
+
+
+3129
+01:14:04.960 --> 01:14:08.070
+Impress Any Interviewer Who Will Give You a Rare Eval
+
+3130
+01:14:08.070 --> 01:14:08.080
+
+
+
+3131
+01:14:08.080 --> 01:14:10.470
+Will ask questions. That is my guarantee.
+
+3132
+01:14:10.470 --> 01:14:10.480
+
+
+
+3133
+01:14:10.480 --> 01:14:12.950
+Ok? Or that's it. So read this much today
+
+3134
+01:14:12.950 --> 01:14:12.960
+
+
+
+3135
+01:14:12.960 --> 01:14:16.149
+Have been. From the next session we will start with
+
+3136
+01:14:16.149 --> 01:14:16.159
+
+
+
+3137
+01:14:16.159 --> 01:14:19.830
+Agent Evals, which will be a little easier now because
+
+3138
+01:14:19.830 --> 01:14:19.840
+
+
+
+3139
+01:14:19.840 --> 01:14:22.390
+We have read this entire thing. So much time
+
+3140
+01:14:22.390 --> 01:14:22.400
+
+
+
+3141
+01:14:22.400 --> 01:14:24.719
+It won't work.

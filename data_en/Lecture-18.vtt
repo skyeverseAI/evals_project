@@ -1,0 +1,10184 @@
+WEBVTT
+
+1
+00:00:00.480 --> 00:00:04.470
+Ok?  So guys let's start the session.  A
+
+2
+00:00:04.470 --> 00:00:04.480
+
+
+
+3
+00:00:04.480 --> 00:00:07.909
+first I will give you a quick recap.  So we've been doing
+
+4
+00:00:07.909 --> 00:00:07.919
+
+
+
+5
+00:00:07.919 --> 00:00:11.110
+RAG Evals for the last
+
+6
+00:00:11.110 --> 00:00:11.120
+
+
+
+7
+00:00:11.120 --> 00:00:13.509
+five six sessions.  We are studying in great detail
+
+8
+00:00:13.509 --> 00:00:13.519
+
+
+
+9
+00:00:13.519 --> 00:00:18.310
+and all the work we have done so far
+
+10
+00:00:18.310 --> 00:00:18.320
+
+
+
+11
+00:00:18.320 --> 00:00:20.710
+in RAG Eval can be
+
+12
+00:00:20.710 --> 00:00:20.720
+
+
+
+13
+00:00:20.720 --> 00:00:24.150
+summarized in this single diagram.  We've been
+
+14
+00:00:24.150 --> 00:00:24.160
+
+
+
+15
+00:00:24.160 --> 00:00:27.670
+building a RAG evaluation suite
+
+16
+00:00:27.670 --> 00:00:27.680
+
+
+
+17
+00:00:27.680 --> 00:00:31.029
+which is basically a bunch of evaluations that
+
+18
+00:00:31.029 --> 00:00:31.039
+
+
+
+19
+00:00:31.039 --> 00:00:34.069
+allow you to evaluate any RAG application.
+
+20
+00:00:34.069 --> 00:00:34.079
+
+
+
+21
+00:00:34.079 --> 00:00:36.790
+We are evaluating
+
+22
+00:00:36.790 --> 00:00:36.800
+
+
+
+23
+00:00:36.800 --> 00:00:39.910
+it at three levels, component level,
+
+24
+00:00:39.910 --> 00:00:39.920
+
+
+
+25
+00:00:39.920 --> 00:00:43.110
+pipeline level and application level.  And the
+
+26
+00:00:43.110 --> 00:00:43.120
+
+
+
+27
+00:00:43.120 --> 00:00:45.590
+good thing is that we have made these three sets of
+
+28
+00:00:45.590 --> 00:00:45.600
+
+
+
+29
+00:00:45.600 --> 00:00:48.950
+evals.  And in this process we
+
+30
+00:00:48.950 --> 00:00:48.960
+
+
+
+31
+00:00:48.960 --> 00:00:53.270
+explored some 14 different metrics.
+
+32
+00:00:53.270 --> 00:00:56.950
+
+
+
+33
+00:00:56.950 --> 00:01:00.150
+
+
+
+34
+00:01:00.150 --> 00:01:00.160
+
+
+
+35
+00:01:00.160 --> 00:01:03.270
+We discussed the metrics of true age faithfulness, answer relevance, safety.  We discussed operational metrics.
+
+36
+00:01:03.270 --> 00:01:03.280
+
+
+
+37
+00:01:03.280 --> 00:01:06.469
+So now we're at a place where
+
+38
+00:01:06.469 --> 00:01:06.479
+
+
+
+39
+00:01:06.479 --> 00:01:08.550
+we can proudly say we've built this entire
+
+40
+00:01:08.550 --> 00:01:08.560
+
+
+
+41
+00:01:08.560 --> 00:01:12.390
+RAG of sweets.  Now today's
+
+42
+00:01:12.390 --> 00:01:12.400
+
+
+
+43
+00:01:12.400 --> 00:01:16.630
+session is around regression
+
+44
+00:01:16.630 --> 00:01:16.640
+
+
+
+45
+00:01:16.640 --> 00:01:18.550
+testing.   That's
+
+46
+00:01:18.550 --> 00:01:18.560
+
+
+
+47
+00:01:18.560 --> 00:01:22.230
+the topic for today's session.  Basically,
+
+48
+00:01:22.230 --> 00:01:22.240
+
+
+
+49
+00:01:22.240 --> 00:01:25.670
+we will learn how we can execute this entire
+
+50
+00:01:25.670 --> 00:01:25.680
+
+
+
+51
+00:01:25.680 --> 00:01:29.350
+RAG Eval suite from a single script
+
+52
+00:01:29.350 --> 00:01:29.360
+
+
+
+53
+00:01:29.360 --> 00:01:32.069
+and directly generate a summary of how
+
+54
+00:01:32.069 --> 00:01:32.079
+
+
+
+55
+00:01:32.079 --> 00:01:34.870
+our
+
+56
+00:01:34.870 --> 00:01:34.880
+
+
+
+57
+00:01:34.880 --> 00:01:37.830
+RAG application is currently performing.  Did the
+
+58
+00:01:37.830 --> 00:01:37.840
+
+
+
+59
+00:01:37.840 --> 00:01:40.789
+changes we made lead to improvement or did
+
+60
+00:01:40.789 --> 00:01:40.799
+
+
+
+61
+00:01:40.799 --> 00:01:43.190
+something else go wrong?
+
+62
+00:01:43.190 --> 00:01:43.200
+
+
+
+63
+00:01:43.200 --> 00:01:46.550
+You will be able to answer this question after watching today's session.
+
+64
+00:01:46.550 --> 00:01:46.560
+
+
+
+65
+00:01:46.560 --> 00:01:49.590
+Ok?  And after that there will be only one more session
+
+66
+00:01:49.590 --> 00:01:49.600
+
+
+
+67
+00:01:49.600 --> 00:01:53.109
+left in RAG Evals which will be online
+
+68
+00:01:53.109 --> 00:01:53.119
+
+
+
+69
+00:01:53.119 --> 00:01:56.389
+Evals.  We will take this entire thing online.  So that
+
+70
+00:01:56.389 --> 00:01:56.399
+
+
+
+71
+00:01:56.399 --> 00:01:59.030
+even in production setup we can
+
+72
+00:01:59.030 --> 00:02:01.749
+
+
+
+73
+00:02:01.749 --> 00:02:01.759
+
+
+
+74
+00:02:01.759 --> 00:02:04.870
+evaluate our RAG system and RAG application.  Ok?  So I hope
+
+75
+00:02:04.870 --> 00:02:04.880
+
+
+
+76
+00:02:04.880 --> 00:02:07.109
+you understood what we have done so far
+
+77
+00:02:07.109 --> 00:02:07.119
+
+
+
+78
+00:02:07.119 --> 00:02:09.190
+and what we are going to do in today's session.
+
+79
+00:02:09.190 --> 00:02:09.200
+
+
+
+80
+00:02:09.200 --> 00:02:11.589
+Ok?  First of all,
+
+81
+00:02:11.589 --> 00:02:11.599
+
+
+
+82
+00:02:11.599 --> 00:02:14.550
+obviously we will discuss
+
+83
+00:02:14.550 --> 00:02:14.560
+
+
+
+84
+00:02:14.560 --> 00:02:17.830
+what is the meaning of this term Regression Testing
+
+85
+00:02:17.830 --> 00:02:17.840
+
+
+
+86
+00:02:17.840 --> 00:02:21.190
+and the meaning of this term comes out
+
+87
+00:02:21.190 --> 00:02:21.200
+
+
+
+88
+00:02:21.200 --> 00:02:24.790
+from this word Regression.  You might have
+
+89
+00:02:24.790 --> 00:02:24.800
+
+
+
+90
+00:02:24.800 --> 00:02:28.229
+heard the term regression many times in the past.  A but its
+
+91
+00:02:28.229 --> 00:02:28.239
+
+
+
+92
+00:02:28.239 --> 00:02:30.630
+English meaning is very simple.  Here
+
+93
+00:02:30.630 --> 00:02:30.640
+
+
+
+94
+00:02:30.640 --> 00:02:32.470
+I have also written returning to a
+
+95
+00:02:32.470 --> 00:02:32.480
+
+
+
+96
+00:02:32.480 --> 00:02:37.030
+previous less advanced and worse state.  So
+
+97
+00:02:37.030 --> 00:02:37.040
+
+
+
+98
+00:02:37.040 --> 00:02:41.110
+if your system
+
+99
+00:02:41.110 --> 00:02:41.120
+
+
+
+100
+00:02:41.120 --> 00:02:43.990
+reaches a worse state than before, then we
+
+101
+00:02:43.990 --> 00:02:44.000
+
+
+
+102
+00:02:44.000 --> 00:02:46.869
+call it regression.  And
+
+103
+00:02:46.869 --> 00:02:46.879
+
+
+
+104
+00:02:46.879 --> 00:02:49.270
+we call testing this thing regression testing.
+
+105
+00:02:49.270 --> 00:02:49.280
+
+
+
+106
+00:02:49.280 --> 00:02:52.070
+If I explain it to you with an example,
+
+107
+00:02:52.070 --> 00:02:52.080
+
+
+
+108
+00:02:52.080 --> 00:02:56.470
+suppose you have built a RAG application
+
+109
+00:02:56.470 --> 00:02:56.480
+
+
+
+110
+00:02:56.480 --> 00:03:01.270
+and it is working.  Ok?  And
+
+111
+00:03:01.270 --> 00:03:01.280
+
+
+
+112
+00:03:01.280 --> 00:03:04.550
+at a particular point you notice
+
+113
+00:03:04.550 --> 00:03:04.560
+
+
+
+114
+00:03:04.560 --> 00:03:09.509
+that your recall is
+
+115
+00:03:09.509 --> 00:03:09.519
+
+
+
+116
+00:03:09.519 --> 00:03:12.949
+not that good and you want to improve it, then
+
+117
+00:03:12.949 --> 00:03:12.959
+
+
+
+118
+00:03:12.959 --> 00:03:16.470
+one thing that can be done to improve the recall is
+
+119
+00:03:16.470 --> 00:03:16.480
+
+
+
+120
+00:03:16.480 --> 00:03:18.470
+that you can increase the value of k
+
+121
+00:03:18.470 --> 00:03:18.480
+
+
+
+122
+00:03:18.480 --> 00:03:21.830
+or you can apply a reranker.
+
+123
+00:03:21.830 --> 00:03:21.840
+
+
+
+124
+00:03:21.840 --> 00:03:24.630
+Guess what you did?  You
+
+125
+00:03:24.630 --> 00:03:24.640
+
+
+
+126
+00:03:24.640 --> 00:03:27.030
+also increased the value of k and added a rearranker.
+
+127
+00:03:27.030 --> 00:03:27.040
+
+
+
+128
+00:03:27.040 --> 00:03:29.430
+Basically you changed your system a little bit.
+
+129
+00:03:29.430 --> 00:03:29.440
+
+
+
+130
+00:03:29.440 --> 00:03:33.430
+Now after changing this system,
+
+131
+00:03:33.430 --> 00:03:33.440
+
+
+
+132
+00:03:33.440 --> 00:03:36.789
+obviously your recall has
+
+133
+00:03:36.789 --> 00:03:36.799
+
+
+
+134
+00:03:36.799 --> 00:03:39.990
+improved.  Suppose if earlier it was 85% then
+
+135
+00:03:39.990 --> 00:03:40.000
+
+
+
+136
+00:03:40.000 --> 00:03:42.869
+now it has gone to 90%.  Which is a good
+
+137
+00:03:42.869 --> 00:03:42.879
+
+
+
+138
+00:03:42.879 --> 00:03:46.229
+news.  But what happened was that because you made these
+
+139
+00:03:46.229 --> 00:03:46.239
+
+
+
+140
+00:03:46.239 --> 00:03:50.070
+changes, one aspect of your
+
+141
+00:03:50.070 --> 00:03:50.080
+
+
+
+142
+00:03:50.080 --> 00:03:53.190
+RAG application improved.
+
+143
+00:03:53.190 --> 00:03:53.200
+
+
+
+144
+00:03:53.200 --> 00:03:56.470
+Because of that, the other aspects
+
+145
+00:03:56.470 --> 00:03:56.480
+
+
+
+146
+00:03:56.480 --> 00:03:59.990
+regressed and got spoiled.  For example, precision
+
+147
+00:03:59.990 --> 00:04:00.000
+
+
+
+148
+00:04:00.000 --> 00:04:02.070
+took a hit, or contextual
+
+149
+00:04:02.070 --> 00:04:02.080
+
+
+
+150
+00:04:02.080 --> 00:04:04.550
+relevance went down, or your
+
+151
+00:04:04.550 --> 00:04:04.560
+
+
+
+152
+00:04:04.560 --> 00:04:06.710
+latency increased.  Because you added a reranker.
+
+153
+00:04:06.710 --> 00:04:06.720
+
+
+
+154
+00:04:06.720 --> 00:04:09.670
+But you did not major in that.
+
+155
+00:04:09.670 --> 00:04:09.680
+
+
+
+156
+00:04:09.680 --> 00:04:12.309
+Because you were simply majoring on the recall.
+
+157
+00:04:12.309 --> 00:04:12.319
+
+
+
+158
+00:04:12.319 --> 00:04:14.710
+Your entire focus was Recall.  The recall was bad.
+
+159
+00:04:14.710 --> 00:04:14.720
+
+
+
+160
+00:04:14.720 --> 00:04:16.469
+Recall has to be improved.  You
+
+161
+00:04:16.469 --> 00:04:16.479
+
+
+
+162
+00:04:16.479 --> 00:04:18.789
+made changes.  Recall improved.  You became happy.
+
+163
+00:04:18.789 --> 00:04:18.799
+
+
+
+164
+00:04:18.799 --> 00:04:21.189
+You deployed the new system.
+
+165
+00:04:21.189 --> 00:04:21.199
+
+
+
+166
+00:04:21.199 --> 00:04:23.830
+But when the system was deployed, you
+
+167
+00:04:23.830 --> 00:04:23.840
+
+
+
+168
+00:04:23.840 --> 00:04:26.390
+realized that in the attempt to increase recall,
+
+169
+00:04:26.390 --> 00:04:26.400
+
+
+
+170
+00:04:26.400 --> 00:04:28.710
+you had spoiled three-four other important
+
+171
+00:04:28.710 --> 00:04:28.720
+
+
+
+172
+00:04:28.720 --> 00:04:31.749
+aspects of your RAG application
+
+173
+00:04:31.749 --> 00:04:31.759
+
+
+
+174
+00:04:31.759 --> 00:04:35.510
+and this could be very
+
+175
+00:04:35.510 --> 00:04:35.520
+
+
+
+176
+00:04:35.520 --> 00:04:37.909
+harmful for you.  So that is why it is
+
+177
+00:04:37.909 --> 00:04:37.919
+
+
+
+178
+00:04:37.919 --> 00:04:40.629
+said that whenever you
+
+179
+00:04:40.629 --> 00:04:40.639
+
+
+
+180
+00:04:40.639 --> 00:04:43.430
+make any changes in your system, you have to
+
+181
+00:04:43.430 --> 00:04:43.440
+
+
+
+182
+00:04:43.440 --> 00:04:46.790
+make sure that on all aspects
+
+183
+00:04:46.790 --> 00:04:46.800
+
+
+
+184
+00:04:46.800 --> 00:04:49.749
+your application is performing in the same way as
+
+185
+00:04:49.749 --> 00:04:49.759
+
+
+
+186
+00:04:49.759 --> 00:04:51.990
+it was performing before that change.  There should be
+
+187
+00:04:51.990 --> 00:04:52.000
+
+
+
+188
+00:04:52.000 --> 00:04:55.430
+no regression.  The testing of this thing is what
+
+189
+00:04:55.430 --> 00:04:55.440
+
+
+
+190
+00:04:55.440 --> 00:04:57.590
+we
+
+191
+00:04:57.590 --> 00:04:57.600
+
+
+
+192
+00:04:57.600 --> 00:04:59.749
+call regression testing.  So essentially
+
+193
+00:04:59.749 --> 00:04:59.759
+
+
+
+194
+00:04:59.759 --> 00:05:01.670
+what you do in regression testing is
+
+195
+00:05:01.670 --> 00:05:01.680
+
+
+
+196
+00:05:01.680 --> 00:05:03.749
+if you make any changes to your system,
+
+197
+00:05:03.749 --> 00:05:03.759
+
+
+
+198
+00:05:03.759 --> 00:05:06.469
+you increase the K or you add a reranker,
+
+199
+00:05:06.469 --> 00:05:06.479
+
+
+
+200
+00:05:06.479 --> 00:05:09.189
+what will you do?  You will rerun your
+
+201
+00:05:09.189 --> 00:05:09.199
+
+
+
+202
+00:05:09.199 --> 00:05:13.110
+entire RAG eval suite that you have created
+
+203
+00:05:13.110 --> 00:05:13.120
+
+
+
+204
+00:05:13.120 --> 00:05:17.270
+around 14 matrix.
+
+205
+00:05:17.270 --> 00:05:17.280
+
+
+
+206
+00:05:17.280 --> 00:05:20.710
+So you'll run those 14 matrices
+
+207
+00:05:20.710 --> 00:05:20.720
+
+
+
+208
+00:05:20.720 --> 00:05:22.950
+and you'll get the values ​​of those 14 matrices again.
+
+209
+00:05:22.950 --> 00:05:22.960
+
+
+
+210
+00:05:22.960 --> 00:05:26.310
+And then you will compare it
+
+211
+00:05:26.310 --> 00:05:26.320
+
+
+
+212
+00:05:26.320 --> 00:05:29.350
+with the previous metric values ​​which you
+
+213
+00:05:29.350 --> 00:05:29.360
+
+
+
+214
+00:05:29.360 --> 00:05:32.310
+can call the baseline and after analyzing both of them
+
+215
+00:05:32.310 --> 00:05:32.320
+
+
+
+216
+00:05:32.320 --> 00:05:34.870
+you will conclude whether the change you have made has taken
+
+217
+00:05:34.870 --> 00:05:34.880
+
+
+
+218
+00:05:34.880 --> 00:05:38.310
+your system further backwards.
+
+219
+00:05:38.310 --> 00:05:38.320
+
+
+
+220
+00:05:38.320 --> 00:05:42.790
+If this has not happened then only you
+
+221
+00:05:42.790 --> 00:05:42.800
+
+
+
+222
+00:05:42.800 --> 00:05:45.510
+decide to move forward and deploy the
+
+223
+00:05:45.510 --> 00:05:45.520
+
+
+
+224
+00:05:45.520 --> 00:05:48.150
+change.  That is the whole story behind
+
+225
+00:05:48.150 --> 00:05:48.160
+
+
+
+226
+00:05:48.160 --> 00:05:51.110
+regression testing.  I really hope I was able to
+
+227
+00:05:51.110 --> 00:05:51.120
+
+
+
+228
+00:05:51.120 --> 00:05:53.430
+explain to you what regression testing is.
+
+229
+00:05:53.430 --> 00:05:53.440
+
+
+
+230
+00:05:53.440 --> 00:05:55.909
+Regression testing is not a new
+
+231
+00:05:55.909 --> 00:05:55.919
+
+
+
+232
+00:05:55.919 --> 00:05:59.270
+thing.  It is not that we do regression testing only on LLM based
+
+233
+00:05:59.270 --> 00:05:59.280
+
+
+
+234
+00:05:59.280 --> 00:06:01.430
+applications.
+
+235
+00:06:01.430 --> 00:06:01.440
+
+
+
+236
+00:06:01.440 --> 00:06:03.590
+It's a very very old
+
+237
+00:06:03.590 --> 00:06:03.600
+
+
+
+238
+00:06:03.600 --> 00:06:06.309
+concept and it exists in software as well.
+
+239
+00:06:06.309 --> 00:06:06.319
+
+
+
+240
+00:06:06.319 --> 00:06:08.309
+So when you build software
+
+241
+00:06:08.309 --> 00:06:08.319
+
+
+
+242
+00:06:08.319 --> 00:06:10.070
+applications, whether you are building websites,
+
+243
+00:06:10.070 --> 00:06:10.080
+
+
+
+244
+00:06:10.080 --> 00:06:12.790
+Android apps or desktop
+
+245
+00:06:12.790 --> 00:06:12.800
+
+
+
+246
+00:06:12.800 --> 00:06:14.950
+applications.  There also the
+
+247
+00:06:14.950 --> 00:06:14.960
+
+
+
+248
+00:06:14.960 --> 00:06:17.830
+same concept exists that you
+
+249
+00:06:17.830 --> 00:06:17.840
+
+
+
+250
+00:06:17.840 --> 00:06:21.590
+brought some new change.  It could be that you
+
+251
+00:06:21.590 --> 00:06:21.600
+
+
+
+252
+00:06:21.600 --> 00:06:24.309
+built v2 of the API.  Previously, you had
+
+253
+00:06:24.309 --> 00:06:24.319
+
+
+
+254
+00:06:24.319 --> 00:06:26.629
+APIs written in Flask.  Then you
+
+255
+00:06:26.629 --> 00:06:26.639
+
+
+
+256
+00:06:26.639 --> 00:06:29.830
+used the fast API.  So now that the new
+
+257
+00:06:29.830 --> 00:06:29.840
+
+
+
+258
+00:06:29.840 --> 00:06:32.870
+system is in place, you test
+
+259
+00:06:32.870 --> 00:06:32.880
+
+
+
+260
+00:06:32.880 --> 00:06:35.830
+how your overall performance is.  Is it
+
+261
+00:06:35.830 --> 00:06:35.840
+
+
+
+262
+00:06:35.840 --> 00:06:38.469
+better than before or has
+
+263
+00:06:38.469 --> 00:06:38.479
+
+
+
+264
+00:06:38.479 --> 00:06:40.629
+it become worse?  So essentially this is a
+
+265
+00:06:40.629 --> 00:06:40.639
+
+
+
+266
+00:06:40.639 --> 00:06:43.590
+concept of software development which
+
+267
+00:06:43.590 --> 00:06:43.600
+
+
+
+268
+00:06:43.600 --> 00:06:46.390
+applies well to LLM based
+
+269
+00:06:46.390 --> 00:06:46.400
+
+
+
+270
+00:06:46.400 --> 00:06:48.629
+application development also.  And that is why
+
+271
+00:06:48.629 --> 00:06:48.639
+
+
+
+272
+00:06:48.639 --> 00:06:51.270
+you should know about this.  Ok?  So
+
+273
+00:06:51.270 --> 00:06:51.280
+
+
+
+274
+00:06:51.280 --> 00:06:54.309
+in today's session we are going to see exactly how to implement this concept
+
+275
+00:06:54.309 --> 00:06:57.510
+
+
+
+276
+00:06:57.510 --> 00:06:57.520
+
+
+
+277
+00:06:57.520 --> 00:06:59.749
+in our development process.   I'll
+
+278
+00:06:59.749 --> 00:06:59.759
+
+
+
+279
+00:06:59.759 --> 00:07:03.270
+give you a quick disclaimer.  We are exploring this
+
+280
+00:07:03.270 --> 00:07:03.280
+
+
+
+281
+00:07:03.280 --> 00:07:06.870
+entire concept at a very conceptual
+
+282
+00:07:06.870 --> 00:07:06.880
+
+
+
+283
+00:07:06.880 --> 00:07:09.270
+level.  A. I will
+
+284
+00:07:09.270 --> 00:07:09.280
+
+
+
+285
+00:07:09.280 --> 00:07:11.029
+not do it on a very practical level.
+
+286
+00:07:11.029 --> 00:07:11.039
+
+
+
+287
+00:07:11.039 --> 00:07:12.629
+Alldo I'll show you everything in the code.
+
+288
+00:07:12.629 --> 00:07:12.639
+
+
+
+289
+00:07:12.639 --> 00:07:14.790
+But it is not necessary that when you
+
+290
+00:07:14.790 --> 00:07:14.800
+
+
+
+291
+00:07:14.800 --> 00:07:16.550
+go and work in a company, the
+
+292
+00:07:16.550 --> 00:07:16.560
+
+
+
+293
+00:07:16.560 --> 00:07:18.550
+process or procedure of doing regression testing there will be the
+
+294
+00:07:18.550 --> 00:07:18.560
+
+
+
+295
+00:07:18.560 --> 00:07:21.110
+same as what we are seeing today.
+
+296
+00:07:21.110 --> 00:07:21.120
+
+
+
+297
+00:07:21.120 --> 00:07:23.029
+The concepts will be exactly the same.  The theory will be
+
+298
+00:07:23.029 --> 00:07:23.039
+
+
+
+299
+00:07:23.039 --> 00:07:24.790
+exactly the same.  The idea will be exactly the same.
+
+300
+00:07:24.790 --> 00:07:24.800
+
+
+
+301
+00:07:24.800 --> 00:07:27.029
+Execution may vary.  Because what
+
+302
+00:07:27.029 --> 00:07:27.039
+
+
+
+303
+00:07:27.039 --> 00:07:30.469
+we will do is a completely bare shell method.
+
+304
+00:07:30.469 --> 00:07:30.479
+
+
+
+305
+00:07:30.479 --> 00:07:32.309
+Where we will write all the code ourselves.
+
+306
+00:07:32.309 --> 00:07:32.319
+
+
+
+307
+00:07:32.319 --> 00:07:34.629
+What happens in Versus companies is that there are
+
+308
+00:07:34.629 --> 00:07:34.639
+
+
+
+309
+00:07:34.639 --> 00:07:36.710
+dedicated tools for regression testing.
+
+310
+00:07:36.710 --> 00:07:36.720
+
+
+
+311
+00:07:36.720 --> 00:07:39.029
+So I don't want to teach you by holding any tool.
+
+312
+00:07:39.029 --> 00:07:39.039
+
+
+
+313
+00:07:39.039 --> 00:07:40.710
+I
+
+314
+00:07:40.710 --> 00:07:40.720
+
+
+
+315
+00:07:40.720 --> 00:07:42.629
+want to explain to you at a conceptual level
+
+316
+00:07:42.629 --> 00:07:42.639
+
+
+
+317
+00:07:42.639 --> 00:07:44.870
+how this thing works.  You understood that.
+
+318
+00:07:44.870 --> 00:07:44.880
+
+
+
+319
+00:07:44.880 --> 00:07:47.189
+You will be able to adapt any tool.
+
+320
+00:07:47.189 --> 00:07:47.199
+
+
+
+321
+00:07:47.199 --> 00:07:49.670
+Ok?  I hope you understand this disclaimer.
+
+322
+00:07:49.670 --> 00:07:49.680
+
+
+
+323
+00:07:49.680 --> 00:07:52.790
+So now that you have a fair
+
+324
+00:07:52.790 --> 00:07:52.800
+
+
+
+325
+00:07:52.800 --> 00:07:55.029
+understanding of what regression testing
+
+326
+00:07:55.029 --> 00:07:55.039
+
+
+
+327
+00:07:55.039 --> 00:07:58.070
+is.  Now let's deep dive into how we will introduce the concept of
+
+328
+00:07:58.070 --> 00:07:58.080
+
+
+
+329
+00:07:58.080 --> 00:08:00.070
+regression testing in our application
+
+330
+00:08:00.070 --> 00:08:00.080
+
+
+
+331
+00:08:00.080 --> 00:08:02.710
+and how
+
+332
+00:08:02.710 --> 00:08:02.720
+
+
+
+333
+00:08:02.720 --> 00:08:05.830
+we will run it.  So now we
+
+334
+00:08:05.830 --> 00:08:05.840
+
+
+
+335
+00:08:05.840 --> 00:08:07.830
+will discuss our application on which
+
+336
+00:08:07.830 --> 00:08:07.840
+
+
+
+337
+00:08:07.840 --> 00:08:09.670
+we are working, Campus X Doubt
+
+338
+00:08:09.670 --> 00:08:09.680
+
+
+
+339
+00:08:09.680 --> 00:08:11.270
+Solve,
+
+340
+00:08:11.270 --> 00:08:13.670
+
+
+
+341
+00:08:13.670 --> 00:08:13.680
+
+
+
+342
+00:08:13.680 --> 00:08:15.990
+how will we use the RAG Eval suite that we have created here for regression
+
+343
+00:08:15.990 --> 00:08:16.000
+
+
+
+344
+00:08:16.000 --> 00:08:17.830
+testing, so let me tell you the simple setup.
+
+345
+00:08:17.830 --> 00:08:17.840
+
+
+
+346
+00:08:17.840 --> 00:08:21.749
+So at this point we have an eval
+
+347
+00:08:21.749 --> 00:08:21.759
+
+
+
+348
+00:08:21.759 --> 00:08:24.390
+suite called the RAG Eval suite in which
+
+349
+00:08:24.390 --> 00:08:24.400
+
+
+
+350
+00:08:24.400 --> 00:08:27.350
+we have written three types of eval tests.  One is
+
+351
+00:08:27.350 --> 00:08:27.360
+
+
+
+352
+00:08:27.360 --> 00:08:30.070
+our quality evaluate
+
+353
+00:08:30.070 --> 00:08:30.080
+
+
+
+354
+00:08:30.080 --> 00:08:33.350
+where you test the quality of the application.
+
+355
+00:08:33.350 --> 00:08:33.360
+
+
+
+356
+00:08:33.360 --> 00:08:35.509
+Ok?  Faithfulness, answer
+
+357
+00:08:35.509 --> 00:08:35.519
+
+
+
+358
+00:08:35.519 --> 00:08:38.070
+relevance, contextual relevance, all these
+
+359
+00:08:38.070 --> 00:08:38.080
+
+
+
+360
+00:08:38.080 --> 00:08:40.709
+metrics have come here.  Then there's another
+
+361
+00:08:40.709 --> 00:08:40.719
+
+
+
+362
+00:08:40.719 --> 00:08:43.829
+set of evaluations, your safety evaluations,
+
+363
+00:08:43.829 --> 00:08:43.839
+
+
+
+364
+00:08:43.839 --> 00:08:47.350
+where we're testing toxicity, PII leakage,
+
+365
+00:08:47.350 --> 00:08:47.360
+
+
+
+366
+00:08:47.360 --> 00:08:49.829
+scope adherence, all of that.  And we have one more
+
+367
+00:08:49.829 --> 00:08:49.839
+
+
+
+368
+00:08:49.839 --> 00:08:53.190
+class of Evals which we are
+
+369
+00:08:53.190 --> 00:08:53.200
+
+
+
+370
+00:08:53.200 --> 00:08:55.670
+calling Operation Evals.  Where we are making
+
+371
+00:08:55.670 --> 00:08:55.680
+
+
+
+372
+00:08:55.680 --> 00:08:58.230
+latency and cost extra measures.
+
+373
+00:08:58.230 --> 00:08:58.240
+
+
+
+374
+00:08:58.240 --> 00:09:00.870
+Ok?  So what do we do?  First of all
+
+375
+00:09:00.870 --> 00:09:00.880
+
+
+
+376
+00:09:00.880 --> 00:09:03.910
+we have to
+
+377
+00:09:03.910 --> 00:09:06.470
+
+
+
+378
+00:09:06.470 --> 00:09:06.480
+
+
+
+379
+00:09:06.480 --> 00:09:09.030
+prepare each script.   The
+
+380
+00:09:09.030 --> 00:09:09.040
+
+
+
+381
+00:09:09.040 --> 00:09:11.030
+speciality of this script is that
+
+382
+00:09:11.030 --> 00:09:11.040
+
+
+
+383
+00:09:11.040 --> 00:09:13.990
+as soon as you run this script, all
+
+384
+00:09:13.990 --> 00:09:14.000
+
+
+
+385
+00:09:14.000 --> 00:09:17.430
+three sets of
+
+386
+00:09:17.430 --> 00:09:17.440
+
+
+
+387
+00:09:17.440 --> 00:09:20.790
+events will automatically start running and give their results.
+
+388
+00:09:20.790 --> 00:09:20.800
+
+
+
+389
+00:09:20.800 --> 00:09:23.430
+So far, all of these are
+
+390
+00:09:23.430 --> 00:09:23.440
+
+
+
+391
+00:09:23.440 --> 00:09:26.550
+independent Python files in themselves.  So
+
+392
+00:09:26.550 --> 00:09:26.560
+
+
+
+393
+00:09:26.560 --> 00:09:29.190
+if I want to run a particular eval,
+
+394
+00:09:29.190 --> 00:09:29.200
+
+
+
+395
+00:09:29.200 --> 00:09:31.910
+I write the command to run that particular eval.  When I
+
+396
+00:09:31.910 --> 00:09:31.920
+
+
+
+397
+00:09:31.920 --> 00:09:34.630
+hit enter, it
+
+398
+00:09:34.630 --> 00:09:34.640
+
+
+
+399
+00:09:34.640 --> 00:09:37.350
+runs as well.  You must have seen this.  There is a
+
+400
+00:09:37.350 --> 00:09:37.360
+
+
+
+401
+00:09:37.360 --> 00:09:39.430
+separate file for operational Evals, a separate file for safety Evals
+
+402
+00:09:39.430 --> 00:09:39.440
+
+
+
+403
+00:09:39.440 --> 00:09:41.990
+and a separate file for quality Evals.
+
+404
+00:09:41.990 --> 00:09:42.000
+
+
+
+405
+00:09:42.000 --> 00:09:45.670
+So I'm going to have to manually run all the evals
+
+406
+00:09:45.670 --> 00:09:45.680
+
+
+
+407
+00:09:45.680 --> 00:09:48.790
+if I want to run my eval suite at this point.
+
+408
+00:09:48.790 --> 00:09:48.800
+
+
+
+409
+00:09:48.800 --> 00:09:50.949
+So we
+
+410
+00:09:50.949 --> 00:09:50.959
+
+
+
+411
+00:09:50.959 --> 00:09:53.110
+will automate this process with the help of the script, as
+
+412
+00:09:53.110 --> 00:09:53.120
+
+
+
+413
+00:09:53.120 --> 00:09:55.590
+soon as we run this script,
+
+414
+00:09:55.590 --> 00:09:55.600
+
+
+
+415
+00:09:55.600 --> 00:09:58.870
+what will happen automatically is that all these
+
+416
+00:09:58.870 --> 00:09:58.880
+
+
+
+417
+00:09:58.880 --> 00:10:02.710
+events will start running in sequence and
+
+418
+00:10:02.710 --> 00:10:02.720
+
+
+
+419
+00:10:02.720 --> 00:10:04.949
+by the end of this script we will get
+
+420
+00:10:04.949 --> 00:10:04.959
+
+
+
+421
+00:10:04.959 --> 00:10:07.590
+all the results on all the 14
+
+422
+00:10:07.590 --> 00:10:07.600
+
+
+
+423
+00:10:07.600 --> 00:10:10.389
+matrices.  Ok?  So the
+
+424
+00:10:10.389 --> 00:10:10.399
+
+
+
+425
+00:10:10.399 --> 00:10:13.590
+process in this is something like this that in step one, first of all
+
+426
+00:10:13.590 --> 00:10:13.600
+
+
+
+427
+00:10:13.600 --> 00:10:16.389
+you will build
+
+428
+00:10:16.389 --> 00:10:16.399
+
+
+
+429
+00:10:16.399 --> 00:10:18.710
+this script.
+
+430
+00:10:18.710 --> 00:10:18.720
+
+
+
+431
+00:10:18.720 --> 00:10:21.829
+This is nothing but a simple Python code.  There is a
+
+432
+00:10:21.829 --> 00:10:21.839
+
+
+
+433
+00:10:21.839 --> 00:10:24.310
+Python code that is calling and executing three more Python codes
+
+434
+00:10:24.310 --> 00:10:25.910
+
+
+
+435
+00:10:25.910 --> 00:10:25.920
+
+
+
+436
+00:10:25.920 --> 00:10:28.630
+in sequence.  Ok?  What will happen in the second step is that
+
+437
+00:10:28.630 --> 00:10:28.640
+
+
+
+438
+00:10:28.640 --> 00:10:30.310
+when you run this script for the first time
+
+439
+00:10:30.310 --> 00:10:30.320
+
+
+
+440
+00:10:30.320 --> 00:10:32.710
+and when
+
+441
+00:10:32.710 --> 00:10:32.720
+
+
+
+442
+00:10:32.720 --> 00:10:36.949
+your entire RAG Eval suite runs for the first time, the results you will get will be
+
+443
+00:10:36.949 --> 00:10:39.430
+
+
+
+444
+00:10:39.430 --> 00:10:39.440
+
+
+
+445
+00:10:39.440 --> 00:10:41.990
+basically the results of your 14 matrices,
+
+446
+00:10:41.990 --> 00:10:42.000
+
+
+
+447
+00:10:42.000 --> 00:10:45.509
+you will save them somewhere.
+
+448
+00:10:45.509 --> 00:10:45.519
+
+
+
+449
+00:10:45.519 --> 00:10:47.110
+you will save them somewhere.
+
+450
+00:10:47.120 --> 00:10:51.350
+Preferably in a JSON file and this will
+
+451
+00:10:51.350 --> 00:10:51.360
+
+
+
+452
+00:10:51.360 --> 00:10:54.470
+serve as your baseline.  With this we will
+
+453
+00:10:54.470 --> 00:10:54.480
+
+
+
+454
+00:10:54.480 --> 00:10:58.150
+compare the future run to find out that
+
+455
+00:10:58.150 --> 00:10:58.160
+
+
+
+456
+00:10:58.160 --> 00:11:01.670
+we were in this state earlier.  Then we made changes.  If
+
+457
+00:11:01.670 --> 00:11:01.680
+
+
+
+458
+00:11:01.680 --> 00:11:04.069
+we come to a new state, is the new
+
+459
+00:11:04.069 --> 00:11:04.079
+
+
+
+460
+00:11:04.079 --> 00:11:06.630
+state worse than the previous one or not?  Ok
+
+461
+00:11:06.630 --> 00:11:06.640
+
+
+
+462
+00:11:06.640 --> 00:11:09.430
+?  So we're essentially saving our current
+
+463
+00:11:09.430 --> 00:11:09.440
+
+
+
+464
+00:11:09.440 --> 00:11:12.870
+state in this space line Jess on file.
+
+465
+00:11:12.870 --> 00:11:12.880
+
+
+
+466
+00:11:12.880 --> 00:11:15.350
+After that, what you will do in step three is that
+
+467
+00:11:15.350 --> 00:11:15.360
+
+
+
+468
+00:11:15.360 --> 00:11:18.550
+you will make some changes.   If
+
+469
+00:11:18.550 --> 00:11:18.560
+
+
+
+470
+00:11:18.560 --> 00:11:20.710
+you want to improve recall or you want to
+
+471
+00:11:20.710 --> 00:11:20.720
+
+
+
+472
+00:11:20.720 --> 00:11:23.350
+improve precision or you want to
+
+473
+00:11:23.350 --> 00:11:23.360
+
+
+
+474
+00:11:23.360 --> 00:11:25.030
+reduce latency, then you will
+
+475
+00:11:25.030 --> 00:11:25.040
+
+
+
+476
+00:11:25.040 --> 00:11:26.870
+make some changes in your system accordingly.  The changes can be anything.
+
+477
+00:11:26.870 --> 00:11:26.880
+
+
+
+478
+00:11:26.880 --> 00:11:28.470
+Increasing or decreasing the value of K
+
+479
+00:11:28.470 --> 00:11:28.480
+
+
+
+480
+00:11:28.480 --> 00:11:32.389
+or increasing or decreasing the chunk size or
+
+481
+00:11:32.389 --> 00:11:32.399
+
+
+
+482
+00:11:32.399 --> 00:11:35.269
+changing the model or changing the system properties.
+
+483
+00:11:35.269 --> 00:11:35.279
+
+
+
+484
+00:11:35.279 --> 00:11:36.949
+If you do any of these things,
+
+485
+00:11:36.949 --> 00:11:36.959
+
+
+
+486
+00:11:36.959 --> 00:11:39.910
+it comes under changes in step three.
+
+487
+00:11:39.910 --> 00:11:39.920
+
+
+
+488
+00:11:39.920 --> 00:11:43.190
+Once you've made the changes,
+
+489
+00:11:43.190 --> 00:11:43.200
+
+
+
+490
+00:11:43.200 --> 00:11:45.829
+what do you do in step four?  You will
+
+491
+00:11:45.829 --> 00:11:45.839
+
+
+
+492
+00:11:45.839 --> 00:11:50.630
+rerun this script again with the
+
+493
+00:11:50.630 --> 00:11:50.640
+
+
+
+494
+00:11:50.640 --> 00:11:53.829
+new version of the software.  And as soon as you
+
+495
+00:11:53.829 --> 00:11:53.839
+
+
+
+496
+00:11:53.839 --> 00:11:56.949
+run it again, you will get a new set of
+
+497
+00:11:56.949 --> 00:11:56.959
+
+
+
+498
+00:11:56.959 --> 00:11:59.990
+results which you will again save in
+
+499
+00:11:59.990 --> 00:12:00.000
+
+
+
+500
+00:12:00.000 --> 00:12:03.670
+the form of json and
+
+501
+00:12:03.670 --> 00:12:03.680
+
+
+
+502
+00:12:03.680 --> 00:12:07.110
+we can call this file candidate.json.
+
+503
+00:12:07.110 --> 00:12:07.120
+
+
+
+504
+00:12:07.120 --> 00:12:10.949
+So at this point I have two
+
+505
+00:12:10.949 --> 00:12:10.959
+
+
+
+506
+00:12:10.959 --> 00:12:13.509
+files.  One is baseline.json which
+
+507
+00:12:13.509 --> 00:12:13.519
+
+
+
+508
+00:12:13.519 --> 00:12:15.990
+captures the state before the changes
+
+509
+00:12:15.990 --> 00:12:16.000
+
+
+
+510
+00:12:16.000 --> 00:12:19.110
+and the other file is candidate.json
+
+511
+00:12:19.110 --> 00:12:19.120
+
+
+
+512
+00:12:19.120 --> 00:12:21.750
+which captures the evaluation results coming according to the current changes.
+
+513
+00:12:21.750 --> 00:12:23.509
+
+
+
+514
+00:12:23.509 --> 00:12:23.519
+
+
+
+515
+00:12:23.519 --> 00:12:25.430
+In both we have the results of the 14-4 matrix
+
+516
+00:12:25.430 --> 00:12:25.440
+
+
+
+517
+00:12:25.440 --> 00:12:28.230
+stud.  After that,
+
+518
+00:12:28.230 --> 00:12:28.240
+
+
+
+519
+00:12:28.240 --> 00:12:30.389
+what do we simply have to do in step five?  We have to
+
+520
+00:12:30.389 --> 00:12:30.399
+
+
+
+521
+00:12:30.399 --> 00:12:33.430
+compare.  We have to compare these two results.
+
+522
+00:12:33.430 --> 00:12:33.440
+
+
+
+523
+00:12:33.440 --> 00:12:35.990
+Matriculation by Matriculation, the
+
+524
+00:12:35.990 --> 00:12:36.000
+
+
+
+525
+00:12:36.000 --> 00:12:38.230
+value of this Matriculation was this much earlier.   This is it
+
+526
+00:12:38.230 --> 00:12:38.240
+
+
+
+527
+00:12:38.240 --> 00:12:40.550
+after the change.  The value of the second metric was
+
+528
+00:12:40.550 --> 00:12:40.560
+
+
+
+529
+00:12:40.560 --> 00:12:43.269
+this much.  This is it after the change.  We will
+
+530
+00:12:43.269 --> 00:12:43.279
+
+
+
+531
+00:12:43.279 --> 00:12:45.590
+compare them all and
+
+532
+00:12:45.590 --> 00:12:45.600
+
+
+
+533
+00:12:45.600 --> 00:12:50.949
+conclude on an individual basis whether any
+
+534
+00:12:50.949 --> 00:12:50.959
+
+
+
+535
+00:12:50.959 --> 00:12:54.230
+metric has become worse in comparison to the previous one.
+
+536
+00:12:54.230 --> 00:12:54.240
+
+
+
+537
+00:12:54.240 --> 00:12:57.269
+And this is what we call
+
+538
+00:12:57.269 --> 00:12:57.279
+
+
+
+539
+00:12:57.279 --> 00:12:59.269
+regression testing.  Essentially, these steps that I
+
+540
+00:12:59.269 --> 00:12:59.279
+
+
+
+541
+00:12:59.279 --> 00:13:02.150
+told you are what we
+
+542
+00:13:02.150 --> 00:13:02.160
+
+
+
+543
+00:13:02.160 --> 00:13:04.550
+call regression testing.  So this is what we're
+
+544
+00:13:04.550 --> 00:13:04.560
+
+
+
+545
+00:13:04.560 --> 00:13:06.790
+going to do in practice.  So let me
+
+546
+00:13:06.790 --> 00:13:09.269
+
+
+
+547
+00:13:09.269 --> 00:13:11.269
+
+
+
+548
+00:13:11.269 --> 00:13:11.279
+
+
+
+549
+00:13:11.279 --> 00:13:13.030
+tell you what essentially we will have to do and what changes we will have to make in the code.  First of all
+
+550
+00:13:13.030 --> 00:13:13.040
+
+
+
+551
+00:13:13.040 --> 00:13:15.670
+obviously you need your script.  Ok
+
+552
+00:13:15.670 --> 00:13:15.680
+
+
+
+553
+00:13:15.680 --> 00:13:19.670
+?  So let's call that script run
+
+554
+00:13:19.670 --> 00:13:19.680
+
+
+
+555
+00:13:19.680 --> 00:13:22.870
+eval and something.  Suppose this is the script with the
+
+556
+00:13:22.870 --> 00:13:22.880
+
+
+
+557
+00:13:22.880 --> 00:13:26.150
+help of which we will run all the other evaluates.
+
+558
+00:13:26.150 --> 00:13:26.160
+
+
+
+559
+00:13:26.160 --> 00:13:29.829
+And apart from this we will have to
+
+560
+00:13:29.829 --> 00:13:29.839
+
+
+
+561
+00:13:29.839 --> 00:13:32.150
+write another Python script.  Let's call
+
+562
+00:13:32.150 --> 00:13:32.160
+
+
+
+563
+00:13:32.160 --> 00:13:35.269
+it Compare Dotpy.  What
+
+564
+00:13:35.269 --> 00:13:35.279
+
+
+
+565
+00:13:35.279 --> 00:13:38.389
+will compare.py do?  I am basically making a flow diagram.
+
+566
+00:13:38.389 --> 00:13:38.399
+
+
+
+567
+00:13:38.399 --> 00:13:40.629
+When run eval is run for the first time,
+
+568
+00:13:40.629 --> 00:13:40.639
+
+
+
+569
+00:13:40.639 --> 00:13:44.310
+it will produce baseline.json
+
+570
+00:13:44.310 --> 00:13:44.320
+
+
+
+571
+00:13:44.320 --> 00:13:47.269
+and after that, whenever we
+
+572
+00:13:47.269 --> 00:13:47.279
+
+
+
+573
+00:13:47.279 --> 00:13:50.790
+run it again, run eval will give me
+
+574
+00:13:50.790 --> 00:13:50.800
+
+
+
+575
+00:13:50.800 --> 00:13:52.310
+candidate.json.
+
+576
+00:13:52.310 --> 00:13:55.269
+
+
+
+577
+00:13:55.269 --> 00:13:55.279
+
+
+
+578
+00:13:55.279 --> 00:13:57.750
+In compare.py, you simply have to send both these
+
+579
+00:13:57.750 --> 00:13:57.760
+
+
+
+580
+00:13:57.760 --> 00:14:01.110
+files as input.
+
+581
+00:14:01.110 --> 00:14:01.120
+
+
+
+582
+00:14:01.120 --> 00:14:02.790
+We will send both these files as input
+
+583
+00:14:02.790 --> 00:14:02.800
+
+
+
+584
+00:14:02.800 --> 00:14:05.110
+and what compare.py will do is it will
+
+585
+00:14:05.110 --> 00:14:05.120
+
+
+
+586
+00:14:05.120 --> 00:14:07.590
+calculate a delta and give it to me,
+
+587
+00:14:07.590 --> 00:14:07.600
+
+
+
+588
+00:14:07.600 --> 00:14:09.750
+delta means difference.  So we have 14
+
+589
+00:14:09.750 --> 00:14:09.760
+
+
+
+590
+00:14:09.760 --> 00:14:11.990
+matrices.  So those 14 metrics will come out to
+
+591
+00:14:11.990 --> 00:14:12.000
+
+
+
+592
+00:14:12.000 --> 00:14:14.310
+a delta on a metric basis.
+
+593
+00:14:14.310 --> 00:14:14.320
+
+
+
+594
+00:14:14.320 --> 00:14:19.269
+If that delta is negative, it means
+
+595
+00:14:19.269 --> 00:14:19.279
+
+
+
+596
+00:14:19.279 --> 00:14:22.069
+that a metric has regressed.  Its
+
+597
+00:14:22.069 --> 00:14:22.079
+
+
+
+598
+00:14:22.079 --> 00:14:25.430
+value has already decreased.  So we will understand
+
+599
+00:14:25.430 --> 00:14:25.440
+
+
+
+600
+00:14:25.440 --> 00:14:27.750
+that regression has happened there.  So
+
+601
+00:14:27.750 --> 00:14:27.760
+
+
+
+602
+00:14:27.760 --> 00:14:30.790
+this is essentially what we have to build.  The only
+
+603
+00:14:30.790 --> 00:14:30.800
+
+
+
+604
+00:14:30.800 --> 00:14:32.629
+problem is that there is a little
+
+605
+00:14:32.629 --> 00:14:32.639
+
+
+
+606
+00:14:32.639 --> 00:14:34.310
+complexity here.  Ok?
+
+607
+00:14:34.310 --> 00:14:34.320
+
+
+
+608
+00:14:34.320 --> 00:14:36.150
+What is Complexity?  The first
+
+609
+00:14:36.150 --> 00:14:36.160
+
+
+
+610
+00:14:36.160 --> 00:14:40.710
+complication is that
+
+611
+00:14:40.710 --> 00:14:40.720
+
+
+
+612
+00:14:40.720 --> 00:14:43.829
+not all matrices are the same.
+
+613
+00:14:43.829 --> 00:14:43.839
+
+
+
+614
+00:14:43.839 --> 00:14:45.990
+Not All
+
+615
+00:14:45.990 --> 00:14:46.000
+
+
+
+616
+00:14:46.000 --> 00:14:51.430
+Matrix Are Same.  Which basically means that there are
+
+617
+00:14:51.430 --> 00:14:51.440
+
+
+
+618
+00:14:51.440 --> 00:14:55.030
+some metrics whose
+
+619
+00:14:55.030 --> 00:14:55.040
+
+
+
+620
+00:14:55.040 --> 00:14:58.710
+high value is considered good.  True
+
+621
+00:14:58.710 --> 00:14:58.720
+
+
+
+622
+00:14:58.720 --> 00:15:02.389
+as Faithfulness or Recall or Precision.   The
+
+623
+00:15:02.389 --> 00:15:02.399
+
+
+
+624
+00:15:02.399 --> 00:15:05.430
+more 100's on the side, the better.  There are
+
+625
+00:15:05.430 --> 00:15:05.440
+
+
+
+626
+00:15:05.440 --> 00:15:08.150
+some metrics where the
+
+627
+00:15:08.150 --> 00:15:08.160
+
+
+
+628
+00:15:08.160 --> 00:15:11.269
+lower the better.  For example, if the
+
+629
+00:15:11.269 --> 00:15:11.279
+
+
+
+630
+00:15:11.279 --> 00:15:14.550
+latency is low, it is a good thing.   It is a
+
+631
+00:15:14.550 --> 00:15:14.560
+
+
+
+632
+00:15:14.560 --> 00:15:17.990
+good thing that the cost will be reduced.
+
+633
+00:15:17.990 --> 00:15:18.000
+
+
+
+634
+00:15:18.000 --> 00:15:21.350
+We have seen that the lesser the toxicity, the better.
+
+635
+00:15:21.350 --> 00:15:21.360
+
+
+
+636
+00:15:21.360 --> 00:15:24.069
+So basically, we will have to store this information somewhere about
+
+637
+00:15:24.069 --> 00:15:27.670
+
+
+
+638
+00:15:27.670 --> 00:15:27.680
+
+
+
+639
+00:15:27.680 --> 00:15:29.670
+
+
+
+640
+00:15:29.680 --> 00:15:33.430
+what type of metric a particular one is.  If he increases it
+
+641
+00:15:33.430 --> 00:15:33.440
+
+
+
+642
+00:15:33.440 --> 00:15:36.150
+is good or if he decreases it is good.
+
+643
+00:15:36.150 --> 00:15:36.160
+
+
+
+644
+00:15:36.160 --> 00:15:38.629
+We will have to keep this information somewhere.
+
+645
+00:15:38.629 --> 00:15:38.639
+
+
+
+646
+00:15:38.639 --> 00:15:41.509
+This is a complexity.  Ok?
+
+647
+00:15:41.509 --> 00:15:41.519
+
+
+
+648
+00:15:41.519 --> 00:15:45.430
+What is Second Complexity?  That whatever we are
+
+649
+00:15:45.430 --> 00:15:45.440
+
+
+
+650
+00:15:45.440 --> 00:15:49.189
+running,
+
+651
+00:15:49.189 --> 00:15:49.199
+
+
+
+652
+00:15:49.199 --> 00:15:51.749
+essentially if you look at it, they are basically
+
+653
+00:15:51.749 --> 00:15:51.759
+
+
+
+654
+00:15:51.759 --> 00:15:54.389
+LLM as a judge.  Most of the Evals.
+
+655
+00:15:54.389 --> 00:15:54.399
+
+
+
+656
+00:15:54.399 --> 00:15:56.790
+If you leave the operational Evals, then
+
+657
+00:15:56.790 --> 00:15:56.800
+
+
+
+658
+00:15:56.800 --> 00:15:59.030
+you can take your quality Evals or safety Evals.
+
+659
+00:15:59.030 --> 00:15:59.040
+
+
+
+660
+00:15:59.040 --> 00:16:01.590
+Essentially under the hood they are
+
+661
+00:16:01.590 --> 00:16:01.600
+
+
+
+662
+00:16:01.600 --> 00:16:05.110
+using an LLM judge which basically means that on a
+
+663
+00:16:05.110 --> 00:16:05.120
+
+
+
+664
+00:16:05.120 --> 00:16:09.910
+run to run basis a system may have a bit of a
+
+665
+00:16:09.910 --> 00:16:09.920
+
+
+
+666
+00:16:09.920 --> 00:16:13.110
+probabilistic nature.  Which
+
+667
+00:16:13.110 --> 00:16:13.120
+
+
+
+668
+00:16:13.120 --> 00:16:17.829
+basically means that suppose you
+
+669
+00:16:17.829 --> 00:16:17.839
+
+
+
+670
+00:16:17.839 --> 00:16:19.350
+basically means that suppose you
+
+671
+00:16:19.360 --> 00:16:23.829
+ran this pipeline once and used all the metrics.  Then if
+
+672
+00:16:23.829 --> 00:16:23.839
+
+
+
+673
+00:16:23.839 --> 00:16:27.430
+you run the same eval again next time without making any changes,
+
+674
+00:16:27.430 --> 00:16:27.440
+
+
+
+675
+00:16:27.440 --> 00:16:31.269
+you will still
+
+676
+00:16:31.269 --> 00:16:31.279
+
+
+
+677
+00:16:31.279 --> 00:16:33.350
+not get the exact same results.  I think you would agree
+
+678
+00:16:33.350 --> 00:16:33.360
+
+
+
+679
+00:16:33.360 --> 00:16:35.670
+to this.  Right?  You have a
+
+680
+00:16:35.670 --> 00:16:35.680
+
+
+
+681
+00:16:35.680 --> 00:16:38.629
+system that has 14 metrics that
+
+682
+00:16:38.629 --> 00:16:38.639
+
+
+
+683
+00:16:38.639 --> 00:16:41.509
+you're measuring.  Once you run that,
+
+684
+00:16:41.509 --> 00:16:41.519
+
+
+
+685
+00:16:41.519 --> 00:16:43.110
+you get some numbers for 14 metrics.
+
+686
+00:16:43.110 --> 00:16:43.120
+
+
+
+687
+00:16:43.120 --> 00:16:45.509
+For example, your precision
+
+688
+00:16:45.509 --> 00:16:45.519
+
+
+
+689
+00:16:45.519 --> 00:16:48.949
+value is 85.6.
+
+690
+00:16:48.949 --> 00:16:48.959
+
+
+
+691
+00:16:48.959 --> 00:16:51.110
+Now if you do not make any changes in the system and
+
+692
+00:16:51.110 --> 00:16:51.120
+
+
+
+693
+00:16:51.120 --> 00:16:52.949
+measure the precision again, then there is a
+
+694
+00:16:52.949 --> 00:16:52.959
+
+
+
+695
+00:16:52.959 --> 00:16:57.990
+good chance that next time it may come out to be 84.8.  It
+
+696
+00:16:57.990 --> 00:16:58.000
+
+
+
+697
+00:16:58.000 --> 00:17:00.870
+can come.  And why is this difference occurring?
+
+698
+00:17:00.870 --> 00:17:00.880
+
+
+
+699
+00:17:00.880 --> 00:17:04.710
+Because under the hood we are using LLMS
+
+700
+00:17:04.710 --> 00:17:04.720
+
+
+
+701
+00:17:04.720 --> 00:17:07.429
+to calculate this matrix.  And as you know
+
+702
+00:17:07.429 --> 00:17:07.439
+
+
+
+703
+00:17:07.439 --> 00:17:10.630
+LLMs are probabilistic.  So in the same setup it can give
+
+704
+00:17:10.630 --> 00:17:10.640
+
+
+
+705
+00:17:10.640 --> 00:17:13.029
+you different results.
+
+706
+00:17:13.029 --> 00:17:13.039
+
+
+
+707
+00:17:13.039 --> 00:17:16.150
+Now the problem is that if in the same setup
+
+708
+00:17:16.150 --> 00:17:16.160
+
+
+
+709
+00:17:16.160 --> 00:17:21.829
+a metric goes from 85.6 to 84.8 then
+
+710
+00:17:21.829 --> 00:17:21.839
+
+
+
+711
+00:17:21.839 --> 00:17:24.789
+your compare.py will simply
+
+712
+00:17:24.789 --> 00:17:24.799
+
+
+
+713
+00:17:24.799 --> 00:17:28.870
+say that your metric has regressed.
+
+714
+00:17:28.870 --> 00:17:28.880
+
+
+
+715
+00:17:28.880 --> 00:17:31.990
+Right?  But regression has not happened because
+
+716
+00:17:31.990 --> 00:17:32.000
+
+
+
+717
+00:17:32.000 --> 00:17:34.310
+you have not made any changes in the system.
+
+718
+00:17:34.310 --> 00:17:34.320
+
+
+
+719
+00:17:34.320 --> 00:17:37.029
+So essentially this non-
+
+720
+00:17:37.029 --> 00:17:37.039
+
+
+
+721
+00:17:37.039 --> 00:17:39.029
+deterministic behavior of your
+
+722
+00:17:39.029 --> 00:17:39.039
+
+
+
+723
+00:17:39.039 --> 00:17:41.750
+regression testing will have to be
+
+724
+00:17:41.750 --> 00:17:41.760
+
+
+
+725
+00:17:41.760 --> 00:17:45.029
+suppressed in some way.  So now here I
+
+726
+00:17:45.029 --> 00:17:45.039
+
+
+
+727
+00:17:45.039 --> 00:17:47.909
+want you to think a little and tell me
+
+728
+00:17:47.909 --> 00:17:47.919
+
+
+
+729
+00:17:47.919 --> 00:17:49.830
+because again this is a live class, having a little
+
+730
+00:17:49.830 --> 00:17:49.840
+
+
+
+731
+00:17:49.840 --> 00:17:52.630
+interaction is healthy.  Can you tell me
+
+732
+00:17:52.630 --> 00:17:52.640
+
+
+
+733
+00:17:52.640 --> 00:17:55.510
+how we can solve this problem?  That's where
+
+734
+00:17:55.510 --> 00:17:55.520
+
+
+
+735
+00:17:55.520 --> 00:17:59.190
+I am running my eval pipeline in the same configuration again and again
+
+736
+00:17:59.190 --> 00:17:59.200
+
+
+
+737
+00:17:59.200 --> 00:18:01.590
+and I am
+
+738
+00:18:01.590 --> 00:18:01.600
+
+
+
+739
+00:18:01.600 --> 00:18:04.470
+getting different results.  So obviously
+
+740
+00:18:04.470 --> 00:18:04.480
+
+
+
+741
+00:18:04.480 --> 00:18:06.310
+some metrics will go up, some will go down.
+
+742
+00:18:06.310 --> 00:18:06.320
+
+
+
+743
+00:18:06.320 --> 00:18:09.350
+So even without any change,
+
+744
+00:18:09.350 --> 00:18:09.360
+
+
+
+745
+00:18:09.360 --> 00:18:11.510
+regression is coming in the system.  So how to solve this
+
+746
+00:18:11.510 --> 00:18:11.520
+
+
+
+747
+00:18:11.520 --> 00:18:13.750
+?  According to you, what can be done?
+
+748
+00:18:13.750 --> 00:18:13.760
+
+
+
+749
+00:18:13.760 --> 00:18:16.470
+Amarjeet is saying noise threshold.  Harry is
+
+750
+00:18:16.470 --> 00:18:16.480
+
+
+
+751
+00:18:16.480 --> 00:18:19.190
+saying variance we can take.  Yes.  So
+
+752
+00:18:19.190 --> 00:18:19.200
+
+
+
+753
+00:18:19.200 --> 00:18:21.190
+basically you people know the answer.  Let
+
+754
+00:18:21.190 --> 00:18:21.200
+
+
+
+755
+00:18:21.200 --> 00:18:24.070
+me explain it.  Once again
+
+756
+00:18:24.070 --> 00:18:24.080
+
+
+
+757
+00:18:24.080 --> 00:18:26.549
+for those who don't know.  So what happens is that
+
+758
+00:18:26.549 --> 00:18:26.559
+
+
+
+759
+00:18:26.559 --> 00:18:29.669
+what you do is what I said that when
+
+760
+00:18:29.669 --> 00:18:29.679
+
+
+
+761
+00:18:29.679 --> 00:18:31.909
+you run your entire pipeline for the first time, the
+
+762
+00:18:31.909 --> 00:18:31.919
+
+
+
+763
+00:18:31.919 --> 00:18:35.270
+output that comes out of it, the
+
+764
+00:18:35.270 --> 00:18:35.280
+
+
+
+765
+00:18:35.280 --> 00:18:37.029
+score of all the metrics,
+
+766
+00:18:37.029 --> 00:18:37.039
+
+
+
+767
+00:18:37.039 --> 00:18:39.110
+you store it in a file
+
+768
+00:18:39.110 --> 00:18:39.120
+
+
+
+769
+00:18:39.120 --> 00:18:44.070
+which we call basen.json but in
+
+770
+00:18:44.070 --> 00:18:44.080
+
+
+
+771
+00:18:44.080 --> 00:18:47.270
+actuality what you do is that you do
+
+772
+00:18:47.270 --> 00:18:47.280
+
+
+
+773
+00:18:47.280 --> 00:18:49.990
+not create this file with just a single run, what
+
+774
+00:18:49.990 --> 00:18:50.000
+
+
+
+775
+00:18:50.000 --> 00:18:54.390
+you do is that in the same setup
+
+776
+00:18:54.390 --> 00:18:54.400
+
+
+
+777
+00:18:54.400 --> 00:18:56.950
+or should I say in the same initial setup,
+
+778
+00:18:56.950 --> 00:18:56.960
+
+
+
+779
+00:18:56.960 --> 00:18:59.350
+or should I say in the same initial setup,
+
+780
+00:18:59.360 --> 00:19:03.590
+you run the entire pipeline five to ten times.
+
+781
+00:19:03.590 --> 00:19:03.600
+
+
+
+782
+00:19:03.600 --> 00:19:09.110
+Ok?  So you did run one
+
+783
+00:19:09.110 --> 00:19:09.120
+
+
+
+784
+00:19:09.120 --> 00:19:13.190
+and you had scores for 14 metrics.
+
+785
+00:19:13.190 --> 00:19:13.200
+
+
+
+786
+00:19:13.200 --> 00:19:16.150
+Then you did Run to Kia without changing anything.
+
+787
+00:19:16.150 --> 00:19:16.160
+
+
+
+788
+00:19:16.160 --> 00:19:19.510
+So then you have scores for 14 metrics.
+
+789
+00:19:19.510 --> 00:19:19.520
+
+
+
+790
+00:19:19.520 --> 00:19:21.669
+Again there will be some variation
+
+791
+00:19:21.669 --> 00:19:21.679
+
+
+
+792
+00:19:21.679 --> 00:19:25.270
+in the scores.  If you
+
+793
+00:19:25.270 --> 00:19:25.280
+
+
+
+794
+00:19:25.280 --> 00:19:30.070
+take 10 runs in this way, you will get
+
+795
+00:19:30.070 --> 00:19:30.080
+
+
+
+796
+00:19:30.080 --> 00:19:33.110
+10 sets of 14 metric values.
+
+797
+00:19:33.110 --> 00:19:33.120
+
+
+
+798
+00:19:33.120 --> 00:19:37.190
+Ok?  Basically,
+
+799
+00:19:37.190 --> 00:19:37.200
+
+
+
+800
+00:19:37.200 --> 00:19:40.150
+how many values ​​will you have for each metric?  10
+
+801
+00:19:40.150 --> 00:19:40.160
+
+
+
+802
+00:19:40.160 --> 00:19:42.789
+values ​​will appear.  Let me explain this through an example,
+
+803
+00:19:42.789 --> 00:19:42.799
+
+
+
+804
+00:19:42.799 --> 00:19:45.029
+suppose we are talking about recall, then
+
+805
+00:19:45.029 --> 00:19:45.039
+
+
+
+806
+00:19:45.039 --> 00:19:47.510
+we measured the recall 10 times
+
+807
+00:19:47.510 --> 00:19:47.520
+
+
+
+808
+00:19:47.520 --> 00:19:50.230
+in the same setup.  90 came once,
+
+809
+00:19:50.230 --> 00:19:50.240
+
+
+
+810
+00:19:50.240 --> 00:19:54.310
+90.8 came once, 89.7 came once, so
+
+811
+00:19:54.310 --> 00:19:54.320
+
+
+
+812
+00:19:54.320 --> 00:19:57.350
+I have 10 values.
+
+813
+00:19:57.350 --> 00:19:57.360
+
+
+
+814
+00:19:57.360 --> 00:20:00.789
+What will I do now?  I will
+
+815
+00:20:00.789 --> 00:20:00.799
+
+
+
+816
+00:20:00.799 --> 00:20:03.110
+calculate the standard deviation of these 10 values.  Just to find out
+
+817
+00:20:03.110 --> 00:20:03.120
+
+
+
+818
+00:20:03.120 --> 00:20:05.350
+how much variability there is in these numbers.
+
+819
+00:20:05.350 --> 00:20:05.360
+
+
+
+820
+00:20:05.360 --> 00:20:09.270
+Ok?  And then to be on the safe
+
+821
+00:20:09.270 --> 00:20:09.280
+
+
+
+822
+00:20:09.280 --> 00:20:12.950
+side, I will take the two standard deviations, let's say
+
+823
+00:20:12.950 --> 00:20:12.960
+
+
+
+824
+00:20:12.960 --> 00:20:15.510
+this standard deviation comes out to be
+
+825
+00:20:15.510 --> 00:20:15.520
+
+
+
+826
+00:20:15.520 --> 00:20:17.270
+5 or
+
+827
+00:20:17.270 --> 00:20:17.280
+
+
+
+828
+00:20:17.280 --> 00:20:21.830
+5 standard deviations, so I will make 2 * 5 as
+
+829
+00:20:21.830 --> 00:20:21.840
+
+
+
+830
+00:20:21.840 --> 00:20:26.870
+one as my noise threshold, which
+
+831
+00:20:26.870 --> 00:20:26.880
+
+
+
+832
+00:20:26.880 --> 00:20:30.870
+basically means that if
+
+833
+00:20:30.870 --> 00:20:30.880
+
+
+
+834
+00:20:30.880 --> 00:20:33.510
+in future, after doing
+
+835
+00:20:33.510 --> 00:20:33.520
+
+
+
+836
+00:20:33.520 --> 00:20:37.990
+any experiment, if my recall
+
+837
+00:20:37.990 --> 00:20:38.000
+
+
+
+838
+00:20:38.000 --> 00:20:42.950
+value shows a delta of less than one, then
+
+839
+00:20:42.950 --> 00:20:42.960
+
+
+
+840
+00:20:42.960 --> 00:20:47.510
+I will consider it as noise and not regression.   Let me
+
+841
+00:20:47.510 --> 00:20:47.520
+
+
+
+842
+00:20:47.520 --> 00:20:50.070
+explain again through an example.  I had a
+
+843
+00:20:50.070 --> 00:20:50.080
+
+
+
+844
+00:20:50.080 --> 00:20:54.630
+recall value of 90
+
+845
+00:20:54.630 --> 00:20:54.640
+
+
+
+846
+00:20:54.640 --> 00:20:57.750
+and I changed the value of K.
+
+847
+00:20:57.750 --> 00:20:57.760
+
+
+
+848
+00:20:57.760 --> 00:21:01.830
+I changed K from three to five.  And I
+
+849
+00:21:01.830 --> 00:21:01.840
+
+
+
+850
+00:21:01.840 --> 00:21:03.909
+restarted the system.  Re-
+
+851
+00:21:03.909 --> 00:21:03.919
+
+
+
+852
+00:21:03.919 --> 00:21:08.230
+ran the pipeline.  And now my recall came to 90.5 or let's say
+
+853
+00:21:08.230 --> 00:21:08.240
+
+
+
+854
+00:21:08.240 --> 00:21:12.390
+our recall came to 89.5,
+
+855
+00:21:12.390 --> 00:21:12.400
+
+
+
+856
+00:21:12.400 --> 00:21:16.870
+so clearly earlier it was 90, now it has become 89.5.
+
+857
+00:21:16.870 --> 00:21:16.880
+
+
+
+858
+00:21:16.880 --> 00:21:20.230
+But would I consider this a regression?  The
+
+859
+00:21:20.230 --> 00:21:20.240
+
+
+
+860
+00:21:20.240 --> 00:21:23.350
+answer is no.  Why?  Because this is
+
+861
+00:21:23.350 --> 00:21:27.830
+
+
+
+862
+00:21:27.830 --> 00:21:27.840
+
+
+
+863
+00:21:27.840 --> 00:21:30.230
+bringing it within the permissible range of plus minus one.  So I would say that this
+
+864
+00:21:30.230 --> 00:21:30.240
+
+
+
+865
+00:21:30.240 --> 00:21:34.230
+decrease in value from 90 to 89.5 is
+
+866
+00:21:34.230 --> 00:21:34.240
+
+
+
+867
+00:21:34.240 --> 00:21:37.110
+not because of this change, it is because of
+
+868
+00:21:37.110 --> 00:21:37.120
+
+
+
+869
+00:21:37.120 --> 00:21:40.149
+the noise that is inherently present in
+
+870
+00:21:40.149 --> 00:21:40.159
+
+
+
+871
+00:21:40.159 --> 00:21:43.510
+the system because of the LLM judge.  But if
+
+872
+00:21:43.510 --> 00:21:43.520
+
+
+
+873
+00:21:43.520 --> 00:21:48.789
+this value comes to 87.5 instead of 89.5
+
+874
+00:21:48.789 --> 00:21:48.799
+
+
+
+875
+00:21:48.799 --> 00:21:52.310
+then I would say that there has been regression
+
+876
+00:21:52.310 --> 00:21:52.320
+
+
+
+877
+00:21:52.320 --> 00:21:55.830
+because now it is out of the noise.  So this is how
+
+878
+00:21:55.830 --> 00:21:55.840
+
+
+
+879
+00:21:55.840 --> 00:21:59.510
+I will solve this second problem.
+
+880
+00:21:59.510 --> 00:21:59.520
+
+
+
+881
+00:21:59.520 --> 00:22:03.430
+So just what do I do now?  I
+
+882
+00:22:03.430 --> 00:22:06.870
+
+
+
+883
+00:22:06.870 --> 00:22:06.880
+
+
+
+884
+00:22:06.880 --> 00:22:11.270
+need two pieces of information for each of my metrics.  Right?  I need two pieces of information for recall,
+
+885
+00:22:11.270 --> 00:22:11.280
+
+
+
+886
+00:22:11.280 --> 00:22:14.549
+precision, and each of my metrics.  The
+
+887
+00:22:14.549 --> 00:22:14.559
+
+
+
+888
+00:22:14.559 --> 00:22:16.549
+first
+
+889
+00:22:16.549 --> 00:22:16.559
+
+
+
+890
+00:22:16.559 --> 00:22:20.070
+information is what type of metric it is.
+
+891
+00:22:20.070 --> 00:22:20.080
+
+
+
+892
+00:22:20.080 --> 00:22:22.470
+Decreasing or increasing is
+
+893
+00:22:22.470 --> 00:22:22.480
+
+
+
+894
+00:22:22.480 --> 00:22:24.230
+better than increasing or
+
+895
+00:22:24.230 --> 00:22:24.240
+
+
+
+896
+00:22:24.240 --> 00:22:25.990
+decreasing it.  I need this information.
+
+897
+00:22:25.990 --> 00:22:26.000
+
+
+
+898
+00:22:26.000 --> 00:22:28.950
+And second I want his noise
+
+899
+00:22:28.950 --> 00:22:28.960
+
+
+
+900
+00:22:28.960 --> 00:22:32.549
+threshold.  Ok?  For some it
+
+901
+00:22:32.549 --> 00:22:32.559
+
+
+
+902
+00:22:32.559 --> 00:22:34.470
+may be one, for some it may be
+
+903
+00:22:34.470 --> 00:22:34.480
+
+
+
+904
+00:22:34.480 --> 00:22:36.149
+five, for some it may be even more.
+
+905
+00:22:36.149 --> 00:22:36.159
+
+
+
+906
+00:22:36.159 --> 00:22:39.590
+So we capture this information for each metric.
+
+907
+00:22:39.590 --> 00:22:39.600
+
+
+
+908
+00:22:39.600 --> 00:22:42.149
+Ok?  And
+
+909
+00:22:42.149 --> 00:22:42.159
+
+
+
+910
+00:22:42.159 --> 00:22:46.070
+we store this also in a third file.
+
+911
+00:22:46.070 --> 00:22:46.080
+
+
+
+912
+00:22:46.080 --> 00:22:48.070
+We call that file
+
+913
+00:22:48.070 --> 00:22:48.080
+
+
+
+914
+00:22:48.080 --> 00:22:51.110
+Matric Registry from LETS.
+
+915
+00:22:51.110 --> 00:22:51.120
+
+
+
+916
+00:22:51.120 --> 00:22:53.110
+Ok?  I will show you this file
+
+917
+00:22:53.110 --> 00:22:53.120
+
+
+
+918
+00:22:53.120 --> 00:22:54.630
+after some time.  Essentially this
+
+919
+00:22:54.630 --> 00:22:54.640
+
+
+
+920
+00:22:54.640 --> 00:22:57.909
+information is captured in this file.  Ok?  So now these
+
+921
+00:22:57.909 --> 00:22:57.919
+
+
+
+922
+00:22:57.919 --> 00:23:03.510
+three files are my run pipeline,
+
+923
+00:23:03.510 --> 00:23:03.520
+
+
+
+924
+00:23:03.520 --> 00:23:06.149
+my
+
+925
+00:23:06.149 --> 00:23:06.159
+
+
+
+926
+00:23:06.159 --> 00:23:09.830
+compare.py and my metric
+
+927
+00:23:09.830 --> 00:23:09.840
+
+
+
+928
+00:23:09.840 --> 00:23:13.110
+registry, with the help of these three files now I can
+
+929
+00:23:13.110 --> 00:23:13.120
+
+
+
+930
+00:23:13.120 --> 00:23:16.789
+easily do regression testing.   Apart from this
+
+931
+00:23:16.789 --> 00:23:16.799
+
+
+
+932
+00:23:16.799 --> 00:23:18.870
+I do not need any other machinery.
+
+933
+00:23:18.870 --> 00:23:18.880
+
+
+
+934
+00:23:18.880 --> 00:23:21.830
+Ok?  Conceptually.  Yes, one
+
+935
+00:23:21.830 --> 00:23:21.840
+
+
+
+936
+00:23:21.840 --> 00:23:23.909
+more disclaimer.  I gave a disclaimer
+
+937
+00:23:23.909 --> 00:23:23.919
+
+
+
+938
+00:23:23.919 --> 00:23:25.830
+in the beginning that whatever we do will be
+
+939
+00:23:25.830 --> 00:23:25.840
+
+
+
+940
+00:23:25.840 --> 00:23:28.789
+discussed at a very conceptual level.  Will
+
+941
+00:23:28.789 --> 00:23:28.799
+
+
+
+942
+00:23:28.799 --> 00:23:30.789
+not use any tool.  That is
+
+943
+00:23:30.789 --> 00:23:30.799
+
+
+
+944
+00:23:30.799 --> 00:23:33.110
+one disclaimer.  The second disclaimer is
+
+945
+00:23:33.110 --> 00:23:33.120
+
+
+
+946
+00:23:33.120 --> 00:23:37.029
+that our golden data sets that we have been using are really,
+
+947
+00:23:37.029 --> 00:23:37.039
+
+
+
+948
+00:23:37.039 --> 00:23:40.870
+really small.
+
+949
+00:23:40.870 --> 00:23:40.880
+
+
+
+950
+00:23:40.880 --> 00:23:45.590
+Because of which
+
+951
+00:23:45.590 --> 00:23:45.600
+
+
+
+952
+00:23:45.600 --> 00:23:47.909
+you will see a lot of variability in our numbers.
+
+953
+00:23:47.909 --> 00:23:47.919
+
+
+
+954
+00:23:47.919 --> 00:23:51.909
+Meaning, quite literally, in one run
+
+955
+00:23:51.909 --> 00:23:51.919
+
+
+
+956
+00:23:51.919 --> 00:23:54.789
+your
+
+957
+00:23:54.789 --> 00:23:54.799
+
+
+
+958
+00:23:54.799 --> 00:24:00.310
+PII leakage may be 60% and in another run
+
+959
+00:24:00.310 --> 00:24:00.320
+
+
+
+960
+00:24:00.320 --> 00:24:03.669
+it is 80%. You also saw this that
+
+961
+00:24:03.669 --> 00:24:03.679
+
+
+
+962
+00:24:03.679 --> 00:24:06.549
+simply by running the system again, it
+
+963
+00:24:06.549 --> 00:24:06.559
+
+
+
+964
+00:24:06.559 --> 00:24:09.029
+jumped from 60 to 80.  There is so much variability.
+
+965
+00:24:09.029 --> 00:24:09.039
+
+
+
+966
+00:24:09.039 --> 00:24:11.590
+And it is all because our golden data
+
+967
+00:24:11.590 --> 00:24:11.600
+
+
+
+968
+00:24:11.600 --> 00:24:14.710
+sets are really small.  There are only 10, 5, 15
+
+969
+00:24:14.710 --> 00:24:14.720
+
+
+
+970
+00:24:14.720 --> 00:24:17.750
+entries.  As you increase the size of your data set
+
+971
+00:24:17.750 --> 00:24:17.760
+
+
+
+972
+00:24:17.760 --> 00:24:20.230
+, you will
+
+973
+00:24:20.230 --> 00:24:20.240
+
+
+
+974
+00:24:20.240 --> 00:24:23.110
+find your system becoming more stable.
+
+975
+00:24:23.110 --> 00:24:23.120
+
+
+
+976
+00:24:23.120 --> 00:24:26.710
+Ok?  So I hope this thing is clear to you.
+
+977
+00:24:26.710 --> 00:24:26.720
+
+
+
+978
+00:24:26.720 --> 00:24:29.909
+Ok?  So I've written most of the code
+
+979
+00:24:29.909 --> 00:24:29.919
+
+
+
+980
+00:24:29.919 --> 00:24:32.950
+and again, there's not much focus on the code.
+
+981
+00:24:32.950 --> 00:24:32.960
+
+
+
+982
+00:24:32.960 --> 00:24:35.350
+Aldo, I'll tell you what everything
+
+983
+00:24:35.350 --> 00:24:35.360
+
+
+
+984
+00:24:35.360 --> 00:24:38.549
+means.  But the idea is to see this entire thing
+
+985
+00:24:38.549 --> 00:24:38.559
+
+
+
+986
+00:24:38.559 --> 00:24:42.070
+in action.  Ok?  So let's do it step
+
+987
+00:24:42.070 --> 00:24:42.080
+
+
+
+988
+00:24:42.080 --> 00:24:43.830
+by step.
+
+989
+00:24:43.830 --> 00:24:43.840
+
+
+
+990
+00:24:43.840 --> 00:24:47.830
+I will tell you how to implement it in code.  A
+
+991
+00:24:47.830 --> 00:24:47.840
+
+
+
+992
+00:24:47.840 --> 00:24:49.669
+here let
+
+993
+00:24:49.669 --> 00:24:49.679
+
+
+
+994
+00:24:49.679 --> 00:24:52.390
+me first
+
+995
+00:24:52.390 --> 00:24:52.400
+
+
+
+996
+00:24:52.400 --> 00:24:55.510
+increase the font size.  I have
+
+997
+00:24:55.510 --> 00:24:55.520
+
+
+
+998
+00:24:55.520 --> 00:24:57.190
+written all the steps here.  We will continue making
+
+999
+00:24:57.190 --> 00:24:57.200
+
+
+
+1000
+00:24:57.200 --> 00:24:59.110
+these changes to our existing code base.
+
+1001
+00:24:59.110 --> 00:24:59.120
+
+
+
+1002
+00:24:59.120 --> 00:25:00.950
+And once you make all the changes,
+
+1003
+00:25:00.950 --> 00:25:00.960
+
+
+
+1004
+00:25:00.960 --> 00:25:04.390
+your code will be ready for regression testing
+
+1005
+00:25:04.390 --> 00:25:04.400
+
+
+
+1006
+00:25:04.400 --> 00:25:05.990
+and I will also show you a demo.
+
+1007
+00:25:05.990 --> 00:25:06.000
+
+
+
+1008
+00:25:06.000 --> 00:25:10.390
+Ok?  So first of all we will have to
+
+1009
+00:25:10.390 --> 00:25:13.269
+
+
+
+1010
+00:25:13.269 --> 00:25:13.279
+
+
+
+1011
+00:25:13.279 --> 00:25:15.430
+improve our current setup a little bit.  So what's our setup like right now
+
+1012
+00:25:15.430 --> 00:25:15.440
+
+
+
+1013
+00:25:15.440 --> 00:25:19.510
+?  I will show you that we have created an eval
+
+1014
+00:25:19.510 --> 00:25:19.520
+
+
+
+1015
+00:25:19.520 --> 00:25:21.669
+folder and in it we have
+
+1016
+00:25:21.669 --> 00:25:21.679
+
+
+
+1017
+00:25:21.679 --> 00:25:23.990
+put our different eval files.  Let me
+
+1018
+00:25:23.990 --> 00:25:24.000
+
+
+
+1019
+00:25:24.000 --> 00:25:27.669
+show you.  For example, we have
+
+1020
+00:25:27.669 --> 00:25:27.679
+
+
+
+1021
+00:25:27.679 --> 00:25:31.430
+three files of operations and operational events.
+
+1022
+00:25:31.430 --> 00:25:31.440
+
+
+
+1023
+00:25:31.440 --> 00:25:33.990
+So one is equal underscores reliability.
+
+1024
+00:25:33.990 --> 00:25:34.000
+
+
+
+1025
+00:25:34.000 --> 00:25:36.710
+We made this in the last class.  We have an
+
+1026
+00:25:36.710 --> 00:25:36.720
+
+
+
+1027
+00:25:36.720 --> 00:25:38.230
+We made this in the last class.  We have an
+
+1028
+00:25:38.240 --> 00:25:40.549
+eval underscore cost.  We also
+
+1029
+00:25:40.549 --> 00:25:40.559
+
+
+
+1030
+00:25:40.559 --> 00:25:42.710
+made this in the last class.  And we have eval unders
+
+1031
+00:25:42.710 --> 00:25:42.720
+
+
+
+1032
+00:25:42.720 --> 00:25:45.269
+latency dot py.  So what I'm going to do is
+
+1033
+00:25:45.269 --> 00:25:45.279
+
+
+
+1034
+00:25:45.279 --> 00:25:46.710
+I'm going to organize this whole thing a little bit.
+
+1035
+00:25:46.710 --> 00:25:46.720
+
+
+
+1036
+00:25:46.720 --> 00:25:48.549
+How am I organizing myself?
+
+1037
+00:25:48.549 --> 00:25:48.559
+
+
+
+1038
+00:25:48.559 --> 00:25:51.830
+First of all, I have all my
+
+1039
+00:25:51.830 --> 00:25:51.840
+
+
+
+1040
+00:25:51.840 --> 00:25:54.549
+operational values.  There are basically three
+
+1041
+00:25:54.549 --> 00:25:54.559
+
+
+
+1042
+00:25:54.559 --> 00:25:58.710
+evals.  I am merging these and creating a single
+
+1043
+00:25:58.710 --> 00:25:58.720
+
+
+
+1044
+00:25:58.720 --> 00:26:00.870
+file.  And I'm calling that
+
+1045
+00:26:00.870 --> 00:26:00.880
+
+
+
+1046
+00:26:00.880 --> 00:26:02.470
+file
+
+1047
+00:26:02.470 --> 00:26:02.480
+
+
+
+1048
+00:26:02.480 --> 00:26:07.269
+eval under ops.  So basically when you
+
+1049
+00:26:07.269 --> 00:26:07.279
+
+
+
+1050
+00:26:07.279 --> 00:26:09.190
+run this single file, all your three
+
+1051
+00:26:09.190 --> 00:26:09.200
+
+
+
+1052
+00:26:09.200 --> 00:26:12.549
+operational values ​​will be run.  Ok?
+
+1053
+00:26:12.549 --> 00:26:12.559
+
+
+
+1054
+00:26:12.559 --> 00:26:15.669
+Secondly, I am doing the same work on safety evals
+
+1055
+00:26:15.669 --> 00:26:15.679
+
+
+
+1056
+00:26:15.679 --> 00:26:17.269
+also.  So if you look again at this point,
+
+1057
+00:26:17.269 --> 00:26:17.279
+
+
+
+1058
+00:26:17.279 --> 00:26:19.430
+we have three separate files for safety also.
+
+1059
+00:26:19.430 --> 00:26:19.440
+
+
+
+1060
+00:26:19.440 --> 00:26:23.269
+So we have Eval Leakage,
+
+1061
+00:26:23.269 --> 00:26:23.279
+
+
+
+1062
+00:26:23.279 --> 00:26:26.710
+Eval Toxicity and Eval Scope which
+
+1063
+00:26:26.710 --> 00:26:26.720
+
+
+
+1064
+00:26:26.720 --> 00:26:29.590
+checks scope adherence.  So we will merge these three as well.
+
+1065
+00:26:29.590 --> 00:26:29.600
+
+
+
+1066
+00:26:29.600 --> 00:26:33.669
+And we will again merge them
+
+1067
+00:26:33.669 --> 00:26:33.679
+
+
+
+1068
+00:26:33.679 --> 00:26:35.909
+into a single file and let's call that file
+
+1069
+00:26:35.909 --> 00:26:35.919
+
+
+
+1070
+00:26:35.919 --> 00:26:39.750
+to be eval underscore safety.
+
+1071
+00:26:39.750 --> 00:26:39.760
+
+
+
+1072
+00:26:39.760 --> 00:26:41.909
+Ok?  And I have already created both these files.
+
+1073
+00:26:41.909 --> 00:26:41.919
+
+
+
+1074
+00:26:41.919 --> 00:26:44.630
+You can go and see.  This is
+
+1075
+00:26:44.630 --> 00:26:44.640
+
+
+
+1076
+00:26:44.640 --> 00:26:47.190
+eval underscore opts.  In this we have
+
+1077
+00:26:47.190 --> 00:26:47.200
+
+
+
+1078
+00:26:47.200 --> 00:26:49.990
+merged all three files.  Now
+
+1079
+00:26:49.990 --> 00:26:50.000
+
+
+
+1080
+00:26:50.000 --> 00:26:52.149
+if you run this file, you will see all three operational
+
+1081
+00:26:52.149 --> 00:26:52.159
+
+
+
+1082
+00:26:52.159 --> 00:26:54.470
+events running simultaneously.  And
+
+1083
+00:26:54.470 --> 00:26:54.480
+
+
+
+1084
+00:26:54.480 --> 00:26:56.870
+similarly we have eval underscore safety
+
+1085
+00:26:56.870 --> 00:26:56.880
+
+
+
+1086
+00:26:56.880 --> 00:26:59.029
+in which again we merged all the three safety evals into
+
+1087
+00:26:59.029 --> 00:26:59.039
+
+
+
+1088
+00:26:59.039 --> 00:27:01.110
+a single file.  Which
+
+1089
+00:27:01.110 --> 00:27:01.120
+
+
+
+1090
+00:27:01.120 --> 00:27:03.510
+essentially means that if you want to
+
+1091
+00:27:03.510 --> 00:27:03.520
+
+
+
+1092
+00:27:03.520 --> 00:27:06.549
+organize your code a little more at this point,
+
+1093
+00:27:06.549 --> 00:27:08.549
+
+
+
+1094
+00:27:08.549 --> 00:27:10.710
+
+
+
+1095
+00:27:10.710 --> 00:27:10.720
+
+
+
+1096
+00:27:10.720 --> 00:27:13.029
+you can delete these individual operational evals and safety evals files.  And you
+
+1097
+00:27:13.029 --> 00:27:16.710
+
+
+
+1098
+00:27:16.710 --> 00:27:16.720
+
+
+
+1099
+00:27:16.720 --> 00:27:18.789
+can work on these consolidated files.  It's your choice.  Ok?  I have
+
+1100
+00:27:18.789 --> 00:27:18.799
+
+
+
+1101
+00:27:18.799 --> 00:27:21.909
+kept both.  Because individual files will make it
+
+1102
+00:27:21.909 --> 00:27:21.919
+
+
+
+1103
+00:27:21.919 --> 00:27:24.390
+easier for you to understand the code.  And
+
+1104
+00:27:24.390 --> 00:27:24.400
+
+
+
+1105
+00:27:24.400 --> 00:27:27.750
+you can use these merged files for regression testing.  That's why
+
+1106
+00:27:27.750 --> 00:27:29.350
+
+
+
+1107
+00:27:29.350 --> 00:27:29.360
+
+
+
+1108
+00:27:29.360 --> 00:27:31.350
+I have kept both the options.  But if you
+
+1109
+00:27:31.350 --> 00:27:31.360
+
+
+
+1110
+00:27:31.360 --> 00:27:32.950
+want to organize the code, clean it up
+
+1111
+00:27:32.950 --> 00:27:32.960
+
+
+
+1112
+00:27:32.960 --> 00:27:35.269
+, delete individual files.
+
+1113
+00:27:35.269 --> 00:27:35.279
+
+
+
+1114
+00:27:35.279 --> 00:27:39.430
+Ok?  And we are going to do the same thing
+
+1115
+00:27:39.430 --> 00:27:39.440
+
+
+
+1116
+00:27:39.440 --> 00:27:42.549
+in Quality Evals also.  Ok?  So
+
+1117
+00:27:42.549 --> 00:27:42.559
+
+
+
+1118
+00:27:42.559 --> 00:27:44.870
+I will
+
+1119
+00:27:44.870 --> 00:27:44.880
+
+
+
+1120
+00:27:44.880 --> 00:27:48.149
+not mix all the quality evals and make a single file.
+
+1121
+00:27:48.149 --> 00:27:48.159
+
+
+
+1122
+00:27:48.159 --> 00:27:50.950
+A instead we will have three
+
+1123
+00:27:50.950 --> 00:27:50.960
+
+
+
+1124
+00:27:50.960 --> 00:27:53.029
+files.  Actually there are probably still only three
+
+1125
+00:27:53.029 --> 00:27:53.039
+
+
+
+1126
+00:27:53.039 --> 00:27:55.510
+files if you remember.  There are three or four.  I don't know.
+
+1127
+00:27:55.510 --> 00:27:55.520
+
+
+
+1128
+00:27:55.520 --> 00:27:58.630
+So one of our files was for the
+
+1129
+00:27:58.630 --> 00:27:58.640
+
+
+
+1130
+00:27:58.640 --> 00:28:01.590
+retriever.  Let me quickly check.
+
+1131
+00:28:01.590 --> 00:28:01.600
+
+
+
+1132
+00:28:01.600 --> 00:28:04.789
+Eval Retriever.  This is one file.  A One was
+
+1133
+00:28:04.789 --> 00:28:04.799
+
+
+
+1134
+00:28:04.799 --> 00:28:08.230
+for our generator.  One was for our entire
+
+1135
+00:28:08.230 --> 00:28:08.240
+
+
+
+1136
+00:28:08.240 --> 00:28:10.870
+pipeline.  And one was for our
+
+1137
+00:28:10.870 --> 00:28:10.880
+
+
+
+1138
+00:28:10.880 --> 00:28:13.110
+application.  If you remember,
+
+1139
+00:28:13.110 --> 00:28:13.120
+
+
+
+1140
+00:28:13.120 --> 00:28:15.430
+this was the first one we made.  So we have
+
+1141
+00:28:15.430 --> 00:28:15.440
+
+
+
+1142
+00:28:15.440 --> 00:28:17.510
+four files for quality Evals.   There is only one
+
+1143
+00:28:17.510 --> 00:28:17.520
+
+
+
+1144
+00:28:17.520 --> 00:28:19.909
+problem in these four files.
+
+1145
+00:28:19.909 --> 00:28:19.919
+
+
+
+1146
+00:28:19.919 --> 00:28:22.789
+And the problem is that
+
+1147
+00:28:22.789 --> 00:28:22.799
+
+
+
+1148
+00:28:22.799 --> 00:28:25.750
+we had created these files in such a way that the
+
+1149
+00:28:25.750 --> 00:28:25.760
+
+
+
+1150
+00:28:25.760 --> 00:28:28.389
+output from them was printed in the terminal.
+
+1151
+00:28:28.389 --> 00:28:28.399
+
+
+
+1152
+00:28:28.399 --> 00:28:30.870
+So I have changed it a little bit.
+
+1153
+00:28:30.870 --> 00:28:30.880
+
+
+
+1154
+00:28:30.880 --> 00:28:32.870
+I've refactored the code a bit.
+
+1155
+00:28:32.870 --> 00:28:32.880
+
+
+
+1156
+00:28:32.880 --> 00:28:36.470
+And we have created this code in this manner.  Let
+
+1157
+00:28:36.470 --> 00:28:36.480
+
+
+
+1158
+00:28:36.480 --> 00:28:38.230
+me show you.  Like let me
+
+1159
+00:28:38.230 --> 00:28:38.240
+
+
+
+1160
+00:28:38.240 --> 00:28:41.269
+show you the eval underscore retriever.
+
+1161
+00:28:41.269 --> 00:28:41.279
+
+
+
+1162
+00:28:41.279 --> 00:28:45.430
+A Where did Eval Retriever go?  Here it is.
+
+1163
+00:28:45.430 --> 00:28:45.440
+
+
+
+1164
+00:28:45.440 --> 00:28:47.990
+Yes, it is actually on the screen.  In this
+
+1165
+00:28:47.990 --> 00:28:48.000
+
+
+
+1166
+00:28:48.000 --> 00:28:50.470
+we have kept the code exactly the same.  But we have
+
+1167
+00:28:50.470 --> 00:28:50.480
+
+
+
+1168
+00:28:50.480 --> 00:28:52.230
+organized it a little bit in the sense that we have
+
+1169
+00:28:52.230 --> 00:28:52.240
+
+
+
+1170
+00:28:52.240 --> 00:28:55.110
+created a run function.  So that
+
+1171
+00:28:55.110 --> 00:28:55.120
+
+
+
+1172
+00:28:55.120 --> 00:28:58.149
+any other script from outside can call this file
+
+1173
+00:28:58.149 --> 00:28:58.159
+
+
+
+1174
+00:28:58.159 --> 00:29:00.230
+and get it executed.  Earlier this was a
+
+1175
+00:29:00.230 --> 00:29:00.240
+
+
+
+1176
+00:29:00.240 --> 00:29:03.269
+single such procedural code, line by line.
+
+1177
+00:29:03.269 --> 00:29:03.279
+
+
+
+1178
+00:29:03.279 --> 00:29:06.870
+And we just put this inside an if name equals to
+
+1179
+00:29:06.870 --> 00:29:06.880
+
+
+
+1180
+00:29:06.880 --> 00:29:09.110
+main structure.  The idea
+
+1181
+00:29:09.110 --> 00:29:09.120
+
+
+
+1182
+00:29:09.120 --> 00:29:11.830
+is that now you can run this file yourself.
+
+1183
+00:29:11.830 --> 00:29:11.840
+
+
+
+1184
+00:29:11.840 --> 00:29:14.070
+Basically you can run this file
+
+1185
+00:29:14.070 --> 00:29:14.080
+
+
+
+1186
+00:29:14.080 --> 00:29:16.470
+and someone can also run this file from outside.
+
+1187
+00:29:16.470 --> 00:29:16.480
+
+
+
+1188
+00:29:16.480 --> 00:29:18.789
+That's why we refactored this entire file
+
+1189
+00:29:18.789 --> 00:29:18.799
+
+
+
+1190
+00:29:18.799 --> 00:29:20.870
+just a little bit.  And
+
+1191
+00:29:20.870 --> 00:29:20.880
+
+
+
+1192
+00:29:20.880 --> 00:29:22.710
+I have done the same thing in the rest also.  If you
+
+1193
+00:29:22.710 --> 00:29:22.720
+
+
+
+1194
+00:29:22.720 --> 00:29:25.430
+see, I have made the same changes in the generator file also.
+
+1195
+00:29:25.430 --> 00:29:25.440
+
+
+
+1196
+00:29:25.440 --> 00:29:29.110
+You can see the same.  Rest of the
+
+1197
+00:29:29.110 --> 00:29:29.120
+
+
+
+1198
+00:29:29.120 --> 00:29:31.350
+logic is exactly the same.
+
+1199
+00:29:31.350 --> 00:29:31.360
+
+
+
+1200
+00:29:31.360 --> 00:29:33.510
+Exactly the same changes have been made in the application file
+
+1201
+00:29:33.510 --> 00:29:33.520
+
+
+
+1202
+00:29:33.520 --> 00:29:36.789
+and also in the pipeline file.
+
+1203
+00:29:36.789 --> 00:29:36.799
+
+
+
+1204
+00:29:36.799 --> 00:29:39.029
+So this is our
+
+1205
+00:29:39.029 --> 00:29:39.039
+
+
+
+1206
+00:29:39.039 --> 00:29:41.669
+refactoring.  So these are the first three steps.
+
+1207
+00:29:41.669 --> 00:29:41.679
+
+
+
+1208
+00:29:41.679 --> 00:29:44.470
+We refactored the quality evals.
+
+1209
+00:29:44.470 --> 00:29:44.480
+
+
+
+1210
+00:29:44.480 --> 00:29:49.430
+A We brought the safety evals into a single file
+
+1211
+00:29:49.430 --> 00:29:49.440
+
+
+
+1212
+00:29:49.440 --> 00:29:51.909
+and we also brought the operational evals into a single
+
+1213
+00:29:51.909 --> 00:29:51.919
+
+
+
+1214
+00:29:51.919 --> 00:29:53.909
+file.  There is another change here,
+
+1215
+00:29:53.909 --> 00:29:53.919
+
+
+
+1216
+00:29:53.919 --> 00:29:57.110
+I will tell you about that also quickly.  And let me
+
+1217
+00:29:57.110 --> 00:29:57.120
+
+
+
+1218
+00:29:57.120 --> 00:29:59.190
+tell you what is there in it, we
+
+1219
+00:29:59.190 --> 00:29:59.200
+
+
+
+1220
+00:29:59.200 --> 00:30:00.950
+currently have
+
+1221
+00:30:00.950 --> 00:30:00.960
+
+
+
+1222
+00:30:00.960 --> 00:30:04.230
+these four different files for quality events, to
+
+1223
+00:30:04.230 --> 00:30:04.240
+
+
+
+1224
+00:30:04.240 --> 00:30:09.029
+tie them up so that they
+
+1225
+00:30:09.029 --> 00:30:09.039
+
+
+
+1226
+00:30:09.039 --> 00:30:12.870
+get the same input and the output comes from the same place
+
+1227
+00:30:12.870 --> 00:30:12.880
+
+
+
+1228
+00:30:12.880 --> 00:30:15.669
+in exactly the same format, for this I have
+
+1229
+00:30:15.669 --> 00:30:15.679
+
+
+
+1230
+00:30:15.679 --> 00:30:18.230
+written a small harness code, I have
+
+1231
+00:30:18.230 --> 00:30:18.240
+
+
+
+1232
+00:30:18.240 --> 00:30:20.549
+not written it, I mean I got it written by Klot, you will find it
+
+1233
+00:30:20.549 --> 00:30:20.559
+
+
+
+1234
+00:30:20.559 --> 00:30:23.430
+here harness.py, the work of this entire
+
+1235
+00:30:23.430 --> 00:30:23.440
+
+
+
+1236
+00:30:23.440 --> 00:30:27.430
+file is simply that it standardizes these
+
+1237
+00:30:27.430 --> 00:30:27.440
+
+
+
+1238
+00:30:27.440 --> 00:30:31.110
+four application quality events.
+
+1239
+00:30:31.110 --> 00:30:33.110
+
+
+
+1240
+00:30:33.110 --> 00:30:33.120
+
+
+
+1241
+00:30:33.120 --> 00:30:35.110
+Standardizes the way they run.  That's it.
+
+1242
+00:30:35.110 --> 00:30:35.120
+
+
+
+1243
+00:30:35.120 --> 00:30:38.950
+And it has no use.  If this
+
+1244
+00:30:38.950 --> 00:30:38.960
+
+
+
+1245
+00:30:38.960 --> 00:30:43.110
+harness.py does not exist, you will
+
+1246
+00:30:43.110 --> 00:30:43.120
+
+
+
+1247
+00:30:43.120 --> 00:30:44.789
+not be able to send the same input to all four and
+
+1248
+00:30:44.789 --> 00:30:46.389
+
+
+
+1249
+00:30:46.389 --> 00:30:46.399
+
+
+
+1250
+00:30:46.399 --> 00:30:48.470
+extract the output in the same standardized format.  So that is why I have
+
+1251
+00:30:48.470 --> 00:30:48.480
+
+
+
+1252
+00:30:48.480 --> 00:30:50.470
+created this file.  Ok?
+
+1253
+00:30:50.470 --> 00:30:50.480
+
+
+
+1254
+00:30:50.480 --> 00:30:53.669
+Harness Dr.py.  So now that you have understood these four things.
+
+1255
+00:30:53.669 --> 00:30:53.679
+
+
+
+1256
+00:30:53.679 --> 00:30:57.990
+Now what did we do?
+
+1257
+00:30:57.990 --> 00:30:58.000
+
+
+
+1258
+00:30:58.000 --> 00:31:00.149
+Created a script called run
+
+1259
+00:31:00.149 --> 00:31:00.159
+
+
+
+1260
+00:31:00.159 --> 00:31:02.310
+underscore sweet which is basically this
+
+1261
+00:31:02.310 --> 00:31:02.320
+
+
+
+1262
+00:31:02.320 --> 00:31:08.549
+file I was talking about.  This file is the
+
+1263
+00:31:08.549 --> 00:31:08.559
+
+
+
+1264
+00:31:08.559 --> 00:31:12.310
+main file that will
+
+1265
+00:31:12.310 --> 00:31:12.320
+
+
+
+1266
+00:31:12.320 --> 00:31:15.029
+carry the code to run all the scripts.  So that file is
+
+1267
+00:31:15.029 --> 00:31:15.039
+
+
+
+1268
+00:31:15.039 --> 00:31:17.990
+here, run sweet.  A what is she doing
+
+1269
+00:31:17.990 --> 00:31:18.000
+
+
+
+1270
+00:31:18.000 --> 00:31:21.909
+?  It is running all these files.
+
+1271
+00:31:21.909 --> 00:31:21.919
+
+
+
+1272
+00:31:21.919 --> 00:31:23.990
+?  It is running all these files.
+
+1273
+00:31:24.000 --> 00:31:26.230
+Ok?  This is the main pipeline.  So now if
+
+1274
+00:31:26.230 --> 00:31:26.240
+
+
+
+1275
+00:31:26.240 --> 00:31:28.470
+you ever need to do regression testing in the future,
+
+1276
+00:31:28.470 --> 00:31:28.480
+
+
+
+1277
+00:31:28.480 --> 00:31:31.669
+you will run the PY file containing the run sweet.
+
+1278
+00:31:31.669 --> 00:31:31.679
+
+
+
+1279
+00:31:31.679 --> 00:31:34.789
+And as soon as you
+
+1280
+00:31:34.789 --> 00:31:34.799
+
+
+
+1281
+00:31:34.799 --> 00:31:37.350
+run it, it will go behind the scenes and
+
+1282
+00:31:37.350 --> 00:31:37.360
+
+
+
+1283
+00:31:37.360 --> 00:31:39.509
+first run all your quality evals.
+
+1284
+00:31:39.509 --> 00:31:39.519
+
+
+
+1285
+00:31:39.519 --> 00:31:42.549
+Then your safety evals will run.
+
+1286
+00:31:42.549 --> 00:31:42.559
+
+
+
+1287
+00:31:42.559 --> 00:31:45.110
+Then will run your operational evals.  And it will
+
+1288
+00:31:45.110 --> 00:31:45.120
+
+
+
+1289
+00:31:45.120 --> 00:31:48.230
+generate a complete report and give you information about
+
+1290
+00:31:48.230 --> 00:31:48.240
+
+
+
+1291
+00:31:48.240 --> 00:31:51.509
+what scene is going on.  And when you run it for the first time,
+
+1292
+00:31:51.509 --> 00:31:53.909
+
+
+
+1293
+00:31:53.909 --> 00:31:53.919
+
+
+
+1294
+00:31:53.919 --> 00:31:57.190
+where will it collect and store all the results?  in basename dot
+
+1295
+00:31:57.190 --> 00:31:57.200
+
+
+
+1296
+00:31:57.200 --> 00:31:59.669
+json.  And then every subsequent time
+
+1297
+00:31:59.669 --> 00:31:59.679
+
+
+
+1298
+00:31:59.679 --> 00:32:01.909
+you run it, where will it store those results
+
+1299
+00:32:01.909 --> 00:32:01.919
+
+
+
+1300
+00:32:01.919 --> 00:32:05.430
+?
+
+1301
+00:32:05.430 --> 00:32:05.440
+
+
+
+1302
+00:32:05.440 --> 00:32:10.549
+In candidate.json.  So this is the file this a run sweet dotpy.
+
+1303
+00:32:10.549 --> 00:32:10.559
+
+
+
+1304
+00:32:10.559 --> 00:32:13.990
+I hope you understood its setup as well.
+
+1305
+00:32:13.990 --> 00:32:14.000
+
+
+
+1306
+00:32:14.000 --> 00:32:17.029
+Ok?  After that I have created another file called
+
+1307
+00:32:17.029 --> 00:32:17.039
+
+
+
+1308
+00:32:17.039 --> 00:32:19.590
+metric registry.  What is this file
+
+1309
+00:32:19.590 --> 00:32:19.600
+
+
+
+1310
+00:32:19.600 --> 00:32:21.269
+?  Which we just discussed.
+
+1311
+00:32:21.269 --> 00:32:21.279
+
+
+
+1312
+00:32:21.279 --> 00:32:23.430
+Solution to two problems.  This file will
+
+1313
+00:32:23.430 --> 00:32:23.440
+
+
+
+1314
+00:32:23.440 --> 00:32:25.590
+tell us what is the nature of each matrix in our 14 matrices
+
+1315
+00:32:25.590 --> 00:32:25.600
+
+
+
+1316
+00:32:25.600 --> 00:32:28.230
+?  Going up
+
+1317
+00:32:28.230 --> 00:32:28.240
+
+
+
+1318
+00:32:28.240 --> 00:32:31.590
+or coming down.  And
+
+1319
+00:32:31.590 --> 00:32:31.600
+
+
+
+1320
+00:32:31.600 --> 00:32:34.149
+what is its noise threshold in seconds?  So you will also find this file
+
+1321
+00:32:34.149 --> 00:32:34.159
+
+
+
+1322
+00:32:34.159 --> 00:32:36.710
+here in the Matriculation Registry.
+
+1323
+00:32:36.710 --> 00:32:36.720
+
+
+
+1324
+00:32:36.720 --> 00:32:38.950
+And here you can actually go and see that against
+
+1325
+00:32:38.950 --> 00:32:38.960
+
+
+
+1326
+00:32:38.960 --> 00:32:41.509
+every file, every metric, I have told you
+
+1327
+00:32:41.509 --> 00:32:41.519
+
+
+
+1328
+00:32:41.519 --> 00:32:43.590
+what is its direction?  Higher
+
+1329
+00:32:43.590 --> 00:32:43.600
+
+
+
+1330
+00:32:43.600 --> 00:32:45.830
+means it is better if it is higher and
+
+1331
+00:32:45.830 --> 00:32:45.840
+
+
+
+1332
+00:32:45.840 --> 00:32:49.269
+what is its noise tolerance?  Now where did this noise
+
+1333
+00:32:49.269 --> 00:32:49.279
+
+
+
+1334
+00:32:49.279 --> 00:32:52.070
+tolerance come from?  It is very simple.
+
+1335
+00:32:52.070 --> 00:32:52.080
+
+
+
+1336
+00:32:52.080 --> 00:32:57.430
+I tried running this file, Run Sweet Dotpy,
+
+1337
+00:32:57.430 --> 00:32:57.440
+
+
+
+1338
+00:32:57.440 --> 00:33:00.230
+multiple times.  The
+
+1339
+00:33:00.230 --> 00:33:00.240
+
+
+
+1340
+00:33:00.240 --> 00:33:02.549
+method I told you.  Although it should have been run
+
+1341
+00:33:02.549 --> 00:33:02.559
+
+
+
+1342
+00:33:02.559 --> 00:33:04.950
+10 times but I have
+
+1343
+00:33:04.950 --> 00:33:04.960
+
+
+
+1344
+00:33:04.960 --> 00:33:08.310
+run it twice.  Ok?  But in an ideal setup,
+
+1345
+00:33:08.310 --> 00:33:08.320
+
+
+
+1346
+00:33:08.320 --> 00:33:10.149
+you will run it 10 times.  I
+
+1347
+00:33:10.149 --> 00:33:10.159
+
+
+
+1348
+00:33:10.159 --> 00:33:13.110
+ran it twice because it takes time and money
+
+1349
+00:33:13.110 --> 00:33:13.120
+
+
+
+1350
+00:33:13.120 --> 00:33:15.430
+too.  So I'm not running it 10 times.
+
+1351
+00:33:15.430 --> 00:33:15.440
+
+
+
+1352
+00:33:15.440 --> 00:33:17.669
+But what would you do in an ideal setup?
+
+1353
+00:33:17.669 --> 00:33:17.679
+
+
+
+1354
+00:33:17.679 --> 00:33:20.549
+You will run this file 10 times without changing anything
+
+1355
+00:33:20.549 --> 00:33:20.559
+
+
+
+1356
+00:33:20.559 --> 00:33:24.149
+in your code.  And you will use these 10 bar values
+
+1357
+00:33:24.149 --> 00:33:24.159
+
+
+
+1358
+00:33:24.159 --> 00:33:27.909
+to calculate the standard
+
+1359
+00:33:27.909 --> 00:33:27.919
+
+
+
+1360
+00:33:27.919 --> 00:33:31.110
+deviation for each metric.  And then you
+
+1361
+00:33:31.110 --> 00:33:31.120
+
+
+
+1362
+00:33:31.120 --> 00:33:33.990
+multiply it by two, so the number that comes out,
+
+1363
+00:33:33.990 --> 00:33:34.000
+
+
+
+1364
+00:33:34.000 --> 00:33:37.110
+you will write it here for each of the metric.
+
+1365
+00:33:37.110 --> 00:33:37.120
+
+
+
+1366
+00:33:37.120 --> 00:33:40.549
+This is the setup.  Ok?  But currently your
+
+1367
+00:33:40.549 --> 00:33:40.559
+
+
+
+1368
+00:33:40.559 --> 00:33:43.669
+metric file is ready.  And lastly
+
+1369
+00:33:43.669 --> 00:33:43.679
+
+
+
+1370
+00:33:43.679 --> 00:33:47.669
+we have a compare.py which simply does what
+
+1371
+00:33:47.669 --> 00:33:47.679
+
+
+
+1372
+00:33:47.679 --> 00:33:51.830
+?  That it will pick up baseline dot json.  The
+
+1373
+00:33:51.830 --> 00:33:51.840
+
+
+
+1374
+00:33:51.840 --> 00:33:55.590
+candidate will pick up the json and the
+
+1375
+00:33:55.590 --> 00:33:55.600
+
+
+
+1376
+00:33:55.600 --> 00:33:58.230
+file containing this metric registry and
+
+1377
+00:33:58.230 --> 00:33:58.240
+
+
+
+1378
+00:33:58.240 --> 00:34:01.190
+on that basis will calculate the delta of each metric
+
+1379
+00:34:01.190 --> 00:34:01.200
+
+
+
+1380
+00:34:01.200 --> 00:34:04.310
+and tell you which
+
+1381
+00:34:04.310 --> 00:34:04.320
+
+
+
+1382
+00:34:04.320 --> 00:34:06.710
+metrics have been regressed.  There were
+
+1383
+00:34:06.710 --> 00:34:06.720
+
+
+
+1384
+00:34:06.720 --> 00:34:08.950
+no changes in which metric.  Which
+
+1385
+00:34:08.950 --> 00:34:08.960
+
+
+
+1386
+00:34:08.960 --> 00:34:11.669
+metrics have improved?  Ok?  So
+
+1387
+00:34:11.669 --> 00:34:11.679
+
+
+
+1388
+00:34:11.679 --> 00:34:15.349
+compare.py will give you the output.  Ok
+
+1389
+00:34:15.349 --> 00:34:15.359
+
+
+
+1390
+00:34:15.359 --> 00:34:19.430
+?  So I hope you understood the whole setup.
+
+1391
+00:34:19.430 --> 00:34:19.440
+
+
+
+1392
+00:34:19.440 --> 00:34:23.030
+Now I do one thing.  Let me
+
+1393
+00:34:23.030 --> 00:34:23.040
+
+
+
+1394
+00:34:23.040 --> 00:34:25.190
+run this whole thing for you once.  Ok
+
+1395
+00:34:25.190 --> 00:34:25.200
+
+
+
+1396
+00:34:25.200 --> 00:34:29.589
+?  So currently if you see,
+
+1397
+00:34:29.589 --> 00:34:29.599
+
+
+
+1398
+00:34:29.599 --> 00:34:33.030
+I already have this gram flour dot json.  Which
+
+1399
+00:34:33.030 --> 00:34:33.040
+
+
+
+1400
+00:34:33.040 --> 00:34:35.270
+basically means I have a baseline.
+
+1401
+00:34:35.270 --> 00:34:35.280
+
+
+
+1402
+00:34:35.280 --> 00:34:37.909
+This is the base line against which we will
+
+1403
+00:34:37.909 --> 00:34:37.919
+
+
+
+1404
+00:34:37.919 --> 00:34:40.149
+compare.  Infact I also have a
+
+1405
+00:34:40.149 --> 00:34:40.159
+
+
+
+1406
+00:34:40.159 --> 00:34:42.310
+candidate.json.  But let's do one thing, let's
+
+1407
+00:34:42.310 --> 00:34:42.320
+
+
+
+1408
+00:34:42.320 --> 00:34:45.909
+delete it.  And let's
+
+1409
+00:34:45.909 --> 00:34:45.919
+
+
+
+1410
+00:34:45.919 --> 00:34:48.149
+generate
+
+1411
+00:34:48.149 --> 00:34:48.159
+
+
+
+1412
+00:34:48.159 --> 00:34:50.869
+a new candidate dot json.  Ok?  So
+
+1413
+00:34:50.869 --> 00:34:50.879
+
+
+
+1414
+00:34:50.879 --> 00:34:52.470
+what do we have to do for that?  First of all
+
+1415
+00:34:52.470 --> 00:34:52.480
+
+
+
+1416
+00:34:52.480 --> 00:34:54.629
+we have to make one change.
+
+1417
+00:34:54.629 --> 00:34:54.639
+
+
+
+1418
+00:34:54.639 --> 00:34:56.710
+What do I change?  Let me tell you.
+
+1419
+00:34:56.710 --> 00:34:56.720
+
+
+
+1420
+00:34:56.720 --> 00:35:01.510
+We go and
+
+1421
+00:35:01.510 --> 00:35:01.520
+
+
+
+1422
+00:35:01.520 --> 00:35:04.870
+go to retriever.py and
+
+1423
+00:35:04.870 --> 00:35:09.990
+
+
+
+1424
+00:35:09.990 --> 00:35:10.000
+
+
+
+1425
+00:35:10.000 --> 00:35:12.150
+reduce your chunk size and chunk overlap.  Ok?  So
+
+1426
+00:35:12.150 --> 00:35:12.160
+
+
+
+1427
+00:35:12.160 --> 00:35:16.470
+currently let's say it is 1500.  I'll make this 500
+
+1428
+00:35:16.470 --> 00:35:16.480
+
+
+
+1429
+00:35:16.480 --> 00:35:19.829
+and this 100.  And
+
+1430
+00:35:19.829 --> 00:35:19.839
+
+
+
+1431
+00:35:19.839 --> 00:35:22.069
+I save this code.  So I made the
+
+1432
+00:35:22.069 --> 00:35:22.079
+
+
+
+1433
+00:35:22.079 --> 00:35:25.510
+changes.  Ok?  And what I will do is
+
+1434
+00:35:25.510 --> 00:35:28.150
+
+
+
+1435
+00:35:28.150 --> 00:35:28.160
+
+
+
+1436
+00:35:28.160 --> 00:35:31.190
+give it a narrative that our
+
+1437
+00:35:31.190 --> 00:35:31.200
+
+
+
+1438
+00:35:31.200 --> 00:35:33.990
+contextual relevance was very low.
+
+1439
+00:35:33.990 --> 00:35:34.000
+
+
+
+1440
+00:35:34.000 --> 00:35:36.870
+Around 43 44%.  If you remember,
+
+1441
+00:35:36.870 --> 00:35:36.880
+
+
+
+1442
+00:35:36.880 --> 00:35:39.190
+we want to expand on that.  So
+
+1443
+00:35:39.190 --> 00:35:39.200
+
+
+
+1444
+00:35:39.200 --> 00:35:40.870
+one way to increase it is to reduce your chunk
+
+1445
+00:35:40.870 --> 00:35:40.880
+
+
+
+1446
+00:35:40.880 --> 00:35:43.109
+size.  That's what we did.
+
+1447
+00:35:43.109 --> 00:35:43.119
+
+
+
+1448
+00:35:43.119 --> 00:35:45.670
+Ok?  And obviously since we've
+
+1449
+00:35:45.670 --> 00:35:45.680
+
+
+
+1450
+00:35:45.680 --> 00:35:49.190
+changed these values ​​we'll have to delete our chroma
+
+1451
+00:35:49.190 --> 00:35:49.200
+
+
+
+1452
+00:35:49.200 --> 00:35:51.990
+store, our vector database.
+
+1453
+00:35:51.990 --> 00:35:52.000
+
+
+
+1454
+00:35:52.000 --> 00:35:55.910
+So that will be the entire
+
+1455
+00:35:55.910 --> 00:35:55.920
+
+
+
+1456
+00:35:55.920 --> 00:35:57.910
+embedding again.  Because we have removed the chunk size.
+
+1457
+00:35:57.910 --> 00:35:57.920
+
+
+
+1458
+00:35:57.920 --> 00:36:01.510
+So what will we do now?
+
+1459
+00:36:01.510 --> 00:36:01.520
+
+
+
+1460
+00:36:01.520 --> 00:36:03.910
+Simply first of all I increase the font size a little.
+
+1461
+00:36:03.910 --> 00:36:03.920
+
+
+
+1462
+00:36:03.920 --> 00:36:05.670
+I think it is a bit small.  I don't know
+
+1463
+00:36:05.670 --> 00:36:05.680
+
+
+
+1464
+00:36:05.680 --> 00:36:08.470
+why it is not growing.
+
+1465
+00:36:08.470 --> 00:36:08.480
+
+
+
+1466
+00:36:08.480 --> 00:36:13.670
+Just one second.  I guess this is too big.  Let's clear a
+
+1467
+00:36:13.670 --> 00:36:15.990
+
+
+
+1468
+00:36:15.990 --> 00:36:16.000
+
+
+
+1469
+00:36:16.000 --> 00:36:27.030
+and we run this code.
+
+1470
+00:36:27.030 --> 00:36:27.040
+
+
+
+1471
+00:36:27.040 --> 00:36:28.790
+Look,
+
+1472
+00:36:28.790 --> 00:36:28.800
+
+
+
+1473
+00:36:28.800 --> 00:36:30.630
+this is the code we're running.
+
+1474
+00:36:30.630 --> 00:36:30.640
+
+
+
+1475
+00:36:30.640 --> 00:36:32.710
+What file are we running by going into Evals
+
+1476
+00:36:32.710 --> 00:36:32.720
+
+
+
+1477
+00:36:32.720 --> 00:36:36.230
+?  Run Sweet and here we are
+
+1478
+00:36:36.230 --> 00:36:36.240
+
+
+
+1479
+00:36:36.240 --> 00:36:39.190
+giving an input which will be logged and
+
+1480
+00:36:39.190 --> 00:36:39.200
+
+
+
+1481
+00:36:39.200 --> 00:36:42.150
+our input is that we are saying the
+
+1482
+00:36:42.150 --> 00:36:42.160
+
+
+
+1483
+00:36:42.160 --> 00:36:48.390
+chunk size is now 500 and the overlap is now
+
+1484
+00:36:48.390 --> 00:36:48.400
+
+
+
+1485
+00:36:48.400 --> 00:36:50.950
+100 okay?  So now as soon as I run this,
+
+1486
+00:36:50.950 --> 00:36:50.960
+
+
+
+1487
+00:36:50.960 --> 00:36:53.349
+you will see that my entire
+
+1488
+00:36:53.349 --> 00:36:53.359
+
+
+
+1489
+00:36:53.359 --> 00:36:55.430
+eval suite that we have built in the last five
+
+1490
+00:36:55.430 --> 00:36:55.440
+
+
+
+1491
+00:36:55.440 --> 00:36:58.230
+sessions will start executing automatically
+
+1492
+00:36:58.230 --> 00:36:58.240
+
+
+
+1493
+00:36:58.240 --> 00:37:00.310
+and when that execution is over,
+
+1494
+00:37:00.310 --> 00:37:00.320
+
+
+
+1495
+00:37:00.320 --> 00:37:02.630
+all those metrics will be logged and
+
+1496
+00:37:02.630 --> 00:37:02.640
+
+
+
+1497
+00:37:02.640 --> 00:37:04.550
+go into a candidate.json file
+
+1498
+00:37:04.550 --> 00:37:04.560
+
+
+
+1499
+00:37:04.560 --> 00:37:06.470
+which we will be able to compare.  So let me hit
+
+1500
+00:37:06.470 --> 00:37:06.480
+
+
+
+1501
+00:37:06.480 --> 00:37:08.790
+enter
+
+1502
+00:37:08.790 --> 00:37:08.800
+
+
+
+1503
+00:37:08.800 --> 00:37:11.030
+and this process will start.  The thing
+
+1504
+00:37:11.030 --> 00:37:11.040
+
+
+
+1505
+00:37:11.040 --> 00:37:13.750
+is that this will take some time because we are
+
+1506
+00:37:13.750 --> 00:37:13.760
+
+
+
+1507
+00:37:13.760 --> 00:37:18.790
+running literally 14-15 evaluations.  And
+
+1508
+00:37:18.790 --> 00:37:18.800
+
+
+
+1509
+00:37:18.800 --> 00:37:21.910
+look, the pipeline is being built.  Because
+
+1510
+00:37:21.910 --> 00:37:21.920
+
+
+
+1511
+00:37:21.920 --> 00:37:25.190
+we have deleted this entire vector database, it will be
+
+1512
+00:37:25.190 --> 00:37:25.200
+
+
+
+1513
+00:37:25.200 --> 00:37:27.349
+created again and
+
+1514
+00:37:27.349 --> 00:37:27.359
+
+
+
+1515
+00:37:27.359 --> 00:37:29.910
+then the pipeline will start and then
+
+1516
+00:37:29.910 --> 00:37:29.920
+
+
+
+1517
+00:37:29.920 --> 00:37:32.470
+all the evaluations will start running on it.   Let
+
+1518
+00:37:32.470 --> 00:37:32.480
+
+
+
+1519
+00:37:32.480 --> 00:37:34.630
+all the evaluations will start running on it.   Let
+
+1520
+00:37:34.640 --> 00:37:36.630
+me make this a little bigger.   The
+
+1521
+00:37:36.630 --> 00:37:36.640
+
+
+
+1522
+00:37:36.640 --> 00:37:39.589
+fact size can also be increased a little more.  And
+
+1523
+00:37:39.589 --> 00:37:39.599
+
+
+
+1524
+00:37:39.599 --> 00:37:41.270
+I come over here.  Look, now first of all a
+
+1525
+00:37:41.270 --> 00:37:41.280
+
+
+
+1526
+00:37:41.280 --> 00:37:43.270
+total of six evaluations are being done.
+
+1527
+00:37:43.270 --> 00:37:43.280
+
+
+
+1528
+00:37:43.280 --> 00:37:45.349
+Why six evaluations?  Look here,
+
+1529
+00:37:45.349 --> 00:37:45.359
+
+
+
+1530
+00:37:45.359 --> 00:37:47.589
+I'll tell you.  Six evaluations because there's an
+
+1531
+00:37:47.589 --> 00:37:47.599
+
+
+
+1532
+00:37:47.599 --> 00:37:51.349
+evaluation with a retriever.   The
+
+1533
+00:37:51.349 --> 00:37:51.359
+
+
+
+1534
+00:37:51.359 --> 00:37:53.750
+generator is being eval.  The pipeline is
+
+1535
+00:37:53.750 --> 00:37:53.760
+
+
+
+1536
+00:37:53.760 --> 00:37:55.829
+being eval.  The application is
+
+1537
+00:37:55.829 --> 00:37:55.839
+
+
+
+1538
+00:37:55.839 --> 00:37:58.069
+being evaluated.  That makes four.  Apart from that, the
+
+1539
+00:37:58.069 --> 00:37:58.079
+
+
+
+1540
+00:37:58.079 --> 00:38:00.310
+fifth safety one is also happening.  And the sixth
+
+1541
+00:38:00.310 --> 00:38:00.320
+
+
+
+1542
+00:38:00.320 --> 00:38:01.990
+operation is about to take place.  So
+
+1543
+00:38:01.990 --> 00:38:02.000
+
+
+
+1544
+00:38:02.000 --> 00:38:03.990
+we will show six.  Ok?  So look, this is the first one.
+
+1545
+00:38:03.990 --> 00:38:04.000
+
+
+
+1546
+00:38:04.000 --> 00:38:06.550
+These are our retriever
+
+1547
+00:38:06.550 --> 00:38:06.560
+
+
+
+1548
+00:38:06.560 --> 00:38:09.589
+values.  So you can see recall
+
+1549
+00:38:09.589 --> 00:38:09.599
+
+
+
+1550
+00:38:09.599 --> 00:38:12.150
+is 96.  The precision is 90.  I don't remember
+
+1551
+00:38:12.150 --> 00:38:12.160
+
+
+
+1552
+00:38:12.160 --> 00:38:14.790
+what the bass line was but whatever.  Now look the second one has
+
+1553
+00:38:14.790 --> 00:38:14.800
+
+
+
+1554
+00:38:14.800 --> 00:38:17.750
+started which is generator eval.
+
+1555
+00:38:17.750 --> 00:38:17.760
+
+
+
+1556
+00:38:17.760 --> 00:38:20.790
+A In this we had Faithfulness and which one else?
+
+1557
+00:38:20.790 --> 00:38:20.800
+
+
+
+1558
+00:38:20.800 --> 00:38:22.950
+Answer Relevance.  These will track two things.  It will take
+
+1559
+00:38:22.950 --> 00:38:22.960
+
+
+
+1560
+00:38:22.960 --> 00:38:25.750
+some time here.  It takes around
+
+1561
+00:38:25.750 --> 00:38:25.760
+
+
+
+1562
+00:38:25.760 --> 00:38:28.310
+5 minutes.  What I calculated.
+
+1563
+00:38:28.310 --> 00:38:28.320
+
+
+
+1564
+00:38:28.320 --> 00:38:30.710
+So if you want, you can ask any question
+
+1565
+00:38:30.710 --> 00:38:30.720
+
+
+
+1566
+00:38:30.720 --> 00:38:32.630
+on this point if you have any doubts.
+
+1567
+00:38:32.630 --> 00:38:32.640
+
+
+
+1568
+00:38:32.640 --> 00:38:35.430
+I have opened the chart.  So
+
+1569
+00:38:35.430 --> 00:38:35.440
+
+
+
+1570
+00:38:35.440 --> 00:38:37.910
+if you have any question, you can ask.
+
+1571
+00:38:37.910 --> 00:38:37.920
+
+
+
+1572
+00:38:37.920 --> 00:38:40.790
+Now the third one has started, which is the RAG
+
+1573
+00:38:40.790 --> 00:38:40.800
+
+
+
+1574
+00:38:40.800 --> 00:38:43.829
+tried one.  Can we do like direction
+
+1575
+00:38:43.829 --> 00:38:43.839
+
+
+
+1576
+00:38:43.839 --> 00:38:47.270
+as -1 and one multiply with the diff now we
+
+1577
+00:38:47.270 --> 00:38:47.280
+
+
+
+1578
+00:38:47.280 --> 00:38:50.470
+have standard definition to judge higher is
+
+1579
+00:38:50.470 --> 00:38:50.480
+
+
+
+1580
+00:38:50.480 --> 00:38:52.630
+better.
+
+1581
+00:38:52.630 --> 00:38:52.640
+
+
+
+1582
+00:38:52.640 --> 00:38:54.950
+Yes Amar, I mean we have written the code for the same thing.
+
+1583
+00:38:54.950 --> 00:38:54.960
+
+
+
+1584
+00:38:54.960 --> 00:39:00.310
+Meaning you can also do -1 and one.
+
+1585
+00:39:00.310 --> 00:39:00.320
+
+
+
+1586
+00:39:00.320 --> 00:39:03.750
+So in the GK Metric Registry PY file there are
+
+1587
+00:39:03.750 --> 00:39:03.760
+
+
+
+1588
+00:39:03.760 --> 00:39:06.150
+two pieces of information for each metric, what is the
+
+1589
+00:39:06.150 --> 00:39:06.160
+
+
+
+1590
+00:39:06.160 --> 00:39:09.990
+nature of that metric, whether it is
+
+1591
+00:39:09.990 --> 00:39:10.000
+
+
+
+1592
+00:39:10.000 --> 00:39:12.310
+good on the higher side or the lower side,
+
+1593
+00:39:12.310 --> 00:39:12.320
+
+
+
+1594
+00:39:12.320 --> 00:39:15.109
+and secondly we have calculated the noise threshold
+
+1595
+00:39:15.109 --> 00:39:15.119
+
+
+
+1596
+00:39:15.119 --> 00:39:17.190
+value of that metric, which we
+
+1597
+00:39:17.190 --> 00:39:17.200
+
+
+
+1598
+00:39:17.200 --> 00:39:19.510
+measured by running the baseline repeatedly with the help of
+
+1599
+00:39:19.510 --> 00:39:19.520
+
+
+
+1600
+00:39:19.520 --> 00:39:22.069
+standard deviation, that information
+
+1601
+00:39:22.069 --> 00:39:22.079
+
+
+
+1602
+00:39:22.079 --> 00:39:25.109
+is stored there.  That's it.
+
+1603
+00:39:25.109 --> 00:39:25.119
+
+
+
+1604
+00:39:25.119 --> 00:39:28.870
+We need that information while comparing.  Right?
+
+1605
+00:39:28.870 --> 00:39:28.880
+
+
+
+1606
+00:39:28.880 --> 00:39:31.510
+When we compare with the base line, we should
+
+1607
+00:39:31.510 --> 00:39:31.520
+
+
+
+1608
+00:39:31.520 --> 00:39:33.270
+know whether increase is good or
+
+1609
+00:39:33.270 --> 00:39:33.280
+
+
+
+1610
+00:39:33.280 --> 00:39:35.190
+decrease is good.  Only through this will regression be understood.
+
+1611
+00:39:35.190 --> 00:39:35.200
+
+
+
+1612
+00:39:35.200 --> 00:39:39.510
+And a second to see if the change is
+
+1613
+00:39:39.510 --> 00:39:39.520
+
+
+
+1614
+00:39:39.520 --> 00:39:42.550
+noise.  Should be greater than noise.
+
+1615
+00:39:42.550 --> 00:39:42.560
+
+
+
+1616
+00:39:42.560 --> 00:39:45.349
+How do you diagnose whether a bad answer is
+
+1617
+00:39:45.349 --> 00:39:45.359
+
+
+
+1618
+00:39:45.359 --> 00:39:48.550
+caused by retrieval and generation?  Like are you
+
+1619
+00:39:48.550 --> 00:39:48.560
+
+
+
+1620
+00:39:48.560 --> 00:39:50.710
+asking in the context of the entire application
+
+1621
+00:39:50.710 --> 00:39:50.720
+
+
+
+1622
+00:39:50.720 --> 00:39:52.710
+or
+
+1623
+00:39:52.710 --> 00:39:52.720
+
+
+
+1624
+00:39:52.720 --> 00:39:54.230
+in the context of regression testing.
+
+1625
+00:39:54.230 --> 00:39:54.240
+
+
+
+1626
+00:39:54.240 --> 00:39:55.829
+Amarjeet How do
+
+1627
+00:39:55.829 --> 00:39:55.839
+
+
+
+1628
+00:39:55.839 --> 00:39:58.390
+you diagnose what a bad answer is
+
+1629
+00:39:58.390 --> 00:39:58.400
+
+
+
+1630
+00:39:58.400 --> 00:40:01.190
+?  It depends on the metric.  All the
+
+1631
+00:40:01.190 --> 00:40:01.200
+
+
+
+1632
+00:40:01.200 --> 00:40:03.349
+metrics together will tell us this only.
+
+1633
+00:40:03.349 --> 00:40:03.359
+
+
+
+1634
+00:40:03.359 --> 00:40:07.750
+For example, if your
+
+1635
+00:40:07.750 --> 00:40:07.760
+
+
+
+1636
+00:40:07.760 --> 00:40:10.230
+recall is good, precision is good,
+
+1637
+00:40:10.230 --> 00:40:10.240
+
+
+
+1638
+00:40:10.240 --> 00:40:12.870
+contextual relevance is good but the answer is
+
+1639
+00:40:12.870 --> 00:40:12.880
+
+
+
+1640
+00:40:12.880 --> 00:40:16.230
+wrong then it is the generator's fault.  The wear
+
+1641
+00:40:16.230 --> 00:40:16.240
+
+
+
+1642
+00:40:16.240 --> 00:40:19.030
+edge generator has its matrix sorted.
+
+1643
+00:40:19.030 --> 00:40:19.040
+
+
+
+1644
+00:40:19.040 --> 00:40:21.589
+But if any of these metrics
+
+1645
+00:40:21.589 --> 00:40:21.599
+
+
+
+1646
+00:40:21.599 --> 00:40:25.190
+of the retriever is shaken then it is the retriever's fault.
+
+1647
+00:40:25.190 --> 00:40:25.200
+
+
+
+1648
+00:40:25.200 --> 00:40:27.109
+Look guys, now we have come to safety evals.
+
+1649
+00:40:27.109 --> 00:40:27.119
+
+
+
+1650
+00:40:27.119 --> 00:40:29.750
+Now safety evals will be major.
+
+1651
+00:40:29.750 --> 00:40:29.760
+
+
+
+1652
+00:40:29.760 --> 00:40:31.910
+Yes Harry it will take time.  Obviously, if
+
+1653
+00:40:31.910 --> 00:40:31.920
+
+
+
+1654
+00:40:31.920 --> 00:40:34.470
+you are integrating this into CI,
+
+1655
+00:40:34.470 --> 00:40:34.480
+
+
+
+1656
+00:40:34.480 --> 00:40:36.790
+these tests will take time to run.
+
+1657
+00:40:36.790 --> 00:40:36.800
+
+
+
+1658
+00:40:36.800 --> 00:40:39.750
+Obviously, there is no hurry here that it should be
+
+1659
+00:40:39.750 --> 00:40:39.760
+
+
+
+1660
+00:40:39.760 --> 00:40:41.670
+deployed immediately.
+
+1661
+00:40:41.670 --> 00:40:41.680
+
+
+
+1662
+00:40:41.680 --> 00:40:43.910
+Obviously, you can take time for deployment
+
+1663
+00:40:43.910 --> 00:40:43.920
+
+
+
+1664
+00:40:43.920 --> 00:40:46.710
+because you want only the best software to be
+
+1665
+00:40:46.710 --> 00:40:46.720
+
+
+
+1666
+00:40:46.720 --> 00:40:49.589
+deployed.  So it is not our concern
+
+1667
+00:40:49.589 --> 00:40:49.599
+
+
+
+1668
+00:40:49.599 --> 00:40:51.670
+how much time this whole thing is taking.
+
+1669
+00:40:51.670 --> 00:40:51.680
+
+
+
+1670
+00:40:51.680 --> 00:40:53.910
+This thing should be done properly.  That
+
+1671
+00:40:53.910 --> 00:40:53.920
+
+
+
+1672
+00:40:53.920 --> 00:40:57.430
+is the priority.  Just two minutes and
+
+1673
+00:40:57.430 --> 00:40:57.440
+
+
+
+1674
+00:40:57.440 --> 00:40:59.910
+we have the safety numbers.  After this, the
+
+1675
+00:40:59.910 --> 00:40:59.920
+
+
+
+1676
+00:40:59.920 --> 00:41:03.109
+operation numbers will come
+
+1677
+00:41:03.109 --> 00:41:03.119
+
+
+
+1678
+00:41:03.119 --> 00:41:06.470
+and our run will be successful.  Yes
+
+1679
+00:41:06.470 --> 00:41:06.480
+
+
+
+1680
+00:41:06.480 --> 00:41:08.710
+Harry next session is about online Evals.
+
+1681
+00:41:08.710 --> 00:41:08.720
+
+
+
+1682
+00:41:08.720 --> 00:41:11.750
+So whatever we have just read,
+
+1683
+00:41:11.750 --> 00:41:11.760
+
+
+
+1684
+00:41:11.760 --> 00:41:14.309
+we will run the same in the online setup also.  So that is
+
+1685
+00:41:14.309 --> 00:41:14.319
+
+
+
+1686
+00:41:14.319 --> 00:41:15.910
+also a very interesting session, the next one will
+
+1687
+00:41:15.910 --> 00:41:18.710
+
+
+
+1688
+00:41:18.710 --> 00:41:18.720
+
+
+
+1689
+00:41:18.720 --> 00:41:21.510
+complete our entire coverage.
+
+1690
+00:41:21.510 --> 00:41:21.520
+
+
+
+1691
+00:41:21.520 --> 00:41:23.190
+So you guys were not expecting that we would
+
+1692
+00:41:23.190 --> 00:41:23.200
+
+
+
+1693
+00:41:23.200 --> 00:41:25.349
+study online also?  Meaning this
+
+1694
+00:41:25.349 --> 00:41:25.359
+
+
+
+1695
+00:41:25.359 --> 00:41:28.309
+should not even be a question.
+
+1696
+00:41:28.309 --> 00:41:28.319
+
+
+
+1697
+00:41:28.319 --> 00:41:30.230
+When we are reading everything, we will obviously
+
+1698
+00:41:30.230 --> 00:41:30.240
+
+
+
+1699
+00:41:30.240 --> 00:41:32.390
+read online too.  Because by not covering it online,
+
+1700
+00:41:32.390 --> 00:41:32.400
+
+
+
+1701
+00:41:32.400 --> 00:41:35.990
+you basically covered only half the story.
+
+1702
+00:41:35.990 --> 00:41:36.000
+
+
+
+1703
+00:41:36.000 --> 00:41:38.230
+After deployment, if you do
+
+1704
+00:41:38.230 --> 00:41:38.240
+
+
+
+1705
+00:41:38.240 --> 00:41:40.630
+not know how to evaluate, if you do
+
+1706
+00:41:40.630 --> 00:41:40.640
+
+
+
+1707
+00:41:40.640 --> 00:41:44.870
+not know how to do evaluation, then there is no benefit.
+
+1708
+00:41:44.870 --> 00:41:44.880
+
+
+
+1709
+00:41:44.880 --> 00:41:47.910
+So, we're into the last leg of our
+
+1710
+00:41:47.910 --> 00:41:47.920
+
+
+
+1711
+00:41:47.920 --> 00:41:50.870
+pipeline.  We are taking out operational E Wales.
+
+1712
+00:41:50.870 --> 00:41:50.880
+
+
+
+1713
+00:41:50.880 --> 00:41:53.109
+Firstly, we are calculating the latency.
+
+1714
+00:41:53.109 --> 00:41:53.119
+
+
+
+1715
+00:41:53.119 --> 00:41:54.790
+So all this behavior will appear to you exactly the
+
+1716
+00:41:54.790 --> 00:41:54.800
+
+
+
+1717
+00:41:54.800 --> 00:41:57.109
+same as what you have
+
+1718
+00:41:57.109 --> 00:41:57.119
+
+
+
+1719
+00:41:57.119 --> 00:41:59.750
+seen in previous sessions.  We just kind of stitched it up.  It was
+
+1720
+00:41:59.750 --> 00:41:59.760
+
+
+
+1721
+00:41:59.760 --> 00:42:02.309
+tied down into a single
+
+1722
+00:42:02.309 --> 00:42:02.319
+
+
+
+1723
+00:42:02.319 --> 00:42:04.790
+script that rather than running everyone individually,
+
+1724
+00:42:04.790 --> 00:42:04.800
+
+
+
+1725
+00:42:04.800 --> 00:42:05.699
+we
+
+1726
+00:42:05.699 --> 00:42:05.709
+
+
+
+1727
+00:42:05.709 --> 00:42:06.950
+[nasal voice] ran an automated
+
+1728
+00:42:06.950 --> 00:42:06.960
+
+
+
+1729
+00:42:06.960 --> 00:42:09.109
+script that made all those behind-the-
+
+1730
+00:42:09.109 --> 00:42:09.119
+
+
+
+1731
+00:42:09.119 --> 00:42:11.109
+scenes things run automatically.  That's it.  That's it.
+
+1732
+00:42:11.109 --> 00:42:12.710
+
+
+
+1733
+00:42:12.710 --> 00:42:12.720
+
+
+
+1734
+00:42:12.720 --> 00:42:15.190
+We did not do anything new in today's class.  Just tied it up.  Yes, you
+
+1735
+00:42:15.190 --> 00:42:15.200
+
+
+
+1736
+00:42:15.200 --> 00:42:17.750
+can say this is CI in local.  Right?  That's correct.
+
+1737
+00:42:17.750 --> 00:42:17.760
+
+
+
+1738
+00:42:17.760 --> 00:42:20.950
+When you move this to GitHub
+
+1739
+00:42:20.950 --> 00:42:20.960
+
+
+
+1740
+00:42:20.960 --> 00:42:24.069
+with the help of GH actions, you are basically
+
+1741
+00:42:24.069 --> 00:42:24.079
+
+
+
+1742
+00:42:24.079 --> 00:42:26.470
+performing CI.  And this
+
+1743
+00:42:26.470 --> 00:42:26.480
+
+
+
+1744
+00:42:26.480 --> 00:42:28.710
+regression testing, if
+
+1745
+00:42:28.710 --> 00:42:28.720
+
+
+
+1746
+00:42:28.720 --> 00:42:30.870
+talked about at conceptual level, is actually a part of CI in
+
+1747
+00:42:30.870 --> 00:42:30.880
+
+
+
+1748
+00:42:30.880 --> 00:42:33.829
+a proper production setup.
+
+1749
+00:42:33.829 --> 00:42:33.839
+
+
+
+1750
+00:42:33.839 --> 00:42:36.950
+It is utilized only in ACI.
+
+1751
+00:42:36.950 --> 00:42:36.960
+
+
+
+1752
+00:42:36.960 --> 00:42:39.670
+So here are our latency values.  Now the
+
+1753
+00:42:39.670 --> 00:42:39.680
+
+
+
+1754
+00:42:39.680 --> 00:42:42.069
+cost is being calculated and the
+
+1755
+00:42:42.069 --> 00:42:42.079
+
+
+
+1756
+00:42:42.079 --> 00:42:45.910
+reliability will be calculated against the cost and that's it.  And
+
+1757
+00:42:45.910 --> 00:42:45.920
+
+
+
+1758
+00:42:45.920 --> 00:42:48.470
+this is costly by the way, this is an important
+
+1759
+00:42:48.470 --> 00:42:48.480
+
+
+
+1760
+00:42:48.480 --> 00:42:51.750
+point.  Despite the small data set, I
+
+1761
+00:42:51.750 --> 00:42:51.760
+
+
+
+1762
+00:42:51.760 --> 00:42:55.510
+think I am losing somewhere around ₹25
+
+1763
+00:42:55.510 --> 00:42:55.520
+
+
+
+1764
+00:42:55.520 --> 00:42:59.270
+to ₹30 and maybe more in one single
+
+1765
+00:42:59.270 --> 00:42:59.280
+
+
+
+1766
+00:42:59.280 --> 00:43:02.150
+execution of the pipeline.  Now imagine
+
+1767
+00:43:02.150 --> 00:43:02.160
+
+
+
+1768
+00:43:02.160 --> 00:43:05.109
+if our golden data sets are bigger,
+
+1769
+00:43:05.109 --> 00:43:05.119
+
+
+
+1770
+00:43:05.119 --> 00:43:08.390
+instead of 15 there are 50, 100 or 500 days in them,
+
+1771
+00:43:08.390 --> 00:43:08.400
+
+
+
+1772
+00:43:08.400 --> 00:43:11.349
+then this entire process that you are doing
+
+1773
+00:43:11.349 --> 00:43:11.359
+
+
+
+1774
+00:43:11.359 --> 00:43:14.150
+also has a cost which you have to keep
+
+1775
+00:43:14.150 --> 00:43:14.160
+
+
+
+1776
+00:43:14.160 --> 00:43:16.069
+in mind.  Just running the software
+
+1777
+00:43:16.069 --> 00:43:16.079
+
+
+
+1778
+00:43:16.079 --> 00:43:18.790
+isn't the only thing you have to be smart about when you're evaluating it.
+
+1779
+00:43:18.790 --> 00:43:21.109
+
+
+
+1780
+00:43:21.109 --> 00:43:21.119
+
+
+
+1781
+00:43:21.119 --> 00:43:23.510
+I mean Amar it really depends
+
+1782
+00:43:23.510 --> 00:43:23.520
+
+
+
+1783
+00:43:23.520 --> 00:43:28.309
+on your application.  And if it is possible that you are
+
+1784
+00:43:28.309 --> 00:43:28.319
+
+
+
+1785
+00:43:28.319 --> 00:43:31.030
+a domain expert and you understand
+
+1786
+00:43:31.030 --> 00:43:31.040
+
+
+
+1787
+00:43:31.040 --> 00:43:33.430
+how your RAG application works, what
+
+1788
+00:43:33.430 --> 00:43:33.440
+
+
+
+1789
+00:43:33.440 --> 00:43:36.550
+quality metrics work in it and
+
+1790
+00:43:36.550 --> 00:43:36.560
+
+
+
+1791
+00:43:36.560 --> 00:43:39.430
+whether there is any relation between them, then maybe
+
+1792
+00:43:39.430 --> 00:43:39.440
+
+
+
+1793
+00:43:39.440 --> 00:43:41.990
+you can create a composite number or a
+
+1794
+00:43:41.990 --> 00:43:42.000
+
+
+
+1795
+00:43:42.000 --> 00:43:44.950
+formula in which you can assign weights and
+
+1796
+00:43:44.950 --> 00:43:44.960
+
+
+
+1797
+00:43:44.960 --> 00:43:46.870
+find out from a single number
+
+1798
+00:43:46.870 --> 00:43:46.880
+
+
+
+1799
+00:43:46.880 --> 00:43:48.790
+what your overall quality is.  But
+
+1800
+00:43:48.790 --> 00:43:48.800
+
+
+
+1801
+00:43:48.800 --> 00:43:51.829
+according to my experience this is not generally done.  There
+
+1802
+00:43:51.829 --> 00:43:51.839
+
+
+
+1803
+00:43:51.839 --> 00:43:54.550
+is a reason these different
+
+1804
+00:43:54.550 --> 00:43:54.560
+
+
+
+1805
+00:43:54.560 --> 00:43:56.390
+metrics exist.  Because it
+
+1806
+00:43:56.390 --> 00:43:59.030
+
+
+
+1807
+00:43:59.030 --> 00:43:59.040
+
+
+
+1808
+00:43:59.040 --> 00:44:01.349
+explains different aspects of your RAG application.  So merge everything
+
+1809
+00:44:01.349 --> 00:44:01.359
+
+
+
+1810
+00:44:01.359 --> 00:44:04.470
+into a single dimension.  Most likely
+
+1811
+00:44:04.470 --> 00:44:04.480
+
+
+
+1812
+00:44:04.480 --> 00:44:07.030
+it's not useful.  Meaning it's an tempting
+
+1813
+00:44:07.030 --> 00:44:07.040
+
+
+
+1814
+00:44:07.040 --> 00:44:09.829
+idea.  So ya guys this is the thing.  Here is
+
+1815
+00:44:09.829 --> 00:44:09.839
+
+
+
+1816
+00:44:09.839 --> 00:44:14.230
+our output.  Here are all our 14
+
+1817
+00:44:14.230 --> 00:44:14.240
+
+
+
+1818
+00:44:14.240 --> 00:44:19.270
+metrics and their entire
+
+1819
+00:44:19.270 --> 00:44:19.280
+
+
+
+1820
+00:44:19.280 --> 00:44:22.790
+result is in front of us and if
+
+1821
+00:44:22.790 --> 00:44:22.800
+
+
+
+1822
+00:44:22.800 --> 00:44:25.990
+you see, here in the baseline, this
+
+1823
+00:44:25.990 --> 00:44:26.000
+
+
+
+1824
+00:44:26.000 --> 00:44:28.390
+file candidate.json has come in which
+
+1825
+00:44:28.390 --> 00:44:28.400
+
+
+
+1826
+00:44:28.400 --> 00:44:32.309
+exactly the same thing has been logged.  That's it.
+
+1827
+00:44:32.309 --> 00:44:32.319
+
+
+
+1828
+00:44:32.319 --> 00:44:35.109
+So now at this point we have our
+
+1829
+00:44:35.109 --> 00:44:35.119
+
+
+
+1830
+00:44:35.119 --> 00:44:40.150
+baseline.  What it was before and candidate.json is the
+
+1831
+00:44:40.150 --> 00:44:40.160
+
+
+
+1832
+00:44:40.160 --> 00:44:42.710
+result after the changes.
+
+1833
+00:44:42.710 --> 00:44:42.720
+
+
+
+1834
+00:44:42.720 --> 00:44:44.950
+Now what do you simply have to do?  These
+
+1835
+00:44:44.950 --> 00:44:44.960
+
+
+
+1836
+00:44:44.960 --> 00:44:47.270
+two files have to be compared.  Ok?
+
+1837
+00:44:47.270 --> 00:44:47.280
+
+
+
+1838
+00:44:47.280 --> 00:44:49.829
+And who will help in making the comparison?
+
+1839
+00:44:49.829 --> 00:44:49.839
+
+
+
+1840
+00:44:49.839 --> 00:44:51.750
+Your third file which is Matric
+
+1841
+00:44:51.750 --> 00:44:51.760
+
+
+
+1842
+00:44:51.760 --> 00:44:53.910
+Registry.  Because only then will it be known whether the
+
+1843
+00:44:53.910 --> 00:44:53.920
+
+
+
+1844
+00:44:53.920 --> 00:44:57.589
+increase in a number is a good thing or a bad
+
+1845
+00:44:57.589 --> 00:44:57.599
+
+
+
+1846
+00:44:57.599 --> 00:44:59.829
+thing.  And at the same time,
+
+1847
+00:44:59.829 --> 00:44:59.839
+
+
+
+1848
+00:44:59.839 --> 00:45:01.990
+we are also getting to know the noise threshold from the same file.  So now
+
+1849
+00:45:01.990 --> 00:45:02.000
+
+
+
+1850
+00:45:02.000 --> 00:45:05.270
+you don't have to do anything.
+
+1851
+00:45:05.270 --> 00:45:05.280
+
+
+
+1852
+00:45:05.280 --> 00:45:07.109
+I will simply tell you what to do.  You
+
+1853
+00:45:07.109 --> 00:45:07.119
+
+
+
+1854
+00:45:07.119 --> 00:45:11.190
+simply have to run this command.  We will run the
+
+1855
+00:45:11.190 --> 00:45:11.200
+
+
+
+1856
+00:45:11.200 --> 00:45:14.950
+compared file.  This file,
+
+1857
+00:45:14.950 --> 00:45:14.960
+
+
+
+1858
+00:45:14.960 --> 00:45:20.150
+sorry, this file, compare.py, and
+
+1859
+00:45:20.150 --> 00:45:20.160
+
+
+
+1860
+00:45:20.160 --> 00:45:22.470
+here we are telling in one input,
+
+1861
+00:45:22.470 --> 00:45:22.480
+
+
+
+1862
+00:45:22.480 --> 00:45:24.630
+what will happen if we tell all all?  This will
+
+1863
+00:45:24.630 --> 00:45:24.640
+
+
+
+1864
+00:45:24.640 --> 00:45:27.109
+tell us about each metric whether that metric has
+
+1865
+00:45:27.109 --> 00:45:27.119
+
+
+
+1866
+00:45:27.119 --> 00:45:30.150
+improved or worsened or is the same.
+
+1867
+00:45:30.150 --> 00:45:30.160
+
+
+
+1868
+00:45:30.160 --> 00:45:33.109
+Ok?  So let's run it.
+
+1869
+00:45:33.109 --> 00:45:33.119
+
+
+
+1870
+00:45:33.119 --> 00:45:35.430
+And this is the result.  This is the result
+
+1871
+00:45:35.430 --> 00:45:35.440
+
+
+
+1872
+00:45:35.440 --> 00:45:39.190
+guys.  Let me show you.  So most of the
+
+1873
+00:45:39.190 --> 00:45:39.200
+
+
+
+1874
+00:45:39.200 --> 00:45:42.309
+metrics are flat.
+
+1875
+00:45:42.309 --> 00:45:42.319
+
+
+
+1876
+00:45:42.319 --> 00:45:44.390
+Ok?  Most of the metrics are flat which
+
+1877
+00:45:44.390 --> 00:45:44.400
+
+
+
+1878
+00:45:44.400 --> 00:45:47.349
+basically means there isn't much variation.
+
+1879
+00:45:47.349 --> 00:45:47.359
+
+
+
+1880
+00:45:47.359 --> 00:45:49.270
+Whatever variation there is, it is
+
+1881
+00:45:49.270 --> 00:45:49.280
+
+
+
+1882
+00:45:49.280 --> 00:45:51.430
+variation within the noise threshold.  So we are
+
+1883
+00:45:51.430 --> 00:45:51.440
+
+
+
+1884
+00:45:51.440 --> 00:45:54.309
+considering it to be negligible.  Many metrics have
+
+1885
+00:45:54.309 --> 00:45:54.319
+
+
+
+1886
+00:45:54.319 --> 00:45:56.710
+improved.
+
+1887
+00:45:56.710 --> 00:45:56.720
+
+
+
+1888
+00:45:56.720 --> 00:46:00.150
+A look, a lot of metrics have been improved around four
+
+1889
+00:46:00.150 --> 00:46:00.160
+
+
+
+1890
+00:46:00.160 --> 00:46:03.109
+or five metrics.
+
+1891
+00:46:03.109 --> 00:46:03.119
+
+
+
+1892
+00:46:03.119 --> 00:46:06.150
+Including
+
+1893
+00:46:06.150 --> 00:46:06.160
+
+
+
+1894
+00:46:06.160 --> 00:46:09.510
+what was to be improved, that itself got reduced.
+
+1895
+00:46:09.510 --> 00:46:09.520
+
+
+
+1896
+00:46:09.520 --> 00:46:13.190
+Look at this two metrics regressed.  which
+
+1897
+00:46:13.190 --> 00:46:13.200
+
+
+
+1898
+00:46:13.200 --> 00:46:15.430
+two?  The contextual relevance for which
+
+1899
+00:46:15.430 --> 00:46:15.440
+
+
+
+1900
+00:46:15.440 --> 00:46:18.069
+we had done all the work was reduced.  Earlier
+
+1901
+00:46:18.069 --> 00:46:18.079
+
+
+
+1902
+00:46:18.079 --> 00:46:22.230
+he was around 45, now he has gone down to 38.  And
+
+1903
+00:46:22.230 --> 00:46:22.240
+
+
+
+1904
+00:46:22.240 --> 00:46:26.309
+our PII leakage score has
+
+1905
+00:46:26.309 --> 00:46:26.319
+
+
+
+1906
+00:46:26.319 --> 00:46:28.950
+also
+
+1907
+00:46:28.950 --> 00:46:28.960
+
+
+
+1908
+00:46:28.960 --> 00:46:31.750
+come down to six.  So this is also a huge
+
+1909
+00:46:31.750 --> 00:46:31.760
+
+
+
+1910
+00:46:31.760 --> 00:46:33.990
+regression.
+
+1911
+00:46:33.990 --> 00:46:34.000
+
+
+
+1912
+00:46:34.000 --> 00:46:37.270
+So now just what do you have to do?  After looking at this entire
+
+1913
+00:46:37.270 --> 00:46:37.280
+
+
+
+1914
+00:46:37.280 --> 00:46:40.550
+report you have to decide whether
+
+1915
+00:46:40.550 --> 00:46:40.560
+
+
+
+1916
+00:46:40.560 --> 00:46:44.550
+your system has regressed or not.
+
+1917
+00:46:44.550 --> 00:46:44.560
+
+
+
+1918
+00:46:44.560 --> 00:46:47.670
+Ok?  Now this is very obvious many times.  For
+
+1919
+00:46:47.670 --> 00:46:47.680
+
+
+
+1920
+00:46:47.680 --> 00:46:50.790
+example, if we talk about what is on the screen, then
+
+1921
+00:46:50.790 --> 00:46:50.800
+
+
+
+1922
+00:46:50.800 --> 00:46:53.589
+one of your safety
+
+1923
+00:46:53.589 --> 00:46:53.599
+
+
+
+1924
+00:46:53.599 --> 00:46:56.470
+metrics has reduced significantly.  Which is a
+
+1925
+00:46:56.470 --> 00:46:56.480
+
+
+
+1926
+00:46:56.480 --> 00:46:59.750
+big red flag.  If suddenly
+
+1927
+00:46:59.750 --> 00:46:59.760
+
+
+
+1928
+00:46:59.760 --> 00:47:02.230
+after making a change to a system, one of your safety
+
+1929
+00:47:02.230 --> 00:47:02.240
+
+
+
+1930
+00:47:02.240 --> 00:47:06.230
+metrics drops by 20%, it's a big
+
+1931
+00:47:06.230 --> 00:47:06.240
+
+
+
+1932
+00:47:06.240 --> 00:47:08.150
+red flag that the changes you made
+
+1933
+00:47:08.150 --> 00:47:08.160
+
+
+
+1934
+00:47:08.160 --> 00:47:09.910
+are not good.  Why would you compromise on safety
+
+1935
+00:47:09.910 --> 00:47:09.920
+
+
+
+1936
+00:47:09.920 --> 00:47:12.230
+?  Right?  And also your
+
+1937
+00:47:12.230 --> 00:47:12.240
+
+
+
+1938
+00:47:12.240 --> 00:47:14.550
+contextual relevance is taking a hit.
+
+1939
+00:47:14.550 --> 00:47:14.560
+
+
+
+1940
+00:47:14.560 --> 00:47:17.990
+So it appears that your system is regressing due to two metrics.
+
+1941
+00:47:17.990 --> 00:47:20.069
+
+
+
+1942
+00:47:20.069 --> 00:47:20.079
+
+
+
+1943
+00:47:20.079 --> 00:47:23.910
+However there is some improvement as well.
+
+1944
+00:47:23.910 --> 00:47:23.920
+
+
+
+1945
+00:47:23.920 --> 00:47:27.030
+So now here a human being will come
+
+1946
+00:47:27.030 --> 00:47:27.040
+
+
+
+1947
+00:47:27.040 --> 00:47:30.309
+into the picture and he will decide whether this is
+
+1948
+00:47:30.309 --> 00:47:30.319
+
+
+
+1949
+00:47:30.319 --> 00:47:33.750
+good or not, if this change is good or not, this is
+
+1950
+00:47:33.750 --> 00:47:33.760
+
+
+
+1951
+00:47:33.760 --> 00:47:35.670
+subjective.  It depends on
+
+1952
+00:47:35.670 --> 00:47:35.680
+
+
+
+1953
+00:47:35.680 --> 00:47:38.470
+your application.  But yes, you have
+
+1954
+00:47:38.470 --> 00:47:38.480
+
+
+
+1955
+00:47:38.480 --> 00:47:41.430
+this report in front of you through which you can understand
+
+1956
+00:47:41.430 --> 00:47:41.440
+
+
+
+1957
+00:47:41.440 --> 00:47:43.990
+which metrics went up after making any changes
+
+1958
+00:47:43.990 --> 00:47:44.000
+
+
+
+1959
+00:47:44.000 --> 00:47:47.349
+and which metrics went down.  This is the
+
+1960
+00:47:47.349 --> 00:47:47.359
+
+
+
+1961
+00:47:47.359 --> 00:47:49.910
+whole goal of regression testing.
+
+1962
+00:47:49.910 --> 00:47:49.920
+
+
+
+1963
+00:47:49.920 --> 00:47:53.589
+I have created another small file.
+
+1964
+00:47:53.589 --> 00:47:53.599
+
+
+
+1965
+00:47:53.599 --> 00:47:55.589
+Here you will see the name of this file is
+
+1966
+00:47:55.589 --> 00:47:55.599
+
+
+
+1967
+00:47:55.599 --> 00:47:57.829
+promote.py.
+
+1968
+00:47:57.829 --> 00:47:57.839
+
+
+
+1969
+00:47:57.839 --> 00:48:00.790
+In this file, I have just written a kind of
+
+1970
+00:48:00.790 --> 00:48:00.800
+
+
+
+1971
+00:48:00.800 --> 00:48:04.550
+decision making code as to what it will
+
+1972
+00:48:04.550 --> 00:48:04.560
+
+
+
+1973
+00:48:04.560 --> 00:48:09.270
+do?  It will read this report and
+
+1974
+00:48:09.270 --> 00:48:09.280
+
+
+
+1975
+00:48:09.280 --> 00:48:13.589
+generate a summary whether
+
+1976
+00:48:13.589 --> 00:48:13.599
+
+
+
+1977
+00:48:13.599 --> 00:48:16.790
+we should approve this new change or
+
+1978
+00:48:16.790 --> 00:48:16.800
+
+
+
+1979
+00:48:16.800 --> 00:48:18.870
+not.  There is a logic written for it.
+
+1980
+00:48:18.870 --> 00:48:18.880
+
+
+
+1981
+00:48:18.880 --> 00:48:21.430
+We have not defined each of our metrics in a tier
+
+1982
+00:48:21.430 --> 00:48:21.440
+
+
+
+1983
+00:48:21.440 --> 00:48:25.109
+that it is such a metric
+
+1984
+00:48:25.109 --> 00:48:25.119
+
+
+
+1985
+00:48:25.119 --> 00:48:29.190
+that if it decreases, we will not be able to do it.  Or it
+
+1986
+00:48:29.190 --> 00:48:29.200
+
+
+
+1987
+00:48:29.200 --> 00:48:32.309
+is a metric whose decrease can lead to a
+
+1988
+00:48:32.309 --> 00:48:32.319
+
+
+
+1989
+00:48:32.319 --> 00:48:34.549
+discussion on whether we can
+
+1990
+00:48:34.549 --> 00:48:34.559
+
+
+
+1991
+00:48:34.559 --> 00:48:36.790
+deploy this new version or it is a
+
+1992
+00:48:36.790 --> 00:48:36.800
+
+
+
+1993
+00:48:36.800 --> 00:48:38.950
+metric whose decrease actually does
+
+1994
+00:48:38.950 --> 00:48:38.960
+
+
+
+1995
+00:48:38.960 --> 00:48:41.270
+not make any difference.  Okay, right?  So we have
+
+1996
+00:48:41.270 --> 00:48:41.280
+
+
+
+1997
+00:48:41.280 --> 00:48:42.790
+defined it in classes and on its basis
+
+1998
+00:48:42.790 --> 00:48:42.800
+
+
+
+1999
+00:48:42.800 --> 00:48:44.390
+I have created a small decision framework which will again vary from
+
+2000
+00:48:44.390 --> 00:48:44.400
+
+
+
+2001
+00:48:44.400 --> 00:48:46.950
+application
+
+2002
+00:48:46.950 --> 00:48:46.960
+
+
+
+2003
+00:48:46.960 --> 00:48:49.270
+to application but let me show you by running it.
+
+2004
+00:48:49.270 --> 00:48:49.280
+
+
+
+2005
+00:48:49.280 --> 00:48:52.230
+So if I run it, the name of that file
+
+2006
+00:48:52.230 --> 00:48:52.240
+
+
+
+2007
+00:48:52.240 --> 00:48:54.150
+is
+
+2008
+00:48:54.150 --> 00:48:54.160
+
+
+
+2009
+00:48:54.160 --> 00:48:56.150
+promote.py,
+
+2010
+00:48:56.150 --> 00:48:56.160
+
+
+
+2011
+00:48:56.160 --> 00:48:59.109
+here is that file, this is the file
+
+2012
+00:48:59.109 --> 00:48:59.119
+
+
+
+2013
+00:48:59.119 --> 00:49:02.230
+promote.py, in this there is a small logic written, in
+
+2014
+00:49:02.230 --> 00:49:02.240
+
+
+
+2015
+00:49:02.240 --> 00:49:06.790
+which it has to be told whether it should be promoted
+
+2016
+00:49:06.790 --> 00:49:06.800
+
+
+
+2017
+00:49:06.800 --> 00:49:09.190
+or not, that is,
+
+2018
+00:49:09.190 --> 00:49:09.200
+
+
+
+2019
+00:49:09.200 --> 00:49:12.470
+this change should be sent forward for deployment or
+
+2020
+00:49:12.470 --> 00:49:12.480
+
+
+
+2021
+00:49:12.480 --> 00:49:15.030
+for consideration or it should be put in review state, which
+
+2022
+00:49:15.030 --> 00:49:15.040
+
+
+
+2023
+00:49:15.040 --> 00:49:17.270
+basically means that human
+
+2024
+00:49:17.270 --> 00:49:17.280
+
+
+
+2025
+00:49:17.280 --> 00:49:19.829
+experts will come and decide whether to accept this change
+
+2026
+00:49:19.829 --> 00:49:19.839
+
+
+
+2027
+00:49:19.839 --> 00:49:21.670
+or not or
+
+2028
+00:49:21.670 --> 00:49:21.680
+
+
+
+2029
+00:49:21.680 --> 00:49:23.430
+block it completely.  Which basically
+
+2030
+00:49:23.430 --> 00:49:23.440
+
+
+
+2031
+00:49:23.440 --> 00:49:27.190
+means that it is bringing such a big bad change
+
+2032
+00:49:27.190 --> 00:49:27.200
+
+
+
+2033
+00:49:27.200 --> 00:49:29.670
+that there is no need to take it forward.
+
+2034
+00:49:29.670 --> 00:49:29.680
+
+
+
+2035
+00:49:29.680 --> 00:49:31.510
+So it's basically a decision framework.
+
+2036
+00:49:31.510 --> 00:49:31.520
+
+
+
+2037
+00:49:31.520 --> 00:49:33.670
+This is not at all necessary.  I just
+
+2038
+00:49:33.670 --> 00:49:33.680
+
+
+
+2039
+00:49:33.680 --> 00:49:36.069
+made this like that.  So that I can quickly
+
+2040
+00:49:36.069 --> 00:49:36.079
+
+
+
+2041
+00:49:36.079 --> 00:49:38.870
+conclude whether I should make any changes
+
+2042
+00:49:38.870 --> 00:49:38.880
+
+
+
+2043
+00:49:38.880 --> 00:49:40.870
+or not.  Ok?  So as soon as you run this, it will simply
+
+2044
+00:49:40.870 --> 00:49:45.349
+
+
+
+2045
+00:49:45.349 --> 00:49:45.359
+
+
+
+2046
+00:49:45.359 --> 00:49:47.349
+pick up the output of your compare.py, which is basically
+
+2047
+00:49:47.349 --> 00:49:47.359
+
+
+
+2048
+00:49:47.359 --> 00:49:50.790
+this output.  And will give you a judgment on this.
+
+2049
+00:49:50.790 --> 00:49:50.800
+
+
+
+2050
+00:49:50.800 --> 00:49:54.150
+And that judgment is that you should block
+
+2051
+00:49:54.150 --> 00:49:54.160
+
+
+
+2052
+00:49:54.160 --> 00:49:56.470
+that if a very important metric, which is
+
+2053
+00:49:56.470 --> 00:49:56.480
+
+
+
+2054
+00:49:56.480 --> 00:49:59.750
+safety, falls by 20% then there is no
+
+2055
+00:49:59.750 --> 00:49:59.760
+
+
+
+2056
+00:49:59.760 --> 00:50:02.870
+point in approving this change.  The
+
+2057
+00:50:02.870 --> 00:50:02.880
+
+
+
+2058
+00:50:02.880 --> 00:50:05.829
+same if the safety metric had not
+
+2059
+00:50:05.829 --> 00:50:05.839
+
+
+
+2060
+00:50:05.839 --> 00:50:08.150
+fallen.  If only the
+
+2061
+00:50:08.150 --> 00:50:08.160
+
+
+
+2062
+00:50:08.160 --> 00:50:10.950
+metric of contextual relevance had fallen, then using the logic of our promotion
+
+2063
+00:50:10.950 --> 00:50:10.960
+
+
+
+2064
+00:50:10.960 --> 00:50:13.190
+file, we would have put it under review
+
+2065
+00:50:13.190 --> 00:50:13.200
+
+
+
+2066
+00:50:13.200 --> 00:50:15.270
+and human experts would come and review
+
+2067
+00:50:15.270 --> 00:50:15.280
+
+
+
+2068
+00:50:15.280 --> 00:50:17.510
+that the contextual relevance has
+
+2069
+00:50:17.510 --> 00:50:17.520
+
+
+
+2070
+00:50:17.520 --> 00:50:20.150
+decreased a little but five metrics have improved, so
+
+2071
+00:50:20.150 --> 00:50:20.160
+
+
+
+2072
+00:50:20.160 --> 00:50:22.470
+what should we do, whether to send it forward or not, then
+
+2073
+00:50:22.470 --> 00:50:22.480
+
+
+
+2074
+00:50:22.480 --> 00:50:24.870
+more tests are done on their
+
+2075
+00:50:24.870 --> 00:50:24.880
+
+
+
+2076
+00:50:24.880 --> 00:50:27.109
+basis, then you decide and then you
+
+2077
+00:50:27.109 --> 00:50:27.119
+
+
+
+2078
+00:50:27.119 --> 00:50:29.670
+upgrade that version, deploy it,
+
+2079
+00:50:29.670 --> 00:50:29.680
+
+
+
+2080
+00:50:29.680 --> 00:50:31.750
+but again our goal is not that,
+
+2081
+00:50:31.750 --> 00:50:31.760
+
+
+
+2082
+00:50:31.760 --> 00:50:33.829
+our goal is that we have to do regression
+
+2083
+00:50:33.829 --> 00:50:33.839
+
+
+
+2084
+00:50:33.839 --> 00:50:35.670
+testing which basically means that
+
+2085
+00:50:35.670 --> 00:50:35.680
+
+
+
+2086
+00:50:35.680 --> 00:50:37.910
+after making any change, we should have a
+
+2087
+00:50:37.910 --> 00:50:37.920
+
+
+
+2088
+00:50:37.920 --> 00:50:40.790
+complete report in front of us as to which
+
+2089
+00:50:40.790 --> 00:50:40.800
+
+
+
+2090
+00:50:40.800 --> 00:50:42.630
+metrics are getting hit.  Which
+
+2091
+00:50:42.630 --> 00:50:42.640
+
+
+
+2092
+00:50:42.640 --> 00:50:44.309
+metrics are improving, which
+
+2093
+00:50:44.309 --> 00:50:44.319
+
+
+
+2094
+00:50:44.319 --> 00:50:47.349
+metrics are flat.  That's what we just
+
+2095
+00:50:47.349 --> 00:50:47.359
+
+
+
+2096
+00:50:47.359 --> 00:50:50.230
+did in front of you.  And as I said, you
+
+2097
+00:50:50.230 --> 00:50:50.240
+
+
+
+2098
+00:50:50.240 --> 00:50:53.109
+generally do this whole thing with the help of some software.
+
+2099
+00:50:53.109 --> 00:50:53.119
+
+
+
+2100
+00:50:53.119 --> 00:50:55.349
+Like Himanshu is teaching the
+
+2101
+00:50:55.349 --> 00:50:55.359
+
+
+
+2102
+00:50:55.359 --> 00:50:57.510
+same concept in LLM Ops course
+
+2103
+00:50:57.510 --> 00:50:57.520
+
+
+
+2104
+00:50:57.520 --> 00:51:00.150
+with the help of ML Flow.
+
+2105
+00:51:00.150 --> 00:51:00.160
+
+
+
+2106
+00:51:00.160 --> 00:51:02.710
+Another team might
+
+2107
+00:51:02.710 --> 00:51:02.720
+
+
+
+2108
+00:51:02.720 --> 00:51:04.710
+use Confident AI for this entire concept or
+
+2109
+00:51:04.710 --> 00:51:04.720
+
+
+
+2110
+00:51:04.720 --> 00:51:07.670
+use some other tool.  But I
+
+2111
+00:51:07.670 --> 00:51:07.680
+
+
+
+2112
+00:51:07.680 --> 00:51:10.870
+showed you this whole code through.  So that
+
+2113
+00:51:10.870 --> 00:51:10.880
+
+
+
+2114
+00:51:10.880 --> 00:51:13.190
+I can plant your concept.
+
+2115
+00:51:13.190 --> 00:51:13.200
+
+
+
+2116
+00:51:13.200 --> 00:51:16.710
+The concept remains the same.  The
+
+2117
+00:51:16.710 --> 00:51:16.720
+
+
+
+2118
+00:51:16.720 --> 00:51:19.589
+concept of finding the noise threshold remains the same.
+
+2119
+00:51:19.589 --> 00:51:19.599
+
+
+
+2120
+00:51:19.599 --> 00:51:22.470
+You also create this decision making framework
+
+2121
+00:51:22.470 --> 00:51:22.480
+
+
+
+2122
+00:51:22.480 --> 00:51:25.510
+there and baselines are derived multiple times.
+
+2123
+00:51:25.510 --> 00:51:25.520
+
+
+
+2124
+00:51:25.520 --> 00:51:28.870
+That's all the same.  The only
+
+2125
+00:51:28.870 --> 00:51:28.880
+
+
+
+2126
+00:51:28.880 --> 00:51:30.630
+difference is we're doing it through code.
+
+2127
+00:51:30.630 --> 00:51:30.640
+
+
+
+2128
+00:51:30.640 --> 00:51:32.950
+Through hand written code.  Someone else
+
+2129
+00:51:32.950 --> 00:51:32.960
+
+
+
+2130
+00:51:32.960 --> 00:51:35.030
+uses sophisticated tools for this.  Because
+
+2131
+00:51:35.030 --> 00:51:35.040
+
+
+
+2132
+00:51:35.040 --> 00:51:38.470
+obviously it is much better.  Right?  So or that's
+
+2133
+00:51:38.470 --> 00:51:38.480
+
+
+
+2134
+00:51:38.480 --> 00:51:40.630
+it.  This is what regression testing
+
+2135
+00:51:40.630 --> 00:51:40.640
+
+
+
+2136
+00:51:40.640 --> 00:51:43.829
+is in practice.  And that's all we'll cover on
+
+2137
+00:51:43.829 --> 00:51:43.839
+
+
+
+2138
+00:51:43.839 --> 00:51:47.270
+this topic.  Because
+
+2139
+00:51:47.270 --> 00:51:47.280
+
+
+
+2140
+00:51:47.280 --> 00:51:49.910
+this topic does not directly come under LLM eligibility.
+
+2141
+00:51:49.910 --> 00:51:49.920
+
+
+
+2142
+00:51:49.920 --> 00:51:52.390
+Although it is related, but here we are
+
+2143
+00:51:52.390 --> 00:51:52.400
+
+
+
+2144
+00:51:52.400 --> 00:51:54.470
+not learning any new evaluation.  So I don't
+
+2145
+00:51:54.470 --> 00:51:54.480
+
+
+
+2146
+00:51:54.480 --> 00:51:56.150
+want to deviate too much.  I just
+
+2147
+00:51:56.150 --> 00:51:56.160
+
+
+
+2148
+00:51:56.160 --> 00:51:58.630
+wanted to give you a high-level overview of
+
+2149
+00:51:58.630 --> 00:51:58.640
+
+
+
+2150
+00:51:58.640 --> 00:52:01.670
+how everything we've worked on so far can be tied up and
+
+2151
+00:52:01.670 --> 00:52:01.680
+
+
+
+2152
+00:52:01.680 --> 00:52:04.470
+used in a proper
+
+2153
+00:52:04.470 --> 00:52:04.480
+
+
+
+2154
+00:52:04.480 --> 00:52:07.829
+production setup.  Ok?  So let me know, this is
+
+2155
+00:52:07.829 --> 00:52:07.839
+
+
+
+2156
+00:52:07.839 --> 00:52:09.829
+today's class.  That's all I had to discuss.  It
+
+2157
+00:52:09.829 --> 00:52:09.839
+
+
+
+2158
+00:52:09.839 --> 00:52:12.230
+is a small class of one hour and today I do
+
+2159
+00:52:12.230 --> 00:52:12.240
+
+
+
+2160
+00:52:12.240 --> 00:52:14.069
+not want to teach online Evals because it will take proper
+
+2161
+00:52:14.069 --> 00:52:14.079
+
+
+
+2162
+00:52:14.079 --> 00:52:15.990
+two hours.  So I do
+
+2163
+00:52:15.990 --> 00:52:16.000
+
+
+
+2164
+00:52:16.000 --> 00:52:18.390
+n't want to take a 3 hour class.  So this became a separate small
+
+2165
+00:52:18.390 --> 00:52:18.400
+
+
+
+2166
+00:52:18.400 --> 00:52:21.109
+class where we
+
+2167
+00:52:21.109 --> 00:52:21.119
+
+
+
+2168
+00:52:21.119 --> 00:52:22.630
+took a flavor of regression testing.  That's it.  We did
+
+2169
+00:52:22.630 --> 00:52:22.640
+
+
+
+2170
+00:52:22.640 --> 00:52:25.109
+n't learn anything very in-depth.  Just
+
+2171
+00:52:25.109 --> 00:52:25.119
+
+
+
+2172
+00:52:25.119 --> 00:52:27.190
+had one flavor.  What is regression testing
+
+2173
+00:52:27.190 --> 00:52:27.200
+
+
+
+2174
+00:52:27.200 --> 00:52:29.829
+?  Why is it important?  And
+
+2175
+00:52:29.829 --> 00:52:29.839
+
+
+
+2176
+00:52:29.839 --> 00:52:32.790
+how is it implemented practically?  In an eval
+
+2177
+00:52:32.790 --> 00:52:32.800
+
+
+
+2178
+00:52:32.800 --> 00:52:35.430
+setup.  So Harry's question is sir for
+
+2179
+00:52:35.430 --> 00:52:35.440
+
+
+
+2180
+00:52:35.440 --> 00:52:37.990
+noise threshold calculation here we are only
+
+2181
+00:52:37.990 --> 00:52:38.000
+
+
+
+2182
+00:52:38.000 --> 00:52:39.589
+including the values ​​for
+
+2183
+00:52:39.589 --> 00:52:39.599
+
+
+
+2184
+00:52:39.599 --> 00:52:41.750
+calculating standard deviation when all the
+
+2185
+00:52:41.750 --> 00:52:41.760
+
+
+
+2186
+00:52:41.760 --> 00:52:44.470
+parameter values.  Yes that's correct.  And
+
+2187
+00:52:44.470 --> 00:52:44.480
+
+
+
+2188
+00:52:44.480 --> 00:52:47.829
+I've run it twice in my setup.  You
+
+2189
+00:52:47.829 --> 00:52:47.839
+
+
+
+2190
+00:52:47.839 --> 00:52:50.309
+people mean that when you work in the company,
+
+2191
+00:52:50.309 --> 00:52:50.319
+
+
+
+2192
+00:52:50.319 --> 00:52:52.150
+work on the actual project, then you have to
+
+2193
+00:52:52.150 --> 00:52:52.160
+
+
+
+2194
+00:52:52.160 --> 00:52:54.390
+run it at least five to ten times.  So that gives you the
+
+2195
+00:52:54.390 --> 00:52:54.400
+
+
+
+2196
+00:52:54.400 --> 00:52:56.870
+value of standard deviation.
+
+2197
+00:52:56.870 --> 00:52:56.880
+
+
+
+2198
+00:52:56.880 --> 00:52:58.630
+More concepts are involved in that too.  When you do it
+
+2199
+00:52:58.630 --> 00:52:58.640
+
+
+
+2200
+00:52:58.640 --> 00:53:01.030
+properly, those
+
+2201
+00:53:01.030 --> 00:53:01.040
+
+
+
+2202
+00:53:01.040 --> 00:53:02.710
+statistics concepts come into play.  Are those
+
+2203
+00:53:02.710 --> 00:53:02.720
+
+
+
+2204
+00:53:02.720 --> 00:53:05.349
+p values ​​and all statistically
+
+2205
+00:53:05.349 --> 00:53:05.359
+
+
+
+2206
+00:53:05.359 --> 00:53:06.870
+significant or not?  Your
+
+2207
+00:53:06.870 --> 00:53:06.880
+
+
+
+2208
+00:53:06.880 --> 00:53:09.349
+standard deviation, all the hypotheses,
+
+2209
+00:53:09.349 --> 00:53:09.359
+
+
+
+2210
+00:53:09.359 --> 00:53:11.430
+hypothesis testing and all those concepts
+
+2211
+00:53:11.430 --> 00:53:11.440
+
+
+
+2212
+00:53:11.440 --> 00:53:12.870
+also apply here.  As I
+
+2213
+00:53:12.870 --> 00:53:12.880
+
+
+
+2214
+00:53:12.880 --> 00:53:17.829
+said, this is a big field because imagine a very
+
+2215
+00:53:17.829 --> 00:53:17.839
+
+
+
+2216
+00:53:17.839 --> 00:53:19.990
+large scale software
+
+2217
+00:53:19.990 --> 00:53:20.000
+
+
+
+2218
+00:53:20.000 --> 00:53:23.109
+like Chat GPT, you made some improvements in it, then
+
+2219
+00:53:23.109 --> 00:53:23.119
+
+
+
+2220
+00:53:23.119 --> 00:53:26.630
+with that improvement
+
+2221
+00:53:26.630 --> 00:53:26.640
+
+
+
+2222
+00:53:26.640 --> 00:53:28.870
+you have to prove that the entire system has
+
+2223
+00:53:28.870 --> 00:53:28.880
+
+
+
+2224
+00:53:28.880 --> 00:53:32.150
+not regressed anywhere.  Only when you are sure
+
+2225
+00:53:32.150 --> 00:53:32.160
+
+
+
+2226
+00:53:32.160 --> 00:53:34.710
+that there has been no regression will you go ahead and
+
+2227
+00:53:34.710 --> 00:53:34.720
+
+
+
+2228
+00:53:34.720 --> 00:53:37.349
+deploy that system.  So think about it,
+
+2229
+00:53:37.349 --> 00:53:37.359
+
+
+
+2230
+00:53:37.359 --> 00:53:40.870
+where crores and billions of rupees are at
+
+2231
+00:53:40.870 --> 00:53:40.880
+
+
+
+2232
+00:53:40.880 --> 00:53:43.510
+stake, then
+
+2233
+00:53:43.510 --> 00:53:43.520
+
+
+
+2234
+00:53:43.520 --> 00:53:45.589
+how critical is this regression testing.
+
+2235
+00:53:45.589 --> 00:53:45.599
+
+
+
+2236
+00:53:45.599 --> 00:53:47.270
+So there, all the concepts that
+
+2237
+00:53:47.270 --> 00:53:47.280
+
+
+
+2238
+00:53:47.280 --> 00:53:49.349
+we have studied in statistics, an
+
+2239
+00:53:49.349 --> 00:53:49.359
+
+
+
+2240
+00:53:49.359 --> 00:53:51.910
+attempt is made to deal with all that uncertainty.
+
+2241
+00:53:51.910 --> 00:53:51.920
+
+
+
+2242
+00:53:51.920 --> 00:53:54.549
+So in that sense a lot of studies are done here.  A
+
+2243
+00:53:54.549 --> 00:53:54.559
+
+
+
+2244
+00:53:54.559 --> 00:53:56.069
+lot of experts are
+
+2245
+00:53:56.069 --> 00:53:56.079
+
+
+
+2246
+00:53:56.079 --> 00:53:58.549
+needed here.  We have just taken it at a surface
+
+2247
+00:53:58.549 --> 00:53:58.559
+
+
+
+2248
+00:53:58.559 --> 00:54:00.470
+level.  So that you
+
+2249
+00:54:00.470 --> 00:54:00.480
+
+
+
+2250
+00:54:00.480 --> 00:54:02.549
+can crack the interviews.  We have studied it at that level.
+
+2251
+00:54:02.549 --> 00:54:02.559
+
+
+
+2252
+00:54:02.559 --> 00:54:04.710
+This Is The Session by the way, and I'm
+
+2253
+00:54:04.710 --> 00:54:04.720
+
+
+
+2254
+00:54:04.720 --> 00:54:07.030
+not reading anything else.  So if you don't have any doubts then
+
+2255
+00:54:07.030 --> 00:54:07.040
+
+
+
+2256
+00:54:07.040 --> 00:54:12.230
+you can leave the session and if you have
+
+2257
+00:54:12.230 --> 00:54:12.240
+
+
+
+2258
+00:54:12.240 --> 00:54:14.230
+any questions then I am here right now.   Let
+
+2259
+00:54:14.230 --> 00:54:14.240
+
+
+
+2260
+00:54:14.240 --> 00:54:16.880
+me know.

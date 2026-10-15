@@ -1,0 +1,5 @@
+cookies.txt
+.env  
+chroma_store/
+data/
+data_original/

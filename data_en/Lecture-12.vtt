@@ -1,0 +1,9022 @@
+WEBVTT
+
+1
+00:00:00.160 --> 00:00:02.230
+Before I tell you what we're going to do in the session, I'd
+
+2
+00:00:02.230 --> 00:00:05.670
+
+
+
+3
+00:00:05.670 --> 00:00:05.680
+
+
+
+4
+00:00:05.680 --> 00:00:07.990
+like to give a recap of the entire playlist so far.  Because we've
+
+5
+00:00:07.990 --> 00:00:08.000
+
+
+
+6
+00:00:08.000 --> 00:00:11.110
+covered two major milestones so far
+
+7
+00:00:11.110 --> 00:00:11.120
+
+
+
+8
+00:00:11.120 --> 00:00:13.190
+in this playlist.  So we should know a little about
+
+9
+00:00:13.190 --> 00:00:13.200
+
+
+
+10
+00:00:13.200 --> 00:00:15.350
+where we are bringing it
+
+11
+00:00:15.350 --> 00:00:15.360
+
+
+
+12
+00:00:15.360 --> 00:00:18.710
+in the entire curriculum.  So in this
+
+13
+00:00:18.710 --> 00:00:18.720
+
+
+
+14
+00:00:18.720 --> 00:00:22.230
+playlist of LLM Eval, the first
+
+15
+00:00:22.230 --> 00:00:22.240
+
+
+
+16
+00:00:22.240 --> 00:00:25.269
+three-four lectures that we spent were
+
+17
+00:00:25.269 --> 00:00:27.990
+
+
+
+18
+00:00:27.990 --> 00:00:28.000
+
+
+
+19
+00:00:28.000 --> 00:00:31.669
+covered in kind of introduction or you can say fundamentals where we
+
+20
+00:00:31.669 --> 00:00:31.679
+
+
+
+21
+00:00:31.679 --> 00:00:35.030
+understood why there is a need for model LLM Evals,
+
+22
+00:00:35.030 --> 00:00:35.040
+
+
+
+23
+00:00:35.040 --> 00:00:38.229
+what are LLM Evals, all these
+
+24
+00:00:38.229 --> 00:00:38.239
+
+
+
+25
+00:00:38.239 --> 00:00:40.630
+things were covered, we discussed
+
+26
+00:00:40.630 --> 00:00:40.640
+
+
+
+27
+00:00:40.640 --> 00:00:43.750
+reference based Evals, reference pre Evals,
+
+28
+00:00:43.750 --> 00:00:43.760
+
+
+
+29
+00:00:43.760 --> 00:00:46.229
+we discussed online Evals, offline
+
+30
+00:00:46.229 --> 00:00:46.239
+
+
+
+31
+00:00:46.239 --> 00:00:48.310
+Evals, we discussed all these concepts
+
+32
+00:00:48.310 --> 00:00:48.320
+
+
+
+33
+00:00:48.320 --> 00:00:49.990
+and the most important concept that we discussed was
+
+34
+00:00:49.990 --> 00:00:50.000
+
+
+
+35
+00:00:50.000 --> 00:00:52.950
+that there are two types of LLM
+
+36
+00:00:52.950 --> 00:00:52.960
+
+
+
+37
+00:00:52.960 --> 00:00:55.670
+Evals.  One is model evals
+
+38
+00:00:55.670 --> 00:00:55.680
+
+
+
+39
+00:00:55.680 --> 00:00:58.549
+and the other is application evals and
+
+40
+00:00:58.549 --> 00:00:58.559
+
+
+
+41
+00:00:58.559 --> 00:01:01.029
+we had discussed that we will
+
+42
+00:01:01.029 --> 00:01:01.039
+
+
+
+43
+00:01:01.039 --> 00:01:04.469
+focus more on application evals.  But we
+
+44
+00:01:04.469 --> 00:01:04.479
+
+
+
+45
+00:01:04.479 --> 00:01:07.830
+first went and covered the model evolutions
+
+46
+00:01:07.830 --> 00:01:07.840
+
+
+
+47
+00:01:07.840 --> 00:01:10.149
+that we have been doing in the last two-three sessions.
+
+48
+00:01:10.149 --> 00:01:10.159
+
+
+
+49
+00:01:10.159 --> 00:01:12.789
+So while studying model events, we
+
+50
+00:01:12.789 --> 00:01:12.799
+
+
+
+51
+00:01:12.799 --> 00:01:14.710
+discussed that there are two types of events in model events also.  There are
+
+52
+00:01:14.710 --> 00:01:16.710
+
+
+
+53
+00:01:16.710 --> 00:01:16.720
+
+
+
+54
+00:01:16.720 --> 00:01:18.789
+standardized values ​​which we
+
+55
+00:01:18.789 --> 00:01:18.799
+
+
+
+56
+00:01:18.799 --> 00:01:22.230
+call benchmarks.  What we read in A Knowledge
+
+57
+00:01:22.230 --> 00:01:22.240
+
+
+
+58
+00:01:22.240 --> 00:01:24.469
+Capability where we
+
+59
+00:01:24.469 --> 00:01:24.479
+
+
+
+60
+00:01:24.479 --> 00:01:28.630
+discussed multiple benchmarks
+
+61
+00:01:28.630 --> 00:01:28.640
+
+
+
+62
+00:01:28.640 --> 00:01:31.270
+falls under this topic.  And then we also
+
+63
+00:01:31.270 --> 00:01:31.280
+
+
+
+64
+00:01:31.280 --> 00:01:33.190
+discussed that
+
+65
+00:01:33.190 --> 00:01:33.200
+
+
+
+66
+00:01:33.200 --> 00:01:35.109
+when you have to choose a model according to your own application, then
+
+67
+00:01:35.109 --> 00:01:35.119
+
+
+
+68
+00:01:35.119 --> 00:01:39.429
+you can run custom model evals which you can
+
+69
+00:01:39.429 --> 00:01:39.439
+
+
+
+70
+00:01:39.439 --> 00:01:41.270
+run by creating your own data set.
+
+71
+00:01:41.270 --> 00:01:41.280
+
+
+
+72
+00:01:41.280 --> 00:01:43.830
+So we covered this in the previous lecture.
+
+73
+00:01:43.830 --> 00:01:43.840
+
+
+
+74
+00:01:43.840 --> 00:01:48.310
+So in short we have covered this much so far in this playlist.
+
+75
+00:01:48.310 --> 00:01:51.590
+
+
+
+76
+00:01:51.590 --> 00:01:51.600
+
+
+
+77
+00:01:51.600 --> 00:01:54.630
+And now the most important part of this playlist is
+
+78
+00:01:54.630 --> 00:01:54.640
+
+
+
+79
+00:01:54.640 --> 00:01:58.069
+coming, which is what this application is.
+
+80
+00:01:58.069 --> 00:01:58.079
+
+
+
+81
+00:01:58.079 --> 00:02:02.069
+And we will start this from today.  From today
+
+82
+00:02:02.069 --> 00:02:02.079
+
+
+
+83
+00:02:02.079 --> 00:02:04.550
+we will learn that if you have an LLM
+
+84
+00:02:04.550 --> 00:02:04.560
+
+
+
+85
+00:02:04.560 --> 00:02:07.429
+based application then how
+
+86
+00:02:07.429 --> 00:02:07.439
+
+
+
+87
+00:02:07.439 --> 00:02:09.990
+can you evaluate it based on all the knowledge
+
+88
+00:02:09.990 --> 00:02:10.000
+
+
+
+89
+00:02:10.000 --> 00:02:14.150
+that we have gathered till now.  Ok?  And
+
+90
+00:02:14.150 --> 00:02:14.160
+
+
+
+91
+00:02:14.160 --> 00:02:17.350
+here also you will have to understand one thing that there can be
+
+92
+00:02:17.350 --> 00:02:17.360
+
+
+
+93
+00:02:17.360 --> 00:02:19.750
+many types of LLM based applications.
+
+94
+00:02:19.750 --> 00:02:19.760
+
+
+
+95
+00:02:19.760 --> 00:02:23.589
+Right?  So you
+
+96
+00:02:23.589 --> 00:02:23.599
+
+
+
+97
+00:02:23.599 --> 00:02:27.430
+can have simple chatbots or you
+
+98
+00:02:27.430 --> 00:02:27.440
+
+
+
+99
+00:02:27.440 --> 00:02:30.790
+can have rogue based chatbots or you
+
+100
+00:02:30.790 --> 00:02:30.800
+
+
+
+101
+00:02:30.800 --> 00:02:32.949
+can have agents.  All of these are
+
+102
+00:02:32.949 --> 00:02:32.959
+
+
+
+103
+00:02:32.959 --> 00:02:34.630
+examples of LLM based
+
+104
+00:02:34.630 --> 00:02:34.640
+
+
+
+105
+00:02:34.640 --> 00:02:37.270
+applications.  And if I give an example, there can be
+
+106
+00:02:37.270 --> 00:02:37.280
+
+
+
+107
+00:02:37.280 --> 00:02:40.229
+multimodal apps.  Basically,
+
+108
+00:02:40.229 --> 00:02:40.239
+
+
+
+109
+00:02:40.239 --> 00:02:43.110
+applications where
+
+110
+00:02:43.110 --> 00:02:43.120
+
+
+
+111
+00:02:43.120 --> 00:02:45.589
+communication or work is being done in a mode other than text.
+
+112
+00:02:45.589 --> 00:02:45.599
+
+
+
+113
+00:02:45.599 --> 00:02:48.790
+For example, there is an image generator.  That
+
+114
+00:02:48.790 --> 00:02:48.800
+
+
+
+115
+00:02:48.800 --> 00:02:51.270
+is also an LLM based application but
+
+116
+00:02:51.270 --> 00:02:51.280
+
+
+
+117
+00:02:51.280 --> 00:02:54.070
+there you are generating images.  Right?
+
+118
+00:02:54.070 --> 00:02:54.080
+
+
+
+119
+00:02:54.080 --> 00:02:58.869
+Then you can have more fixed
+
+120
+00:02:58.869 --> 00:02:58.879
+
+
+
+121
+00:02:58.879 --> 00:03:03.830
+schema output type of application.  Where
+
+122
+00:03:03.830 --> 00:03:03.840
+
+
+
+123
+00:03:03.840 --> 00:03:06.229
+your application uses LL to
+
+124
+00:03:06.229 --> 00:03:06.239
+
+
+
+125
+00:03:06.239 --> 00:03:08.470
+output some fixed schema.  An
+
+126
+00:03:08.470 --> 00:03:08.480
+
+
+
+127
+00:03:08.480 --> 00:03:11.750
+example of this could be the Zomato case
+
+128
+00:03:11.750 --> 00:03:11.760
+
+
+
+129
+00:03:11.760 --> 00:03:13.509
+study that we discussed two-three
+
+130
+00:03:13.509 --> 00:03:13.519
+
+
+
+131
+00:03:13.519 --> 00:03:16.470
+lectures ago, where you are reading the
+
+132
+00:03:16.470 --> 00:03:16.480
+
+
+
+133
+00:03:16.480 --> 00:03:18.630
+content of the email and
+
+134
+00:03:18.630 --> 00:03:18.640
+
+
+
+135
+00:03:18.640 --> 00:03:21.430
+classifying it as a support email
+
+136
+00:03:21.430 --> 00:03:21.440
+
+
+
+137
+00:03:21.440 --> 00:03:24.949
+or a refund email or a technical
+
+138
+00:03:24.949 --> 00:03:24.959
+
+
+
+139
+00:03:24.959 --> 00:03:27.350
+email.  So here the output will follow a
+
+140
+00:03:27.350 --> 00:03:27.360
+
+
+
+141
+00:03:27.360 --> 00:03:29.589
+fixed schema.  So this is also a type of
+
+142
+00:03:29.589 --> 00:03:29.599
+
+
+
+143
+00:03:29.599 --> 00:03:32.149
+LLM based application.  So
+
+144
+00:03:32.149 --> 00:03:32.159
+
+
+
+145
+00:03:32.159 --> 00:03:36.149
+honestly it is not possible for me to teach
+
+146
+00:03:36.149 --> 00:03:36.159
+
+
+
+147
+00:03:36.159 --> 00:03:38.789
+you all types of applications and their
+
+148
+00:03:38.789 --> 00:03:38.799
+
+
+
+149
+00:03:38.799 --> 00:03:40.710
+application values.  I can't
+
+150
+00:03:40.710 --> 00:03:43.509
+
+
+
+151
+00:03:43.509 --> 00:03:43.519
+
+
+
+152
+00:03:43.519 --> 00:03:45.589
+even teach you how to run application eval on top of chatbot.
+
+153
+00:03:45.589 --> 00:03:45.599
+
+
+
+154
+00:03:45.599 --> 00:03:47.589
+Should I teach above the RAG also?  I should
+
+155
+00:03:47.589 --> 00:03:47.599
+
+
+
+156
+00:03:47.599 --> 00:03:49.910
+also teach about agents.  So I had this
+
+157
+00:03:49.910 --> 00:03:49.920
+
+
+
+158
+00:03:49.920 --> 00:03:52.070
+decision in front of me that I had to select and
+
+159
+00:03:52.070 --> 00:03:52.080
+
+
+
+160
+00:03:52.080 --> 00:03:54.229
+I had kept in my mind that I will
+
+161
+00:03:54.229 --> 00:03:54.239
+
+
+
+162
+00:03:54.239 --> 00:03:57.910
+teach you two things.  So I have selected two things
+
+163
+00:03:57.910 --> 00:03:57.920
+
+
+
+164
+00:03:57.920 --> 00:03:59.990
+which we are going to study further.
+
+165
+00:03:59.990 --> 00:04:00.000
+
+
+
+166
+00:04:00.000 --> 00:04:03.429
+A first of that is RAG because because it is
+
+167
+00:04:03.429 --> 00:04:03.439
+
+
+
+168
+00:04:03.439 --> 00:04:06.470
+variant.  Most of the chart
+
+169
+00:04:06.470 --> 00:04:06.480
+
+
+
+170
+00:04:06.480 --> 00:04:10.229
+that you will build in your professional
+
+171
+00:04:10.229 --> 00:04:10.239
+
+
+
+172
+00:04:10.239 --> 00:04:14.149
+journey will have RAG functionality.  So RAG
+
+173
+00:04:14.149 --> 00:04:14.159
+
+
+
+174
+00:04:14.159 --> 00:04:16.550
+becomes majority in that sense.  And second
+
+175
+00:04:16.550 --> 00:04:16.560
+
+
+
+176
+00:04:16.560 --> 00:04:20.150
+I will teach you agents' application eval.
+
+177
+00:04:20.150 --> 00:04:20.160
+
+
+
+178
+00:04:20.160 --> 00:04:22.230
+Because agents are also very important.
+
+179
+00:04:22.230 --> 00:04:22.240
+
+
+
+180
+00:04:22.240 --> 00:04:25.189
+Right?  So these other things like
+
+181
+00:04:25.189 --> 00:04:25.199
+
+
+
+182
+00:04:25.199 --> 00:04:27.909
+a simple chatbot which has neither RAG
+
+183
+00:04:27.909 --> 00:04:27.919
+
+
+
+184
+00:04:27.919 --> 00:04:29.510
+functionality nor agent
+
+185
+00:04:29.510 --> 00:04:29.520
+
+
+
+186
+00:04:29.520 --> 00:04:31.270
+functionality, I am not teaching you
+
+187
+00:04:31.270 --> 00:04:31.280
+
+
+
+188
+00:04:31.280 --> 00:04:33.590
+how to evaluate it.  I would
+
+189
+00:04:33.590 --> 00:04:33.600
+
+
+
+190
+00:04:33.600 --> 00:04:35.830
+expect that if you study the more difficult
+
+191
+00:04:35.830 --> 00:04:35.840
+
+
+
+192
+00:04:35.840 --> 00:04:38.870
+things then you will automatically do the
+
+193
+00:04:38.870 --> 00:04:38.880
+
+
+
+194
+00:04:38.880 --> 00:04:41.909
+easy things.  Ok?  A This one is also kind of easy.  This is
+
+195
+00:04:41.909 --> 00:04:44.550
+
+
+
+196
+00:04:44.550 --> 00:04:44.560
+
+
+
+197
+00:04:44.560 --> 00:04:47.670
+also kind of easy.  The one with the multimodal app is
+
+198
+00:04:47.670 --> 00:04:47.680
+
+
+
+199
+00:04:47.680 --> 00:04:49.430
+a little different.  I wouldn't say it is
+
+200
+00:04:49.430 --> 00:04:49.440
+
+
+
+201
+00:04:49.440 --> 00:04:51.749
+difficult.  It is slightly different from the
+
+202
+00:04:51.749 --> 00:04:51.759
+
+
+
+203
+00:04:51.759 --> 00:04:54.550
+other things.  But again you can do it.  The only
+
+204
+00:04:54.550 --> 00:04:54.560
+
+
+
+205
+00:04:54.560 --> 00:04:57.189
+thing is that it doesn't exist much
+
+206
+00:04:57.189 --> 00:04:57.199
+
+
+
+207
+00:04:57.199 --> 00:04:59.510
+in the production setup.  Meaning there are very few
+
+208
+00:04:59.510 --> 00:04:59.520
+
+
+
+209
+00:04:59.520 --> 00:05:01.590
+companies.  There are very few projects that are
+
+210
+00:05:01.590 --> 00:05:01.600
+
+
+
+211
+00:05:01.600 --> 00:05:03.830
+multimodal in nature.  Mostly
+
+212
+00:05:03.830 --> 00:05:03.840
+
+
+
+213
+00:05:03.840 --> 00:05:06.710
+you will see designs patterns with RAG and agent.
+
+214
+00:05:06.710 --> 00:05:06.720
+
+
+
+215
+00:05:06.720 --> 00:05:08.950
+That is why we are
+
+216
+00:05:08.950 --> 00:05:08.960
+
+
+
+217
+00:05:08.960 --> 00:05:11.430
+going to cover RAG and Agents'
+
+218
+00:05:11.430 --> 00:05:11.440
+
+
+
+219
+00:05:11.440 --> 00:05:14.870
+application eval going forward.  So now today
+
+220
+00:05:14.870 --> 00:05:14.880
+
+
+
+221
+00:05:14.880 --> 00:05:17.189
+'s session and the next two-three sessions that we are
+
+222
+00:05:17.189 --> 00:05:17.199
+
+
+
+223
+00:05:17.199 --> 00:05:21.029
+going to have are going to be on RAG Eval.
+
+224
+00:05:21.029 --> 00:05:21.039
+
+
+
+225
+00:05:21.039 --> 00:05:23.510
+Basically we will create a RAG Chatbot
+
+226
+00:05:23.510 --> 00:05:23.520
+
+
+
+227
+00:05:23.520 --> 00:05:26.469
+and evaluate it properly.
+
+228
+00:05:26.469 --> 00:05:26.479
+
+
+
+229
+00:05:26.479 --> 00:05:29.590
+And after watching these three-four sessions,
+
+230
+00:05:29.590 --> 00:05:29.600
+
+
+
+231
+00:05:29.600 --> 00:05:32.790
+you will be able to answer most of these interview questions very
+
+232
+00:05:32.790 --> 00:05:32.800
+
+
+
+233
+00:05:32.800 --> 00:05:37.029
+easily.  The question is how do
+
+234
+00:05:37.029 --> 00:05:37.039
+
+
+
+235
+00:05:37.039 --> 00:05:39.749
+you evaluate
+
+236
+00:05:39.749 --> 00:05:39.759
+
+
+
+237
+00:05:39.759 --> 00:05:45.110
+your RAG chat bot?  Very famous question for
+
+238
+00:05:45.110 --> 00:05:45.120
+
+
+
+239
+00:05:45.120 --> 00:05:48.150
+JNAI interviews.  It is asked in almost eight out of 10
+
+240
+00:05:48.150 --> 00:05:48.160
+
+
+
+241
+00:05:48.160 --> 00:05:50.390
+interviews.  And most of
+
+242
+00:05:50.390 --> 00:05:50.400
+
+
+
+243
+00:05:50.400 --> 00:05:52.870
+the times students are
+
+244
+00:05:52.870 --> 00:05:52.880
+
+
+
+245
+00:05:52.880 --> 00:05:54.469
+not able to give very convincing answers.  Many people do
+
+246
+00:05:54.469 --> 00:05:54.479
+
+
+
+247
+00:05:54.479 --> 00:05:56.150
+not know because they have never
+
+248
+00:05:56.150 --> 00:05:56.160
+
+
+
+249
+00:05:56.160 --> 00:05:57.909
+read Evals.  Even those who have read Evals are
+
+250
+00:05:57.909 --> 00:05:59.990
+
+
+
+251
+00:05:59.990 --> 00:06:00.000
+
+
+
+252
+00:06:00.000 --> 00:06:02.950
+not able to give very structured and proper answers.  I guarantee you that if
+
+253
+00:06:02.950 --> 00:06:02.960
+
+
+
+254
+00:06:02.960 --> 00:06:05.189
+you watch today's session and the next three-four sessions
+
+255
+00:06:05.189 --> 00:06:05.199
+
+
+
+256
+00:06:05.199 --> 00:06:08.309
+properly, you will be
+
+257
+00:06:08.309 --> 00:06:08.319
+
+
+
+258
+00:06:08.319 --> 00:06:10.710
+able to give a very proper answer to this question
+
+259
+00:06:10.710 --> 00:06:10.720
+
+
+
+260
+00:06:10.720 --> 00:06:12.469
+and you will kind of impress the other person.
+
+261
+00:06:12.469 --> 00:06:12.479
+
+
+
+262
+00:06:12.479 --> 00:06:15.189
+That is my guarantee.  So I hope
+
+263
+00:06:15.189 --> 00:06:15.199
+
+
+
+264
+00:06:15.199 --> 00:06:17.029
+I was able to explain to you where we are currently
+
+265
+00:06:17.029 --> 00:06:17.039
+
+
+
+266
+00:06:17.039 --> 00:06:19.110
+on this playlist
+
+267
+00:06:19.110 --> 00:06:19.120
+
+
+
+268
+00:06:19.120 --> 00:06:21.590
+and what our next direction is.  Ok?
+
+269
+00:06:21.590 --> 00:06:21.600
+
+
+
+270
+00:06:21.600 --> 00:06:23.670
+Our next direction is to study RAG Evals based on
+
+271
+00:06:23.670 --> 00:06:23.680
+
+
+
+272
+00:06:23.680 --> 00:06:26.550
+what we've learned so far
+
+273
+00:06:26.550 --> 00:06:26.560
+
+
+
+274
+00:06:26.560 --> 00:06:29.510
+with the help
+
+275
+00:06:29.510 --> 00:06:29.520
+
+
+
+276
+00:06:29.520 --> 00:06:33.029
+of a case study.  So now let us start our RAG
+
+277
+00:06:33.029 --> 00:06:33.039
+
+
+
+278
+00:06:33.039 --> 00:06:35.749
+eval.  Obviously, first of all
+
+279
+00:06:35.749 --> 00:06:35.759
+
+
+
+280
+00:06:35.759 --> 00:06:38.550
+we will need a RAG project
+
+281
+00:06:38.550 --> 00:06:38.560
+
+
+
+282
+00:06:38.560 --> 00:06:40.870
+which we will evaluate.  So let
+
+283
+00:06:40.870 --> 00:06:40.880
+
+
+
+284
+00:06:40.880 --> 00:06:43.189
+me tell you what this project is.
+
+285
+00:06:43.189 --> 00:06:43.199
+
+
+
+286
+00:06:43.199 --> 00:06:47.029
+I deliberately did not choose a very fancy
+
+287
+00:06:47.029 --> 00:06:47.039
+
+
+
+288
+00:06:47.039 --> 00:06:48.870
+problem statement.
+
+289
+00:06:48.870 --> 00:06:48.880
+
+
+
+290
+00:06:48.880 --> 00:06:50.150
+Many good problem
+
+291
+00:06:50.150 --> 00:06:50.160
+
+
+
+292
+00:06:50.160 --> 00:06:53.350
+statements were coming to my mind.  In which
+
+293
+00:06:53.350 --> 00:06:53.360
+
+
+
+294
+00:06:53.360 --> 00:06:55.350
+you can do many different types of things
+
+295
+00:06:55.350 --> 00:06:55.360
+
+
+
+296
+00:06:55.360 --> 00:06:57.350
+in the process of creating the application.  But
+
+297
+00:06:57.350 --> 00:06:57.360
+
+
+
+298
+00:06:57.360 --> 00:07:00.550
+I felt that
+
+299
+00:07:00.550 --> 00:07:00.560
+
+
+
+300
+00:07:00.560 --> 00:07:03.749
+instead of making a very fancy RAG application, our focus here should be on
+
+301
+00:07:03.749 --> 00:07:06.390
+
+
+
+302
+00:07:06.390 --> 00:07:06.400
+
+
+
+303
+00:07:06.400 --> 00:07:08.710
+how we can evaluate even a simple RAG application well.
+
+304
+00:07:08.710 --> 00:07:08.720
+
+
+
+305
+00:07:08.720 --> 00:07:10.790
+And that is why I have
+
+306
+00:07:10.790 --> 00:07:10.800
+
+
+
+307
+00:07:10.800 --> 00:07:12.790
+taken a very simple problem statement.
+
+308
+00:07:12.790 --> 00:07:12.800
+
+
+
+309
+00:07:12.800 --> 00:07:15.749
+It will be a RAG chat bot but it will be
+
+310
+00:07:15.749 --> 00:07:15.759
+
+
+
+311
+00:07:15.759 --> 00:07:18.309
+simple but you will have a
+
+312
+00:07:18.309 --> 00:07:18.319
+
+
+
+313
+00:07:18.319 --> 00:07:20.230
+lot of fun evaluating it.  Ok?  So what we are
+
+314
+00:07:20.230 --> 00:07:20.240
+
+
+
+315
+00:07:20.240 --> 00:07:24.150
+building is campus x's doubt solver.
+
+316
+00:07:24.150 --> 00:07:24.160
+
+
+
+317
+00:07:24.160 --> 00:07:26.150
+Ok?  So the basic problem statement
+
+318
+00:07:26.150 --> 00:07:26.160
+
+
+
+319
+00:07:26.160 --> 00:07:29.270
+premise is that you people are doing this course
+
+320
+00:07:29.270 --> 00:07:29.280
+
+
+
+321
+00:07:29.280 --> 00:07:32.550
+of LLM EVALS where we
+
+322
+00:07:32.550 --> 00:07:32.560
+
+
+
+323
+00:07:32.560 --> 00:07:35.189
+take around two lectures every week and at the
+
+324
+00:07:35.189 --> 00:07:35.199
+
+
+
+325
+00:07:35.199 --> 00:07:38.309
+end of every lecture we provide you the recording as well as the
+
+326
+00:07:38.309 --> 00:07:38.319
+
+
+
+327
+00:07:38.319 --> 00:07:42.230
+transcript of the lecture.
+
+328
+00:07:42.230 --> 00:07:42.240
+
+
+
+329
+00:07:42.240 --> 00:07:45.189
+Right?  So there
+
+330
+00:07:45.189 --> 00:07:45.199
+
+
+
+331
+00:07:45.199 --> 00:07:47.589
+is a transcript of every lecture so far.  So
+
+332
+00:07:47.589 --> 00:07:47.599
+
+
+
+333
+00:07:47.599 --> 00:07:50.950
+what will we do?  These transcripts will be
+
+334
+00:07:50.950 --> 00:07:50.960
+
+
+
+335
+00:07:50.960 --> 00:07:53.589
+used as documents and
+
+336
+00:07:53.589 --> 00:07:53.599
+
+
+
+337
+00:07:53.599 --> 00:07:55.909
+we will feed these documents into LLM
+
+338
+00:07:55.909 --> 00:07:55.919
+
+
+
+339
+00:07:55.919 --> 00:08:00.150
+and then with this LLM you can ask
+
+340
+00:08:00.150 --> 00:08:00.160
+
+
+
+341
+00:08:00.160 --> 00:08:02.309
+any doubt that you have in this entire playlist.
+
+342
+00:08:02.309 --> 00:08:02.319
+
+
+
+343
+00:08:02.319 --> 00:08:05.430
+So basically we are making a RAG
+
+344
+00:08:05.430 --> 00:08:05.440
+
+
+
+345
+00:08:05.440 --> 00:08:08.309
+chatbot for this particular course.  Ok?
+
+346
+00:08:08.309 --> 00:08:08.319
+
+
+
+347
+00:08:08.319 --> 00:08:10.390
+With the help of all the transcripts that we have.
+
+348
+00:08:10.390 --> 00:08:10.400
+
+
+
+349
+00:08:10.400 --> 00:08:12.710
+I'm not going to explain to you again how the RAG works.
+
+350
+00:08:12.710 --> 00:08:12.720
+
+
+
+351
+00:08:12.720 --> 00:08:14.790
+I'm pretty
+
+352
+00:08:14.790 --> 00:08:14.800
+
+
+
+353
+00:08:14.800 --> 00:08:16.469
+sure you've read this enough times by now
+
+354
+00:08:16.469 --> 00:08:16.479
+
+
+
+355
+00:08:16.479 --> 00:08:18.550
+that you know how the RAG works.  There is a
+
+356
+00:08:18.550 --> 00:08:18.560
+
+
+
+357
+00:08:18.560 --> 00:08:21.430
+retriever, a generator, and
+
+358
+00:08:21.430 --> 00:08:21.440
+
+
+
+359
+00:08:21.440 --> 00:08:23.510
+a vector database.  There is an embedding
+
+360
+00:08:23.510 --> 00:08:23.520
+
+
+
+361
+00:08:23.520 --> 00:08:25.270
+model.  You understand all of that.
+
+362
+00:08:25.270 --> 00:08:25.280
+
+
+
+363
+00:08:25.280 --> 00:08:27.270
+So she is not going to work.  I am just roughly
+
+364
+00:08:27.270 --> 00:08:27.280
+
+
+
+365
+00:08:27.280 --> 00:08:28.869
+explaining the problem statement to you.
+
+366
+00:08:28.869 --> 00:08:28.879
+
+
+
+367
+00:08:28.879 --> 00:08:31.189
+That's why we are going to build a simple campus
+
+368
+00:08:31.189 --> 00:08:31.199
+
+
+
+369
+00:08:31.199 --> 00:08:33.750
+x dot doubt solver for this particular
+
+370
+00:08:33.750 --> 00:08:33.760
+
+
+
+371
+00:08:33.760 --> 00:08:35.750
+course.  I am not talking about other courses.   A
+
+372
+00:08:35.750 --> 00:08:35.760
+
+
+
+373
+00:08:35.760 --> 00:08:38.070
+course with Just LLM evals.  Because we have the
+
+374
+00:08:38.070 --> 00:08:38.080
+
+
+
+375
+00:08:38.080 --> 00:08:40.709
+transcript of every lecture of this course.
+
+376
+00:08:40.709 --> 00:08:40.719
+
+
+
+377
+00:08:40.719 --> 00:08:44.230
+Ok?  So what
+
+378
+00:08:44.230 --> 00:08:44.240
+
+
+
+379
+00:08:44.240 --> 00:08:48.710
+will we do?  We will first build this chatbot as a RAG
+
+380
+00:08:48.710 --> 00:08:48.720
+
+
+
+381
+00:08:48.720 --> 00:08:50.949
+project and then
+
+382
+00:08:50.949 --> 00:08:50.959
+
+
+
+383
+00:08:50.959 --> 00:08:53.990
+evaluate it.  In fact,
+
+384
+00:08:53.990 --> 00:08:54.000
+
+
+
+385
+00:08:54.000 --> 00:08:56.310
+we will also evaluate it in the process of making it.
+
+386
+00:08:56.310 --> 00:08:56.320
+
+
+
+387
+00:08:56.320 --> 00:08:59.350
+Ok?  So I hope you
+
+388
+00:08:59.350 --> 00:08:59.360
+
+
+
+389
+00:08:59.360 --> 00:09:01.110
+understood the problem statement.  There
+
+390
+00:09:01.110 --> 00:09:01.120
+
+
+
+391
+00:09:01.120 --> 00:09:03.990
+is nothing special to explain here.  So let's move ahead
+
+392
+00:09:03.990 --> 00:09:04.000
+
+
+
+393
+00:09:04.000 --> 00:09:07.269
+and discuss the most important thing
+
+394
+00:09:07.269 --> 00:09:07.279
+
+
+
+395
+00:09:07.279 --> 00:09:11.269
+that once this chatbot is ready,
+
+396
+00:09:11.269 --> 00:09:11.279
+
+
+
+397
+00:09:11.279 --> 00:09:14.470
+we understand how we will evaluate it.
+
+398
+00:09:14.470 --> 00:09:14.480
+
+
+
+399
+00:09:14.480 --> 00:09:18.389
+Ok?  So we are going to make a proper
+
+400
+00:09:18.389 --> 00:09:18.399
+
+
+
+401
+00:09:18.399 --> 00:09:21.190
+eval suite.  I
+
+402
+00:09:21.190 --> 00:09:21.200
+
+
+
+403
+00:09:21.200 --> 00:09:23.269
+probably taught you that in one of the lectures.  I don't know, do
+
+404
+00:09:23.269 --> 00:09:23.279
+
+
+
+405
+00:09:23.279 --> 00:09:25.670
+you remember that whenever you
+
+406
+00:09:25.670 --> 00:09:25.680
+
+
+
+407
+00:09:25.680 --> 00:09:28.310
+make an LLM based application, there is
+
+408
+00:09:28.310 --> 00:09:28.320
+
+
+
+409
+00:09:28.320 --> 00:09:31.350
+not just a single evaluation of it.
+
+410
+00:09:31.350 --> 00:09:31.360
+
+
+
+411
+00:09:31.360 --> 00:09:34.070
+It has multiple evaluations.
+
+412
+00:09:34.070 --> 00:09:34.080
+
+
+
+413
+00:09:34.080 --> 00:09:37.350
+So what we are going to do is we will
+
+414
+00:09:37.350 --> 00:09:37.360
+
+
+
+415
+00:09:37.360 --> 00:09:39.990
+evaluate the RAG Chatbot we have created from every angle
+
+416
+00:09:39.990 --> 00:09:40.000
+
+
+
+417
+00:09:40.000 --> 00:09:42.949
+at different levels and
+
+418
+00:09:42.949 --> 00:09:42.959
+
+
+
+419
+00:09:42.959 --> 00:09:45.990
+only after passing all those evaluations, we
+
+420
+00:09:45.990 --> 00:09:46.000
+
+
+
+421
+00:09:46.000 --> 00:09:48.550
+will deploy it and even after deployment,
+
+422
+00:09:48.550 --> 00:09:48.560
+
+
+
+423
+00:09:48.560 --> 00:09:50.870
+we will evaluate it with the help of
+
+424
+00:09:50.870 --> 00:09:50.880
+
+
+
+425
+00:09:50.880 --> 00:09:53.430
+online evaluations.  So,
+
+426
+00:09:53.430 --> 00:09:55.750
+
+
+
+427
+00:09:55.750 --> 00:09:55.760
+
+
+
+428
+00:09:55.760 --> 00:09:58.389
+I want to share with you the framework of this entire process of evaluation of this entire RAG chatbot.
+
+429
+00:09:58.389 --> 00:09:58.399
+
+
+
+430
+00:09:58.399 --> 00:10:01.190
+Ok?  So the
+
+431
+00:10:01.190 --> 00:10:01.200
+
+
+
+432
+00:10:01.200 --> 00:10:04.389
+first and most important thing is that we will
+
+433
+00:10:04.389 --> 00:10:06.790
+
+
+
+434
+00:10:06.790 --> 00:10:06.800
+
+
+
+435
+00:10:06.800 --> 00:10:09.829
+evaluate our RAG Chatbot on three levels.  The first level will be the
+
+436
+00:10:09.829 --> 00:10:09.839
+
+
+
+437
+00:10:09.839 --> 00:10:13.829
+component level.  The second will be the pipeline
+
+438
+00:10:13.829 --> 00:10:13.839
+
+
+
+439
+00:10:13.839 --> 00:10:18.069
+level and the third will be the application or
+
+440
+00:10:18.069 --> 00:10:18.079
+
+
+
+441
+00:10:18.079 --> 00:10:20.550
+system level.  I have taught you this earlier also
+
+442
+00:10:20.550 --> 00:10:20.560
+
+
+
+443
+00:10:20.560 --> 00:10:22.790
+that you can evaluate any LLM based
+
+444
+00:10:22.790 --> 00:10:22.800
+
+
+
+445
+00:10:22.800 --> 00:10:25.269
+application at three levels.
+
+446
+00:10:25.269 --> 00:10:25.279
+
+
+
+447
+00:10:25.279 --> 00:10:28.150
+These are three levels.  Ok?
+
+448
+00:10:28.150 --> 00:10:28.160
+
+
+
+449
+00:10:28.160 --> 00:10:30.470
+So first let's talk about the component level.
+
+450
+00:10:30.470 --> 00:10:30.480
+
+
+
+451
+00:10:30.480 --> 00:10:32.470
+What you do at the component level is that
+
+452
+00:10:32.470 --> 00:10:32.480
+
+
+
+453
+00:10:32.480 --> 00:10:35.030
+while you are building the RAG chatbot, you are also
+
+454
+00:10:35.030 --> 00:10:35.040
+
+
+
+455
+00:10:35.040 --> 00:10:37.190
+simultaneously
+
+456
+00:10:37.190 --> 00:10:37.200
+
+
+
+457
+00:10:37.200 --> 00:10:39.910
+evaluating the components.
+
+458
+00:10:39.910 --> 00:10:39.920
+
+
+
+459
+00:10:39.920 --> 00:10:42.550
+So here we will have to discuss the
+
+460
+00:10:42.550 --> 00:10:42.560
+
+
+
+461
+00:10:42.560 --> 00:10:45.030
+architecture of the RAG a little.  You must know it.
+
+462
+00:10:45.030 --> 00:10:45.040
+
+
+
+463
+00:10:45.040 --> 00:10:48.230
+You have a retriever and
+
+464
+00:10:48.230 --> 00:10:48.240
+
+
+
+465
+00:10:48.240 --> 00:10:51.990
+you have a generator and you have
+
+466
+00:10:51.990 --> 00:10:52.000
+
+
+
+467
+00:10:52.000 --> 00:10:55.829
+a vector database which contains
+
+468
+00:10:55.829 --> 00:10:55.839
+
+
+
+469
+00:10:55.839 --> 00:10:58.310
+all your documents
+
+470
+00:10:58.310 --> 00:10:58.320
+
+
+
+471
+00:10:58.320 --> 00:11:00.949
+stored as vectors.  As soon as you get a query,
+
+472
+00:11:00.949 --> 00:11:00.959
+
+
+
+473
+00:11:00.959 --> 00:11:04.230
+you send that query to the vector
+
+474
+00:11:04.230 --> 00:11:04.240
+
+
+
+475
+00:11:04.240 --> 00:11:06.790
+database.  What a vector database does is
+
+476
+00:11:06.790 --> 00:11:10.790
+
+
+
+477
+00:11:10.790 --> 00:11:10.800
+
+
+
+478
+00:11:10.800 --> 00:11:13.590
+send the closest relevant documents to you.
+
+479
+00:11:13.590 --> 00:11:13.600
+
+
+
+480
+00:11:13.600 --> 00:11:15.430
+Basically, this entire work is of the retriever.  So the
+
+481
+00:11:15.430 --> 00:11:15.440
+
+
+
+482
+00:11:15.440 --> 00:11:18.630
+retriever gives you the pay query plus the
+
+483
+00:11:18.630 --> 00:11:18.640
+
+
+
+484
+00:11:18.640 --> 00:11:21.110
+relevant context here.  You send this
+
+485
+00:11:21.110 --> 00:11:21.120
+
+
+
+486
+00:11:21.120 --> 00:11:22.710
+question and the relevant context to the
+
+487
+00:11:22.710 --> 00:11:22.720
+
+
+
+488
+00:11:22.720 --> 00:11:25.829
+generator and the generator
+
+489
+00:11:25.829 --> 00:11:25.839
+
+
+
+490
+00:11:25.839 --> 00:11:28.630
+generates an answer based on both of these things.
+
+491
+00:11:28.630 --> 00:11:28.640
+
+
+
+492
+00:11:28.640 --> 00:11:30.710
+This is the working of a basic RAG
+
+493
+00:11:30.710 --> 00:11:30.720
+
+
+
+494
+00:11:30.720 --> 00:11:33.110
+chat bot.  Right?  So now if you have to develop and build it step by
+
+495
+00:11:33.110 --> 00:11:33.120
+
+
+
+496
+00:11:33.120 --> 00:11:34.870
+step, then
+
+497
+00:11:34.870 --> 00:11:34.880
+
+
+
+498
+00:11:34.880 --> 00:11:37.430
+what will you obviously do first?  You will
+
+499
+00:11:37.430 --> 00:11:37.440
+
+
+
+500
+00:11:37.440 --> 00:11:40.389
+build this retriever.  Once this
+
+501
+00:11:40.389 --> 00:11:40.399
+
+
+
+502
+00:11:40.399 --> 00:11:43.269
+retriever is built, you will then build this generator
+
+503
+00:11:43.269 --> 00:11:43.279
+
+
+
+504
+00:11:43.279 --> 00:11:45.190
+and connect both of them.
+
+505
+00:11:45.190 --> 00:11:45.200
+
+
+
+506
+00:11:45.200 --> 00:11:47.430
+So this pipeline is what you
+
+507
+00:11:47.430 --> 00:11:47.440
+
+
+
+508
+00:11:47.440 --> 00:11:50.069
+call a RAG.  So our strategy will be
+
+509
+00:11:50.069 --> 00:11:50.079
+
+
+
+510
+00:11:50.079 --> 00:11:53.190
+that we will first
+
+511
+00:11:53.190 --> 00:11:53.200
+
+
+
+512
+00:11:53.200 --> 00:11:55.350
+build the retriever in step one.  Basically we
+
+513
+00:11:55.350 --> 00:11:55.360
+
+
+
+514
+00:11:55.360 --> 00:11:57.829
+will write the code of the retriever.  Ok?  So
+
+515
+00:11:57.829 --> 00:11:57.839
+
+
+
+516
+00:11:57.839 --> 00:11:59.670
+you do all that work here.  You will
+
+517
+00:11:59.670 --> 00:11:59.680
+
+
+
+518
+00:11:59.680 --> 00:12:02.389
+load and bring the documents.  You will chunk it.   You will
+
+519
+00:12:02.389 --> 00:12:04.710
+
+
+
+520
+00:12:04.710 --> 00:12:04.720
+
+
+
+521
+00:12:04.720 --> 00:12:07.190
+convert it into vectors by putting it into an embedding model and then with the
+
+522
+00:12:07.190 --> 00:12:07.200
+
+
+
+523
+00:12:07.200 --> 00:12:09.509
+help of a retriever, you will fetch the relevant documents by fetching the new query.
+
+524
+00:12:09.509 --> 00:12:11.430
+
+
+
+525
+00:12:11.430 --> 00:12:11.440
+
+
+
+526
+00:12:11.440 --> 00:12:12.870
+This entire work is what we
+
+527
+00:12:12.870 --> 00:12:12.880
+
+
+
+528
+00:12:12.880 --> 00:12:15.509
+call retriever.  Right?  So as
+
+529
+00:12:15.509 --> 00:12:15.519
+
+
+
+530
+00:12:15.519 --> 00:12:18.470
+we create this retriever, what will we do immediately in step two
+
+531
+00:12:18.470 --> 00:12:18.480
+
+
+
+532
+00:12:18.480 --> 00:12:20.389
+?  Will
+
+533
+00:12:20.389 --> 00:12:20.399
+
+
+
+534
+00:12:20.399 --> 00:12:23.430
+start evaluating this retriever.  Independently
+
+535
+00:12:23.430 --> 00:12:23.440
+
+
+
+536
+00:12:23.440 --> 00:12:25.670
+Just the Retriever.  We Are Not Focusing On The
+
+537
+00:12:25.670 --> 00:12:25.680
+
+
+
+538
+00:12:25.680 --> 00:12:28.310
+Entire Application.  Right now our entire
+
+539
+00:12:28.310 --> 00:12:28.320
+
+
+
+540
+00:12:28.320 --> 00:12:30.870
+focus is whether the retriever that we have created is
+
+541
+00:12:30.870 --> 00:12:30.880
+
+
+
+542
+00:12:30.880 --> 00:12:34.150
+working properly or not and the
+
+543
+00:12:34.150 --> 00:12:34.160
+
+
+
+544
+00:12:34.160 --> 00:12:36.629
+retriever is working properly means only one thing that
+
+545
+00:12:36.629 --> 00:12:36.639
+
+
+
+546
+00:12:36.639 --> 00:12:39.269
+given a question is whether
+
+547
+00:12:39.269 --> 00:12:39.279
+
+
+
+548
+00:12:39.279 --> 00:12:42.310
+my retriever is
+
+549
+00:12:42.310 --> 00:12:42.320
+
+
+
+550
+00:12:42.320 --> 00:12:44.949
+able to fetch the correct documents from the vector database or
+
+551
+00:12:44.949 --> 00:12:44.959
+
+
+
+552
+00:12:44.959 --> 00:12:48.310
+not?  So here we will use two metrics for evaluation.
+
+553
+00:12:48.310 --> 00:12:48.320
+
+
+
+554
+00:12:48.320 --> 00:12:51.430
+One will be recall
+
+555
+00:12:51.430 --> 00:12:51.440
+
+
+
+556
+00:12:51.440 --> 00:12:53.430
+which tells how many of the correct
+
+557
+00:12:53.430 --> 00:12:53.440
+
+
+
+558
+00:12:53.440 --> 00:12:55.190
+documents
+
+559
+00:12:55.190 --> 00:12:55.200
+
+
+
+560
+00:12:55.200 --> 00:12:57.910
+I was able to bring and the second is
+
+561
+00:12:57.910 --> 00:12:57.920
+
+
+
+562
+00:12:57.920 --> 00:13:00.550
+precision which means
+
+563
+00:13:00.550 --> 00:13:02.710
+
+
+
+564
+00:13:02.710 --> 00:13:02.720
+
+
+
+565
+00:13:02.720 --> 00:13:05.430
+how many of the documents I brought were useful documents.  So we will
+
+566
+00:13:05.430 --> 00:13:05.440
+
+
+
+567
+00:13:05.440 --> 00:13:07.990
+evaluate our retriever on both of these
+
+568
+00:13:07.990 --> 00:13:08.000
+
+
+
+569
+00:13:08.000 --> 00:13:10.550
+and once this evaluation is done
+
+570
+00:13:10.550 --> 00:13:10.560
+
+
+
+571
+00:13:10.560 --> 00:13:12.949
+and we are satisfied that our
+
+572
+00:13:12.949 --> 00:13:12.959
+
+
+
+573
+00:13:12.959 --> 00:13:15.750
+retriever is working properly then we will
+
+574
+00:13:15.750 --> 00:13:15.760
+
+
+
+575
+00:13:15.760 --> 00:13:18.470
+move to step three and in step three
+
+576
+00:13:18.470 --> 00:13:18.480
+
+
+
+577
+00:13:18.480 --> 00:13:22.069
+we will start building our generator.
+
+578
+00:13:22.069 --> 00:13:22.079
+
+
+
+579
+00:13:22.079 --> 00:13:24.790
+Ok?  So now we
+
+580
+00:13:24.790 --> 00:13:24.800
+
+
+
+581
+00:13:24.800 --> 00:13:27.670
+will write the code for the generator.  Generator is basically an LLM
+
+582
+00:13:27.670 --> 00:13:27.680
+
+
+
+583
+00:13:27.680 --> 00:13:29.910
+in which you give a question and the
+
+584
+00:13:29.910 --> 00:13:29.920
+
+
+
+585
+00:13:29.920 --> 00:13:31.750
+relevant context and the
+
+586
+00:13:31.750 --> 00:13:31.760
+
+
+
+587
+00:13:31.760 --> 00:13:34.230
+generator gives you an answer in return.
+
+588
+00:13:34.230 --> 00:13:34.240
+
+
+
+589
+00:13:34.240 --> 00:13:37.190
+So we'll build this in isolation.  And
+
+590
+00:13:37.190 --> 00:13:37.200
+
+
+
+591
+00:13:37.200 --> 00:13:40.790
+after creating it, we will also evaluate it in step four.
+
+592
+00:13:40.790 --> 00:13:40.800
+
+
+
+593
+00:13:40.800 --> 00:13:43.990
+And
+
+594
+00:13:43.990 --> 00:13:44.000
+
+
+
+595
+00:13:44.000 --> 00:13:46.790
+you will learn two-three metrics to evaluate this.  One
+
+596
+00:13:46.790 --> 00:13:46.800
+
+
+
+597
+00:13:46.800 --> 00:13:49.829
+would be faithfulness which basically tells
+
+598
+00:13:49.829 --> 00:13:49.839
+
+
+
+599
+00:13:49.839 --> 00:13:52.870
+whether the answer generated was
+
+600
+00:13:52.870 --> 00:13:52.880
+
+
+
+601
+00:13:52.880 --> 00:13:54.949
+generated from within the given context
+
+602
+00:13:54.949 --> 00:13:54.959
+
+
+
+603
+00:13:54.959 --> 00:13:57.189
+or something the model hallucinated on its own.
+
+604
+00:13:57.189 --> 00:13:57.199
+
+
+
+605
+00:13:57.199 --> 00:13:59.990
+So we will check this thing.  Secondly, we
+
+606
+00:13:59.990 --> 00:14:00.000
+
+
+
+607
+00:14:00.000 --> 00:14:04.710
+will check whether the answer generated by you is
+
+608
+00:14:04.710 --> 00:14:04.720
+
+
+
+609
+00:14:04.720 --> 00:14:07.509
+relevant to the question or
+
+610
+00:14:07.509 --> 00:14:07.519
+
+
+
+611
+00:14:07.519 --> 00:14:11.910
+not.  And thirdly, we will also judge citation accuracy.
+
+612
+00:14:11.910 --> 00:14:11.920
+
+
+
+613
+00:14:11.920 --> 00:14:14.310
+You must have noticed that ChatGPT
+
+614
+00:14:14.310 --> 00:14:14.320
+
+
+
+615
+00:14:14.320 --> 00:14:16.310
+also sometimes gives answers after looking at some document and
+
+616
+00:14:16.310 --> 00:14:16.320
+
+
+
+617
+00:14:16.320 --> 00:14:18.230
+refers that I have
+
+618
+00:14:18.230 --> 00:14:18.240
+
+
+
+619
+00:14:18.240 --> 00:14:21.430
+picked up this point from this line of this document
+
+620
+00:14:21.430 --> 00:14:21.440
+
+
+
+621
+00:14:21.440 --> 00:14:23.670
+or I have picked up this point from this link.
+
+622
+00:14:23.670 --> 00:14:23.680
+
+
+
+623
+00:14:23.680 --> 00:14:26.310
+So we call this citation.  So
+
+624
+00:14:26.310 --> 00:14:26.320
+
+
+
+625
+00:14:26.320 --> 00:14:28.629
+what is our doubt solver doing?
+
+626
+00:14:28.629 --> 00:14:28.639
+
+
+
+627
+00:14:28.639 --> 00:14:30.470
+Solving doubts for a given question.  So at the same time
+
+628
+00:14:30.470 --> 00:14:30.480
+
+
+
+629
+00:14:30.480 --> 00:14:33.509
+he will tell us
+
+630
+00:14:33.509 --> 00:14:33.519
+
+
+
+631
+00:14:33.519 --> 00:14:36.150
+in which session Nitish Sir had discussed this question.
+
+632
+00:14:36.150 --> 00:14:36.160
+
+
+
+633
+00:14:36.160 --> 00:14:37.829
+So we will provide the link of that transcript.
+
+634
+00:14:37.829 --> 00:14:37.839
+
+
+
+635
+00:14:37.839 --> 00:14:40.230
+So
+
+636
+00:14:40.230 --> 00:14:40.240
+
+
+
+637
+00:14:40.240 --> 00:14:43.750
+we will also judge that citation accuracy in the generator.  Ok
+
+638
+00:14:43.750 --> 00:14:43.760
+
+
+
+639
+00:14:43.760 --> 00:14:46.710
+?  Now here one important thing is we will
+
+640
+00:14:46.710 --> 00:14:50.069
+
+
+
+641
+00:14:50.069 --> 00:14:50.079
+
+
+
+642
+00:14:50.079 --> 00:14:52.949
+evaluate the generator in isolation.  Which basically means that at
+
+643
+00:14:52.949 --> 00:14:52.959
+
+
+
+644
+00:14:52.959 --> 00:14:57.110
+this point your generator is not connected
+
+645
+00:14:57.110 --> 00:14:57.120
+
+
+
+646
+00:14:57.120 --> 00:15:00.389
+to the retriever.  Which basically means that
+
+647
+00:15:00.389 --> 00:15:00.399
+
+
+
+648
+00:15:00.399 --> 00:15:04.870
+we will manually provide some questions
+
+649
+00:15:04.870 --> 00:15:04.880
+
+
+
+650
+00:15:04.880 --> 00:15:07.670
+and some context to this generator.
+
+651
+00:15:07.670 --> 00:15:07.680
+
+
+
+652
+00:15:07.680 --> 00:15:10.150
+Kind of like a golden data set.  We are
+
+653
+00:15:10.150 --> 00:15:10.160
+
+
+
+654
+00:15:10.160 --> 00:15:12.150
+providing it independently.
+
+655
+00:15:12.150 --> 00:15:12.160
+
+
+
+656
+00:15:12.160 --> 00:15:13.990
+Retrievers are not getting it.  We have
+
+657
+00:15:13.990 --> 00:15:14.000
+
+
+
+658
+00:15:14.000 --> 00:15:16.230
+n't built this pipeline yet.  We are doing
+
+659
+00:15:16.230 --> 00:15:16.240
+
+
+
+660
+00:15:16.240 --> 00:15:19.829
+component level evaluation.  Once this
+
+661
+00:15:19.829 --> 00:15:19.839
+
+
+
+662
+00:15:19.839 --> 00:15:22.550
+generator is evaluated in isolation,
+
+663
+00:15:22.550 --> 00:15:22.560
+
+
+
+664
+00:15:22.560 --> 00:15:24.550
+we are satisfied that yes, this generator is
+
+665
+00:15:24.550 --> 00:15:24.560
+
+
+
+666
+00:15:24.560 --> 00:15:27.430
+working well on its own.  Then
+
+667
+00:15:27.430 --> 00:15:27.440
+
+
+
+668
+00:15:27.440 --> 00:15:31.269
+this level of ours will be achieved that we have done
+
+669
+00:15:31.269 --> 00:15:31.279
+
+
+
+670
+00:15:31.279 --> 00:15:33.189
+things at the component level.  Our
+
+671
+00:15:33.189 --> 00:15:33.199
+
+
+
+672
+00:15:33.199 --> 00:15:35.030
+retriever is doing well in isolation.
+
+673
+00:15:35.030 --> 00:15:35.040
+
+
+
+674
+00:15:35.040 --> 00:15:36.870
+Our generator is working well in isolation.
+
+675
+00:15:36.870 --> 00:15:36.880
+
+
+
+676
+00:15:36.880 --> 00:15:39.269
+We're done with stage
+
+677
+00:15:39.269 --> 00:15:39.279
+
+
+
+678
+00:15:39.279 --> 00:15:44.150
+one.  After that comes the next stage which is
+
+679
+00:15:44.150 --> 00:15:44.160
+
+
+
+680
+00:15:44.160 --> 00:15:47.269
+step five.  Where will we do it now?
+
+681
+00:15:47.269 --> 00:15:47.279
+
+
+
+682
+00:15:47.279 --> 00:15:50.790
+We'll build our RAG pipeline.
+
+683
+00:15:50.790 --> 00:15:50.800
+
+
+
+684
+00:15:50.800 --> 00:15:53.110
+Building a RAG pipeline simply means
+
+685
+00:15:53.110 --> 00:15:53.120
+
+
+
+686
+00:15:53.120 --> 00:15:56.230
+we will connect our retriever and generator.  It
+
+687
+00:15:56.230 --> 00:15:56.240
+
+
+
+688
+00:15:56.240 --> 00:15:59.509
+is a very simple code.  Got connected.
+
+689
+00:15:59.509 --> 00:15:59.519
+
+
+
+690
+00:15:59.519 --> 00:16:02.710
+After this comes step six.  Where we
+
+691
+00:16:02.710 --> 00:16:02.720
+
+
+
+692
+00:16:02.720 --> 00:16:05.189
+will check that when both of these are
+
+693
+00:16:05.189 --> 00:16:05.199
+
+
+
+694
+00:16:05.199 --> 00:16:07.749
+connected and a pipeline is formed, then is this
+
+695
+00:16:07.749 --> 00:16:07.759
+
+
+
+696
+00:16:07.759 --> 00:16:10.550
+entire pipeline working properly
+
+697
+00:16:10.550 --> 00:16:10.560
+
+
+
+698
+00:16:10.560 --> 00:16:12.949
+or not?  And the
+
+699
+00:16:12.949 --> 00:16:12.959
+
+
+
+700
+00:16:12.959 --> 00:16:16.550
+evaluation here is a very famous term.
+
+701
+00:16:16.550 --> 00:16:16.560
+
+
+
+702
+00:16:16.560 --> 00:16:20.150
+We call this RAG triad.  So
+
+703
+00:16:20.150 --> 00:16:20.160
+
+
+
+704
+00:16:20.160 --> 00:16:22.230
+basically what do you do here?  Here,
+
+705
+00:16:22.230 --> 00:16:22.240
+
+
+
+706
+00:16:22.240 --> 00:16:25.110
+as soon as you create a RAG pipeline,
+
+707
+00:16:25.110 --> 00:16:25.120
+
+
+
+708
+00:16:25.120 --> 00:16:28.470
+you check three metrics.  And these three
+
+709
+00:16:28.470 --> 00:16:28.480
+
+
+
+710
+00:16:28.480 --> 00:16:30.389
+metrics we call the RAG triad.
+
+711
+00:16:30.389 --> 00:16:30.399
+
+
+
+712
+00:16:30.399 --> 00:16:32.790
+Why do you call?  Let me tell you.  So
+
+713
+00:16:32.790 --> 00:16:32.800
+
+
+
+714
+00:16:32.800 --> 00:16:34.310
+three things are existing here.   First of all, the
+
+715
+00:16:34.310 --> 00:16:34.320
+
+
+
+716
+00:16:34.320 --> 00:16:36.470
+user's question, the
+
+717
+00:16:36.470 --> 00:16:36.480
+
+
+
+718
+00:16:36.480 --> 00:16:39.430
+context that we have received from the vector database, the
+
+719
+00:16:39.430 --> 00:16:39.440
+
+
+
+720
+00:16:39.440 --> 00:16:42.710
+retriever that has brought it, and the answer that has been
+
+721
+00:16:42.710 --> 00:16:42.720
+
+
+
+722
+00:16:42.720 --> 00:16:46.710
+generated by the generator, these three
+
+723
+00:16:46.710 --> 00:16:46.720
+
+
+
+724
+00:16:46.720 --> 00:16:50.389
+things exist.  Right?  So,
+
+725
+00:16:50.389 --> 00:16:50.399
+
+
+
+726
+00:16:50.399 --> 00:16:54.550
+three matrices exist only in these three pairs.  For example, there exists
+
+727
+00:16:54.550 --> 00:16:56.949
+
+
+
+728
+00:16:56.949 --> 00:16:56.959
+
+
+
+729
+00:16:56.959 --> 00:17:00.069
+a metric for question and context
+
+730
+00:17:00.069 --> 00:17:00.079
+
+
+
+731
+00:17:00.079 --> 00:17:03.110
+which we call context
+
+732
+00:17:03.110 --> 00:17:03.120
+
+
+
+733
+00:17:03.120 --> 00:17:04.630
+relevance.
+
+734
+00:17:04.630 --> 00:17:04.640
+
+
+
+735
+00:17:04.640 --> 00:17:07.990
+Which tells whether the
+
+736
+00:17:07.990 --> 00:17:08.000
+
+
+
+737
+00:17:08.000 --> 00:17:11.110
+context fetched
+
+738
+00:17:11.110 --> 00:17:11.120
+
+
+
+739
+00:17:11.120 --> 00:17:14.069
+from the retriever for a given query is relevant to the query or not.
+
+740
+00:17:14.069 --> 00:17:14.079
+
+
+
+741
+00:17:14.079 --> 00:17:17.990
+Ok?  The second is the
+
+742
+00:17:17.990 --> 00:17:18.000
+
+
+
+743
+00:17:18.000 --> 00:17:21.350
+answer and context, we call this
+
+744
+00:17:21.350 --> 00:17:21.360
+
+
+
+745
+00:17:21.360 --> 00:17:23.429
+faithfulness.
+
+746
+00:17:23.429 --> 00:17:23.439
+
+
+
+747
+00:17:23.439 --> 00:17:25.990
+This basically tells us
+
+748
+00:17:25.990 --> 00:17:26.000
+
+
+
+749
+00:17:26.000 --> 00:17:28.630
+whether the answer generated is from the context itself
+
+750
+00:17:28.630 --> 00:17:28.640
+
+
+
+751
+00:17:28.640 --> 00:17:31.430
+or some hallucinated
+
+752
+00:17:31.430 --> 00:17:31.440
+
+
+
+753
+00:17:31.440 --> 00:17:35.029
+model.  And thirdly, you will check whether your
+
+754
+00:17:35.029 --> 00:17:35.039
+
+
+
+755
+00:17:35.039 --> 00:17:37.750
+answer and question are related to each other or
+
+756
+00:17:37.750 --> 00:17:37.760
+
+
+
+757
+00:17:37.760 --> 00:17:39.350
+not.  And the metric for this is what
+
+758
+00:17:39.350 --> 00:17:39.360
+
+
+
+759
+00:17:39.360 --> 00:17:41.990
+we call answer
+
+760
+00:17:41.990 --> 00:17:42.000
+
+
+
+761
+00:17:42.000 --> 00:17:44.630
+relevance.  Here basically you are told whether the answer given for a question is
+
+762
+00:17:44.630 --> 00:17:47.350
+
+
+
+763
+00:17:47.350 --> 00:17:47.360
+
+
+
+764
+00:17:47.360 --> 00:17:49.669
+relevant to the question or
+
+765
+00:17:49.669 --> 00:17:49.679
+
+
+
+766
+00:17:49.679 --> 00:17:53.990
+not.  So we test these three
+
+767
+00:17:53.990 --> 00:17:54.000
+
+
+
+768
+00:17:54.000 --> 00:17:56.950
+metrics in isolation on our RAG
+
+769
+00:17:56.950 --> 00:17:56.960
+
+
+
+770
+00:17:56.960 --> 00:17:59.510
+pipeline.  If these three metrics are
+
+771
+00:17:59.510 --> 00:17:59.520
+
+
+
+772
+00:17:59.520 --> 00:18:02.950
+working properly, it means that your RAG
+
+773
+00:18:02.950 --> 00:18:02.960
+
+
+
+774
+00:18:02.960 --> 00:18:06.230
+pipeline is working properly.  And if these
+
+775
+00:18:06.230 --> 00:18:06.240
+
+
+
+776
+00:18:06.240 --> 00:18:08.150
+three metrics are done then this
+
+777
+00:18:08.150 --> 00:18:08.160
+
+
+
+778
+00:18:08.160 --> 00:18:11.510
+particular level of ours will also be done.  So
+
+779
+00:18:11.510 --> 00:18:11.520
+
+
+
+780
+00:18:11.520 --> 00:18:13.430
+you are able to understand the flow I guess till now.
+
+781
+00:18:13.430 --> 00:18:13.440
+
+
+
+782
+00:18:13.440 --> 00:18:15.270
+What are we doing?  We're not doing this by
+
+783
+00:18:15.270 --> 00:18:15.280
+
+
+
+784
+00:18:15.280 --> 00:18:17.430
+first building our entire RAG chatbot
+
+785
+00:18:17.430 --> 00:18:17.440
+
+
+
+786
+00:18:17.440 --> 00:18:20.150
+and then evaluating it.
+
+787
+00:18:20.150 --> 00:18:20.160
+
+
+
+788
+00:18:20.160 --> 00:18:23.510
+No, it doesn't work like that.  Your Building
+
+789
+00:18:23.510 --> 00:18:23.520
+
+
+
+790
+00:18:23.520 --> 00:18:26.150
+the Chatbot and Evaluating It.  He
+
+791
+00:18:26.150 --> 00:18:26.160
+
+
+
+792
+00:18:26.160 --> 00:18:28.070
+works together.  It is just like software.
+
+793
+00:18:28.070 --> 00:18:28.080
+
+
+
+794
+00:18:28.080 --> 00:18:29.830
+In software, you don't
+
+795
+00:18:29.830 --> 00:18:29.840
+
+
+
+796
+00:18:29.840 --> 00:18:31.590
+create a complete application and then
+
+797
+00:18:31.590 --> 00:18:31.600
+
+
+
+798
+00:18:31.600 --> 00:18:34.310
+test it.  No, you do testing at the feature level also.
+
+799
+00:18:34.310 --> 00:18:34.320
+
+
+
+800
+00:18:34.320 --> 00:18:35.990
+You also do testing at the function level.  What is exactly happening
+
+801
+00:18:35.990 --> 00:18:36.000
+
+
+
+802
+00:18:36.000 --> 00:18:37.830
+here is that
+
+803
+00:18:37.830 --> 00:18:37.840
+
+
+
+804
+00:18:37.840 --> 00:18:39.830
+you tested your components.
+
+805
+00:18:39.830 --> 00:18:39.840
+
+
+
+806
+00:18:39.840 --> 00:18:41.750
+When you added the components,
+
+807
+00:18:41.750 --> 00:18:41.760
+
+
+
+808
+00:18:41.760 --> 00:18:43.909
+you also tested the pipeline.  The pipeline was
+
+809
+00:18:43.909 --> 00:18:43.919
+
+
+
+810
+00:18:43.919 --> 00:18:46.150
+also completed.  Now that your application has arrived,
+
+811
+00:18:46.150 --> 00:18:46.160
+
+
+
+812
+00:18:46.160 --> 00:18:48.230
+you will now test it at the application level also.  So I really hope
+
+813
+00:18:48.230 --> 00:18:48.240
+
+
+
+814
+00:18:48.240 --> 00:18:50.390
+you are getting the flow so far.
+
+815
+00:18:50.390 --> 00:18:50.400
+
+
+
+816
+00:18:50.400 --> 00:18:54.310
+Ok?  So now that we have
+
+817
+00:18:54.310 --> 00:18:54.320
+
+
+
+818
+00:18:54.320 --> 00:18:58.070
+tested the pipeline.  Next is that now you do
+
+819
+00:18:58.070 --> 00:18:58.080
+
+
+
+820
+00:18:58.080 --> 00:19:01.029
+application level testing in step seven.
+
+821
+00:19:01.029 --> 00:19:01.039
+
+
+
+822
+00:19:01.039 --> 00:19:02.870
+Here basically you are testing
+
+823
+00:19:02.870 --> 00:19:02.880
+
+
+
+824
+00:19:02.880 --> 00:19:04.870
+whether your application, which is the doubt
+
+825
+00:19:04.870 --> 00:19:04.880
+
+
+
+826
+00:19:04.880 --> 00:19:07.909
+solver, is functioning properly or
+
+827
+00:19:07.909 --> 00:19:07.919
+
+
+
+828
+00:19:07.919 --> 00:19:10.070
+not.  So there are a lot of other metrics that
+
+829
+00:19:10.070 --> 00:19:10.080
+
+
+
+830
+00:19:10.080 --> 00:19:12.230
+come into play here.  For example, a very important
+
+831
+00:19:12.230 --> 00:19:12.240
+
+
+
+832
+00:19:12.240 --> 00:19:15.990
+metric is correctness.  Is the answer that has come out
+
+833
+00:19:15.990 --> 00:19:16.000
+
+
+
+834
+00:19:16.000 --> 00:19:19.029
+correct or not?  You have to
+
+835
+00:19:19.029 --> 00:19:19.039
+
+
+
+836
+00:19:19.039 --> 00:19:22.150
+find out this.  Then there is another metric
+
+837
+00:19:22.150 --> 00:19:22.160
+
+
+
+838
+00:19:22.160 --> 00:19:24.710
+which we call completeness.
+
+839
+00:19:24.710 --> 00:19:24.720
+
+
+
+840
+00:19:24.720 --> 00:19:26.710
+Completeness tells
+
+841
+00:19:26.710 --> 00:19:26.720
+
+
+
+842
+00:19:26.720 --> 00:19:29.830
+whether the answer given a question
+
+843
+00:19:29.830 --> 00:19:29.840
+
+
+
+844
+00:19:29.840 --> 00:19:31.510
+completely
+
+845
+00:19:31.510 --> 00:19:31.520
+
+
+
+846
+00:19:31.520 --> 00:19:33.830
+answers that question or not.  Suppose your
+
+847
+00:19:33.830 --> 00:19:33.840
+
+
+
+848
+00:19:33.840 --> 00:19:35.830
+question has two parts but the
+
+849
+00:19:35.830 --> 00:19:35.840
+
+
+
+850
+00:19:35.840 --> 00:19:37.750
+answer you gave is answering only one part.  If the
+
+851
+00:19:37.750 --> 00:19:37.760
+
+
+
+852
+00:19:37.760 --> 00:19:39.830
+second part is ignored then there is
+
+853
+00:19:39.830 --> 00:19:39.840
+
+
+
+854
+00:19:39.840 --> 00:19:42.150
+no completeness.  Even though the answer to one part
+
+855
+00:19:42.150 --> 00:19:42.160
+
+
+
+856
+00:19:42.160 --> 00:19:45.029
+is correct, there is no completeness.  So
+
+857
+00:19:45.029 --> 00:19:45.039
+
+
+
+858
+00:19:45.039 --> 00:19:48.710
+we check that as well.  Thirdly, we will also
+
+859
+00:19:48.710 --> 00:19:48.720
+
+
+
+860
+00:19:48.720 --> 00:19:52.549
+check the style.  We will try to make our
+
+861
+00:19:52.549 --> 00:19:52.559
+
+
+
+862
+00:19:52.559 --> 00:19:54.710
+Campus X doubt solver have the same
+
+863
+00:19:54.710 --> 00:19:54.720
+
+
+
+864
+00:19:54.720 --> 00:19:57.270
+explanation style as that of the
+
+865
+00:19:57.270 --> 00:19:57.280
+
+
+
+866
+00:19:57.280 --> 00:19:59.430
+teachers of Campus X.  We will evaluate this thing also
+
+867
+00:19:59.430 --> 00:19:59.440
+
+
+
+868
+00:19:59.440 --> 00:20:02.310
+and you can do this.  So
+
+869
+00:20:02.310 --> 00:20:02.320
+
+
+
+870
+00:20:02.320 --> 00:20:05.110
+this also comes under application level evaluation.
+
+871
+00:20:05.110 --> 00:20:05.120
+
+
+
+872
+00:20:05.120 --> 00:20:08.070
+So these are some quality related
+
+873
+00:20:08.070 --> 00:20:08.080
+
+
+
+874
+00:20:08.080 --> 00:20:10.870
+metrics.  Apart from this,
+
+875
+00:20:10.870 --> 00:20:10.880
+
+
+
+876
+00:20:10.880 --> 00:20:13.750
+if you talk at the application level, then you will also test the safety here.
+
+877
+00:20:13.750 --> 00:20:13.760
+
+
+
+878
+00:20:13.760 --> 00:20:16.390
+You will check whether your
+
+879
+00:20:16.390 --> 00:20:16.400
+
+
+
+880
+00:20:16.400 --> 00:20:19.430
+response is toxic or not.  Or you
+
+881
+00:20:19.430 --> 00:20:19.440
+
+
+
+882
+00:20:19.440 --> 00:20:21.750
+can check whether your response is
+
+883
+00:20:21.750 --> 00:20:24.310
+
+
+
+884
+00:20:24.310 --> 00:20:24.320
+
+
+
+885
+00:20:24.320 --> 00:20:26.710
+providing any personally identifying information.  You will check if
+
+886
+00:20:26.710 --> 00:20:26.720
+
+
+
+887
+00:20:26.720 --> 00:20:29.350
+your CampusX doubt solver can be jailbroken.
+
+888
+00:20:29.350 --> 00:20:29.360
+
+
+
+889
+00:20:29.360 --> 00:20:31.990
+So these safety ones
+
+890
+00:20:31.990 --> 00:20:32.000
+
+
+
+891
+00:20:32.000 --> 00:20:34.549
+too, we will do evaluations step number eight.  In
+
+892
+00:20:34.549 --> 00:20:34.559
+
+
+
+893
+00:20:34.559 --> 00:20:39.909
+step number eight, we will
+
+894
+00:20:39.909 --> 00:20:39.919
+
+
+
+895
+00:20:39.919 --> 00:20:43.430
+run the safety apps on this application.  And
+
+896
+00:20:43.430 --> 00:20:43.440
+
+
+
+897
+00:20:43.440 --> 00:20:47.430
+lastly comes the operations EEs where
+
+898
+00:20:47.430 --> 00:20:47.440
+
+
+
+899
+00:20:47.440 --> 00:20:50.070
+you check three things, primarily
+
+900
+00:20:50.070 --> 00:20:50.080
+
+
+
+901
+00:20:50.080 --> 00:20:52.789
+what is your latency, how much is the application
+
+902
+00:20:52.789 --> 00:20:52.799
+
+
+
+903
+00:20:52.799 --> 00:20:55.270
+costing you per query and
+
+904
+00:20:55.270 --> 00:20:55.280
+
+
+
+905
+00:20:55.280 --> 00:20:57.830
+how many tokens are you spending, so this comes
+
+906
+00:20:57.830 --> 00:20:57.840
+
+
+
+907
+00:20:57.840 --> 00:21:01.990
+step number nine, we call it ops
+
+908
+00:21:01.990 --> 00:21:02.000
+
+
+
+909
+00:21:02.000 --> 00:21:03.590
+EEs,
+
+910
+00:21:03.590 --> 00:21:03.600
+
+
+
+911
+00:21:03.600 --> 00:21:08.149
+we will test this, okay, so this entire
+
+912
+00:21:08.149 --> 00:21:08.159
+
+
+
+913
+00:21:08.159 --> 00:21:10.310
+thing which I have told you till now, component
+
+914
+00:21:10.310 --> 00:21:10.320
+
+
+
+915
+00:21:10.320 --> 00:21:13.750
+pipeline and application,
+
+916
+00:21:13.750 --> 00:21:13.760
+
+
+
+917
+00:21:13.760 --> 00:21:16.230
+we are evaluating our entire
+
+918
+00:21:16.230 --> 00:21:16.240
+
+
+
+919
+00:21:16.240 --> 00:21:19.190
+application at these three levels.  This is what we
+
+920
+00:21:19.190 --> 00:21:19.200
+
+
+
+921
+00:21:19.200 --> 00:21:23.270
+call eval suite in combined form.  This is like our entire
+
+922
+00:21:23.270 --> 00:21:23.280
+
+
+
+923
+00:21:23.280 --> 00:21:26.470
+tasting sweet.  Sometimes we have to
+
+924
+00:21:26.470 --> 00:21:26.480
+
+
+
+925
+00:21:26.480 --> 00:21:28.549
+test our application.  So instead of
+
+926
+00:21:28.549 --> 00:21:28.559
+
+
+
+927
+00:21:28.559 --> 00:21:31.669
+running just one test, we
+
+928
+00:21:31.669 --> 00:21:31.679
+
+
+
+929
+00:21:31.679 --> 00:21:34.390
+run all these tests together.  Then
+
+930
+00:21:34.390 --> 00:21:34.400
+
+
+
+931
+00:21:34.400 --> 00:21:37.270
+we come to know whether
+
+932
+00:21:37.270 --> 00:21:37.280
+
+
+
+933
+00:21:37.280 --> 00:21:40.310
+our application is working properly or
+
+934
+00:21:40.310 --> 00:21:40.320
+
+
+
+935
+00:21:40.320 --> 00:21:43.029
+not from every aspect.  So we are going to do so many tests.
+
+936
+00:21:43.029 --> 00:21:43.039
+
+
+
+937
+00:21:43.039 --> 00:21:44.950
+We are going to do so many evaluations.
+
+938
+00:21:44.950 --> 00:21:44.960
+
+
+
+939
+00:21:44.960 --> 00:21:47.029
+This will be our evaluation
+
+940
+00:21:47.029 --> 00:21:47.039
+
+
+
+941
+00:21:47.039 --> 00:21:49.430
+strategy.  Are we going to generate golden
+
+942
+00:21:49.430 --> 00:21:49.440
+
+
+
+943
+00:21:49.440 --> 00:21:52.070
+data sets?  Yes Summer there are a lot of these
+
+944
+00:21:52.070 --> 00:21:52.080
+
+
+
+945
+00:21:52.080 --> 00:21:54.789
+values ​​for which you will have to
+
+946
+00:21:54.789 --> 00:21:54.799
+
+
+
+947
+00:21:54.799 --> 00:21:57.430
+generate golden data sets.  There are some events
+
+948
+00:21:57.430 --> 00:21:57.440
+
+
+
+949
+00:21:57.440 --> 00:21:59.430
+where you don't need a golden data set.  Till now, in all the
+
+950
+00:21:59.430 --> 00:22:02.230
+
+
+
+951
+00:22:02.230 --> 00:22:02.240
+
+
+
+952
+00:22:02.240 --> 00:22:05.270
+classes that we have taken,
+
+953
+00:22:05.270 --> 00:22:05.280
+
+
+
+954
+00:22:05.280 --> 00:22:07.669
+whatever we were creating the Evals, we were
+
+955
+00:22:07.669 --> 00:22:07.679
+
+
+
+956
+00:22:07.679 --> 00:22:10.149
+writing its code ourselves.  Especially if you
+
+957
+00:22:10.149 --> 00:22:10.159
+
+
+
+958
+00:22:10.159 --> 00:22:12.390
+saw the last lecture where we were running custom model
+
+959
+00:22:12.390 --> 00:22:12.400
+
+
+
+960
+00:22:12.400 --> 00:22:14.710
+evals, you would have seen
+
+961
+00:22:14.710 --> 00:22:14.720
+
+
+
+962
+00:22:14.720 --> 00:22:18.390
+that I wrote my own code there.  But we are
+
+963
+00:22:18.390 --> 00:22:18.400
+
+
+
+964
+00:22:18.400 --> 00:22:20.710
+not going to do that in this case.
+
+965
+00:22:20.710 --> 00:22:20.720
+
+
+
+966
+00:22:20.720 --> 00:22:22.950
+If we write all this code ourselves then it will be a
+
+967
+00:22:22.950 --> 00:22:22.960
+
+
+
+968
+00:22:22.960 --> 00:22:25.430
+very big project.  Instead what we will do is we
+
+969
+00:22:25.430 --> 00:22:25.440
+
+
+
+970
+00:22:25.440 --> 00:22:27.990
+will use a library called
+
+971
+00:22:27.990 --> 00:22:28.000
+
+
+
+972
+00:22:28.000 --> 00:22:31.830
+DeepEval.  If you go into DeepEval,
+
+973
+00:22:31.830 --> 00:22:31.840
+
+
+
+974
+00:22:31.840 --> 00:22:34.950
+you'll see that
+
+975
+00:22:34.950 --> 00:22:34.960
+
+
+
+976
+00:22:34.960 --> 00:22:38.630
+many of the metrics we discussed already
+
+977
+00:22:38.630 --> 00:22:38.640
+
+
+
+978
+00:22:38.640 --> 00:22:40.950
+exist.  For example, if you look here, if
+
+979
+00:22:40.950 --> 00:22:40.960
+
+
+
+980
+00:22:40.960 --> 00:22:43.430
+you go to RAG, you will see that answer
+
+981
+00:22:43.430 --> 00:22:43.440
+
+
+
+982
+00:22:43.440 --> 00:22:46.070
+relevance, faithfulness, contextual
+
+983
+00:22:46.070 --> 00:22:46.080
+
+
+
+984
+00:22:46.080 --> 00:22:49.190
+precision recall, contextual relevance, all these
+
+985
+00:22:49.190 --> 00:22:49.200
+
+
+
+986
+00:22:49.200 --> 00:22:52.390
+things already exist.  Then
+
+987
+00:22:52.390 --> 00:22:52.400
+
+
+
+988
+00:22:52.400 --> 00:22:55.190
+if you go into safety, toxicity,
+
+989
+00:22:55.190 --> 00:22:55.200
+
+
+
+990
+00:22:55.200 --> 00:22:58.149
+PII leakage, all these things already exist.
+
+991
+00:22:58.149 --> 00:22:58.159
+
+
+
+992
+00:22:58.159 --> 00:23:00.549
+So instead of
+
+993
+00:23:00.549 --> 00:23:00.559
+
+
+
+994
+00:23:00.559 --> 00:23:03.909
+writing custom code to evaluate our RAG
+
+995
+00:23:03.909 --> 00:23:03.919
+
+
+
+996
+00:23:03.919 --> 00:23:06.549
+application, we'll instead use this great
+
+997
+00:23:06.549 --> 00:23:06.559
+
+
+
+998
+00:23:06.559 --> 00:23:09.270
+library called DeepEval, which is the
+
+999
+00:23:09.270 --> 00:23:09.280
+
+
+
+1000
+00:23:09.280 --> 00:23:11.590
+state of the art library right now.  Most of the
+
+1001
+00:23:11.590 --> 00:23:11.600
+
+
+
+1002
+00:23:11.600 --> 00:23:13.990
+big companies use
+
+1003
+00:23:13.990 --> 00:23:14.000
+
+
+
+1004
+00:23:14.000 --> 00:23:16.070
+this library to do LLM based evaluations.
+
+1005
+00:23:16.070 --> 00:23:16.080
+
+
+
+1006
+00:23:16.080 --> 00:23:18.070
+And the best part about this
+
+1007
+00:23:18.070 --> 00:23:18.080
+
+
+
+1008
+00:23:18.080 --> 00:23:21.190
+library is that its entire syntax is based on PyTest, the main
+
+1009
+00:23:21.190 --> 00:23:21.200
+
+
+
+1010
+00:23:21.200 --> 00:23:23.029
+library for Python software testing.
+
+1011
+00:23:23.029 --> 00:23:23.039
+
+
+
+1012
+00:23:23.039 --> 00:23:25.590
+So
+
+1013
+00:23:25.590 --> 00:23:25.600
+
+
+
+1014
+00:23:25.600 --> 00:23:27.510
+if you've ever done software testing
+
+1015
+00:23:27.510 --> 00:23:27.520
+
+
+
+1016
+00:23:27.520 --> 00:23:29.830
+using Pi Test, this library will make you
+
+1017
+00:23:29.830 --> 00:23:29.840
+
+
+
+1018
+00:23:29.840 --> 00:23:32.230
+feel very at home.  So we're going to
+
+1019
+00:23:32.230 --> 00:23:32.240
+
+
+
+1020
+00:23:32.240 --> 00:23:34.549
+use this library.  We are not going to
+
+1021
+00:23:34.549 --> 00:23:34.559
+
+
+
+1022
+00:23:34.559 --> 00:23:37.029
+use Ragas because you can use both the things.
+
+1023
+00:23:37.029 --> 00:23:37.039
+
+
+
+1024
+00:23:37.039 --> 00:23:38.630
+You can do all this work in Ragas also.
+
+1025
+00:23:38.630 --> 00:23:38.640
+
+
+
+1026
+00:23:38.640 --> 00:23:40.549
+You can also do it in DP Eval.
+
+1027
+00:23:40.549 --> 00:23:40.559
+
+
+
+1028
+00:23:40.559 --> 00:23:43.430
+I am selecting DeepEval particularly
+
+1029
+00:23:43.430 --> 00:23:43.440
+
+
+
+1030
+00:23:43.440 --> 00:23:46.230
+because of two reasons.  First is Ragas, we have
+
+1031
+00:23:46.230 --> 00:23:46.240
+
+
+
+1032
+00:23:46.240 --> 00:23:48.710
+already taught it in the advance bag course.
+
+1033
+00:23:48.710 --> 00:23:48.720
+
+
+
+1034
+00:23:48.720 --> 00:23:52.870
+Second DeepEval is a much broader
+
+1035
+00:23:52.870 --> 00:23:52.880
+
+
+
+1036
+00:23:52.880 --> 00:23:55.510
+library.  Its scope extends
+
+1037
+00:23:55.510 --> 00:23:55.520
+
+
+
+1038
+00:23:55.520 --> 00:23:57.590
+to other things as well.  Like agents.  You can see
+
+1039
+00:23:57.590 --> 00:23:57.600
+
+
+
+1040
+00:23:57.600 --> 00:24:00.870
+here that you can use DP Well for everything like agents, multi-turn
+
+1041
+00:24:00.870 --> 00:24:00.880
+
+
+
+1042
+00:24:00.880 --> 00:24:03.029
+chatbots,
+
+1043
+00:24:03.029 --> 00:24:03.039
+
+
+
+1044
+00:24:03.039 --> 00:24:05.750
+non-LLM applications, image based
+
+1045
+00:24:05.750 --> 00:24:05.760
+
+
+
+1046
+00:24:05.760 --> 00:24:08.230
+applications etc.
+
+1047
+00:24:08.230 --> 00:24:08.240
+
+
+
+1048
+00:24:08.240 --> 00:24:10.070
+So that is why its
+
+1049
+00:24:10.070 --> 00:24:10.080
+
+
+
+1050
+00:24:10.080 --> 00:24:12.390
+adoption is also high.  And there is a good
+
+1051
+00:24:12.390 --> 00:24:12.400
+
+
+
+1052
+00:24:12.400 --> 00:24:15.510
+chance that after a year or two it will become the
+
+1053
+00:24:15.510 --> 00:24:15.520
+
+
+
+1054
+00:24:15.520 --> 00:24:19.990
+absolute benchmark library for LLM evaluations.
+
+1055
+00:24:19.990 --> 00:24:20.000
+
+
+
+1056
+00:24:20.000 --> 00:24:21.990
+Like It Will Become the Standard.
+
+1057
+00:24:21.990 --> 00:24:22.000
+
+
+
+1058
+00:24:22.000 --> 00:24:24.149
+So it's a good strategy to focus more on deep eval.  I
+
+1059
+00:24:24.149 --> 00:24:24.159
+
+
+
+1060
+00:24:24.159 --> 00:24:25.990
+really hope you do
+
+1061
+00:24:25.990 --> 00:24:26.000
+
+
+
+1062
+00:24:26.000 --> 00:24:28.710
+n't have any problem with this.  Or Ragas is good.
+
+1063
+00:24:28.710 --> 00:24:28.720
+
+
+
+1064
+00:24:28.720 --> 00:24:30.390
+Obviously there is no problem in that.
+
+1065
+00:24:30.390 --> 00:24:30.400
+
+
+
+1066
+00:24:30.400 --> 00:24:32.230
+Like I just mentioned two reasons.  We have
+
+1067
+00:24:32.230 --> 00:24:32.240
+
+
+
+1068
+00:24:32.240 --> 00:24:34.870
+already covered it.  And second DP
+
+1069
+00:24:34.870 --> 00:24:34.880
+
+
+
+1070
+00:24:34.880 --> 00:24:37.590
+Wall is a better library in comparison to
+
+1071
+00:24:37.590 --> 00:24:37.600
+
+
+
+1072
+00:24:37.600 --> 00:24:40.549
+Ragas.  Now a very important discussion:
+
+1073
+00:24:40.549 --> 00:24:40.559
+
+
+
+1074
+00:24:40.559 --> 00:24:44.070
+once you've created your eval suite, which
+
+1075
+00:24:44.070 --> 00:24:44.080
+
+
+
+1076
+00:24:44.080 --> 00:24:47.269
+we just created, then comes a
+
+1077
+00:24:47.269 --> 00:24:47.279
+
+
+
+1078
+00:24:47.279 --> 00:24:49.669
+very important task called
+
+1079
+00:24:49.669 --> 00:24:49.679
+
+
+
+1080
+00:24:49.679 --> 00:24:52.710
+regression testing.  After that we do
+
+1081
+00:24:52.710 --> 00:24:52.720
+
+
+
+1082
+00:24:52.720 --> 00:24:56.149
+regression testing.
+
+1083
+00:24:56.149 --> 00:24:56.159
+
+
+
+1084
+00:24:56.159 --> 00:24:57.909
+What is regression testing?  The regression testing is
+
+1085
+00:24:57.909 --> 00:24:57.919
+
+
+
+1086
+00:24:57.919 --> 00:25:06.549
+basically the act of running your eval suite on
+
+1087
+00:25:06.549 --> 00:25:06.559
+
+
+
+1088
+00:25:06.559 --> 00:25:09.909
+your application.  What are we doing so far
+
+1089
+00:25:09.909 --> 00:25:09.919
+
+
+
+1090
+00:25:09.919 --> 00:25:13.750
+?  We're building our eval suite.
+
+1091
+00:25:13.750 --> 00:25:13.760
+
+
+
+1092
+00:25:13.760 --> 00:25:16.470
+We are writing separate evaluation code
+
+1093
+00:25:16.470 --> 00:25:16.480
+
+
+
+1094
+00:25:16.480 --> 00:25:18.950
+for different components,
+
+1095
+00:25:18.950 --> 00:25:18.960
+
+
+
+1096
+00:25:18.960 --> 00:25:21.510
+pipelines, and applications.  Once the
+
+1097
+00:25:21.510 --> 00:25:21.520
+
+
+
+1098
+00:25:21.520 --> 00:25:24.630
+whole thing is built, when you run it
+
+1099
+00:25:24.630 --> 00:25:24.640
+
+
+
+1100
+00:25:24.640 --> 00:25:27.110
+simultaneously on the entire application,
+
+1101
+00:25:27.110 --> 00:25:27.120
+
+
+
+1102
+00:25:27.120 --> 00:25:29.430
+we call it regression testing.   The
+
+1103
+00:25:29.430 --> 00:25:29.440
+
+
+
+1104
+00:25:29.440 --> 00:25:31.590
+simple principle of regression testing is
+
+1105
+00:25:31.590 --> 00:25:31.600
+
+
+
+1106
+00:25:31.600 --> 00:25:33.750
+that if one version of your
+
+1107
+00:25:33.750 --> 00:25:33.760
+
+
+
+1108
+00:25:33.760 --> 00:25:36.710
+software is running.  Now you have created version two
+
+1109
+00:25:36.710 --> 00:25:36.720
+
+
+
+1110
+00:25:36.720 --> 00:25:39.669
+of the same software.  So how do you know
+
+1111
+00:25:39.669 --> 00:25:39.679
+
+
+
+1112
+00:25:39.679 --> 00:25:44.470
+version two is objectively not worse than
+
+1113
+00:25:44.470 --> 00:25:44.480
+
+
+
+1114
+00:25:44.480 --> 00:25:47.269
+version one?  Has my application become worse
+
+1115
+00:25:47.269 --> 00:25:47.279
+
+
+
+1116
+00:25:47.279 --> 00:25:49.830
+?  How do I test this?
+
+1117
+00:25:49.830 --> 00:25:49.840
+
+
+
+1118
+00:25:49.840 --> 00:25:51.990
+You get the answer to this
+
+1119
+00:25:51.990 --> 00:25:52.000
+
+
+
+1120
+00:25:52.000 --> 00:25:53.750
+in regression testing.  So there is nothing special in regression testing.
+
+1121
+00:25:53.750 --> 00:25:53.760
+
+
+
+1122
+00:25:53.760 --> 00:25:55.590
+Basically, you
+
+1123
+00:25:55.590 --> 00:25:58.710
+
+
+
+1124
+00:25:58.710 --> 00:25:58.720
+
+
+
+1125
+00:25:58.720 --> 00:26:01.590
+run the entire eval suite you have created in one go and by running it you
+
+1126
+00:26:01.590 --> 00:26:01.600
+
+
+
+1127
+00:26:01.600 --> 00:26:03.430
+get the results.  A complete report is
+
+1128
+00:26:03.430 --> 00:26:03.440
+
+
+
+1129
+00:26:03.440 --> 00:26:05.909
+received that it has reduced from what it was in Matriculation.
+
+1130
+00:26:05.909 --> 00:26:05.919
+
+
+
+1131
+00:26:05.919 --> 00:26:08.470
+This is more than what is there in Matriculation.
+
+1132
+00:26:08.470 --> 00:26:08.480
+
+
+
+1133
+00:26:08.480 --> 00:26:11.029
+So by running this entire
+
+1134
+00:26:11.029 --> 00:26:11.039
+
+
+
+1135
+00:26:11.039 --> 00:26:13.269
+regression testing, we get
+
+1136
+00:26:13.269 --> 00:26:13.279
+
+
+
+1137
+00:26:13.279 --> 00:26:15.269
+a very clear picture whether the
+
+1138
+00:26:15.269 --> 00:26:15.279
+
+
+
+1139
+00:26:15.279 --> 00:26:17.350
+new version of the software that we have created is
+
+1140
+00:26:17.350 --> 00:26:17.360
+
+
+
+1141
+00:26:17.360 --> 00:26:20.149
+objectively
+
+1142
+00:26:20.149 --> 00:26:20.159
+
+
+
+1143
+00:26:20.159 --> 00:26:23.510
+better than the previous version or not and on that basis
+
+1144
+00:26:23.510 --> 00:26:23.520
+
+
+
+1145
+00:26:23.520 --> 00:26:25.269
+it is decided whether we will
+
+1146
+00:26:25.269 --> 00:26:25.279
+
+
+
+1147
+00:26:25.279 --> 00:26:28.630
+deploy the new version or not.
+
+1148
+00:26:28.630 --> 00:26:28.640
+
+
+
+1149
+00:26:28.640 --> 00:26:30.630
+Ok?  So let me explain it to you in very simple
+
+1150
+00:26:30.630 --> 00:26:30.640
+
+
+
+1151
+00:26:30.640 --> 00:26:33.110
+words.  So what will happen?
+
+1152
+00:26:33.110 --> 00:26:33.120
+
+
+
+1153
+00:26:33.120 --> 00:26:35.750
+Step by step we will have we
+
+1154
+00:26:35.750 --> 00:26:35.760
+
+
+
+1155
+00:26:35.760 --> 00:26:37.990
+create a project folder.  In that project
+
+1156
+00:26:37.990 --> 00:26:38.000
+
+
+
+1157
+00:26:38.000 --> 00:26:40.310
+folder there will be a folder called SRC in
+
+1158
+00:26:40.310 --> 00:26:40.320
+
+
+
+1159
+00:26:40.320 --> 00:26:43.750
+which we will write the source code of our RAG Chatbot.
+
+1160
+00:26:43.750 --> 00:26:43.760
+
+
+
+1161
+00:26:43.760 --> 00:26:46.149
+Here we will have our retriever file
+
+1162
+00:26:46.149 --> 00:26:46.159
+
+
+
+1163
+00:26:46.159 --> 00:26:48.789
+, generator file, RAG pipeline
+
+1164
+00:26:48.789 --> 00:26:48.799
+
+
+
+1165
+00:26:48.799 --> 00:26:51.430
+file.  We may use Fast API
+
+1166
+00:26:51.430 --> 00:26:51.440
+
+
+
+1167
+00:26:51.440 --> 00:26:53.430
+to create the API.
+
+1168
+00:26:53.430 --> 00:26:53.440
+
+
+
+1169
+00:26:53.440 --> 00:26:56.149
+We might use Streamlits to build the UI.
+
+1170
+00:26:56.149 --> 00:26:56.159
+
+
+
+1171
+00:26:56.159 --> 00:26:58.630
+So all this code will be in SRC.
+
+1172
+00:26:58.630 --> 00:26:58.640
+
+
+
+1173
+00:26:58.640 --> 00:27:00.870
+Apart from that, there will be
+
+1174
+00:27:00.870 --> 00:27:00.880
+
+
+
+1175
+00:27:00.880 --> 00:27:03.590
+another folder called Eaves in our project folder which will contain
+
+1176
+00:27:03.590 --> 00:27:03.600
+
+
+
+1177
+00:27:03.600 --> 00:27:05.750
+all our evaluation files.
+
+1178
+00:27:05.750 --> 00:27:05.760
+
+
+
+1179
+00:27:05.760 --> 00:27:09.190
+So here you will have a retriever.py file
+
+1180
+00:27:09.190 --> 00:27:09.200
+
+
+
+1181
+00:27:09.200 --> 00:27:12.870
+or eval underscore retriever.py
+
+1182
+00:27:12.870 --> 00:27:12.880
+
+
+
+1183
+00:27:12.880 --> 00:27:15.590
+file which will basically do this work.
+
+1184
+00:27:15.590 --> 00:27:15.600
+
+
+
+1185
+00:27:15.600 --> 00:27:18.950
+Then you will have another file similar to this
+
+1186
+00:27:18.950 --> 00:27:18.960
+
+
+
+1187
+00:27:18.960 --> 00:27:23.990
+named eval underser generator.py in
+
+1188
+00:27:23.990 --> 00:27:24.000
+
+
+
+1189
+00:27:24.000 --> 00:27:26.390
+which we will
+
+1190
+00:27:26.390 --> 00:27:26.400
+
+
+
+1191
+00:27:26.400 --> 00:27:28.549
+write the code to evaluate it.
+
+1192
+00:27:28.549 --> 00:27:28.559
+
+
+
+1193
+00:27:28.559 --> 00:27:31.029
+Similarly you can understand that a RAG
+
+1194
+00:27:31.029 --> 00:27:31.039
+
+
+
+1195
+00:27:31.039 --> 00:27:36.310
+pipeline will have a separate file.  There will be a
+
+1196
+00:27:36.310 --> 00:27:36.320
+
+
+
+1197
+00:27:36.320 --> 00:27:39.110
+separate file for testing an application.  There will be a
+
+1198
+00:27:39.110 --> 00:27:39.120
+
+
+
+1199
+00:27:39.120 --> 00:27:42.149
+separate file for safety.  There will be a separate file for operations.
+
+1200
+00:27:42.149 --> 00:27:42.159
+
+
+
+1201
+00:27:42.159 --> 00:27:44.390
+So basically, all these
+
+1202
+00:27:44.390 --> 00:27:44.400
+
+
+
+1203
+00:27:44.400 --> 00:27:46.230
+files lying inside the eval folder where
+
+1204
+00:27:46.230 --> 00:27:46.240
+
+
+
+1205
+00:27:46.240 --> 00:27:48.789
+we have written all our texts,
+
+1206
+00:27:48.789 --> 00:27:48.799
+
+
+
+1207
+00:27:48.799 --> 00:27:52.950
+we call this our eval suite.
+
+1208
+00:27:52.950 --> 00:27:52.960
+
+
+
+1209
+00:27:52.960 --> 00:27:57.029
+And then what will happen?  Outside all the folders,
+
+1210
+00:27:57.029 --> 00:27:57.039
+
+
+
+1211
+00:27:57.039 --> 00:28:01.350
+we will have a file which we will call run
+
+1212
+00:28:01.350 --> 00:28:01.360
+
+
+
+1213
+00:28:01.360 --> 00:28:05.510
+evals.py and what code will be
+
+1214
+00:28:05.510 --> 00:28:05.520
+
+
+
+1215
+00:28:05.520 --> 00:28:07.750
+written inside it that as soon as we trigger this file,
+
+1216
+00:28:07.750 --> 00:28:07.760
+
+
+
+1217
+00:28:07.760 --> 00:28:10.230
+what this file will do is, one by one
+
+1218
+00:28:10.230 --> 00:28:10.240
+
+
+
+1219
+00:28:10.240 --> 00:28:14.870
+it will
+
+1220
+00:28:14.870 --> 00:28:14.880
+
+
+
+1221
+00:28:14.880 --> 00:28:18.710
+run all the tests on our application
+
+1222
+00:28:18.710 --> 00:28:18.720
+
+
+
+1223
+00:28:18.720 --> 00:28:23.190
+and will generate a report and give it to us.
+
+1224
+00:28:23.190 --> 00:28:25.830
+
+
+
+1225
+00:28:25.830 --> 00:28:25.840
+
+
+
+1226
+00:28:25.840 --> 00:28:28.789
+And when you analyze the same report,
+
+1227
+00:28:28.789 --> 00:28:28.799
+
+
+
+1228
+00:28:28.799 --> 00:28:32.230
+you will understand whether your new version
+
+1229
+00:28:32.230 --> 00:28:32.240
+
+
+
+1230
+00:28:32.240 --> 00:28:34.630
+of the software is objectively better than the previous version
+
+1231
+00:28:34.630 --> 00:28:34.640
+
+
+
+1232
+00:28:34.640 --> 00:28:38.870
+or not.  Right?  Your
+
+1233
+00:28:38.870 --> 00:28:38.880
+
+
+
+1234
+00:28:38.880 --> 00:28:40.950
+retriever's file tells you whether your
+
+1235
+00:28:40.950 --> 00:28:40.960
+
+
+
+1236
+00:28:40.960 --> 00:28:43.029
+new retriever is better than your previous one.  The
+
+1237
+00:28:43.029 --> 00:28:43.039
+
+
+
+1238
+00:28:43.039 --> 00:28:45.350
+new generator is telling
+
+1239
+00:28:45.350 --> 00:28:45.360
+
+
+
+1240
+00:28:45.360 --> 00:28:47.350
+that this file is telling whether the new
+
+1241
+00:28:47.350 --> 00:28:47.360
+
+
+
+1242
+00:28:47.360 --> 00:28:49.269
+generator is better than the previous generator or
+
+1243
+00:28:49.269 --> 00:28:49.279
+
+
+
+1244
+00:28:49.279 --> 00:28:52.549
+not.  And so on.  I guess you
+
+1245
+00:28:52.549 --> 00:28:52.559
+
+
+
+1246
+00:28:52.559 --> 00:28:55.669
+understand.  This is how you do regression
+
+1247
+00:28:55.669 --> 00:28:55.679
+
+
+
+1248
+00:28:55.679 --> 00:28:58.470
+testing is the concept of regression
+
+1249
+00:28:58.470 --> 00:28:58.480
+
+
+
+1250
+00:28:58.480 --> 00:29:01.190
+testing clear what we did step by
+
+1251
+00:29:01.190 --> 00:29:01.200
+
+
+
+1252
+00:29:01.200 --> 00:29:03.830
+step we created the application
+
+1253
+00:29:03.830 --> 00:29:03.840
+
+
+
+1254
+00:29:03.840 --> 00:29:06.070
+in the process of creating the application we built our eval
+
+1255
+00:29:06.070 --> 00:29:06.080
+
+
+
+1256
+00:29:06.080 --> 00:29:07.990
+suite in which we
+
+1257
+00:29:07.990 --> 00:29:08.000
+
+
+
+1258
+00:29:08.000 --> 00:29:10.630
+created multiple evaluation files and then to
+
+1259
+00:29:10.630 --> 00:29:10.640
+
+
+
+1260
+00:29:10.640 --> 00:29:12.870
+run all those evaluation files
+
+1261
+00:29:12.870 --> 00:29:12.880
+
+
+
+1262
+00:29:12.880 --> 00:29:15.430
+we have a single code which is called
+
+1263
+00:29:15.430 --> 00:29:15.440
+
+
+
+1264
+00:29:15.440 --> 00:29:18.789
+run evalpy so whenever our application is
+
+1265
+00:29:18.789 --> 00:29:18.799
+
+
+
+1266
+00:29:18.799 --> 00:29:20.630
+completed or we make some changes in it then
+
+1267
+00:29:20.630 --> 00:29:20.640
+
+
+
+1268
+00:29:20.640 --> 00:29:24.389
+we run this run evspy file
+
+1269
+00:29:24.389 --> 00:29:24.399
+
+
+
+1270
+00:29:24.399 --> 00:29:26.070
+and it gives us a complete report
+
+1271
+00:29:26.070 --> 00:29:26.080
+
+
+
+1272
+00:29:26.080 --> 00:29:29.110
+that where does the new version
+
+1273
+00:29:29.110 --> 00:29:29.120
+
+
+
+1274
+00:29:29.120 --> 00:29:31.110
+stand in comparison to the previous version.
+
+1275
+00:29:31.110 --> 00:29:31.120
+
+
+
+1276
+00:29:31.120 --> 00:29:33.269
+This helps us understand whether the
+
+1277
+00:29:33.269 --> 00:29:33.279
+
+
+
+1278
+00:29:33.279 --> 00:29:35.510
+new version should be deployed or not.
+
+1279
+00:29:35.510 --> 00:29:35.520
+
+
+
+1280
+00:29:35.520 --> 00:29:37.909
+Now here I
+
+1281
+00:29:37.909 --> 00:29:37.919
+
+
+
+1282
+00:29:37.919 --> 00:29:39.830
+want to explain one more thing to you.  However, the
+
+1283
+00:29:39.830 --> 00:29:39.840
+
+
+
+1284
+00:29:39.840 --> 00:29:42.389
+discussion we will have here will be
+
+1285
+00:29:42.389 --> 00:29:45.590
+
+
+
+1286
+00:29:45.590 --> 00:29:45.600
+
+
+
+1287
+00:29:45.600 --> 00:29:47.269
+more in the domain of Kind of LLM Opts.  More will come in the domain of engineering.
+
+1288
+00:29:47.269 --> 00:29:47.279
+
+
+
+1289
+00:29:47.279 --> 00:29:49.110
+Rather than just evaluation.
+
+1290
+00:29:49.110 --> 00:29:49.120
+
+
+
+1291
+00:29:49.120 --> 00:29:50.870
+But I want to tell you because it is
+
+1292
+00:29:50.870 --> 00:29:50.880
+
+
+
+1293
+00:29:50.880 --> 00:29:53.350
+related.  So regression testing is done in a
+
+1294
+00:29:53.350 --> 00:29:53.360
+
+
+
+1295
+00:29:53.360 --> 00:29:57.990
+very kind of advanced way.
+
+1296
+00:29:57.990 --> 00:29:58.000
+
+
+
+1297
+00:29:58.000 --> 00:30:00.149
+What I just told you is a
+
+1298
+00:30:00.149 --> 00:30:00.159
+
+
+
+1299
+00:30:00.159 --> 00:30:01.990
+very basic method that you just
+
+1300
+00:30:01.990 --> 00:30:02.000
+
+
+
+1301
+00:30:02.000 --> 00:30:04.630
+run this file.  What did this file
+
+1302
+00:30:04.630 --> 00:30:04.640
+
+
+
+1303
+00:30:04.640 --> 00:30:08.310
+do?  All your metrics have been compared
+
+1304
+00:30:08.310 --> 00:30:08.320
+
+
+
+1305
+00:30:08.320 --> 00:30:10.549
+with the previous version and told whether the
+
+1306
+00:30:10.549 --> 00:30:10.559
+
+
+
+1307
+00:30:10.559 --> 00:30:13.029
+new version is better or not.  But
+
+1308
+00:30:13.029 --> 00:30:13.039
+
+
+
+1309
+00:30:13.039 --> 00:30:15.590
+many more things can still be done in this.
+
+1310
+00:30:15.590 --> 00:30:15.600
+
+
+
+1311
+00:30:15.600 --> 00:30:17.909
+Ok?  Let me tell you.  The
+
+1312
+00:30:17.909 --> 00:30:17.919
+
+
+
+1313
+00:30:17.919 --> 00:30:20.710
+first thing is that you
+
+1314
+00:30:20.710 --> 00:30:20.720
+
+
+
+1315
+00:30:20.720 --> 00:30:23.510
+can do experiment tracking in it.  So if
+
+1316
+00:30:23.510 --> 00:30:23.520
+
+
+
+1317
+00:30:23.520 --> 00:30:25.830
+you've read MLPs, you've
+
+1318
+00:30:25.830 --> 00:30:25.840
+
+
+
+1319
+00:30:25.840 --> 00:30:28.310
+probably heard about ML Flow,
+
+1320
+00:30:28.310 --> 00:30:28.320
+
+
+
+1321
+00:30:28.320 --> 00:30:31.350
+which we use to run multiple
+
+1322
+00:30:31.350 --> 00:30:31.360
+
+
+
+1323
+00:30:31.360 --> 00:30:34.470
+experiments on our applications.  So
+
+1324
+00:30:34.470 --> 00:30:34.480
+
+
+
+1325
+00:30:34.480 --> 00:30:36.789
+you can do exactly the same thing here also.
+
+1326
+00:30:36.789 --> 00:30:36.799
+
+
+
+1327
+00:30:36.799 --> 00:30:39.510
+So basically what you will do is
+
+1328
+00:30:39.510 --> 00:30:39.520
+
+
+
+1329
+00:30:39.520 --> 00:30:42.070
+build your application for the first time.
+
+1330
+00:30:42.070 --> 00:30:42.080
+
+
+
+1331
+00:30:42.080 --> 00:30:45.669
+Now you will have some settings.  Right?
+
+1332
+00:30:45.669 --> 00:30:45.679
+
+
+
+1333
+00:30:45.679 --> 00:30:50.070
+How many characters are you using for your chunking
+
+1334
+00:30:50.070 --> 00:30:50.080
+
+
+
+1335
+00:30:50.080 --> 00:30:54.149
+?  How much is the overlap?
+
+1336
+00:30:54.149 --> 00:30:54.159
+
+
+
+1337
+00:30:54.159 --> 00:30:56.710
+What temperature are you using?  There will be
+
+1338
+00:30:56.710 --> 00:30:56.720
+
+
+
+1339
+00:30:56.720 --> 00:30:58.789
+some settings related to your embedding model.
+
+1340
+00:30:58.789 --> 00:30:58.799
+
+
+
+1341
+00:30:58.799 --> 00:31:02.230
+So you kept all these settings
+
+1342
+00:31:02.230 --> 00:31:02.240
+
+
+
+1343
+00:31:02.240 --> 00:31:05.909
+in one place and you
+
+1344
+00:31:05.909 --> 00:31:05.919
+
+
+
+1345
+00:31:05.919 --> 00:31:09.990
+ran this eval suite for the first time.  So what will this Eval suite do
+
+1346
+00:31:09.990 --> 00:31:10.000
+
+
+
+1347
+00:31:10.000 --> 00:31:14.230
+?  It will give you some numbers for all the metrics.
+
+1348
+00:31:14.230 --> 00:31:14.240
+
+
+
+1349
+00:31:14.240 --> 00:31:17.990
+For example, if your
+
+1350
+00:31:17.990 --> 00:31:18.000
+
+
+
+1351
+00:31:18.000 --> 00:31:24.549
+retriever's recall is 82
+
+1352
+00:31:24.549 --> 00:31:24.559
+
+
+
+1353
+00:31:24.559 --> 00:31:28.950
+and precision is 68, then in this way,
+
+1354
+00:31:28.950 --> 00:31:28.960
+
+
+
+1355
+00:31:28.960 --> 00:31:31.590
+some marks will be obtained for each metric.  So
+
+1356
+00:31:31.590 --> 00:31:31.600
+
+
+
+1357
+00:31:31.600 --> 00:31:34.710
+what will you do?  You just ran your
+
+1358
+00:31:34.710 --> 00:31:34.720
+
+
+
+1359
+00:31:34.720 --> 00:31:37.350
+software and where will you lock all these configuration
+
+1360
+00:31:37.350 --> 00:31:37.360
+
+
+
+1361
+00:31:37.360 --> 00:31:39.430
+numbers and matrix numbers that came
+
+1362
+00:31:39.430 --> 00:31:39.440
+
+
+
+1363
+00:31:39.440 --> 00:31:42.149
+?
+
+1364
+00:31:42.149 --> 00:31:42.159
+
+
+
+1365
+00:31:42.159 --> 00:31:44.630
+On software like ML Flow.  So basically
+
+1366
+00:31:44.630 --> 00:31:44.640
+
+
+
+1367
+00:31:44.640 --> 00:31:47.190
+experiment one was these configuration
+
+1368
+00:31:47.190 --> 00:31:47.200
+
+
+
+1369
+00:31:47.200 --> 00:31:49.430
+values.  Around that we
+
+1370
+00:31:49.430 --> 00:31:49.440
+
+
+
+1371
+00:31:49.440 --> 00:31:52.070
+got these metric values.  And what will you
+
+1372
+00:31:52.070 --> 00:31:52.080
+
+
+
+1373
+00:31:52.080 --> 00:31:54.870
+call this?  You can call this your
+
+1374
+00:31:54.870 --> 00:31:54.880
+
+
+
+1375
+00:31:54.880 --> 00:31:57.669
+baseline that when we ran the software for the first time,
+
+1376
+00:31:57.669 --> 00:31:57.679
+
+
+
+1377
+00:31:57.679 --> 00:32:00.549
+we got these readings.  After that
+
+1378
+00:32:00.549 --> 00:32:00.559
+
+
+
+1379
+00:32:00.559 --> 00:32:02.470
+you thought that let's improve a bit.
+
+1380
+00:32:02.470 --> 00:32:02.480
+
+
+
+1381
+00:32:02.480 --> 00:32:04.710
+So you went to improvise.  You
+
+1382
+00:32:04.710 --> 00:32:04.720
+
+
+
+1383
+00:32:04.720 --> 00:32:07.830
+increased the chunking size.
+
+1384
+00:32:07.830 --> 00:32:07.840
+
+
+
+1385
+00:32:07.840 --> 00:32:10.789
+Reduced the overlapping size and ran my application again.
+
+1386
+00:32:10.789 --> 00:32:13.430
+
+
+
+1387
+00:32:13.430 --> 00:32:13.440
+
+
+
+1388
+00:32:13.440 --> 00:32:16.870
+With the help of this file.  Now
+
+1389
+00:32:16.870 --> 00:32:16.880
+
+
+
+1390
+00:32:16.880 --> 00:32:20.070
+new readings came for new settings, so now you
+
+1391
+00:32:20.070 --> 00:32:20.080
+
+
+
+1392
+00:32:20.080 --> 00:32:23.110
+go and lock that too.  So you
+
+1393
+00:32:23.110 --> 00:32:23.120
+
+
+
+1394
+00:32:23.120 --> 00:32:25.110
+can compare it with the previous one.  Visually, you
+
+1395
+00:32:25.110 --> 00:32:25.120
+
+
+
+1396
+00:32:25.120 --> 00:32:28.789
+literally get a dashboard here
+
+1397
+00:32:28.789 --> 00:32:28.799
+
+
+
+1398
+00:32:28.799 --> 00:32:31.509
+and you can go to that dashboard and
+
+1399
+00:32:31.509 --> 00:32:31.519
+
+
+
+1400
+00:32:31.519 --> 00:32:33.350
+compare every metric to see how
+
+1401
+00:32:33.350 --> 00:32:33.360
+
+
+
+1402
+00:32:33.360 --> 00:32:35.269
+these metrics are going up and down for me in the last 10 times I have run it.
+
+1403
+00:32:35.269 --> 00:32:35.279
+
+
+
+1404
+00:32:35.279 --> 00:32:37.909
+So this regression
+
+1405
+00:32:37.909 --> 00:32:37.919
+
+
+
+1406
+00:32:37.919 --> 00:32:40.630
+testing is a part of this, your
+
+1407
+00:32:40.630 --> 00:32:40.640
+
+
+
+1408
+00:32:40.640 --> 00:32:43.590
+experiment tracking becomes a part of this and test coding becomes a part of this.
+
+1409
+00:32:43.590 --> 00:32:48.310
+
+
+
+1410
+00:32:48.310 --> 00:32:48.320
+
+
+
+1411
+00:32:48.320 --> 00:32:50.470
+Ok?  So this can be basic level regression
+
+1412
+00:32:50.470 --> 00:32:50.480
+
+
+
+1413
+00:32:50.480 --> 00:32:52.310
+testing and if you
+
+1414
+00:32:52.310 --> 00:32:52.320
+
+
+
+1415
+00:32:52.320 --> 00:32:54.070
+want to make it more advanced then you can add an experiment
+
+1416
+00:32:54.070 --> 00:32:54.080
+
+
+
+1417
+00:32:54.080 --> 00:32:57.509
+tracker and a dashboard tool, then it becomes a
+
+1418
+00:32:57.509 --> 00:32:57.519
+
+
+
+1419
+00:32:57.519 --> 00:33:00.070
+little better.  In fact,
+
+1420
+00:33:00.070 --> 00:33:00.080
+
+
+
+1421
+00:33:00.080 --> 00:33:05.430
+you can make it even better by adding
+
+1422
+00:33:05.430 --> 00:33:05.440
+
+
+
+1423
+00:33:05.440 --> 00:33:09.830
+CI to the mix.  CI Stands for
+
+1424
+00:33:09.830 --> 00:33:09.840
+
+
+
+1425
+00:33:09.840 --> 00:33:13.509
+Continuous Integration.  So what you will do is
+
+1426
+00:33:13.509 --> 00:33:13.519
+
+
+
+1427
+00:33:13.519 --> 00:33:16.310
+you will take a CI tool.  For
+
+1428
+00:33:16.310 --> 00:33:16.320
+
+
+
+1429
+00:33:16.320 --> 00:33:20.630
+example, you caught the get action
+
+1430
+00:33:20.630 --> 00:33:20.640
+
+
+
+1431
+00:33:20.640 --> 00:33:25.190
+and what did you do?  You
+
+1432
+00:33:25.190 --> 00:33:25.200
+
+
+
+1433
+00:33:25.200 --> 00:33:27.830
+put some conditions there that as soon as you
+
+1434
+00:33:27.830 --> 00:33:27.840
+
+
+
+1435
+00:33:27.840 --> 00:33:31.029
+change anything in your code and push the gate.
+
+1436
+00:33:31.029 --> 00:33:31.039
+
+
+
+1437
+00:33:31.039 --> 00:33:34.549
+Suppose you changed the value of chunking size
+
+1438
+00:33:34.549 --> 00:33:34.559
+
+
+
+1439
+00:33:34.559 --> 00:33:37.750
+and pushed, then as soon as there is a change in the code,
+
+1440
+00:33:37.750 --> 00:33:37.760
+
+
+
+1441
+00:33:37.760 --> 00:33:40.950
+you wrote this code in your CI
+
+1442
+00:33:40.950 --> 00:33:40.960
+
+
+
+1443
+00:33:40.960 --> 00:33:43.509
+that as soon as anything changes in the code,
+
+1444
+00:33:43.509 --> 00:33:43.519
+
+
+
+1445
+00:33:43.519 --> 00:33:47.590
+run the eval again.
+
+1446
+00:33:47.590 --> 00:33:47.600
+
+
+
+1447
+00:33:47.600 --> 00:33:50.630
+Rerun the entire eval suite.  And as soon as the
+
+1448
+00:33:50.630 --> 00:33:50.640
+
+
+
+1449
+00:33:50.640 --> 00:33:54.310
+run is done, basically a new set of readings will
+
+1450
+00:33:54.310 --> 00:33:54.320
+
+
+
+1451
+00:33:54.320 --> 00:33:57.430
+come.  You will quickly compare those sets of readings
+
+1452
+00:33:57.430 --> 00:33:57.440
+
+
+
+1453
+00:33:57.440 --> 00:34:02.389
+to the current baseline.  If your
+
+1454
+00:34:02.389 --> 00:34:02.399
+
+
+
+1455
+00:34:02.399 --> 00:34:04.950
+current reading is less than the base line.
+
+1456
+00:34:04.950 --> 00:34:04.960
+
+
+
+1457
+00:34:04.960 --> 00:34:07.509
+You will define a threshold that should
+
+1458
+00:34:07.509 --> 00:34:07.519
+
+
+
+1459
+00:34:07.519 --> 00:34:10.869
+not be less than 3 from the previous one.  Let's say it
+
+1460
+00:34:10.869 --> 00:34:10.879
+
+
+
+1461
+00:34:10.879 --> 00:34:14.389
+is less.  So what will you do immediately?  You will
+
+1462
+00:34:14.389 --> 00:34:14.399
+
+
+
+1463
+00:34:14.399 --> 00:34:17.909
+pause your new deployment.  You will say that
+
+1464
+00:34:17.909 --> 00:34:17.919
+
+
+
+1465
+00:34:17.919 --> 00:34:20.389
+I
+
+1466
+00:34:20.389 --> 00:34:20.399
+
+
+
+1467
+00:34:20.399 --> 00:34:22.470
+cannot deploy this new change right now.  Because
+
+1468
+00:34:22.470 --> 00:34:22.480
+
+
+
+1469
+00:34:22.480 --> 00:34:25.669
+my new change is worse than my current baseline.
+
+1470
+00:34:25.669 --> 00:34:25.679
+
+
+
+1471
+00:34:25.679 --> 00:34:28.310
+So the software regressed.  is spoilt.
+
+1472
+00:34:28.310 --> 00:34:28.320
+
+
+
+1473
+00:34:28.320 --> 00:34:31.510
+On the other hand, if you make some good
+
+1474
+00:34:31.510 --> 00:34:31.520
+
+
+
+1475
+00:34:31.520 --> 00:34:34.710
+changes and it improves you more than your baseline, then
+
+1476
+00:34:34.710 --> 00:34:34.720
+
+
+
+1477
+00:34:34.720 --> 00:34:38.310
+you will allow yourself to go and
+
+1478
+00:34:38.310 --> 00:34:38.320
+
+
+
+1479
+00:34:38.320 --> 00:34:42.230
+deploy.  So basically
+
+1480
+00:34:42.230 --> 00:34:42.240
+
+
+
+1481
+00:34:42.240 --> 00:34:45.430
+with the help of CI you can also create a gating mechanism.  What will happen is that
+
+1482
+00:34:45.430 --> 00:34:45.440
+
+
+
+1483
+00:34:45.440 --> 00:34:48.310
+you can
+
+1484
+00:34:48.310 --> 00:34:51.750
+
+
+
+1485
+00:34:51.750 --> 00:34:51.760
+
+
+
+1486
+00:34:51.760 --> 00:34:54.069
+change your software comfortably without any tension.  Keep making
+
+1487
+00:34:54.069 --> 00:34:54.079
+
+
+
+1488
+00:34:54.079 --> 00:34:56.550
+improvements to it and keep pushing it
+
+1489
+00:34:56.550 --> 00:34:56.560
+
+
+
+1490
+00:34:56.560 --> 00:34:59.750
+and keep deploying it
+
+1491
+00:34:59.750 --> 00:34:59.760
+
+
+
+1492
+00:34:59.760 --> 00:35:04.390
+and it will get deployed only when your changes are
+
+1493
+00:35:04.390 --> 00:35:04.400
+
+
+
+1494
+00:35:04.400 --> 00:35:07.109
+bringing some positive impact on your
+
+1495
+00:35:07.109 --> 00:35:07.119
+
+
+
+1496
+00:35:07.119 --> 00:35:09.750
+current baseline, otherwise it will get rejected.
+
+1497
+00:35:09.750 --> 00:35:09.760
+
+
+
+1498
+00:35:09.760 --> 00:35:12.069
+So I really hope you understand
+
+1499
+00:35:12.069 --> 00:35:14.950
+
+
+
+1500
+00:35:14.950 --> 00:35:14.960
+
+
+
+1501
+00:35:14.960 --> 00:35:18.310
+how this whole thing is being handled by an engineering team.  So you guys did
+
+1502
+00:35:18.310 --> 00:35:18.320
+
+
+
+1503
+00:35:18.320 --> 00:35:22.069
+evaluation a sweet build.
+
+1504
+00:35:22.069 --> 00:35:22.079
+
+
+
+1505
+00:35:22.079 --> 00:35:24.390
+We are using the same evaluation suite in regression testing as a
+
+1506
+00:35:24.390 --> 00:35:24.400
+
+
+
+1507
+00:35:24.400 --> 00:35:25.910
+gating
+
+1508
+00:35:25.910 --> 00:35:25.920
+
+
+
+1509
+00:35:25.920 --> 00:35:28.150
+mechanism.  I really hope you understand.
+
+1510
+00:35:28.150 --> 00:35:28.160
+
+
+
+1511
+00:35:28.160 --> 00:35:29.430
+I will show you all this.
+
+1512
+00:35:29.430 --> 00:35:29.440
+
+
+
+1513
+00:35:29.440 --> 00:35:31.910
+By the way CI's I am not really sure whether
+
+1514
+00:35:31.910 --> 00:35:31.920
+
+
+
+1515
+00:35:31.920 --> 00:35:33.589
+I will be able to show you Continuous Integration
+
+1516
+00:35:33.589 --> 00:35:33.599
+
+
+
+1517
+00:35:33.599 --> 00:35:36.470
+or not.  But most likely Himanshu
+
+1518
+00:35:36.470 --> 00:35:36.480
+
+
+
+1519
+00:35:36.480 --> 00:35:38.870
+will show it to you because he will teach you in LLM Obs.  If
+
+1520
+00:35:38.870 --> 00:35:38.880
+
+
+
+1521
+00:35:38.880 --> 00:35:41.190
+I wanted, I could have skipped
+
+1522
+00:35:41.190 --> 00:35:41.200
+
+
+
+1523
+00:35:41.200 --> 00:35:43.190
+this topic but I felt that since it is
+
+1524
+00:35:43.190 --> 00:35:43.200
+
+
+
+1525
+00:35:43.200 --> 00:35:45.270
+related.  So let me read it to you once.
+
+1526
+00:35:45.270 --> 00:35:45.280
+
+
+
+1527
+00:35:45.280 --> 00:35:47.750
+So, based on the discussion so far,
+
+1528
+00:35:47.750 --> 00:35:47.760
+
+
+
+1529
+00:35:47.760 --> 00:35:50.310
+our overall eval strategy is
+
+1530
+00:35:50.310 --> 00:35:50.320
+
+
+
+1531
+00:35:50.320 --> 00:35:52.550
+that we are building an eval suite at
+
+1532
+00:35:52.550 --> 00:35:52.560
+
+
+
+1533
+00:35:52.560 --> 00:35:55.349
+three levels and doing regression testing with the help of that eval suite.
+
+1534
+00:35:55.349 --> 00:35:55.359
+
+
+
+1535
+00:35:55.359 --> 00:35:57.430
+Now
+
+1536
+00:35:57.430 --> 00:35:57.440
+
+
+
+1537
+00:35:57.440 --> 00:35:59.510
+in regression testing also we discussed three levels.  The
+
+1538
+00:35:59.510 --> 00:35:59.520
+
+
+
+1539
+00:35:59.520 --> 00:36:01.750
+first level is simple regression
+
+1540
+00:36:01.750 --> 00:36:01.760
+
+
+
+1541
+00:36:01.760 --> 00:36:04.550
+testing where we are running the software once and
+
+1542
+00:36:04.550 --> 00:36:04.560
+
+
+
+1543
+00:36:04.560 --> 00:36:06.870
+getting baseline numbers.  Then
+
+1544
+00:36:06.870 --> 00:36:06.880
+
+
+
+1545
+00:36:06.880 --> 00:36:10.470
+every next time we run it, we bring the next number and
+
+1546
+00:36:10.470 --> 00:36:10.480
+
+
+
+1547
+00:36:10.480 --> 00:36:13.270
+compare it manually.  From this we are able to understand
+
+1548
+00:36:13.270 --> 00:36:13.280
+
+
+
+1549
+00:36:13.280 --> 00:36:14.790
+whether our software is improving or
+
+1550
+00:36:14.790 --> 00:36:14.800
+
+
+
+1551
+00:36:14.800 --> 00:36:17.270
+not.  Level number two, you
+
+1552
+00:36:17.270 --> 00:36:17.280
+
+
+
+1553
+00:36:17.280 --> 00:36:19.349
+can automate this a little bit more by adding an
+
+1554
+00:36:19.349 --> 00:36:19.359
+
+
+
+1555
+00:36:19.359 --> 00:36:21.349
+experiment tracking tool such as ML
+
+1556
+00:36:21.349 --> 00:36:21.359
+
+
+
+1557
+00:36:21.359 --> 00:36:23.750
+Flow.  So what are you doing now?  Each time
+
+1558
+00:36:23.750 --> 00:36:23.760
+
+
+
+1559
+00:36:23.760 --> 00:36:25.750
+you trigger your eval pipeline
+
+1560
+00:36:25.750 --> 00:36:25.760
+
+
+
+1561
+00:36:25.760 --> 00:36:28.230
+,
+
+1562
+00:36:28.230 --> 00:36:28.240
+
+
+
+1563
+00:36:28.240 --> 00:36:30.069
+metrics values ​​are being logged according to your configuration settings.
+
+1564
+00:36:30.069 --> 00:36:30.079
+
+
+
+1565
+00:36:30.079 --> 00:36:31.670
+And you can see it visually
+
+1566
+00:36:31.670 --> 00:36:31.680
+
+
+
+1567
+00:36:31.680 --> 00:36:33.589
+with the help of a dashboard.  So, it got a little
+
+1568
+00:36:33.589 --> 00:36:33.599
+
+
+
+1569
+00:36:33.599 --> 00:36:36.069
+better.  And what better strategy is to
+
+1570
+00:36:36.069 --> 00:36:38.790
+
+
+
+1571
+00:36:38.790 --> 00:36:38.800
+
+
+
+1572
+00:36:38.800 --> 00:36:41.190
+use this whole thing for automation.  You bring the CI tool
+
+1573
+00:36:41.190 --> 00:36:41.200
+
+
+
+1574
+00:36:41.200 --> 00:36:44.230
+into the picture and tell it that whenever I
+
+1575
+00:36:44.230 --> 00:36:44.240
+
+
+
+1576
+00:36:44.240 --> 00:36:47.270
+run my eval pipeline, it should automatically
+
+1577
+00:36:47.270 --> 00:36:47.280
+
+
+
+1578
+00:36:47.280 --> 00:36:49.430
+test whether the metrics of my new version of the
+
+1579
+00:36:49.430 --> 00:36:49.440
+
+
+
+1580
+00:36:49.440 --> 00:36:51.750
+software are
+
+1581
+00:36:51.750 --> 00:36:51.760
+
+
+
+1582
+00:36:51.760 --> 00:36:55.030
+better than my baseline or not.  If it is
+
+1583
+00:36:55.030 --> 00:36:55.040
+
+
+
+1584
+00:36:55.040 --> 00:36:57.510
+better than the baseline then we will also deploy it
+
+1585
+00:36:57.510 --> 00:36:57.520
+
+
+
+1586
+00:36:57.520 --> 00:36:59.750
+and we will change our baseline to the
+
+1587
+00:36:59.750 --> 00:36:59.760
+
+
+
+1588
+00:36:59.760 --> 00:37:01.910
+new matrix.  And you keep doing this continuously.
+
+1589
+00:37:01.910 --> 00:37:01.920
+
+
+
+1590
+00:37:01.920 --> 00:37:04.470
+So this is how this entire thing is done.
+
+1591
+00:37:04.470 --> 00:37:04.480
+
+
+
+1592
+00:37:04.480 --> 00:37:07.430
+By the way ML flow is not the
+
+1593
+00:37:07.430 --> 00:37:07.440
+
+
+
+1594
+00:37:07.440 --> 00:37:09.670
+only option.  You can
+
+1595
+00:37:09.670 --> 00:37:09.680
+
+
+
+1596
+00:37:09.680 --> 00:37:11.510
+use many other types of software for experiment tracking.
+
+1597
+00:37:11.510 --> 00:37:11.520
+
+
+
+1598
+00:37:11.520 --> 00:37:15.430
+Even DeepEval's other
+
+1599
+00:37:15.430 --> 00:37:15.440
+
+
+
+1600
+00:37:15.440 --> 00:37:17.750
+software, Confident AI,
+
+1601
+00:37:17.750 --> 00:37:17.760
+
+
+
+1602
+00:37:17.760 --> 00:37:20.470
+also does this.  There is a software called Weights and Biases,
+
+1603
+00:37:20.470 --> 00:37:20.480
+
+
+
+1604
+00:37:20.480 --> 00:37:21.910
+this work is also done in it.  There are a
+
+1605
+00:37:21.910 --> 00:37:21.920
+
+
+
+1606
+00:37:21.920 --> 00:37:23.589
+lot of players in this.  So
+
+1607
+00:37:23.589 --> 00:37:23.599
+
+
+
+1608
+00:37:23.599 --> 00:37:27.030
+again, the main idea is don't
+
+1609
+00:37:27.030 --> 00:37:27.040
+
+
+
+1610
+00:37:27.040 --> 00:37:29.589
+grab the tool.  Grab the concept so that if you
+
+1611
+00:37:29.589 --> 00:37:29.599
+
+
+
+1612
+00:37:29.599 --> 00:37:31.349
+understand the concept then even if you
+
+1613
+00:37:31.349 --> 00:37:31.359
+
+
+
+1614
+00:37:31.359 --> 00:37:33.270
+spend a week on any tool, you will learn it.
+
+1615
+00:37:33.270 --> 00:37:33.280
+
+
+
+1616
+00:37:33.280 --> 00:37:35.589
+Because it is not necessary that we
+
+1617
+00:37:35.589 --> 00:37:35.599
+
+
+
+1618
+00:37:35.599 --> 00:37:37.589
+teach you ML Flow here and send you there.
+
+1619
+00:37:37.589 --> 00:37:37.599
+
+
+
+1620
+00:37:37.599 --> 00:37:39.349
+ML Flow is also being used in the company where you get a job.  It is
+
+1621
+00:37:39.349 --> 00:37:39.359
+
+
+
+1622
+00:37:39.359 --> 00:37:40.870
+not necessary.
+
+1623
+00:37:40.870 --> 00:37:40.880
+
+
+
+1624
+00:37:40.880 --> 00:37:43.990
+Currently, no such standard tool has been established
+
+1625
+00:37:43.990 --> 00:37:44.000
+
+
+
+1626
+00:37:44.000 --> 00:37:46.710
+for LLMs.
+
+1627
+00:37:46.710 --> 00:37:46.720
+
+
+
+1628
+00:37:46.720 --> 00:37:49.190
+Yes ML Flow has become the
+
+1629
+00:37:49.190 --> 00:37:49.200
+
+
+
+1630
+00:37:49.200 --> 00:37:51.349
+de facto standard for machine learning.
+
+1631
+00:37:51.349 --> 00:37:51.359
+
+
+
+1632
+00:37:51.359 --> 00:37:53.510
+No such standard has been established here yet.  So
+
+1633
+00:37:53.510 --> 00:37:53.520
+
+
+
+1634
+00:37:53.520 --> 00:37:56.550
+focus on the concept.  Now let's talk about the
+
+1635
+00:37:56.550 --> 00:37:56.560
+
+
+
+1636
+00:37:56.560 --> 00:38:00.710
+last step.  Now once you have done your
+
+1637
+00:38:00.710 --> 00:38:00.720
+
+
+
+1638
+00:38:00.720 --> 00:38:02.950
+regression testing and you have
+
+1639
+00:38:02.950 --> 00:38:02.960
+
+
+
+1640
+00:38:02.960 --> 00:38:05.430
+realized that the new version of the
+
+1641
+00:38:05.430 --> 00:38:05.440
+
+
+
+1642
+00:38:05.440 --> 00:38:07.109
+software is reading its
+
+1643
+00:38:07.109 --> 00:38:07.119
+
+
+
+1644
+00:38:07.119 --> 00:38:11.430
+metrics better than the baseline one.  So
+
+1645
+00:38:11.430 --> 00:38:11.440
+
+
+
+1646
+00:38:11.440 --> 00:38:14.710
+what will you do now?  Now you will deploy that software.
+
+1647
+00:38:14.710 --> 00:38:14.720
+
+
+
+1648
+00:38:14.720 --> 00:38:17.510
+Right?  Deployment will happen.
+
+1649
+00:38:17.510 --> 00:38:17.520
+
+
+
+1650
+00:38:17.520 --> 00:38:20.950
+But evaluation does
+
+1651
+00:38:20.950 --> 00:38:20.960
+
+
+
+1652
+00:38:20.960 --> 00:38:23.349
+n't stop after deployment.  I taught you this.
+
+1653
+00:38:23.349 --> 00:38:23.359
+
+
+
+1654
+00:38:23.359 --> 00:38:25.910
+And that's what we're going to do here.
+
+1655
+00:38:25.910 --> 00:38:25.920
+
+
+
+1656
+00:38:25.920 --> 00:38:28.790
+Once the software is deployed,
+
+1657
+00:38:28.790 --> 00:38:28.800
+
+
+
+1658
+00:38:28.800 --> 00:38:31.670
+we will continue to evaluate it.  And the
+
+1659
+00:38:31.670 --> 00:38:31.680
+
+
+
+1660
+00:38:31.680 --> 00:38:33.990
+name of this evaluation is online
+
+1661
+00:38:33.990 --> 00:38:34.000
+
+
+
+1662
+00:38:34.000 --> 00:38:36.550
+evaluation.  Now let me
+
+1663
+00:38:36.550 --> 00:38:36.560
+
+
+
+1664
+00:38:36.560 --> 00:38:39.030
+quickly tell you what all things you will do here.
+
+1665
+00:38:39.030 --> 00:38:39.040
+
+
+
+1666
+00:38:39.040 --> 00:38:41.430
+Here you major on three or four things.
+
+1667
+00:38:41.430 --> 00:38:41.440
+
+
+
+1668
+00:38:41.440 --> 00:38:43.589
+Once the software is online, you
+
+1669
+00:38:43.589 --> 00:38:43.599
+
+
+
+1670
+00:38:43.599 --> 00:38:47.109
+measure three or four things.  First you
+
+1671
+00:38:47.109 --> 00:38:47.119
+
+
+
+1672
+00:38:47.119 --> 00:38:50.710
+capture some things.  For example, every time
+
+1673
+00:38:50.710 --> 00:38:50.720
+
+
+
+1674
+00:38:50.720 --> 00:38:53.349
+a student comes to our chat bot and
+
+1675
+00:38:53.349 --> 00:38:53.359
+
+
+
+1676
+00:38:53.359 --> 00:38:56.470
+asks doubts,
+
+1677
+00:38:56.470 --> 00:38:56.480
+
+
+
+1678
+00:38:56.480 --> 00:38:59.589
+what is the latency in answering his question?
+
+1679
+00:38:59.589 --> 00:38:59.599
+
+
+
+1680
+00:38:59.599 --> 00:39:03.030
+How much does it cost?  Did he give a thumbs up or a thumbs down
+
+1681
+00:39:03.030 --> 00:39:03.040
+
+
+
+1682
+00:39:03.040 --> 00:39:05.109
+?  You capture all these signals.
+
+1683
+00:39:05.109 --> 00:39:05.119
+
+
+
+1684
+00:39:05.119 --> 00:39:07.910
+Quickly write to me in chat and tell me
+
+1685
+00:39:07.910 --> 00:39:07.920
+
+
+
+1686
+00:39:07.920 --> 00:39:10.710
+which software can we use to do this whole thing
+
+1687
+00:39:10.710 --> 00:39:10.720
+
+
+
+1688
+00:39:10.720 --> 00:39:13.589
+?  Give me one software name
+
+1689
+00:39:13.589 --> 00:39:13.599
+
+
+
+1690
+00:39:13.599 --> 00:39:15.270
+that we can use.  I have also shown it to
+
+1691
+00:39:15.270 --> 00:39:15.280
+
+
+
+1692
+00:39:15.280 --> 00:39:18.069
+you in the past.  Length is one option.
+
+1693
+00:39:18.069 --> 00:39:18.079
+
+
+
+1694
+00:39:18.079 --> 00:39:20.310
+We also have Langfuse.  Infact
+
+1695
+00:39:20.310 --> 00:39:20.320
+
+
+
+1696
+00:39:20.320 --> 00:39:22.550
+Confident AI also does this work.
+
+1697
+00:39:22.550 --> 00:39:22.560
+
+
+
+1698
+00:39:22.560 --> 00:39:25.349
+We call this training or observability
+
+1699
+00:39:25.349 --> 00:39:25.359
+
+
+
+1700
+00:39:25.359 --> 00:39:29.270
+in the world of LLMs.  So
+
+1701
+00:39:29.270 --> 00:39:29.280
+
+
+
+1702
+00:39:29.280 --> 00:39:32.150
+basically what will we do?  We'll
+
+1703
+00:39:32.150 --> 00:39:32.160
+
+
+
+1704
+00:39:32.160 --> 00:39:34.470
+add some tracking code inside our code.
+
+1705
+00:39:34.470 --> 00:39:34.480
+
+
+
+1706
+00:39:34.480 --> 00:39:36.550
+And what will happen by adding that tracking code is
+
+1707
+00:39:36.550 --> 00:39:36.560
+
+
+
+1708
+00:39:36.560 --> 00:39:38.310
+that we will capture data related to
+
+1709
+00:39:38.310 --> 00:39:38.320
+
+
+
+1710
+00:39:38.320 --> 00:39:41.190
+all the interactions that take place on our software when it is live.
+
+1711
+00:39:41.190 --> 00:39:43.589
+
+
+
+1712
+00:39:43.589 --> 00:39:46.710
+
+
+
+1713
+00:39:46.710 --> 00:39:46.720
+
+
+
+1714
+00:39:46.720 --> 00:39:48.950
+We will capture all these things like latency, cost, tokens, thumbs up, thumbs down
+
+1715
+00:39:48.950 --> 00:39:48.960
+
+
+
+1716
+00:39:48.960 --> 00:39:51.589
+and we will see all of them at one place in a dashboard
+
+1717
+00:39:51.589 --> 00:39:51.599
+
+
+
+1718
+00:39:51.599 --> 00:39:53.910
+which is the dashboard of Lands.  Apart from this
+
+1719
+00:39:53.910 --> 00:39:53.920
+
+
+
+1720
+00:39:53.920 --> 00:39:57.670
+we will also compute some more values.
+
+1721
+00:39:57.670 --> 00:39:57.680
+
+
+
+1722
+00:39:57.680 --> 00:40:00.230
+These are captured
+
+1723
+00:40:00.230 --> 00:40:00.240
+
+
+
+1724
+00:40:00.240 --> 00:40:02.069
+values.  Whatever is coming, however it is coming, we are
+
+1725
+00:40:02.069 --> 00:40:02.079
+
+
+
+1726
+00:40:02.079 --> 00:40:03.750
+storing it accordingly.  But
+
+1727
+00:40:03.750 --> 00:40:03.760
+
+
+
+1728
+00:40:03.760 --> 00:40:05.829
+we will also capture some things.  For example, once our
+
+1729
+00:40:05.829 --> 00:40:05.839
+
+
+
+1730
+00:40:05.839 --> 00:40:09.910
+software has been deployed,
+
+1731
+00:40:09.910 --> 00:40:09.920
+
+
+
+1732
+00:40:09.920 --> 00:40:13.829
+what is its faithfulness online?  Or
+
+1733
+00:40:13.829 --> 00:40:13.839
+
+
+
+1734
+00:40:13.839 --> 00:40:16.310
+what is the relevance of its answer or what is its correctness
+
+1735
+00:40:16.310 --> 00:40:16.320
+
+
+
+1736
+00:40:16.320 --> 00:40:18.630
+?  The same things that we tested offline,
+
+1737
+00:40:18.630 --> 00:40:18.640
+
+
+
+1738
+00:40:18.640 --> 00:40:21.589
+we test some of them online as well.
+
+1739
+00:40:21.589 --> 00:40:21.599
+
+
+
+1740
+00:40:21.599 --> 00:40:25.589
+So this is also one of our tasks.
+
+1741
+00:40:25.589 --> 00:40:25.599
+
+
+
+1742
+00:40:25.599 --> 00:40:28.230
+After that we also check the drift.  Drift
+
+1743
+00:40:28.230 --> 00:40:28.240
+
+
+
+1744
+00:40:28.240 --> 00:40:30.390
+basically means whether the
+
+1745
+00:40:30.390 --> 00:40:30.400
+
+
+
+1746
+00:40:30.400 --> 00:40:32.310
+performance of our software is deteriorating over time
+
+1747
+00:40:32.310 --> 00:40:32.320
+
+
+
+1748
+00:40:32.320 --> 00:40:35.190
+?  A: I had told you this
+
+1749
+00:40:35.190 --> 00:40:35.200
+
+
+
+1750
+00:40:35.200 --> 00:40:38.230
+in a lecture that we will have a graph of the last 24 hours.  In that,
+
+1751
+00:40:38.230 --> 00:40:38.240
+
+
+
+1752
+00:40:38.240 --> 00:40:40.870
+we might be tracking some metric.  Will be.
+
+1753
+00:40:40.870 --> 00:40:40.880
+
+
+
+1754
+00:40:40.880 --> 00:40:42.230
+For example,
+
+1755
+00:40:42.230 --> 00:40:42.240
+
+
+
+1756
+00:40:42.240 --> 00:40:45.670
+faithfulness.  So if suddenly in the last 8 hours the
+
+1757
+00:40:45.670 --> 00:40:45.680
+
+
+
+1758
+00:40:45.680 --> 00:40:48.310
+curve of Faithfulness is going down like this, then
+
+1759
+00:40:48.310 --> 00:40:48.320
+
+
+
+1760
+00:40:48.320 --> 00:40:50.710
+this is a kind of drift which we are detecting
+
+1761
+00:40:50.710 --> 00:40:50.720
+
+
+
+1762
+00:40:50.720 --> 00:40:53.030
+and then we alert about it
+
+1763
+00:40:53.030 --> 00:40:53.040
+
+
+
+1764
+00:40:53.040 --> 00:40:55.030
+and after alerting we improve it.
+
+1765
+00:40:55.030 --> 00:40:55.040
+
+
+
+1766
+00:40:55.040 --> 00:40:58.390
+So you have to do this whole thing also.
+
+1767
+00:40:58.390 --> 00:40:58.400
+
+
+
+1768
+00:40:58.400 --> 00:41:00.870
+Once the software is deployed,
+
+1769
+00:41:00.870 --> 00:41:00.880
+
+
+
+1770
+00:41:00.880 --> 00:41:03.829
+we will do this as well.  And lastly there will be
+
+1771
+00:41:03.829 --> 00:41:03.839
+
+
+
+1772
+00:41:03.839 --> 00:41:06.710
+a self-improving loop.
+
+1773
+00:41:06.710 --> 00:41:06.720
+
+
+
+1774
+00:41:06.720 --> 00:41:09.829
+Which basically means that sometimes there will be a
+
+1775
+00:41:09.829 --> 00:41:09.839
+
+
+
+1776
+00:41:09.839 --> 00:41:12.390
+chat with a student where
+
+1777
+00:41:12.390 --> 00:41:12.400
+
+
+
+1778
+00:41:12.400 --> 00:41:14.470
+our software will misbehave.  If
+
+1779
+00:41:14.470 --> 00:41:14.480
+
+
+
+1780
+00:41:14.480 --> 00:41:17.190
+our application misbehaves,
+
+1781
+00:41:17.190 --> 00:41:17.200
+
+
+
+1782
+00:41:17.200 --> 00:41:20.069
+we will pick up those specific instances and
+
+1783
+00:41:20.069 --> 00:41:20.079
+
+
+
+1784
+00:41:20.079 --> 00:41:23.910
+make them part of our offline eval.  We will
+
+1785
+00:41:23.910 --> 00:41:26.150
+
+
+
+1786
+00:41:26.150 --> 00:41:26.160
+
+
+
+1787
+00:41:26.160 --> 00:41:28.550
+create part of our offline data set.  So that our offline data
+
+1788
+00:41:28.550 --> 00:41:28.560
+
+
+
+1789
+00:41:28.560 --> 00:41:30.710
+sets, which are our golden data sets, keep getting
+
+1790
+00:41:30.710 --> 00:41:30.720
+
+
+
+1791
+00:41:30.720 --> 00:41:33.510
+enriched.  So that in future
+
+1792
+00:41:33.510 --> 00:41:33.520
+
+
+
+1793
+00:41:33.520 --> 00:41:35.990
+when we make a new version and evaluate it
+
+1794
+00:41:35.990 --> 00:41:36.000
+
+
+
+1795
+00:41:36.000 --> 00:41:38.950
+offline, it can be
+
+1796
+00:41:38.950 --> 00:41:38.960
+
+
+
+1797
+00:41:38.960 --> 00:41:42.710
+evaluated better.  So that's why there is a loop here as
+
+1798
+00:41:42.710 --> 00:41:42.720
+
+
+
+1799
+00:41:42.720 --> 00:41:47.030
+well.  Ok?  So this is how the
+
+1800
+00:41:47.030 --> 00:41:47.040
+
+
+
+1801
+00:41:47.040 --> 00:41:50.630
+entire evaluation strategy will be carried
+
+1802
+00:41:50.630 --> 00:41:50.640
+
+
+
+1803
+00:41:50.640 --> 00:41:53.430
+out.  I have thought for you people that
+
+1804
+00:41:53.430 --> 00:41:53.440
+
+
+
+1805
+00:41:53.440 --> 00:41:56.069
+we will create a RAG application and test it at this
+
+1806
+00:41:56.069 --> 00:41:56.079
+
+
+
+1807
+00:41:56.079 --> 00:41:58.470
+level as per the entire page that you are seeing on the screen.  The
+
+1808
+00:41:58.470 --> 00:42:01.589
+
+
+
+1809
+00:42:01.589 --> 00:42:01.599
+
+
+
+1810
+00:42:01.599 --> 00:42:05.270
+plan of action is that
+
+1811
+00:42:05.270 --> 00:42:05.280
+
+
+
+1812
+00:42:05.280 --> 00:42:11.109
+in the next class I will teach you the complete component
+
+1813
+00:42:11.109 --> 00:42:11.119
+
+
+
+1814
+00:42:11.119 --> 00:42:13.750
+level evaluation.  Which basically
+
+1815
+00:42:13.750 --> 00:42:13.760
+
+
+
+1816
+00:42:13.760 --> 00:42:16.230
+means that in the next class I'll
+
+1817
+00:42:16.230 --> 00:42:16.240
+
+
+
+1818
+00:42:16.240 --> 00:42:18.950
+show you how to make a retriever.  Then
+
+1819
+00:42:18.950 --> 00:42:18.960
+
+
+
+1820
+00:42:18.960 --> 00:42:22.390
+I will teach the retriever to test.  Then I will make a generator
+
+1821
+00:42:22.390 --> 00:42:22.400
+
+
+
+1822
+00:42:22.400 --> 00:42:24.630
+and
+
+1823
+00:42:24.630 --> 00:42:24.640
+
+
+
+1824
+00:42:24.640 --> 00:42:26.710
+teach you how to test it.  And in the same process you will
+
+1825
+00:42:26.710 --> 00:42:26.720
+
+
+
+1826
+00:42:26.720 --> 00:42:29.990
+use deep eval for the first time.  After that,
+
+1827
+00:42:29.990 --> 00:42:30.000
+
+
+
+1828
+00:42:30.000 --> 00:42:34.150
+in the next session, we will build the RAG pipeline
+
+1829
+00:42:34.150 --> 00:42:34.160
+
+
+
+1830
+00:42:34.160 --> 00:42:38.710
+and we will
+
+1831
+00:42:38.710 --> 00:42:38.720
+
+
+
+1832
+00:42:38.720 --> 00:42:41.349
+run these three metrics, which are RAG triard metrics.
+
+1833
+00:42:41.349 --> 00:42:41.359
+
+
+
+1834
+00:42:41.359 --> 00:42:46.390
+After that the third session may happen or maybe even a
+
+1835
+00:42:46.390 --> 00:42:46.400
+
+
+
+1836
+00:42:46.400 --> 00:42:48.069
+little earlier.  I don't really know because
+
+1837
+00:42:48.069 --> 00:42:50.309
+
+
+
+1838
+00:42:50.309 --> 00:42:50.319
+
+
+
+1839
+00:42:50.319 --> 00:42:53.030
+I don't know how it will turn out in the future.  We will run all the evaluation at the application level.
+
+1840
+00:42:53.030 --> 00:42:53.040
+
+
+
+1841
+00:42:53.040 --> 00:42:56.870
+And in the fourth, which will be the final
+
+1842
+00:42:56.870 --> 00:42:56.880
+
+
+
+1843
+00:42:56.880 --> 00:42:59.670
+session, we will cover regression testing and
+
+1844
+00:42:59.670 --> 00:42:59.680
+
+
+
+1845
+00:42:59.680 --> 00:43:03.109
+online eval.  So
+
+1846
+00:43:03.109 --> 00:43:03.119
+
+
+
+1847
+00:43:03.119 --> 00:43:05.589
+basically, in the next four sessions, we will practically carry out this entire
+
+1848
+00:43:05.589 --> 00:43:05.599
+
+
+
+1849
+00:43:05.599 --> 00:43:07.910
+framework that we have created for testing a RAG application.
+
+1850
+00:43:07.910 --> 00:43:11.030
+
+
+
+1851
+00:43:11.030 --> 00:43:11.040
+
+
+
+1852
+00:43:11.040 --> 00:43:14.150
+This is our road map for the
+
+1853
+00:43:14.150 --> 00:43:14.160
+
+
+
+1854
+00:43:14.160 --> 00:43:17.349
+next four sessions.  I am not starting today because
+
+1855
+00:43:17.349 --> 00:43:17.359
+
+
+
+1856
+00:43:17.359 --> 00:43:20.950
+this whole thing takes around 2
+
+1857
+00:43:20.950 --> 00:43:20.960
+
+
+
+1858
+00:43:20.960 --> 00:43:23.270
+hours.  And I want to get these 2 hours done
+
+1859
+00:43:23.270 --> 00:43:23.280
+
+
+
+1860
+00:43:23.280 --> 00:43:24.870
+in one stretch.  I do
+
+1861
+00:43:24.870 --> 00:43:24.880
+
+
+
+1862
+00:43:24.880 --> 00:43:26.710
+n't want you to say, study for an hour today.
+
+1863
+00:43:26.710 --> 00:43:26.720
+
+
+
+1864
+00:43:26.720 --> 00:43:28.870
+Then study for an hour on Saturday.  The flow breaks.
+
+1865
+00:43:28.870 --> 00:43:28.880
+
+
+
+1866
+00:43:28.880 --> 00:43:31.510
+So today I have kept it class specific.
+
+1867
+00:43:31.510 --> 00:43:31.520
+
+
+
+1868
+00:43:31.520 --> 00:43:35.030
+To have this entire discussion.  By the way,
+
+1869
+00:43:35.030 --> 00:43:35.040
+
+
+
+1870
+00:43:35.040 --> 00:43:37.510
+I think that even on the basis of today's session,
+
+1871
+00:43:37.510 --> 00:43:37.520
+
+
+
+1872
+00:43:37.520 --> 00:43:41.030
+you can tackle this question quite well.
+
+1873
+00:43:41.030 --> 00:43:41.040
+
+
+
+1874
+00:43:41.040 --> 00:43:43.589
+Don't you think, do you
+
+1875
+00:43:43.589 --> 00:43:43.599
+
+
+
+1876
+00:43:43.599 --> 00:43:45.589
+think if someone asks you this question now, how do
+
+1877
+00:43:45.589 --> 00:43:45.599
+
+
+
+1878
+00:43:45.599 --> 00:43:49.510
+you evaluate your RAG chatbot?  So will
+
+1879
+00:43:49.510 --> 00:43:49.520
+
+
+
+1880
+00:43:49.520 --> 00:43:51.990
+you be able to answer this question?  Think about it.  It
+
+1881
+00:43:51.990 --> 00:43:52.000
+
+
+
+1882
+00:43:52.000 --> 00:43:53.910
+is very simple.  What you want to say is that
+
+1883
+00:43:53.910 --> 00:43:53.920
+
+
+
+1884
+00:43:53.920 --> 00:43:57.270
+first I will build an evaluation suite.
+
+1885
+00:43:57.270 --> 00:43:57.280
+
+
+
+1886
+00:43:57.280 --> 00:43:59.030
+The person in front will ask
+
+1887
+00:43:59.030 --> 00:43:59.040
+
+
+
+1888
+00:43:59.040 --> 00:44:01.190
+what is evaluation sweet?  You will say
+
+1889
+00:44:01.190 --> 00:44:01.200
+
+
+
+1890
+00:44:01.200 --> 00:44:03.670
+that I will test my application at three levels.
+
+1891
+00:44:03.670 --> 00:44:03.680
+
+
+
+1892
+00:44:03.680 --> 00:44:06.150
+I will test it on the
+
+1893
+00:44:06.150 --> 00:44:06.160
+
+
+
+1894
+00:44:06.160 --> 00:44:09.109
+component level where I
+
+1895
+00:44:09.109 --> 00:44:09.119
+
+
+
+1896
+00:44:09.119 --> 00:44:10.550
+will test the retriever and generator.
+
+1897
+00:44:10.550 --> 00:44:10.560
+
+
+
+1898
+00:44:10.560 --> 00:44:12.309
+Tell me the name of the matrix there.  Then I
+
+1899
+00:44:12.309 --> 00:44:12.319
+
+
+
+1900
+00:44:12.319 --> 00:44:14.470
+will test at the pipeline level.
+
+1901
+00:44:14.470 --> 00:44:14.480
+
+
+
+1902
+00:44:14.480 --> 00:44:16.870
+Tell me RAG Triad.  Then I will test at the application level.
+
+1903
+00:44:16.870 --> 00:44:16.880
+
+
+
+1904
+00:44:16.880 --> 00:44:19.510
+Correctness, completeness.  Then
+
+1905
+00:44:19.510 --> 00:44:19.520
+
+
+
+1906
+00:44:19.520 --> 00:44:21.829
+I will also test the safety and operation matrix.
+
+1907
+00:44:21.829 --> 00:44:21.839
+
+
+
+1908
+00:44:21.839 --> 00:44:23.910
+And once this whole thing is done,
+
+1909
+00:44:23.910 --> 00:44:23.920
+
+
+
+1910
+00:44:23.920 --> 00:44:26.550
+I will
+
+1911
+00:44:26.550 --> 00:44:26.560
+
+
+
+1912
+00:44:26.560 --> 00:44:28.710
+do regression testing using all of this.  Regression testing can also have
+
+1913
+00:44:28.710 --> 00:44:28.720
+
+
+
+1914
+00:44:28.720 --> 00:44:30.550
+three levels.  The basic one, the
+
+1915
+00:44:30.550 --> 00:44:30.560
+
+
+
+1916
+00:44:30.560 --> 00:44:32.870
+experiment tracking one, the CICD one.
+
+1917
+00:44:32.870 --> 00:44:32.880
+
+
+
+1918
+00:44:32.880 --> 00:44:36.230
+I will operate at a level depending on my company.
+
+1919
+00:44:36.230 --> 00:44:36.240
+
+
+
+1920
+00:44:36.240 --> 00:44:37.910
+And once the
+
+1921
+00:44:37.910 --> 00:44:37.920
+
+
+
+1922
+00:44:37.920 --> 00:44:40.710
+regression testing is done and I
+
+1923
+00:44:40.710 --> 00:44:40.720
+
+
+
+1924
+00:44:40.720 --> 00:44:43.109
+get a new baseline.  I will deploy
+
+1925
+00:44:43.109 --> 00:44:43.119
+
+
+
+1926
+00:44:43.119 --> 00:44:44.870
+and even after deploying I will
+
+1927
+00:44:44.870 --> 00:44:44.880
+
+
+
+1928
+00:44:44.880 --> 00:44:47.670
+not stop.  I will run online evaluations.   Please
+
+1929
+00:44:47.670 --> 00:44:47.680
+
+
+
+1930
+00:44:47.680 --> 00:44:49.430
+also explain what all you will run online.
+
+1931
+00:44:49.430 --> 00:44:49.440
+
+
+
+1932
+00:44:49.440 --> 00:44:51.430
+And I will pick up the mistakes there and
+
+1933
+00:44:51.430 --> 00:44:53.270
+
+
+
+1934
+00:44:53.270 --> 00:44:53.280
+
+
+
+1935
+00:44:53.280 --> 00:44:56.950
+make them part of my offline evolution.  Trust me on this.  When
+
+1936
+00:44:56.950 --> 00:44:56.960
+
+
+
+1937
+00:44:56.960 --> 00:44:59.670
+you answer this in the interview, the person in
+
+1938
+00:44:59.670 --> 00:44:59.680
+
+
+
+1939
+00:44:59.680 --> 00:45:02.230
+front of you will properly understand that this
+
+1940
+00:45:02.230 --> 00:45:02.240
+
+
+
+1941
+00:45:02.240 --> 00:45:04.230
+person knows it.  Because apart from this nothing happens except
+
+1942
+00:45:04.230 --> 00:45:04.240
+
+
+
+1943
+00:45:04.240 --> 00:45:06.550
+RAG evaluation.  This is the
+
+1944
+00:45:06.550 --> 00:45:06.560
+
+
+
+1945
+00:45:06.560 --> 00:45:08.870
+answer to this question.  What do many people do
+
+1946
+00:45:08.870 --> 00:45:08.880
+
+
+
+1947
+00:45:08.880 --> 00:45:10.870
+?  Since I have taken interviews myself,
+
+1948
+00:45:10.870 --> 00:45:10.880
+
+
+
+1949
+00:45:10.880 --> 00:45:12.069
+I can tell you.  When I
+
+1950
+00:45:12.069 --> 00:45:12.079
+
+
+
+1951
+00:45:12.079 --> 00:45:14.230
+ask candidates, when
+
+1952
+00:45:14.230 --> 00:45:14.240
+
+
+
+1953
+00:45:14.240 --> 00:45:16.069
+I ask a lot of people, how would you evaluate the RAG chatbot
+
+1954
+00:45:16.069 --> 00:45:16.079
+
+
+
+1955
+00:45:16.079 --> 00:45:18.790
+?  A lot of people don't know this answer because
+
+1956
+00:45:18.790 --> 00:45:18.800
+
+
+
+1957
+00:45:18.800 --> 00:45:20.710
+they have never read the evaluations.  Of
+
+1958
+00:45:20.710 --> 00:45:20.720
+
+
+
+1959
+00:45:20.720 --> 00:45:22.870
+those who have read the evaluations, the
+
+1960
+00:45:22.870 --> 00:45:22.880
+
+
+
+1961
+00:45:22.880 --> 00:45:25.990
+majority of the people answer this.
+
+1962
+00:45:25.990 --> 00:45:26.000
+
+
+
+1963
+00:45:26.000 --> 00:45:29.510
+That we will check recall, we will check precision
+
+1964
+00:45:29.510 --> 00:45:29.520
+
+
+
+1965
+00:45:29.520 --> 00:45:32.309
+, we will check answer relevance.  They
+
+1966
+00:45:32.309 --> 00:45:32.319
+
+
+
+1967
+00:45:32.319 --> 00:45:34.309
+name three to four metrics
+
+1968
+00:45:34.309 --> 00:45:34.319
+
+
+
+1969
+00:45:34.319 --> 00:45:36.870
+and think that is the answer.  But
+
+1970
+00:45:36.870 --> 00:45:36.880
+
+
+
+1971
+00:45:36.880 --> 00:45:39.349
+trust me there is a framework.  When you will
+
+1972
+00:45:39.349 --> 00:45:39.359
+
+
+
+1973
+00:45:39.359 --> 00:45:42.230
+answer it like a framework then the
+
+1974
+00:45:42.230 --> 00:45:42.240
+
+
+
+1975
+00:45:42.240 --> 00:45:43.990
+other person will respect you and say yes
+
+1976
+00:45:43.990 --> 00:45:44.000
+
+
+
+1977
+00:45:44.000 --> 00:45:45.829
+boss, he knows it.  He knows it in depth.
+
+1978
+00:45:45.829 --> 00:45:45.839
+
+
+
+1979
+00:45:45.839 --> 00:45:48.230
+He has done it.  That's the thing.  So
+
+1980
+00:45:48.230 --> 00:45:48.240
+
+
+
+1981
+00:45:48.240 --> 00:45:50.230
+when you do this practically in the next four
+
+1982
+00:45:50.230 --> 00:45:50.240
+
+
+
+1983
+00:45:50.240 --> 00:45:52.309
+sessions, it will get deeply ingrained in your mind.
+
+1984
+00:45:52.309 --> 00:45:52.319
+
+
+
+1985
+00:45:52.319 --> 00:45:54.950
+And that is the idea that
+
+1986
+00:45:54.950 --> 00:45:54.960
+
+
+
+1987
+00:45:54.960 --> 00:45:57.030
+in the next four sessions I have to
+
+1988
+00:45:57.030 --> 00:45:57.040
+
+
+
+1989
+00:45:57.040 --> 00:45:59.190
+create such a resource that if anyone in the world wants to
+
+1990
+00:45:59.190 --> 00:45:59.200
+
+
+
+1991
+00:45:59.200 --> 00:46:02.230
+understand RAG Evaluation,
+
+1992
+00:46:02.230 --> 00:46:02.240
+
+
+
+1993
+00:46:02.240 --> 00:46:03.990
+he can understand it by watching these four lectures.  That
+
+1994
+00:46:03.990 --> 00:46:04.000
+
+
+
+1995
+00:46:04.000 --> 00:46:08.630
+is the whole idea.  So I am ending this lecture with
+
+1996
+00:46:08.630 --> 00:46:08.640
+
+
+
+1997
+00:46:08.640 --> 00:46:11.750
+a promise that the next
+
+1998
+00:46:11.750 --> 00:46:11.760
+
+
+
+1999
+00:46:11.760 --> 00:46:14.309
+four lectures will be very explosive.  So that's all I'm doing
+
+2000
+00:46:14.309 --> 00:46:14.319
+
+
+
+2001
+00:46:14.319 --> 00:46:17.520
+today.

@@ -1,0 +1,6267 @@
+WEBVTT
+
+1
+00:00:00.080 --> 00:00:02.790
+Before we start, can someone tell me
+
+2
+00:00:02.790 --> 00:00:02.800
+
+
+
+3
+00:00:02.800 --> 00:00:04.309
+what leader boards are?  Have
+
+4
+00:00:04.309 --> 00:00:04.319
+
+
+
+5
+00:00:04.319 --> 00:00:07.030
+you seen LLM leader boards anywhere?  If you have seen it, then
+
+6
+00:00:07.030 --> 00:00:07.040
+
+
+
+7
+00:00:07.040 --> 00:00:09.270
+tell me the name of any leader board that you have
+
+8
+00:00:09.270 --> 00:00:09.280
+
+
+
+9
+00:00:09.280 --> 00:00:12.310
+seen or use in your company or
+
+10
+00:00:12.310 --> 00:00:12.320
+
+
+
+11
+00:00:12.320 --> 00:00:16.310
+in your day to day work.  What is Can Anyone Tell Me
+
+12
+00:00:16.310 --> 00:00:16.320
+
+
+
+13
+00:00:16.320 --> 00:00:18.150
+Leader Boards?  I understand the benchmarks.
+
+14
+00:00:18.150 --> 00:00:18.160
+
+
+
+15
+00:00:18.160 --> 00:00:20.710
+Benchmarks are basically tests.
+
+16
+00:00:20.710 --> 00:00:20.720
+
+
+
+17
+00:00:20.720 --> 00:00:23.750
+What are leader boards?  Anyone?  Pretty simple,
+
+18
+00:00:23.750 --> 00:00:23.760
+
+
+
+19
+00:00:23.760 --> 00:00:25.750
+right?  Meaning what are benchmarks?
+
+20
+00:00:25.750 --> 00:00:25.760
+
+
+
+21
+00:00:25.760 --> 00:00:28.550
+Benchmarks are
+
+22
+00:00:28.550 --> 00:00:28.560
+
+
+
+23
+00:00:28.560 --> 00:00:31.189
+exams that test LLMs in a particular aspect.
+
+24
+00:00:31.189 --> 00:00:31.199
+
+
+
+25
+00:00:31.199 --> 00:00:34.870
+Now the result comes after giving the exam.
+
+26
+00:00:34.870 --> 00:00:34.880
+
+
+
+27
+00:00:34.880 --> 00:00:38.150
+Now you will publish the result somewhere, right?  Will you
+
+28
+00:00:38.150 --> 00:00:38.160
+
+
+
+29
+00:00:38.160 --> 00:00:41.430
+show me somewhere, what is that place
+
+30
+00:00:41.430 --> 00:00:41.440
+
+
+
+31
+00:00:41.440 --> 00:00:44.310
+?  That's your leader boards.  Right?  Like you have
+
+32
+00:00:44.310 --> 00:00:44.320
+
+
+
+33
+00:00:44.320 --> 00:00:46.150
+leader boards in your school that
+
+34
+00:00:46.150 --> 00:00:46.160
+
+
+
+35
+00:00:46.160 --> 00:00:48.549
+show who topped or whatever.
+
+36
+00:00:48.549 --> 00:00:50.229
+
+
+
+37
+00:00:50.229 --> 00:00:50.239
+
+
+
+38
+00:00:50.239 --> 00:00:53.029
+So a simple definition is written here.
+
+39
+00:00:53.029 --> 00:00:53.039
+
+
+
+40
+00:00:53.039 --> 00:00:55.670
+An LLM Leaderboard is a public
+
+41
+00:00:55.670 --> 00:00:55.680
+
+
+
+42
+00:00:55.680 --> 00:00:59.910
+ranking and comparison table that shows how
+
+43
+00:00:59.910 --> 00:00:59.920
+
+
+
+44
+00:00:59.920 --> 00:01:02.790
+different LLMs perform on a common set
+
+45
+00:01:02.790 --> 00:01:02.800
+
+
+
+46
+00:01:02.800 --> 00:01:05.429
+of evaluations.  So
+
+47
+00:01:05.429 --> 00:01:05.439
+
+
+
+48
+00:01:05.439 --> 00:01:08.230
+we take the benchmark results and
+
+49
+00:01:08.230 --> 00:01:08.240
+
+
+
+50
+00:01:08.240 --> 00:01:10.789
+show them on the leaderboard, and the leaderboard becomes a single
+
+51
+00:01:10.789 --> 00:01:10.799
+
+
+
+52
+00:01:10.799 --> 00:01:13.109
+place where we can compare different models
+
+53
+00:01:13.109 --> 00:01:13.119
+
+
+
+54
+00:01:13.119 --> 00:01:16.070
+against a single benchmark.
+
+55
+00:01:16.070 --> 00:01:16.080
+
+
+
+56
+00:01:16.080 --> 00:01:18.230
+So that gives us a quick
+
+57
+00:01:18.230 --> 00:01:18.240
+
+
+
+58
+00:01:18.240 --> 00:01:20.310
+overview of
+
+59
+00:01:20.310 --> 00:01:20.320
+
+
+
+60
+00:01:20.320 --> 00:01:22.230
+which is the best model in this benchmark?  That's the basic
+
+61
+00:01:22.230 --> 00:01:22.240
+
+
+
+62
+00:01:22.240 --> 00:01:25.190
+idea of ​​a leader board.  Why do leader boards
+
+63
+00:01:25.190 --> 00:01:25.200
+
+
+
+64
+00:01:25.200 --> 00:01:27.109
+exist?  I have
+
+65
+00:01:27.109 --> 00:01:27.119
+
+
+
+66
+00:01:27.119 --> 00:01:30.710
+already mentioned one reason: we compare models across
+
+67
+00:01:30.710 --> 00:01:30.720
+
+
+
+68
+00:01:30.720 --> 00:01:33.190
+labs with a common reference.
+
+69
+00:01:33.190 --> 00:01:33.200
+
+
+
+70
+00:01:33.200 --> 00:01:35.670
+All the models gave the same exam.  Who came first, who
+
+71
+00:01:35.670 --> 00:01:35.680
+
+
+
+72
+00:01:35.680 --> 00:01:37.670
+came second, who came last.  This becomes known.  From that
+
+73
+00:01:37.670 --> 00:01:37.680
+
+
+
+74
+00:01:37.680 --> 00:01:39.749
+we understand which one we have to
+
+75
+00:01:39.749 --> 00:01:39.759
+
+
+
+76
+00:01:39.759 --> 00:01:42.390
+use in our application.
+
+77
+00:01:42.390 --> 00:01:42.400
+
+
+
+78
+00:01:42.400 --> 00:01:45.030
+Second leader boards also provide
+
+79
+00:01:45.030 --> 00:01:45.040
+
+
+
+80
+00:01:45.040 --> 00:01:47.670
+trust.  Generally, leaderboards are third party.
+
+81
+00:01:47.670 --> 00:01:47.680
+
+
+
+82
+00:01:47.680 --> 00:01:53.350
+Meaning OpenAI or Cloud will
+
+83
+00:01:53.350 --> 00:01:53.360
+
+
+
+84
+00:01:53.360 --> 00:01:55.990
+tell itself that we scored this much on this benchmark.
+
+85
+00:01:55.990 --> 00:01:56.000
+
+
+
+86
+00:01:56.000 --> 00:01:58.230
+So you probably won't trust it that much.
+
+87
+00:01:58.230 --> 00:01:58.240
+
+
+
+88
+00:01:58.240 --> 00:02:00.630
+Because obviously OpenAI would want
+
+89
+00:02:00.630 --> 00:02:00.640
+
+
+
+90
+00:02:00.640 --> 00:02:02.950
+its model to be more appreciated.  But if a
+
+91
+00:02:02.950 --> 00:02:02.960
+
+
+
+92
+00:02:02.960 --> 00:02:05.270
+third party comes and says that we have
+
+93
+00:02:05.270 --> 00:02:05.280
+
+
+
+94
+00:02:05.280 --> 00:02:07.670
+also tested cloud on an exam, we have
+
+95
+00:02:07.670 --> 00:02:07.680
+
+
+
+96
+00:02:07.680 --> 00:02:09.510
+also tested open AI.  And these are the
+
+97
+00:02:09.510 --> 00:02:09.520
+
+
+
+98
+00:02:09.520 --> 00:02:11.990
+results.  So you will believe more that because it
+
+99
+00:02:11.990 --> 00:02:12.000
+
+
+
+100
+00:02:12.000 --> 00:02:14.229
+is a third party, its stakes are not as high as those of
+
+101
+00:02:14.229 --> 00:02:14.239
+
+
+
+102
+00:02:14.239 --> 00:02:16.150
+open AI and cloud.
+
+103
+00:02:16.150 --> 00:02:16.160
+
+
+
+104
+00:02:16.160 --> 00:02:18.710
+Ok?  So this is one purpose of having leader boards.
+
+105
+00:02:18.710 --> 00:02:18.720
+
+
+
+106
+00:02:18.720 --> 00:02:22.229
+Second It Guides Model
+
+107
+00:02:22.229 --> 00:02:22.239
+
+
+
+108
+00:02:22.239 --> 00:02:24.790
+Section When You Don't Have Resources To Run It
+
+109
+00:02:24.790 --> 00:02:24.800
+
+
+
+110
+00:02:24.800 --> 00:02:28.550
+Yourself.  Right?  You
+
+111
+00:02:28.550 --> 00:02:28.560
+
+
+
+112
+00:02:28.560 --> 00:02:32.309
+want to build a chatbot that has math capabilities.  If
+
+113
+00:02:32.309 --> 00:02:32.319
+
+
+
+114
+00:02:32.319 --> 00:02:35.509
+your students are like this then
+
+115
+00:02:35.509 --> 00:02:35.519
+
+
+
+116
+00:02:35.519 --> 00:02:38.070
+obviously you would want me to test the
+
+117
+00:02:38.070 --> 00:02:38.080
+
+
+
+118
+00:02:38.080 --> 00:02:41.990
+evaluation myself.  But is it
+
+119
+00:02:41.990 --> 00:02:42.000
+
+
+
+120
+00:02:42.000 --> 00:02:45.670
+possible for you to test all the 100s of models that
+
+121
+00:02:45.670 --> 00:02:45.680
+
+
+
+122
+00:02:45.680 --> 00:02:47.910
+exist in the world right now?  Is
+
+123
+00:02:47.910 --> 00:02:47.920
+
+
+
+124
+00:02:47.920 --> 00:02:51.270
+n't it possible?  There are so
+
+125
+00:02:51.270 --> 00:02:51.280
+
+
+
+126
+00:02:51.280 --> 00:02:53.990
+many models.  You have to select a model.
+
+127
+00:02:53.990 --> 00:02:54.000
+
+
+
+128
+00:02:54.000 --> 00:02:57.190
+So what you do is
+
+129
+00:02:57.190 --> 00:02:57.200
+
+
+
+130
+00:02:57.200 --> 00:02:59.910
+bring 100 models and
+
+131
+00:02:59.910 --> 00:02:59.920
+
+
+
+132
+00:02:59.920 --> 00:03:03.589
+run those evaluations on all 100 of them.  It will take a lot
+
+133
+00:03:03.589 --> 00:03:03.599
+
+
+
+134
+00:03:03.599 --> 00:03:07.190
+of money.  Right?  It will cost a lot of money.  It will take a
+
+135
+00:03:07.190 --> 00:03:07.200
+
+
+
+136
+00:03:07.200 --> 00:03:09.350
+lot of time and effort.   If
+
+137
+00:03:09.350 --> 00:03:09.360
+
+
+
+138
+00:03:09.360 --> 00:03:12.070
+someone else is doing it for you, then the
+
+139
+00:03:12.070 --> 00:03:12.080
+
+
+
+140
+00:03:12.080 --> 00:03:14.070
+work becomes easier for you.  You simply go to that leader board.
+
+141
+00:03:14.070 --> 00:03:14.080
+
+
+
+142
+00:03:14.080 --> 00:03:16.309
+Pick the top 10 from that and
+
+143
+00:03:16.309 --> 00:03:16.319
+
+
+
+144
+00:03:16.319 --> 00:03:18.309
+choose your model from that.  So this is
+
+145
+00:03:18.309 --> 00:03:18.319
+
+
+
+146
+00:03:18.319 --> 00:03:21.430
+the second benefit.  Third, with its help
+
+147
+00:03:21.430 --> 00:03:21.440
+
+
+
+148
+00:03:21.440 --> 00:03:23.350
+we get to know whether any
+
+149
+00:03:23.350 --> 00:03:23.360
+
+
+
+150
+00:03:23.360 --> 00:03:26.070
+benchmark has saturated or not.  If
+
+151
+00:03:26.070 --> 00:03:26.080
+
+
+
+152
+00:03:26.080 --> 00:03:29.750
+many top models start to saturately cluster around the same score.  There
+
+153
+00:03:29.750 --> 00:03:29.760
+
+
+
+154
+00:03:29.760 --> 00:03:31.430
+many top models start to saturately cluster around the same score.  There
+
+155
+00:03:31.440 --> 00:03:33.830
+is a benchmark that
+
+156
+00:03:33.830 --> 00:03:33.840
+
+
+
+157
+00:03:33.840 --> 00:03:36.630
+tests a knowledge capability.   The
+
+158
+00:03:36.630 --> 00:03:36.640
+
+
+
+159
+00:03:36.640 --> 00:03:41.030
+top 10 LLMs there score
+
+160
+00:03:41.030 --> 00:03:41.040
+
+
+
+161
+00:03:41.040 --> 00:03:43.910
+between 92 and 94.  So as soon as clustering started
+
+162
+00:03:43.910 --> 00:03:43.920
+
+
+
+163
+00:03:43.920 --> 00:03:45.750
+appearing on the LLM leaderboard, we
+
+164
+00:03:45.750 --> 00:03:45.760
+
+
+
+165
+00:03:45.760 --> 00:03:47.589
+knew it was saturating the benchmark.
+
+166
+00:03:47.589 --> 00:03:47.599
+
+
+
+167
+00:03:47.599 --> 00:03:49.270
+So that is also a purpose for which
+
+168
+00:03:49.270 --> 00:03:49.280
+
+
+
+169
+00:03:49.280 --> 00:03:51.589
+people use LLM leader boards.
+
+170
+00:03:51.589 --> 00:03:51.599
+
+
+
+171
+00:03:51.599 --> 00:03:53.750
+And the fourth one is also very useful.  I
+
+172
+00:03:53.750 --> 00:03:53.760
+
+
+
+173
+00:03:53.760 --> 00:03:55.830
+use it a lot.  For that I am doing
+
+174
+00:03:55.830 --> 00:03:55.840
+
+
+
+175
+00:03:55.840 --> 00:03:58.470
+this work since 2022-23 that whenever I have to
+
+176
+00:03:58.470 --> 00:03:58.480
+
+
+
+177
+00:03:58.480 --> 00:04:01.110
+discover new models then
+
+178
+00:04:01.110 --> 00:04:01.120
+
+
+
+179
+00:04:01.120 --> 00:04:02.869
+I use LLM leader boards for that.
+
+180
+00:04:02.869 --> 00:04:02.879
+
+
+
+181
+00:04:02.879 --> 00:04:06.149
+Because generally the top three or four remain the same,
+
+182
+00:04:06.149 --> 00:04:06.159
+
+
+
+183
+00:04:06.159 --> 00:04:10.149
+our Google OpenAI and your Anthropic
+
+184
+00:04:10.149 --> 00:04:10.159
+
+
+
+185
+00:04:10.159 --> 00:04:11.670
+models remain the same.  But if you scroll down a little, then by the time you reach
+
+186
+00:04:11.670 --> 00:04:11.680
+
+
+
+187
+00:04:11.680 --> 00:04:14.550
+10, 12, 15, 20,
+
+188
+00:04:14.550 --> 00:04:14.560
+
+
+
+189
+00:04:14.560 --> 00:04:17.270
+you start seeing new models.
+
+190
+00:04:17.270 --> 00:04:17.280
+
+
+
+191
+00:04:17.280 --> 00:04:20.550
+And these models are not the best but can be
+
+192
+00:04:20.550 --> 00:04:20.560
+
+
+
+193
+00:04:20.560 --> 00:04:22.710
+useful for your purpose.  Because they are
+
+194
+00:04:22.710 --> 00:04:22.720
+
+
+
+195
+00:04:22.720 --> 00:04:25.830
+generally cheaper.  So
+
+196
+00:04:25.830 --> 00:04:25.840
+
+
+
+197
+00:04:25.840 --> 00:04:27.590
+LLM leader boards also help you in discovering new models.
+
+198
+00:04:27.590 --> 00:04:27.600
+
+
+
+199
+00:04:27.600 --> 00:04:30.950
+If we talk about
+
+200
+00:04:30.950 --> 00:04:30.960
+
+
+
+201
+00:04:30.960 --> 00:04:33.670
+who uses LLM leader boards and
+
+202
+00:04:33.670 --> 00:04:33.680
+
+
+
+203
+00:04:33.680 --> 00:04:36.310
+for what purposes, then there are
+
+204
+00:04:36.310 --> 00:04:36.320
+
+
+
+205
+00:04:36.320 --> 00:04:38.629
+three or four stakeholders here.  First up
+
+206
+00:04:38.629 --> 00:04:38.639
+
+
+
+207
+00:04:38.639 --> 00:04:40.950
+are AI engineers.  People like you and me
+
+208
+00:04:40.950 --> 00:04:40.960
+
+
+
+209
+00:04:40.960 --> 00:04:42.390
+who have to make LLM based
+
+210
+00:04:42.390 --> 00:04:42.400
+
+
+
+211
+00:04:42.400 --> 00:04:44.469
+applications.  And we
+
+212
+00:04:44.469 --> 00:04:44.479
+
+
+
+213
+00:04:44.479 --> 00:04:46.310
+use LLM leader boards
+
+214
+00:04:46.310 --> 00:04:46.320
+
+
+
+215
+00:04:46.320 --> 00:04:48.390
+for shortlisting.  I have to
+
+216
+00:04:48.390 --> 00:04:48.400
+
+
+
+217
+00:04:48.400 --> 00:04:50.710
+create an application which is in the domain of maths.
+
+218
+00:04:50.710 --> 00:04:50.720
+
+
+
+219
+00:04:50.720 --> 00:04:52.390
+So I'll go to the math leaderboard
+
+220
+00:04:52.390 --> 00:04:52.400
+
+
+
+221
+00:04:52.400 --> 00:04:55.030
+and select my candidate models from there.
+
+222
+00:04:55.030 --> 00:04:55.040
+
+
+
+223
+00:04:55.040 --> 00:04:57.590
+Generally you
+
+224
+00:04:57.590 --> 00:04:57.600
+
+
+
+225
+00:04:57.600 --> 00:04:59.670
+don't select a single model from the leader board.  You
+
+226
+00:04:59.670 --> 00:04:59.680
+
+
+
+227
+00:04:59.680 --> 00:05:01.990
+select the candidate model.  Then
+
+228
+00:05:01.990 --> 00:05:02.000
+
+
+
+229
+00:05:02.000 --> 00:05:03.909
+you run your Evals on it and from there
+
+230
+00:05:03.909 --> 00:05:03.919
+
+
+
+231
+00:05:03.919 --> 00:05:06.070
+you get your best model which you will use
+
+232
+00:05:06.070 --> 00:05:06.080
+
+
+
+233
+00:05:06.080 --> 00:05:09.590
+in creating an application.  So
+
+234
+00:05:09.590 --> 00:05:11.670
+
+
+
+235
+00:05:11.670 --> 00:05:11.680
+
+
+
+236
+00:05:11.680 --> 00:05:14.390
+LLM leader boards help you filter down from 100 to five.
+
+237
+00:05:14.390 --> 00:05:14.400
+
+
+
+238
+00:05:14.400 --> 00:05:17.909
+Second Frontier Labs also makes
+
+239
+00:05:17.909 --> 00:05:17.919
+
+
+
+240
+00:05:17.919 --> 00:05:20.230
+extensive use of leader boards.  Because firstly, it tells us
+
+241
+00:05:20.230 --> 00:05:20.240
+
+
+
+242
+00:05:20.240 --> 00:05:23.909
+where they are
+
+243
+00:05:23.909 --> 00:05:23.919
+
+
+
+244
+00:05:23.919 --> 00:05:25.590
+living and where they exist.
+
+245
+00:05:25.590 --> 00:05:25.600
+
+
+
+246
+00:05:25.600 --> 00:05:27.590
+And seconds from that, it becomes clear whether
+
+247
+00:05:27.590 --> 00:05:27.600
+
+
+
+248
+00:05:27.600 --> 00:05:30.390
+they should release their next models or
+
+249
+00:05:30.390 --> 00:05:30.400
+
+
+
+250
+00:05:30.400 --> 00:05:33.029
+not.  For example, I am an
+
+251
+00:05:33.029 --> 00:05:33.039
+
+
+
+252
+00:05:33.039 --> 00:05:36.710
+open AI.  My current model is
+
+253
+00:05:36.710 --> 00:05:36.720
+
+
+
+254
+00:05:36.720 --> 00:05:42.550
+GPT 5.5 ok and OPS from the front
+
+255
+00:05:42.550 --> 00:05:42.560
+
+
+
+256
+00:05:42.560 --> 00:05:45.189
+is 4.8.  In a particular benchmark I
+
+257
+00:05:45.189 --> 00:05:45.199
+
+
+
+258
+00:05:45.199 --> 00:05:47.110
+noticed that the next model I trained couldn't
+
+259
+00:05:47.110 --> 00:05:47.120
+
+
+
+260
+00:05:47.120 --> 00:05:49.909
+even beat OPS's 4.8.
+
+261
+00:05:49.909 --> 00:05:49.919
+
+
+
+262
+00:05:49.919 --> 00:05:51.909
+So should I release that model
+
+263
+00:05:51.909 --> 00:05:51.919
+
+
+
+264
+00:05:51.919 --> 00:05:53.830
+?  I won't.  I will say that I will
+
+265
+00:05:53.830 --> 00:05:53.840
+
+
+
+266
+00:05:53.840 --> 00:05:56.150
+release a new model and people will immediately
+
+267
+00:05:56.150 --> 00:05:56.160
+
+
+
+268
+00:05:56.160 --> 00:05:58.710
+say that this OPS 4.8 is
+
+269
+00:05:58.710 --> 00:05:58.720
+
+
+
+270
+00:05:58.720 --> 00:06:01.350
+worse than their previous model.  So my
+
+271
+00:06:01.350 --> 00:06:01.360
+
+
+
+272
+00:06:01.360 --> 00:06:03.670
+marketing was bad.  So rather than
+
+273
+00:06:03.670 --> 00:06:03.680
+
+
+
+274
+00:06:03.680 --> 00:06:06.550
+releasing that iteration, I will then
+
+275
+00:06:06.550 --> 00:06:06.560
+
+
+
+276
+00:06:06.560 --> 00:06:09.590
+go to the next iteration and release it only when
+
+277
+00:06:09.590 --> 00:06:09.600
+
+
+
+278
+00:06:09.600 --> 00:06:11.350
+I see that yes, I am able to
+
+279
+00:06:11.350 --> 00:06:11.360
+
+
+
+280
+00:06:11.360 --> 00:06:13.110
+significantly outperform others on the bench leader board
+
+281
+00:06:13.110 --> 00:06:13.120
+
+
+
+282
+00:06:13.120 --> 00:06:15.430
+and this is actually done.
+
+283
+00:06:15.430 --> 00:06:15.440
+
+
+
+284
+00:06:15.440 --> 00:06:18.469
+Internally they plan and strategize as to when and
+
+285
+00:06:18.469 --> 00:06:18.479
+
+
+
+286
+00:06:18.479 --> 00:06:20.710
+which release they should bring
+
+287
+00:06:20.710 --> 00:06:20.720
+
+
+
+288
+00:06:20.720 --> 00:06:23.029
+to the market.  De conscientiously check
+
+289
+00:06:23.029 --> 00:06:23.039
+
+
+
+290
+00:06:23.039 --> 00:06:26.070
+where they are currently on the leaderboard.  So
+
+291
+00:06:26.070 --> 00:06:26.080
+
+
+
+292
+00:06:26.080 --> 00:06:28.629
+you must have seen it.  What happens sometimes is that
+
+293
+00:06:28.629 --> 00:06:28.639
+
+
+
+294
+00:06:28.639 --> 00:06:32.150
+some models appear on the leaderboard with a hidden name.  Have
+
+295
+00:06:32.150 --> 00:06:32.160
+
+
+
+296
+00:06:32.160 --> 00:06:34.950
+you ever seen it?
+
+297
+00:06:34.950 --> 00:06:34.960
+
+
+
+298
+00:06:34.960 --> 00:06:38.230
+You must have heard about making Nano.  Why does Nano Banana have such a funny name
+
+299
+00:06:38.230 --> 00:06:38.240
+
+
+
+300
+00:06:38.240 --> 00:06:40.629
+?  Because initially when it came,
+
+301
+00:06:40.629 --> 00:06:40.639
+
+
+
+302
+00:06:40.639 --> 00:06:43.590
+it came in stealth mode
+
+303
+00:06:43.590 --> 00:06:43.600
+
+
+
+304
+00:06:43.600 --> 00:06:46.230
+in some leader board with this image and they did
+
+305
+00:06:46.230 --> 00:06:46.240
+
+
+
+306
+00:06:46.240 --> 00:06:48.230
+not tell that it is a Google model.  A new
+
+307
+00:06:48.230 --> 00:06:48.240
+
+
+
+308
+00:06:48.240 --> 00:06:50.629
+model came in the name of Nano Banana and it
+
+309
+00:06:50.629 --> 00:06:50.639
+
+
+
+310
+00:06:50.639 --> 00:06:52.950
+broke all the benchmarks.  So
+
+311
+00:06:52.950 --> 00:06:52.960
+
+
+
+312
+00:06:52.960 --> 00:06:54.870
+when they saw that it was
+
+313
+00:06:54.870 --> 00:06:54.880
+
+
+
+314
+00:06:54.880 --> 00:06:56.870
+significantly beating everything, then they
+
+315
+00:06:56.870 --> 00:06:56.880
+
+
+
+316
+00:06:56.880 --> 00:06:59.430
+released it to the public.
+
+317
+00:06:59.430 --> 00:06:59.440
+
+
+
+318
+00:06:59.440 --> 00:07:01.270
+Google then said that
+
+319
+00:07:01.270 --> 00:07:01.280
+
+
+
+320
+00:07:01.280 --> 00:07:03.189
+making Nano has become so famous and has been marketed,
+
+321
+00:07:03.189 --> 00:07:03.199
+
+
+
+322
+00:07:03.199 --> 00:07:05.350
+so let's continue making Nano.
+
+323
+00:07:05.350 --> 00:07:07.830
+
+
+
+324
+00:07:07.830 --> 00:07:07.840
+
+
+
+325
+00:07:07.840 --> 00:07:10.710
+Leaderboards are a very good thing for Frontier Labs. Researchers also use it a lot
+
+326
+00:07:10.710 --> 00:07:10.720
+
+
+
+327
+00:07:10.720 --> 00:07:13.510
+because research gets to know a lot about what is happening right now,
+
+328
+00:07:13.510 --> 00:07:13.520
+
+
+
+329
+00:07:13.520 --> 00:07:15.749
+which
+
+330
+00:07:15.749 --> 00:07:15.759
+
+
+
+331
+00:07:15.759 --> 00:07:17.670
+benchmarks are saturated, which
+
+332
+00:07:17.670 --> 00:07:17.680
+
+
+
+333
+00:07:17.680 --> 00:07:19.350
+benchmarks are doing good work, so on that
+
+334
+00:07:19.350 --> 00:07:19.360
+
+
+
+335
+00:07:19.360 --> 00:07:20.950
+basis they are able to find out
+
+336
+00:07:20.950 --> 00:07:20.960
+
+
+
+337
+00:07:20.960 --> 00:07:23.189
+new techniques, new ideas, they come up with
+
+338
+00:07:23.189 --> 00:07:23.199
+
+
+
+339
+00:07:23.199 --> 00:07:25.909
+basically new research directions.
+
+340
+00:07:25.909 --> 00:07:25.919
+
+
+
+341
+00:07:25.919 --> 00:07:28.230
+People get the help of these leaderboards.
+
+342
+00:07:28.230 --> 00:07:28.240
+
+
+
+343
+00:07:28.240 --> 00:07:30.710
+Policy makers and safety institutes
+
+344
+00:07:30.710 --> 00:07:30.720
+
+
+
+345
+00:07:30.720 --> 00:07:32.870
+also have a big stake here. They
+
+346
+00:07:32.870 --> 00:07:32.880
+
+
+
+347
+00:07:32.880 --> 00:07:35.510
+continuously monitor which models are
+
+348
+00:07:35.510 --> 00:07:35.520
+
+
+
+349
+00:07:35.520 --> 00:07:37.110
+operating at what level, has any
+
+350
+00:07:37.110 --> 00:07:37.120
+
+
+
+351
+00:07:37.120 --> 00:07:39.189
+new model come which is
+
+352
+00:07:39.189 --> 00:07:39.199
+
+
+
+353
+00:07:39.199 --> 00:07:41.270
+leaving everyone far behind, so there they have to come into
+
+354
+00:07:41.270 --> 00:07:41.280
+
+
+
+355
+00:07:41.280 --> 00:07:43.350
+the picture, they have to stop
+
+356
+00:07:43.350 --> 00:07:43.360
+
+
+
+357
+00:07:43.360 --> 00:07:46.550
+and they have to basically come in between and make
+
+358
+00:07:46.550 --> 00:07:46.560
+
+
+
+359
+00:07:46.560 --> 00:07:48.469
+changes.  Let's try this,
+
+360
+00:07:48.469 --> 00:07:48.479
+
+
+
+361
+00:07:48.479 --> 00:07:50.790
+as happened with Fable Five, the US government came
+
+362
+00:07:50.790 --> 00:07:50.800
+
+
+
+363
+00:07:50.800 --> 00:07:53.350
+immediately because they saw that this model
+
+364
+00:07:53.350 --> 00:07:53.360
+
+
+
+365
+00:07:53.360 --> 00:07:57.990
+is dangerous.  And lastly,
+
+366
+00:07:57.990 --> 00:07:58.000
+
+
+
+367
+00:07:58.000 --> 00:08:00.230
+leader boards also
+
+368
+00:08:00.230 --> 00:08:00.240
+
+
+
+369
+00:08:00.240 --> 00:08:01.749
+work great for your open source community.  Because
+
+370
+00:08:01.749 --> 00:08:01.759
+
+
+
+371
+00:08:01.759 --> 00:08:03.990
+discovery happens with the help of leader boards.  What
+
+372
+00:08:03.990 --> 00:08:04.000
+
+
+
+373
+00:08:04.000 --> 00:08:06.390
+I said is that I myself am
+
+374
+00:08:06.390 --> 00:08:06.400
+
+
+
+375
+00:08:06.400 --> 00:08:07.830
+using leader boards for discovery.  There are
+
+376
+00:08:07.830 --> 00:08:07.840
+
+
+
+377
+00:08:07.840 --> 00:08:09.909
+many people like me who discover such new
+
+378
+00:08:09.909 --> 00:08:09.919
+
+
+
+379
+00:08:09.919 --> 00:08:11.670
+models by visiting such leader boards.
+
+380
+00:08:11.670 --> 00:08:11.680
+
+
+
+381
+00:08:11.680 --> 00:08:13.670
+So there's a new research lab
+
+382
+00:08:13.670 --> 00:08:13.680
+
+
+
+383
+00:08:13.680 --> 00:08:15.909
+with 101 people and
+
+384
+00:08:15.909 --> 00:08:15.919
+
+
+
+385
+00:08:15.919 --> 00:08:17.589
+they released a new, cute little model
+
+386
+00:08:17.589 --> 00:08:17.599
+
+
+
+387
+00:08:17.599 --> 00:08:19.510
+that scored very well on a single benchmark and made it into the
+
+388
+00:08:19.510 --> 00:08:19.520
+
+
+
+389
+00:08:19.520 --> 00:08:22.150
+top three or four.
+
+390
+00:08:22.150 --> 00:08:22.160
+
+
+
+391
+00:08:22.160 --> 00:08:24.150
+So that lab got publicity.  That
+
+392
+00:08:24.150 --> 00:08:24.160
+
+
+
+393
+00:08:24.160 --> 00:08:26.309
+model has become very famous.  In the same way,
+
+394
+00:08:26.309 --> 00:08:26.319
+
+
+
+395
+00:08:26.319 --> 00:08:29.350
+these people of yours, all these Chinese labs, came into the picture in the same way
+
+396
+00:08:29.350 --> 00:08:31.510
+
+
+
+397
+00:08:31.510 --> 00:08:31.520
+
+
+
+398
+00:08:31.520 --> 00:08:34.310
+that suddenly a new model came overnight
+
+399
+00:08:34.310 --> 00:08:34.320
+
+
+
+400
+00:08:34.320 --> 00:08:36.310
+and it started competing with the top model in some benchmark, then it got discovered,
+
+401
+00:08:36.310 --> 00:08:38.149
+
+
+
+402
+00:08:38.149 --> 00:08:38.159
+
+
+
+403
+00:08:38.159 --> 00:08:39.909
+publicity was done,
+
+404
+00:08:39.909 --> 00:08:39.919
+
+
+
+405
+00:08:39.919 --> 00:08:41.589
+marketing was done, so in that sense also
+
+406
+00:08:41.589 --> 00:08:41.599
+
+
+
+407
+00:08:41.599 --> 00:08:45.670
+LLM leader boards are great, so I hope
+
+408
+00:08:45.670 --> 00:08:45.680
+
+
+
+409
+00:08:45.680 --> 00:08:47.910
+you have understood by now
+
+410
+00:08:47.910 --> 00:08:47.920
+
+
+
+411
+00:08:47.920 --> 00:08:50.070
+what are leader boards, why do they exist
+
+412
+00:08:50.070 --> 00:08:50.080
+
+
+
+413
+00:08:50.080 --> 00:08:53.670
+and who all use them, now let us
+
+414
+00:08:53.670 --> 00:08:53.680
+
+
+
+415
+00:08:53.680 --> 00:08:55.350
+quickly discuss what are the
+
+416
+00:08:55.350 --> 00:08:55.360
+
+
+
+417
+00:08:55.360 --> 00:08:57.990
+different types of leader boards that
+
+418
+00:08:57.990 --> 00:08:58.000
+
+
+
+419
+00:08:58.000 --> 00:09:00.310
+exist.  Ok?  So precisely there are
+
+420
+00:09:00.310 --> 00:09:00.320
+
+
+
+421
+00:09:00.320 --> 00:09:02.710
+four types of leader boards that you will see.  The
+
+422
+00:09:02.710 --> 00:09:02.720
+
+
+
+423
+00:09:02.720 --> 00:09:05.750
+first and simplest
+
+424
+00:09:05.750 --> 00:09:05.760
+
+
+
+425
+00:09:05.760 --> 00:09:08.310
+leaderboard is benchmark specific
+
+426
+00:09:08.310 --> 00:09:08.320
+
+
+
+427
+00:09:08.320 --> 00:09:11.350
+leaderboards.  So your
+
+428
+00:09:11.350 --> 00:09:11.360
+
+
+
+429
+00:09:11.360 --> 00:09:14.470
+leaderboard here creates rankings based on just one single benchmark.
+
+430
+00:09:14.470 --> 00:09:14.480
+
+
+
+431
+00:09:14.480 --> 00:09:17.750
+Here
+
+432
+00:09:17.750 --> 00:09:17.760
+
+
+
+433
+00:09:17.760 --> 00:09:20.389
+is written these rank models using the
+
+434
+00:09:20.389 --> 00:09:20.399
+
+
+
+435
+00:09:20.399 --> 00:09:23.430
+result of one particular benchmark.  Either it is
+
+436
+00:09:23.430 --> 00:09:23.440
+
+
+
+437
+00:09:23.440 --> 00:09:25.829
+MMLU or Human Eval
+
+438
+00:09:25.829 --> 00:09:25.839
+
+
+
+439
+00:09:25.839 --> 00:09:28.550
+for coding or GSM8K for maths or
+
+440
+00:09:28.550 --> 00:09:28.560
+
+
+
+441
+00:09:28.560 --> 00:09:31.590
+GPQ, someone will
+
+442
+00:09:31.590 --> 00:09:31.600
+
+
+
+443
+00:09:31.600 --> 00:09:33.910
+run all the models on a single benchmark and that
+
+444
+00:09:33.910 --> 00:09:33.920
+
+
+
+445
+00:09:33.920 --> 00:09:35.910
+ranking will be shown to you in the form of a leader board.
+
+446
+00:09:35.910 --> 00:09:35.920
+
+
+
+447
+00:09:35.920 --> 00:09:38.790
+So the main idea is to tell
+
+448
+00:09:38.790 --> 00:09:38.800
+
+
+
+449
+00:09:38.800 --> 00:09:41.509
+which model performs best on this
+
+450
+00:09:41.509 --> 00:09:41.519
+
+
+
+451
+00:09:41.519 --> 00:09:44.230
+benchmark.  Ok?  The only problem with
+
+452
+00:09:44.230 --> 00:09:44.240
+
+
+
+453
+00:09:44.240 --> 00:09:46.790
+this kind of leaderboard is that it gives you a
+
+454
+00:09:46.790 --> 00:09:46.800
+
+
+
+455
+00:09:46.800 --> 00:09:49.030
+very narrow view.
+
+456
+00:09:49.030 --> 00:09:49.040
+
+
+
+457
+00:09:49.040 --> 00:09:50.870
+How a model is performing on a particular benchmark.
+
+458
+00:09:50.870 --> 00:09:50.880
+
+
+
+459
+00:09:50.880 --> 00:09:52.710
+You just get to know this.
+
+460
+00:09:52.710 --> 00:09:52.720
+
+
+
+461
+00:09:52.720 --> 00:09:54.550
+You don't seem to have any idea what the overall model is like.
+
+462
+00:09:54.550 --> 00:09:54.560
+
+
+
+463
+00:09:54.560 --> 00:09:57.030
+This is a very good example.
+
+464
+00:09:57.030 --> 00:09:57.040
+
+
+
+465
+00:09:57.040 --> 00:09:59.430
+I already showed it to you.  Like
+
+466
+00:09:59.430 --> 00:09:59.440
+
+
+
+467
+00:09:59.440 --> 00:10:02.470
+this is the website of HLE.  Humanities
+
+468
+00:10:02.470 --> 00:10:02.480
+
+
+
+469
+00:10:02.480 --> 00:10:05.670
+last exam.  So this is his leader board.
+
+470
+00:10:05.670 --> 00:10:05.680
+
+
+
+471
+00:10:05.680 --> 00:10:09.430
+You can see that Gemini 3 Pro is at 38% and
+
+472
+00:10:09.430 --> 00:10:09.440
+
+
+
+473
+00:10:09.440 --> 00:10:11.829
+showing calibration error etc.  So this is
+
+474
+00:10:11.829 --> 00:10:11.839
+
+
+
+475
+00:10:11.839 --> 00:10:14.150
+a leader board
+
+476
+00:10:14.150 --> 00:10:14.160
+
+
+
+477
+00:10:14.160 --> 00:10:17.110
+catering to a single benchmark.  So most of
+
+478
+00:10:17.110 --> 00:10:17.120
+
+
+
+479
+00:10:17.120 --> 00:10:19.509
+the famous benchmarks have their own leader
+
+480
+00:10:19.509 --> 00:10:19.519
+
+
+
+481
+00:10:19.519 --> 00:10:22.470
+boards.  These research teams
+
+482
+00:10:22.470 --> 00:10:22.480
+
+
+
+483
+00:10:22.480 --> 00:10:25.430
+create and maintain this entire leader board on their own.
+
+484
+00:10:25.430 --> 00:10:27.670
+
+
+
+485
+00:10:27.670 --> 00:10:27.680
+
+
+
+486
+00:10:27.680 --> 00:10:29.269
+These types of leader boards are not very useful.
+
+487
+00:10:29.269 --> 00:10:29.279
+
+
+
+488
+00:10:29.279 --> 00:10:30.870
+Honestly,
+
+489
+00:10:30.870 --> 00:10:30.880
+
+
+
+490
+00:10:30.880 --> 00:10:33.829
+this second category is useful where
+
+491
+00:10:33.829 --> 00:10:33.839
+
+
+
+492
+00:10:33.839 --> 00:10:36.870
+you will read about multi-benchmark leaderboards.  Do you
+
+493
+00:10:36.870 --> 00:10:36.880
+
+
+
+494
+00:10:36.880 --> 00:10:39.269
+understand from the name?  These are
+
+495
+00:10:39.269 --> 00:10:39.279
+
+
+
+496
+00:10:39.279 --> 00:10:42.710
+leaderboards that combine the
+
+497
+00:10:42.710 --> 00:10:42.720
+
+
+
+498
+00:10:42.720 --> 00:10:45.829
+results of multiple benchmarks to create a
+
+499
+00:10:45.829 --> 00:10:45.839
+
+
+
+500
+00:10:45.839 --> 00:10:48.630
+cumulative score.
+
+501
+00:10:48.630 --> 00:10:48.640
+
+
+
+502
+00:10:48.640 --> 00:10:51.190
+So here it is written: These
+
+503
+00:10:51.190 --> 00:10:51.200
+
+
+
+504
+00:10:51.200 --> 00:10:52.790
+leader boards compare models across
+
+505
+00:10:52.790 --> 00:10:52.800
+
+
+
+506
+00:10:52.800 --> 00:10:55.269
+multiple benchmarks and evaluation
+
+507
+00:10:55.269 --> 00:10:55.279
+
+
+
+508
+00:10:55.279 --> 00:10:57.750
+dimensions instead of relying on just one
+
+509
+00:10:57.750 --> 00:10:57.760
+
+
+
+510
+00:10:57.760 --> 00:11:01.030
+test.  So it could be that a bench could be a
+
+511
+00:11:01.030 --> 00:11:01.040
+
+
+
+512
+00:11:01.040 --> 00:11:03.590
+leader board which would combine all the benchmarks like knowledge, reasoning,
+
+513
+00:11:03.590 --> 00:11:03.600
+
+
+
+514
+00:11:03.600 --> 00:11:05.670
+mathematics, coding, instruction following,
+
+515
+00:11:05.670 --> 00:11:05.680
+
+
+
+516
+00:11:05.680 --> 00:11:08.310
+data analysis and
+
+517
+00:11:08.310 --> 00:11:08.320
+
+
+
+518
+00:11:08.320 --> 00:11:11.670
+create a leader board.  Let
+
+519
+00:11:11.670 --> 00:11:11.680
+
+
+
+520
+00:11:11.680 --> 00:11:13.670
+me show you an example of this.  A
+
+521
+00:11:13.670 --> 00:11:13.680
+
+
+
+522
+00:11:13.680 --> 00:11:16.790
+very good example of this is Live Bench.
+
+523
+00:11:16.790 --> 00:11:16.800
+
+
+
+524
+00:11:16.800 --> 00:11:18.790
+Look, here it is written A Challenging
+
+525
+00:11:18.790 --> 00:11:18.800
+
+
+
+526
+00:11:18.800 --> 00:11:21.590
+Contamination Free LLM Benchmark which has
+
+527
+00:11:21.590 --> 00:11:21.600
+
+
+
+528
+00:11:21.600 --> 00:11:24.069
+23 objective tasks across seven
+
+529
+00:11:24.069 --> 00:11:24.079
+
+
+
+530
+00:11:24.079 --> 00:11:28.949
+categories - Reasoning Coding, Agentic Coding, the
+
+531
+00:11:28.949 --> 00:11:28.959
+
+
+
+532
+00:11:28.959 --> 00:11:31.030
+score
+
+533
+00:11:31.030 --> 00:11:31.040
+
+
+
+534
+00:11:31.040 --> 00:11:33.350
+of each model is mentioned and then an overall score is also
+
+535
+00:11:33.350 --> 00:11:33.360
+
+
+
+536
+00:11:33.360 --> 00:11:35.190
+given to you.  So this is like a more
+
+537
+00:11:35.190 --> 00:11:35.200
+
+
+
+538
+00:11:35.200 --> 00:11:38.870
+useful leader board because it gives you an overall
+
+539
+00:11:38.870 --> 00:11:38.880
+
+
+
+540
+00:11:38.880 --> 00:11:41.269
+view of how a model is doing in general across
+
+541
+00:11:41.269 --> 00:11:41.279
+
+
+
+542
+00:11:41.279 --> 00:11:44.710
+multiple capabilities.  I hope
+
+543
+00:11:44.710 --> 00:11:44.720
+
+
+
+544
+00:11:44.720 --> 00:11:47.110
+you understand.  And not only this,
+
+545
+00:11:47.110 --> 00:11:47.120
+
+
+
+546
+00:11:47.120 --> 00:11:51.590
+these leader boards also give you information on many other aspects.
+
+547
+00:11:51.590 --> 00:11:51.600
+
+
+
+548
+00:11:51.600 --> 00:11:54.790
+Like
+
+549
+00:11:54.790 --> 00:11:54.800
+
+
+
+550
+00:11:54.800 --> 00:11:57.509
+how much does a token cost?  What is the latency?
+
+551
+00:11:57.509 --> 00:11:57.519
+
+
+
+552
+00:11:57.519 --> 00:11:59.110
+What is the output speed?
+
+553
+00:11:59.110 --> 00:11:59.120
+
+
+
+554
+00:11:59.120 --> 00:12:01.190
+What is the size of the context window?  They also
+
+555
+00:12:01.190 --> 00:12:01.200
+
+
+
+556
+00:12:01.200 --> 00:12:03.430
+provide all this information.  So let me show you an example of this also.
+
+557
+00:12:03.430 --> 00:12:03.440
+
+
+
+558
+00:12:03.440 --> 00:12:05.670
+Like this is a company called Artificial Analysis.
+
+559
+00:12:05.670 --> 00:12:05.680
+
+
+
+560
+00:12:05.680 --> 00:12:08.710
+Like their job is to
+
+561
+00:12:08.710 --> 00:12:08.720
+
+
+
+562
+00:12:08.720 --> 00:12:11.269
+create leader boards and
+
+563
+00:12:11.269 --> 00:12:11.279
+
+
+
+564
+00:12:11.279 --> 00:12:14.069
+provide information like this.  So they create leader boards for you on all kinds of things.
+
+565
+00:12:14.069 --> 00:12:15.829
+
+
+
+566
+00:12:15.829 --> 00:12:15.839
+
+
+
+567
+00:12:15.839 --> 00:12:18.230
+Look, they have a separate leader board for intelligence.  There
+
+568
+00:12:18.230 --> 00:12:18.240
+
+
+
+569
+00:12:18.240 --> 00:12:20.389
+is a separate leader board for speed.  There
+
+570
+00:12:20.389 --> 00:12:20.399
+
+
+
+571
+00:12:20.399 --> 00:12:25.430
+are separate leader boards for tasks per cost.
+
+572
+00:12:25.430 --> 00:12:25.440
+
+
+
+573
+00:12:25.440 --> 00:12:28.470
+Like it's a very exhaustive list.  Look,
+
+574
+00:12:28.470 --> 00:12:28.480
+
+
+
+575
+00:12:28.480 --> 00:12:30.310
+they have made a separate version of HLE.
+
+576
+00:12:30.310 --> 00:12:30.320
+
+
+
+577
+00:12:30.320 --> 00:12:32.069
+is the GPQ.  Made a separate diamond one and gave it to me.
+
+578
+00:12:32.069 --> 00:12:32.079
+
+
+
+579
+00:12:32.079 --> 00:12:35.350
+So these are the companies which are
+
+580
+00:12:35.350 --> 00:12:35.360
+
+
+
+581
+00:12:35.360 --> 00:12:37.670
+basically making every type of leader board for you.
+
+582
+00:12:37.670 --> 00:12:37.680
+
+
+
+583
+00:12:37.680 --> 00:12:40.389
+So they are like a proper product
+
+584
+00:12:40.389 --> 00:12:40.399
+
+
+
+585
+00:12:40.399 --> 00:12:42.230
+coding agents have their own leader board.
+
+586
+00:12:42.230 --> 00:12:42.240
+
+
+
+587
+00:12:42.240 --> 00:12:45.430
+Speech, Image, Audio, Hardware.  So a
+
+588
+00:12:45.430 --> 00:12:45.440
+
+
+
+589
+00:12:45.440 --> 00:12:48.069
+lot of leader boards are there.
+
+590
+00:12:48.069 --> 00:12:48.079
+
+
+
+591
+00:12:48.079 --> 00:12:51.430
+Then he also made an overall
+
+592
+00:12:51.430 --> 00:12:51.440
+
+
+
+593
+00:12:51.440 --> 00:12:54.550
+by cumulating everything.  So this is the most useful
+
+594
+00:12:54.550 --> 00:12:54.560
+
+
+
+595
+00:12:54.560 --> 00:12:56.389
+category which I personally
+
+596
+00:12:56.389 --> 00:12:56.399
+
+
+
+597
+00:12:56.399 --> 00:12:58.069
+use the most and people also use it the most.
+
+598
+00:12:58.069 --> 00:13:00.790
+
+
+
+599
+00:13:00.790 --> 00:13:00.800
+
+
+
+600
+00:13:00.800 --> 00:13:02.550
+Leaderboards like this answer this question.
+
+601
+00:13:02.550 --> 00:13:02.560
+
+
+
+602
+00:13:02.560 --> 00:13:04.310
+Which model provides the
+
+603
+00:13:04.310 --> 00:13:04.320
+
+
+
+604
+00:13:04.320 --> 00:13:05.990
+strongest overall combination of
+
+605
+00:13:05.990 --> 00:13:06.000
+
+
+
+606
+00:13:06.000 --> 00:13:08.550
+capability, cost and performance.  This Is
+
+607
+00:13:08.550 --> 00:13:08.560
+
+
+
+608
+00:13:08.560 --> 00:13:11.190
+The Leader Board That You Will Use The Most.  Ok
+
+609
+00:13:11.190 --> 00:13:11.200
+
+
+
+610
+00:13:11.200 --> 00:13:13.750
+?  Third is another interesting category.
+
+611
+00:13:13.750 --> 00:13:13.760
+
+
+
+612
+00:13:13.760 --> 00:13:15.670
+This is called human preference
+
+613
+00:13:15.670 --> 00:13:15.680
+
+
+
+614
+00:13:15.680 --> 00:13:18.470
+based leader boards.  In this, you do not make a rank
+
+615
+00:13:18.470 --> 00:13:18.480
+
+
+
+616
+00:13:18.480 --> 00:13:22.069
+on the basis of any benchmark.
+
+617
+00:13:22.069 --> 00:13:22.079
+
+
+
+618
+00:13:22.079 --> 00:13:25.430
+What do you do?  You get the
+
+619
+00:13:25.430 --> 00:13:25.440
+
+
+
+620
+00:13:25.440 --> 00:13:29.350
+comparison done.  So your user comes
+
+621
+00:13:29.350 --> 00:13:29.360
+
+
+
+622
+00:13:29.360 --> 00:13:32.470
+to your website.  You tell him to
+
+623
+00:13:32.470 --> 00:13:32.480
+
+
+
+624
+00:13:32.480 --> 00:13:35.350
+ask a question.  That same question is
+
+625
+00:13:35.350 --> 00:13:35.360
+
+
+
+626
+00:13:35.360 --> 00:13:38.389
+asked to two models.  A and B.  Answers to both are
+
+627
+00:13:38.389 --> 00:13:38.399
+
+
+
+628
+00:13:38.399 --> 00:13:40.710
+available.  Now let's ask the user whether he
+
+629
+00:13:40.710 --> 00:13:40.720
+
+
+
+630
+00:13:40.720 --> 00:13:42.710
+liked A or B?  So
+
+631
+00:13:42.710 --> 00:13:42.720
+
+
+
+632
+00:13:42.720 --> 00:13:45.350
+basically you the user himself is scoring on the
+
+633
+00:13:45.350 --> 00:13:45.360
+
+
+
+634
+00:13:45.360 --> 00:13:48.069
+basis of helpfulness, clarity, writing
+
+635
+00:13:48.069 --> 00:13:48.079
+
+
+
+636
+00:13:48.079 --> 00:13:51.509
+quality, creativity, whatever the
+
+637
+00:13:51.509 --> 00:13:51.519
+
+
+
+638
+00:13:51.519 --> 00:13:53.509
+way of answering is and then when a lot of such
+
+639
+00:13:53.509 --> 00:13:53.519
+
+
+
+640
+00:13:53.519 --> 00:13:55.190
+votes are collected then on that
+
+641
+00:13:55.190 --> 00:13:55.200
+
+
+
+642
+00:13:55.200 --> 00:13:57.430
+basis a ranking is made
+
+643
+00:13:57.430 --> 00:13:57.440
+
+
+
+644
+00:13:57.440 --> 00:14:00.949
+and that ranking is shown in this leader board.
+
+645
+00:14:00.949 --> 00:14:00.959
+
+
+
+646
+00:14:00.959 --> 00:14:03.910
+Written here is This Rank This
+
+647
+00:14:03.910 --> 00:14:03.920
+
+
+
+648
+00:14:03.920 --> 00:14:06.550
+Rank Models Using Human Votes.
+
+649
+00:14:06.550 --> 00:14:06.560
+
+
+
+650
+00:14:06.560 --> 00:14:08.389
+He took response from two models.  The user is
+
+651
+00:14:08.389 --> 00:14:08.399
+
+
+
+652
+00:14:08.399 --> 00:14:10.949
+asked to select which one and
+
+653
+00:14:10.949 --> 00:14:10.959
+
+
+
+654
+00:14:10.959 --> 00:14:13.670
+after getting a lot of votes, this leader board
+
+655
+00:14:13.670 --> 00:14:13.680
+
+
+
+656
+00:14:13.680 --> 00:14:17.110
+shows us which model is on top.  So a
+
+657
+00:14:17.110 --> 00:14:17.120
+
+
+
+658
+00:14:17.120 --> 00:14:20.550
+very famous example of this is LM Arena.
+
+659
+00:14:20.550 --> 00:14:20.560
+
+
+
+660
+00:14:20.560 --> 00:14:24.550
+Look at this Battle Mode, you can ask anything
+
+661
+00:14:24.550 --> 00:14:24.560
+
+
+
+662
+00:14:24.560 --> 00:14:28.710
+What Are LM Leader Boards.  So now there are two
+
+663
+00:14:28.710 --> 00:14:28.720
+
+
+
+664
+00:14:28.720 --> 00:14:30.389
+models behind the scenes.  I don't
+
+665
+00:14:30.389 --> 00:14:30.399
+
+
+
+666
+00:14:30.399 --> 00:14:33.189
+know which models they are and they will
+
+667
+00:14:33.189 --> 00:14:33.199
+
+
+
+668
+00:14:33.199 --> 00:14:37.829
+give their own answers, you can see.  And
+
+669
+00:14:37.829 --> 00:14:37.839
+
+
+
+670
+00:14:37.839 --> 00:14:40.069
+once they answer, I will
+
+671
+00:14:40.069 --> 00:14:40.079
+
+
+
+672
+00:14:40.079 --> 00:14:42.629
+read both and I will be asked which one did
+
+673
+00:14:42.629 --> 00:14:42.639
+
+
+
+674
+00:14:42.639 --> 00:14:44.629
+you like best.  Look, he is asking whether A is
+
+675
+00:14:44.629 --> 00:14:44.639
+
+
+
+676
+00:14:44.639 --> 00:14:46.949
+better if both are good or both are bad. B is
+
+677
+00:14:46.949 --> 00:14:46.959
+
+
+
+678
+00:14:46.959 --> 00:14:49.670
+better.  I haven't read it now.  Let's say
+
+679
+00:14:49.670 --> 00:14:49.680
+
+
+
+680
+00:14:49.680 --> 00:14:52.470
+I said B is better.  So now he will reveal which one it is.
+
+681
+00:14:52.470 --> 00:14:52.480
+
+
+
+682
+00:14:52.480 --> 00:14:55.350
+Look, this was Claude Opus
+
+683
+00:14:55.350 --> 00:14:55.360
+
+
+
+684
+00:14:55.360 --> 00:14:58.550
+4.8 search and this was Fable.  Now, they
+
+685
+00:14:58.550 --> 00:15:00.949
+
+
+
+686
+00:15:00.949 --> 00:15:00.959
+
+
+
+687
+00:15:00.959 --> 00:15:03.350
+collect votes from people all over the world throughout the day and create this leader board.
+
+688
+00:15:03.350 --> 00:15:03.360
+
+
+
+689
+00:15:03.360 --> 00:15:05.750
+Then there's This Is The Leader Board.  So this is
+
+690
+00:15:05.750 --> 00:15:05.760
+
+
+
+691
+00:15:05.760 --> 00:15:10.069
+the current ranking.  Fable Five 5.6 Soul 4.8
+
+692
+00:15:10.069 --> 00:15:10.079
+
+
+
+693
+00:15:10.079 --> 00:15:13.189
+Thinking and you can do this in different categories.
+
+694
+00:15:13.189 --> 00:15:13.199
+
+
+
+695
+00:15:13.199 --> 00:15:15.189
+So you can do it in normal chat.   It is
+
+696
+00:15:15.189 --> 00:15:15.199
+
+
+
+697
+00:15:15.199 --> 00:15:17.750
+different for code, different for image, different for video.
+
+698
+00:15:17.750 --> 00:15:17.760
+
+
+
+699
+00:15:17.760 --> 00:15:20.949
+So this is also a type of leader board
+
+700
+00:15:20.949 --> 00:15:20.959
+
+
+
+701
+00:15:20.959 --> 00:15:25.670
+which exists now and
+
+702
+00:15:25.670 --> 00:15:25.680
+
+
+
+703
+00:15:25.680 --> 00:15:29.430
+is very famous.  The limitation of this method is that
+
+704
+00:15:29.430 --> 00:15:33.590
+
+
+
+705
+00:15:33.590 --> 00:15:33.600
+
+
+
+706
+00:15:33.600 --> 00:15:37.590
+if a user finds an answer better, it is not necessary that the answer is
+
+707
+00:15:37.590 --> 00:15:37.600
+
+
+
+708
+00:15:37.600 --> 00:15:41.590
+actually better.  Many times we get impressed by the people who have
+
+709
+00:15:41.590 --> 00:15:41.600
+
+
+
+710
+00:15:41.600 --> 00:15:43.990
+formatted it very well
+
+711
+00:15:43.990 --> 00:15:44.000
+
+
+
+712
+00:15:44.000 --> 00:15:48.069
+or have given such an answer which
+
+713
+00:15:48.069 --> 00:15:48.079
+
+
+
+714
+00:15:48.079 --> 00:15:49.910
+I personally like.  So there is some
+
+715
+00:15:49.910 --> 00:15:49.920
+
+
+
+716
+00:15:49.920 --> 00:15:52.949
+human bias here.  But again at
+
+717
+00:15:52.949 --> 00:15:52.959
+
+
+
+718
+00:15:52.959 --> 00:15:54.629
+scale it is happening.  People all over the world are doing it.
+
+719
+00:15:54.629 --> 00:15:54.639
+
+
+
+720
+00:15:54.639 --> 00:15:56.389
+So still you can trust.  And
+
+721
+00:15:56.389 --> 00:15:56.399
+
+
+
+722
+00:15:56.399 --> 00:15:58.230
+that is why you can see that the top models are
+
+723
+00:15:58.230 --> 00:15:58.240
+
+
+
+724
+00:15:58.240 --> 00:16:00.230
+also leading these leader boards.
+
+725
+00:16:00.230 --> 00:16:00.240
+
+
+
+726
+00:16:00.240 --> 00:16:03.189
+And the last type of leaderboards
+
+727
+00:16:03.189 --> 00:16:03.199
+
+
+
+728
+00:16:03.199 --> 00:16:06.310
+are application specific leaderboards.  These are
+
+729
+00:16:06.310 --> 00:16:06.320
+
+
+
+730
+00:16:06.320 --> 00:16:08.870
+leaderboards that are
+
+731
+00:16:08.870 --> 00:16:08.880
+
+
+
+732
+00:16:08.880 --> 00:16:11.990
+built around a particular domain or task.
+
+733
+00:16:11.990 --> 00:16:12.000
+
+
+
+734
+00:16:12.000 --> 00:16:16.150
+As if there was a dedicated leader board for coding.
+
+735
+00:16:16.150 --> 00:16:16.160
+
+
+
+736
+00:16:16.160 --> 00:16:17.910
+So by
+
+737
+00:16:17.910 --> 00:16:17.920
+
+
+
+738
+00:16:17.920 --> 00:16:20.790
+combining all the benchmarks in coding
+
+739
+00:16:20.790 --> 00:16:20.800
+
+
+
+740
+00:16:20.800 --> 00:16:23.670
+they created a single score and it is being
+
+741
+00:16:23.670 --> 00:16:23.680
+
+
+
+742
+00:16:23.680 --> 00:16:26.230
+shown here.  Or you could be
+
+743
+00:16:26.230 --> 00:16:28.949
+
+
+
+744
+00:16:28.949 --> 00:16:28.959
+
+
+
+745
+00:16:28.959 --> 00:16:31.430
+creating a separate leaderboard for agentic tasks.  Or you can
+
+746
+00:16:31.430 --> 00:16:31.440
+
+
+
+747
+00:16:31.440 --> 00:16:33.749
+create a separate leader board for generating sequel queries
+
+748
+00:16:33.749 --> 00:16:33.759
+
+
+
+749
+00:16:33.759 --> 00:16:35.749
+or a separate leader board for medical queries.
+
+750
+00:16:35.749 --> 00:16:35.759
+
+
+
+751
+00:16:35.759 --> 00:16:37.829
+So
+
+752
+00:16:37.829 --> 00:16:37.839
+
+
+
+753
+00:16:37.839 --> 00:16:40.550
+if I show you an example of this, this
+
+754
+00:16:40.550 --> 00:16:40.560
+
+
+
+755
+00:16:40.560 --> 00:16:44.389
+is a leader board, Berkeley functional calling leader
+
+756
+00:16:44.389 --> 00:16:44.399
+
+
+
+757
+00:16:44.399 --> 00:16:47.189
+board.  So this is a leader board that
+
+758
+00:16:47.189 --> 00:16:47.199
+
+
+
+759
+00:16:47.199 --> 00:16:51.430
+specifically tells you how good your model's
+
+760
+00:16:51.430 --> 00:16:51.440
+
+
+
+761
+00:16:51.440 --> 00:16:55.110
+tool calling capabilities are.
+
+762
+00:16:55.110 --> 00:16:55.120
+
+
+
+763
+00:16:55.120 --> 00:16:57.269
+So on that basis it ranks the models.
+
+764
+00:16:57.269 --> 00:16:57.279
+
+
+
+765
+00:16:57.279 --> 00:16:59.430
+So it's operating in a single domain.
+
+766
+00:16:59.430 --> 00:16:59.440
+
+
+
+767
+00:16:59.440 --> 00:17:01.670
+Even though it is using multiple benchmarks
+
+768
+00:17:01.670 --> 00:17:01.680
+
+
+
+769
+00:17:01.680 --> 00:17:04.069
+but in a single domain.  So there are
+
+770
+00:17:04.069 --> 00:17:04.079
+
+
+
+771
+00:17:04.079 --> 00:17:05.750
+many of this type also.  There
+
+772
+00:17:05.750 --> 00:17:05.760
+
+
+
+773
+00:17:05.760 --> 00:17:08.230
+are different benchmarks for coding as well.  So there are different
+
+774
+00:17:08.230 --> 00:17:08.240
+
+
+
+775
+00:17:08.240 --> 00:17:11.189
+benchmarks like this.  So
+
+776
+00:17:11.189 --> 00:17:11.199
+
+
+
+777
+00:17:11.199 --> 00:17:13.750
+you will see these four types.  The
+
+778
+00:17:13.750 --> 00:17:13.760
+
+
+
+779
+00:17:13.760 --> 00:17:16.150
+least useful is a leaderboard with a single benchmark.
+
+780
+00:17:16.150 --> 00:17:16.160
+
+
+
+781
+00:17:16.160 --> 00:17:18.710
+Most useful is the leaderboard for multiple
+
+782
+00:17:18.710 --> 00:17:18.720
+
+
+
+783
+00:17:18.720 --> 00:17:21.189
+benchmarks, general capability measures,
+
+784
+00:17:21.189 --> 00:17:21.199
+
+
+
+785
+00:17:21.199 --> 00:17:22.949
+and more.
+
+786
+00:17:22.949 --> 00:17:22.959
+
+
+
+787
+00:17:22.959 --> 00:17:25.829
+Cost, latency, everything.  A
+
+788
+00:17:25.829 --> 00:17:25.839
+
+
+
+789
+00:17:25.839 --> 00:17:28.950
+human based also means it is
+
+790
+00:17:28.950 --> 00:17:28.960
+
+
+
+791
+00:17:28.960 --> 00:17:30.710
+very popular to do marketing that
+
+792
+00:17:30.710 --> 00:17:30.720
+
+
+
+793
+00:17:30.720 --> 00:17:33.590
+which is the top on LM Arena.  But
+
+794
+00:17:33.590 --> 00:17:33.600
+
+
+
+795
+00:17:33.600 --> 00:17:35.270
+this is also a category that exists.  And the
+
+796
+00:17:35.270 --> 00:17:35.280
+
+
+
+797
+00:17:35.280 --> 00:17:37.190
+last one is that there are
+
+798
+00:17:37.190 --> 00:17:37.200
+
+
+
+799
+00:17:37.200 --> 00:17:39.190
+also categories of leader board specific to your application.
+
+800
+00:17:39.190 --> 00:17:39.200
+
+
+
+801
+00:17:39.200 --> 00:17:41.510
+You also use that if you are
+
+802
+00:17:41.510 --> 00:17:41.520
+
+
+
+803
+00:17:41.520 --> 00:17:43.750
+creating an application for a particular domain using Lets.
+
+804
+00:17:43.750 --> 00:17:43.760
+
+
+
+805
+00:17:43.760 --> 00:17:47.430
+These are the four types of leader boards
+
+806
+00:17:47.430 --> 00:17:47.440
+
+
+
+807
+00:17:47.440 --> 00:17:52.789
+that you will find on the internet.  Ok?  Aa let's
+
+808
+00:17:52.789 --> 00:17:52.799
+
+
+
+809
+00:17:52.799 --> 00:17:54.630
+read further once more.  Then we will do
+
+810
+00:17:54.630 --> 00:17:54.640
+
+
+
+811
+00:17:54.640 --> 00:17:57.669
+Q&amp;A together.  Ok?  The next thing
+
+812
+00:17:57.669 --> 00:17:57.679
+
+
+
+813
+00:17:57.679 --> 00:17:59.909
+though is that the leaderboards are quite powerful
+
+814
+00:17:59.909 --> 00:17:59.919
+
+
+
+815
+00:17:59.919 --> 00:18:03.510
+and give you a summarized
+
+816
+00:18:03.510 --> 00:18:03.520
+
+
+
+817
+00:18:03.520 --> 00:18:05.830
+overview of the entire LLM
+
+818
+00:18:05.830 --> 00:18:05.840
+
+
+
+819
+00:18:05.840 --> 00:18:08.789
+landscape.  But you
+
+820
+00:18:08.789 --> 00:18:08.799
+
+
+
+821
+00:18:08.799 --> 00:18:10.789
+cannot blindly trust leader boards.  This
+
+822
+00:18:10.789 --> 00:18:10.799
+
+
+
+823
+00:18:10.799 --> 00:18:13.110
+is a very important thing.  Because you will work as AI engineers in the future.
+
+824
+00:18:13.110 --> 00:18:13.120
+
+
+
+825
+00:18:13.120 --> 00:18:15.350
+And most
+
+826
+00:18:15.350 --> 00:18:15.360
+
+
+
+827
+00:18:15.360 --> 00:18:17.110
+of the times when you go to create an application,
+
+828
+00:18:17.110 --> 00:18:17.120
+
+
+
+829
+00:18:17.120 --> 00:18:19.110
+step one is model selection.
+
+830
+00:18:19.110 --> 00:18:19.120
+
+
+
+831
+00:18:19.120 --> 00:18:20.789
+And step one in model selection is to
+
+832
+00:18:20.789 --> 00:18:20.799
+
+
+
+833
+00:18:20.799 --> 00:18:22.310
+go to the leader boards and see which
+
+834
+00:18:22.310 --> 00:18:22.320
+
+
+
+835
+00:18:22.320 --> 00:18:25.909
+model is on top.  So this bias comes into our mind
+
+836
+00:18:25.909 --> 00:18:25.919
+
+
+
+837
+00:18:25.919 --> 00:18:28.070
+that if it is on the leader board then it must be right.
+
+838
+00:18:28.070 --> 00:18:28.080
+
+
+
+839
+00:18:28.080 --> 00:18:29.909
+But it is not like that.  You Can't
+
+840
+00:18:29.909 --> 00:18:29.919
+
+
+
+841
+00:18:29.919 --> 00:18:32.070
+Blindly Trust Leader Boards.
+
+842
+00:18:32.070 --> 00:18:32.080
+
+
+
+843
+00:18:32.080 --> 00:18:34.230
+We are discussing what the reasons are.  The
+
+844
+00:18:34.230 --> 00:18:34.240
+
+
+
+845
+00:18:34.240 --> 00:18:36.950
+first reason is that benchmark performance may
+
+846
+00:18:36.950 --> 00:18:36.960
+
+
+
+847
+00:18:36.960 --> 00:18:39.669
+not transfer to real applications.
+
+848
+00:18:39.669 --> 00:18:39.679
+
+
+
+849
+00:18:39.679 --> 00:18:43.029
+This is a very important thing.  Generally
+
+850
+00:18:43.029 --> 00:18:43.039
+
+
+
+851
+00:18:43.039 --> 00:18:46.150
+if a model is hitting 80 90 in the leader board.
+
+852
+00:18:46.150 --> 00:18:46.160
+
+
+
+853
+00:18:46.160 --> 00:18:48.310
+It does not mean that
+
+854
+00:18:48.310 --> 00:18:48.320
+
+
+
+855
+00:18:48.320 --> 00:18:50.710
+it will give you equally good results in your real application.
+
+856
+00:18:50.710 --> 00:18:50.720
+
+
+
+857
+00:18:50.720 --> 00:18:53.590
+It was a very famous thing that you can
+
+858
+00:18:53.590 --> 00:18:53.600
+
+
+
+859
+00:18:53.600 --> 00:18:56.470
+solve the problem on CG.  It does not
+
+860
+00:18:56.470 --> 00:18:56.480
+
+
+
+861
+00:18:56.480 --> 00:18:58.230
+mean that you will become a good data scientist in real life.
+
+862
+00:18:58.230 --> 00:18:58.240
+
+
+
+863
+00:18:58.240 --> 00:19:00.390
+Why was it said like this
+
+864
+00:19:00.390 --> 00:19:00.400
+
+
+
+865
+00:19:00.400 --> 00:19:02.470
+?  Because the data given to you on Kaggle is
+
+866
+00:19:02.470 --> 00:19:02.480
+
+
+
+867
+00:19:02.480 --> 00:19:04.470
+very clean data.   The
+
+868
+00:19:04.470 --> 00:19:04.480
+
+
+
+869
+00:19:04.480 --> 00:19:06.230
+problem statement is very clear.
+
+870
+00:19:06.230 --> 00:19:06.240
+
+
+
+871
+00:19:06.240 --> 00:19:08.630
+So generally you get the work easily.
+
+872
+00:19:08.630 --> 00:19:08.640
+
+
+
+873
+00:19:08.640 --> 00:19:10.310
+Everything is messy in the real world.  So it is the same
+
+874
+00:19:10.310 --> 00:19:10.320
+
+
+
+875
+00:19:10.320 --> 00:19:12.630
+thing here also.  The data in the benchmarks is
+
+876
+00:19:12.630 --> 00:19:12.640
+
+
+
+877
+00:19:12.640 --> 00:19:15.029
+generally cleaned.  The models will definitely
+
+878
+00:19:15.029 --> 00:19:15.039
+
+
+
+879
+00:19:15.039 --> 00:19:16.950
+perform well on top of that.  There are
+
+880
+00:19:16.950 --> 00:19:16.960
+
+
+
+881
+00:19:16.960 --> 00:19:18.470
+many things that happen in the real world.
+
+882
+00:19:18.470 --> 00:19:18.480
+
+
+
+883
+00:19:18.480 --> 00:19:20.950
+Abuse requests, missing information, company
+
+884
+00:19:20.950 --> 00:19:20.960
+
+
+
+885
+00:19:20.960 --> 00:19:23.909
+specific data, tool failure, unusual age
+
+886
+00:19:23.909 --> 00:19:23.919
+
+
+
+887
+00:19:23.919 --> 00:19:27.909
+cases, don't know whether the model should handle all these or
+
+888
+00:19:27.909 --> 00:19:27.919
+
+
+
+889
+00:19:27.919 --> 00:19:31.830
+not.  So this is the first reason.
+
+890
+00:19:31.830 --> 00:19:31.840
+
+
+
+891
+00:19:31.840 --> 00:19:33.990
+Second, as we discussed,
+
+892
+00:19:33.990 --> 00:19:34.000
+
+
+
+893
+00:19:34.000 --> 00:19:36.630
+benchmarks are very easily contaminated
+
+894
+00:19:36.630 --> 00:19:36.640
+
+
+
+895
+00:19:36.640 --> 00:19:38.789
+and if benchmarks are contaminated,
+
+896
+00:19:38.789 --> 00:19:38.799
+
+
+
+897
+00:19:38.799 --> 00:19:41.270
+their leaderboard scores will also be contaminated
+
+898
+00:19:41.270 --> 00:19:41.280
+
+
+
+899
+00:19:41.280 --> 00:19:43.350
+and inflated.  It will be more visible.
+
+900
+00:19:43.350 --> 00:19:43.360
+
+
+
+901
+00:19:43.360 --> 00:19:46.470
+So don't trust like this blindly.
+
+902
+00:19:46.470 --> 00:19:46.480
+
+
+
+903
+00:19:46.480 --> 00:19:48.710
+It is possible that the score shown on the leader board is
+
+904
+00:19:48.710 --> 00:19:48.720
+
+
+
+905
+00:19:48.720 --> 00:19:50.870
+genuine.  But it is
+
+906
+00:19:50.870 --> 00:19:50.880
+
+
+
+907
+00:19:50.880 --> 00:19:52.789
+also possible that the model has memorized it
+
+908
+00:19:52.789 --> 00:19:52.799
+
+
+
+909
+00:19:52.799 --> 00:19:55.190
+or she already
+
+910
+00:19:55.190 --> 00:19:55.200
+
+
+
+911
+00:19:55.200 --> 00:19:58.070
+knew such questions.  So you can not trust
+
+912
+00:19:58.070 --> 00:19:58.080
+
+
+
+913
+00:19:58.080 --> 00:20:01.350
+blindly.  After that it's a very genuine
+
+914
+00:20:01.350 --> 00:20:01.360
+
+
+
+915
+00:20:01.360 --> 00:20:03.430
+problem and it's only in the last year or two that
+
+916
+00:20:03.430 --> 00:20:03.440
+
+
+
+917
+00:20:03.440 --> 00:20:05.830
+people have started discussing that
+
+918
+00:20:05.830 --> 00:20:05.840
+
+
+
+919
+00:20:05.840 --> 00:20:08.789
+models can be over optimized for the leader
+
+920
+00:20:08.789 --> 00:20:08.799
+
+
+
+921
+00:20:08.799 --> 00:20:10.230
+board.  Sometimes what happens is that a
+
+922
+00:20:10.230 --> 00:20:10.240
+
+
+
+923
+00:20:10.240 --> 00:20:12.549
+particular leader board becomes very popular.
+
+924
+00:20:12.549 --> 00:20:12.559
+
+
+
+925
+00:20:12.559 --> 00:20:15.510
+As is LM Arena.   It became
+
+926
+00:20:15.510 --> 00:20:15.520
+
+
+
+927
+00:20:15.520 --> 00:20:18.070
+very popular that who is topping LM Arena
+
+928
+00:20:18.070 --> 00:20:18.080
+
+
+
+929
+00:20:18.080 --> 00:20:21.270
+?  So what will happen now is that companies
+
+930
+00:20:21.270 --> 00:20:21.280
+
+
+
+931
+00:20:21.280 --> 00:20:23.190
+also see that the most talked about topic is
+
+932
+00:20:23.190 --> 00:20:23.200
+
+
+
+933
+00:20:23.200 --> 00:20:25.270
+who is topping the LM arena?  So
+
+934
+00:20:25.270 --> 00:20:25.280
+
+
+
+935
+00:20:25.280 --> 00:20:27.350
+we have to top it.  Who will top the LM Arena now
+
+936
+00:20:27.350 --> 00:20:27.360
+
+
+
+937
+00:20:27.360 --> 00:20:30.070
+?  Which will please the humans.
+
+938
+00:20:30.070 --> 00:20:30.080
+
+
+
+939
+00:20:30.080 --> 00:20:31.830
+What needs to be done to impress humans?
+
+940
+00:20:31.830 --> 00:20:31.840
+
+
+
+941
+00:20:31.840 --> 00:20:34.390
+We will do some formatting like this.  I will
+
+942
+00:20:34.390 --> 00:20:34.400
+
+
+
+943
+00:20:34.400 --> 00:20:38.470
+give soft answers like this.  If we
+
+944
+00:20:38.470 --> 00:20:38.480
+
+
+
+945
+00:20:38.480 --> 00:20:40.789
+give slightly flattering answers, there are more chances that
+
+946
+00:20:40.789 --> 00:20:40.799
+
+
+
+947
+00:20:40.799 --> 00:20:43.190
+our model will be selected and voted for.
+
+948
+00:20:43.190 --> 00:20:43.200
+
+
+
+949
+00:20:43.200 --> 00:20:45.029
+So what will they do now?   You will
+
+950
+00:20:45.029 --> 00:20:47.029
+
+
+
+951
+00:20:47.029 --> 00:20:47.039
+
+
+
+952
+00:20:47.039 --> 00:20:50.149
+feed this kind of data to your model during your training or fine-tuning stages.
+
+953
+00:20:50.149 --> 00:20:50.159
+
+
+
+954
+00:20:50.159 --> 00:20:52.950
+So that's rather than actually
+
+955
+00:20:52.950 --> 00:20:52.960
+
+
+
+956
+00:20:52.960 --> 00:20:54.870
+performing well in the ability to
+
+957
+00:20:54.870 --> 00:20:57.430
+
+
+
+958
+00:20:57.430 --> 00:20:57.440
+
+
+
+959
+00:20:57.440 --> 00:21:00.230
+perform well only in LM arena type situations.  So what will happen is that
+
+960
+00:21:00.230 --> 00:21:00.240
+
+
+
+961
+00:21:00.240 --> 00:21:02.710
+your model will start scoring well on the leader board
+
+962
+00:21:02.710 --> 00:21:02.720
+
+
+
+963
+00:21:02.720 --> 00:21:04.230
+but its real world
+
+964
+00:21:04.230 --> 00:21:04.240
+
+
+
+965
+00:21:04.240 --> 00:21:06.870
+capabilities will not improve.  So there
+
+966
+00:21:06.870 --> 00:21:06.880
+
+
+
+967
+00:21:06.880 --> 00:21:09.990
+is a law here, this is a very famous law, the Good
+
+968
+00:21:09.990 --> 00:21:10.000
+
+
+
+969
+00:21:10.000 --> 00:21:12.310
+Hearts Law.  It says When a
+
+970
+00:21:12.310 --> 00:21:12.320
+
+
+
+971
+00:21:12.320 --> 00:21:15.750
+Major Becomes a Target It Becomes Less
+
+972
+00:21:15.750 --> 00:21:15.760
+
+
+
+973
+00:21:15.760 --> 00:21:19.029
+Useful as a Major.  So if you start targeting one metric
+
+974
+00:21:19.029 --> 00:21:19.039
+
+
+
+975
+00:21:19.039 --> 00:21:21.029
+that we will improve this metric.
+
+976
+00:21:21.029 --> 00:21:21.039
+
+
+
+977
+00:21:21.039 --> 00:21:23.510
+Suppose you have a car
+
+978
+00:21:23.510 --> 00:21:23.520
+
+
+
+979
+00:21:23.520 --> 00:21:26.149
+and you know that in India
+
+980
+00:21:26.149 --> 00:21:26.159
+
+
+
+981
+00:21:26.159 --> 00:21:28.789
+people buy cars only for mileage.  So
+
+982
+00:21:28.789 --> 00:21:28.799
+
+
+
+983
+00:21:28.799 --> 00:21:30.710
+now your entire engineering team is
+
+984
+00:21:30.710 --> 00:21:30.720
+
+
+
+985
+00:21:30.720 --> 00:21:32.390
+focusing only on how to
+
+986
+00:21:32.390 --> 00:21:32.400
+
+
+
+987
+00:21:32.400 --> 00:21:34.149
+improve mileage?  How to improve mileage.
+
+988
+00:21:34.149 --> 00:21:34.159
+
+
+
+989
+00:21:34.159 --> 00:21:36.310
+So the entire engineering will be
+
+990
+00:21:36.310 --> 00:21:36.320
+
+
+
+991
+00:21:36.320 --> 00:21:39.110
+around mileage.  But the overall car will get
+
+992
+00:21:39.110 --> 00:21:39.120
+
+
+
+993
+00:21:39.120 --> 00:21:41.110
+damaged.  Because your driving
+
+994
+00:21:41.110 --> 00:21:41.120
+
+
+
+995
+00:21:41.120 --> 00:21:44.149
+dynamics determine how much time it takes to reach 0 to 100.
+
+996
+00:21:44.149 --> 00:21:44.159
+
+
+
+997
+00:21:44.159 --> 00:21:45.750
+You are not focusing on these kinds of things.
+
+998
+00:21:45.750 --> 00:21:45.760
+
+
+
+999
+00:21:45.760 --> 00:21:47.110
+You are just focusing on mileage.
+
+1000
+00:21:47.110 --> 00:21:47.120
+
+
+
+1001
+00:21:47.120 --> 00:21:48.789
+So it is written here that
+
+1002
+00:21:48.789 --> 00:21:48.799
+
+
+
+1003
+00:21:48.799 --> 00:21:50.870
+if you target a particular metric
+
+1004
+00:21:50.870 --> 00:21:50.880
+
+
+
+1005
+00:21:50.880 --> 00:21:52.950
+then that metric is no longer a good metric.
+
+1006
+00:21:52.950 --> 00:21:52.960
+
+
+
+1007
+00:21:52.960 --> 00:21:55.270
+So what has started happening these days is that
+
+1008
+00:21:55.270 --> 00:21:55.280
+
+
+
+1009
+00:21:55.280 --> 00:21:59.029
+companies are building models so that they can
+
+1010
+00:21:59.029 --> 00:21:59.039
+
+
+
+1011
+00:21:59.039 --> 00:22:01.909
+top the leader boards but the actual performance is
+
+1012
+00:22:01.909 --> 00:22:01.919
+
+
+
+1013
+00:22:01.919 --> 00:22:04.470
+not good.  After that, this is also an
+
+1014
+00:22:04.470 --> 00:22:04.480
+
+
+
+1015
+00:22:04.480 --> 00:22:06.230
+important thing, especially
+
+1016
+00:22:06.230 --> 00:22:06.240
+
+
+
+1017
+00:22:06.240 --> 00:22:10.549
+for those leaderboards which
+
+1018
+00:22:10.549 --> 00:22:10.559
+
+
+
+1019
+00:22:10.559 --> 00:22:13.990
+show you the results by combining multiple benchmarks.  Now
+
+1020
+00:22:13.990 --> 00:22:14.000
+
+
+
+1021
+00:22:14.000 --> 00:22:16.070
+what is the problem there,
+
+1022
+00:22:16.070 --> 00:22:16.080
+
+
+
+1023
+00:22:16.080 --> 00:22:18.230
+what benchmarks is that leader board including
+
+1024
+00:22:18.230 --> 00:22:18.240
+
+
+
+1025
+00:22:18.240 --> 00:22:20.310
+?  Which benchmarks is it excluding
+
+1026
+00:22:20.310 --> 00:22:20.320
+
+
+
+1027
+00:22:20.320 --> 00:22:22.950
+?  He's at the top of the leaderboard.
+
+1028
+00:22:22.950 --> 00:22:22.960
+
+
+
+1029
+00:22:22.960 --> 00:22:25.190
+How are the scores normalized after that
+
+1030
+00:22:25.190 --> 00:22:25.200
+
+
+
+1031
+00:22:25.200 --> 00:22:29.029
+?  If we are
+
+1032
+00:22:29.029 --> 00:22:29.039
+
+
+
+1033
+00:22:29.039 --> 00:22:31.590
+calculating an overall score for different capabilities, then we are not told
+
+1034
+00:22:31.590 --> 00:22:31.600
+
+
+
+1035
+00:22:31.600 --> 00:22:33.909
+how much weightage we are giving to each capability.
+
+1036
+00:22:33.909 --> 00:22:33.919
+
+
+
+1037
+00:22:33.919 --> 00:22:36.390
+So these kinds of
+
+1038
+00:22:36.390 --> 00:22:36.400
+
+
+
+1039
+00:22:36.400 --> 00:22:38.789
+things remain hidden and they can sometimes
+
+1040
+00:22:38.789 --> 00:22:38.799
+
+
+
+1041
+00:22:38.799 --> 00:22:40.870
+bother you.  So whenever you are
+
+1042
+00:22:40.870 --> 00:22:40.880
+
+
+
+1043
+00:22:40.880 --> 00:22:43.510
+looking at a leader board, the more
+
+1044
+00:22:43.510 --> 00:22:43.520
+
+
+
+1045
+00:22:43.520 --> 00:22:45.750
+transparency there is in it, the better it is.
+
+1046
+00:22:45.750 --> 00:22:45.760
+
+
+
+1047
+00:22:45.760 --> 00:22:47.669
+The more you can find out about that leaderboard, the
+
+1048
+00:22:47.669 --> 00:22:47.679
+
+
+
+1049
+00:22:47.679 --> 00:22:50.470
+better.  After that,
+
+1050
+00:22:50.470 --> 00:22:50.480
+
+
+
+1051
+00:22:50.480 --> 00:22:54.230
+small differences in the leader board do not matter that much.
+
+1052
+00:22:54.230 --> 00:22:54.240
+
+
+
+1053
+00:22:54.240 --> 00:22:56.549
+Like there are two models.  One has a
+
+1054
+00:22:56.549 --> 00:22:56.559
+
+
+
+1055
+00:22:56.559 --> 00:23:00.789
+score of 84.3, one has a score of 84.1 and this model
+
+1056
+00:23:00.789 --> 00:23:00.799
+
+
+
+1057
+00:23:00.799 --> 00:23:03.590
+came in third position and this one went in fifth
+
+1058
+00:23:03.590 --> 00:23:03.600
+
+
+
+1059
+00:23:03.600 --> 00:23:06.630
+position.  But the difference was only two.
+
+1060
+00:23:06.630 --> 00:23:06.640
+
+
+
+1061
+00:23:06.640 --> 00:23:09.029
+Now this doesn't make sense.  We started feeling
+
+1062
+00:23:09.029 --> 00:23:09.039
+
+
+
+1063
+00:23:09.039 --> 00:23:11.669
+that if we choose the third one,
+
+1064
+00:23:11.669 --> 00:23:11.679
+
+
+
+1065
+00:23:11.679 --> 00:23:13.029
+we will not choose the fourth or fifth one for our
+
+1066
+00:23:13.029 --> 00:23:13.039
+
+
+
+1067
+00:23:13.039 --> 00:23:14.630
+application.  But there is a good chance
+
+1068
+00:23:14.630 --> 00:23:14.640
+
+
+
+1069
+00:23:14.640 --> 00:23:16.710
+that these two are very similar.  And Fifth would
+
+1070
+00:23:16.710 --> 00:23:16.720
+
+
+
+1071
+00:23:16.720 --> 00:23:18.710
+probably be better for your application.
+
+1072
+00:23:18.710 --> 00:23:18.720
+
+
+
+1073
+00:23:18.720 --> 00:23:21.350
+So sometimes we start focusing too much on the
+
+1074
+00:23:21.350 --> 00:23:21.360
+
+
+
+1075
+00:23:21.360 --> 00:23:23.590
+rank of the model
+
+1076
+00:23:23.590 --> 00:23:23.600
+
+
+
+1077
+00:23:23.600 --> 00:23:25.590
+we are choosing.  It is at
+
+1078
+00:23:25.590 --> 00:23:25.600
+
+
+
+1079
+00:23:25.600 --> 00:23:28.310
+this rank on this leaderboard.  So there is a bias in the rank.
+
+1080
+00:23:28.310 --> 00:23:28.320
+
+
+
+1081
+00:23:28.320 --> 00:23:30.070
+That is not a good thing.  If
+
+1082
+00:23:30.070 --> 00:23:30.080
+
+
+
+1083
+00:23:30.080 --> 00:23:32.789
+the difference is small, then the models are of the same level.
+
+1084
+00:23:32.789 --> 00:23:32.799
+
+
+
+1085
+00:23:32.799 --> 00:23:35.110
+This is what happens.  Now there will not be
+
+1086
+00:23:35.110 --> 00:23:35.120
+
+
+
+1087
+00:23:35.120 --> 00:23:37.590
+much difference between rank 1 and rank 25 in IIT JEE.
+
+1088
+00:23:37.590 --> 00:23:37.600
+
+
+
+1089
+00:23:37.600 --> 00:23:39.350
+Anyone can get one or two questions
+
+1090
+00:23:39.350 --> 00:23:39.360
+
+
+
+1091
+00:23:39.360 --> 00:23:41.350
+wrong.  Right?  So the same logic applies here.
+
+1092
+00:23:41.350 --> 00:23:41.360
+
+
+
+1093
+00:23:41.360 --> 00:23:44.789
+Sixth is Human Preference Leader
+
+1094
+00:23:44.789 --> 00:23:44.799
+
+
+
+1095
+00:23:44.799 --> 00:23:46.230
+boards have human biases.  We have
+
+1096
+00:23:46.230 --> 00:23:46.240
+
+
+
+1097
+00:23:46.240 --> 00:23:49.029
+already discussed this.  Now there is LM Arena.
+
+1098
+00:23:49.029 --> 00:23:49.039
+
+
+
+1099
+00:23:49.039 --> 00:23:51.350
+Now the top model here does not necessarily
+
+1100
+00:23:51.350 --> 00:23:51.360
+
+
+
+1101
+00:23:51.360 --> 00:23:53.510
+mean that she
+
+1102
+00:23:53.510 --> 00:23:53.520
+
+
+
+1103
+00:23:53.520 --> 00:23:56.789
+is objectively the top model.  Humans like longer answers,
+
+1104
+00:23:56.789 --> 00:23:56.799
+
+
+
+1105
+00:23:56.799 --> 00:23:58.789
+more confident answers, better formatted
+
+1106
+00:23:58.789 --> 00:23:58.799
+
+
+
+1107
+00:23:58.799 --> 00:24:00.789
+answers, more entertaining answers.
+
+1108
+00:24:00.789 --> 00:24:00.799
+
+
+
+1109
+00:24:00.799 --> 00:24:03.590
+But it may be possible that a
+
+1110
+00:24:03.590 --> 00:24:03.600
+
+
+
+1111
+00:24:03.600 --> 00:24:05.909
+better model does not know all this.
+
+1112
+00:24:05.909 --> 00:24:05.919
+
+
+
+1113
+00:24:05.919 --> 00:24:08.630
+Then he will fail
+
+1114
+00:24:08.630 --> 00:24:08.640
+
+
+
+1115
+00:24:08.640 --> 00:24:10.870
+in the human leader board ranking.  So that is also
+
+1116
+00:24:10.870 --> 00:24:10.880
+
+
+
+1117
+00:24:10.880 --> 00:24:13.830
+a problem.  And lastly leader board
+
+1118
+00:24:13.830 --> 00:24:13.840
+
+
+
+1119
+00:24:13.840 --> 00:24:16.390
+scores are still incomplete and self-
+
+1120
+00:24:16.390 --> 00:24:16.400
+
+
+
+1121
+00:24:16.400 --> 00:24:18.789
+reported.  Now just look at this example.
+
+1122
+00:24:18.789 --> 00:24:18.799
+
+
+
+1123
+00:24:18.799 --> 00:24:21.269
+What did we just discuss?  I
+
+1124
+00:24:21.269 --> 00:24:21.279
+
+
+
+1125
+00:24:21.279 --> 00:24:23.269
+showed you the Humanities last exam.
+
+1126
+00:24:23.269 --> 00:24:23.279
+
+
+
+1127
+00:24:23.279 --> 00:24:26.630
+Now here is the Gemini 3 Pro.  It has 38.3.
+
+1128
+00:24:26.630 --> 00:24:26.640
+
+
+
+1129
+00:24:26.640 --> 00:24:29.110
+Now the most recent models are
+
+1130
+00:24:29.110 --> 00:24:29.120
+
+
+
+1131
+00:24:29.120 --> 00:24:31.590
+not available here.  Where you see it is
+
+1132
+00:24:31.590 --> 00:24:31.600
+
+
+
+1133
+00:24:31.600 --> 00:24:34.390
+not the Phablet or the 5.6 Soul.  Because these
+
+1134
+00:24:34.390 --> 00:24:34.400
+
+
+
+1135
+00:24:34.400 --> 00:24:37.350
+people have not updated yet.  These
+
+1136
+00:24:37.350 --> 00:24:37.360
+
+
+
+1137
+00:24:37.360 --> 00:24:38.789
+people did not even update.  So
+
+1138
+00:24:38.789 --> 00:24:38.799
+
+
+
+1139
+00:24:38.799 --> 00:24:40.789
+what happens sometimes is that the benchmark
+
+1140
+00:24:40.789 --> 00:24:40.799
+
+
+
+1141
+00:24:40.799 --> 00:24:42.710
+leader boards are not updated.   If you
+
+1142
+00:24:42.710 --> 00:24:42.720
+
+
+
+1143
+00:24:42.720 --> 00:24:44.789
+get results of the old model version or
+
+1144
+00:24:44.789 --> 00:24:44.799
+
+
+
+1145
+00:24:44.799 --> 00:24:46.710
+not of the new one or sometimes
+
+1146
+00:24:46.710 --> 00:24:46.720
+
+
+
+1147
+00:24:46.720 --> 00:24:48.390
+you get results of discontinued models, then it is
+
+1148
+00:24:48.390 --> 00:24:48.400
+
+
+
+1149
+00:24:48.400 --> 00:24:51.110
+not a good thing.  Many times, the
+
+1150
+00:24:51.110 --> 00:24:51.120
+
+
+
+1151
+00:24:51.120 --> 00:24:53.029
+results in some leader boards are
+
+1152
+00:24:53.029 --> 00:24:55.750
+
+
+
+1153
+00:24:55.750 --> 00:24:55.760
+
+
+
+1154
+00:24:55.760 --> 00:24:58.070
+posted by the companies based on their own models.  So that is also not a good thing.   The
+
+1155
+00:24:58.070 --> 00:24:58.080
+
+
+
+1156
+00:24:58.080 --> 00:25:00.230
+company is posting its own results.  So
+
+1157
+00:25:00.230 --> 00:25:00.240
+
+
+
+1158
+00:25:00.240 --> 00:25:02.630
+why trust?  So these are some six-seven
+
+1159
+00:25:02.630 --> 00:25:02.640
+
+
+
+1160
+00:25:02.640 --> 00:25:04.549
+reasons why you should
+
+1161
+00:25:04.549 --> 00:25:04.559
+
+
+
+1162
+00:25:04.559 --> 00:25:07.430
+not blindly trust leader boards.  But do it a little
+
+1163
+00:25:07.430 --> 00:25:07.440
+
+
+
+1164
+00:25:07.440 --> 00:25:09.909
+carefully.  It's a useful thing but
+
+1165
+00:25:09.909 --> 00:25:09.919
+
+
+
+1166
+00:25:09.919 --> 00:25:13.750
+you can't be blind.  Ok?  So now comes the
+
+1167
+00:25:13.750 --> 00:25:13.760
+
+
+
+1168
+00:25:13.760 --> 00:25:17.110
+last thing that we have to discuss
+
+1169
+00:25:17.110 --> 00:25:17.120
+
+
+
+1170
+00:25:17.120 --> 00:25:20.789
+that if you are an AI engineer and you are
+
+1171
+00:25:20.789 --> 00:25:20.799
+
+
+
+1172
+00:25:20.799 --> 00:25:22.950
+building an LLM based application and
+
+1173
+00:25:22.950 --> 00:25:22.960
+
+
+
+1174
+00:25:22.960 --> 00:25:26.789
+your first task is to select a model
+
+1175
+00:25:26.789 --> 00:25:26.799
+
+
+
+1176
+00:25:26.799 --> 00:25:30.149
+for it.  So how do you read LLM leader boards
+
+1177
+00:25:30.149 --> 00:25:30.159
+
+
+
+1178
+00:25:30.159 --> 00:25:34.230
+?  So this is a guideline that
+
+1179
+00:25:34.230 --> 00:25:34.240
+
+
+
+1180
+00:25:34.240 --> 00:25:36.789
+I'll give you quickly.
+
+1181
+00:25:36.789 --> 00:25:36.799
+
+
+
+1182
+00:25:36.799 --> 00:25:40.310
+Before going to any leader board, first of all
+
+1183
+00:25:40.310 --> 00:25:40.320
+
+
+
+1184
+00:25:40.320 --> 00:25:43.510
+clear these four things in your mind.
+
+1185
+00:25:43.510 --> 00:25:43.520
+
+
+
+1186
+00:25:43.520 --> 00:25:46.470
+What type of application are you building?
+
+1187
+00:25:46.470 --> 00:25:46.480
+
+
+
+1188
+00:25:46.480 --> 00:25:49.269
+How much latency is required in that application?
+
+1189
+00:25:49.269 --> 00:25:49.279
+
+
+
+1190
+00:25:49.279 --> 00:25:52.149
+How much cost can you bear?
+
+1191
+00:25:52.149 --> 00:25:52.159
+
+
+
+1192
+00:25:52.159 --> 00:25:54.710
+What are your context needs?  Are there any
+
+1193
+00:25:54.710 --> 00:25:54.720
+
+
+
+1194
+00:25:54.720 --> 00:25:56.549
+deployment constraints or not?   Can
+
+1195
+00:25:56.549 --> 00:25:56.559
+
+
+
+1196
+00:25:56.559 --> 00:25:58.310
+I
+
+1197
+00:25:58.310 --> 00:25:58.320
+
+
+
+1198
+00:25:58.320 --> 00:26:00.710
+use general publicly available models
+
+1199
+00:26:00.710 --> 00:26:00.720
+
+
+
+1200
+00:26:00.720 --> 00:26:02.630
+?  Or do I have to use the on premise model.
+
+1201
+00:26:02.630 --> 00:26:02.640
+
+
+
+1202
+00:26:02.640 --> 00:26:05.269
+Write down all these things very clearly.
+
+1203
+00:26:05.269 --> 00:26:05.279
+
+
+
+1204
+00:26:05.279 --> 00:26:08.470
+If this becomes clear then you will
+
+1205
+00:26:08.470 --> 00:26:08.480
+
+
+
+1206
+00:26:08.480 --> 00:26:10.950
+not be biased towards the rank one
+
+1207
+00:26:10.950 --> 00:26:10.960
+
+
+
+1208
+00:26:10.960 --> 00:26:13.110
+model.  Automatically you will start thinking objectively
+
+1209
+00:26:13.110 --> 00:26:13.120
+
+
+
+1210
+00:26:13.120 --> 00:26:14.950
+that now if I have to
+
+1211
+00:26:14.950 --> 00:26:14.960
+
+
+
+1212
+00:26:14.960 --> 00:26:17.269
+setup on premise then obviously I
+
+1213
+00:26:17.269 --> 00:26:17.279
+
+
+
+1214
+00:26:17.279 --> 00:26:19.510
+cannot use Claude Fable.  Then I have to
+
+1215
+00:26:19.510 --> 00:26:19.520
+
+
+
+1216
+00:26:19.520 --> 00:26:21.430
+go a little towards open source.  So that
+
+1217
+00:26:21.430 --> 00:26:21.440
+
+
+
+1218
+00:26:21.440 --> 00:26:23.430
+opens up the mind a little.  Step one if here.
+
+1219
+00:26:23.430 --> 00:26:23.440
+
+
+
+1220
+00:26:23.440 --> 00:26:26.710
+In step two, you will no longer blindly
+
+1221
+00:26:26.710 --> 00:26:26.720
+
+
+
+1222
+00:26:26.720 --> 00:26:29.750
+go to any leader board.  You
+
+1223
+00:26:29.750 --> 00:26:29.760
+
+
+
+1224
+00:26:29.760 --> 00:26:31.830
+will go to the leader board that is related to your work.  If you are
+
+1225
+00:26:31.830 --> 00:26:31.840
+
+
+
+1226
+00:26:31.840 --> 00:26:34.630
+creating an agent, you will
+
+1227
+00:26:34.630 --> 00:26:34.640
+
+
+
+1228
+00:26:34.640 --> 00:26:37.990
+go to some agent related leader board.  If you are
+
+1229
+00:26:37.990 --> 00:26:38.000
+
+
+
+1230
+00:26:38.000 --> 00:26:40.390
+making a chat then you will go to the BLM Arena type
+
+1231
+00:26:40.390 --> 00:26:40.400
+
+
+
+1232
+00:26:40.400 --> 00:26:41.990
+leader board.  Because there
+
+1233
+00:26:41.990 --> 00:26:42.000
+
+
+
+1234
+00:26:42.000 --> 00:26:44.549
+you are getting direct objective
+
+1235
+00:26:44.549 --> 00:26:44.559
+
+
+
+1236
+00:26:44.559 --> 00:26:46.950
+measurement of chatting.  If you are making RAGs then you will
+
+1237
+00:26:46.950 --> 00:26:46.960
+
+
+
+1238
+00:26:46.960 --> 00:26:49.510
+go to MTB MTEB.  This
+
+1239
+00:26:49.510 --> 00:26:52.710
+
+
+
+1240
+00:26:52.710 --> 00:26:52.720
+
+
+
+1241
+00:26:52.720 --> 00:26:54.710
+is actually a leader board ranking embedding models.  In RAG you have to apply embedding model.  If
+
+1242
+00:26:54.710 --> 00:26:54.720
+
+
+
+1243
+00:26:54.720 --> 00:26:57.190
+your application has budget constraints,
+
+1244
+00:26:57.190 --> 00:26:57.200
+
+
+
+1245
+00:26:57.200 --> 00:26:59.350
+you will probably end up in the
+
+1246
+00:26:59.350 --> 00:26:59.360
+
+
+
+1247
+00:26:59.360 --> 00:27:03.430
+leaderboard of artificial analysis or this or that.
+
+1248
+00:27:03.430 --> 00:27:03.440
+
+
+
+1249
+00:27:03.440 --> 00:27:05.590
+Because here you
+
+1250
+00:27:05.590 --> 00:27:05.600
+
+
+
+1251
+00:27:05.600 --> 00:27:07.990
+get the exact information about which models
+
+1252
+00:27:07.990 --> 00:27:08.000
+
+
+
+1253
+00:27:08.000 --> 00:27:11.029
+are fast and how much money they cost.
+
+1254
+00:27:11.029 --> 00:27:11.039
+
+
+
+1255
+00:27:11.039 --> 00:27:13.510
+So this is step two.  You go right to the leader
+
+1256
+00:27:13.510 --> 00:27:13.520
+
+
+
+1257
+00:27:13.520 --> 00:27:17.269
+board.  After that read the read leader
+
+1258
+00:27:17.269 --> 00:27:17.279
+
+
+
+1259
+00:27:17.279 --> 00:27:20.710
+board correctly.  Meaning you
+
+1260
+00:27:20.710 --> 00:27:20.720
+
+
+
+1261
+00:27:20.720 --> 00:27:23.750
+understand everything.  What is being scored?
+
+1262
+00:27:23.750 --> 00:27:23.760
+
+
+
+1263
+00:27:23.760 --> 00:27:25.990
+How is the scoring being done?  Who has
+
+1264
+00:27:25.990 --> 00:27:26.000
+
+
+
+1265
+00:27:26.000 --> 00:27:29.750
+evaluated it?  How much was the infense budget?   Is
+
+1266
+00:27:29.750 --> 00:27:29.760
+
+
+
+1267
+00:27:29.760 --> 00:27:31.750
+reasoning happening or not?
+
+1268
+00:27:31.750 --> 00:27:31.760
+
+
+
+1269
+00:27:31.760 --> 00:27:34.230
+When is the evaluation data set from?  how
+
+1270
+00:27:34.230 --> 00:27:34.240
+
+
+
+1271
+00:27:34.240 --> 00:27:36.310
+old is?  Is it updating?  Is
+
+1272
+00:27:36.310 --> 00:27:36.320
+
+
+
+1273
+00:27:36.320 --> 00:27:38.789
+his private test set
+
+1274
+00:27:38.789 --> 00:27:38.799
+
+
+
+1275
+00:27:38.799 --> 00:27:41.750
+being maintained or not?  Have the benchmarks
+
+1276
+00:27:41.750 --> 00:27:41.760
+
+
+
+1277
+00:27:41.760 --> 00:27:44.630
+become saturated or not?
+
+1278
+00:27:44.630 --> 00:27:44.640
+
+
+
+1279
+00:27:44.640 --> 00:27:46.710
+We discussed the confidence interval.  If the data
+
+1280
+00:27:46.710 --> 00:27:46.720
+
+
+
+1281
+00:27:46.720 --> 00:27:49.269
+set is small, then is the confidence interval
+
+1282
+00:27:49.269 --> 00:27:49.279
+
+
+
+1283
+00:27:49.279 --> 00:27:51.269
+mentioned or not?  If not
+
+1284
+00:27:51.269 --> 00:27:51.279
+
+
+
+1285
+00:27:51.279 --> 00:27:53.430
+specified then two very close models are
+
+1286
+00:27:53.430 --> 00:27:53.440
+
+
+
+1287
+00:27:53.440 --> 00:27:56.710
+effectively the same.  If the composite
+
+1288
+00:27:56.710 --> 00:27:56.720
+
+
+
+1289
+00:27:56.720 --> 00:27:58.630
+leaderboard combines multiple benchmarks to
+
+1290
+00:27:58.630 --> 00:27:58.640
+
+
+
+1291
+00:27:58.640 --> 00:28:00.549
+give a single score,
+
+1292
+00:28:00.549 --> 00:28:00.559
+
+
+
+1293
+00:28:00.559 --> 00:28:03.029
+what weightage is given to the different capabilities?
+
+1294
+00:28:03.029 --> 00:28:03.039
+
+
+
+1295
+00:28:03.039 --> 00:28:04.870
+You will analyze all this.  There are just a lot of
+
+1296
+00:28:04.870 --> 00:28:04.880
+
+
+
+1297
+00:28:04.880 --> 00:28:06.470
+pointers written here.  But you get the
+
+1298
+00:28:06.470 --> 00:28:06.480
+
+
+
+1299
+00:28:06.480 --> 00:28:08.549
+idea.  Blindly there is a number, do
+
+1300
+00:28:08.549 --> 00:28:08.559
+
+
+
+1301
+00:28:08.559 --> 00:28:10.789
+not trust it.  You have to read the star mark below.
+
+1302
+00:28:10.789 --> 00:28:10.799
+
+
+
+1303
+00:28:10.799 --> 00:28:13.029
+Like if
+
+1304
+00:28:13.029 --> 00:28:13.039
+
+
+
+1305
+00:28:13.039 --> 00:28:16.230
+you see the definitions here then you will go and read all
+
+1306
+00:28:16.230 --> 00:28:16.240
+
+
+
+1307
+00:28:16.240 --> 00:28:17.750
+these things.  If you read these frequently asked
+
+1308
+00:28:17.750 --> 00:28:17.760
+
+
+
+1309
+00:28:17.760 --> 00:28:20.070
+questions, you will be in a better position to
+
+1310
+00:28:20.070 --> 00:28:20.080
+
+
+
+1311
+00:28:20.080 --> 00:28:22.630
+judge that leader board.  Ok
+
+1312
+00:28:22.630 --> 00:28:22.640
+
+
+
+1313
+00:28:22.640 --> 00:28:25.750
+?  And then
+
+1314
+00:28:25.750 --> 00:28:25.760
+
+
+
+1315
+00:28:25.760 --> 00:28:28.950
+you will shortlist the top three to five models based on your criteria.
+
+1316
+00:28:28.950 --> 00:28:28.960
+
+
+
+1317
+00:28:28.960 --> 00:28:32.310
+Ok?  And when you have your five
+
+1318
+00:28:32.310 --> 00:28:32.320
+
+
+
+1319
+00:28:32.320 --> 00:28:35.430
+models, then comes your fifth and most
+
+1320
+00:28:35.430 --> 00:28:35.440
+
+
+
+1321
+00:28:35.440 --> 00:28:38.870
+important step that you will
+
+1322
+00:28:38.870 --> 00:28:38.880
+
+
+
+1323
+00:28:38.880 --> 00:28:41.430
+run your own evaluation on those five models
+
+1324
+00:28:41.430 --> 00:28:41.440
+
+
+
+1325
+00:28:41.440 --> 00:28:46.230
+and when those five models are
+
+1326
+00:28:46.230 --> 00:28:46.240
+
+
+
+1327
+00:28:46.240 --> 00:28:48.070
+run on your own evaluation set and the
+
+1328
+00:28:48.070 --> 00:28:48.080
+
+
+
+1329
+00:28:48.080 --> 00:28:50.389
+results they give, then you will get your top
+
+1330
+00:28:50.389 --> 00:28:50.399
+
+
+
+1331
+00:28:50.399 --> 00:28:52.789
+candidate.  So here one line that
+
+1332
+00:28:52.789 --> 00:28:52.799
+
+
+
+1333
+00:28:52.799 --> 00:28:55.430
+you have to remember is this.  This is the
+
+1334
+00:28:55.430 --> 00:28:55.440
+
+
+
+1335
+00:28:55.440 --> 00:28:57.510
+most important line that you have to take from
+
+1336
+00:28:57.510 --> 00:28:57.520
+
+
+
+1337
+00:28:57.520 --> 00:29:00.630
+this session that leader boards are not a
+
+1338
+00:29:00.630 --> 00:29:00.640
+
+
+
+1339
+00:29:00.640 --> 00:29:03.269
+selection tool.  Leader boards are a
+
+1340
+00:29:03.269 --> 00:29:03.279
+
+
+
+1341
+00:29:03.279 --> 00:29:06.230
+filtering tool, not a decision tool.  That means, by
+
+1342
+00:29:06.230 --> 00:29:06.240
+
+
+
+1343
+00:29:06.240 --> 00:29:08.149
+going to the leader board you do not decide
+
+1344
+00:29:08.149 --> 00:29:08.159
+
+
+
+1345
+00:29:08.159 --> 00:29:10.389
+that I will use this application, this model to
+
+1346
+00:29:10.389 --> 00:29:10.399
+
+
+
+1347
+00:29:10.399 --> 00:29:12.310
+create my application.
+
+1348
+00:29:12.310 --> 00:29:12.320
+
+
+
+1349
+00:29:12.320 --> 00:29:15.510
+No, that is the wrong strategy.  You shortlist four or five
+
+1350
+00:29:15.510 --> 00:29:15.520
+
+
+
+1351
+00:29:15.520 --> 00:29:17.269
+top models with the
+
+1352
+00:29:17.269 --> 00:29:17.279
+
+
+
+1353
+00:29:17.279 --> 00:29:19.669
+help of leaderboards and then
+
+1354
+00:29:19.669 --> 00:29:19.679
+
+
+
+1355
+00:29:19.679 --> 00:29:22.789
+run your custom equals on each of them to pick one model for
+
+1356
+00:29:22.789 --> 00:29:22.799
+
+
+
+1357
+00:29:22.799 --> 00:29:25.350
+your application.  I
+
+1358
+00:29:25.350 --> 00:29:25.360
+
+
+
+1359
+00:29:25.360 --> 00:29:27.909
+hope you are understanding and that is what we are going to do
+
+1360
+00:29:27.909 --> 00:29:27.919
+
+
+
+1361
+00:29:27.919 --> 00:29:29.430
+in the next session.  As I told you,
+
+1362
+00:29:29.430 --> 00:29:29.440
+
+
+
+1363
+00:29:29.440 --> 00:29:31.029
+now the further classes will be practical.
+
+1364
+00:29:31.029 --> 00:29:31.039
+
+
+
+1365
+00:29:31.039 --> 00:29:33.590
+So the next session is all about how do
+
+1366
+00:29:33.590 --> 00:29:33.600
+
+
+
+1367
+00:29:33.600 --> 00:29:37.750
+you run your custom evaluation on a given
+
+1368
+00:29:37.750 --> 00:29:37.760
+
+
+
+1369
+00:29:37.760 --> 00:29:39.990
+LLM  We will learn that in the next class.
+
+1370
+00:29:39.990 --> 00:29:40.000
+
+
+
+1371
+00:29:40.000 --> 00:29:42.230
+So whatever flow I have told you,
+
+1372
+00:29:42.230 --> 00:29:42.240
+
+
+
+1373
+00:29:42.240 --> 00:29:44.389
+you will try it practically in the next class.
+
+1374
+00:29:44.389 --> 00:29:44.399
+
+
+
+1375
+00:29:44.399 --> 00:29:47.350
+We have done the benchmarks, but it is
+
+1376
+00:29:47.350 --> 00:29:47.360
+
+
+
+1377
+00:29:47.360 --> 00:29:50.549
+not complete.  A but at least
+
+1378
+00:29:50.549 --> 00:29:50.559
+
+
+
+1379
+00:29:50.559 --> 00:29:52.310
+we have seen what conceptually happens
+
+1380
+00:29:52.310 --> 00:29:52.320
+
+
+
+1381
+00:29:52.320 --> 00:29:54.710
+and we have also done the leader boards.
+
+1382
+00:29:54.710 --> 00:29:54.720
+
+
+
+1383
+00:29:54.720 --> 00:29:56.789
+Now we will do custom evals.  Once the custom
+
+1384
+00:29:56.789 --> 00:29:56.799
+
+
+
+1385
+00:29:56.799 --> 00:30:00.230
+evals will be done.  A After that we will move to
+
+1386
+00:30:00.230 --> 00:30:00.240
+
+
+
+1387
+00:30:00.240 --> 00:30:03.350
+application evals where
+
+1388
+00:30:03.350 --> 00:30:03.360
+
+
+
+1389
+00:30:03.360 --> 00:30:06.230
+we will read both RAG evals and agent evals.
+
+1390
+00:30:06.230 --> 00:30:06.240
+
+
+
+1391
+00:30:06.240 --> 00:30:08.480
+we will read both RAG evals and agent evals.
