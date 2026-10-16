@@ -1,0 +1,177 @@
+[
+  {
+    "id": "g001",
+    "query": "chevrolet wale chatbot case me kya hua tha?",
+    "ideal_answer": "A Chevrolet dealer built its own chatbot. A user jailbroke it by emotionally convincing it that, as a customer, whatever he says it must accept. He then asked for a car for $1, and the chatbot agreed and even gave a binding offer. He posted screenshots on social media. The car did not have to be sold, but it was big negative marketing, which could have been avoided by evaluating the chatbot before deploying it.",
+    "source": "Lecture 1",
+    "timestamp": "00:10:31-00:13:01"
+  },
+  {
+    "id": "g002",
+    "query": "lawyer ne chatgpt use kiya tha airline case me, usme kya galat hua?",
+    "ideal_answer": "A passenger on a Colombian airline was injured by the air hostess's food container and filed a case. His lawyer asked ChatGPT for past cases where airlines had to pay for such injuries. ChatGPT confidently hallucinated new cases and fabricated details like names and dates. The lawyer did not verify them and placed them before the judge. The cases turned out not to exist, the judge fined the lawyer and his firm around $5,000, and they lost the case.",
+    "source": "Lecture 1",
+    "timestamp": "00:12:11-00:14:40"
+  },
+  {
+    "id": "g003",
+    "query": "agar llm already benchmarks pe test ho chuka hai toh application eval ki zarurat kyun? smartphone wala example samjhao",
+    "ideal_answer": "In an LLM application the LLM is just one component. You also have the UI, system prompt, tools and APIs, orchestration code, guardrails, output parsers, memory, the retrieval system, embedding model, vector database and monitoring. Chip makers publish processor benchmarks, but a strong processor does not guarantee a good smartphone, because the camera, operating system, sound and battery also matter. Frontier labs evaluate the LLM, but evaluating the whole system you built is the AI engineer's responsibility.",
+    "source": "Lecture 2",
+    "timestamp": "00:17:55-00:21:56"
+  },
+  {
+    "id": "g004",
+    "query": "email classifier ki accuracy sirf 80% aa rahi hai, kya improve kar sakte hain?",
+    "ideal_answer": "First analyze where the mistakes are happening. You can fix the system prompt, since it may be written in a way that confuses billing and technical emails. Or you can change the model, since a low-parameter open source model may not be able to do the task. After each change you run the evaluation again on the same golden dataset. In the example, changing the prompt raised accuracy to 90%, and switching to a heavier LLM raised it to 95%, after which the system was considered worth deploying.",
+    "source": "Lecture 3",
+    "timestamp": "00:10:32-00:12:58"
+  },
+  {
+    "id": "g005",
+    "query": "if the retriever and generator both work fine individually, can the rag still give a wrong answer?",
+    "ideal_answer": "Yes. In the example, the user asked the duration of the machine learning course. With k = 5, the retriever's first four documents were random and only the fifth said the ML course is eight weeks. The generator was told to give priority to higher documents, so it picked the Python course's six weeks from the top and answered six weeks. Neither component misbehaved on its own, yet the pipeline gave a wrong answer. So you also need a workflow-level eval, and a fix like a reranker that moves the correct document to the top.",
+    "source": "Lecture 4",
+    "timestamp": "00:10:33-00:14:37"
+  },
+  {
+    "id": "g006",
+    "query": "humans llm evaluation me kin kin tareeko se kaam aate hain?",
+    "ideal_answer": "Humans perform five types of evaluation: direct grading and rating of answers against a rubric; red teaming, where people deliberately attack the system to find where it breaks; A/B testing, where users rate two versions in production; creating golden datasets and rubrics; and human in the loop, where complex grey-area cases are passed to a human. Human judgment is very reliable, but the biggest disadvantage is cost, so humans usually cannot be used at the scale of millions of users.",
+    "source": "Lecture 5",
+    "timestamp": "00:24:45-00:29:40"
+  },
+  {
+    "id": "g007",
+    "query": "In the UPSC answer grading example, how do we check if the LLM grades like a human expert?",
+    "ideal_answer": "A subject matter expert defines a rubric for each question and grades 50 to 100 student answers against it; this forms the golden dataset. The LLM judge is given the question, its marks, the rubric and the aspirant's answer, and asked to allocate marks. The LLM's marks are then compared with the human's marks using mean absolute error. An MAE of 2.3 means the LLM deviates from the human by about plus or minus 2.3 marks on average, and the goal is to bring it close to zero by trying a better LLM, changing the system prompt or changing the rubric.",
+    "source": "Lecture 5",
+    "timestamp": "00:39:27-00:46:51"
+  },
+  {
+    "id": "g008",
+    "query": "deploy karne ke baad production me kaunsi teen problems aati hain jo offline eval nahi pakad pata?",
+    "ideal_answer": "First, you get a huge variety of unanticipated inputs, such as people mixing Hindi and English, ambiguous questions, angry rants and adversarial prompt injections. Second, emergent and systematic failures that only show at scale, like latency rising when thousands of users arrive after a course launch, or a bias that only becomes visible across thousands of conversations. Third, drift: over time the documents change (prices, curriculum, policies) but the golden dataset does not, so the offline eval setup becomes obsolete.",
+    "source": "Lecture 6",
+    "timestamp": "00:15:25-00:18:42"
+  },
+  {
+    "id": "g009",
+    "query": "what is the difference between captured and computed signals in online eval?",
+    "ideal_answer": "Captured signals are already present and you just store them, for example a thumbs up or thumbs down, latency, tokens used and cost. Computed signals have to be calculated by an online evaluator, for example faithfulness, answer relevance, correctness, hallucination, toxicity and bias. For a captured quantity the flow is logging, then dashboarding, then alerting. For a computed quantity there are extra steps: sampling the conversations and running an evaluator, usually an LLM as a judge, before the dashboard.",
+    "source": "Lecture 6",
+    "timestamp": "00:48:39-00:51:56"
+  },
+  {
+    "id": "g010",
+    "query": "model ka context window 1 million tokens hai, phir long context capability alag se test kyun karni padti hai?",
+    "ideal_answer": "The long context capability measures whether a model can effectively use information from very long inputs containing hundreds of thousands of tokens: extracting a small fact from a long context, fetching details of a person or entity from a large document, summarizing a large context, and keeping the full context of a large code base as a coding agent. Models claim context windows of 128K, 200K or 1 million tokens, but as a chat grows their ability to retain context diminishes and quality deteriorates. Testing this shows which model actually works well with large contexts.",
+    "source": "Lecture 7",
+    "timestamp": "00:28:33-00:30:57"
+  },
+  {
+    "id": "g011",
+    "query": "what is an eval harness and why do we need it?",
+    "ideal_answer": "Running a benchmark looks like a simple loop, but doing it reliably over thousands of LLM calls needs extra code: extracting the answer, scoring exactly as the benchmark paper says, batching, retrying failed API calls and handling rate limits. This plumbing code is called an eval harness. Instead of writing it yourself, you use libraries like EleutherAI's LM Evaluation Harness. A good analogy is that the benchmark is the exam paper and the eval harness is the administration that conducts the exam.",
+    "source": "Lecture 8",
+    "timestamp": "00:26:45-00:29:18"
+  },
+  {
+    "id": "g012",
+    "query": "frontier labs jo apne benchmark scores batate hain, unpe blindly trust kyun nahi karna chahiye?",
+    "ideal_answer": "Lab-reported numbers are like a car's claimed mileage: they are a ceiling, because labs run benchmarks under their own favourable conditions and cherry-pick the benchmarks where their model does well. Benchmarks also have four problems. Contamination: public test questions end up in the training data. Saturation: top models cluster around 90-95% and cannot be told apart. Configuration gaming: the lab gives its own model favourable run settings, like a Python interpreter on GSM8K. Aggregation: an average MMLU score can hide a weak subject like economics.",
+    "source": "Lecture 8",
+    "timestamp": "00:38:09-00:48:38"
+  },
+  {
+    "id": "g013",
+    "query": "simpleqa baaki knowledge benchmarks se alag kaise hai?",
+    "ideal_answer": "SimpleQA has 4,326 short fact-seeking questions, each one a question GPT-4 failed to answer. There are no options, so the model has to write the answer itself, and an LLM grader marks it correct, incorrect or not attempted. The not-attempted category lets it measure calibration as well, meaning whether the model knows that it doesn't know. Its metrics are correct, correct given attempted, and an F-score combining the two. A model that scored 88% on MMLU got only 40% on SimpleQA, and the benchmark is still active.",
+    "source": "Lecture 9",
+    "timestamp": "01:30:06-01:31:46"
+  },
+  {
+    "id": "g014",
+    "query": "What surprising thing did TruthfulQA show about bigger models?",
+    "ideal_answer": "TruthfulQA, released in September 2021, has 817 adversarial questions built around common human misconceptions. Its biggest finding was that bigger models are often less truthful: misconceptions are spread across the internet, so a model trained on more internet data absorbs more of them. This showed that a more capable model is not necessarily more aligned. GPT-3 scored 58% against a human baseline of 94%.",
+    "source": "Lecture 9",
+    "timestamp": "00:43:47-00:46:15"
+  },
+  {
+    "id": "g015",
+    "query": "what is goodhart's law and how does it apply to llm leaderboards?",
+    "ideal_answer": "Goodhart's law says that when a measure becomes a target, it becomes less useful as a measure. If a leaderboard like LM Arena becomes very popular, companies may train their models to please human voters, with nicer formatting and softer or more flattering answers. The model then scores well on the leaderboard while its real-world capability does not improve. It is like a car company focusing its engineering only on mileage while the rest of the car suffers.",
+    "source": "Lecture 10",
+    "timestamp": "00:20:03-00:21:41"
+  },
+  {
+    "id": "g016",
+    "query": "cricinfo feature ke liye fable ka monthly cost kitna aa raha tha, aur prompt caching kaise help karta hai?",
+    "ideal_answer": "Each request was about 400 input tokens (system prompt, schema and question) and about 100 output tokens. At Fable's rate of $10 per million input tokens and $50 per million output tokens, the cost came to about 12.8 lakh rupees a month, roughly 4x the 3 lakh budget, so a cheaper model like Sonnet was needed. With prompt caching, the part of the prompt that repeats across queries is cached on the provider's server. The first query pays a higher cache-write rate ($12.5 instead of $10 per million), and later queries pay only $1 per million for the cached part, until the 5-minute or 1-hour cache refreshes.",
+    "source": "Lecture 11",
+    "timestamp": "00:22:39-00:35:48"
+  },
+  {
+    "id": "g017",
+    "query": "regression testing ke kitne levels hote hain?",
+    "ideal_answer": "Three levels. The basic one: run the whole eval suite with a single run_evals script, save the first numbers as a baseline, and compare later runs manually. The second adds experiment tracking: each run's configuration (chunk size, overlap, temperature, embedding model) and metric values are logged in a tool like MLflow and compared on a dashboard. The third adds CI: a tool like GitHub Actions reruns the suite on every push; if the new numbers are worse than the baseline beyond a threshold, deployment is paused, and if they are better, the change is deployed and becomes the new baseline.",
+    "source": "Lecture 12",
+    "timestamp": "00:27:42-00:35:04"
+  },
+  {
+    "id": "g018",
+    "query": "retriever ke golden dataset me correct chunk ids hi kyun na store kar lein?",
+    "ideal_answer": "Labelling chunk IDs means a person has to read around 800 chunks for every one of the 50 questions, which is a very hectic job. The bigger problem is that when you change chunking parameters, for example from 750 and 100 to 1000 and 150, the chunks change and the golden dataset becomes void, so you would have to rebuild it after every tweak. That method only works when documents are cleanly separated and chunking never changes. So instead the golden dataset stores a question and an ideal answer written from what was taught, which stays the same whatever the chunk size.",
+    "source": "Lecture 13",
+    "timestamp": "00:40:49-00:47:21"
+  },
+  {
+    "id": "g019",
+    "query": "contextual recall aur contextual precision deepeval me kaise calculate hote hain?",
+    "ideal_answer": "For contextual recall, an LLM judge breaks the ideal answer into claims and checks how many of those claims are found in the retrieved chunks. If all three claims are found, recall is 3/3; if one of two is found, it is 1/2. For contextual precision, the judge looks at each retrieved chunk and says whether it helps produce the expected answer. It is ranking aware: if two useful chunks are at the top instead of the bottom, the score is higher, even though plain precision would be 2/5 in both cases.",
+    "source": "Lecture 13",
+    "timestamp": "00:49:54-01:06:28"
+  },
+  {
+    "id": "g020",
+    "query": "retriever ka recall 99% aur precision 89% hai, phir bhi contextual relevance 42% kyun aa raha hai?",
+    "ideal_answer": "Recall tells how many of the correct contexts were brought, and precision tells how many of the fetched chunks were useful. Contextual relevance instead checks the noise inside each chunk, by breaking a chunk into statements and seeing how many are relevant. A chunk counts as useful for precision even if only one or two of its five lines help, so precision stays high while contextual relevance is low. Reducing the chunk size can help. If faithfulness, answer relevance, recall and precision are all good, a lower contextual relevance can still be accepted.",
+    "source": "Lecture 14",
+    "timestamp": "01:10:37-01:17:13"
+  },
+  {
+    "id": "g021",
+    "query": "Why does a plain LLM-as-a-judge correctness score keep changing between runs, and how does G-Eval fix it?",
+    "ideal_answer": "There are two reasons. The judge gets only a one-line criterion, so in each call it may measure correctness from a different angle. And it outputs a single score token from 0 to 10, so when its probabilities for 7 and 8 are close, the score flips between runs. G-Eval fixes both. First, it uses chain of thought to turn the high-level criterion into clear evaluation steps, like a rule book. Second, instead of taking the output token, it takes a probability-weighted average of the top score tokens, for example 7.84 instead of 8. This gives stable scores across runs.",
+    "source": "Lecture 15",
+    "timestamp": "00:17:55-00:36:42"
+  },
+  {
+    "id": "g022",
+    "query": "doubt solver ke liye kaunse safety risks evaluate kiye gaye aur bias ko kyun chhoda?",
+    "ideal_answer": "The attack surface chosen was three things: sensitive information leakage (system prompt, raw retrieved chunks, paid lecture content and personal information), scope and policy violation (for example using the doubt solver as a free coding agent), and harmful or toxic output. Hallucination was already covered through faithfulness. Bias was skipped because the users are mostly the same kind of people, from the same country and age group, and answers come from course content. Unsafe actions were skipped because the chatbot is not given any tools.",
+    "source": "Lecture 16",
+    "timestamp": "00:30:31-00:37:02"
+  },
+  {
+    "id": "g023",
+    "query": "what should you keep in mind when measuring latency for a rag app?",
+    "ideal_answer": "Don't report just the average: look at the distribution with P50, P95 and P99, since tail latency shows the users with the worst experience. Break end-to-end latency down by component, and measure time to first token separately because apps stream. Skip the first one or two queries because of cold starts. Record token count and context size, keep latency separate from throughput, and repeat each question several times because external APIs are noisy. Also track the timeout rate, set latency budgets (for example P95 under 3 seconds and TTFT under 1.2 seconds), and use a representative mix of easy, medium and complex questions.",
+    "source": "Lecture 17",
+    "timestamp": "00:16:27-00:34:14"
+  },
+  {
+    "id": "g024",
+    "query": "llm judge ki wajah se bina kuch change kiye bhi metric upar niche hota hai, regression testing me isko kaise handle karein?",
+    "ideal_answer": "Run the whole pipeline 5 to 10 times in the same initial setup and calculate the standard deviation of each metric. Take two standard deviations as that metric's noise threshold, for example 1. If recall moves from 90 to 89.5 after changing k, that is within noise and not a regression, but 87.5 would be a regression. For each metric, a metric registry stores this noise threshold and whether higher or lower is better (latency, cost and toxicity are lower-is-better).",
+    "source": "Lecture 18",
+    "timestamp": "00:18:11-00:23:09"
+  },
+  {
+    "id": "g025",
+    "query": "How can offline DeepEval metrics be run in an online setting using LangSmith?",
+    "ideal_answer": "A cron job triggers an eval_online script every 5 minutes. Using the LangSmith SDK, the script fetches the traces from the last 5 minutes, either all of them or a share such as 30% set by the sample rate. It runs the DeepEval evaluator functions on them, such as faithfulness, answer relevance, contextual relevance and toxicity, and sends the scores back to LangSmith, where they can be charted on a dashboard. A trace that scores badly can be added to a dataset with an expert's reference answer, which grows the golden dataset for offline evals.",
+    "source": "Lecture 19",
+    "timestamp": "00:56:22-01:10:16"
+  }
+]

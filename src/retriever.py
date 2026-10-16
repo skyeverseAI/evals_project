@@ -13,6 +13,11 @@ load_dotenv()  # loads OPENAI_API_KEY from .env
 DATA_DIR = "data_en"
 DB_DIR = "chroma_store"
 
+EMBEDDING_MODEL = "openai/text-embedding-3-large"   # OpenRouter's name for the model
+CHUNK_SIZE = 1000
+CHUNK_OVERLAP = 150
+TOP_K = 5
+
 
 # 1. LOAD ---- read each transcript, throw away the VTT timestamps
 def load_transcripts():
@@ -37,7 +42,7 @@ def load_transcripts():
 # 2. BUILD ---- chunk, embed once, and keep it on disk so we don't re-embed
 def load_store():
     embeddings = OpenAIEmbeddings(
-    model="openai/text-embedding-3-large",        # OpenRouter's name for the model
+    model=EMBEDDING_MODEL,
     api_key=os.environ["OPENROUTER_API_KEY"],
     base_url="https://openrouter.ai/api/v1",
     check_embedding_ctx_length=False,             # send plain text, not token IDs
@@ -49,15 +54,15 @@ def load_store():
     docs = load_transcripts()
 
     chunks = RecursiveCharacterTextSplitter(
-        chunk_size=750,
-        chunk_overlap=100,
+        chunk_size=CHUNK_SIZE,
+        chunk_overlap=CHUNK_OVERLAP,
     ).split_documents(docs)
-
+    print(f'\nNo of chunks created this time: {len(chunks)}\n')
     return Chroma.from_documents(chunks, embeddings, persist_directory=DB_DIR)
 
 
 def build_retriever():
-    return load_store().as_retriever(search_kwargs={"k": 5})
+    return load_store().as_retriever(search_kwargs={"k": TOP_K})
 
 
 # 3. TRY IT ---- python src/retriever.py
