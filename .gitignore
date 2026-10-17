@@ -3,3 +3,6 @@ cookies.txt
 chroma_store/
 data/
 data_original/
+__pycache__/
+# old scripts and outputs kept for reference
+archive/
