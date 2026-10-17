@@ -6,3 +6,4 @@ data_original/
 __pycache__/
 # old scripts and outputs kept for reference
 archive/
+.deepeval/

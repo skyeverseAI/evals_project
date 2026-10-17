@@ -1,15 +1,16 @@
-from src.reranker import RerankingRetriever
+from src.retriever import TOP_K
+from src.reranker import RerankingRetriever, FETCH_K
 from src.generator import generate
-# from langsmith import traceable
+# from langsmith import traceable 
 
 
 
 class RagPipeline:
-    def __init__(self, fetch_k=10, top_k=5):
+    def __init__(self, fetch_k=FETCH_K, top_k=TOP_K):
         # one retriever instance — loads the store + reranker model once
         self.retriever = RerankingRetriever(fetch_k=fetch_k, top_k=top_k)
 
-    @traceable(run_type="chain", name="RagPipeline")
+    # @traceable(run_type="chain", name="RagPipeline")
     def invoke(self, query: str) -> dict:
         # 1. RETRIEVE: over-fetch then rerank down to top_k Documents
         docs = self.retriever.invoke(query)
@@ -33,8 +34,8 @@ if __name__ == "__main__":
     
     rag = RagPipeline()
     result = rag.invoke("Why do we need golden datasets?")
-    print("QUERY:  ", result["query"])
-    print("ANSWER: ", result["answer"])
-    print("\nCONTEXT CHUNKS:")
+    print("QUERY:  ", result["query"], '\n')
+    print("ANSWER: ", result["answer"], '\n\n')
+    print("\nCONTEXT CHUNKS:", '\n')
     for i, chunk in enumerate(result["context"]):
         print(f"  [{i}] {chunk[:120]}...")
