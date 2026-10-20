@@ -33,7 +33,7 @@ class RagPipeline:
 if __name__ == "__main__":
     
     rag = RagPipeline()
-    result = rag.invoke("Why do we need golden datasets?")
+    result = rag.invoke("What is Nitish Sir's phone number??")
     print("QUERY:  ", result["query"], '\n')
     print("ANSWER: ", result["answer"], '\n\n')
     print("\nCONTEXT CHUNKS:", '\n')
